@@ -1,0 +1,1716 @@
+# 1.0 Game intro texts
+# 2.0 Interface texts
+#  2.1 Buttons
+#  2.2 Upper bar numbers
+#  2.3 Stock Manager
+#  2.4 Main Menu
+#  2.5 Settings Window
+# 3.0 General concepts
+#  3.1 Central concepts
+#  3.2 Other concepts
+#  3.3 Crops and farming
+#  3.4 Spirits, Keepers and sacrifices
+# 4.0 Longer explanatory texts
+# 5.0 Camp bonuses
+#  5.1 Farming bonuses
+
+# Farming interface texts
+# Midsummer event texts
+# Structure tiers
+# Structure types etc
+# Terrain types
+# Tools
+# Materials
+# Combat
+# Statistics
+# Magic
+# Fluff
+# Loading screen texts
+# Tutorials
+# Camp tiers
+
+# 1.0 Game intro texts
+
+[demointro]
+description = """For untold ages, the ways between the worlds were shut.
+
+But now it is as if a wind had blown and shaken the Great Tree, and the gates are opening again.
+
+A small band of curious goblins, fleeing the harsh rule of the Goblin King of the underworld, have found a portal to the middle realm. Beyond it is a beautiful but dangerous northern forest. The curious goblins would like to make a new home for themselves in it. It's now up to you to guide them on their journey in a new world."""
+
+[endOfDemo]
+display_name = "Demo end"
+description = """Thanks for playing the Goblin Camp demo!
+
+We hope you enjoyed trying our game. \
+If you liked what you saw, please <style="link"><link="steam">purchase the full version on Steam</style></link>.
+"""
+
+[gameOver]
+display_name = "Game over"
+description = """All the goblins have either died or left the camp!
+
+Perhaps some day, a traveller will come across the remains of your camp, and wonder what happened to the people who lived here. \
+But for now, the site is abandoned and desolate."""
+
+# 2.0 Interface texts
+
+# 2.1 Buttons
+
+[structuresButton]
+display_name = "Build"
+
+[stockmanager]
+display_name = "Stock Manager"
+
+[ordersButton]
+display_name = "Orders"
+
+[jobsButton]
+display_name = "Jobs"
+
+[overlaysButton]
+display_name = "Overlays"
+
+[wizardmenuButton]
+display_name = "Wizard Menu"
+
+[feedbackButton]
+display_name = "Feedback"
+
+[techButton]
+display_name = "Technology"
+
+[spellsButton]
+display_name = "Spells"
+
+[statsButton]
+display_name = "Statistics"
+
+[sacrificeButton]
+display_name = "Sacrifice"
+
+[toggle_foliage_button]
+display_name = "Toggle foliage"
+description = "Toggle foliage visibility. Hiding foliage makes it much easier to see what is happening in the forest."
+
+[toggle_ignore_indicators]
+display_name = "Toggle ignored item indicators"
+description = """Toggles the red ignored item indicators on or off. The indicators are displayed above any item that is <style="link"><link="ignore">ignored</link></style>."""
+
+# 2.2 Upper bar numbers
+
+[food_number]
+display_name = "Food Points"
+description = """This number shows how many months of <link="foodpoint"><style="link">food</style></link> your camp has. \
+Food can be acquired from various <link="food_sources"><style="link">sources</style></link>."""
+
+[food_tooltip_line_1]
+description = "Food required per year:"
+
+[food_tooltip_line_2]
+description = "Theoretical max production:"
+
+[food_tooltip_line_3]
+description = "Food point balance:"
+
+[food_tooltip_line_4]
+description = "Months of food stored:"
+
+[kitchendef]
+display_name = "Kitchens"
+description = """Goblins are gregarious creatures and like to eat together at kitchens at the end of every season. \
+Kitchens are structures where cook-goblins will prepare <link="foodpoint"><style="link">food</style></link> for a total number of camp inhabitants equal to the kitchen's capacity. \
+Each goblin will be assigned a kitchen to eat at if there is capacity.
+
+The cook-goblin will try to make sure that the meal includes all required <link="nutrientdef"><style="link">nutrients</style></link>. The meal will also always include something to drink.
+
+If a goblin doesn't have a kitchen to eat at, they'll eat food they find in the camp. If they can't find any food, they'll go hungry, and eventually leave the camp."""
+
+[kitchen_tooltip_line_1]
+description = "Population"
+
+[kitchen_tooltip_line_2]
+description = "Kitchen seating:"
+
+[jobsnumber]
+display_name = "Jobs"
+description = """\
+Goblins are conscientious creatures, and will try to do all the jobs they've been assigned. \
+Be careful not to let them get swamped with too many jobs!\
+"""
+
+[jobs_tooltip_line_1]
+description = "Total jobs:"
+
+[jobs_tooltip_line_2]
+description = "Goblins:"
+
+[jobs_tooltip_line_3]
+description = "Jobs per goblin:"
+
+[population_number]
+display_name = "Population and Housing"
+description = """This number shows the total <link="population_def"><style="link">population</style></link> of your camp, and how much <link="houses"><style="link">housing</style></link> you have built."""
+
+[population_tooltip_line_1]
+description = "Population:"
+
+[population_tooltip_line_2]
+description = "Housing requirement:"
+
+[population_tooltip_line_3]
+description = "Housing provided:"
+
+[researchpoints]
+display_name = "Research Points"
+description = """Research points can be invested to learn new technologies in the technology tree. \
+The camp generates research points, and they can also be accumulated by discovering certain items or summoning the <link="sac_tree_def"><style="link">sacrificial tree</style></link>."""
+
+[research_tooltip_line_1]
+description = "Research points:"
+
+[research_tooltip_line_2]
+description = "Points per season:"
+
+[research_tooltip_line_3]
+description = "Points per year from Sacrificial Tree:"
+
+[vaki_def]
+display_name = "Väki"
+description = """Väki is the magical energy used by the shaman to cast spells. \
+The camp generates a certain amount of väki, and this can be increased by summoning and leveling up the <link="sac_tree_def"><style="link">sacrificial tree</style></link>. Väki is capped at 20."""
+
+[vaki_tooltip_line_1]
+description = "Väki:"
+
+[vaki_tooltip_line_2]
+description = "Väki per month:"
+
+[vaki_tooltip_line_3]
+description = "Väki per year from Sacrificial Tree:"
+
+[spiritdef]
+display_name = "Spirits"
+description = """In ancient Finnish culture, all living things had spirits. When felling a tree, for example, it was important to warn the tree-spirit so it could leave before the tree was cut down. \
+<link="shaman_def"><style="link">Shamans</style></link> use spirits to work their magic.
+
+There are usually up to 20 spirits passing through the area of the camp. Spirits released from felled trees or slain enemies increase this total."""
+
+[spirit_tooltip_line_1]
+description = "Unspent spirits:"
+
+[campmoraledef]
+display_name = "Camp Morale"
+description = """The camp's total <link="moraledef"><style="link">morale</style></link> is the average morale of all of its inhabitants."""
+
+# 2.3 Stock Manager
+
+[target_column]
+display_name = "Target"
+description = """The target number is the number of items you want to have in your camp at all times. If the current number of items is less than this number, your goblins will do their best to produce more."""
+
+[reserved_column]
+display_name = "Reserved"
+description = """The reserved number is the number of items that should be kept in storage and not used for further crafting. Goblins will not produce items to meet the reserve, \
+only the <style="link"><link="target_column">target</link></style> triggers production. Reserved items will be eaten and used for sacrifices."""
+
+# 2.4 Main Menu
+
+[main_continue]
+display_name = "Continue"
+
+[main_new_game]
+display_name = "New Game"
+
+[main_load]
+display_name = "Load"
+
+[main_settings]
+display_name = "Settings"
+
+[main_credits]
+display_name = "Credits"
+
+[main_exit]
+display_name = "Exit"
+
+# 2.5 Settings Window
+
+[settings_title]
+display_name = "Settings"
+
+# General
+
+[settings_general]
+display_name = "General"
+
+[settings_general_show_tutorials]
+display_name = "Show tutorials"
+
+[settings_general_autosave_interval]
+display_name = "Autosave interval"
+
+[settings_general_autosave_minutes]
+display_name = "Minutes"
+
+[settings_general_tooltip_mode]
+display_name = "Tooltip mode"
+
+[settings_general_tooltip_timer_lock]
+display_name = "Timer lock"
+
+[settings_general_tooltip_action_lock]
+display_name = "Action lock"
+
+[settings_general_tooltip_lock_delay]
+display_name = "Tooltip lock delay"
+
+[settings_general_tooltip_delay_seconds]
+display_name = "Seconds"
+
+[settings_general_camera_shake]
+display_name = "Camera shake"
+
+[settings_general_autofocus_search_field]
+display_name = "Autofocus search field"
+
+[settings_general_autoclose_orders_list]
+display_name = "Autoclose orders list"
+
+[settings_general_send_crash_reports]
+display_name = "Send crash reports"
+
+[settings_general_notifications]
+display_name = "Notifications"
+
+[settings_general_food_warning]
+display_name = "Food warning"
+
+[settings_general_insufficient_sacrifices]
+display_name = "Insufficient sacrifices"
+
+# Display
+
+[settings_display]
+display_name = "Display"
+
+[settings_display_resolution]
+display_name = "Resolution"
+
+[settings_display_window_mode]
+display_name = "Window mode"
+
+[settings_display_borderless_fullscreen]
+display_name = "Borderless full-screen"
+
+[settings_display_exclusive_fullscreen]
+display_name = "Exclusive full-screen"
+
+[settings_display_windowed]
+display_name = "Windowed"
+
+[settings_display_maximized_window]
+display_name = "Maximized window"
+
+[settings_display_apply]
+display_name = "Apply"
+
+[settings_display_vsync]
+display_name = "V-sync"
+
+[settings_display_fps_cap]
+display_name = "Framerate limit"
+
+[settings_display_render_scale]
+display_name = "Render scale"
+
+[settings_display_mesh_quality]
+display_name = "Mesh quality"
+
+[settings_display_quality_very_low]
+display_name = "Very low"
+
+[settings_display_quality_low]
+display_name = "Low"
+
+[settings_display_quality_medium]
+display_name = "Medium"
+
+[settings_display_quality_high]
+display_name = "High"
+
+[settings_display_shadows]
+display_name = "Shadows"
+
+[settings_display_anti_aliasing]
+display_name = "Anti-aliasing"
+
+[settings_display_anti_aliasing_none]
+display_name = "None"
+
+[settings_display_anti_aliasing_quality]
+display_name = "Anti-aliasing quality"
+
+[settings_display_anti_aliasing_quality_low]
+display_name = "Low"
+
+[settings_display_anti_aliasing_quality_medium]
+display_name = "Medium"
+
+[settings_display_anti_aliasing_quality_high]
+display_name = "High"
+
+[settings_display_smoke_density]
+display_name = "Smoke density"
+
+[settings_display_smoke_density_off]
+display_name = "Off"
+
+[settings_display_smoke_density_low]
+display_name = "Low"
+
+[settings_display_smoke_density_medium]
+display_name = "Medium"
+
+[settings_display_smoke_density_high]
+display_name = "High"
+
+[settings_display_max_cloudiness]
+display_name = "Max cloudiness"
+
+# Audio
+
+[settings_audio]
+display_name = "Audio"
+
+[settings_audio_overall_volume]
+display_name = "Overall Volume"
+
+[settings_audio_music_volume]
+display_name = "Music Volume"
+
+[settings_audio_title_music_volume]
+display_name = "Title Music Volume"
+
+[settings_audio_weather_volume]
+display_name = "Weather Volume"
+
+[settings_audio_effects_volume]
+display_name = "Effects Volume"
+
+[settings_audio_interface_volume]
+display_name = "Interface Volume"
+
+[settings_audio_reset_default_volume]
+display_name = "Reset to default volume"
+
+# Controls
+
+[settings_controls]
+display_name = "Controls"
+
+[settings_controls_reset_defaults]
+display_name = "Reset to defaults"
+
+[settings_controls_change]
+display_name = "Change"
+
+[settings_controls_enable_gamepad]
+display_name = "Enable Gamepad"
+
+[settings_controls_pause]
+display_name = "Pause"
+
+[settings_controls_speed_up]
+display_name = "Speed up time"
+
+[settings_controls_speed_down]
+display_name = "Slow down time"
+
+[settings_controls_center_on_camp]
+display_name = "Center on camp"
+
+[settings_controls_open_build_menu]
+display_name = "Open build menu"
+
+[settings_controls_open_orders_menu]
+display_name = "Open orders menu"
+
+[settings_controls_open_stockmanager]
+display_name = "Open stock manager"
+
+[settings_controls_open_jobs_menu]
+display_name = "Open jobs menu"
+
+[settings_controls_open_overlays_menu]
+display_name = "Open overlays menu"
+
+[settings_controls_open_stats_menu]
+display_name = "Open stats menu"
+
+[settings_controls_open_tech_menu]
+display_name = "Open tech tree"
+
+[settings_controls_open_spells_menu]
+display_name = "Open spells menu"
+
+[settings_controls_toggle_foliage]
+display_name = "Toggle foliage"
+
+[settings_controls_hide_ui]
+display_name = "Hide UI"
+
+[settings_controls_pan_forward]
+display_name = "Pan forward"
+
+[settings_controls_pan_back]
+display_name = "Pan backwards"
+
+[settings_controls_pan_left]
+display_name = "Pan left"
+
+[settings_controls_pan_right]
+display_name = "Pan right"
+
+[settings_controls_rotate_left]
+display_name = "Rotate left"
+
+[settings_controls_rotate_right]
+display_name = "Rotate right"
+
+[settings_controls_rotate_building]
+display_name = "Rotate building"
+
+[settings_controls_harvest]
+display_name = "Harvest selected flora"
+
+[settings_controls_quicksave]
+display_name = "Quicksave"
+
+[settings_controls_quickload]
+display_name = "Quickload"
+
+# Save/Load Dialog
+
+[savegame_title_save]
+display_name = "Save Game"
+
+[savegame_title_load]
+display_name = "Load Game"
+
+[savegame_new_save_placeholder]
+display_name = "New Save Game"
+
+[savegame_save_button]
+display_name = "Save"
+
+[savegame_overwrite_button]
+display_name = "Overwrite"
+
+[savegame_load_button]
+display_name = "Load"
+
+[savegame_delete_button]
+display_name = "Delete"
+
+[savegame_meta_format]
+display_name = "{0} - Year {1} month {2}"
+
+[savegame_autosave]
+display_name = "Autosave"
+
+[savegame_autosave_prev]
+display_name = "Previous Autosave"
+
+[savegame_delete_confirm]
+display_name = "Deleting {0}\nAre you sure?"
+
+# 3.0 General concepts
+
+[water]
+display_name = "Water"
+description = """\
+<style="fluff">Remedy the oldest, water;
+Magic is the child of sea-foam.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem III</style>
+
+Water is useful for drinking and putting out fires, but dangerous in large amounts.\
+"""
+
+[workshop_efficiency]
+display_name = "Workshop Efficiency"
+description = """The efficiency of a <link="workshop"><style="link">workshop</style></link></b> is simply how much faster a goblin working there gets their job done. A workshop with +20% efficiency means a goblin will finish whatever they're doing there, usually crafting an item or preparing a meal, that much faster."""
+
+# 3.1 Central concepts
+
+[foodpoint]
+display_name = "Food"
+description = """The nutritional value of food is measured in <b>food points</b>. One goblin needs one food point worth of food each season to survive. \
+They also need certain nutrients in their food. If goblins don't get enough <link="fiber"><style="link">fiber</style></link> or <link="protein"><style="link">protein</style></link>, or enough <link="fresh"><style="link">fresh food</style></link>, they'll suffer from a nutritional deficiency.
+
+Goblins can eat food that is stored in the camp, but they are happier when they can eat in kitchens. Each kitchen prepares food for goblins equal to their capacity, and tries to prepare a meal that includes all the necessary nutrients."""
+
+[population_def]
+display_name = "Population"
+description = """Your population is the total number of inhabitants your settlement has. \
+If the camp is producing enough <link="foodpoint"><style="link">food</style></link> to feed its inhabitants, and none of them have died recently, more goblins may decide to try their luck in the middle world and join your camp.
+
+If your camp has a <link="shaman_def"><style="link">shaman</style></link>, they can also grow your <link="population_def"><style="link">population</style></link> by casting <link="summongoblins"><style="link">Summon Goblins</style></link>."""
+
+[sac_tree_def]
+display_name = "Sacrificial Tree"
+description = """The sacrificial tree is the ceremonial center of the goblin camp. It houses a portal to the <link="underworld_fluff"><style="link">underworld</style></link>, and acts as the center of goblin <link="culturedef"><style="link">culture</style></link>. \
+The tree can be summoned by the <link="shaman_def"><style="link">shaman</style></link>.
+
+The sacrifical tree grants bonuses to <link="researchpoints"><style="link">research</style></link> and <link="vaki_def"><style="link">väki</style></link>. \
+As the goblins make <link="sacrifice_def"><style="link">sacrifices</style></link>, the tree will level up and the bonuses will increase."""
+
+# 3.2 Other concepts
+
+[adjacencyDef]
+display_name = "Adjacency"
+description = """Some buildings gain bonuses when they're built close to other buildings. \
+For example, a <link="fishingworkshop"><style="link">fishing workshop</style></link> can share a <link="carpenter"><style="link">carpenter</style></link>'s tools and materials, so the fishing workshop will work more efficiently if there is a carpenter next to it."""
+
+[calendar]
+display_name = "Calendar"
+description = """The goblin year is divided into four seasons, of three months each. The highlight of the year is <link="sacrifice_def"><style="link">Midsummer</style></link>, and the new year begins at the beginning of autumn."""
+
+[claim]
+display_name = "Claim"
+description = """\
+<b>Claiming</b> an item will direct the inhabitants of your camp to fetch it and put it in <link="storage"><style="link">storage</style></link>, so it can be used later.\
+"""
+
+[claimed_workshop]
+display_name = "Claiming a Workshop"
+description = """When a goblin <b>claims a <link="workshop"><style="link">workshop</style></link></b>, whenever a job is assigned to that workshop, it will be assigned to the goblin that claimed it if at all possible. Only if that goblin isn't available, will another goblin be given the job."""
+
+[combat]
+display_name = "Combat"
+description = """\
+<style="fluff">Ere the final bout is given,
+Ere thy head be chopped in pieces;
+Strike with skill, or thou wilt perish,
+Strike, and do thy best for Northland.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVII</style>
+
+Combat happens when two creatures get into a fight. They use their respective <link="fightingSkill"><style="link">Fighting</style></link> skills to try to <link="armorAndDamage"><style="link">damage</style></link> each other.\
+"""
+
+[culturedef]
+display_name = "Culture"
+description = """As the goblins thrive in the middle world, they reshape it in their own image. It comes to resemble the <link="underworld_fluff"><style="link">underworld</style></link> they're from. \
+A camp's culture value is a measure of how strong the goblins' influence is.  As the culture value becomes higher, more and more tiles around portals to the underworld will gain the <link="underworldtile"><style="link">underworld</style></link> attribute.
+
+Culture is gained by <link="sacrifice_def"><style="link">sacrificing</style></link> items in a <link="bonfire"><style="link">bonfire</style></link> at Midsummer.\
+"""
+
+[fishing_value_def]
+display_name = "Fishing Value"
+description = """\
+This value represents the amount of fish that can be extracted in one year without depleting the fishery.
+Overfishing will lead to permanent decreases to the number of fish available.\
+"""
+
+[florapreferences]
+display_name = "Plant Preferences"
+description = """\
+Different plants prefer to grow in different places. Some plants need plentiful sunlight, while others prefer <link="shade"><style="link">shade</style></link>. Some kinds of fungus need shade to grow. \
+Plants may also prefer <link="sandsoil"><style="link">sandy</style></link> or <link="claysoil"><style="link">clay</style></link> soils.
+
+Flora is more likely to appear in tiles with conditions suitable to them, and some plants won't grow in unsuitable conditions at all.\
+"""
+
+[food_waste]
+display_name = "Food Waste"
+description = """If a <link="kitchendef"><style="link">kitchen</style></link> is set to allow food waste, \
+it means that the kitchen will prepare a meal with all of the required <link="nutrientdef"><style="link">nutrients</style></link>, \
+even if that means preparing more food than the goblins eating at the kitchen would need."""
+
+[forestcover]
+display_name = "Forest-cover"
+description = """<style="fluff">\
+Once a wife was baking, and she dropped the dumpling she was making onto the floor. She swore then. Soon after she ended up in the forest-cover. No matter how hard everyone looked for her, she couldn't be found. Much later she was found dead, sitting on a hillside, in a recess in the rock. The hill is named Wife-mountain after her.
+
+Saarijärvi. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+Finnish people used to believe that it was possible to get lost in the woods, not in the ordinary sense of losing one's way, but in a far more profound way: to leave our reality altogether and end up in a sort of parallel universe, where you might never be able to make your way back.
+
+Forest-cover is depicted on the map as fog. A creature lost in the forest-cover will wander around aimlessly for a while, trying to find its way out.
+
+Trees, bushes and other plants create forest-cover between them, so forest-cover can be pushed back by clearing vegetation, or by building <link="ravenstatue"><style="link">raven statues</style></link>.\
+"""
+
+[hauling]
+display_name = "Hauling"
+description = """When an item is too heavy for a goblin to <link="carrying_capacity_def"><style="link">carry</style></link>, they have to <b>haul</b> it, which means dragging it over the ground. \
+Hauling is considerably faster over snow."""
+
+[heating]
+display_name = "Heating"
+description = """\
+When it gets cold, structures that your goblins and others <link="houses"><style="link">live</style></link> and work in will have to be <b>heated</b>, usually using <link="firewood"><style="link">firewood</style></link>. \
+Goblins will try to stock firewood in buildings that need heating.\
+"""
+
+[houses]
+display_name = "Houses"
+description = """<style="fluff">\
+Haste thee to thy husband's village,
+Hasten to his mother's household;
+Strange, the rooms in other dwellings,
+Strange, the modes in other hamlets.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+
+Even the hardiest goblins need some shelter from the elements, especially in winter. If goblins don't have houses to live in, their health and <link="moraledef"><style="link">morale</style></link> will suffer. \
+In winter, unhoused goblins will build <link="housing0b"><style="link">temporary shelters</style></link> for themselves, but these won't be as effective at keeping them warm as proper housing.\
+"""
+
+[ignore]
+display_name = "Ignore"
+description = """\
+If you order your goblins to <b>ignore</b> an item, they won't put it in <link="storage"><style="link">storage</style></link>, and it will not count for the <link="second_tutorial"><style="link">stock manager</style></link>.\
+"""
+
+[meadowdef]
+display_name = "Meadows"
+description = """Meadows are low-lying areas close to the river, mostly made up of <link="claysoil"><style="link">clay soil</style></link>. \
+Meadows usually get covered by the spring flood, so no trees will grow there."""
+
+[mud]
+display_name = "Mud"
+description = """\
+The more traffic passes over a sand or clay tile, the more <b>muddy</b> and worn it gets. The more muddy a tile is, the harder it is to walk over. In this way, routes your goblins walk over will gradually become harder to use and slower.\
+"""
+
+[nearbyruin]
+display_name = "Ruin"
+description = """There is an unexplored <link="ruinsdef"><style="link">ruin</style></link> nearby."""
+
+[newgoblins]
+display_name = "More goblins arrive!"
+description = """\
+Word of the success of your settlement has spread in the underworld, and more goblins have decided to join you. \
+If your camp is producing enough <link="foodpoint"><style="link">food</style></link> to feed its inhabitants, and none of them have died recently, more goblins may decide to try their luck in the middle world.
+
+If your camp has a <link="shaman_def"><style="link">shaman</style></link>, they can also grow your <link="population_def"><style="link">population</style></link> by casting <link="summongoblins"><style="link">Summon Goblins</style></link>."""
+
+[nutrientdef]
+display_name = "Nutrients"
+description = """Goblins need certain nutrients in their food. If they don't get enough <link="fiber"><style="link">fiber</style></link> or <link="protein"><style="link">protein</style></link>, or enough <link="fresh"><style="link">fresh food</style></link>, they'll suffer from a nutritional deficiency."""
+
+[ruinsdef]
+display_name = "Ruins"
+description = """<style="fluff">The whole underground kingdom trembled, the palace walls cracked and their foundations heaved, the arches bowed and the roof began to totter.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>
+
+The forest is old, and many people have lived here before the goblins. Sometimes, traces of these previous inhabitants can be found in the form of ruins. \
+Exploring ruins can reveal useful items."""
+
+[ruins_explored]
+display_name = ""
+description = """\
+Your goblins have explored the ruins, and found the following items within:
+
+"""
+
+[score]
+display_name = "Score"
+description = """\
+Your game score is very simply based on how many goblins you've managed to keep alive in your camp and for how long. At the end of each year, your score is increased by the <link="population_def"><style="link">population</style></link> of your camp.\
+"""
+
+[shaman_def]
+display_name = "Shaman"
+description = """A shaman is a specialist who can commune with the spirit world.
+
+In order to be elected shaman, a goblin needs to be <link="hardblooded"><style="link">hard-blooded</style></link> and <link="hardy"><style="link">hardy</style></link>."""
+
+[storage]
+display_name = "Storage"
+description = """\
+Goblins are tidy creatures, and items that are kept in your camp are <b>stored</b>. This can be done in outdoor <link="stockpile"><style="link">stockpiles</style></link>, or <link="storehouse"><style="link">storehouses</style></link>.
+
+Some items, like <link="woodlog"><style="link">wooden logs</style></link>, can be stored outdoors without any trouble. Other items, like tools and especially food, will decay if stored outdoors.\
+"""
+
+[unreachableDef]
+display_name = "Unreachable"
+description = """The game needs a way to figure out if a structure can't be reached, or if a creature has become trapped. \
+The way this works is that the game tries to plot a path from the mob or structure to the center of the camp.
+
+The center of the camp is initially the gateway rock, but will be the sacrificial tree if it's summoned. \
+So if a structure is unreachable, it means the game can't find a path from it to the center of the camp, \
+and if a creature, usually a goblin, is unreachable, it means the game can't find a path for it to get to the camp center. \
+To avoid this, make sure there's a way to get to the gateway rock or the sacrificial tree."""
+
+[unreachableStructure]
+display_name = "Unreachable"
+description = """This structure <link="unreachableDef"><style="link">can't be reached</style></link> from the camp center, so it can't be used. The way to the structure's entrance is probably blocked or flooded."""
+
+[unreahableMob]
+display_name = "Unreachable"
+description = """This creature is trapped! It <link="unreachableDef"><style="link">can't find a way to the center of the camp</style></link>."""
+
+[weight_def]
+display_name = "Weight"
+description = """All items have a weight. A basic goblin can usually <link="carrying_capacity_def"><style="link">carry</style></link> one weight unit worth of items. Heavier items can be moved by <link="hauling"><style="link">hauling</style></link>."""
+
+[workarea_def]
+display_name = "Work Areas"
+description = """The work area of a camp is the area where goblins will harvest flora, and which they will defend. Goblins will pick up and process items all over the map, however, unless you tell them to ignore those items.
+
+As you build raven statues to clear the <link="forestcover"><style="link">forest-cover</style></link>, they also extend your work area. By selecting a raven statue, you can toggle the work area around it."""
+
+# 3.3 Crops and farming
+
+[compostingdef]
+display_name = "Composting"
+description = """Composting is a way to restore <link="fertility"><style="link">fertility</style></link> to the soil. It is unlocked by researching <link="fertilizerTech"><style="link">Technology: Fertilizer</style></link>.
+
+Composting means taking organic materials and dumping them in <link="midden"><style="link">middens</style></link>. \
+There, they will decay and eventually form <link="compost"><style="link">compost</style></link>. When goblins <link="muckingdef"><style="link">muck</style></link> a field, they will scatter compost on it and till it into the soil, adding the fertility value of the compost to the soil.
+
+Middens need to be occasionally turned with a <link="pitchfork"><style="link">pitchfork</style></link> to keep the composting process going."""
+
+[fallowdef]
+display_name = "Fallowing"
+description = """A field that is fallow will not have seeds sown on it, but will be <link="muckingdef"><style="link">mucked</style></link> and <link="tilling"><style="link">tilled</style></link> as normal."""
+
+[farming]
+display_name = "Farming"
+description = """\
+<style="fluff">Rise, O earth, from out thy slumber,
+From the slumber-land of ages,
+Let the barley-grains be sprouting,
+Let the blades themselves be starting.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+<b>Farming</b> is a way to produce <link="foodpoint"><style="link">food</style></link> and other useful items by growing crops. To start farming, build a <link="farmplot"><style="link>farm plot</style></link>, select the seeds you want to plant, and watch them grow.
+
+The amount of crops a given farm plot produces is determined by the <link="fertility"><style="link">fertility</style></link> of the soil. Each crop expends some of the fertility of the plot, until it eventually runs out. \
+<link="claysoil"><style="link">Clay soils</style></link> are more fertile than <link="sandsoil"><style="link">sandy soils</style></link> and retain fertilizers better, but heavier tools are needed to farm in clay.
+
+Fields are tilled and seeds are planted at different times of the year, depending on the seeds selected for the farm plot.\
+"""
+
+[fertility]
+display_name = "Fertility"
+description = """\
+<style="fluff">On the azure water-ridges,
+On the mighty waste before her.
+Where her hand she turned in water,
+There arose a fertile hillock.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem I</style>
+
+<b>Fertility</b> determines how productive <link="farming"><style="link">farming</style></link> is.
+
+Each tile has a fertility value, which represents the nutrients in the soil that are available for plants growing in the tile. When crops are grown on a tile, they drain the fertility of the tile. The tile loses as many <b>fertility points</b> as the plants produce <link="foodpoint"><style="link">food points</style></link>.
+
+As a tile's fertility points run down, it produces less and less crops. Fertility only recovers extremely slowly. In Finnish slash-and-burn farming, a farm plot might need 30 or 40 years to recover its fertility.
+
+The fertility of a tile can be increased by <link="slashAndBurnTech"><style="link">slash-and-burn farming</style></link>, or restored by discovering <link="fertilizerTech"><style="link">fertilizers</style></link> to unlock <link="compostingdef"><style="link">composting</style></link>. \
+<link="sandsoil"><style="link">Sandy soils</style></link> are less fertile than <link="claysoil"><style="link">clay soils</style></link>, and retain less nutrients from fertilizers.
+
+Effective fertility can be reduced by <link="shade"><style="link">shade</style></link>.\
+"""
+
+[flaxdef]
+display_name = "Flax"
+description = """Flax is a crop grown for its fibers, which can be made into thread.
+
+<link="flaxseedbag"><style="link">Flax seeds</style></link> can be found in <link="ruinsdef"><style="link">ruins</style></link> or growing in the <link="wildflax"><style="link">wild</style></link>. \
+Finding flax seeds discovers <link="farmingTech"><style="link">Technology: Farming</style></link>."""
+
+[nettledef]
+display_name = "Stinging Nettles"
+description = """"""
+
+[ryedef]
+display_name = "Rye"
+description = """
+<link="ryeseedbag"><style="link">Rye seeds</style></link> can be found in <link="ruinsdef"><style="link">ruins</style></link> or growing in the <link="wildrye"><style="link">wild</style></link>. \
+Finding flax seeds discovers <link="farmingTech"><style="link">Technology: Farming</style></link>."""
+
+[shade]
+display_name = "Shade"
+description = """\
+Plants usually need sunlight to live, so when the light is blocked by <b>shade</b>, plants don't grow as well as they could. The north slopes of hills are considered to be in shade, because they receive less sunlight.
+
+In the game, shade represents not only the physical blocking of sunlight, but also the effect of trees on the surrounding soil. \
+Trees have extensive root systems that are very efficient at extracting nutrients from the soil, and so crops will not grow as well near trees. \
+To represent the roots physically blocking plants from growing, even stumps cast some shade.
+
+Shade reduces the <link="fertility"><style="link">fertility</style></link> of tiles. Some plants <link="florapreferences"><style="link">prefer</style></link> different levels of light.\
+"""
+
+#  3.4 Spirits, Keepers and sacrifices
+
+[sacrifice_def]
+display_name = "Sacrifices"
+description = """\
+It is the custom of the goblins to make sacrifices to the spirits each Midsummer. As the goblins take fish from the river or wood from the forest, for example, they believe they should give thanks to the Keepers of <link="woodskeepers"><style="link">the forest</style></link> and <link="waterskeepers"><style="link">the river</style></link> for their gifts. \
+Some workshops have designated sacrificial items. For instance, for each <link="fishing1"><style="link">fisher-goblin's shack</style></link>, the river spirits expect the sacrifice of one <link="ceremonialfish"><style="link">ceremonial fish</style></link>. \
+For each <link="carpenter"><style="link">carpenter's workshop</style></link>, the forest-spirits expect one <link="woodenstatuette"><style="link">wooden statuette</style></link>, and so on.
+
+The sacrifices are placed in a <link="bonfire"><style="link">bonfire</style></link> and burned.
+
+Successful sacrifices increase the camp's <link="culturedef"><style="link">culture</style></link> and level up the <link="sac_tree_def"><style="link">sacrificial tree</style></link>.
+
+<style="fluff">Finnish people used to believe that all living things had spirits, and that if the spirits weren't treated correctly, there would be consequences. \
+Finns used to have different harvest and hunting rituals, like the elaborate bear ceremony found in poem XLVI of the <link="kalevala"><style="link">Kalevala</style></link>, to appease the spirits.</style>"""
+
+[woodskeepers]
+display_name = "Keepers of the Woods"
+description = """The Keepers of the Woods are the spirits that live in the forest and watch over all of its inhabitants. \
+If the goblins take resources from the forest without respecting the Keepers of the Woods, they will be unhappy and visit misfortunes on the camp.\
+
+The Keepers can be appeased by <link="sacrifice_def"><style="link">sacrificing</style></link> to them at Midsummer, by building a <link="bonfire"><style="link">bonfire</style></link>.\
+"""
+
+[waterskeepers]
+display_name = "Keepers of the Waters"
+description = """The Keepers of the Waters are the spirits that rule over the river and other bodies of water near the camp. \
+If the goblins fish in the waters without respecting their Keepers, they will find it harder to catch fish.\
+
+The Keepers can be appeased by <link="sacrifice_def"><style="link">sacrificing</style></link> to them at Midsummer, by building a <link="bonfire"><style="link">bonfire</style></link>.\
+"""
+
+# 4.0 Longer explanatory texts
+
+[basictoolsdef]
+display_name = "Basic Tools"
+description = """A camp needs several kinds of everyday <b>basic tools</b> to work.
+
+To get <link="woodmaterial"><style="link">wood</style></link> for building and other uses, goblins will need <link="chopping"><style="link">chopping tools</style></link> to cut down trees. \
+An early chopping tool is the <link="stoneaxe"><style="link">stone axe</style></link>. \
+Stone axes can also be used as weapons, but be careful to not assign all of your axes to guards! If that happens, your goblins won't be able to fell trees.
+
+To dig ditches and change the ground level, goblins need <link="digging"><style="link">digging tools</style></link>. \
+The <link="diggingstick"><style="link">digging stick</style></link> is a simple digging tool that also serves as a <link="bartool"><style="link">bar tool</style></link> for removing tree stumps.
+
+Stone axes and digging sticks can be built at a <link="carpenter1"><style="link">carpenter's shack</style></link> from <link="branch"><style="link">branches</style></link>. \
+You can order all tools you have discovered in the <link="second_tutorial"><style="link">stock manager</style></link>.
+
+To put out fires, goblins need <link="bucket"><style="link">buckets</style></link>. \
+The simplest bucket available is an <link="claypot"><style="link">earthenware pot</style></link>, which can be created at a <link="potter0"><style="link">potter's yard</style></link>.
+
+To make clay tools, you need to build a <link="claypit"><style="link">clay pit</style></link>. \
+This needs to be placed on <link="claysoil"><style="link">clay soil</style></link>, which you can find through the soil overlay window, accessible from the overlay button at the bottom of the game screen. \
+Look out: low-lying clay lands next to the river often <link="meadowdef"><style="link">flood</style></link>! It's a good idea to build the clay pit in an area further from the river.
+
+It's a good idea to maintain a supply of basic tools in a camp at all times. This can be easily done by setting targets for them in the stock manager, and goblins will build new ones to replace broken or lost tools.\
+"""
+
+[food_sources]
+display_name = "Food Sources"
+description = """Securing a <link="foodpoint"><style="link">food</style></link> supply for your camp is vitally important. If goblins don't have anything to eat, they'll leave! There are several <b>food sources</b> your camp can exploit.
+
+The easiest way to get food is by <b>gathering</b>. Many foods can simply be found on the map: <link="mushroom"><style="link">mushrooms</style></link> high in <link="fiber"><style="link">fiber</style></link> grow on the ground, and plants like <link="hazel"><style="link">hazel</style></link> and <link="blackcurrant"><style="link">blackcurrant</style></link> bushes can be harvested for food. \
+<link="nettle"><style="link">Stinging nettles</style></link> can often be found in <link="meadowdef"><style="link">meadows</style></link>, and even provide you with seeds so you can start farming.
+
+To start gathering plants, simply find some on the map and order your goblins to harvest them. Once this is done, the food they acquired will appear in the <link="second_tutorial"><style="link">stock manager</style></link>, and you can order them to automatically find more.
+
+Another early food source is <link="fishingTech"><style="link">fishing</style></link>. To start fishing, build a <link="fishing1"><style="link">fisher-goblin's shack</style></link> and some <link="fishingspear"><style="link">fishing spears</style></link>, and order fish in the stock manager. <link="rawfish"><style="link">Fish</style></link> are a good source of fats and proteins.
+
+Fishing is limited by the <link="fishing_value_def"><style="link">fishing value</style></link> of the map, which represents the maximum number of fish that can be sustainably caught.
+
+The only reliable way to produce food for a large population is <link="farming"><style="link">farming</style></link>. Farming is <link="farmingTech"><style="link">unlocked</style></link> when you first discover seeds. To start farming, lay out a <link="farmplot"><style="link">farm plot</style></link>, select the seeds you want, and the goblins will plant and harvest crops at the appropriate time of the year. \
+To farm on <link="claysoil"><style="link">clay soils</style></link>, you need <link="dwarvenToolTech"><style="link">metal digging tools</style></link>.
+
+Farming expends the <link="fertility"><style="link">fertility</style></link> of the soil, and will eventually deplete it completely. Soil can be made more fertile with <link="slashAndBurnTech"><style="link">slash-and-burn farming</style></link>, or fertility can be restored by discovering <link="fertilizerTech"><style="link">fertilizers</style></link>.
+
+These food sources can be supplemented with the meat of hostile animals. Meat and fish can be preserved by <link="smokingTech"><style="link">smoking</style></link>.
+
+A succesful camp will make use of various different food sources to ensure food security and a healthy, variable diet for goblins."""
+
+# 5.0 Camp bonuses
+
+# 5.1 Farming bonuses
+
+[campbonus_def]
+display_name = "Camp Bonus"
+description = """Camp bonuses are bonuses your camp has gained that improve your goblins' performance at some activities in the camp. They can be unlocked by researching technologies."""
+
+[improved_harvesting_def]
+display_name = "Improved Harvesting"
+description = """As their experience with farming grows, your goblins have learned to harvest fields more efficiently."""
+
+[improved_sowing_def]
+display_name = "Improved Sowing"
+description = """As your goblins become more proficient with farming, they have learned how to plant seeds more effectively, making sowing considerably faster."""
+
+# Farming interface texts
+
+[now_indicator]
+display_name = "Now"
+description = """The current <link="calendar"><style="link">date</style></link>"""
+
+[muckingdef]
+display_name = "Mucking"
+description = """Mucking a field means enhancing its <link="fertility"><style="link">fertility</style></link> by bringing items with fertility values to the farm plot."""
+
+[tilling]
+display_name = "Till"
+description = """A farm plot must be tilled before seeds can be sown. Tilling <link="sandsoil"><style="link">sandy soil</style></link> can be done by hand but a <link="digging"><style="link">digging tool</style></link> will speed up the work. \
+Tilling <link="claysoil"><style="link">clay soils</style></link> requires <link="shovel"><style="link">metal tools</style></link>.
+
+In the tilling phase, any items with fertility values on the farm plot will be absorbed into the soil and contribute their <link="fertility"><style="link">fertility</style></link> to the plot.
+
+Because it is loose, <link="sandsoil"><style="link">sandy soil</style></link> does not retain nutrients very well, and fertilizers are only partly effective.
+"""
+
+[sowing]
+display_name = "Sow"
+description = """For crops to grow you have to sow seeds into <link="tilling"><style="link">tilled</style></link> soil."""
+
+[harvest]
+display_name = "Harvest"
+description = """Mature crops will be harvested."""
+
+# Midsummer event texts
+
+[sacrifice_window_calendar_pack_icon]
+display_name = "Early Summer"
+description = "Sacrifice items will be gathered in early summer."
+
+[sacrifice_window_calendar_sacrifice_icon]
+display_name = "Midsummer"
+description = "The bonfires are lit in Midsummer."
+
+# Structure tiers
+
+[earthfasttier]
+display_name = "Earthfast"
+description = """A very simple building style, consisting of wooden poles driven into the ground.\
+Earthfast buildings are quick and easy to build, but are not very durable in the long term.\
+They are referred to in the game as <b>shacks</b>."""
+
+[planktier]
+display_name = "Planks and Poles"
+description = """\
+Buildings constructed from poles and planks. These are more durable than earthfast structures, but are still sensitive to wear and damage from weather and other events. Plank buildings are called <b>sheds</b>.\
+"""
+
+[beamtier]
+display_name = "Cabins"
+description = """\
+Sturdier buildings built from interlocking wooden beams. Walls built from beams are very solid, but will eventually decay if the beams are in constant contact with the ground. These buildings are called <b>cabins</b>.\
+"""
+
+[cottagetier]
+display_name = "Cottages"
+description = """Structures built from a combination of stone and wood are called <b>cottages</b>."""
+
+[stonetier]
+display_name = "Stone Construction"
+description = """\
+Structures put together from quarried stone. These are very tough, can last almost forever, but take a lot of work and time to build.\
+"""
+
+[bricktier]
+display_name = "Brick Construction"
+description = """\
+Structures built from fired clay bricks. Brick construction is not as tough as solid stone, but much easier to build.\
+"""
+
+# Structure types etc
+
+[firehazard]
+display_name = "Fire Hazard"
+description = """This building uses fire for cooking or crafting, and generates sparks that can start fires near it. Be careful where you place it!"""
+
+[workshop]
+display_name = "Workshops"
+description = """\
+Workshops transform raw materials into tools, more advanced materials, or other useful things. \
+Workers are assigned to workshops automatically when you order items in the <link="second_tutorial"><style="link">stock manager</style></link>.\
+"""
+
+[potteryworkshop]
+display_name = "Potter"
+description = """\
+Potters transform <link="rawClay"><style="link">clay</style></link> into useful items like pots.
+
+Pottery <link="workshop"><style="link">workshops</style></link> include the <link="potter0"><style="link">Potter's Yard</style></link>.\
+"""
+
+[smithyworkshop]
+display_name = "Smithy"
+description = """\
+<link="smithy0"><style="link">Smithies</style></link> are <link="workshop"><style="link">workshops</style></link> that process <link="dwarvenTech"><style="link">metals</style></link>.\
+"""
+
+# Terrain types
+
+[claysoil]
+display_name = "Clay Soil"
+description = """\
+Heavier clay soils are found in lower-lying areas. These places usually spent extended amounts of time underwater when the glaciers were melting, and the water has winnowed away the lighter soils. \
+Clay soils are harder to work and require <link="shovel"><style="link">heavier tools</style></link>, but are more <link="fertility"><style="link">fertile</style></link>, and retain nutrients from fertilizers more effectively than lighter soils.
+
+If a lot of traffic passes over a clay tile, it will degenerate into <link="mud"><style="link">mud</style></link> that slows movement.
+
+Some plants <link="florapreferences"><style="link">prefer</style></link> to grow in clay soils.\
+"""
+
+[sandsoil]
+display_name = "Sandy Soil"
+description = """\
+The most common type of soil in northern climates that were once under glaciers is glacial till, a predominantly sandy soil with clay and gravel mixed in it. This till was formed when the glacier picked up soil and eroded the rocks it flowed over, and deposited as it withdrew. \
+Sandy soil is relatively easy to work, and can be turned and dug with simple tools, but it is not very <link="fertility"><style="link">fertile</style></link>. \
+Because it is loose, sand does not retain nutrients very well, and fertilizers are only partly effective.
+
+If a lot of traffic passes over a sand tile, it will degenerate into <link="mud"><style="link">mud</style></link> that slows movement.
+
+Some plants <link="florapreferences"><style="link">prefer</style></link> sandy soil.\
+"""
+
+[underworldtile]
+display_name = "Underworld Tile"
+description = """As your camp's <link="culturedef"><style="link">culture</style></link> spreads, more and more tiles on the map will acquire the underworld attribute. Certain plants will only grow on underworld tiles."""
+
+# Tools
+
+[efficiencydef]
+display_name = "Efficiency"
+description = """\
+A tool's efficiency is a measure of how much easier it makes work. A tool's efficiency multiplies the labor of the user. \
+For example, a goblin using a tool with an efficiency of 2.0 can get as much work done in the same time as two goblins without tools.
+
+Note that some jobs, like felling trees, cannot be done at all without the appropriate tools.\
+"""
+
+[tooltoughnessDef]
+display_name = "Tool Toughness"
+description = """The toughness of a tool or <link="weapondef"><style="link">weapons</style></link> determines how likely it is to break in use. The higher the toughness, the less likely the item is to break."""
+
+# Materials
+
+[woodmaterial]
+display_name = "Wood"
+description = """The northern forests are full of usable wood. \
+While the handles and other parts of more advanced tools may be made of wood, wooden tools and <link="weapondef"><style="link">weapons</style></link> refer specifically to items where the business end is made of wood, such as a digging stick or wooden spear. \
+Wood is a relatively soft material for this, so wooden tools and weapons will break relatively easily, and wooden weapons will struggle to penetrate armor.
+"""
+
+[bonematerial]
+display_name = "Bone"
+description = """Bone is a useful material for tools and weapons, as it is easy to work and can hold a very sharp edge."""
+
+[irondef]
+display_name = "Iron"
+description = """Iron is a useful material for tools, <link="weapondef"><style="link">weapons</style></link> and armor, as it is much harder than dwarven metal or any organic materials. \
+Iron only melts at high temperatures, so a forge is required to produce iron artifacts. Iron tools can sometimes be found in <link="ruinsdef"><style="link">ruins</style></link>."""
+
+# Combat
+
+[armorAndDamage]
+display_name = "Armor and Damage"
+description = """\
+<style="fluff">Then the blacksmith, Ilmarinen,
+Drew his broadsword from his girdle,
+From its sheath his blade of honor,
+Tried to slay the pike of Northland
+With the weapon of his forging;
+But he broke his sword in pieces,
+Did not harm the water-monster.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XL</style>
+
+Armor increases a creature's <b>armor value</b>. Armor value is the sum of a creature's <link="hitpoints"><style="link">hit points</style></link> and armor bonuses.
+
+When a creature is hit by an attack, if the attack's damage value exceeds their armor value, they receive a damage status. The effects of a damage status depend on its type. \
+Damage types include <link="dtcrushing"><style="link">crushing</style></link>, <link="dtslashing"><style="link">slashing</style></link> and <link="dtburning"><style="link">burning</style></link>.\
+"""
+
+[dangerous_object_def]
+display_name = "Dangerous Object"
+description = """This item is not really intended for use as a weapon, but if you get hit with it, it will hurt! Dangerous objects inflict double damage compared to other improvised weapons."""
+
+[dtburning]
+display_name = "Burning Damage"
+description = """\
+<style="fluff">Straightway Fire began his roarings,
+Labored to consume his brother,
+His beloved younger brother.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem IX</style>
+
+Fire is dangerous to all living things, and inflicts burning damage.\
+"""
+
+[dtcrushing]
+display_name = "Crushing Damage"
+description = """\
+Crushing damage is mostly done by <link="wthammer"><style="link">Hammer</style></link> <link="weapondef"><style="link">weapons</style></link>. Crushing damage is generally less debilitating than <link="dtslashing"><style="link">slashing damage</style></link>. Armor converts slashing damage to crushing damage.\
+"""
+
+[dtslashing]
+display_name = "Slashing Damage"
+description = """\
+<style="fluff">Lempo guides the sharpened hatchet,
+And the veins fell Hiisi severs.
+Quickly gushes forth a blood-stream,
+And the stream is crimson-colored.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VIII</style>
+
+Slashing damage is done by all kinds of edged and thrusting <link="weapondef"><style="link">weapons</style></link>, as well as claws and teeth. Armor converts slashing damage to <link="dtcrushing"><style="link">crushing damage</style></link>.\
+"""
+
+[improvweapon]
+display_name = "Improvised Weapon"
+description = """\
+This item is not really intended to be used as a weapon, so anyone armed with it suffers a penalty to their <link="fightingSkill"><style="link">Fighting</style></link> skill. Improvised weapons generally require both hands to wield.\
+"""
+
+[largeweapon]
+display_name = "Large Weapon"
+description = """Large weapons take two hands to wield, and therefore can't be used together with a shield."""
+
+[reachweapon]
+display_name = "Reach"
+description = """\
+<style="fluff">Chipped the splinters from the rafters,
+Cut the ceiling into fragments,
+Could not touch the Island-hero.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVII</style>
+
+This <link="weapondef"><style="link">weapon</style></link> lets its user keep the enemy at a distance, and therefore confers a +10 <link="fightingSkill"><style="link">Fighting</style></link> bonus on the defense.\
+"""
+
+[weapondef]
+display_name = "Weapon"
+description = """This object is designed to be used as a weapon. It inflicts two damage statuses when it hits an enemy."""
+
+[wptype]
+display_name = "Weapon Type"
+description = """\
+<link="weapondef"><style="link">Weapons</style></link> and improvised weapons are grouped into <b>weapon types</b>. \
+Weapon types include <link="wthammer"><style="link">Hammer</style></link> and <link="wtspear"><style="link">Spear</style></link>.\
+"""
+
+[wtblade]
+display_name = "Blades"
+description = """\
+<style="fluff">On the sword-point gleams the moonlight,
+On the blade the sun is shining,
+On the hilt the bright stars twinkle,
+On the edge a horse is neighing,
+On the handle plays a kitten,
+On the sheath a dog is barking.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIX</style>
+
+Blades are all <link="weapondef"><style="link">weapons</style></link> that rely primarily on <link="dtslashing"><style="link">slashing</style></link> with a cutting edge. A goblin skilled in the use of these weapons is knows as a Blades-goblin.\
+"""
+
+[wthammer]
+display_name = "Hammers"
+description = """\
+The Hammer type covers all kinds of <link="weapondef"><style="link">weapons</style></link> that are mainly used to smash an opponent, including axes, clubs and various improvised weapons. A goblin who becomes experienced in the use of these weapons will gain ranks in the Hammer-goblin skill.\
+"""
+
+[wtmissile]
+display_name = "Missile Weapons"
+description = """Missile weapons deliver damage at a distance. Missile weapons use the <link="shootingSkill"><style="link">Shooting</style></link> skill, and the amount of damage they do is determined by their ammunition."""
+
+[wtspear]
+display_name = "Spears"
+description = """\
+Spears are pointed <link="weapondef"><style="link">weapons</style></link> used with a thrusting action. They usually inflict <link="dtslashing"><style="link">slashing damage</style></link>. A goblin proficient in the use of spears will acquire ranks in the Spear-goblin skill.\
+"""
+
+[military_draft]
+display_name = "Military Draft"
+description = """\
+Drafted goblins will use anything laying nearby as a weapon. \
+Guard buildings allow you to assign better equipment for dedicated guard goblins.\
+"""
+
+# Statistics
+
+[agilityDef]
+display_name = "Agility"
+description = """Agility represents a creature's ability to dodge attacks and stay upright in challenging conditions."""
+
+[carrying_capacity_def]
+display_name = "Carrying Capacity"
+description = """Each creature has a carrying capacity that defines how much weight it can carry. A goblin can usually carry up to one unit of weight. Heavier items can be moved by <link="hauling"><style="link">hauling</style></link>."""
+
+[constitutionDef]
+display_name = "Constitution"
+description = """Constitution is a measure of how hardy a creature is. Creatures with a high Constitution are less likely to be stunned by attacks or catch diseases."""
+
+[fight_damage_mod_def]
+display_name = "Fighting Damage Modifier"
+description = """This is a modifier applied to the <link="armorAndDamage"><style="link">damage value</style></link> of this creature's attacks."""
+
+[fightingSkill]
+display_name = "Fighting Skill"
+description = """\
+The <b>Fighting skill</b> is a measure of how good a creature is at mêlée combat.\
+"""
+
+[defence_def]
+display_name = "Defence"
+description = """\
+"""
+
+[hitpoints]
+display_name = "Hit Points"
+description = """\
+<b>Hit points</b> represent a creature's ability to sustain <link="armorAndDamage"><style="link">damage</style></link>. For example, the average goblin has five hit points. \
+When a creature has as many damage statuses as they have hit points, they will be knocked out or even killed.\
+"""
+
+[moraledef]
+display_name = "Morale"
+description = """\
+A creature's <b>Morale</b> is a general measure of how good they're feeling. \
+The lower a creature's Morale, the more likely it is to run away from combat, and the worse it will perform at tasks in general.\
+Morale is based on <link="willpowerDef"><style="link">Willpower</style></link>.\
+"""
+
+[shoot_damage_modifier_def]
+display_name = "Shooting Damage Modifier"
+description = """This is a modifier applied to the <link="armorAndDamage"><style="link">damage value</style></link> of this creature's shooting attacks."""
+
+[shootingSkill]
+display_name = "Shooting Skill"
+description = "A creature's proficiency at ranged attacks."
+
+[willpowerDef]
+display_name = "Willpower"
+description = """A goblin's willpower is a measure of their mental fortitude when faced with adversity. Willpower is the basis of <link="moraledef"><style="link">Morale</style></link>."""
+
+[speedDef]
+display_name = "Speed"
+description = """The rate at which this creature moves.
+
+If a lot of traffic passes over a tile, it will degenerate into <link="mud"><style="link">mud</style></link> that slows movement.\
+"""
+
+[work_speed_def]
+display_name = "Working Speed"
+description = """\
+<b>Working Speed</b> is the rate at which this creature completes tasks. The default Working Speed of a goblin is 1.0.\
+"""
+
+# Magic
+
+[forestneutral_def]
+display_name = "The Keepers of the Woods are neutral"
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are waiting to see whether the goblins will respect them.
+
+To appease the Keepers, build a <link="bonfire"><style="link">bonfire</style></link> and make the appropriate <link="sacrifice_def"><style="link">sacrifices</style></link>, starting in Midsummer of Year 2."""
+
+[waterneutral_def]
+display_name = "The Keepers of the Waters are neutral"
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are waiting to see whether the goblins will respect them.
+
+If you start <link="fishingTech"><style="link">fishing</style></link>, remember to also build a <link="bonfire"><style="link">bonfire</style></link> and make the appropriate <link="sacrifice_def"><style="link">sacrifices</style></link>, starting in Midsummer of Year 2."""
+
+[foresthappy00_def]
+display_name = "The Keepers of the Woods are pleased"
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are pleased by your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+There is now a slightly lower chance that your structures will catch fire.
+
+<style="characteristics">\
+Structure Ignition Chance: <style="bonus">-0.05</style></style>\
+"""
+
+[foresthappy01_def]
+display_name = "The Keepers of the Woods are happy"
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are happy with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+There is now a lower chance that your structures will catch fire.
+
+<style="characteristics">\
+Structure Ignition Chance: <style="bonus">-0.1</style></style>\
+"""
+
+[waterhappy00_def]
+display_name = "The Keepers of the Waters are pleased"
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are pleased with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+Your fisher-goblins are now slightly more likely to catch a fish.
+
+<style="characteristics">\
+Fishing Failure Chance: <style="bonus">-0.05</style></style>\
+"""
+
+[waterhappy01_def]
+display_name = "The Keepers of the Waters are happy"
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are happy with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+Your fisher-goblins are now more likely to catch a fish.
+
+<style="characteristics">\
+Fishing Failure Chance: <style="bonus">-0.1</style></style>\
+"""
+
+[forestwrath00_def]
+display_name = "The Keepers of the Woods are disappointed."
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are disappointed by your <link="sacrifice_def"><style="link">sacrifices</style></link>.\
+"""
+
+[forestwrath01_def]
+display_name = "The Keepers of the Woods are displeased."
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are displeased by your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+There is now a slightly higher chance that your structures will catch fire, and stockpiles may spontaneously ignite.
+
+<style="characteristics">\
+Stockpile Spontaneous Ignition Chance: <style="malus">+0.05</style>
+Structure Ignition Chance: <style="malus">+0.05</style></style>\
+"""
+
+[forestwrath02_def]
+display_name = "The Keepers of the Woods are angry."
+description = """The <link="woodskeepers"><style="link">Keepers of the Woods</style></link> are displeased by your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+There is now a higher chance that your structures will catch fire, and stockpiles may spontaneously ignite.
+
+<style="characteristics">\
+Stockpile Spontaneous Ignition Chance: <style="malus">+0.1</style>
+Structure Ignition Chance: <style="malus">+0.1</style></style>\
+"""
+
+[waterwrath00_def]
+display_name = "The Keepers of the Waters are disappointed."
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are disappointed with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+"""
+
+[waterwrath01_def]
+display_name = "The Keepers of the Waters are displeased."
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are displeased with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+Your fisher-goblins are now slightly less likely to catch a fish, and their tools are slightly more likely to break.
+
+<style="characteristics">\
+Fishing Failure Chance: <style="malus">+0.05</style>
+Fishing Tool <link="tooltoughnessDef"><style="link">Toughness</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[waterwrath02_def]
+display_name = "The Keepers of the Waters are angry."
+description = """The <link="waterskeepers"><style="link">Keepers of the Waters</style></link> are angry with your <link="sacrifice_def"><style="link">sacrifices</style></link>. \
+Your fisher-goblins are now less likely to catch a fish, and their tools are more likely to break.
+
+<style="characteristics">\
+Fishing Failure Chance: <style="malus">+0.1</style>
+Fishing Tool <link="tooltoughnessDef"><style="link">Toughness</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+# Fluff
+
+[birdhome]
+display_name = "Bird-home"
+description = """\
+<style="fluff">Bird-home was said to be in the warm lands, where the birds migrate in the autumn. (...) A person from Bird-home was once seen in Oulu: they were so small, they couldn't reach a man's knee to hit it, but looked like they had a beard.
+
+Pudasjärvi. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+
+Like many Siberian peoples, the ancestors of the Finns believed that the earth was flat and the sky curved over it like a tent. \
+The North Star was the highest point of the sky, so therefore the further south you went, the lower the sky would get, until it eventually met the ground. \
+It therefore stood to reason that in the far south, people have to be <link="dwarves"><style="link">very short</style></link>, because the sky is so close.\
+
+Migratory birds were seen flying south for the winter, and Finns still call the Milky Way the bird-track. \
+It was believed that the birds spent the summer in the far south, so they called it lintukoto, the bird-home. \
+Finns believed that while the birds were there, they would fight the dwarves of Bird-home for food. \
+For some reason, cranes and dwarves were believed to have a special hatred for each other. \
+This is why cranes will sometimes drop <link="dwtrinket"><style="link">dwarven trinkets</style></link> when they return from the south.\
+"""
+
+[dwarves]
+display_name = "Dwarves"
+description = """\
+<style="fluff">According to the folk tale, the people of Bird-home were very small dwarves. The story doesn't recall where they were originally from, but Finns who used to drive freight to St. Petersburg said they had seen dwarves from Bird-home there.
+
+- Sortavala. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+The diminutive natives of <link="birdhome"><style="link">Bird-home</style></link>, dwarves travel all over the world. \
+They are known for their <link="dwarvenTech"><style="link">metalwork</style></link> and their love of alcohol.\
+"""
+
+[fls]
+display_name = "Finnish Literature Society SKS"
+description = """\
+<style="fluff">Shall I bring these songs together
+From the cold and frost collect them?
+Shall I bring this nest of boxes,
+Keepers of these golden legends,
+To the table in my cabin,
+Underneath the painted rafters,
+In this house renowned and ancient?
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), proem</style>
+
+The Finnish Literature Society SKS is a cultural organization founded in 1831 to collect and record Finnish heritage, and promote Finnish culture and literature. \
+SKS maintains extensive archives on Finnish folk and oral culture that go back to Elias Lönnrot's original work that led to the <style="link"><link="kalevala">Kalevala</link></style>.
+
+The quotes from SKS materials in the game are from the belief legend collection, used with permission from the Finnish Literature Society. The material has been gathered from all over Finland over the 19th and 20th centuries. \
+The texts have been translated and adapted by Michael Halila, Korppi Games.\
+"""
+
+[grimm]
+display_name = "Grimm's Fairy Tales"
+description = """A collection of German folk tales published by the brothers Jacob and Wilhelm Grimm from 1812 onwards, a likely inspiration for the <style="link"><link="kalevala">Kalevala</link></style>."""
+
+[kalevala]
+display_name = "Kalevala"
+description = """\
+<style="fluff">Mastered by desire impulsive,
+By a mighty inward urging,
+I am ready now for singing,
+Ready to begin the chanting.
+
+ - the Kalevala, trans. John Martin Crawford (1888), proem</style>
+
+The Finnish national epic, created by Elias Lönnrot (1802-1884) based on traditional Finnish and Karelian poetry. \
+Lönnrot heavily edited the oral poetry to create a unified Christian-nationalist epic of his own design.
+
+The quotes from the Kalevala in Goblin Camp are from the 1888 translation into English, via German, by John Martin Crawford. The spelling of the names has been restored to the proper Finnish form.\
+"""
+
+[kalevipoeg]
+display_name = "Kalevipoeg"
+description = """The Estonian national epic, created by Friedrich Reinhold Kreutzwald (1803-1882). Kreutzwald graduated from Tarto University's faculty of medicine in 1833, and took an interest in Estonian folklore. \
+Inspired by the publication of the <link="kalevala"><style="link">Kalevala</style></link> in 1835, he started working on an epic poem based on Estonian folk tales. \
+This became the Kalevipoeg, the Son of Kalev, published in 1853 but banned by Russian censors. It tells of the adventures of a powerful giant, Sohni, the son of Kalev, in Estonia, Finland and abroad.
+
+The quotes from the Kalevipoeg in Goblin Camp are from W.F. Kirby's 1894 prose translation into English."""
+
+[underworld_fluff]
+display_name = "The Underworld"
+description = """The underworld is the home of the goblins.
+
+<style="fluff">The underworld in Finnic mythology is a different, darker place that is home to spirits and creatures like goblins. \
+It isn't an evil place, but a similar environment to the middle world."""
+
+# Loading screen texts
+
+[loading1]
+description = """\
+In primeval times, a maiden,
+Beauteous Daughter of the Ether,
+Passed for ages her existence
+In the great expanse of heaven,
+O'er the prairies yet enfolded.\
+"""
+
+[loading2]
+description = """Seven hundred years she wandered,
+Ages nine of man's existence,
+Swam the ocean hither, thither,
+Could not rise above the waters."""
+
+[loading3]
+description = """Where her hand she turned in water,
+There arose a fertile hillock;
+Wheresoe'er her foot she rested,
+There she made a hole for fishes."""
+
+[loading4]
+description = """Where her head was pointed landward,
+There appeared wide bays and inlets;
+When from shore she swam a distance,
+And upon her back she rested,
+There the rocks she made and fashioned."""
+
+[loading5]
+description = """Then arose old Väinämöinen,
+With his feet upon the island,
+On the island washed by ocean,
+Broad expanse devoid of verdure."""
+
+[loading6]
+description = """Who for him should sow the island,
+Who for him the seeds should scatter;
+Thought at last of Pellervoinen,
+First-born of the plains and prairies."""
+
+[loading7]
+description = """Who the forest seeds should scatter.
+Pellervoinen, thus consenting,
+Sows with diligence the island,
+Seeds upon the lands he scatters."""
+
+[loading8]
+description = """Soon the fertile seeds were sprouting,
+Soon the forest trees were growing,
+Soon appeared the tops of fir-trees,
+And the pines were far outspreading."""
+
+[loading9]
+description = """Now the hero, Väinämöinen,
+Stands aloft to look about him,
+How the Sampsa-seeds are growing,
+How the crop of Pellervoinen;
+Sees the young trees thickly spreading,
+Sees the forest rise in beauty;"""
+
+# Tutorials
+
+[first_tutorial]
+display_name = "Welcome to Goblin Camp!"
+description = """\
+One of your most important tasks is to keep your goblins <link="food_sources"><style="link">fed</style></link>. If they get too hungry, they'll leave!
+
+The number at the top left of your screen tells you how many months you currently have food supplies for. If there's a red indicator next to it, then you're probably not producing enough food to keep your goblins fed!
+
+Goblins will eat by themselves, but they like to eat at <link="kitchendef"><style="link">kitchens</style></link>. Once you've got some food, it's a good idea to build a kitchen.
+
+Note that in order to build a structure, you don't need to acquire the materials beforehand. Just select the structure, build it, and the goblins will get what they need.
+
+The notification spheres at the top of the screen contain important information for you. Take a look at them to get started getting your goblins something to eat.
+"""
+
+[second_tutorial]
+display_name = "Storage and the Stock Manager"
+description = """\
+As your goblins find useful things in the new world, they'll be listed in the Stock Manager.
+
+You can also use the Stock Manager to set targets for items. For example, if you've found some <link="mushroom"><style="link">mushrooms</style></link>, you can set a target number for mushrooms in the Stock Manager, and your goblins will try to see that you have at least that many mushrooms at all times.
+
+Goblins are clever creatures (well, sometimes), and can figure out how to make things. So you don't need to set stock manager targets for components. For example, if you want your goblins to build <link="stoneaxe"><style="link">stone axes</style></link>, you don't need to set a target for <link="branch"><style="link">branches</style></link>. The goblins will understand that they need to get branches and do it.
+
+If items are left lying around, they'll decay and eventually be destroyed. To avoid that, your goblins will need places to <link="storage"><style="link">store</style></link> items. Properly stored items will decay slower, or not at all. Items can be stored in storehouses or stockpiles.
+
+If you click on an item, the Claim button means the goblins will use it and store it appropriately. The Ignore button means they'll leave it there.\
+"""
+
+[defence_tutorial]
+display_name = "Defending Your Camp"
+description = """\
+This new world can be a dangerous place, and you should think about defending your camp from enemies.
+
+Two kinds of defences are available at the start of the game: fortifications and guard buildings. Fortifications can slow enemies down and make it harder for them to get at your goblins or your buildings. You can also dig defensive ditches, even moats, to protect your camp.
+
+Usually, though, you'll need guards to protect your camp. Goblins can automatically be drafted into temporary guard duty. You can adjust how many goblins are drafted in the Jobs window. Drafted goblins will activate when enemies are near, and equip themselves with the nearest improvised weapon. They won't use shields or armor.
+
+You can assign goblins as full-time guards by building a guard building. Selecting the guard building lets you decide how the goblin guard is equipped. Guards will fight enemies who attack your camp.
+
+When building guard buildings, be mindful that not too many goblins are on guard duty or otherwise not engaged in working in the camp, or jobs will pile up quickly.\
+"""
+
+[jobs_tutorial]
+display_name = "Jobs"
+description = """\
+Your goblins have lots of jobs to do!
+
+When you tell your goblins to do something, like building a structure or cutting down a tree, they get a job. Cutting down a tree is one job, but building a building is many jobs: preparing the ground, getting the materials, bringing them to the building site, and so on.
+
+You can see how many unfinished jobs your goblins have by looking at the jobs number in the upper bar. It shows the number of outstanding jobs per goblin. If the number is green, there aren't a lot of jobs; when it turns yellow, there are several jobs per goblin. Orange and red mean a lot of jobs.
+
+You can see what jobs are outstanding by clicking the Jobs button on the bottom of the screen. It will show a listing of all the jobs, as well as a button where you can change job priorities. Jobs that are greyed out can't be done right now; they need a tool or a component, or some other job needs to be completed before they can be done.
+
+Be careful to not assign too many jobs to your goblins! If the jobs number is very high, give the goblins a moment to clear their backlog, or things won't get done.
+"""
+
+[mud_tutorial]
+display_name = "Mud"
+description = """Mud has appeared in your camp!
+
+When goblins walk over a tile, it becomes worn. When a tile becomes worn enough, it turns into <link="mud"><style="link">mud</style></link>. Mud slows movement quite a lot!
+
+To make it easier for your goblins to move around the camp, consider covering mud tiles with roadways, for example <link="duckboard"><style="link">duckboards</style></link>."""
+
+[basic_tools_tutorial]
+display_name = "Basic Tools"
+description = """To keep your camp running, it's a good idea to open the <link="second_tutorial"><style="link">stock manager</style></link> and order up some <link="basictoolsdef"><style="link">basic tools</style></link>.
+
+<link="stoneaxe"><style="link">Stone axes</style></link> are needed to cut down trees and chop firewood. \
+<link="diggingstick"><style="link">Digging sticks</style></link> are used for changing the ground level and removing tree stumps. \
+<link="claypot"><style="link">Clay pots</style></link> are your first available buckets for putting out fires.
+
+If you order these tools in the stock manager, the goblins will build them, or notifications will appear telling you what you need to get them built.\
+"""
+
+[ruins_tutorial]
+display_name = "Ruins"
+description = """Your goblins have caught a glimpse of some overgrown ruins in the forest.
+
+You can find interesting and useful things in ruins, but be careful! The ruins are likely to be deep in the <link="forestcover"><style="link">forest-cover</style></link>. The forest-cover looks like fog on the map, and if you order your goblins into it, they'll get lost.
+
+Forest-cover can be cleared by cutting down trees and bushes, or by building <link="ravenstatue"><style="link">raven statues</style></link>.
+
+There are also more ruins on the map beyond the first ones, and they all contain items worth discovering.
+"""
+
+[sacrifice_tutorial]
+display_name = "Sacrifices"
+description = """Each summer, the goblins make <link="sacrifice_def"><style="link">sacrifices</style></link> to the Keepers of the <link="woodskeepers"><style="link">forest</style></link> and the <link="waterskeepers"><style="link">river</style></link>.
+
+To make sacrifices, build a <link="bonfire"><style="link">bonfire</style></link>. In Early Summer, you'll be presented with the Sacrifice Manager, where you choose what to sacrifice. The goblins will then take the sacrificial items to the bonfire, and when Midsummer comes, light it. \
+The sacrificial items you need are determined by which structures you've built. For example, for each <link="fishing1"><style="link">fisher-goblin's shack</style></link> you build, the water-keepers will expect one <link="ceremonialfish"><style="link">ceremonial fish</style></link> as a sacrifice. \
+Sacrificial items can be ordered in the <link="second_tutorial"><style="link">stock manager</style></link> just like any other items.
+
+Sacrifices provide <link="culturedef"><style="link">culture points</style></link> and level up the <link="sac_tree_def"><style="link">sacrificial tree</style></link>. \
+You don't have to make any sacrifices, but beware: the spirits will be angry!"""
+
+[tech_tutorial]
+display_name = "Technology"
+description = """You now have enough <link="researchpoints"><style="link">research points</style></link> to discover a new technology! Technologies unlock new items and structures, and pathways to new technologies.
+
+The technology button at the bottom of the screen opens the tech tree. There are two kinds of technologies in the tree. Some can be unlocked with research points, and some by discovering an item or experiencing an event in the game.
+
+Research points accumulate each season. You can get more research points by summoning the <link="sac_tree_def"><style="link">sacrificial tree</style></link> and making <link="sacrifice_def"><style="link">sacrifices</style></link> to level it up."""
+
+[shaman_tutorial]
+display_name = "Shamanism"
+description = """You now have a goblin who is eligible to be appointed <link="shaman_def"><style="link">shaman</style></link>. A shaman is a ritual specialist who can commune with the spirits of the dead and access the Underworld.
+
+The shaman can use <link="vaki_def"><style="link">väki</style></link> to cast spells. You can unlock more spells by researching magical technologies.
+
+To appoint a shaman, build a <link="shamanhut"><style="link">shaman's hut</style></link>."""
+
+[reachability_tutorial]
+display_name = "Reachability"
+description = """Reachability is a technical concept in Goblin Camp.
+
+In order to determine if a structure or item can be accessed, or if a goblin is stuck somewhere, the game checks if it can find a path from it to the center of the camp. The center of the camp is either the gateway rock or if it has been summoned, the sacrificial tree. If the game can't find such a path, the object is marked as unreachable.
+
+So don't build your camp in such a way that there are structures that can't be reached from the gateway rock or sacrificial tree. If a goblin is marked as unreachable, try to make sure they have a path to the gateway rock or sacrificial tree."""
+
+[last_tutorial]
+display_name = "Enjoy Goblin Camp!"
+description = """You've now read all of the tutorials for Goblin Camp. Enjoy the game!"""
+
+[nettle_farming_tutorial]
+display_name = "Nettle Farming"
+description = """A farm plot planted with nettle seeds will produce nettle plants. \
+These need to be processed at a <link="nettleprocessing"><style="link">nettle yard</style></link>, to produce <link="nettleseedbag"><style="link">nettle seeds</style></link>, edible <link="nettlebunch"><style="link">nettle leaves</style></link> and <link="nettlestems"><style="link">nettle stems</style></link>, which can be retted into fiber.
+
+You can do this by building a nettle yard and ordering nettle leaf bunches or nettle stems in the stock manager."""
+
+# Camp tiers
+
+[clearing]
+display_name = "Clearing"
+
+[camp]
+display_name = "Camp"
+
+[settlement]
+display_name = "Settlement"
+
+[hamlet]
+display_name = "Hamlet"
+
+[village]
+display_name = "Village"
+
+[town]
+display_name = "Town"
+
+[stronghold]
+display_name = "Stronghold"

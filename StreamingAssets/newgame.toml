@@ -1,0 +1,10 @@
+# discoveries = ["farmingTech", "butcheryTech"]
+# items = ["stoneaxex3", "turnipseedbagx1000", "ryebreadx30", "claypot"]
+# startWithHardblooded = true
+# startingGoblins = 5
+
+# early stone age start
+#
+items = ["stoneaxex2", "ryebreadx10", "claypot", "diggingstickx2"]
+startWithHardblooded = true
+startingGoblins = 5

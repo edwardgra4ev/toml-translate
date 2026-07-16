@@ -1,0 +1,224 @@
+# 1.0 Shaman spells
+
+#  1.1 Starting shaman spells
+
+[summoncentraltree]
+display_name = "Summon Sacrificial Tree"
+keyword = "oneTime"
+effect = "summoncentraltree"
+vaki_cost = 2
+experience = 5
+unlockedBy = "shamanismTech"
+description = """<style="fluff">\
+Thither I have taken Otso,
+To the summit of the Gold-hill,
+To the copper-bearing mountain,
+Laid him in his silken cradle
+In the summit of a pine-tree,
+Where the winds and sacred branches
+Rock him to his lasting slumber.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>
+
+The shaman summons and blesses a <link="sac_tree_def"><style="link">sacrificial tree</style></link> for the camp.
+
+The sacrificial tree is the ceremonial center of a goblin camp, and of goblin <link="culturedef"><style="link">culture</style></link>. It generates <link="researchpoints"><style="link">research points</style></link> and <link="vaki_def"><style="link">väki</style></link>.
+
+As goblins make <link="sacrifice_def"><style="link">sacrifices</style></link> to the spirits, the tree levels up and the bonuses it grants to the camp increase."""
+
+[summongoblins]
+display_name = "Summon Goblins"
+keyword = "summon"
+effect = "goblinsummon"
+vaki_cost = 10
+experience = 10
+unlockedBy = "shamanismTech"
+description = """\
+<style="fluff">Next morning the Kalevide rose at daybreak and looked about him. Where the dwarf had vanished in blue smoke, he now beheld a sheet of blue water with rushes on the bank, and knew that he had unexpectedly chanced upon the entrance to Põrgu. His wearied comrades were still sleeping, and, without disturbing them, he stamped with his right foot, and the hidden strongly-guarded doors of Hades flew open.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVIII: The Kalevide’s Journey to Põrgu</style>
+
+The shaman calls to the <link="underworld_fluff"><style="link">underworld</style></link>, summoning more goblins to <link="population_def"><style="link">join the camp</style></link>."""
+
+# 1.2 Spirit spells
+
+[conscript_spirits_01]
+display_name = "Conscript Spirits 1"
+effect = "spirits"
+spirit_max = 10
+vaki_cost = 3
+experience = 4
+unlockedBy = "spirit_law"
+description = """<style="fluff">A daughter-in-law was once brought to a house, and she was so strong that she could mow an entire field in a day, no matter how big it was. The people in the house marveled at this, and eventually couldn't resist spying on the daughter-in-law. They saw her sitting on a rock and combing her hair. They heard someone in the field saying "You tie, I'll cut". The grain fell with a swish, but no-one could be seen.
+
+Sääminki, 1937. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+The shaman compels up to ten <link="spiritdef"><style="link">spirits</style></link> to haul and carry items in the camp. The spirits will work for a month."""
+
+[conscript_spirits_02]
+display_name = "Conscript Spirits 2"
+effect = "spirits"
+spirit_max = 20
+vaki_cost = 6
+experience = 8
+unlockedBy = "spirit_law"
+description = """<style="fluff">\
+There was a farmhand in a house. He was sent out on week-work to cut wood for a tar kiln. He laid down at the forest sauna for the whole week, and didn't do anything. On Saturday he got one load of wood and said: "let logs haul logs". Soon logs started showing up at the kiln one after another, and when men went to chop them up on Monday, all the wood was laid out at the kiln.
+
+Teuva, 1889. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+The shaman compels up to twenty <link="spiritdef"><style="link">spirits</style></link> to haul and carry items in the camp. The spirits will work for a month."""
+
+#[clearforestspell01]
+#display_name = "Clear the Forest 1"
+#effect = "clearforest"
+#spirit_max = 20
+#vaki_cost = 2
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#Once a farmer and farmhand went to cut wood together. The farmer never cut anything, but sat on a tree-stump and read a book; but he always finished his part before the farmhand. They were "little men" who did the cutting. The farmhand stole this book once. Then he, too, didn't have to cut by himself any more, he just sat and read the book. The wood got cut.
+#
+#Muurla. 1915. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman commands up to twenty <link="spiritdef"><style="link">spirits</style></link> to clear trees, bushes and undergrowth in the selected area."""
+#
+#[turnundeadspell01]
+#display_name = "Turn Undead 1"
+#effect = "turnundead"
+#targetMaxNumber = 10
+#vaki_cost = 1
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#When there was such a person who could talk the old folk in the graveyard into moving, he used to be called a wizard.
+#
+#Rovaniemi, 1935. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman uses their magic to drive up to ten minor undead away from the camp."""
+#
+#[uprootspell01]
+#display_name = "Uproot Stumps 1"
+#effect = "uproot"
+#spirit_max = 10
+#vaki_cost = 1
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#Lazy-Jaakko was hoeing a field, and he was called lazy for doing so little. Lazy-Jaakko said: "Boys, start hoeing." Jaakko then sat at the end of the field and watched the turf fly, but you couldn't see anything.
+#
+#Kauhava. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman compels up to ten <link="spiritdef"><style="link">spirits</style></link> to uproot tree stumps in the selected area."""
+
+# 2.0 Wind spells
+
+[changewindspell]
+display_name = "Change Wind"
+vaki_cost = 1
+experience = 2
+unlockedBy = "windlaw"
+description = """<style="fluff">Then the sailor spake as follows,
+These the words of Lemminkäinen:
+"Blow, ye winds, and drive me onward,
+Blow ye steady, winds of heaven.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIX</style>
+
+The shaman calls on the spirits to change the direction the wind is blowing.
+
+<style="fluff">The power to change the wind was a magical power all Finns were believed to possess.
+
+"The cook stated the matter to him, and John, as I anticipated, sided with the cook, and said that he himself had been in a ship where they had a head wind for a fortnight, and the captain found out at last that one of the men, whom he had had some hard words with a short time before, was a Fin, and immediately told him if he didn’t stop the head wind he would shut him down in the fore peak. The Fin would not give in, and the captain shut him down in the fore peak, and would not give him anything to eat. The Fin held out for a day and a half, when he could not stand it any longer, and did something or other which brought the wind round again, and they let him up.
+
+“There,” said the cook, “what you think o’ dat?”
+
+I told him I had not doubt it was true, and that it would have been odd if the wind had not changed in fifteen days, Fin or no Fin.
+
+“Oh,” says he, “go ‘way! You think, ‘cause you been to college, you know better than anybody. You know better than them as has see it with their own eyes. You wait till you’ve been to sea as long as I have, and you’ll know.”"
+
+ - Richard Henry Dana Jr., Two Years Before the Mast (1840)</style>"""
+
+[summonwindhead]
+display_name = "Summon Wind-head"
+effect = "windhead"
+vaki_cost = 5
+experience = 6
+unlockedBy = "windlaw"
+description = """\
+<style="fluff">"Turn, O man-of-war, from Pohja,
+Turn thy back upon the strangers,
+Turn thou to my distant country!
+Rock, O winds, my magic vessel,
+Homeward drive my ship, O billows,
+Lend the rowers your assistance,
+Give the oarsmen easy labor,
+On this vast expanse of waters!"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>
+
+The shaman summons a whirlwind. \
+The whirlwind will be cast at a target tile or enemy, and will seek out other enemies in the vicinity. \
+It will then travel with the wind until dissipating.
+"""
+
+# 3.0 Earth spells
+
+[lower_earth]
+display_name = "Lower Earth"
+magnitude = 1
+vaki_cost = 3
+experience = 4
+unlockedBy = "shamanismTech"
+description = "The shaman calls on the powers of the underworld and lowers the surface of the ground."
+
+[raise_earth]
+display_name = "Raise Earth"
+magnitude = 1
+vaki_cost = 3
+experience = 4
+unlockedBy = "shamanismTech"
+description = "The shaman calls on the powers of the underworld and raises the earth."
+
+[level_earth]
+display_name = "Level Earth"
+magnitude = 1
+vaki_cost = 3
+experience = 3
+unlockedBy = "shamanismTech"
+description = "The shaman calls on the powers of the underworld and levels the surface of the ground."
+
+#[summontree]
+#display_name = "Summon Tree"
+#effect = "treesummon"
+#vaki_cost = 2
+#spiritCost = 1
+##unlockedBy = "shamanismTech"
+#description = """The shaman summons a non-holy tree and houses a spirit in it. The tree will immediately grow to its full size. \
+#The spell summons a tree that could naturally grow on the target tile."""
+#
+#[summonbush]
+#display_name = "Summon Bush"
+#effect = "bushsummon"
+#vaki_cost = 1
+##unlockedBy = "shamanismTech"
+#description = "The shaman summons a bush that could naturally grow on the target tile."
+
+# 4.0 Water spells
+
+[summonwater01]
+display_name = "Summon Water"
+effect = "watersummon"
+magnitude = 1
+vaki_cost = 2
+experience = 2
+unlockedBy = "shamanismTech"
+description = """The shaman summons a burst of water over the target tile. Very handy for putting out fires!"""
+
+# 5.0 Fire spells
+
+[startfire01]
+display_name = "Start Fire"
+effect = "firestarter"
+magnitude = 1
+vaki_cost = 1
+experience = 2
+unlockedBy = "shamanismTech"
+description = "The shaman starts a fire around the target tile."

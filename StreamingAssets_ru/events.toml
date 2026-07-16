@@ -1,0 +1,806 @@
+﻿# 1.0 Events
+#  1.1 Early game fixed events
+
+
+# 1.1 Early game fixed events
+
+[firstfallgoblins]
+type = "spawn"
+timing = "fixed"
+logtext = "Some more refugees from the underworld have joined your camp!"
+year = 2
+month = 1
+spawns = [
+    { creature = "goblin", amount = "2-4", location = "gateway" },
+]
+
+# 1.2 Annual events
+
+[spring_flood_event]
+type = "flood"
+timing = "annual"
+logtext = "A distant rumble of water is heard in the camp."
+probability = 0.95
+duration = 1
+month = 7
+
+[fallcranemigration]
+description = "Краны мигрируют на юг на зиму."
+type = "spawn"
+timing = "annual"
+start_year = 3
+probability = 0.8
+season = "fall"
+repeats = "no"
+spawns = [
+    { creature = "crane", status = "migratory", amount = "4-8", location = "north" },
+]
+
+[springcranemigration]
+description = "Краны возвращаются с войны с гномами на юге."
+type = "spawn"
+timing = "annual"
+start_year = 2
+probability = 0.8
+season = "spring"
+repeats = "no"
+spawns = [
+    { creature = "crane", status = ["migratory", "ravenous", "enemy"], amount = "3-5", location = "south" },
+]
+
+#[salmonrun]
+#description = "The salmon are migrating upriver to spawn!"
+#timing = "annual"
+#start_year = 1
+#probability = 0.95
+#month = 10
+
+
+# 1.3 Weather events
+
+#[drought]
+#type = "weather"
+#timing = "weather"
+#season = "summer, fall"
+#logtext = "The weather is unusually dry."
+#stockpile_spontaneous_ignition_chance_mod = +0.05
+#base_ignite_chance_mod = +0.1
+#probability = 0.2
+#duration = 2
+#description = "The weather is unusually dry, increasing the risk of fire."
+
+
+# 1.4 Camp events
+
+[quietcamp]
+description = "В этом месяце в лагере тихо."
+type = "nothing"
+timing = "random"
+
+#[springriver]
+#description = "Spring floods and detritus."
+#type = "spawn"
+#timing = "random"
+#start_year = 2
+#season = "spring"
+#spawns = [
+#    { item = "woodlog", amount = "0-5", location = "south" },
+#]
+
+# 2.0 External events
+
+# 2.1 Deep woods events
+
+[quietwoods]
+type = "nothing"
+timing = "random"
+description = "Глубокие леса тихие."
+
+[quietwoods2]
+type = "nothing"
+timing = "random"
+
+[quietwoods3]
+type = "nothing"
+timing = "random"
+
+[quietwoods4]
+type = "nothing"
+timing = "random"
+start_year = 3
+
+[quietwoods5]
+type = "nothing"
+timing = "random"
+start_year = 5
+
+[quietwoods6]
+type = "nothing"
+timing = "random"
+start_year = 5
+
+[quietwoods7]
+type = "nothing"
+timing = "random"
+start_year = 5
+
+[quietwoods8]
+type = "nothing"
+timing = "random"
+start_year = 5
+
+[quietwoods9]
+type = "nothing"
+timing = "random"
+start_year = 5
+
+[quietwoods10]
+type = "nothing"
+timing = "random"
+start_year = 10
+
+[prettywoods]
+type = "nothing"
+timing = "random"
+logtext = "The forest looks unusually lovely for this time of the year."
+
+[deathfolkmigration]
+type = "spawn"
+timing = "random"
+description = "Эти беспокойные духи направляются в страну мертвых."
+keyword = "notNorth"
+start_year = 2
+logtext = "A chill wind blows from the south."
+spawns = [
+    { creature = "deathfolk", status = ["migratory"], amount = "1-5", location = "southfog" },
+]
+sfx = "deathfolk"
+
+#[dwarfthief]
+#type = "spawn"
+#timing = "random"
+#description = "Thief! Protect the hoard from skulking filth!"
+#spawns = [
+#    { creature = "dwarffootpad", amount = "1", equipment = ["dwdagger", "leatherjerkin:50%"]}
+#]
+
+
+[ravenevent]
+type = "spawn"
+timing = "random"
+description = "Полет воронов."
+spawns = [
+    { creature = "raven", amount = "2-5", location = "anyedge"}
+]
+
+# 2.1.1 Deep woods wolf events
+
+[scrawnywolvesfall]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_year = 2
+end_camp_tier = 1
+season = "fall"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "1-3", location = "anyfog" },
+]
+sfx = "enemy"
+
+[scrawnywolveswinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_year = 2
+end_camp_tier = 1
+season = "winter"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "1-3", location = "anyfog" },
+]
+sfx = "enemy"
+
+[scrawnywolvesspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_year = 2
+start_camp_tier = 1
+end_camp_tier = 1
+season = "spring"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "2-4", location = "anyfog" },
+]
+sfx = "enemy"
+
+[scrawnywolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 2
+end_camp_tier = 2
+season = "winter"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+]
+sfx = "enemy"
+
+[scrawnywolfpackspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 2
+end_camp_tier = 2
+season = "spring"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "4-6", location = "anyfog" },
+]
+sfx = "enemy"
+
+[twinscrawnywolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 3
+end_camp_tier = 3
+season = "winter"
+logtext = "A distant howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+    { creature = "wolf", status = ["scrawny", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" }
+]
+sfx = "enemy"
+
+[leanwolvesfall]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 3
+end_camp_tier = 3
+season = "fall"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "1-3", location = "anyfog" },
+]
+sfx = "enemy"
+
+[leanwolveswinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 3
+end_camp_tier = 3
+season = "winter"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "1-3", location = "anyfog" },
+]
+sfx = "enemy"
+
+[leanwolvesspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 3
+end_camp_tier = 3
+season = "spring"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "2-4", location = "anyfog" },
+]
+sfx = "enemy"
+
+[leanwolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 4
+end_camp_tier = 4
+season = "winter"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+]
+sfx = "enemy"
+
+[twinleanwolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 4
+end_camp_tier = 4
+season = "winter"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" }
+]
+sfx = "enemy"
+
+[leanwolfpackspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 4
+end_camp_tier = 4
+season = "spring"
+logtext = "A threatening howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["lean", "slavering", "wild", "enemy"], amount = "4-6", location = "anyfog" },
+]
+sfx = "enemy"
+
+[slaveringwolvesfall]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 5
+end_camp_tier = 5
+season = "fall"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "2-4", location = "anyfog" },
+]
+sfx = "enemy"
+
+[slaveringwolveswinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 5
+end_camp_tier = 5
+season = "winter"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "2-2", location = "anyfog" },
+]
+sfx = "enemy"
+
+[slaveringwolvesspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 5
+end_camp_tier = 5
+season = "spring"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+]
+sfx = "enemy"
+
+[slaveringwolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 6
+end_camp_tier = 6
+season = "winter"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "4-7", location = "anyfog" },
+]
+sfx = "enemy"
+
+[twinslaveringwolfpackwinter]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 6
+end_camp_tier = 6
+season = "winter"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" },
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "3-5", location = "anyfog" }
+]
+sfx = "enemy"
+
+[slaveringwolfpackspring]
+type = "spawn"
+timing = "random"
+description = "Некоторые волки голодны."
+start_camp_tier = 6
+end_camp_tier = 6
+season = "spring"
+logtext = "A menacing howling is heard in the camp."
+spawns = [
+    { creature = "wolf", status = ["slavering", "wild", "enemy"], amount = "5-8", location = "anyfog" },
+]
+sfx = "enemy"
+
+# 2.1.2 Deep woods gravefolk events
+
+[rottinggravefolk]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 1
+end_camp_tier = 2
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "3-6", location = "anyfog" },
+]
+sfx = "spooky"
+
+[rottinggravefolksquad]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 2
+end_camp_tier = 3
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "5-8", location = "anyfog" },
+]
+sfx = "spooky"
+
+[rottinggravefolktwinsquad]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 3
+end_camp_tier = 4
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "5-8", location = "anyfog" },
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "5-8", location = "anyfog" }
+]
+sfx = "spooky"
+
+[rottinggravefolkswarm]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 3
+end_camp_tier = 4
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "8-12", location = "anyfog" },
+]
+sfx = "spooky"
+
+[rottinggravefolkmass]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 4
+end_camp_tier = 5
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "12-20", location = "anyfog" },
+]
+sfx = "spooky"
+
+[rottinggravefolktwinmass]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 5
+end_camp_tier = 6
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "12-20", location = "anyfog" },
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "12-20", location = "anyfog" }
+]
+sfx = "spooky"
+
+[rottinggravefolkhorde]
+type = "spawn"
+timing = "random"
+keyword = ["gravefolkevent", "horde"]
+logtext = "A strong stench of decay wafts into the camp."
+start_camp_tier = 6
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "rotting", "enemy"], amount = "20-30", location = "anyfog" },
+]
+sfx = "spooky"
+
+[gravefolkmass]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 6
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" },
+]
+sfx = "spooky"
+
+[gravefolktwinmass]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 6
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" },
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" }
+]
+sfx = "spooky"
+
+[gravefolktriplemass]
+type = "spawn"
+timing = "random"
+logtext = "A stench of decay wafts into the camp."
+start_camp_tier = 6
+spawns = [
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" },
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" },
+    { creature = "gravefolk00", status = ["wrecker", "enemy"], amount = "12-20", location = "anyfog" }
+]
+sfx = "spooky"
+
+# 2.1.3 Deep woods human events
+
+[humanvandalpossespring]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 3
+end_camp_tier = 3
+season = "spring"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "3-5", location = "anyfog", equipment = "pitchfork"}
+]
+sfx = "enemy"
+
+[humanvandalpossesummer]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 3
+end_camp_tier = 3
+season = "summer"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "3-5", location = "anyfog", equipment = "pitchfork"}
+]
+sfx = "enemy"
+
+[humanvandalpossefall]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 3
+end_camp_tier = 3
+season = "fall"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "3-5", location = "anyfog", equipment = "pitchfork"}
+]
+sfx = "enemy"
+
+[humanvandalsquadspring]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 4
+end_camp_tier = 4
+season = "spring"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "4-8", location = "anyfog", equipment = "pitchfork"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "1-2", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalsquadsummer]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 4
+end_camp_tier = 4
+season = "summer"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "4-8", location = "anyfog", equipment = "pitchfork"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "1-2", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalsquadfall]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 4
+end_camp_tier = 4
+season = "fall"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "4-8", location = "anyfog", equipment = "pitchfork"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "scrawny"], amount = "1-2", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalpackspring]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+end_camp_tier = 5
+season = "spring"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "6-10", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "2-4", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalpacksummer]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+end_camp_tier = 5
+season = "summer"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "6-10", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "2-4", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalpackfall]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+end_camp_tier = 5
+season = "fall"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "6-10", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "2-4", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalmassspring]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+season = "spring"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "8-12", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "3-6", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalmasssummer]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+season = "summer"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "8-12", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "3-6", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalmassfall]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 5
+season = "fall"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "8-12", location = "anyfog", equipment = "woodspear"},
+    { creature = "humanvandal", status = ["vandal", "enemy", "lean"], amount = "3-6", location = "previous", equipment = "ironaxe"}
+]
+sfx = "enemy"
+
+[humanvandalgangspring]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 6
+season = "spring"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "3-6", location = "anyfog", equipment = ["woodspear", "woodshield"]},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "2-4", location = "previous", equipment = "ironaxe"},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "8-14", location = "previous", equipment = "woodspear"},
+]
+sfx = "enemy"
+
+[humanvandalgangsummer]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 6
+season = "summer"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "3-6", location = "anyfog", equipment = ["woodspear", "woodshield"]},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "2-4", location = "previous", equipment = "ironaxe"},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "8-14", location = "previous", equipment = "woodspear"},
+]
+sfx = "enemy"
+
+[humanvandalgangfall]
+type = "spawn"
+timing = "random"
+logtext = "Some angry creatures are approaching!"
+start_camp_tier = 6
+season = "fall"
+spawns = [
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "3-6", location = "anyfog", equipment = ["woodspear", "woodshield"]},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "2-4", location = "previous", equipment = "ironaxe"},
+    { creature = "humanvandal", status = ["vandal", "enemy"], amount = "8-14", location = "previous", equipment = "woodspear"},
+]
+sfx = "enemy"
+
+# Disabled until reachability checks are implemented
+#[wanderinggoblin]
+#type = "spawn"
+#timing = "random"
+#description = "A wandering goblin has found your camp."
+#start_year = 3
+#logtext = "A wandering goblin arrives in your camp."
+#spawns = [
+#    {creature = "goblin", amount = "1", location = "anyedge", trait = ["wanderer"] }
+#]
+
+# 3.0 Sacrifice events
+
+[foresthappy00]
+keyword = "foresthappy"
+type = "content"
+duration = 12
+logtext = "The Keepers of the Woods are pleased."
+structure_ignite_chance_mod = -0.05
+
+[foresthappy01]
+keyword = "foresthappy"
+type = "content"
+duration = 12
+logtext = "The Keepers of the Woods are happy."
+structure_ignite_chance_mod = -0.1
+
+[waterhappy00]
+keyword = "waterhappy"
+type = "content"
+duration = 12
+logtext = "The Keepers of the Waters are pleased."
+fishing_failure_chance_mod = -0.05
+
+[waterhappy01]
+keyword = "waterhappy"
+type = "content"
+duration = 12
+logtext = "The Keepers of the Waters are happy."
+fishing_failure_chance_mod = -0.1
+
+[forestwrath00]
+keyword = "forestwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Woods are disappointed."
+
+[forestwrath01]
+keyword = "forestwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Woods are displeased."
+stockpile_spontaneous_ignition_chance_mod = +0.05
+structure_ignite_chance_mod = +0.05
+fire_spirit_chance_mod = +0.05
+
+[forestwrath02]
+keyword = "forestwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Woods are angry."
+stockpile_spontaneous_ignition_chance_mod = +0.1
+structure_ignite_chance_mod = +0.1
+fire_spirit_chance_mod = +0.1
+
+[waterwrath00]
+keyword = "waterwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Waters are disappointed."
+
+[waterwrath01]
+keyword = "waterwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Waters are displeased."
+fishing_failure_chance_mod = +0.05
+spear_fishing_tool_toughness = -5
+
+[waterwrath02]
+keyword = "waterwrath"
+type = "wrath"
+duration = 12
+logtext = "The Keepers of the Waters are angry."
+fishing_failure_chance_mod = +0.1
+spear_fishing_tool_toughness = -10

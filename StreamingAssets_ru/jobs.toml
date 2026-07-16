@@ -1,0 +1,259 @@
+﻿# clearing jobs
+
+[fell_tree]
+display_name = "Упало дерево"
+target = "tree"
+work = 5.0
+tool = "chopping"
+tool_required = true
+keyword = ["strength", "lumbering"]
+experience = 1
+animation = "ChoppingDownTree"
+
+[clear_bush]
+display_name = "Ясный Буш"
+target = "bush"
+work = 8.0
+tool = "clearing"
+keyword = "pioneer"
+experience = 0.5
+animation = "TillByHand"
+
+[clear_stump]
+display_name = "Чистый пень"
+target = "stump"
+work = 30.0
+tool = "chopping"
+tool_required = true
+keyword = ["strength", "lumbering"]
+experience = 1
+animation = "HarvestingFlora"
+
+[remove_stump]
+display_name = "Удалить Stump"
+target = "stump"
+work = 100.0
+tool = "bartool"
+toolToughness = -20
+tool_required = true
+keyword = ["strength", "lumbering"]
+experience = 2
+animation = "StumpRemoval"
+
+# farming jobs
+
+[till_field]
+display_name = "Заговор на ферме"
+work = 2.0
+tool = "digging"
+toolToughness = +5
+keyword = "farmer"
+experience = 0.1
+
+[swidden_firewatch_job]
+display_name = "Swidden Firewatch"
+
+[sow_field]
+display_name = "Совхозный участок"
+work = 1.7
+keyword = "farmer"
+experience = 0.1
+
+[harvest_root]
+display_name = "Урожай корнеплодов"
+work = 2.5
+keyword = "farmer"
+experience = 0.1
+animation = "TillByHand"
+tool = "hoeing"
+
+[weed_field]
+display_name = "Сорняковое поле"
+tool = "hoeing"
+keyword = ["farmer", "maintenance"]
+experience = 0.1
+
+[tidy_field_job]
+display_name = "Переместить предметы из фермерского участка"
+
+[harvest_grain]
+display_name = "Урожай зерновых культур"
+work = 1.1
+keyword = "farmer"
+tool = "sickle"
+experience = 0.5
+animation = "TillByHand"
+
+[muck_field]
+display_name = "Мак Филд"
+keyword = ["farmer"]
+experience = 0.1
+
+[turn_midden]
+display_name = "Повернуть Мидден"
+keyword = ["farmer"]
+experience = 0.1
+tool = "midden_tool"
+tool_required = true
+
+# hauling jobs
+
+[store_item]
+display_name = "Хранить элемент"
+keyword = ["hauler"]
+experience = 0.1
+
+[bring_food_to_kitchen]
+display_name = "Принесите еду на кухню"
+keyword = ["hauler"]
+experience = 0.05
+
+[bring_sacrificial_item]
+display_name = "Принеси жертву в костёр"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_food]
+display_name = "Хранить еду"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_armament]
+display_name = "Хранить оружие"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_bucket]
+display_name = "Магазин ковша"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_tool]
+display_name = "Инструмент магазина"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_product]
+display_name = "Продукт магазина"
+keyword = ["hauler"]
+experience = 0.1
+
+[bring_material]
+display_name = "Принесите крафтовые материалы"
+keyword = ["hauler"]
+experience = 0.1
+
+[store_swidden_item]
+display_name = "Переместить органический материал в скользящий"
+keyword = ["hauler"]
+experience = 0.05
+
+[store_firewood]
+display_name = "Магазин Firewood"
+keyword = ["hauler"]
+experience = 0.05
+
+[bring_construction_materials]
+display_name = "Принесите строительные материалы"
+keyword = ["hauler"]
+experience = 0.1
+
+[refill_job]
+display_name = "Пополнить Scuttlebutt"
+keyword = ["hauler"]
+experience = 0.1
+tool = "bucket"
+tool_required = true
+
+# maintenance jobs
+
+[maintain_wood_structure]
+display_name = "Поддерживайте деревянную структуру"
+keyword = ["builder", "maintenance"]
+experience = 1
+
+# fishing jobs
+
+[spearfishing_job]
+display_name = "подводная рыбалка"
+work = 120
+toolToughness = -10
+# original failureChance = 0.55
+failureChance = 0.15
+tool = "spearfishingtool"
+tool_required = true
+keyword = "fisher"
+experience = 1
+
+# exploration jobs
+
+[explore_ruin]
+display_name = "Исследуйте руины"
+work = 5.0
+keyword = "pioneer"
+experience = 10
+
+# digging jobs
+
+# One iteration of the diggingJob will dig .25 units of earth.
+[digging_job]
+display_name = "копать"
+work = 8
+toolToughness = +9
+tool = "digging"
+tool_required = true
+keyword = "digger"
+experience = 0.2
+
+# firefighting jobs
+
+[put_out_fire_job]
+display_name = "Потушить огонь"
+keyword = "firefighter"
+experience = 2
+
+# machine work
+[work_machine_job]
+display_name = "Работа на машине"
+
+# misc.
+
+[build_structure_job]
+display_name = "строить"
+experience = 2
+keyword = "builder"
+
+[clear_structure_area_job]
+display_name = "Чистая строительная зона"
+
+[craft_items_job]
+display_name = "Ремесленные предметы"
+
+[cook_job]
+display_name = "Кулинария"
+experience = 4
+keyword = "cooking"
+
+[demolish_job]
+display_name = "Снести здание"
+
+[ignite_bonfire_job]
+display_name = "Скачать Bonfire"
+
+[heat_sauna_job]
+display_name = "Тепловая сауна"
+
+[leave_camp_job]
+display_name = "Оставить лагерь"
+
+[shaman_job]
+display_name = "Шаман"
+
+[guard_job]
+display_name = "гвардия"
+
+[military_job]
+display_name = "Военный"
+
+[sleep_job]
+display_name = "спать"

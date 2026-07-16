@@ -1,0 +1,1133 @@
+﻿# 1.0 Game intro texts
+# 2.0 Interface texts
+#  2.1 Buttons
+#  2.2 Upper bar numbers
+#  2.3 Stock Manager
+#  2.4 Main Menu
+#  2.5 Settings Window
+# 3.0 General concepts
+#  3.1 Central concepts
+#  3.2 Other concepts
+#  3.3 Crops and farming
+#  3.4 Spirits, Keepers and sacrifices
+# 4.0 Longer explanatory texts
+# 5.0 Camp bonuses
+#  5.1 Farming bonuses
+
+# Farming interface texts
+# Midsummer event texts
+# Structure tiers
+# Structure types etc
+# Terrain types
+# Tools
+# Materials
+# Combat
+# Statistics
+# Magic
+# Fluff
+# Loading screen texts
+# Tutorials
+# Camp tiers
+
+# 1.0 Game intro texts
+
+[demointro]
+description = "На протяжении веков пути между мирами были закрыты.\n\nНо теперь как будто ветер дул и тряс Великое Дерево, и ворота снова открываются.\n\nНебольшая группа любопытных гоблинов, спасающихся от жестокого правления короля Гоблина подземного мира, нашла портал в среднее царство. За его пределами находится красивый, но опасный северный лес. Любопытные гоблины хотели бы сделать для себя в нем новый дом. Теперь вам предстоит вести их по пути в новый мир."
+
+[endOfDemo]
+display_name = "Демо-конец"
+description = "Спасибо за демо-версию Goblin Camp!\n\nНадеемся, вам понравилось пробовать нашу игру. Если вам понравилось то, что вы увидели, пожалуйста, <style=\"link\"><link=\"steam\"> купите полную версию в Steam</style></link>.\n"
+
+[gameOver]
+display_name = "Игра закончена"
+description = "Все гоблины либо погибли, либо покинули лагерь!\n\nВозможно, однажды путешественник наткнется на остатки вашего лагеря и задастся вопросом, что случилось с людьми, которые здесь жили. Но на данный момент сайт заброшен и заброшен."
+
+# 2.0 Interface texts
+
+# 2.1 Buttons
+
+[structuresButton]
+display_name = "строить"
+
+[stockmanager]
+display_name = "Фондовый менеджер"
+
+[ordersButton]
+display_name = "Заказы"
+
+[jobsButton]
+display_name = "Работа"
+
+[overlaysButton]
+display_name = "накладки"
+
+[wizardmenuButton]
+display_name = "Волшебное меню"
+
+[feedbackButton]
+display_name = "обратная связь"
+
+[techButton]
+display_name = "Технология"
+
+[spellsButton]
+display_name = "Заклинания"
+
+[statsButton]
+display_name = "Статистика"
+
+[sacrificeButton]
+display_name = "Жертва"
+
+[toggle_foliage_button]
+display_name = "Листья туглей"
+description = "Видимость листвы. Скрытая листва значительно облегчает просмотр происходящего в лесу."
+
+[toggle_ignore_indicators]
+display_name = "Проигнорированные индикаторы пунктов"
+description = "Переключает индикаторы игнорируемых красных элементов на или вне. Показатели отображаются выше любого элемента, который является <style=\"link\"><link=\"ignore\">ignored</link></style>."
+
+# 2.2 Upper bar numbers
+
+[food_number]
+display_name = "Пищевые точки"
+description = "Это число показывает, сколько месяцев <link=\"foodpoint\"><style=\"link\">food</style></link> у вашего лагеря. Пища может быть получена из различных источников <link=\"food sources\"><style=\"link\">sources</style></link>."
+
+[food_tooltip_line_1]
+description = "Продукты, необходимые в год:"
+
+[food_tooltip_line_2]
+description = "Теоретический макс производства:"
+
+[food_tooltip_line_3]
+description = "Баланс пищевой точки:"
+
+[food_tooltip_line_4]
+description = "Месяцы хранения продуктов:"
+
+[kitchendef]
+display_name = "Кухни"
+description = "Гоблины — общительные существа и любят есть вместе на кухнях в конце каждого сезона. Кухни - это структуры, где повар-гоблины готовят <link=\"foodpoint\"><style=\"link\">food</style></link> для общего числа жителей лагеря, равного вместимости кухни. Каждому гоблину будет назначена кухня, на которой можно поесть, если есть вместимость.\n\nПовар-гоблин постарается, чтобы блюдо включало все необходимые <link=\"питательное питание\"><style=\"link\">питательные вещества</style></link>. Еда всегда будет включать в себя что-то выпить.\n\nЕсли у гоблина нет кухни, они будут есть еду, которую найдут в лагере. Если они не смогут найти еду, они пойдут голодными и в конце концов покинут лагерь."
+
+[kitchen_tooltip_line_1]
+description = "Население"
+
+[kitchen_tooltip_line_2]
+description = "Кухонные сидения:"
+
+[jobsnumber]
+display_name = "Работа"
+description = "Гоблины - добросовестные существа, и они будут стараться выполнять все задания, которые им поручены. Будьте осторожны, чтобы не дать им завалиться слишком большим количеством рабочих мест!"
+
+[jobs_tooltip_line_1]
+description = "Всего рабочих мест:"
+
+[jobs_tooltip_line_2]
+description = "Гоблины:"
+
+[jobs_tooltip_line_3]
+description = "Рабочие места для гоблина:"
+
+[population_number]
+display_name = "Население и жилье"
+description = "Это число показывает общее количество <link=\"population def\"><style=\"link\">population</style></link> вашего лагеря, и сколько <link=\"houses\"><style=\"link\">housing</style></link> вы построили."
+
+[population_tooltip_line_1]
+description = "Население:"
+
+[population_tooltip_line_2]
+description = "Жилищное требование:"
+
+[population_tooltip_line_3]
+description = "Жилье предоставляется:"
+
+[researchpoints]
+display_name = "Исследовательские точки"
+description = "Исследовательские точки могут быть инвестированы для изучения новых технологий в технологическом дереве. Лагерь генерирует исследовательские точки, и они также могут быть накоплены путем обнаружения определенных предметов или вызова <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link>."
+
+[research_tooltip_line_1]
+description = "Точки исследования:"
+
+[research_tooltip_line_2]
+description = "Очки за сезон:"
+
+[research_tooltip_line_3]
+description = "Очки в год от жертвенного дерева:"
+
+[vaki_def]
+display_name = "Ваки"
+description = "Ваки - это магическая энергия, используемая шаманом для создания заклинаний. Лагерь генерирует определенное количество ваки, и это может быть увеличено путем вызова и выравнивания <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link>. Ваки на 20."
+
+[vaki_tooltip_line_1]
+description = "Вяки:"
+
+[vaki_tooltip_line_2]
+description = "Ваки в месяц:"
+
+[vaki_tooltip_line_3]
+description = "Ваки в год из жертвенного дерева:"
+
+[spiritdef]
+display_name = "Духи"
+description = "В древней финской культуре все живое имело духов. Например, при вырубке дерева важно было предупредить древесный дух, чтобы он мог уйти до того, как дерево будет срублено. <link=\"shaman def\"><style=\"link\">Шаманы</style></link> используют духов для работы своей магии.\n\nОбычно в районе лагеря проходит до 20 духов. Духи, выпущенные из срубленных деревьев или убитых врагов, увеличивают это количество."
+
+[spirit_tooltip_line_1]
+description = "Неизрасходованные духи:"
+
+[campmoraledef]
+display_name = "Мораль лагеря"
+description = "Общий <link=\"moraledef\"><style=\"link\">morale</style></link> - средний моральный дух всех его жителей."
+
+# 2.3 Stock Manager
+
+[target_column]
+display_name = "Цель"
+description = "Целевой номер - это количество предметов, которые вы хотите иметь в своем лагере в любое время. Если текущее количество предметов меньше этого числа, ваши гоблины сделают все возможное, чтобы произвести больше."
+
+[reserved_column]
+display_name = "Зарезервирован"
+description = "Зарезервированный номер - это количество предметов, которые должны храниться на складе и не использоваться для дальнейшей обработки. Гоблины не будут производить предметы для удовлетворения резерва, только <style=\"link\"><link=\"target column\">target</link></style> запускает производство. Зарезервированные предметы будут съедены и использованы для жертвоприношений."
+
+# 2.4 Main Menu
+
+[main_continue]
+display_name = "Продолжать"
+
+[main_new_game]
+display_name = "Новая игра"
+
+[main_load]
+display_name = "груз"
+
+[main_settings]
+display_name = "Настройки"
+
+[main_credits]
+display_name = "Кредиты"
+
+[main_exit]
+display_name = "выход"
+
+# 2.5 Settings Window
+
+[settings_title]
+display_name = "Настройки"
+
+# General
+
+[settings_general]
+display_name = "Генерал"
+
+[settings_general_show_tutorials]
+display_name = "Показать учебники"
+
+[settings_general_autosave_interval]
+display_name = "Автосохранение интервала"
+
+[settings_general_autosave_minutes]
+display_name = "Минуты"
+
+[settings_general_tooltip_mode]
+display_name = "Режим Tooltip"
+
+[settings_general_tooltip_timer_lock]
+display_name = "Таймерный замок"
+
+[settings_general_tooltip_action_lock]
+display_name = "Блокировка"
+
+[settings_general_tooltip_lock_delay]
+display_name = "Задержка замка Tooltip"
+
+[settings_general_tooltip_delay_seconds]
+display_name = "секунды"
+
+[settings_general_camera_shake]
+display_name = "Камера трясется"
+
+[settings_general_autofocus_search_field]
+display_name = "Поле поиска автофокуса"
+
+[settings_general_autoclose_orders_list]
+display_name = "Автозакрыть список заказов"
+
+[settings_general_send_crash_reports]
+display_name = "Отправить отчеты о крушении"
+
+[settings_general_notifications]
+display_name = "Уведомления"
+
+[settings_general_food_warning]
+display_name = "Пищевые предупреждения"
+
+[settings_general_insufficient_sacrifices]
+display_name = "Недостаточные жертвы"
+
+# Display
+
+[settings_display]
+display_name = "дисплей"
+
+[settings_display_resolution]
+display_name = "Резолюция"
+
+[settings_display_window_mode]
+display_name = "Режим окна"
+
+[settings_display_borderless_fullscreen]
+display_name = "Безграничный полноэкранный"
+
+[settings_display_exclusive_fullscreen]
+display_name = "Эксклюзивный полноэкранный"
+
+[settings_display_windowed]
+display_name = "оконный"
+
+[settings_display_maximized_window]
+display_name = "Максимальное окно"
+
+[settings_display_apply]
+display_name = "Применять"
+
+[settings_display_vsync]
+display_name = "V-синхронизация"
+
+[settings_display_fps_cap]
+display_name = "Лимит фрамерата"
+
+[settings_display_render_scale]
+display_name = "Шкала рендера"
+
+[settings_display_mesh_quality]
+display_name = "качество сетки"
+
+[settings_display_quality_very_low]
+display_name = "Очень низкий"
+
+[settings_display_quality_low]
+display_name = "низкий"
+
+[settings_display_quality_medium]
+display_name = "средний"
+
+[settings_display_quality_high]
+display_name = "высокий"
+
+[settings_display_shadows]
+display_name = "Тени"
+
+[settings_display_anti_aliasing]
+display_name = "сглаживание"
+
+[settings_display_anti_aliasing_none]
+display_name = "Никто"
+
+[settings_display_anti_aliasing_quality]
+display_name = "Смягчающее качество"
+
+[settings_display_anti_aliasing_quality_low]
+display_name = "низкий"
+
+[settings_display_anti_aliasing_quality_medium]
+display_name = "средний"
+
+[settings_display_anti_aliasing_quality_high]
+display_name = "высокий"
+
+[settings_display_smoke_density]
+display_name = "Плотность дыма"
+
+[settings_display_smoke_density_off]
+display_name = "Оставить"
+
+[settings_display_smoke_density_low]
+display_name = "низкий"
+
+[settings_display_smoke_density_medium]
+display_name = "средний"
+
+[settings_display_smoke_density_high]
+display_name = "высокий"
+
+[settings_display_max_cloudiness]
+display_name = "Макс облачность"
+
+# Audio
+
+[settings_audio]
+display_name = "Аудио"
+
+[settings_audio_overall_volume]
+display_name = "Общий объем"
+
+[settings_audio_music_volume]
+display_name = "Музыкальный том"
+
+[settings_audio_title_music_volume]
+display_name = "Альбом: Music Volume"
+
+[settings_audio_weather_volume]
+display_name = "Объем погоды"
+
+[settings_audio_effects_volume]
+display_name = "Эффекты объем"
+
+[settings_audio_interface_volume]
+display_name = "Объем интерфейса"
+
+[settings_audio_reset_default_volume]
+display_name = "Перезагрузка на объем по умолчанию"
+
+# Controls
+
+[settings_controls]
+display_name = "Контроль"
+
+[settings_controls_reset_defaults]
+display_name = "Перезагрузка по умолчанию"
+
+[settings_controls_change]
+display_name = "Изменения"
+
+[settings_controls_enable_gamepad]
+display_name = "Включить Gamepad"
+
+[settings_controls_pause]
+display_name = "Пауза"
+
+[settings_controls_speed_up]
+display_name = "Ускорить время"
+
+[settings_controls_speed_down]
+display_name = "Время замедления"
+
+[settings_controls_center_on_camp]
+display_name = "Центр в лагере"
+
+[settings_controls_open_build_menu]
+display_name = "Открытое меню"
+
+[settings_controls_open_orders_menu]
+display_name = "Меню открытых заказов"
+
+[settings_controls_open_stockmanager]
+display_name = "Открытый фондовый менеджер"
+
+[settings_controls_open_jobs_menu]
+display_name = "Открытое меню рабочих мест"
+
+[settings_controls_open_overlays_menu]
+display_name = "Открытое меню Overlays"
+
+[settings_controls_open_stats_menu]
+display_name = "Открытое меню статистики"
+
+[settings_controls_open_tech_menu]
+display_name = "Открытое техническое дерево"
+
+[settings_controls_open_spells_menu]
+display_name = "Открытое меню заклинаний"
+
+[settings_controls_toggle_foliage]
+display_name = "Листья туглей"
+
+[settings_controls_hide_ui]
+display_name = "Скрыть UI"
+
+[settings_controls_pan_forward]
+display_name = "Пан вперед"
+
+[settings_controls_pan_back]
+display_name = "Пэн назад"
+
+[settings_controls_pan_left]
+display_name = "Пан левый."
+
+[settings_controls_pan_right]
+display_name = "Направо."
+
+[settings_controls_rotate_left]
+display_name = "Поворот налево"
+
+[settings_controls_rotate_right]
+display_name = "Повернуть направо"
+
+[settings_controls_rotate_building]
+display_name = "Поворотное здание"
+
+[settings_controls_harvest]
+display_name = "Выбираемая флора"
+
+[settings_controls_quicksave]
+display_name = "Быстрая экономия"
+
+[settings_controls_quickload]
+display_name = "Быстрая загрузка"
+
+# Save/Load Dialog
+
+[savegame_title_save]
+display_name = "Сохранить игру"
+
+[savegame_title_load]
+display_name = "Загрузочная игра"
+
+[savegame_new_save_placeholder]
+display_name = "Новая игра Save"
+
+[savegame_save_button]
+display_name = "Спасти"
+
+[savegame_overwrite_button]
+display_name = "перезаписывать"
+
+[savegame_load_button]
+display_name = "груз"
+
+[savegame_delete_button]
+display_name = "Исключить"
+
+[savegame_meta_format]
+display_name = "{0} - Год {1} месяц {2}"
+
+[savegame_autosave]
+display_name = "экономить"
+
+[savegame_autosave_prev]
+display_name = "Предыдущий Autosave"
+
+[savegame_delete_confirm]
+display_name = "Удаление {0}\nТы уверен?"
+
+# 3.0 General concepts
+
+[water]
+display_name = "вода"
+description = "<style=\"fluff\"> Старейшая из них – вода.\nМагия - дитя морской пены.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение III\n\nВода полезна для питья и тушения пожаров, но опасна в больших количествах."
+
+[workshop_efficiency]
+display_name = "Семинар Эффективность"
+description = "Эффективность работы мастерской <link=\"workshop\"><style=\"link\">workshop</style></link></b> заключается в том, насколько быстрее работает гоблин. Мастерская с эффективностью +20% означает, что гоблин завершит все, что они там делают, обычно создавая предмет или готовя еду, намного быстрее."
+
+# 3.1 Central concepts
+
+[foodpoint]
+display_name = "Еда"
+description = "Питательная ценность пищи измеряется в <b> точках питания </b>. Один гоблин нуждается в одном продукте питания каждый сезон, чтобы выжить. Они также нуждаются в определенных питательных веществах в пище. Если гоблины не получают достаточно <link=\"fiber\"><style=\"link\">fiber</style></link> или <link=\"protein\"><style=\"link\">protein</style></link>, или достаточно <link=\"fresh\"><style=\"link\">fresh food</style></link>, они будут страдать от дефицита питательных веществ.\n\nГоблины могут есть пищу, хранящуюся в лагере, но они счастливее, когда могут есть на кухнях. Каждая кухня готовит пищу для гоблинов, равную их вместимости, и старается приготовить блюдо, включающее все необходимые питательные вещества."
+
+[population_def]
+display_name = "Население"
+description = "Ваше население - это общее количество жителей, которое имеет ваше поселение. Если лагерь производит достаточно пищи, чтобы прокормить своих жителей, и никто из них не умер в последнее время, больше гоблинов могут решить попытать счастья в среднем мире и присоединиться к вашему лагерю.\n\nЕсли в вашем лагере есть <link=\"shaman def\"><style=\"link\">shaman</style></link>, они также могут увеличить ваш <link=\"population def\"><style=\"link\">population</style></link>, отбрасывая <link=\"summongoblins\"><style=\"link\">Summon Goblins</style></link>."
+
+[sac_tree_def]
+display_name = "Жертвенное дерево"
+description = "Жертвенное дерево является церемониальным центром лагеря гоблинов. Он содержит портал в <link=\"underworld fluff\"><style=\"link\">underworld</style></link> и действует как центр гоблина <link=\"culturedef\"><style=\"link\">culture</style></link>. Дерево может быть вызвано <link=\"shaman def\"><style=\"link\">shaman</style></link>.\n\nЖертвенное дерево предоставляет бонусы к <link=\"researchpoints\"><style=\"link\">research</style></link> и <link=\"vaki def\"><style=\"link\">väki</style></link>. По мере того, как гоблины делают <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>, дерево выравнивается и бонусы увеличиваются."
+
+# 3.2 Other concepts
+
+[adjacencyDef]
+display_name = "Соседство"
+description = "Некоторые здания получают бонусы, когда они построены рядом с другими зданиями. Например, рыбацкая мастерская <link=\"fishingworkshop\"><style=\"link\">fishing workshop</style></link> может совместно использовать инструменты и материалы плотника <link=\"carpenter\"><style=\"link\">, поэтому рыболовная мастерская будет работать более эффективно, если рядом с ней есть плотник."
+
+[calendar]
+display_name = "Расписание"
+description = "Год гоблина делится на четыре сезона по три месяца каждый. Изюминкой года является <link=\"sacrifice def\"><style=\"link\"> Midsummer</style></link>, а новый год начинается в начале осени."
+
+[claim]
+display_name = "Претензия"
+description = "<b>Назначение </b> элемента направит жителей вашего лагеря на его получение и поместит его в <link=\"storage\"><style=\"link\">storage</style></link>, чтобы его можно было использовать позже."
+
+[claimed_workshop]
+display_name = "Заявить на семинар"
+description = "Когда гоблин <b> требует <link=\"workshop\"><style=\"link\">workshop</style></link></b>, всякий раз, когда работа назначается этому семинару, она будет назначена гоблину, который утверждал ее, если это вообще возможно. Только если этот гоблин недоступен, другой гоблин получит работу."
+
+[combat]
+display_name = "сражаться"
+description = "<style=\"fluff\"> После того, как будет дан последний бой,\nИ голова твоя будет разрублена на куски;\nУдарь умом, или ты погибнешь,\nУдарь и сделай все возможное для Нортленда.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVII\n\nБой происходит, когда два существа вступают в бой. Они используют свои соответствующие <link=\"fightingSkill\"><style=\"link\"> Борьба с навыками </style></link>, чтобы попытаться <link=\"armorAndDamage\"><style=\"link\">damage</style></link> друг друга."
+
+[culturedef]
+display_name = "Культура"
+description = "Поскольку гоблины процветают в среднем мире, они меняют его по своему образу и подобию. Это напоминает <link=\"underworld fluff\"><style=\"link\">underworld</style></link> они из. Культурная ценность лагеря — мера того, насколько сильно влияние гоблинов. По мере того, как ценность культуры становится выше, все больше и больше плиток вокруг порталов в подземный мир получают атрибут <link=\"underworldtile\"><style=\"link\">underworld</style></link>.\n\nКультуру приобретает <link=\"sacrifice def\"><style=\"link\">sacrificing</style></link> items in a <link=\"bonfire\"><style=\"link\">bonfire</style></link> at Midsummer."
+
+[fishing_value_def]
+display_name = "Рыбная ценность"
+description = "Эта величина представляет собой количество рыбы, которое может быть извлечено за один год без истощения промысла.\nЧрезмерный вылов приведет к постоянному сокращению количества рыбы."
+
+[florapreferences]
+display_name = "Предпочтения растений"
+description = "Разные растения предпочитают расти в разных местах. Некоторые растения нуждаются в обильном солнечном свете, в то время как другие предпочитают <link=\"shade\"><style=\"link\">shade</style></link>. Некоторые виды грибов нуждаются в тени для роста. Растения также могут предпочесть <link=\"sandsoil\"><style=\"link\">sandy</style></link> или <link=\"claysoil\"><style=\"link\">clay</style></link> почв.\n\nФлора чаще появляется в плитках с подходящими для них условиями, а некоторые растения вообще не будут расти в неподходящих условиях."
+
+[food_waste]
+display_name = "Пищевые отходы"
+description = "Если набор <link=\"kitchendef\"><style=\"link\">kitchen</style></link> позволяет использовать пищевые отходы, это означает, что кухня будет готовить еду со всеми необходимыми <link=\"nutrientdef\"><style=\"link\">питательные вещества</style></link>, даже если это означает приготовление большего количества пищи, чем нужно гоблинам, питающимся на кухне."
+
+[forestcover]
+display_name = "лесной покров"
+description = "<style=\"fluff\"> Однажды жена пекла, и она уронила пельмени, которые она делала на пол. Тогда она поклялась. Вскоре после этого она оказалась в лесу. Как бы все ее ни искали, ее не удалось найти. Много позже ее нашли мертвой, сидящей на склоне холма, в углублении в скале. В честь нее холм назван Жена-гора.\n\nSaarijärvi. <style=\"link\"><link=\"fls\">SKS архивы</link></style>.</style>\n\nФинляндцы верили, что можно заблудиться в лесу не в обычном смысле потери пути, а в гораздо более глубоком смысле: полностью покинуть нашу реальность и оказаться в какой-то параллельной вселенной, где вы, возможно, никогда не сможете вернуться.\n\nЛесной покров изображен на карте как туман. Затерянное в лесу существо некоторое время будет бесцельно бродить, пытаясь найти выход.\n\nДеревья, кусты и другие растения создают лесной покров между ними, поэтому лесной покров можно отодвинуть, очищая растительность, или путем строительства <link=\"ravenstatue\"><style=\"link\">raven statues</style></link>."
+
+[hauling]
+display_name = "вывоз"
+description = "Когда предмет слишком тяжелый для гоблина, чтобы <link=\"carrying capacity def\"><style=\"link\">carry</style></link>, они должны <b>haul</b>, что означает перетаскивание его по земле. Перевозка по снегу происходит значительно быстрее."
+
+[heating]
+display_name = "нагревание"
+description = "Когда становится холодно, структуры, в которых ваши гоблины и другие <link=\"houses\"><style=\"link\">live</style></link> и работа в которых должны быть <b>heated</b>, обычно используют <link=\"firewood\"><style=\"link\">firewood</style></link>. Гоблины постараются запастись дровами в зданиях, нуждающихся в отоплении."
+
+[houses]
+display_name = "Дома"
+description = "<style=\"fluff\"> Поспешите в деревню мужа вашего,\nПоспешите в дом своей матери.\nСтранно, комнаты в других жилищах,\nСтранно, режимы в других деревнях.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII\n\nДаже самые выносливые гоблины нуждаются в укрытии от стихии, особенно зимой. Если у гоблинов нет домов для проживания, их здоровье и <link=\"moraledef\"><style=\"link\">morale</style></link> пострадают. Зимой нежилые гоблины строят для себя временные убежища </style></link>, но они не будут столь эффективными в поддержании тепла, как надлежащее жилье."
+
+[ignore]
+display_name = "Игнорировать"
+description = "Если вы заказываете своим гоблинам <b>ignore</b> элемент, они не помещают его в <link=\"storage\"><style=\"link\">storage</style></link>, и он не будет рассчитывать на <link=\"second tutorial\"><style=\"link\">stock manager</style></link>."
+
+[meadowdef]
+display_name = "Луга"
+description = "Луга - низменные области, близкие к реке, в основном состоящие из <link=\"claysoil\"><style=\"link\">clay soil</style></link>. Луга обычно покрываются весенним наводнением, поэтому там не растут деревья."
+
+[mud]
+display_name = "грязь"
+description = "Чем больше трафика проходит через песок или глиняную плитку, тем больше <b> мягкий</b> и изношенный. Чем грязнее плитка, тем труднее пройти. Таким образом, маршруты, по которым проходят ваши гоблины, будут постепенно усложняться и замедляться."
+
+[nearbyruin]
+display_name = "руины"
+description = "Рядом находится неисследованный <link=\"ruinsdef\"><style=\"link\">ruin</style></link>."
+
+[newgoblins]
+display_name = "Больше гоблинов!"
+description = "Слухи об успехе вашего поселения распространились в подземном мире, и все больше гоблинов решили присоединиться к вам. Если ваш лагерь производит достаточно пищи, чтобы прокормить своих жителей, и никто из них не умер в последнее время, больше гоблинов могут решить попытать счастья в среднем мире.\n\nЕсли в вашем лагере есть <link=\"shaman def\"><style=\"link\">shaman</style></link>, они также могут увеличить ваш <link=\"population def\"><style=\"link\">population</style></link>, отбрасывая <link=\"summongoblins\"><style=\"link\">Summon Goblins</style></link>."
+
+[nutrientdef]
+display_name = "питательные вещества"
+description = "Гоблины нуждаются в определенных питательных веществах в пище. Если они не получают достаточно <link=\"fiber\"><style=\"link\">fiber</style></link> или <link=\"protein\"><style=\"link\">protein</style></link>, или достаточно <link=\"fresh\"><style=\"link\">fresh food</style></link>, они будут страдать от дефицита питательных веществ."
+
+[ruinsdef]
+display_name = "Руины"
+description = "<style=\"fluff\"> Все подземное царство задрожало, стены дворца треснули и их фундаменты вздрогнули, арки склонились, и крыша стала шататься.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIV: Дворец Сарвика\n\nЛес старый, и многие люди жили здесь до гоблинов. Иногда следы этих прежних жителей можно встретить в виде руин. Изучение руин может выявить полезные предметы."
+
+[ruins_explored]
+display_name = ""
+description = "Ваши гоблины исследовали руины и нашли в них следующие предметы:\n\n"
+
+[score]
+display_name = "счет"
+description = "Ваш игровой счет очень просто основан на том, сколько гоблинов вам удалось выжить в вашем лагере и как долго. В конце каждого года ваш балл увеличивается на <link=\"population def\"><style=\"link\">population</style></link> вашего лагеря."
+
+[shaman_def]
+display_name = "Шаман"
+description = "Шаман — это специалист, который может общаться с духовным миром.\n\nЧтобы быть избранным шаманом, гоблин должен быть <link=\"hardblooded\"><style=\"link\">hard-blooded</style></link> и <link=\"hardy\"><style=\"link\">hardy</style></link>."
+
+[storage]
+display_name = "хранение"
+description = "Гоблины — опрятные существа, а предметы, которые хранятся в вашем лагере, хранятся. Это можно сделать на открытом воздухе <link=\"stockpile\"><style=\"link\">stockpiles</style></link>, или <link=\"storehouse\"><style=\"link\">storehouses</style></link>.\n\nНекоторые элементы, такие как <link=\"woodlog\"><style=\"link\">wooden logs</style></link>, могут храниться на открытом воздухе без каких-либо проблем. Другие предметы, такие как инструменты и особенно продукты питания, будут разрушаться, если храниться на открытом воздухе."
+
+[unreachableDef]
+display_name = "недостижимый"
+description = "Игра нуждается в способе выяснить, не может ли структура быть достигнута, или существо попало в ловушку. Это работает так, что игра пытается проложить путь от толпы или структуры к центру лагеря.\n\nЦентр лагеря изначально является камнем-шлюзом, но будет жертвенным деревом, если его вызовут. Таким образом, если структура недостижима, это означает, что игра не может найти путь от нее к центру лагеря, и если существо, обычно гоблин, недостижимо, это означает, что игра не может найти путь, чтобы добраться до центра лагеря. Чтобы избежать этого, убедитесь, что есть способ добраться до скалы или жертвенного дерева."
+
+[unreachableStructure]
+display_name = "недостижимый"
+description = "Эта структура <link=\"unreachableDef\"><style=\"link\"> не может быть достигнута из центра лагеря, поэтому ее нельзя использовать. Путь к входу в здание, вероятно, заблокирован или затоплен."
+
+[unreahableMob]
+display_name = "недостижимый"
+description = "Это существо в ловушке! Он <link=\"unreachableDef\"><style=\"link\"> не может найти путь к центру лагеря</style></link>."
+
+[weight_def]
+display_name = "вес"
+description = "Все предметы имеют вес. Базовый гоблин обычно может <link=\"carrying capacity def\"><style=\"link\">carry</style></link> на одну единицу веса. Более тяжелые предметы можно перемещать с помощью <link=\"hauling\"><style=\"link\">hauling</style></link>."
+
+[workarea_def]
+display_name = "Рабочие зоны"
+description = "Рабочая зона лагеря — это зона, где гоблины будут собирать флору, и которую они будут защищать. Однако гоблины будут собирать и обрабатывать предметы по всей карте, если вы не скажете им игнорировать эти предметы.\n\nКогда вы строите статуи ворона, чтобы очистить <link=\"forestcover\"><style=\"link\">forest-cover</style></link>, они также расширяют вашу рабочую зону. Выбрав статую ворона, вы можете переключать рабочую зону вокруг нее."
+
+# 3.3 Crops and farming
+
+[compostingdef]
+display_name = "компостирование"
+description = "Компостирование – это способ восстановления <link=\"fertility\"><style=\"link\">fertility</style></link> в почве. Он разблокирован исследованием <link=\"fertilizerTech\"><style=\"link\"> Технология: Удобрение</style></link>.\n\nКомпостирование означает прием органических материалов и сброс их в <link=\"midden\"><style=\"link\">middens</style></link>. Там они распадаются и в конечном итоге образуют <link=\"compost\"><style=\"link\">compost</style></link>. Когда гоблины <link=\"muckingdef\"><style=\"link\">muck</style></link> поле, они будут разбрасывать компост по нему и доводить его до почвы, добавляя к почве значение плодородия компоста.\n\nМидденс нужно время от времени поворачивать с помощью <link=\"pitchfork\"><style=\"link\">pitchfork</style></link>, чтобы процесс компостирования продолжался."
+
+[fallowdef]
+display_name = "поддаваться"
+description = "Поле, которое является фаллоу, не будет иметь семян, посеянных на нем, но будет <link=\"muckingdef\"><style=\"link\">mucked</style></link> и <link=\"tilling\"><style=\"link\">tilled</style></link> как обычно."
+
+[farming]
+display_name = "Сельское хозяйство"
+description = "<style=\"fluff\"> Восстань, земля, из сна твоего,\nОт вековой спячки,\nПусть ячменные зерна прорастут,\nПусть сами лопасти начнутся.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\n<b>Сельское хозяйство</b> - это способ производства <link=\"foodpoint\"><style=\"link\">food</style></link> и других полезных продуктов путем выращивания сельскохозяйственных культур. Чтобы начать фермерство, создайте <link=\"farmplot\"><style=\"link>farm plot</style></link>, выберите семена, которые вы хотите посадить, и посмотрите, как они растут.\n\nКоличество посевов, производимых данным фермерским участком, определяется <link=\"fertility\"><style=\"link\">fertility</style></link> почвы. Каждая культура расходует часть плодородия участка, пока он не закончится. <link=\"claysoil\"><style=\"link\"> Глиняные почвы</style></link> более плодородны, чем <link=\"песчаный грунт\"><style=\"link\">sandy почв</style></link> и лучше сохраняют удобрения, но для выращивания глины необходимы более тяжелые инструменты.\n\nПоля обрабатываются и семена высаживаются в разное время года, в зависимости от семян, отобранных для фермерского участка."
+
+[fertility]
+display_name = "фертильность"
+description = "<style=\"fluff\"> На лазурных водных хребтах,\nО могучей растрате перед ней.\nТам, где ее рука повернулась к воде,\nВозник плодородный холм.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение I\n\n<b>Фертильность</b> определяет продуктивность <link=\"фермерство\"><style=\"link\">фермерство</style></link>.\n\nКаждая плитка имеет значение плодородия, которое представляет собой питательные вещества в почве, которые доступны для растений, растущих в плитке. Когда посевы выращиваются на плитке, они истощают плодородие плитки. Плитка теряет столько же <b> точек бесплодия</b>, сколько растения производят <link=\"foodpoint\"><style=\"link\">food points</style></link>.\n\nПоскольку точки плодородия плитки сокращаются, она производит все меньше и меньше культур. Фертильность восстанавливается очень медленно. В финском сельском хозяйстве для восстановления плодородия сельскохозяйственному участку может потребоваться 30 или 40 лет.\n\nПлодородие плитки может быть увеличено <link=\"slashAndBurnTech\"><style=\"link\">slash-and-burn farming</style></link> или восстановлено путем обнаружения <link=\"fertilizerTech\"><style=\"link\">fertilizers</style></link>, чтобы разблокировать <link=\"compostingdef\"><style=\"link\">composting</style></link>. <link=\"sandsoil\"><style=\"link> Песчаные почвы </style></link> менее плодородны, чем <link=\"глинистый грунт\"><style=\"link\">глинистые почвы</style></link>, и сохраняют меньше питательных веществ из удобрений.\n\nЭффективную фертильность можно уменьшить с помощью <link=\"shade\"><style=\"link\">shade</style></link>."
+
+[flaxdef]
+display_name = "Льняной"
+description = "Льня - это культура, выращенная для ее волокон, которые могут быть превращены в нить.\n\n<link=\"flaxseedbag\"><style=\"link\"> Семена льна</style></link> можно найти в <link=\"ruinsdef\"><style=\"link\">ruins</style></link> или выращивать в <link=\"wildflax\"><style=\"link\">wild</style></link>. Поиск семян льна обнаруживает <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>."
+
+[nettledef]
+display_name = "Жгучие крапивы"
+description = """"""
+
+[ryedef]
+display_name = "ржаной"
+description = "<link=\"ryeseedbag\"><style=\"link\">Семена ржи</style></link> можно найти в <link=\"ruinsdef\"><style=\"link\">ruins</style></link> или выращивать в <link=\"wildrye\"><style=\"link\">wild</style></link>. Поиск семян льна обнаруживает <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>."
+
+[shade]
+display_name = "оттенок"
+description = "Растения обычно нуждаются в солнечном свете, чтобы жить, поэтому, когда свет блокируется теней, растения не растут так хорошо, как могли бы. Северные склоны холмов считаются в тени, потому что они получают меньше солнечного света.\n\nВ игре тень представляет собой не только физическую блокировку солнечного света, но и воздействие деревьев на окружающую почву. Деревья имеют обширные корневые системы, которые очень эффективно извлекают питательные вещества из почвы, и поэтому сельскохозяйственные культуры не будут расти вблизи деревьев. Чтобы представить корни, физически блокирующие рост растений, даже пни отбрасывают некоторый оттенок.\n\nОттенок уменьшает <link=\"fertility\"><style=\"link\">fertility</style></link> плиток. Некоторые растения <link=\"florapreferences\"><style=\"link\">предпочитают</style></link> разные уровни света."
+
+#  3.4 Spirits, Keepers and sacrifices
+
+[sacrifice_def]
+display_name = "Жертвы"
+description = "Это обычай гоблинов приносить жертвы духам каждое лето. Например, когда гоблины берут рыбу из реки или древесину из леса, они считают, что должны благодарить Хранителей <link=\"лесоводов\"><style=\"link\"> леса </style></link> и <link=\"водоводов\"><style=\"link\"> реки</style></link> за их подарки. На некоторых семинарах были определены предметы жертвоприношения. Например, для каждого <link=\"fishing1\"><style=\"link\">fisher-goblin's shack</style></link> речные духи ожидают жертвоприношения одной <link=\"ceremonialfish\"><style=\"link\">ceremonial fish</style></link>. Для каждого <link=\"carpenter\"><style=\"link\">carpenter's workshop</style></link> лесные духи ожидают по одному <link=\"woodenstatuette\"><style=\"link\">wooden statuette</style></link> и так далее.\n\nЖертвы помещаются в <link=\"bonfire\"><style=\"link\">bonfire</style></link> и сжигаются.\n\nУспешные жертвоприношения повышают уровень <link=\"culturedef\"><style=\"link\">culture</style></link> и повышают уровень <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link>.\n\n<style=\"fluff\"> Финляндцы верили, что все живые существа имеют духов, и что если с духами не обращаться правильно, это будет иметь последствия. Раньше у финнов были разные ритуалы сбора урожая и охоты, такие как сложная церемония медведя, найденная в стихотворении XLVI «Kalevala», чтобы успокоить духов."
+
+[woodskeepers]
+display_name = "Хранители леса"
+description = "Хранители леса — это духи, которые живут в лесу и следят за всеми его обитателями. Если гоблины возьмут ресурсы из леса, не уважая Хранителей Леса, они будут несчастны и посетят несчастья на лагере. Хранители могут быть умиротворены <link=\"sacrifice def\"><style=\"link\">жертвованием</style></link> им в середине лета, путем построения <link=\"bonfire\"><style=\"link\">bonfire</style></link>."
+
+[waterskeepers]
+display_name = "Хранители вод"
+description = "Хранители Воды - это духи, которые правят рекой и другими водоемами вблизи лагеря. Если гоблины ловят рыбу в воде, не уважая своих Хранителей, им будет труднее ловить рыбу. Хранители могут быть умиротворены <link=\"sacrifice def\"><style=\"link\">жертвованием</style></link> им в середине лета, путем построения <link=\"bonfire\"><style=\"link\">bonfire</style></link>."
+
+# 4.0 Longer explanatory texts
+
+[basictoolsdef]
+display_name = "Основные инструменты"
+description = "Лагерь нуждается в нескольких видах повседневных инструментов для работы.\n\nЧтобы получить <link=\"woodmaterial\"><style=\"link\">wood</style></link> для строительства и других целей, гоблинам потребуется <link=\"chopping\"><style=\"link\">chopping tools</style></link> для вырубки деревьев. Ранним инструментом рубки является <link=\"stoneaxe\"><style=\"link\">stone axe</style></link>. Каменные топоры также могут быть использованы в качестве оружия, но будьте осторожны, чтобы не назначить все ваши топоры охранникам! Если это произойдет, ваши гоблины не смогут повалить деревья.\n\nЧтобы вырыть канавы и изменить уровень земли, гоблинам нужно <link=\"digging\"><style=\"link\">digging tools</style></link>. <link=\"diggingstick\"><style=\"link\">digging stick</style></link> - это простой инструмент для копания, который также служит инструментом <link=\"bartool\"><style=\"link\">bar tool</style></link> для удаления пней деревьев.\n\nКаменные топоры и палки для рытья можно построить на <link=\"carpenter1\"><style=\"link\">carpenter's shack</style></link> из <link=\"branch\"><style=\"link\">branches</style></link>. Вы можете заказать все инструменты, которые вы обнаружили в <link=\"second tutorial\"><style=\"link\">stock manager</style></link>.\n\nДля тушения пожаров гоблинам необходимо <link=\"bucket\"><style=\"link\">buckets</style></link>. Самое простое доступное ведро - это <link=\"claypot\"><style=\"link\">earthenware pot</style></link>, которое можно создать на <link=\"potter0\"><style=\"link\">potter's yard</style></link>.\n\nДля создания глиняных инструментов необходимо построить <link=\"claypit\"><style=\"link\">clay pit</style></link>. Это необходимо разместить на <link=\"claysoil\"><style=\"link\">clay soil</style></link>, которое можно найти через окно наложения грунта, доступное из кнопки наложения в нижней части игрового экрана. Посмотрите: низколежащие глинистые земли рядом с рекой часто <link=\"meadowdef\"><style=\"link\">flood</style></link>! Это хорошая идея, чтобы построить глиняную яму в районе дальше от реки.\n\nЭто хорошая идея, чтобы поддерживать запас основных инструментов в лагере в любое время. Это можно легко сделать, установив цели для них в менеджере по акциям, и гоблины построят новые, чтобы заменить сломанные или потерянные инструменты."
+
+[food_sources]
+display_name = "Источники продовольствия"
+description = "Обеспечение поставок продуктов питания для вашего лагеря <link=\"foodpoint\"><style=\"link\">food</style></link> жизненно важно. Если гоблинам нечего есть, они уйдут! Есть несколько источников питания, которые ваш лагерь может использовать.\n\nСамый простой способ получить еду - это <b>собрать </b>. Многие продукты можно просто найти на карте: <link=\"гриб\"><style=\"link\">грибы</style></link> высоко в <link=\"fiber\"><style=\"link\">fiber</style></link> растут на земле, а такие растения, как <link=\"hazel\"><style=\"link\">hazel</style></link> и <link=\"blackcurrant\">blackcurrant</style></link>, можно собирать для еды. <link=\"nettle\"><style=\"link\">Наклеивание крапивы</style></link> часто можно найти в <link=\"meadowdef\"><style=\"link\">meadows</style></link>, и даже предоставить вам семена, чтобы вы могли начать сельское хозяйство.\n\nЧтобы начать собирать растения, просто найдите их на карте и прикажите своим гоблинам собрать их. Как только это будет сделано, еда, которую они приобрели, появится в <link=\"second tutorial\"><style=\"link\">stock manager</style></link>, и вы можете заказать их, чтобы автоматически найти больше.\n\nДругим ранним источником пищи является <link=\"fishingTech\"><style=\"link\">fishing</style></link>. Чтобы начать рыбалку, создайте <link=\"fishing1\"><style=\"link\">fisher-goblin's shack</style></link> и некоторые <link=\"fishingspear\"><style=\"link\">fishing spears</style></link> и закажите рыбу в менеджере запаса. <link=\"rawfish\"><style=\"link\"> Рыба является хорошим источником жиров и белков.\n\nРыболовство ограничено <link=\"fishing value def\"><style=\"link\">fishing value</style></link> карты, которая представляет максимальное количество рыбы, которую можно ловить устойчиво.\n\nЕдинственным надежным способом производства продуктов питания для большой популяции является <link=\"фермерство\"><style=\"link\">фермерство</style></link>. Сельское хозяйство - это <link=\"farmingTech\"><style=\"link\"> unlocked</style></link>, когда вы впервые обнаруживаете семена. Чтобы начать сельское хозяйство, выложите <link=\"farmplot\"><style=\"link\">фермерский участок</style></link>, выберите нужные вам семена, и гоблины посадят и соберут урожай в соответствующее время года. Чтобы выращивать на <link=\"claysoil\"><style=\"link\">clay soils</style></link>, вам нужно <link=\"dwarvenToolTech\"><style=\"link\">metal digging tools</style></link>.\n\nСельское хозяйство расходует <link=\"fertility\"><style=\"link\">fertility</style></link> почвы, и в конечном итоге истощит ее полностью. Почву можно сделать более плодородной с помощью <link=\"slashAndBurnTech\"><style=\"link\">slash-and-burn farming</style></link>, или плодородие можно восстановить, обнаружив <link=\"fertilizerTech\"><style=\"link\">fertilizers</style></link>.\n\nЭти источники пищи могут быть дополнены мясом враждебных животных. Мясо и рыбу можно сохранить с помощью <link=\"smokingTech\"><style=\"link\">smoking</style></link>.\n\nУспешный лагерь будет использовать различные источники пищи для обеспечения продовольственной безопасности и здоровой, разнообразной диеты для гоблинов."
+
+# 5.0 Camp bonuses
+
+# 5.1 Farming bonuses
+
+[campbonus_def]
+display_name = "Кэмп Бонус"
+description = "Лагерные бонусы - это бонусы, которые ваш лагерь получил, которые улучшают производительность ваших гоблинов на некоторых мероприятиях в лагере. Их можно разблокировать, исследуя технологии."
+
+[improved_harvesting_def]
+display_name = "Улучшенный сбор урожая"
+description = "По мере того, как растет их опыт ведения сельского хозяйства, ваши гоблины научились более эффективно собирать поля."
+
+[improved_sowing_def]
+display_name = "Улучшенный посев"
+description = "По мере того, как ваши гоблины становятся более опытными в сельском хозяйстве, они научились более эффективно сажать семена, что значительно ускоряет посев."
+
+# Farming interface texts
+
+[now_indicator]
+display_name = "Теперь"
+description = "Текущий <link=\"календарь\"><style=\"link\">date</style></link>"
+
+[muckingdef]
+display_name = "гребаный"
+description = "Смачивание поля означает повышение его <link=\"fertility\"><style=\"link\">fertility</style></link> путем внесения на фермерский участок предметов со значениями фертильности."
+
+[tilling]
+display_name = "Пока"
+description = "Сельскохозяйственный участок должен быть обработан, прежде чем семена могут быть посеяны. Подбор <link=\"sandsoil\"><style=\"link\">sandy soil</style></link> может осуществляться вручную, но инструмент <link=\"digging\"><style=\"link\">digging tool</style></link> ускорит работу. Для перегонки <link=\"claysoil\"><style=\"link\">clay soils</style></link> требуется <link=\"shovel\"><style=\"link\">metal tools</style></link>.\n\nНа фазе обработки любые предметы со значениями фертильности на сельскохозяйственном участке будут всасываться в почву и вносить свой вклад в участок <link=\"fertility\"><style=\"link\">fertility</style></link>.\n\nПоскольку он рыхлый, <link=\"sandsoil\"><style=\"link\">sandy почва</style></link> не очень хорошо сохраняет питательные вещества, а удобрения только частично эффективны.\n"
+
+[sowing]
+display_name = "соу"
+description = "Для выращивания сельскохозяйственных культур необходимо сеять семена в <link=\"tilling\"><style=\"link\">tilled</style></link> почву."
+
+[harvest]
+display_name = "урожай"
+description = "Зрелые культуры будут собраны."
+
+# Midsummer event texts
+
+[sacrifice_window_calendar_pack_icon]
+display_name = "Раннее лето"
+description = "Предметы жертвоприношения будут собраны в начале лета."
+
+[sacrifice_window_calendar_sacrifice_icon]
+display_name = "Середина лета"
+description = "В середине лета зажигаются костры."
+
+# Structure tiers
+
+[earthfasttier]
+display_name = "быстрый"
+description = "Очень простой стиль здания, состоящий из деревянных столбов, вбитых в землю. Земные здания быстро и легко строить, но не очень долговечны в долгосрочной перспективе. В игре они называются <b>shacks</b>."
+
+[planktier]
+display_name = "Планки и поляки"
+description = "Здания, построенные из столбов и досок. Они более долговечны, чем земляные конструкции, но по-прежнему чувствительны к износу и повреждениям от погоды и других событий. Планковые здания называются <b>sheds</b>."
+
+[beamtier]
+display_name = "каюты"
+description = "Более крепкие здания построены из взаимосвязанных деревянных балок. Стены, построенные из балок, очень твердые, но в конечном итоге разрушаются, если балки находятся в постоянном контакте с землей. Эти здания называются <b> кабины </b>."
+
+[cottagetier]
+display_name = "Коттеджи"
+description = "Структуры, построенные из комбинации камня и дерева, называются коттеджами."
+
+[stonetier]
+display_name = "Каменное строительство"
+description = "Структуры, собранные из добытого камня. Они очень жесткие, могут длиться почти вечно, но требуют много работы и времени для строительства."
+
+[bricktier]
+display_name = "Кирпичная конструкция"
+description = "Структуры, построенные из обожженных глиняных кирпичей. Кирпичная конструкция не такая прочная, как твердый камень, но ее гораздо проще построить."
+
+# Structure types etc
+
+[firehazard]
+display_name = "Опасность пожара"
+description = "Это здание использует огонь для приготовления пищи или крафта и генерирует искры, которые могут вызвать пожары рядом с ним. Будьте осторожны, где вы его размещаете!"
+
+[workshop]
+display_name = "Семинары"
+description = "Мастерские превращают сырье в инструменты, более совершенные материалы или другие полезные вещи. Работники назначаются на семинары автоматически при заказе предметов в <link=\"second tutorial\"><style=\"link\">stock manager</style></link>."
+
+[potteryworkshop]
+display_name = "Поттер"
+description = "Поттеры преобразуют <link=\"rawClay\"><style=\"link\">clay</style></link> в полезные предметы, такие как горшки.\n\nPottery <link=\"workshop\"><style=\"link\">workshops</style></link> включает в себя <link=\"potter0\"><style=\"link\">Potter's Yard</style></link>."
+
+[smithyworkshop]
+display_name = "Смити"
+description = "<link=\"smithy0\"><style=\"link\">Smithies</style></link> являются <link=\"workshop\"><style=\"link\">workshops</style></link> этот процесс <link=\"dwarvenTech\"><style=\"link\">metals</style></link>."
+
+# Terrain types
+
+[claysoil]
+display_name = "Глиняная почва"
+description = "Более тяжелые глинистые почвы встречаются в низменных районах. Эти места обычно проводили большое количество времени под водой, когда ледники таили, и вода отвоевала более легкие почвы. Глиняные почвы труднее работать и требуют <link=\"shovel\"><style=\"link\">более тяжелых инструментов</style></link>, но являются более <link=\"fertility\"><style=\"link\">fertile</style></link> и сохраняют питательные вещества из удобрений более эффективно, чем более легкие почвы.\n\nЕсли много трафика проходит через глиняную плитку, она вырождается в <link=\"mud\"><style=\"link\">mud</style></link>, что замедляет движение.\n\nНекоторые растения <link=\"florapreferences\"><style=\"link\">предпочитают </style></link> расти в глинистых почвах."
+
+[sandsoil]
+display_name = "Песчаная почва"
+description = "Наиболее распространенным типом почвы в северном климате, который когда-то был под ледниками, является ледниковая долина, преимущественно песчаная почва с глиной и гравием, смешанным в ней. Эта долина была сформирована, когда ледник поднял почву и размыл камни, по которым она текла, и отложился, когда она уходила. Песчаная почва относительно проста в работе, и ее можно переворачивать и копать простыми инструментами, но она не очень <link=\"фертильность\"><style=\"link\">fertile</style></link>. Из-за того, что песок рыхлый, он не очень хорошо сохраняет питательные вещества, а удобрения только частично эффективны.\n\nЕсли через песчаную плитку проходит много трафика, она вырождается в <link=\"mud\"><style=\"link\">mud</style></link>, что замедляет движение.\n\nНекоторые растения <link=\"florapreferences\"><style=\"link\">предпочитают</style></link> песчаную почву."
+
+[underworldtile]
+display_name = "Исполнитель: Underworld Tile"
+description = "По мере того, как спреды вашего лагеря <link=\"culturedef\"><style=\"link\">culture</style></link>, все больше и больше плиток на карте приобретут атрибут подземного мира. Некоторые растения будут расти только на подземных плитках."
+
+# Tools
+
+[efficiencydef]
+display_name = "Эффективность"
+description = "Эффективность инструмента — это мера того, насколько легче он делает работу. Эффективность инструмента умножает труд пользователя. Например, гоблин, использующий инструмент с эффективностью 2.0, может получить столько же работы, сколько два гоблина без инструментов.\n\nОбратите внимание, что некоторые работы, такие как вырубка деревьев, не могут быть выполнены без соответствующих инструментов."
+
+[tooltoughnessDef]
+display_name = "Инструмент жесткости"
+description = "Прочность инструмента или <link=\"weapondef\"><style=\"link\">weapons</style></link> определяет, насколько вероятно, что он выйдет из употребления. Чем выше жесткость, тем меньше вероятность того, что предмет сломается."
+
+# Materials
+
+[woodmaterial]
+display_name = "Древесина"
+description = "Северные леса полны полезной древесины. В то время как ручки и другие части более продвинутых инструментов могут быть сделаны из дерева, деревянные инструменты и <link=\"weapondef\"><style=\"link\">оружие </style></link> относятся конкретно к предметам, где бизнес-конец сделан из дерева, таким как палка для копания или деревянное копье. Древесина является относительно мягким материалом для этого, поэтому деревянные инструменты и оружие будут относительно легко ломаться, а деревянное оружие будет изо всех сил пробивать броню.\n"
+
+[bonematerial]
+display_name = "косточка"
+description = "Кость является полезным материалом для инструментов и оружия, так как она проста в работе и может держать очень острый край."
+
+[irondef]
+display_name = "железо"
+description = "Железо является полезным материалом для инструментов, <link=\"weapondef\"><style=\"link\">оружие</style></link> и броня, так как оно намного тяжелее гномового металла или любых органических материалов. Железо плавится только при высоких температурах, поэтому для производства железных артефактов требуется кузница. Железные инструменты иногда можно найти в <link=\"ruinsdef\"><style=\"link\">ruins</style></link>."
+
+# Combat
+
+[armorAndDamage]
+display_name = "Броня и повреждения"
+description = "<style=\"fluff\"> Потом кузнец Ильмаринен,\nИзвлек из пояса свой широкий меч,\nИз ножен его лезвие чести,\nПытался убить щуку Нортленда\nс оружием его ковки;\nНо он разбил меч на куски,\nНе навредил водному чудовищу.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XL\n\nБроня увеличивает значение брони существа</b>. Значение брони - это сумма бонусов брони существа <link=\"hitpoints\"><style=\"link\">hit points</style></link>.\n\nКогда существо подвергается нападению, если значение ущерба от нападения превышает значение его брони, оно получает статус повреждения. Последствия состояния повреждения зависят от его типа. Типы повреждений включают <link=\"dtcrushing\"><style=\"link\">crushing</style></link>, <link=\"dtslashing\"><style=\"link\">slashing</style></link> и <link=\"dtburning\"><style=\"link\">burning</style></link>."
+
+[dangerous_object_def]
+display_name = "Опасный объект"
+description = "Этот предмет на самом деле не предназначен для использования в качестве оружия, но если вы получите удар с ним, это будет больно! Опасные предметы наносят двойной урон по сравнению с другим самодельным оружием."
+
+[dtburning]
+display_name = "Сжигание повреждений"
+description = "<style=\"fluff\"> Прямая дорога Огонь начал его рев,\nтрудился, чтобы поглотить брата своего,\nЕго любимый младший брат.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение IX\n\nОгонь опасен для всего живого и наносит горящий ущерб."
+
+[dtcrushing]
+display_name = "Сокрушительный ущерб"
+description = "Сокрушительный ущерб в основном наносится <link=\"wthammer\"><style=\"link\">Hammer</style></link> <link=\"weapondef\"><style=\"link\">weapons</style></link>. Ущерб от разрушения, как правило, менее изнурительный, чем <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>. Броня преобразует урезание повреждений в дробление повреждений."
+
+[dtslashing]
+display_name = "Сокращение ущерба"
+description = "<style=\"fluff\"> Лемпо направляет заточенный топор,\nИ вены упали Hiisi severs.\nБыстрый поток крови,\nИ ручей малинового цвета.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VIII\n\nПовреждение резка производится всеми видами ребра и тяги <link=\"weapondef\"><style=\"link\">оружие</style></link>, а также когти и зубы. Броня преобразует повреждение резания в <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>."
+
+[improvweapon]
+display_name = "Импровизированное оружие"
+description = "Этот предмет на самом деле не предназначен для использования в качестве оружия, поэтому любой, кто вооружен им, подвергается наказанию за их <link=\"fightingSkill\"><style=\"link\"> Боевой навык </style></link>. Импровизированное оружие обычно требует использования обеих рук."
+
+[largeweapon]
+display_name = "Большое оружие"
+description = "Большие орудия берутся двумя руками за оружие и поэтому не могут использоваться вместе со щитом."
+
+[reachweapon]
+display_name = "достигать"
+description = "<style=\"fluff\"> Очищали осколки от стропил,\nРазрезать потолок на фрагменты,\nНе смог прикоснуться к острову-герою.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVII\n\nЭто <link=\"weapondef\"><style=\"link\">weapon</style></link> позволяет пользователю держать противника на расстоянии, и поэтому дает +10 <link=\"fightingSkill\"><style=\"link\"> Боевой </style></link> бонус на защиту."
+
+[weapondef]
+display_name = "оружие"
+description = "Этот предмет предназначен для использования в качестве оружия. Он наносит два урона, когда поражает врага."
+
+[wptype]
+display_name = "Тип оружия"
+description = "<link=\"weapondef\"><style=\"link\"> Оружие</style></link> и импровизированное оружие сгруппированы в <b>типы оружия</b>. Типы оружия включают <link=\"wthammer\"><style=\"link\">Hammer</style></link> и <link=\"wtspear\"><style=\"link\">Spear</style></link>."
+
+[wtblade]
+display_name = "Лезвия"
+description = "<style=\"fluff\"> На острие меча сверкает лунный свет,\nНа лезвии сияет солнце,\nНа рукояти сверкают яркие звезды,\nНа краю скачет лошадь,\nНа ручке играет котенок,\nНа ножнах лает собака.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIX\n\nВсе клинки <link=\"weapondef\"><style=\"link\">weapons</style></link>, которые в основном полагаются на <link=\"dtslashing\"><style=\"link\">slashing</style></link> с режущей кромкой. Гоблин, опытный в использовании этого оружия, известен как лезвие-гоблин."
+
+[wthammer]
+display_name = "молот"
+description = "Тип Хаммера охватывает все виды оружия <link=\"weapondef\"><style=\"link\">оружие</style></link>, которое в основном используется для поражения противника, включая топоры, клубы и различные импровизированные вооружения. Гоблин, который станет опытным в использовании этого оружия, получит ряды в мастерстве Хаммера-гоблина."
+
+[wtmissile]
+display_name = "Ракетное оружие"
+description = "Ракетное оружие наносит ущерб на расстоянии. Ракетное оружие использует <link=\"shootingSkill\"><style=\"link\"> Умение стрелять, а также размер ущерба, который они наносят, определяется их боеприпасами."
+
+[wtspear]
+display_name = "Спирс"
+description = "Копьи указываются <link=\"weapondef\"><style=\"link\">оружие</style></link>, используемое с толчком. Обычно они наносят <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>. Гоблин, владеющий копьями, приобретет ряды в мастерстве копья-гоблина."
+
+[military_draft]
+display_name = "Военный проект"
+description = "Составленные гоблины будут использовать все, что лежит рядом, в качестве оружия. Охранные здания позволяют назначать лучшее оборудование для преданных гоблинов."
+
+# Statistics
+
+[agilityDef]
+display_name = "ловкость"
+description = "Гибкость представляет собой способность существа уклоняться от атак и оставаться в вертикальном положении в сложных условиях."
+
+[carrying_capacity_def]
+display_name = "Несущая способность"
+description = "Каждое существо имеет несущую способность, которая определяет, сколько веса оно может нести. Гоблин обычно может нести до одной единицы веса. Более тяжелые предметы можно перемещать с помощью <link=\"hauling\"><style=\"link\">hauling</style></link>."
+
+[constitutionDef]
+display_name = "Конституция"
+description = "Конституция — это мера того, насколько выносливо существо. Существа с высокой конституцией с меньшей вероятностью будут ошеломлены нападениями или подхватят болезни."
+
+[fight_damage_mod_def]
+display_name = "Модификатор повреждений"
+description = "Это модификатор, применяемый к значению <link=\"armorAndDamage\"><style=\"link\">damage</style></link> атак этого существа."
+
+[fightingSkill]
+display_name = "Боевой навык"
+description = "Умение сражаться — это мера того, насколько хорошо существо в бою."
+
+[defence_def]
+display_name = "оборона"
+description = """\
+"""
+
+[hitpoints]
+display_name = "Точки удара"
+description = "<b>Точки удара </b> представляют способность существа поддерживать <link=\"armorAndDamage\"><style=\"link\">damage</style></link>. Например, средний гоблин имеет пять хитовых очков. Когда у существа будет столько же повреждений, сколько и точек попадания, оно будет выбито или даже убито."
+
+[moraledef]
+display_name = "Мораль"
+description = "<b>Morale</b> — это общий показатель того, насколько хорошо они себя чувствуют. Чем ниже Мораль существа, тем больше вероятность того, что оно убежит от боя, и тем хуже оно будет выполнять задачи в целом. Мораль основана на <link=\"willpowerDef\"><style=\"link\">Willpower</style></link>."
+
+[shoot_damage_modifier_def]
+display_name = "Модификатор повреждений стрельбы"
+description = "Это модификатор, применяемый к значению <link=\"armorAndDamage\"><style=\"link\">damage</style></link> стрелковых атак этого существа."
+
+[shootingSkill]
+display_name = "Стреляющий навык"
+description = "Мастерство существа в дальнем нападении."
+
+[willpowerDef]
+display_name = "Сила воли"
+description = "Сила воли гоблинов является мерой их умственной силы, когда они сталкиваются с невзгодами. Сила воли лежит в основе <link=\"moraledef\"><style=\"link\">Morale</style></link>."
+
+[speedDef]
+display_name = "Скорость"
+description = "Скорость, с которой движется это существо.\n\nЕсли много трафика проходит через плитку, он вырождается в <link=\"mud\"><style=\"link\">mud</style></link>, что замедляет движение."
+
+[work_speed_def]
+display_name = "Скорость работы"
+description = "<b>Рабочая скорость</b> — это скорость, с которой это существо выполняет задачи. Рабочая скорость гоблина по умолчанию составляет 1,0."
+
+# Magic
+
+[forestneutral_def]
+display_name = "Держатели леса нейтральны."
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> ждут, будут ли гоблины их уважать.\n\nЧтобы успокоить Хранителей, создайте <link=\"bonfire\"><style=\"link\">bonfire</style></link> и сделайте соответствующие <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>, начиная с середины лета 2 года."
+
+[waterneutral_def]
+display_name = "Хранители вод нейтральны."
+description = "<link=\"waterskeepers\"><style=\"link\">Хранители Воды</style></link> ждут, будут ли их уважать гоблины.\n\nЕсли вы начинаете <link=\"fishingTech\"><style=\"link\">fishing</style></link>, не забудьте также построить <link=\"bonfire\"><style=\"link\">bonfire</style></link> и сделать соответствующий <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>, начиная с середины лета 2 года."
+
+[foresthappy00_def]
+display_name = "Держатели леса довольны"
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> довольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Сейчас вероятность того, что ваши сооружения загорятся, несколько ниже.\n\n<style=\"характеристики\"> Структура Ignition Chance: <style=\"bonus\">-0.05</style></style>"
+
+[foresthappy01_def]
+display_name = "Держатели леса счастливы"
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> довольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Сейчас меньше шансов, что ваши сооружения загорятся.\n\n<style=\"характеристики\"> Структура Ignition Chance: <style=\"bonus\">-0.1</style></style>"
+
+[waterhappy00_def]
+display_name = "Хранители вод довольны"
+description = "<link=\"waterskeepers\"><style=\"link\">Хранители Воды</style></link> довольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Ваши рыбаки-гоблины теперь немного чаще ловят рыбу.\n\n<style=\"характеристики\"> Шанс неудачи на рыбалке: <style=\"bonus\">-0.05</style></style>"
+
+[waterhappy01_def]
+display_name = "Хранители воды счастливы"
+description = "<link=\"waterskeepers\"><style=\"link\">Хранители Воды</style></link> довольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Ваши рыбаки-гоблины теперь чаще ловят рыбу.\n\n<style=\"характеристики\"> Шанс неудачи на рыбалке: <style=\"bonus\">-0.1</style></style>"
+
+[forestwrath00_def]
+display_name = "Держатели леса разочарованы."
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> разочарованы вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>."
+
+[forestwrath01_def]
+display_name = "Держатели леса недовольны."
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> недовольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Теперь есть немного более высокий шанс, что ваши структуры загорятся, и запасы могут спонтанно воспламениться.\n\n<style=\"характеристики\"> Спонтанный шанс зажигания: <style=\"malus\"> +0.05</style>\nСтруктура Ignition Chance: <style=\"malus\">+0.05</style></style>"
+
+[forestwrath02_def]
+display_name = "Держатели леса в ярости."
+description = "<link=\"деревянники\"><style=\"link\">Хранители леса</style></link> недовольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Сейчас больше шансов, что ваши структуры загорятся, а запасы могут самопроизвольно воспламениться.\n\n<style=\"характеристики\"> Спонтанный шанс зажигания: <style=\"malus\"> +0.1</style>\nСтруктура Ignition Chance: <style=\"malus\">+0.1</style></style>"
+
+[waterwrath00_def]
+display_name = "Хранители воды разочарованы."
+description = "<link=\"waterskeepers\"><style=\"link\">Хранители Воды</style></link> разочарованы вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>."
+
+[waterwrath01_def]
+display_name = "Хранители вод недовольны."
+description = "<link=\"waterskeepers\"><style=\"link\">Keepers of the Waters</style></link> недовольны вашим <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Ваши рыбаки-гоблины теперь немного реже ловят рыбу, а их инструменты чуть чаще ломаются.\n\n<style=\"характеристики\"> Шанс неудачи на рыбалке: <style=\"malus\"> +0.05</style>\nРыболовный инструмент <link=\"tooltoughnessDef\"><style=\"link\">Toughness</style></link>: <style=\"malus>-5</style></style>"
+
+[waterwrath02_def]
+display_name = "Хранители вод злятся."
+description = "<link=\"waterskeepers\"><style=\"link\">Хранители Воды</style></link> злятся на ваш <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>. Ваши рыбаки-гоблины теперь реже ловят рыбу, а их инструменты чаще ломаются.\n\n<style=\"характеристики\"> Шанс неудачи на рыбалке: <style=\"malus\"> +0.1</style>\nРыболовный инструмент <link=\"tooltoughnessDef\"><style=\"link\">Toughness</style></link>: <style=\"malus>-10</style></style>"
+
+# Fluff
+
+[birdhome]
+display_name = "Птичий дом"
+description = "<style=\"fluff\"> Говорят, что птичий дом находится в теплых землях, куда птицы мигрируют осенью. (...) В Оулу когда-то видели человека из Птичьего дома: они были так малы, что не могли дотянуться до колена человека, чтобы ударить его, но выглядели так, будто у них была борода.\n\nPudasjärvi. <style=\"link\"><link=\"fls\">SKS архивы</link></style>.</style>\n\n\nКак и многие сибирские народы, предки финнов считали, что земля плоская, а небо искривлено над ней, как палатка. Северная Звезда была самой высокой точкой неба, поэтому чем дальше на юг вы шли, тем ниже было небо, пока оно не встретило землю. Поэтому было понятно, что на крайнем юге люди должны быть <link=\"dwarves\"><style=\"link\"> очень короткими</style></link>, потому что небо так близко. Зимой мигрирующие птицы летали на юг, а финны до сих пор называют Млечный Путь птичьим следом. Считалось, что лето птицы провели на крайнем юге, поэтому называли его линтукото, птичьим домом. Финны верили, что пока птицы там, они будут сражаться с гномами Птичьего дома за еду. По какой-то причине считалось, что краны и гномы питают особую ненависть друг к другу. Вот почему краны иногда опускают <link=\"dwtrinket\"><style=\"link\">dwarven trinkets</style></link>, когда они возвращаются с юга."
+
+[dwarves]
+display_name = "Гномы"
+description = "<style=\"fluff\"> Согласно народной сказке, люди Птичьего дома были очень маленькими гномами. История не помнит, откуда они родом, но финны, которые раньше ездили на грузовиках в Санкт-Петербург, сказали, что видели там гномов из птичьего дома.\n\n- Sortavala. <style=\"link\"><link=\"fls\">SKS архивы</link></style>.</style>\n\nУменьшительные уроженцы <link=\"birdhome\"><style=\"link\"> Bird-home</style></link>, гномы путешествуют по всему миру. Они известны своим <link=\"dwarvenTech\"><style=\"link\">metalwork</style></link> и своей любовью к алкоголю."
+
+[fls]
+display_name = "Финское литературное общество SKS"
+description = "<style=\"fluff\"> Соберу ли я эти песни вместе?\nОт холода и мороза собирают их?\nПринесу ли я это гнездо ящиков,\nХранители золотых легенд,\nЗа стол в моей каюте,\nПод расписными стропилами,\nВ этом знаменитом и древнем доме?\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), проем\n\nФинское литературное общество SKS является культурной организацией, основанной в 1831 году для сбора и записи финского наследия и продвижения финской культуры и литературы. SKS ведет обширные архивы финской народной и устной культуры, которые восходят к оригинальному произведению Элиаса Лённрота, которое привело к <style=\"link\"><link=\"kalevala\">Kalevala</link></style>.\n\nЦитаты из материалов SKS в игре взяты из коллекции легенд веры, использованной с разрешения Финского литературного общества. Материал был собран со всей Финляндии в течение 19 и 20 веков. Тексты были переведены и адаптированы Майклом Халилой, Korppi Games."
+
+[grimm]
+display_name = "Сказки Гримма"
+description = "Коллекция немецких народных сказок, опубликованных братьями Якобом и Вильгельмом Гриммом с 1812 года, вероятно, вдохновила на создание «стиля = «ссылка»> «ссылка = «калевала»> Калевала</link></style>»."
+
+[kalevala]
+display_name = "Калевала"
+description = "<style=\"fluff\"> Овладевая импульсивным желанием,\nСильное внутреннее побуждение,\nТеперь я готов петь,\nГотовы начать пение.\n\n- Калевала, транс. Джон Мартин Кроуфорд (1888), проем\n\nФинский национальный эпос, созданный Элиасом Лённротом (1802-1884) на основе традиционной финской и карельской поэзии. Лённрот сильно отредактировал устную поэзию, чтобы создать единую христианско-националистическую эпопею своего собственного дизайна.\n\nЦитаты из Калевалы в лагере Гоблин взяты из перевода на английский язык 1888 года Джона Мартина Кроуфорда. Написание имен восстановлено в надлежащей финской форме."
+
+[kalevipoeg]
+display_name = "Калевипог"
+description = "Эстонский национальный эпос, созданный Фридрихом Рейнхольдом Крейцвальдом (1803-1882). Крейцвальд окончил медицинский факультет Тартоского университета в 1833 году и заинтересовался эстонским фольклором. Вдохновленный публикацией в 1835 году «Kalevala» («Калевала»), он начал работать над эпической поэмой, основанной на эстонских народных сказках. Это стало Калевипоэгом, Сыном Калева, изданным в 1853 году, но запрещенным русскими цензорами. В ней рассказывается о приключениях могущественного гиганта Сохни, сына Калева, в Эстонии, Финляндии и за рубежом.\n\nЦитаты из Калевипоэга в лагере Гоблин взяты из перевода прозы У. Ф. Кирби 1894 года на английский язык."
+
+[underworld_fluff]
+display_name = "Подземный мир"
+description = "Подземный мир является домом гоблинов.\n\n<style=\"fluff\"> Подземный мир в финнической мифологии - это другое, более темное место, где обитают духи и существа, такие как гоблины. Это не злое место, а среда, похожая на средний мир."
+
+# Loading screen texts
+
+[loading1]
+description = "В первобытные времена дева,\nКрасивая дочь эфира,\nПрошла через века своего существования\nВ великом пространстве небесном,\nО'эр, прерии еще не разрослись."
+
+[loading2]
+description = "Семьсот лет она блуждала,\nДевять лет существования человека,\nСплюнь океан сюда, туда,\nОн не мог подняться над водой."
+
+[loading3]
+description = "Там, где ее рука повернулась к воде,\nВозник плодородный холм;\nГде же ее нога отдыхала,\nТам она сделала отверстие для рыб."
+
+[loading4]
+description = "Там, где ее голова была направлена к земле,\nПоявились широкие бухты и заливы;\nКогда с берега она проплыла расстояние,\nИ на спине ее она отдыхала,\nТам камни, которые она сделала и смоделировала."
+
+[loading5]
+description = "Ветхий Завет (Ветхий Завет)\nС ногами на острове,\nНа омываемом океаном острове,\nШирокий простор, лишенный зелени."
+
+[loading6]
+description = "Кто за него посеет остров,\nКто для него должен разбрасывать семена;\nВ конце концов, подумал Пеллервоинен,\nПервородный из равнин и прерий."
+
+[loading7]
+description = "Кого должны разбрасывать семена леса.\nИ, таким образом, соглашаясь,\nСеет с усердием остров,\nСемена на землях, которые он разбрасывает."
+
+[loading8]
+description = "Вскоре плодородные семена проросли,\nВскоре деревья стали расти,\nВскоре появились верхушки ели,\nИ сосны были далеко разбросаны."
+
+[loading9]
+description = "Теперь герой, Вяйнямёйнен,\nВстает ввысь, чтобы посмотреть на него,\nКак растут семена Сампсы,\nКак обрабатывается калия;\nВидит, как густо распространяются молодые деревья,\nВидит, как лес поднимается в красоте."
+
+# Tutorials
+
+[first_tutorial]
+display_name = "Добро пожаловать в лагерь Гоблин!"
+description = "Одной из ваших самых важных задач является сохранение ваших гоблинов <link=\"food sources\"><style=\"link\">fed</style></link>. Если они проголодаются, они уйдут!\n\nНомер в верхнем левом углу экрана показывает, сколько месяцев у вас есть запасы еды. Если рядом с ним красный индикатор, то вы, вероятно, не производите достаточно пищи, чтобы кормить гоблинов!\n\nГоблины едят сами по себе, но им нравится есть на <link=\"kitchendef\"><style=\"link\">kitchens</style></link>. Если у вас есть еда, это хорошая идея, чтобы построить кухню.\n\nОбратите внимание, что для того, чтобы построить конструкцию, вам не нужно приобретать материалы заранее. Просто выберите структуру, постройте ее, и гоблины получат то, что им нужно.\n\nСферы уведомлений в верхней части экрана содержат важную для вас информацию. Взгляните на них, чтобы начать доставлять гоблинам что-нибудь поесть.\n"
+
+[second_tutorial]
+display_name = "Хранение и фондовый менеджер"
+description = "Когда ваши гоблины найдут полезные вещи в новом мире, они будут перечислены в Фондовом менеджере.\n\nВы также можете использовать менеджера по акциям, чтобы установить цели для предметов. Например, если вы нашли несколько грибов <link=\"mushroom\"><style=\"link\">mushrooms</style></link>, вы можете установить целевое число грибов в Менеджере по запасам, и ваши гоблины постараются увидеть, что у вас есть хотя бы столько грибов в любое время.\n\nГоблины умные существа (ну, иногда), и они могут понять, как делать вещи. Таким образом, вам не нужно устанавливать целевые показатели фондового менеджера для компонентов. Например, если вы хотите, чтобы ваши гоблины построили <link=\"stoneaxe\"><style=\"link\">stone axes</style></link>, вам не нужно устанавливать цель для <link=\"branch\"><style=\"link\">branches</style></link>. Гоблины поймут, что им нужно получить ветки и сделать это.\n\nЕсли предметы останутся лежать, они разлагаются и в конечном итоге будут уничтожены. Чтобы этого избежать, вашим гоблинам понадобятся места для <link=\"storage\"><style=\"link\">store</style></link> items. Правильно хранимые предметы будут распадаться медленнее или вообще не будут. Предметы могут храниться в складах или запасах.\n\nЕсли вы нажмете на элемент, кнопка «Заявление» означает, что гоблины будут использовать его и хранить его надлежащим образом. Кнопка \"Игнорировать\" означает, что они оставят ее там."
+
+[defence_tutorial]
+display_name = "Защитите свой лагерь"
+description = "Этот новый мир может быть опасным местом, и вы должны думать о защите своего лагеря от врагов.\n\nВ начале игры доступны два вида защиты: укрепления и здания охраны. Укрепления могут замедлить врагов и затруднить им доступ к вашим гоблинам или зданиям. Вы также можете копать защитные рвы, даже рвы, чтобы защитить свой лагерь.\n\nОбычно, однако, вам понадобится охрана, чтобы защитить свой лагерь. Гоблины могут быть автоматически призваны на временную караульную службу. Вы можете отрегулировать, сколько гоблинов написано в окне Джобса. Составленные гоблины активируются, когда враги находятся рядом, и вооружаются ближайшим импровизированным оружием. Они не будут использовать щиты или броню.\n\nВы можете назначить гоблинов штатными охранниками, построив охранное здание. Выбор караула позволяет вам решить, как оборудован гоблин. Стражи будут сражаться с врагами, которые атакуют ваш лагерь.\n\nПри строительстве охранных зданий помните, что не слишком много гоблинов находятся на караульной службе или иным образом не заняты работой в лагере, или рабочие места будут быстро накапливаться."
+
+[jobs_tutorial]
+display_name = "Работа"
+description = "У ваших гоблинов много работы!\n\nКогда вы говорите своим гоблинам что-то делать, например, строить структуру или рубить дерево, они получают работу. Срубить дерево — это одна работа, но построить здание — это много работы: подготовка земли, получение материалов, доставка их на строительную площадку и так далее.\n\nВы можете увидеть, сколько незавершенных рабочих мест у ваших гоблинов, посмотрев на количество рабочих мест в верхней строке. Он показывает количество выдающихся рабочих мест на одного гоблина. Если число зеленое, то рабочих мест не так много; когда оно становится желтым, на одного гоблина приходится несколько рабочих мест. Оранжевый и красный означают много работы.\n\nВы можете увидеть, какие работы являются выдающимися, нажав кнопку «Вакансии» в нижней части экрана. В нем будет отображаться список всех рабочих мест, а также кнопка, на которой можно изменить приоритеты работы. Работа, которая не может быть выполнена прямо сейчас; им нужен инструмент или компонент, или какая-то другая работа должна быть завершена, прежде чем они могут быть выполнены.\n\nБудьте осторожны, чтобы не назначать слишком много рабочих мест своим гоблинам! Если число рабочих мест очень велико, дайте гоблинам минутку, чтобы очистить их отставание, или дела не будут выполнены.\n"
+
+[mud_tutorial]
+display_name = "грязь"
+description = "Грязь появилась в вашем лагере!\n\nКогда гоблины ходят по плитке, она становится изношенной. Когда плитка становится достаточно изношенной, она превращается в <link=\"mud\"><style=\"link\">mud</style></link>. Грязь довольно сильно замедляет движение!\n\nЧтобы вашим гоблинам было легче передвигаться по лагерю, рассмотрите возможность покрытия грязевых плиток дорогами, например <link=\"duckboard\"><style=\"link\">duckboards</style></link>."
+
+[basic_tools_tutorial]
+display_name = "Основные инструменты"
+description = "Чтобы ваш лагерь работал, рекомендуется открыть <link=\"second tutorial\"><style=\"link\">stock manager</style></link> и заказать некоторые <link=\"basictoolsdef\"><style=\"link\">basic tools</style></link>.\n\n<link=\"stoneaxe\"><style=\"link\"> Каменные топоры</style></link> необходимы для вырубки деревьев и рубки дров. <link=\"diggingstick\"><style=\"link\"> Копающие палочки </style></link> используются для изменения уровня земли и удаления пней деревьев. <link=\"claypot\"><style=\"link\"> Глиняные горшки </style></link> являются вашими первыми доступными ведрами для тушения пожаров.\n\nЕсли вы закажете эти инструменты в менеджере акций, гоблины создадут их, или появятся уведомления, сообщающие вам, что вам нужно для их создания."
+
+[ruins_tutorial]
+display_name = "Руины"
+description = "Ваши гоблины увидели некоторые заросшие руины в лесу.\n\nВ руинах можно найти интересные и полезные вещи, но будьте осторожны! Руины, вероятно, будут глубоко в <link=\"forestcover\"><style=\"link\">forest-cover</style></link>. Лесной покров выглядит как туман на карте, и если вы закажете в него гоблинов, они заблудятся.\n\nЛесной покров можно очистить, вырубив деревья и кусты, или построив <link=\"ravenstatue\"><style=\"link\">raven statues</style></link>.\n\nНа карте больше руин, чем на первых, и все они содержат предметы, которые стоит открыть.\n"
+
+[sacrifice_tutorial]
+display_name = "Жертвы"
+description = "Каждое лето гоблины делают <link=\"sacrifice def\"><style=\"link\">жертвы</style></link> Хранителям <link=\"деревянники\"><style=\"link\">леса</style></link> и <link=\"водоводы\"><style=\"link\">река</style></link>.\n\nЧтобы принести жертвы, создайте <link=\"bonfire\"><style=\"link\">bonfire</style></link>. В начале лета вам предложат менеджера жертвоприношений, где вы выберете, чем пожертвовать. Затем гоблины отнесут жертвенные предметы к костру, а когда наступит лето, зажгут его. Жертвенные предметы, которые вам нужны, определяются тем, какие структуры вы построили. Например, для каждого <link=\"fishing1\"><style=\"link\">fisher-goblin's shack</style></link>, который вы строите, водопроводчики будут ожидать одну <link=\"ceremonialfish\"><style=\"link\">ceremonial fish</style></link> в качестве жертвы. Жертвенные предметы можно заказать в <link=\"second tutorial\"><style=\"link\">stock manager</style></link>, как и любые другие предметы.\n\nЖертвы предоставляют <link=\"culturedef\"><style=\"link\">culture points</style></link> и повышают уровень <link=\"sac tree def\"><style=\"link\">sacrificial tree</style></link>. Вам не нужно идти на жертвы, но будьте осторожны: духи разозлятся!"
+
+[tech_tutorial]
+display_name = "Технология"
+description = "Теперь у вас достаточно <link=\"researchpoints\"><style=\"link\">research points</style></link>, чтобы открыть новую технологию! Технологии открывают новые элементы и структуры и пути к новым технологиям.\n\nТехнологическая кнопка в нижней части экрана открывает технологическое дерево. В дереве есть два вида технологий. Некоторые из них могут быть разблокированы с помощью точек исследования, а некоторые - путем обнаружения предмета или события в игре.\n\nТочки исследования накапливаются каждый сезон. Вы можете получить больше точек исследования, призвав <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link> и сделав <link=\"sacrifice def\"><style=\"link\">жертвы</style></link>, чтобы выровнять его."
+
+[shaman_tutorial]
+display_name = "шаманизм"
+description = "Теперь у вас есть гоблин, который имеет право быть назначенным <link=\"shaman def\"><style=\"link\">shaman</style></link>. Шаман - это специалист по ритуалам, который может общаться с духами мертвых и получить доступ к подземному миру.\n\nШаман может использовать <link=\"vaki def\"><style=\"link\">väki</style></link> для заклинаний. Вы можете разблокировать больше заклинаний, исследуя магические технологии.\n\nЧтобы назначить шамана, создайте <link=\"shamanhut\"><style=\"link\">shaman's hut</style></link>."
+
+[reachability_tutorial]
+display_name = "достижимость"
+description = "Достижимость - это техническая концепция в лагере Гоблин.\n\nЧтобы определить, можно ли получить доступ к структуре или предмету, или если гоблин застрял где-то, игра проверяет, может ли он найти путь от него к центру лагеря. Центром лагеря является либо вратная скала, либо, если она была вызвана, жертвенное дерево. Если игра не может найти такой путь, объект помечается как недостижимый.\n\nТак что не стройте свой лагерь таким образом, чтобы были сооружения, до которых нельзя добраться от шлюзовой скалы или жертвенного дерева. Если гоблин отмечен как недосягаемый, постарайтесь убедиться, что у него есть путь к шлюзовой скале или жертвенному дереву."
+
+[last_tutorial]
+display_name = "Наслаждайтесь лагерем Гоблин!"
+description = "Теперь вы прочитали все учебники для лагеря Гоблин. Наслаждайтесь игрой!"
+
+[nettle_farming_tutorial]
+display_name = "Скотоводство"
+description = "Сельскохозяйственный участок, засаженный семенами крапивы, будет производить растения крапивы. Они должны быть обработаны в <link=\"nettleprocessing\"><style=\"link\">nettleyard</style></link>, чтобы получить <link=\"nettleseedbag\"><style=\"link\">nettle seeds</style></link>, съедобный <link=\"nettlebunch\"><style=\"link\">nettle leaves</style></link> и <link=\"nettlestems\"><style=\"link\">nettle stems</style></link>, которые могут быть сведены в волокно.\n\nВы можете сделать это, построив крапивный двор и заказав крапивные листы или стебли крапивы в менеджере по запасам."
+
+# Camp tiers
+
+[clearing]
+display_name = "Очистка"
+
+[camp]
+display_name = "лагерь"
+
+[settlement]
+display_name = "Урегулирование"
+
+[hamlet]
+display_name = "Гамлет"
+
+[village]
+display_name = "Деревня"
+
+[town]
+display_name = "Город"
+
+[stronghold]
+display_name = "Оплот"

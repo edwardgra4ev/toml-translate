@@ -1,0 +1,1408 @@
+# Contents
+#
+# 1.0 Wood technologies
+# 2.0 Clay and brick technologies
+# 3.0 Stone technologies
+# 4.0 Metal technologies
+# 5.0 Weapon and armor technologies
+# 6.0 Food technologies
+# 7.0 Farming technologies
+# 8.0 Shamanism technologies
+
+# 1.0 Wood technologies
+
+[carpentryTech]
+display_name = "Technology: Carpentry"
+treename = "Carpentry"
+techLevel = "wood"
+treeCoord = "1,7"
+description = """<style="fluff">\
+Spake the singer, Väinämöinen:
+"I was building me a vessel,
+At my craft was working, singing,
+Needed three words of the Master,
+How to fasten in the ledges,
+How the stern should be completed.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+Wood is the most plentifully available material in the northern forests, and your goblins are learning how to make use of it.
+
+Unlocked by: building a <link="carpenter1"><style="link">carpenter's workshop</style></link>
+
+Unlocks:
+<link="diggingstick"><style="link">Digging Stick</style></link>
+<link="stonemace"><style="link">Stone Mace</style></link> (with <link="weaponsTech"><style="link">Technology: Weapons</style></link>)
+<link="woodpole"><style="link">Wooden Pole</style></link>
+<link="woodspear"><style="link">Wooden Spear</style></link> (with <link="weaponsTech"><style="link">Technology: Weapons</style></link>)
+
+<link="palisade"><style="link">Palisade</style></link>
+<link="storehouse1><style="link">Storage Shack</style></link>
+<link="weathervane"><style="link">Weathervane</style></link>
+
+Leads to:
+<link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link> (with <link="dwarvenTech"><style="link">Technology: Dwarven Metal</style></link>)\
+<link="housingTech"><style="link">Technology: Housing</style></link>
+<link="plankTech"><style="link">Technology: Planks</style></link>
+<link="spinningTech"><style="link">Technology: Spinning</style></link> (with <link="clayTech"><style="link">Technology: Pottery</style></link>)
+<link="woodmagicTech"><style="link">Technology: Wooden Magical Structures</style></link>  (with <link="shamanismTech"><style="link">Technology: Shamanism</style></link>)\
+"""
+# <link="boatingTech"><style="link">Technology: Boating</style></link> (with <link="fishingTech"><style="link">Technology: Fishing</style></link>)
+
+[housingTech]
+display_name = "Technology: Housing"
+treename = "Housing"
+techLevel = "wood"
+prerequisite = "carpentryTech"
+researchPointCost = 3
+treeCoord = "2,5"
+description = """<style="fluff">\
+The old folk say that goblins also have houses, just like other people.
+
+Kittilä, 1854. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+The goblins have learned to build houses to shelter from the elements.
+
+Unlocks:
+<link="housing1a"><style="link">Simple Shack</style></link>
+<link="kitchen1"><style="link">Kitchen Shack</style></link>
+<link="housing2a"><style="link">Simple Shed</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+Leads to:
+<link="beamTech"><style="link">Technology: Beams</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)\
+"""
+
+[beamTech]
+display_name = "Technology: Beams"
+treename = "Beams"
+prerequisite = ["plankTech", "housingTech"]
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "3,6.5"
+description = """<style="fluff">\
+In front of the village was a wide and grassy space, and beyond this the great wood again, but at the back the trees came right up to the houses, which, with their great beams and wooden ​framework and thatched roofs, green with moss, seemed almost to be a part of the forest.
+
+ - Lord Dunsany, the Fortress Unvanquishable Save for Sacnoth (1908)</style>
+
+The goblins have learned to construct buildings by shaping <link="woodlog"><style="link">logs</style></link> into <link="woodbeam"><style="link">beams</style></link> \
+and interlocking them together. This is a very durable <link="beamtier"><style="link">method of building</style></link>.
+
+Prerequisites: <link="housingTech"><style="link">Housing</style></link>, <link="plankTech"><style="link">Planks</style></link>
+
+Unlocks:
+<link="storehouse3"><style="link">Storage Hut</style></link>
+<link="housing3a"><style="link">Simple Hut</style></link>
+
+Leads to:
+<link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link> (with <link="stoneTech"><style="link">Technology: Stone</style></link>)
+<link="windmillsTech"><style="link">Technology: Windmills</style></link>\
+"""
+# <link="carpenter3"><style="link">Carpenter's Hut</style></link>
+
+[plankTech]
+display_name = "Technology: Planks"
+treename = "Planks"
+prerequisite = "carpentryTech"
+techLevel = "wood"
+researchPointCost = 4
+treeCoord = "2,6.5"
+description = """<style="fluff">\
+From the stems he lops the branches,
+Splits the trunk in many pieces,
+Fashions lumber for the bottom,
+Countless boards, and ribs, and braces,
+For the singer's magic vessel,
+For the boat of the magician.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+The goblins have learned to cut <link="woodlog"><style="link">logs</style></link> into <link="woodplank"><style="link">planks</style></link>. \
+Planks can be used to build <link="planktier"><style="link">more advanced buildings</style></link>.
+
+Prerequisites: <link="carpentryTech"><style="link">Carpentry</style></link>
+
+Unlocks:
+<link="woodbucket"><style="link">Wooden Bucket</style></link>
+<link="woodplank"><style="link">Wooden Plank</style></link>
+<link="woodshield"><style="link">Wooden Shield</style></link> (with <link="armorTech"><style="link">Technology: Armor</style></link>)
+
+<link="carpenter2"><style="link">Carpenter's Shed</style></link>
+<link="duckboard"><style="link">Duckboard</style></link>
+<link="granary2"><style="link">Granary</style></link>
+<link="guard2"><style="link">Guard Post</style></link>
+<link="kitchen2"><style="link">Kitchen Shed</style></link>
+<link="plank_bridge"><style="link">Plank Bridge</style></link>
+<link="housing2a"><style="link">Simple Hut</style></link>
+<link="spinning2"><style="link">Spinner's Shed</style></link> (with <link="spinningTech"><style="link">Technology: Spinning</style></link>)
+<link="storehouse2"><style="link">Storage Shed</style></link>
+<link="weaponmaker2"><style="link">Weaponsmith's Shed</style></link> (with <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>)
+<link="woodtower"><style="link">Wooden Watchtower</style></link> (with <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>)
+
+Leads to:
+<link="barrelTech"><style="link">Technology: Barrel-making</style></link>
+<link="beamTech"><style="link">Technology: Beams</style></link> (with <link="housingTech"><style="link">Technology: Housing</style></link>)
+<link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>\
+<link="armorTech"><style="link">Technology: Wooden Armor</style></link>
+"""
+# <link="potter1"><style="link">Potter's Shack</style></link> (with <link="clayTech"><style="link">Technology: Pottery</style></link>)
+# <link="firefighting2"><style="link">Fire Warden's Post</style></link>
+
+[leatherTech]
+display_name = "Technology: Leather"
+treename = "Leather"
+prerequisite = ["butcheryTech", "clayTech"]
+researchPointCost = 4
+techLevel = "wood"
+treeCoord = "3,9"
+description = """\
+<style="fluff">On thy feet, put silken stockings,
+With the shoes of finest leather;
+Deck thy hair with golden braidlets,
+Bind it well with threads of silver;
+Trim with rings thy fairy fingers,
+And thy hands with dainty ruffles;
+Come bedecked then to thy chamber,
+Thus return to this thy household.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>
+
+Your camp has acquired an animal pelt that can be tanned for leather.
+
+Unlocks:
+<link="curedhide"><style="link">Cured Hide</style></link>
+<link="leatherjerkin"><style="link">Leather Jerkin</style></link>
+<link="rawleather"><style="link">Raw Leather</style></link>
+
+<link="curing0"><style="link">Curing Workshop</style></link>
+<link="leatherworker1"><style="link">Leather-worker's Shack</style></link>
+<link="tanner0"><style="link">Tanning Vats</style></link>
+
+Leads to:
+<link="leatherArmorTech"><style="link">Technology: Leather Armor</style></link> (with <link="armorTech"><style="link">Technology: Wooden Armor</style></link>)\
+"""
+
+[spinningTech]
+display_name = "Technology: Spinning"
+treename = "Spinning"
+prerequisite = ["carpentryTech", "clayTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "2,8"
+description = """\
+<style="fluff">Inside he could hear maidens spinning and singing, lamenting the happiness of their former lives, and hoping that some deliverer might appear.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIII: The Kalevide’s First Journey to Hades</style>
+
+Many plant fibers can be spun into durable strings, for everything from fishing nets to bowstrings.
+
+Prerequisites: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>, <link="clayTech"><style="link">Technology: Pottery</style></link>
+
+Unlocks:
+<link="rope"><style="link">Rope</style></link>
+<link="coarsefiber"><style="link">Coarse Fiber</style></link>
+<link="coarsethread"><style="link">Coarse Thread</style></link>
+<link="finefiber"><style="link">Fine Fiber</style></link>
+<link="finethread"><style="link">Fine Thread</style></link>
+
+<link="retting0"><style="link">Retting Yard</style></link>  (with <link="clayTech"><style="link">Technology: Pottery</style></link>)
+<link="ropemaking1"><style="link">Rope-maker's Shack</style></link>
+<link="spinning2"><style="link">Spinner's Shed</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+Leads to:
+<link="archeryTech"><style="link">Technology: Archery</style></link> (with <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>)
+<link="clothArmorTech"><style="link">Technology: Weaving</style></link>\
+"""
+
+#[boatingTech]
+#display_name = "Technology: Boating"
+#treename = "Boating"
+#prerequisite = ["carpentryTech", "fishingTech"]
+#researchPointCost = 900
+#techLevel = "wood"
+#treeCoord = "2,2"
+#description = """\
+#<style="fluff">Väinämöinen, ancient minstrel,
+#The eternal wisdom-singer,
+#For his boat was working lumber,
+#Working long upon his vessel.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+#
+#The goblins have learned to build dug-out canoes.
+#
+#Prerequisites: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>, <link="fishingTech"><style="link">Technology: Fishing</style></link>
+#
+#Leads to:
+#<link="logDrivingTech"><style="link">Technology: Log Driving</style></link> (with <link="tradingTech"><style="link">Technology: Trading</style></link>)\
+#"""
+
+[hydraulicTech]
+display_name = "Technology: Hydraulics"
+treename = "Hydraulics"
+prerequisite = ["plankTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "3,2.5"
+description = """<style="fluff">Cease, O cataract, thy roaring,
+Cease, O waterfall, thy foaming!
+Maidens of the foam and current,
+Sitting on the rocks in water,
+On the stone-blocks in the river,
+Take the foam and white-capped billows
+In your arms and still their anger.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XL</style>
+
+The goblins are growing more familiar with working on the water, and have invented several interesting contraptions to control it.
+
+Prerequisites: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+Unlocks:
+<link="screwpump"><style="link">Screw Pump</style></link>
+<link="wooden_floodgate"><style="link">Wooden Floodgate</style></link>\
+"""
+
+[barrelTech]
+display_name = "Technology: Barrel-making"
+treename = "Barrel-making"
+prerequisite = ["plankTech"]
+researchPointCost = 8
+techLevel = "wood"
+treeCoord = "4,7.5"
+description = """<style="fluff">So Varrak the Laplander took the helm and steered the vessel due north for many days and nights. The first danger they encountered was a great whirlpool, which threatened to engulf the ship. Then Varrak threw a small barrel overboard, wrapped in red cloths and ornamented with red streamers. This bait was swallowed by a whale, which took to flight, and towed the ship to a place of safety.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVI: The Voyage of the Kalevide</style>
+
+The goblins have learned to make barrels for storing liquids. They also work as flotation devices!
+
+Prerequisites: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+Unlocks:
+<link="wood_barrel"><style="link">Wooden Barrel</style></link>
+
+<link="pontoon_bridge"><style="link">Pontoon Bridge</style></link>"""
+# 
+#Leads to:
+#<link="tarTech"><style="link">Technology: Tar</style></link>
+
+[charcoalTech]
+display_name = "Technology: Charcoal"
+treename = "Charcoal"
+prerequisite = ["smokingTech"]
+researchPointCost = 12
+techLevel = "wood"
+treeCoord = "8,3"
+description = """\
+<style="fluff">The demons attempt unceasingly to soften their chains by heaping up charcoal faggots around them, but when the cock crows at dawn their fetters grow thicker again.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon</style>
+
+As they burn wood, the goblins have discovered that sometimes wood chars into a whole new substance, which burns much hotter: charcoal.
+
+Prerequisites: <link="smokingTech"><style="link">Technology: Smoking</style></link>
+
+Unlocks:
+<link="charcoal"><style="link">Charcoal</style></link>
+
+<link="charcoal_clamp><style="link">Charcoal Clamp</style></link>
+
+Leads to:
+<link="forgingTech"><style="link">Technology: Forging</style></link> (with <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>)"""
+
+#Leads to:
+#<link="tarTech"><style="link">Technology: Tar</style></link>
+
+#[tarTech]
+#display_name = "Technology: Tar"
+#treename = "Tar"
+#prerequisite = ["charcoalTech", "barrelTech"]
+#researchPointCost = 900
+#techLevel = "wood"
+#treeCoord = "10,3"
+#description = """The goblins have learned to produce tar.
+#
+#Prerequisites: <link="charcoalTech"><style="link">Technology: Charcoal</style></link>, <link="barrelTech"><style="link">Technology: Barrel-making</style></link>
+#
+#Unlocks:
+#<link="tarbarrel"><style="link">Tar Barrel</style></link>
+#
+#<link="targrave"><style="link">Tar Grave</style></link>"""
+
+#[tradingTech]
+#display_name = "Technology: Trading"
+#treename = "Trading"
+#techLevel = "wood"
+#treeCoord = "10,1"
+#description = """A trader has visited the camp, and now your goblins can return the visit!"""
+
+#[logDrivingTech]
+#display_name = "Technology: Log-driving"
+#treename = "Log-driving"
+#prerequisite = ["boatingTech", "tradingTech"]
+#techLevel = "wood"
+#researchPointCost = 8
+#treeCoord = "11,1"
+#description = """You can now send goblins upriver to establish a logging outpost, and drive logs down the river to your camp.
+#
+#Prerequisites: <link="boatingTech"><style="link">Technology: Boating</style></link>, <link="tradingTech"><style="link">Technology: Trading</style></link>"""
+
+#[sailingTech]
+#display_name = "Technology: Sailing"
+#treename = "Sailing"
+#prerequisite = ["tarTech", "clothArmorTech"]
+#techLevel = "wood"
+#researchPointCost = 10
+#treeCoord = "10,10"
+#description = """<style="fluff">\
+#Now erects the masts of pine-wood,
+#On each mast the sails of linen,
+#Sails of blue, and white, and scarlet,
+#Woven into finest fabric.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>
+#
+#The goblins have invented sailing vessels.
+#
+#Prerequisites: <link="tarTech"><style="link">Technology: Tar</style></link>, <link="clothArmorTech"><style="link">Technology: Weaving</style></link>"""
+
+[windmillsTech]
+display_name = "Technology: Windmills"
+treename = "Windmills"
+prerequisite = ["bakingTech", "beamTech"]
+researchPointCost = 12
+techLevel = "wood"
+treeCoord = "7,2"
+description = """<style="fluff">\
+And there was nothing in that town that was good for a soul to see. For it did not know that beauty was to be desired; so it made many things by machinery, and became hurried in all its ways, and boasted its superiority over other cities and became richer and richer, and there was none to pity it.
+
+ - Lord Dunsany, the Kith of the Elf Folk (1908)</style>
+
+The goblins have invented wind-powered machines.
+
+Prerequisites: <link="bakingTech"><style="link">Technology: Baking</style></link>, <link="beamTech"><style="link">Technology: Beams</style></link>
+
+Unlocks:
+<link="mill3"><style="link">Windmill</style></link>"""
+
+[burialTech]
+display_name = "Technology: Burial"
+treename = "Burial"
+techLevel = "wood"
+treeCoord = "2,2"
+description = """\
+<style="fluff">Tuonetar makes this answer:
+"Ancient minstrel, Väinämöinen,
+Tell me what has brought thee hither,
+Brought thee to the, realm of Mana,
+To the courts of Tuonela,
+Ere Tuoni sent his angels
+To thy home in Kalevala,
+There to cut thy magic life-thread."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+Sadly, a goblin has died. If their body can be recovered, their comrades can build a <link="grave0"><style="link">grave</style></link> to bury them in.
+
+Unlocks:
+<link="grave0"><style="link">Grave</style></link>\
+"""
+
+# 2.0 Clay and brick technologies
+
+[clayTech]
+display_name = "Technology: Pottery"
+treename = "Pottery"
+techLevel = "wood"
+treeCoord = "1,8.5"
+description = """<style="fluff">\
+O'er the fire the crane was hanging,
+On the crane were hooks of copper,
+On the hooks the broiling-vessels
+Filled with bear-steak for the feasting.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>
+
+Clay can be shaped and fired into durable earthenware vessels, like <link="claypot"><style="link">pots</style></link> for storing and cooking food.
+
+Unlocked by: <link="claypit"><style="link">Clay Pit</style></link>
+
+Unlocks:
+<link="scuttlebutt"><style="link">Scuttlebutt</style></link>
+<link="retting0"><style="link">Retting Yard</style></link> (with <link="spinningTech"><style="link">Technology: Spinning</style></link>)
+
+Leads to:
+<link="leatherTech"><style="link">Technology: Leather</style></link> (with <link="butcheryTech"><style="link">Technology: Butchery</style></link>)
+<link="spinningTech"><style="link">Technology: Spinning</style></link> (with <link="carpentryTech"><style="link">Technology: Carpentry</style></link>)\
+"""
+# <link="potter1"><style="link">Potter's Shack</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+#[chalkTech]
+#display_name = "Technology: Chalk"
+#treename = "Chalk"
+#prerequisite = ["stoneTech"]
+#techLevel = "stone"
+#researchPointCost = 8
+#treeCoord = "9,7.5"
+#description = """<style="fluff">\
+#And the blue butterflies, those that love the chalk, came and perched themselves on the tall grasses, five or six sometimes on a single piece of grass, and they closed their wings and slept, and the grass bent a little beneath them.
+#
+# - Lord Dunsany, In the Twilight (1908)</style>
+#
+#The goblins understand how to dig for chalk.
+#
+#Prerequisites: <link="stoneTech"><style="link">Technology: Stone</style></link>
+#
+#Unlocks:
+#<link="brickTech"><style="link">Technology: Bricks</style></link>
+#<link="masonryTech"><style="link">Technology: Masonry</style></link> (with <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>)"""
+
+#[masonryTech]
+#display_name = "Technology: Masonry"
+#treename = "Masonry"
+#prerequisite = ["stoneConstructionTech", "chalkTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "10,7"
+#description = """By mixing mortar out of chalk, the goblins have learned to create durable stone structures.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>, <link="chalkTech"><style="link">Technology: Chalk</style></link>"""
+
+#[brickTech]
+#display_name = "Technology: Bricks"
+#treename = "Bricks"
+#prerequisite = ["chalkTech", "clayTech"]
+#techLevel = "stone"
+#researchPointCost = 8
+#treeCoord = "10,8"
+#description = """The goblins have learned to produce bricks by firing clay and chalk.
+#
+#Prerequisites: <link="chalkTech"><style="link">Technology: Chalk</style></link>, <link="clayTech"><style="link">Technology: Clay</style></link>
+#
+#Unlocks:
+#<link="brickConstructionTech"><style="link">Technology: Brick Construction</style></link>"""
+
+#[brickConstructionTech]
+#display_name = "Technology: Brick Construction"
+#treename = "Brick Construction"
+#prerequisite = ["brickTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,8"
+#description = """The goblins can now build sturdy houses out of brick.
+#
+#Prerequisites: <link="brickTech"><style="link">Technology: Bricks</style></link>"""
+
+# 3.0 stone technologies
+
+[simpleStoneTech]
+display_name = "Technology: Simple Stone Structures"
+treename = "Simple Stone Structures"
+techLevel = "wood"
+treeCoord = "1,5.5"
+description = """<style="fluff">That the rocks may fall and sicken,
+And the beds of iron perish.
+Rocks and metals do not murmur
+At the hands of the invader.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLV</style>
+
+The goblins have learned to make use of rocks and stone they can find.
+
+Unlocked by: discovering <link="roughstone"><style="link">Rough Stone</style></link> or <link="dressedstone"><style="link">Dressed Stone</style></link>.
+
+Unlocks:
+<link="cobblestone_road"><style="link">Cobblestone Road</style></link>
+<link="stonepavement"><style="link">Stone Pavement</style></link>"""
+
+[stoneTech]
+display_name = "Technology: Stone"
+treename = "Stone"
+techLevel = "stone"
+prerequisite = "dwarvenToolTech"
+researchPointCost = 10
+treeCoord = "7,6.5"
+description = """<style="fluff">Presently they passed through a stone door into a stone gallery, likewise paved with stone, and after passing through it for some little distance, arrived at a room in which the walls and furniture were wholly of iron. "This," said the eldest sister, "is the room of old Sarvik, where his men-servants assemble and work or amuse themselves, and where they are sometimes tortured in all sorts of ways."
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>
+
+The goblins have acquired the tools to quarry stone.
+
+Prerequisites: <link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link>
+
+Unlocks:
+<link="stonequarry"><style="link">Stone Quarry</style></link>
+<link="stonecutter1"><style="link">Stone-cutter's Shack</style></link>
+
+<link="dressedstone"><style="link">Dressed Stone</style></link>
+<link="roughstone"><style="link">Rough Stone</style></link>
+
+Leads to:
+<link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link> (with <link="beamTech""><style="link">Technology: Beams</style></link>)"""
+
+#<link="chalkTech"><style="link">Technology: Chalk</style></link>
+
+#[millingTech]
+#display_name = "Technology: Watermills"
+#treename = "Watermills"
+#prerequisite = ["hydraulicTech", "windmillsTech"]
+#techLevel = "stone"
+#treeCoord = "9,2.5"
+#researchPointCost = 8
+#description = """<style="fluff">\
+#It is well here for the maiden,
+#Here the bride may live in freedom,
+#Need not turn the heavy millstone,
+#Need not move the iron pestle;
+#Here the wheat is ground by water.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXV</style>
+#
+#Prerequisites: <link="windmillsTech"><style="link">Technology: Windmills</style></link>, <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>
+#
+#Unlocks:
+#<link="sawMillTech"><style="link">Technology: Sawmills</style></link> (with <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>)"""
+
+[stoneConstructionTech]
+display_name = "Technology: Stone Construction"
+treename = "Stone Construction"
+prerequisite = ["stoneTech", "beamTech"]
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "8,6"
+description = """\
+<style="fluff">They destroyed one of the hills of God, but they made Babbulkund. She is carven, not built; her palaces are one with her terraces, there is neither join nor cleft.
+
+ - Lord Dunsany, the Fall of Babbulkund (1908)</style>
+
+The goblins have figured out how to build stone buildings.
+
+Prerequisites: <link="stoneTech"><style="link">Technology: Stone</style></link>, <link="beamTech""><style="link">Technology: Beams</style></link>
+
+Unlocks:
+<link="housing4a"><style="link">Stone and Timber Cottage</style></link>
+
+Leads to:
+<link="forgingTech"><style="link">Technology: Forging</style></link> (with <link="charcoalTech"><style="link">Technology: Charcoal</style></link>)
+<link="stoneFortTech"><style="link">Technology Stone Fortifications</style></link>"""
+
+# <link="carpenter4"><style="link">Carpenter's Cottage</style></link>
+# <link="kitchen4"><style="link">Kitchen Cottage</style></link>
+# <link="storehouse4"><style="link">Stone and Timber Storehouse</style></link>
+
+# <link="masonryTech"><style="link">Technology: Masonry</style></link> (with <link="chalkTech"><style="link">Technology: Chalk</style></link>)
+
+[stoneFortTech]
+display_name = "Technology: Stone Fortifications"
+treename = "Stone Fortifications"
+prerequisite = "stoneConstructionTech"
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "9,6"
+description = """<style="fluff">Olev had now built a magnificent city, fortified with towers and ditches, around the burial-mound of Kalev. Large numbers of people flocked to it, and the Kalevide named it Lindanisa, in memory of his mother.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVII: The Heroes and the Dwarf</style>
+
+The goblins have developed military engineering in stone.
+
+Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+
+Unlocks:
+<link="stonewall"><style="link">Drystone Wall</style></link>"""
+
+#[roadBuildTech]
+#display_name = "Technology: Road Building"
+#treename = "Road Building"
+#prerequisite = "stoneConstructionTech"
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,6.5"
+#description = """The goblins can now build and pave permanent roads.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>"""
+
+#[bridgeBuildTech]
+#display_name = "Technology: Bridge Building"
+#treename = "Bridge Building"
+#prerequisite = ["stoneConstructionTech", "hydraulicTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,4.5"
+#description = """With stone piers and foundations, a goblin-made bridge can now cross any chasm.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>, <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>"""
+
+# 4.0 metal technologies
+
+[dwarvenTech]
+display_name = "Technology: Dwarven Metal"
+treename = "Dwarven Metal"
+techLevel = "wood"
+treeCoord = "5,7.5"
+description = """\
+<style="fluff">Now when they came to the smithy, Sindri laid a pigskin in the hearth and bade Brokkr blow, and did not cease work until he took out of the hearth that which he had laid therein.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV</style>
+
+Your goblins have discovered dwarven metal!
+
+A substance from <link="birdhome><style="link">the far south</style></link>. Softer and more malleable than iron, dwarven metal can be cold-forged at a smithy and made into various weapons and tools.
+
+Unlocked by: <link="dwtrinket"><style="link">Dwarven Trinket</style></link>
+
+Unlocks:
+<link="smithy0"><style="link">Smithy</style></link>
+
+Leads to:
+<link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link> (with <link="carpentryTech"><style="link">Technology: Carpentry</style></link>)\
+"""
+
+[dwarvenToolTech]
+display_name = "Technology: Dwarven Tools"
+treename = "Dwarven Tools"
+prerequisite = ["dwarvenTech", "carpentryTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "6,7.5"
+description = """\
+<style="fluff">After that, Loki went to those dwarves who are called Ívaldi's Sons; and they made the hair, and Skídbladnir also, and the spear which became Odin's possession, and was called Gungnir.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV</style>
+
+Your goblins have understood how to make tools out of dwarven metal.
+
+Prerequisites: <link="dwarvenTech"><style="link">Technology: Dwarven Metal</style></link>
+
+Unlocks:
+<link="dwaxe"><style="link">Dwarven Axe</style></link>
+<link="dwbillhook"><style="link">Dwarven Billhook</style></link>
+<link="dwdiggingbar"><style="link">Dwarven Digging Bar</style></link>
+<link="dwhoe"><style="link">Dwarven Hoe</style></link>
+<link="dwpick"><style="link">Dwarven Pick</style></link>
+<link="dwshovel"><style="link">Dwarven Shovel</style></link>
+<link="dwspear"><style="link">Dwarven Spear</style></link> (with <link="weaponsTech"><style="link">Technology: Weapons</style></link>)
+<link="dwshield"><style="link">Dwarven Shield</style></link> (with <link="armorTech"><style="link">Technology: Wooden Armor</style></link>)
+
+Leads to:
+<link="clayfarmingTech"><style="link">Technology: Clay Farming</style></link> (with <link="farmingTech"><style="link">Technology: Farming</style></link>)
+<link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link> (with <link="weaponsTech"><style="link">Technology: Weapons</style></link>)\
+"""
+
+[forgingTech]
+display_name = "Technology: Forging"
+treename = "Forging"
+prerequisite = ["charcoalTech", "stoneConstructionTech"]
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "9,4"
+description = """<style="fluff">\
+Found a hillock in the swamp-lands,
+Where the iron hid abundant;
+There he built his smelting furnace,
+There he laid his leathern bellows.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+With charcoal and stone, the goblins can start forging metals.
+
+Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>, <link="charcoalTech"><style="link">Technology: Charcoal</style></link>
+
+Unlocks:
+<link="ironaxe"><style="link">Iron Axe</style></link>
+<link="ironbillhook"><style="link">Iron Billhook</style></link>
+<link="iron_digging_bar"><style="link">Iron Digging Bar</style></link>
+<link="iron_hoe"><style="link">Iron Hoe</style></link>
+<link="iron_pick"><style="link">Iron Pick</style></link>
+<link="ironshovel"><style="link">Iron Shovel</style></link>
+<link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<link="smithy2"><style="link">Blacksmith's Shed</style></link>
+
+Leads to:
+<link="bogIronTech"><style="link">Technology: Bog Iron</style></link>"""
+
+[bogIronTech]
+display_name = "Technology: Bog Iron"
+treename = "Bog Iron"
+prerequisite = "forgingTech"
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "10,4"
+description = """<style="fluff">\
+Thus is iron in the swamp-lands,
+Stretching by the water-courses,
+Hidden well for many ages,
+Hidden in the birchen forests,
+But he could not hide forever
+From the searchings of his brother.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+The goblins have learned how to search for bog iron and smelt it into a usable metal.
+
+Prerequisites: <link="forgingTech"><style="link">Technology: Forging</style></link>
+
+Unlocks:
+<link="bogironore"><style="link">Bog Iron Ore</style></link>
+<link="roastedbogironore"><style="link">Roasted Bog Iron Ore</style></link>
+<link="wetbogiron"><style="link">Wet Bog Iron Ore</style></link>
+
+<link="bog_iron_collector2"><style="link">Bog Iron Collector's Shed</style></link>
+<link="oreroastingpit0"><style="link">Ore-roasting Pit</style></link>
+<link="bloomery4"><style="link">Stone Bloomery</style></link>
+
+Leads to:
+<link="ironWeaponTech"><style="link">Technology: Iron Weapons</style></link> (with <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>)
+<link="ironArmorTech"><style="link">Technology: Iron Armor</style></link> (with <link="dwarvenArmorTech"><style="link">Technology: Armor-smithing</style></link>)
+"""
+
+#[sawMillTech]
+#display_name = "Technology: Sawmills"
+#treename = "Sawmills"
+#prerequisite = ["millingTech", "bogIronTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "13,3"
+#description = """The goblins have invented a sawmill.
+#
+#Prerequisites: <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>, <link="millingTech"><style="link">Technology: Milling</style></link>"""
+
+# 5.0 Weapon and armor technologies
+
+[weaponsTech]
+display_name = "Technology: Weapons"
+treename = "Weapons"
+techLevel = "wood"
+prerequisite = "combat"
+treeCoord = "1,4"
+description = """<style="fluff">\
+Better live in civil freedom,
+Happier would be my life-time,
+Should I serve my fellow-beings,
+Serve as tools for their convenience,
+Than as implements of warfare,
+Slay my friends and nearest kindred,
+Wound the children of my mother.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+Your goblins have learned to create weapons to defend themselves.
+
+Unlocked by: <link="combat"><style="link">Combat</style></link> (this technology is unlocked when an inhabitant of your camp has been in combat)
+
+Unlocks:
+<link="stonemace"><style="link">Stone Mace</style></link>
+<link="bonespear"><style="link">Bone Spear</style></link>  (with <link="butcheryTech"><style="link">Technology: Butchery</style></link>)
+<link="woodspear"><style="link">Wooden Spear</style></link> (with <link="carpentryTech"><style="link">Carpentry</style></link>)
+<link="dwspear"><style="link">Dwarven Spear</style></link> (with <link="dwarvenToolTech"><style="link">Dwarven Tools</style></link>)
+
+<link="weaponmaker1"><style="link">Weapon-crafter's Shack</style></link>
+
+Leads to:
+<link="armorTech"><style="link">Technology: Wooden Armor</style></link>
+<link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>
+<link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link> (with <link="dwarvenTech"><style="link">Technology: Dwarven Metal</style></link>)\
+"""
+
+[armorTech]
+display_name = "Technology: Wooden Armor"
+treename = "Wooden Armor"
+prerequisite = ["plankTech", "weaponsTech"]
+researchPointCost = 8
+techLevel = "wood"
+treeCoord = "3,5"
+description = """\
+<style="fluff">On the third day thereafter the battle began in earnest, and the Kalevide fought against the mailed warriors for half a day, when his horse was killed under him.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon</style>
+
+Learning from their experiences in combat, the goblins have learned to fashion shields and armor for protection.
+
+Prerequisites: <link="weaponsTech"><style="link">Technology: Weapons</style></link>, <link="plankTech"><style="link">Technology: Planks</style></link>
+
+Unlocks:
+<link="dwshield"><style="link">Dwarven Shield</style></link> (with <link="dwarvenToolTech"><style="link">Dwarven Tools</style></link>)
+<link="woodshield"><style="link">Wooden Shield</style></link>
+<link="plankarmor"><style="link">Plank Armor</style></link>
+
+<link="armory1"><style="link">Armorer's Shack</style></link>
+
+Leads to:
+<link="clothArmorTech"><style="link">Technology: Weaving</style></link> (with <link="spinningTech"><style="link">Technology: Spinning</style></link>)
+<link="leatherArmorTech"><style="link">Technology: Leather Armor</style></link> (with <link="leatherTech"><style="link">Technology: Leather</style></link>)
+<link="dwarvenArmorTech"><style="link">Technology: Armor-smithing</style></link> (with <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>)
+
+<style="fluff">Several of the peoples of Siberia and North America have used wooden armor. We have no evidence that the ancient Finnic people did - \
+but then again, organic materials survive so poorly in Finnish soil that it isn't very likely that any examples of wooden armor would have survived.\
+"""
+
+[spearthrowerTech]
+display_name = "Technology: Spear-thrower"
+treename = "Spear-thrower"
+techLevel = "wood"
+researchPointCost = 6
+prerequisite = ["weaponsTech", "carpentryTech"]
+treeCoord = "4,5"
+description = """<style="fluff">\
+"Let all joy forever vanish,
+Let earth's pleasures quickly perish,
+Disappear earth's sweetest music,
+Happiness depart forever;
+Shoot I will this rival minstrel,
+Little heeding what the end is."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VI</style>
+
+Your goblins have learned to make a spear-thrower.
+
+Prerequisites: <link="weaponsTech"><style="link">Technology: Weapons</style></link>, <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+Unlocks:
+<link="woodtower"><style="link">Wooden Watchtower</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+<link="spearthrower"><style="link">Spear-thrower</style></link>
+<link="throwingspear"><style="link">Throwing spear</style></link>
+<link="bonethrowingspear"><style="link">Bone-tipped Throwing Spear</style></link> (with <link="butcheryTech"><style="link">Technology: Butchery</style></link>)
+
+<link="archeryTech"><style="link">Technology: Archery</style></link> (with <link="spinningTech"><style="link">Technology: Spinning</style></link>)\
+"""
+
+[clothArmorTech]
+display_name = "Technology: Weaving"
+treename = "Weaving"
+techLevel = "wood"
+researchPointCost = 8
+prerequisite = ["spinningTech", "armorTech"]
+treeCoord = "5,10"
+description = """\
+<style="fluff">The sisters were sorry to see the dawn of day, though they were no longer obliged to spin and weave, for the old woman was locked up in the kitchen, and could not interfere with them.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>
+
+The goblins have discovered that thick cloth, cleverly woven, can serve as perfectly functional armor.
+
+Prerequisites: <link="spinningTech"><style="link">Technology: Spinning</style></link>, <link="armorTech"><style="link">Technology: Wooden Armor</style></link>
+
+Unlocks:
+<link="clothArmor"><style="link">Cloth Armor</style></link>
+<link="coarsecloth"><style="link">Coarse Cloth</style></link>
+<link="finecloth"><style="link">Fine Cloth</style></link>
+
+<link="weaving2"><style="link">Weaver's Shed</style></link>\
+"""
+
+[weaponsmithingTech]
+display_name = "Technology: Weapon-smithing"
+treename = "Weapon-smithing"
+techLevel = "wood"
+researchPointCost = 16
+prerequisite = ["weaponsTech", "dwarvenToolTech"]
+treeCoord = "7,8"
+description = """<style="fluff">\
+"O sword, sword! How horrible thou art! Thou art a terrible thing to have come among men. How many eyes shall look upon gardens no more because of thee?"
+
+ - Lord Dunsany, the Sword of Welleran (1908)</style>
+
+The goblins have developed their skills at cold-hammering dwarven metal, and can now make more advanced weapons.
+
+Prerequisites: <link="weaponsTech"><style="link">Technology: Weapons</style></link>, <link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link>
+
+Unlocks:
+<link="dwsword"><style="link">Dwarven Short Sword</style></link>
+
+<link="weaponmaker2"><style="link">Weaponer's Shed</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+Leads to:
+<link="dwarvenArmorTech"><style="link">Technology: Armor-smithing</style></link> (with <link="armorTech"><style="link">Technology: Wooden Armor</style></link>)
+<link="ironWeaponTech"><style="link">Technology: Iron Weapons</style></link> (with <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>)\
+"""
+#<link="dw_war_axe"><style="link">Dwarven War Axe</style></link>
+#<link="dw_warhammer"><style="link">Dwarven Warhammer</style></link>
+
+[leatherArmorTech]
+display_name = "Technology: Leather Armor"
+treename = "Leather Armor"
+techLevel = "wood"
+researchPointCost = 10
+treeCoord = "4,9"
+prerequisite = ["leatherTech", "armorTech"]
+description = """<style="fluff">They warned him that he might not escape easily; but as he persisted, they directed him to the cavern, which he immediately entered, while the demons laughed, saying that the bear had fallen into the trap and the lion into the net, and that he was carrying his hide to market for nothing.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIII: The Kalevide’s First Journey to Hades</style>
+
+The goblins have devised a method to harden leather to make sturdier armor.
+
+Prerequisites: <link="leatherTech"><style="link">Technology: Leather</style></link>, <link="armorTech"><style="link">Technology: Wooden Armor</style></link>
+
+Unlocks:
+<link="rigidleatherarmor"><style="link">Rigid Leather Armor</style></link>\
+"""
+
+[archeryTech]
+display_name = "Technology: Archery"
+treename = "Archery"
+techLevel = "wood"
+researchPointCost = 10
+prerequisite = ["spearthrowerTech", "spinningTech"]
+treeCoord = "5,8.5"
+description = """<style="fluff">\
+Joukahainen thus made answer:
+"I have made this mighty cross-bow,
+Fashioned bow and poisoned arrows
+For the death of Väinämöinen,
+Thus to slay the friend of waters;
+I must shoot the old magician."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VI</style>
+
+The goblins have learned to craft bows and arrows.
+
+Prerequisites: <link="spearthrowerTech"><style="link">Spear-thrower</style></link>, <link="spinningTech"><style="link">Spinning</style></link>
+
+Unlocks:
+<link="crudebow"><style="link">Crude Bow</style></link>
+<link="woodenarrows"><style="link">Wooden Arrows</style></link>"""
+
+[dwarvenArmorTech]
+display_name = "Technology: Armor-smithing"
+treename = "Armor-smithing"
+techLevel = "wood"
+researchPointCost = 16
+prerequisite = ["weaponsmithingTech", "armorTech"]
+treeCoord = "8,9"
+description = """<style="fluff">And I thought a time, and the Maid with me; and afterward we gat that stump upon which I had leant, and had this to be for an anvil; and we found then smooth stones of different sizes, and these to be for hammers; and we wrought all that day, with restings, upon the armour; and surely, we beat it into a very good shape, from the inward, and the broken parts we beat smooth, so that they should not wound, and in the end to have mine armour fit to go upon me.
+
+ - William Hope Hodgson, The Night Land</style>
+
+The goblins have created a heavy suit of armor from <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Prerequisites: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>, <link="armorTech"><style="link">Technology: Wooden Armor</style></link>
+
+Unlocks:
+<link="armory2"><style="link">Armorsmith's Shed</style></link>
+
+<link="dwcuirass"><style="link">Dwarven Cuirass</style></link>\
+"""
+
+[ironWeaponTech]
+display_name = "Technology: Iron Weapons"
+treename = "Iron Weapons"
+prerequisite = ["bogIronTech", "weaponsmithingTech"]
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "11,3"
+description = """<style="fluff">\
+Come thou to my room and furnace,
+Where the fire is freely burning,
+Thou wilt live, and grow, and prosper,
+Wilt become the swords of heroes.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+The goblins have learned how to make iron weapons.
+
+Prerequisites: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>, <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>
+
+Unlocks:
+<link="weaponmaker4"><style="link">Weaponsmith's Forge</style></link>
+
+<link="ironsword"><style="link">Iron Broadsword</style></link>"""
+
+
+[ironArmorTech]
+display_name = "Technology: Iron Armor"
+treename = "Iron Armor"
+prerequisite = ["bogIronTech", "dwarvenArmorTech"]
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "11,5"
+description = """<style="fluff">\
+Thus the hero, Kaukomieli,
+Quick equips himself for warfare,
+On his head a copper helmet,
+On his shoulders caps of copper,
+On his body iron armor,
+Steel, the belt around his body.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XII</style>
+
+The goblins can forge iron armor.
+
+Prerequisites: <link="dwarvenArmorTech"><style="link">Technology: Armor-smithing</style></link>, <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>
+
+Unlocks:
+<link="armory4"><style="link">Armorsmith's Forge</style></link>
+
+<link="iron_cuirass"><style="link">Iron Cuirass</style></link>
+<link="ironshield"><style="link">Iron Shield</style></link>"""
+
+# 6.0 Food technologies
+
+[butcheryTech]
+display_name = "Technology: Butchery"
+treename = "Butchery"
+techLevel = "wood"
+treeCoord = "1,10"
+description = """\
+<style="fluff">Everywhere they seek a butcher,
+One to kill the ox of Suomi,
+In the country of Karjala,
+And among the Suomi-giants,
+In the quiet fields of Estland,
+On the battle-fields of Sweden,
+Mid the mountaineers of Lapland,
+In the magic fens of Turja;
+Seek him in Tuoni's empire,
+In the death-courts of Manala.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+The goblins know how to butcher dead animals and make use of bones for various crafts.
+
+Unlocked by: discovering an animal corpse or some <link="bones"><style="link">Bones</style></link>
+
+Unlocks:
+<link="butcher0"><style="link">Butcher's Block</style></link>
+
+<link="bonefishingspear"><style="link">Bone Fishing Spear</style></link>
+<link="bonespear"><style="link">Bone Spear</style></link> (with <link="weaponsTech"><style="link">Technology: Weapons</style></link>)
+
+Leads to:
+<link="fertilizerTech"><style="link">Technology: Fertilizer</style></link> (with <link="slashAndBurnTech"><style="link">Technology: Slash-and-burn Farming</style></link>)\
+"""
+
+[fishingTech]
+display_name = "Technology: Fishing"
+treename = "Fishing"
+techLevel = "wood"
+treeCoord = "1,2.5"
+description = """<style="fluff">\
+Straightway hastens Väinämöinen
+To a boat-house on the sea-shore,
+Looks with care upon the fish-hooks,
+And the lines he well considers.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+
+The goblins have learned to fish!
+
+Unlocked by: building a <link="fishing1"><style="link">fisher-goblin's shack</style></link>
+
+Unlocks:
+<link="rawfish"><style="link">Fresh Fish</style></link>
+<link="fishingspear"><style="link">Fishing Spear</style></link>
+<link="fishingtrap"><style="link">Fishing Trap</style></link>
+
+<link="fishingworkshop1"><style="link">Fishing Work-Shack</style></link>
+
+Leads to:
+<link="smokingTech"><style="link">Technology: Smoking</style></link>\
+"""
+
+[smokingTech]
+display_name = "Technology: Smoking"
+treename = "Smoking"
+techLevel = "wood"
+prerequisite = ["fishingTech"]
+researchPointCost = 4
+treeCoord = "2,3.5"
+description = """<style="fluff">\
+Quick the young lads from the village
+Brought the fire upon the birch-bark,
+Brought it on the tips of pine-wood;
+And the fire and smoke commingled.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXI</style>
+
+The goblins have discovered that smoking meat and fish preserves it for a longer time, and adds a certain something to the taste!
+
+Prerequisites: <link="fishingTech"><style="link">Technology: Fishing</style></link>
+
+Unlocks:
+<link="smokedbird"><style="link">Smoked Bird Meat</style></link>
+<link="smokedfish"><style="link">Smoked Fish</style></link>
+<link="smokedwolf"><style="link">Smoked Wolf</style></link>
+
+<link="smoker0"><style="link">Smoking Shack</style></link>
+
+Leads to:
+<link="bakingTech"><style="link">Technology: Baking</style></link> (with <link="farmingTech"><style="link">Technology: Farming</style></link>)
+<link="charcoalTech"><style="link">Technology: Charcoal</style></link>\
+"""
+
+[bakingTech]
+display_name = "Technology: Baking"
+treename = "Baking"
+techLevel = "wood"
+prerequisite = ["farmingTech", "smokingTech"]
+researchPointCost = 6
+treeCoord = "6,2"
+description = """<style="fluff">\
+Bake thy hero's bread with pleasure,
+Knead the dough with care and patience,
+That thy biscuits may be worthy,
+That the dough be light and airy.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+
+The goblins have learned to grind flour and bake bread.
+
+Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>, <link="smokingTech"><style="link">Technology: Smoking</style></link>
+
+Unlocks:
+<link="ryeflour"><style="link">Rye Flour</style></link>
+<link="seed_meal"><style="link">Seed Meal</style></link>
+
+<link="mill0"><style="link">Hand Mill</style></link>
+<link="baker0"><style="link">Baking Pit</style></link>
+
+Leads to:
+<link="windmillsTech"><style="link">Technology: Windmills</style></link>\
+"""
+
+#[huntingTech]
+#display_name = "Technology: Hunting"
+#treename = "Hunting"
+#techLevel = "wood"
+#treeCoord = "2,10"
+#researchPointCost = 900
+#description = """<style="fluff">\
+#That great Tapio's sacred bugle
+#May resound through glen and forest;
+#That the wood-nymph's call may echo,
+#May be heard in field and hamlet,
+#To the joy of all that listen!
+#Let great Tapio's horn for ages
+#Ring throughout the fen and forest,
+#Through the hills and dales of Northland
+#O'er the meadows and the mountains.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>
+#
+#Your goblins can now send a hunting-party into the forest.
+#
+#Unlocks:
+#<link="hunting0"><style="link">Hunting Post</style></link>"""
+
+# 7.0 Farming technologies
+
+[farmingTech]
+display_name = "Technology: Farming"
+treename = "Farming"
+techLevel = "wood"
+treeCoord = "5,4"
+description = """\
+<style="fluff">Let the verdant stalks be rising,
+Let the ears themselves be growing,
+And a hundredfold producing,
+From my plowing and my sowing.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+The goblins have discovered farming, and now know how to plant crops!
+
+Farming consumes <link="fertility"><style="link">soil fertility</style></link> and transforms it into crops. Once the fertility runs out, the farm plot won't produce anything.
+
+Unlocked by: discovering seeds.
+
+Unlocks:
+<link="farmplot"><style="link">Farm Plot</style></link>
+<link="nettleprocessor0"><style="link">Nettle Yard</style></link>
+<link="turniphole"><style="link">Turnip Hole</style></link>
+<link="thresher1"><style="link">Threshing Shack</style></link>
+
+Leads to:
+<link="improved_farming_tech"><style="link">Technology: Improved Farming</style></link>
+<link="slashAndBurnTech"><style="link">Technology: Slash-and-burn Farming</style></link>
+<link="bakingTech"><style="link">Technology: Baking</style></link> (with <link="smokingTech"><style="link">Technology: Smoking</style></link>)
+<link="clayfarmingTech"><style="link">Technology: Clay Farming</style></link> (with <link="dwarvenTech"><style="link">Technology: Dwarven Metal</style></link>)\
+"""
+# <link="mushroomTech"><style="link">Technology: Mushroom Farming</style></link>
+
+[slashAndBurnTech]
+display_name = "Technology: Slash-and-burn Farming"
+treename = "Slash-and-burn Farming"
+prerequisite = ["farmingTech"]
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "6,3.5"
+description = """\
+<style="fluff>Quickly then this bird of heaven,
+Kindled fire among the branches;
+Soon the flames are fanned by north-winds,
+And the east-winds lend their forces,
+Burn the trees of all descriptions,
+Burn them all to dust and ashes,
+Only is the birch left standing.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+Your goblins have learned to use <link="ashes"><style="link">ashes</style></link> to increase the <link="fertility"><style="link">fertility</style></link> \
+of <link="farming"><style="link">farm plots</style></link>.
+
+Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+Unlocks:
+<link="slashandburn"><style="link">Slash and Burn Plot</style></link>
+
+Leads to:
+<link="fertilizerTech"><style="link">Technology: Fertilizer</style></link> (with <link="butcheryTech"><style="link">Technology: Butchery</style></link>)"""
+
+#[mushroomTech]
+#display_name = "Technology: Mushroom Farming"
+#treename = "Mushroom Farming"
+#prerequisite = "farmingTech"
+#techLevel = "wood"
+#treeCoord = "6,5"
+#researchPointCost = 900
+#description = """The goblins have figured out the secret of growing mushrooms.
+#
+#Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>"""
+
+[fertilizerTech]
+display_name = "Technology: Fertilizer"
+treename = "Fertilizer"
+prerequisite = ["slashAndBurnTech", "butcheryTech"]
+techLevel = "wood"
+treeCoord = "7,3.5"
+researchPointCost = 20
+description = """\
+<style="fluff">And we told them certain ways by which they might bring a more speedy life to the soil; and this they were eager to do, being freshly alive after so long a time of half-life.
+
+- William Hope Hodgson, The Night Land</style>
+
+The goblins understand that organic matter, even waste, can be used to restore <link="fertility"><style="link">fertility</style></link> to the soil.
+
+Technology: Fertilizer unlocks the <link="muckingdef"><style="link">mucking phase</style></link> in farming, and the option to leave a farm plot <link="fallowdef"><style="link">fallow</style></link>.
+
+Prerequisites: <link="slashAndBurnTech"><style="link">Technology: Slash-and-burn Farming</style></link>, <link="butcheryTech"><style="link">Technology: Butchery</style></link>
+
+Unlocks:
+<link="bonemeal"><style="link">Bone Meal</style></link>
+<link="woodchips"><style="link">Midden</style></link>
+
+<link="midden"><style="link">Midden</style></link>"""
+
+[clayfarmingTech]
+display_name = "Technology: Clay Farming"
+treename = "Clay Farming"
+prerequisite = ["farmingTech", "dwarvenToolTech"]
+techLevel = "wood"
+treeCoord = "7,4.5"
+researchPointCost = 10
+description = """<style="fluff">It was the duty of the new king both to plough the country and to defend it, and he therefore set to work with his sword by his side. Early and late he ploughed, stocking the country with corn, grass, trees, and berries.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto VIII: The Contest and Parting of the Brothers</style>
+
+Now that they have access to metal digging tools, the goblins can farm on <link="claysoil"><style="link">clay soils</style></link>.
+
+Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>, <link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link>
+
+Unlocks:
+<link="clayfarmplot"><style="link">Heavy Farm Plot</style></link>"""
+
+[improved_farming_tech]
+display_name = "Technology: Improved Farming"
+treename = "Improved Farming"
+prerequisite = ["farmingTech"]
+techLevel = "wood"
+treeCoord = "6,5"
+researchPointCost = 10
+description = """The goblins have learned to farm more efficiently: harvesting and sowing seeds now take considerably less time.
+
+Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+Unlocks:
+<link="campbonus_def"><style="link">Camp Bonus</style></link>: <link="improved_sowing_def""><style="link">Improved Sowing</style></link>
+<link="campbonus_def"><style="link">Camp Bonus</style></link>: <link="improved_harvesting_def""><style="link">Improved Harvesting</style></link>"""
+
+# 8.0 Shamanism technologies
+
+[shamanismTech]
+display_name = "Technology: Shamanism"
+treename = "Shamanism"
+keyword = "shamanism"
+techLevel = "wood"
+treeCoord = "1,1"
+description = """\
+<style="fluff">Then he thought and long considered,
+Where to find these words of magic,
+Find the lost-words of the Master.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+At least one goblin in your camp is <link="hardblooded"><style="link">hard-blooded</style></link> and <link="hardy"><style="link">hardy</style></link>. You can now build a <link="shamanhut"><style="link">shaman's hut</style></link>, and if you do, your goblins will elect a <link="shaman_def"><style="link">shaman</style></link>.
+
+Unlocks: <link="shamanhut"><style="link">Shaman's Hut</style></link>
+
+<link="level_earth"><style="link">Level Earth</style></link>
+<link="lower_earth"><style="link">Lower Earth</style></link>
+<link="raise_earth"><style="link">Raise Earth</style></link>
+<link="startfire01"><style="link">Start Fire</style></link>
+<link="summonwater01"><style="link">Summon Water</style></link>
+
+Leads to:
+<link="spirit_law"><style="link">Technology: Songs of the Dead</style></link>
+<link="windlaw"><style="link">Technology: Songs of the Wind</style></link>
+<link="woodmagicTech"><style="link">Technology: Wooden Magical Structures</style></link>  (with <link="carpentryTech"><style="link">Technology: Carpentry</style></link>)\
+"""
+
+[woodmagicTech]
+display_name = "Technology: Wooden Magical Structures"
+treename = "Wooden Magical Structures"
+keyword = "shamanism"
+techLevel = "wood"
+treeCoord = "4,3"
+prerequisite = ["shamanismTech", "carpentryTech"]
+researchPointCost = 6
+description = """The goblins have learned to build more effective magical structures.
+
+Prerequisites: <link="shamanismTech"><style="link">Technology: Shamanism</style></link>, <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+Unlocks:
+<link="tallravenstatue"><style="link">Tall Raven Statue</style></link>\
+"""
+
+[spirit_law]
+display_name = "Technology: Songs of the Dead"
+treename = "Songs of the Dead"
+keyword = "shamanism"
+prerequisite = "shamanismTech"
+techLevel = "wood"
+researchPointCost = 8
+treeCoord = "4,2"
+description = """<style="fluff">There was a witch one summer who put all the hay into the barn with a wind-head. Then another witch came and knocked the whole barn over. It was no good.
+
+Muurla, 1915. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+The shaman has found the words to begin communing with the spirits of the forest.
+
+Prerequisites: <link="shamanismTech"><style="link">Technology: Shamanism</style></link>
+
+Unlocks:
+<link="conscript_spirits_01"><style="link">Conscript Spirits 1</style></link>
+<link="conscript_spirits_02"><style="link">Conscript Spirits 2</style></link>"""
+
+[windlaw]
+display_name = "Technology: Songs of the Wind"
+treename = "Songs of the Wind"
+keyword = "shamanism"
+prerequisite = "shamanismTech"
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "4,1"
+description = """\
+<style="fluff">I asked him the reason of this, and found that he was fully possessed with the notion that Fins are wizards, and especially have power over winds and storms.
+
+ - Richard Henry Dana Jr., Two Years Before the Mast (1840)</style>
+
+The shaman has found the words to begin harnessing the winds for his magic.
+
+Prerequisites: <link="shamanismTech"><style="link">Technology: Shamanism</style></link>
+
+Unlocks:
+<link="changewindspell"><style="link">Change Wind</style></link>
+<link="summonwindhead"><style="link">Summon Wind-head</style></link>
+
+<style="fluff">The belief that Finns had magic powers that could affect the winds is attested in the Viking Age, and as the quote from Richard Henry Dana shows, survived through the Age of Sail. \
+In the medieval stories, it isn't always clear whether they mean Finns or the Sámi, but later the belief is clearly identified with the Finns.</style>\
+"""

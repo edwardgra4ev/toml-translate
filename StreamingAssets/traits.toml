@@ -1,0 +1,489 @@
+# temperament traits
+
+[outdoorsgoblin]
+display_name = "Temperament: Outdoorsgoblin"
+keyword = "temperament"
+description = """\
+<style="fluff">When a child I lived in plenty
+In the dwellings of my mother;
+To the woods I went for berries,
+Went for raspberries to uplands,
+Gathered strawberries on mountains,
+Gathered one day then a second.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXV</style>
+
+This goblin likes to work outdoors and doesn't mind leaving the camp.
+
+<style="fluff">Each goblin has a temperament trait that defines what kind of jobs they prefer to do.</style>"""
+
+[camper]
+display_name = "Temperament: Camper"
+keyword = "temperament"
+description = """\
+<style="fluff">When the strong man, Untamoinen,
+Went to look at early evening,
+How Kullervo was progressing,
+In his labors in the forest;
+Little was the work accomplished,
+Was not worthy of a hero.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXI</style>
+
+This goblin prefers to stay inside the camp.
+
+<style="fluff">Each goblin has a temperament trait that defines what kind of jobs they prefer to do.</style>"""
+
+[crafter]
+display_name = "Temperament: Crafter"
+keyword = "temperament"
+description = """\
+<style="fluff">Wondrous things might be constructed
+From the relics of this monster,
+Were they in the blacksmith's furnace,
+In the hands of the magician.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XL</style>
+
+This goblin prefers to work at a workshop.
+
+<style="fluff">Each goblin has a temperament trait that defines what kind of jobs they prefer to do.</style>"""
+
+[laborer]
+display_name = "Temperament: Laborer"
+keyword = "temperament"
+description = """\
+<style="fluff">These the words of Kullervoinen:
+"Give me work at early morning,
+In the evening, occupation,
+Labor worthy of thy servant."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+
+This goblin prefers manual labor to working in a workshop.
+
+<style="fluff">Each goblin has a temperament trait that defines what kind of jobs they prefer to do.</style>"""
+
+# physical traits
+
+[brawny]
+display_name = "Brawny"
+keyword = "physicaltrait"
+strengthWorkSpeedMod = +0.2
+carryingCapacityMod = +0.5
+hit_point_bonus = +1
+constitution_mod = +10
+fight_damage_mod = +1
+description = """\
+<style="fluff">Kullervoinen does as bidden,
+Scares the salmon with the forces
+Of his mighty arms and shoulders,
+With the strength of youth and magic.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXV</style>
+
+This goblin is powerfully built and strong.
+
+<style="characteristics">\
+<link="carrying_capacity_def"><style="link">Carrying Capacity</style></link>: <style="bonus">+0.5</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="bonus">+10</style>
+<link="fight_damage_mod_def"><style="link">Fighting Damage Modifier</style></link>: <style="bonus">+1</style>
+<link="hitpoints"><style="link">Hit Points</style></link>: <style="bonus">+1</style></style>"""
+
+[nimble]
+display_name = "Nimble"
+keyword = "physicaltrait"
+finesseWorkSpeedMod = +0.2
+agility_mod = +10
+fight_damage_mod = +1
+shootDamageModifier = +1
+toolToughness = +5
+description = """\
+<style="fluff">Merrily flies the golden shuttle,
+From the maiden's nimble fingers,
+Briskly swings the lathe in weaving,
+Swiftly flies the comb of silver,
+From the sky-born maiden's fingers,
+Weaving webs of wondrous beauty.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VIII</style>
+
+This goblin is agile.
+
+<style="characteristics">\
+<link="agilityDef"><style="link">Agility</style></link>: <style="bonus">+10</style>
+<link="fight_damage_mod_def"><style="link">Fighting Damage Modifier</style></link>: <style="bonus">+1</style>
+<link="tooltoughnessDef"><style="link">Tool Toughness</style></link>: <style="bonus">+5</style></style>"""
+
+[clumsy]
+display_name = "Clumsy"
+keyword = "physicaltrait"
+finesseWorkSpeedMod = -0.2
+agility_mod = -10
+shootDamageModifier = -1
+toolToughness = -10
+mishapChance = +20
+description = """\
+<style="fluff">On the evening of the third day,
+Evil Hisi grasps the hatchet,
+Lempo takes the crooked handle,
+Turns aside the axe in falling,
+Strikes the rocks and breaks to pieces;
+From the rocks rebound the fragments.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VIII</style>
+
+This goblin seems more likely than others to suffer accidents.
+
+<style="characteristics">\
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style>
+<link="tooltoughnessDef"><style="link">Tool Toughness</style></link>: <style="malus">-10</style></style>"""
+
+
+# experience traits
+
+[hardy]
+display_name = "Hardy"
+keyword = "experiencetrait"
+constitution_mod = +5
+willpower_mod = +5
+description = """\
+<style="fluff">Väinämöinen, wise and ancient,
+Answered thus the youthful minstrel:
+"If thou art but Joukahainen,
+Thou shouldst give me all the highway;
+I am many years thy senior."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem III</style>
+
+This goblin has survived a winter in the camp.
+
+<style="characteristics">\
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="bonus">+5</style>
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+5</style></style>"""
+
+[scarred]
+display_name = "Scarred"
+keyword = "experiencetrait"
+willpower_mod = +5
+description = """\
+<style="fluff">Straightway stronger grew in body,
+Straightway were the wounds united,
+Quick the fearful pain departed.
+Strong and hardy grew the hero.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem IX</style>
+
+This goblin has survived an injury.
+
+<style="characteristics">\
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+5</style></style>"""
+
+[veteran]
+display_name = "Veteran"
+keyword = "experiencetrait"
+willpower_mod = +10
+fighting_mod = +10
+description = """\
+<style="fluff">"That my blade is good and trusty,
+Has been proved on heads of heroes,
+Has on many bones been tested."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVII</style>
+
+This goblin has been in combat and has lived to tell the tale.
+
+<style="characteristics">\
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+10</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+10</style></style>"""
+
+# bane traits
+
+[wolfsbane]
+display_name = "Wolfsbane"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+hit_point_bonus = +1
+description = """This goblin has slain a wolf in combat.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+5</style>
+<link="hitpoints"><style="link">Hit points</style></link>: <style="bonus">+1</style></style>"""
+
+[cranebane]
+display_name = "Crane-slayer"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+agility_mod = +10
+description = """This goblin has slain a crane in combat.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+5</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="bonus">+10</style></style>"""
+
+[gravefolkbane]
+display_name = "Zombie Slayer"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+willpower_mod = +5
+description = """This goblin has sent a grave-folk back to its grave.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+5</style>
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+5</style></style>"""
+
+[humanbane]
+display_name = "Human-slayer"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+fight_damage_mod = +1
+description = """<style="fluff">Quick the wretched shepherd, Nasshut,
+From the death-stream sends a serpent,
+Like an arrow from a cross-bow,
+To the heart of Lemminkäinen,
+Through the vitals of the hero.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XIV</style>
+ 
+ This goblin has slain a human in combat.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+5</style>
+<link="fight_damage_mod_def"><style="link">Fighting Damage Modifier</style></link>: <style="bonus">+1</style>"""
+
+# personality traits
+
+[timid]
+display_name = "Timid"
+keyword = "personalitytrait"
+willpower_mod = -10
+agility_mod = +5
+description = """\
+<style="fluff">Shouldst thou journey to the woodlands,
+There to gather aspen-fagots,
+Do not go with noise and bustle,
+Gather all thy sticks in silence,
+Gather quietly the birch-wood.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIII</style>
+
+This goblin is a little skittish.
+
+<style="characteristics">\
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="malus">-10</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="bonus">+5</style></style>"""
+
+[hardblooded]
+display_name = "Hard-blooded"
+keyword = ["personalitytrait", "immuneToFear"]
+willpower_mod = +10
+description = """\
+<style="fluff">My son can see the death-folk. He's been a seer ever since he got drunk in Kittilä and took a dead body into his arms.
+
+ - Enontekiö, 1930. <style="link"><link="fls">SKS archives</link></style>.</style> 
+
+This goblin has seen death and not flinched.
+
+<style="characteristics">\
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+10</style></style>"""
+
+[softblooded]
+display_name = "Soft-blooded"
+keyword = ["personalitytrait"]
+willpower_mod = -5
+description = """\
+This goblin is a gentle creature, who turns away from the more brutal parts of life.
+
+<style="characteristics">\
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="malus">-5</style></style>"""
+
+# special traits
+
+[shamantrait]
+display_name = "Shaman"
+visual_priority = 1_000_000
+description = """\
+<style="fluff">Grandly sang wise Väinämöinen,
+Till the copper-bearing mountains,
+And the flinty rocks and ledges
+Heard his magic tones and trembled;
+Mountain cliffs were torn to pieces,
+All the ocean heaved and tumbled;
+And the distant hills re-echoed.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem III</style>
+
+ This goblin has been selected by his community to serve as their shaman.\
+"""
+
+# background traits
+
+[wanderer]
+display_name = "Wanderer"
+hit_point_bonus = +1
+agility_mod = +5
+constitution_mod = +5
+willpower_modMod = +5
+description = """This goblin made their own way to the middle world, and joined the camp after some adventures of their own.
+
+<style="characteristics">\
+<link="agilityDef"><style="link">Agility</style></link>: <style="bonus">+5</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="bonus">+5</style>
+<link="willpowerDef"><style="link">Willpower</style></link>: <style="bonus">+5</style>
+<link="hitpoints"><style="link">Hit Points</style></link>: <style="bonus">+1</style></style>"""
+
+# mob keywords
+
+[ethereal]
+display_name = "Ethereal"
+description = "This creature can pass through solid obstacles."
+
+[undead]
+display_name = "Undead"
+description = "This creature has died, but still walks the earth."
+
+[shambler]
+display_name = "Shambler"
+
+[repulsive]
+display_name = "Repulsive"
+description = "This creature is quite disgusting to look at."
+
+[enemy]
+display_name = "Enemy"
+
+[intangible]
+display_name = "Intangible"
+description = "This creature is not solid, it cannot be harmed by normal means."
+
+# experience keywords
+
+[lumbering]
+display_name = "Lumbering"
+description = "Lumbering experience is gained by cutting down trees and chopping lumber."
+visual_priority = 2
+
+[farmer]
+display_name = "Farming"
+description = "Farming experience is gained by tending to crops and doing various jobs in farm plots."
+visual_priority = 1
+
+[fisher]
+display_name = "Fishing"
+description = "Fishing experience is earned by catching fish."
+visual_priority = 2
+
+[digger]
+display_name = "Digging"
+description = "Digging experience is earned by building various kinds of earthworks."
+visual_priority = 1
+
+[woodworking]
+display_name = "Woodworking"
+description = "Woodworking experience is earned by building wooden tools and components."
+visual_priority = 3
+
+[sawyer]
+display_name = "Sawing"
+description = "Sawing experience is gained by operating a saw."
+visual_priority = 1
+
+[blacksmithing]
+display_name = "Metal-working"
+description = "Metal-working experience is gained by crafting metal into ingots, tools and weapons."
+visual_priority = 3
+
+[butchery]
+display_name = "Butchery"
+description = "Butchering experience is earned by processing the corpses of animals."
+visual_priority = 3
+
+[heckler]
+display_name = "Heckling"
+description = "Heckling experience is earned by turning plant materials into fiber."
+visual_priority = 3
+
+[spinner]
+display_name = "Spinning"
+description = "Spinning experience is gained by spinning fiber into thread."
+visual_priority = 3
+
+[weaver]
+display_name = "Weaving"
+description = "Weaving experience is gained by weaving threads into cloth."
+visual_priority = 3
+
+[leathercrafting]
+display_name = "Leather-crafting"
+description = "Leather-crafting is the art of curing and tanning animal pelts into leather."
+visual_priority = 3
+
+[bonecarver]
+display_name = "Bone-carving"
+description = "Bone-carving is the art of creating useful items from bones."
+visual_priority = 3
+
+[pottery]
+display_name = "Pottery"
+description = "Pottery is the art of making tools from clay."
+visual_priority = 3
+
+[weaponer]
+display_name = "Weapon-crafting"
+description = "Weapon-crafting experience is gained by creating various weapons."
+visual_priority = 3
+
+[armorer]
+display_name = "Armor-crafting"
+description = "Armor-crafting experience is earned by creating shields and armor."
+visual_priority = 3
+
+[thresher]
+display_name = "Threshing"
+description = "Threshing experience is gained by threshing crops to produce seeds."
+visual_priority = 3
+
+[miller]
+display_name = "Milling"
+description = "A miller grinds seeds into flour."
+visual_priority = 3
+
+[cooking]
+display_name = "Cooking"
+description = "Cooking experience is gained by preparing meals."
+visual_priority = 3
+
+[smoking]
+display_name = "Smoking"
+description = "Smoking experience is earned by using fire to preserve various foods."
+visual_priority = 3
+
+[hauler]
+display_name = "Hauling"
+description = "Hauling experience is gained by moving items, especially heavy ones."
+visual_priority = 1
+
+[healer]
+display_name = "Healing"
+description = "Healing experience is gained by tending to injured goblins."
+visual_priority = 3
+
+[builder]
+display_name = "Building"
+description = "Building experience is gained by raising various kinds of structures."
+visual_priority = 3
+
+[warrior]
+display_name = "Battle"
+description = """Battle experience is gained in <link="combat"><style="link">combat</style></link>."""
+visual_priority = 3
+
+[saunawarmer]
+display_name = "Sauna-warming"
+description = "Sauna-warming experience is gained by mastering the art of heating a sauna."
+visual_priority = 3
+
+[pioneer]
+display_name = "Pioneering"
+description = "Pioneering experience is gained by clearing bushes and exploring ruins."
+visual_priority = 2

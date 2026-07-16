@@ -1,0 +1,533 @@
+﻿# hunger and thirst statuses
+
+[thirsty]
+display_name = "жаждущий"
+morale_mod = -5
+description = "Этот гоблин хочет пить!\n\nГоблины будут пить из реки или другого источника воды, когда их обязанности позволят.\n\n<style=\"characteristics\"><link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+[hungry]
+display_name = "голодный"
+description = "<style=\"fluff\"> Из леса вылетела птица,\nСпел эту песню Куллервоинен:\n\"Время для лесных обедов,\nДля безотцовского компаньона\nИз стад, чтобы поесть его жезлы,\nЕшьте хорошие вещи из его корзины!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXIII\n\nЭто существо голодно и нуждается в <link=\"foodpoint\"><style=\"link\">food</style></link>.\n\nГоблины предпочитают есть вместе в конце каждого сезона. Если нет кухни, они будут искать еду самостоятельно. Если они не смогут найти еду, они станут голоднее и в конце концов покинут лагерь!\n"
+
+[famished]
+display_name = "голодный"
+morale_mod = -10
+constitution_mod = -5
+speed_mod = -0.05
+work_speed_mod = -0.1
+description = "Это существо изголодалось! У него не было <link=\"foodpoint\"><style=\"link\"> ничего, чтобы есть</style></link> в течение довольно долгого времени.\n\nГоблины предпочитают есть вместе в конце каждого сезона. Если нет кухни, они будут искать еду самостоятельно. Если они не смогут найти еду, они станут голоднее и в конце концов покинут лагерь!\n\n<style=\"characteristics\"><link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-5</style>\n<link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.05</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus>-0.1</style></style>"
+
+[starving]
+display_name = "голодный"
+morale_mod = -20
+constitution_mod = -10
+speed_mod = -0.1
+work_speed_mod = -0.2
+description = "Это существо голодает! Если он не может найти какой-либо <link=\"foodpoint\"><style=\"link\">food</style></link>, он покинет лагерь.\n\nГоблины предпочитают есть вместе в конце каждого сезона. Если нет кухни, они будут искать еду самостоятельно. Если они не смогут найти еду, они станут голоднее и в конце концов покинут лагерь!\n\n<style=\"characteristics\"><link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-10</style>\n<link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus>-0.2</style></style>"
+
+[satiated]
+display_name = "удовлетворенный"
+morale_mod = +10
+speed_mod = -0.1
+description = "<style=\"fluff\"> И когда я положил конец столь великому поджогу и перестал пить с водой, я набросил на себя свое снаряжение и взял Дискос в свою руку, и снова пошел на север.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nУ этого существа было много еды.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"bonus\">+10</style></style>"
+
+# sleep statuses
+
+[wellRested]
+display_name = "Хорошо отдохнул"
+morale_mod = +10
+description = "<style=\"fluff\"> Теперь, через некоторое время, я собрался со своим умом и приказал себе; и я посмотрел, как идут часы, и я обнаружил, что я, несомненно, дремал в течение десяти часов.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nЭтот гоблин спал комфортно.\n\n<style=\"characteristics\"><link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"bonus\">+10</style></style>"
+
+[sleptRough]
+display_name = "Спящий грубый"
+work_speed_mod = -0.1
+constitution_mod = -5
+morale_mod = -5
+description = "У этого гоблина не было <link=\"houses\"><style=\"link\"> подходящего места для сна</style></link>!\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.1</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-5</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+[chilled]
+display_name = "охлажденный"
+work_speed_mod = -0.2
+speed_mod = -0.05
+constitution_mod = -5
+morale_mod = -10
+description = "У этого гоблина не было <link=\"heating\"><style=\"link\"> теплого места для сна</style></link>!\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.2</style>\n<link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.05</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+# morale statuses
+
+[melancholy]
+display_name = "меланхолия"
+whenMoraleBelow = 31
+work_speed_mod = -0.2
+constitution_mod = -5
+description = "<style=fluff> Как плоский берег океана,\nКак темный разлом грозового облака,\nКак безрадостные зимние ночи!\nУнылый - это день осенью,\nТоскливый осенний вечер,\nЕще более мрачным является мое будущее!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXII\n\nЭто существо чувствует себя грустным и вялым.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.2</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-5</style></style>"
+
+[content]
+display_name = "Контент"
+whenMoraleAbove = 69
+whenMoraleBelow = 89
+work_speed_mod = +0.1
+constitution_mod = +10
+description = "Это существо чувствует себя довольным жизнью.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"bonus\">+0.1</style>\n<link=\"constitutionDef\"><style=\"link\">Constitution</style></link>: <style=\"bonus\">+10</style></style>"
+
+[happy]
+display_name = "Счастливо"
+whenMoraleAbove = 89
+work_speed_mod = +0.1
+constitution_mod = +10
+fighting_mod = +5
+description = "Это существо счастливо.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"bonus\">+0.1</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"bonus\">+10</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"бонус\">+5</style></style></style>"
+
+# sickness statuses
+
+[ill]
+display_name = "болеть"
+morale_mod = -10
+speed_mod = -0.2
+work_speed_mod = -0.2
+description = "<style=\"fluff\"> Я пошлю тебе девять болезней,\nКаждый из них более смертелен, чем другой.\nЭто отвратит весь твой народ.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLIII\n\nЭто бедное существо больно.\n\n<style=\"characteristics\"><link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style>\n<link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.2</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus>-0.2</style></style>"
+
+# nutrition deficiency statuses
+
+[scurvy]
+display_name = "шершавый"
+nutritionDeficiency = "fresh"
+morale_mod = -10
+constitution_mod = -10
+description = "У этого существа давно нет свежей пищи, и оно страдает от цинги!\n\n<style=\"characteristics\"><link=\"constitutionDef\"><style=\"link\">Constitution</style></link>: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[lackFiber]
+display_name = "Дефицит клетчатки"
+nutritionDeficiency = "fiber"
+morale_mod = -10
+constitution_mod = -5
+description = "Этот гоблин не получает достаточно клетчатки в своем рационе; их желудок свободен, и они несчастны.\n\n<style=\"characteristics\"><link=\"constitutionDef\"><style=\"link\">Constitution</style></link>: <style=\"malus\">-5</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[lackProtein]
+display_name = "Дефицит белка"
+nutritionDeficiency = "protein"
+fighting_mod = -5
+morale_mod = -5
+constitution_mod = -5
+work_speed_mod = -0.1
+description = "Этот гоблин не получает достаточно белка в своем рационе, и они слегка ослаблены.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.1</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-5</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"malus\">-5</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+# damage statuses
+
+[slash1]
+display_name = "Сокращение"
+work_speed_mod = -0.2
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо приняло некоторые <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.2</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[slash2]
+display_name = "нарезанный"
+work_speed_mod = -0.2
+fighting_mod = -5
+shooting_mod = -10
+morale_mod = -10
+description = "Это существо приняло некоторые <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.2</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[slash3]
+display_name = "разбитый"
+speed_mod = -0.1
+agility_mod = -15
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо приняло некоторые <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-15</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[slash4]
+display_name = "заколотый"
+fighting_mod = -10
+shooting_mod = -20
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slash5]
+display_name = "рваный"
+speed_mod = -0.1
+agility_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-20</style>\nСопротивление оглушению: <style=\"malus\">-120</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slash6]
+display_name = "порезанный"
+fighting_mod = -20
+shooting_mod = -100
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-30</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-100</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slash7]
+display_name = "убитый"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slash8]
+display_name = "фаршированный"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slash9]
+display_name = "Покрытый"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[slashPlus]
+display_name = "разрезанный"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо приняло огромное количество <link=\"dtslashing\"><style=\"link\">slashing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[crush1]
+display_name = "избитый"
+work_speed_mod = -0.1
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо взяло некоторое <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.1</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[crush2]
+display_name = "синяк"
+work_speed_mod = -0.1
+fighting_mod = -5
+shooting_mod = -5
+morale_mod = -5
+description = "Это существо взяло некоторое <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.1</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>: <style=\"malus\">-5</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link></style>: <style=\"malus\">-5</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+[crush3]
+display_name = "избитый"
+speed_mod = -0.05
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -5
+description = "Это существо взяло некоторое <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.05</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus>-10</style></style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+[crush4]
+display_name = "разбитый"
+stun_resist_mod = -5
+fighting_mod = -5
+shooting_mod = -10
+morale_mod = -10
+description = "Это существо взяло довольно много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"характеристики\"> Сопротивление оглушению: <style=\"malus\">-5</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[crush5]
+display_name = "разбитый"
+speed_mod = -0.1
+agility_mod = -10
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[crush6]
+display_name = "запутанный"
+fighting_mod = -10
+shooting_mod = -100
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-100</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[crush7]
+display_name = "разрушенный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо взяло много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[crush8]
+display_name = "раздавленный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо взяло много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[crush9]
+display_name = "стертый"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо взяло много <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[crushPlus]
+display_name = "раздавленный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо приняло огромное количество <link=\"dtcrushing\"><style=\"link\">crushing damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[burned1]
+display_name = "Поющий"
+speed_mod = -0.1
+work_speed_mod = -0.1
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -5
+description = "Это существо взяло некоторое <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus>-0.1</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-5</style></style>"
+
+[burned2]
+display_name = "ошпаренный"
+work_speed_mod = -0.1
+fighting_mod = -10
+shooting_mod = -10
+morale_mod = -10
+description = "Это существо взяло некоторое <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus\">-0.1</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[burned3]
+display_name = "обожженный"
+speed_mod = -0.1
+work_speed_mod = -0.2
+stun_resist_mod = -10
+morale_mod = -10
+description = "Это существо взяло некоторое <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"malus>-0.2</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-10</style></style>"
+
+[burned4]
+display_name = "Обремененный"
+fighting_mod = -20
+shooting_mod = -20
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burned5]
+display_name = "сваренный"
+speed_mod = -0.1
+agility_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"malus\">-0.1</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-20</style>\nСтойкое сопротивление: <style=\"malus\">-20</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burned6]
+display_name = "жареный"
+fighting_mod = -30
+shooting_mod = -100
+morale_mod = -20
+description = "Это существо взяло довольно много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>: <style=\"malus\">-30</style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link></style>: <style=\"malus\">-100</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burned7]
+display_name = "инспирированный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burned8]
+display_name = "сгоревший"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burned9]
+display_name = "сожженный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = "Это существо взяло много <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[burnedPlus]
+display_name = "сожженный"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = "Это существо приняло огромное количество <link=\"dtburning\"><style=\"link\">burning damage</style></link>.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>: <style=\"malus\">-10</style>\nСтойкое сопротивление: <style=\"malus\">-10</style>\n<link=\"moraledef\"><style=\"link\">Morale</style></link>: <style=\"malus\">-20</style></style>"
+
+[stunned]
+display_name = "Ошеломленный"
+fighting_mod = -10
+agility_mod = -10
+description = "Это существо ошеломлено!\n\n<style=\"характеристики\"> Скорость: <style=\"malus\">-0.5</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>: <style=\"malus\">-10</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-10</style>"
+
+# mob statuses
+
+[fear]
+display_name = "страх"
+description = "Это существо страшное!"
+
+[lean]
+display_name = "Лиэн"
+fighting_mod = -10
+hit_point_bonus = -1
+description = "Это существо видело лучшие дни.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style>\n<link=\"hitpoints\"><style=\"link\">Hit Points</style></link>: <style=\"malus\">-1</style></style></style>"
+
+[migratory]
+display_name = "мигрирующий"
+description = "Это существо просто проходит мимо."
+
+[puny]
+display_name = "Пушонка"
+fighting_mod = -30
+description = "Это существо маленькое и слабое для своего вида.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-30</style></style>"
+
+[ravenous]
+display_name = "прожорливый"
+description = "Это существо голодает!"
+
+[rotting]
+display_name = "вращение"
+fighting_mod = -20
+decay_time_mod = 1.5
+description = "Это неживое существо почти не висит вместе.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style></style>"
+
+[scrawny]
+display_name = "тощий"
+fighting_mod = -20
+hit_point_bonus = -2
+description = "Это существо недоедает и является слабым.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-20</style>\n<link=\"hitpoints\"><style=\"link\">Hit Points</style></link>: <style=\"malus>-2</style></style></style>"
+
+[slavering]
+display_name = "рабство"
+fighting_mod = -10
+description = "Это существо очень голодно и ищет пищу.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-10</style></style>"
+
+[vandal]
+display_name = "Вандал"
+description = "Это существо здесь, чтобы уничтожить лагерь!"
+
+[wild]
+display_name = "Дикий"
+description = "Это существо является диким животным."
+
+[wrecker]
+display_name = "Врекер"
+description = "Это существо находится в бездумной ярости и хочет сломать вещи."
+
+[disintegrating]
+display_name = "распадающийся"
+description = "Это существо медленно разваливается."
+
+# goblin statuses
+
+[frightened]
+display_name = "испуганный"
+agility_mod = +10
+description = "<style=\"fluff\"> И я оглянулся, постоянно глядя, но не видел ничего видимого, хотя мой страх и сформировал меня из каждой тени моховых кустарников вокруг меня.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nЭто существо напугано!\n\n<style=\"characteristics\"><link=\"agilityDef\"><style=\"link\">Morale</style></link>: <style=\"bonus\">+10</style></style>"
+
+[lostInForest]
+display_name = "потерянный"
+description = "<style=\"fluff\"> Когда я была девочкой в Ханкасалми, мужчина заблудился в лесу. Вся деревня Ленкомаа искала его, и он не мог быть найден, пока ему не разрешили его найти. То есть, когда он был свободен от лесного покрова. Он был уже давно мертв, и люди, которые нашли его, вспомнили, что они сидели на нем во время поисков, думая, что он был бревном, потому что он был похож на него.\n\nХанкасалми. <style=\"link\"><link=\"fls\">SKS архивы</link></style>.</style>\n\nЭто существо потеряно в <link=\"forestcover\"><style=\"link\">forest-cover</style></link>!"
+
+[repulsed]
+display_name = "отвергнутый"
+fighting_mod = -5
+agility_mod = +5
+description = "Это существо отвратительно!\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"malus\">-5</style>\n<link=\"agilityDef\"><style=\"link\">Morale</style></link>: <style=\"bonus\">+5</style></style>"
+
+[steeled]
+display_name = "стальной"
+description = "Этот гоблин победил их страх и готов противостоять угрозе."
+
+[terrified]
+display_name = "напуганный"
+description = "Это существо убегает в ужасе!"
+
+[untried]
+display_name = "неиспытанный"
+description = "Этот гоблин новичок в среднем мире и еще не сталкивался с испытанием характера."
+
+[activeGuard]
+visual_priority = 1_000
+
+# This status may be given both to mobs and buildings
+[unreachable]
+display_name = "недостижимый"
+description = "Заблокировано из <link=\"unreachableDef\"><style=\"link\">, идущего в центр лагеря</style></link>."
+
+[inDeepWater]
+display_name = "В глубокой воде"
+
+[flying]
+display_name = "летать"
+
+[onFire]
+display_name = "В огне"
+description = "Это существо горит!"
+
+[in_mud]
+display_name = "В грязи"
+description = "Это существо движется сквозь грязь и испытывает трудности с ней."
+speed_mod = -0.4
+
+# Equipment keywords
+
+[has_plank_armor]
+visual_priority = 2_000
+hit_point_bonus = 3
+defence_mod = +5
+
+[has_leather_jerkin]
+visual_priority = 2_000
+hit_point_bonus = 2
+defence_mod = +5
+
+[has_rigid_leather_armor]
+visual_priority = 2_000
+hit_point_bonus = 3
+defence_mod = +10
+
+[has_linen_armor]
+visual_priority = 2_000
+hit_point_bonus = 2
+defence_mod = +10
+
+[has_dwarven_armor]
+visual_priority = 2_000
+hit_point_bonus = 4
+defence_mod = +20
+
+[has_wood_shield]
+hit_point_bonus = 2
+defence_mod = +5
+
+[has_dwshield]
+hit_point_bonus = 3
+defence_mod = +10
+
+[has_ironshield]
+hit_point_bonus = 4
+defence_mod = +20
+
+[has_iron_armor]
+visual_priority = 2_000
+hit_point_bonus = 5
+defence_mod = +30
+
+[has_spear]
+defence_mod = +10
+
+[bulky]
+speed_mod = -0.2
+
+# Workshop keywords
+
+[work_bonus_1]
+work_speed_mod = +0.2
+display_name = "Семинар бонус"
+
+[work_bonus_2]
+work_speed_mod = +0.4
+display_name = "Семинар бонус"
+
+[work_bonus_3]
+work_speed_mod = +0.6
+display_name = "Семинар бонус"
+
+[work_bonus_4]
+work_speed_mod = +0.8
+display_name = "Семинар бонус"
+
+[work_bonus_5]
+work_speed_mod = +1
+
+# sauna
+
+[refreshed]
+speed_mod = +0.2
+work_speed_mod = +0.2
+display_name = "отремонтированный"
+description = "У этого гоблина была сауна и он плавал в прохладной воде.\n\n<style=\"characteristics\"><link=\"speedDef\"><style=\"link\"> Скорость движения</style></link>: <style=\"bonus\">+0.2</style>\n<link=\"work speed def\"><style=\"link\">Рабочая скорость</style></link>: <style=\"bonus\">+0.2</style></style>"

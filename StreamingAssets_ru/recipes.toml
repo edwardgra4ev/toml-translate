@@ -1,0 +1,1259 @@
+﻿# Recipes
+#
+# 1.0 Materials
+#  1.1 Wood materials
+#  1.2 Metal materials
+#  1.3 Other raw materials
+#  1.4 Butchery
+#  1.5 Textiles
+#  1.6 Leather
+# 2.0 Tools
+#  2.1 Wood tools
+#  2.2 Clay tools
+#  2.3 Dwarven tools
+#  2.4 Metal tools
+# 3.0 Weapons
+#  3.1 Wood and bone weapons
+#  3.2 Dwarven weapons
+# 4.0 Armor
+# 5.0 Food
+#  5.1 Raw foods
+#  5.2 Cooking
+#  5.3 Preserving foods
+# 6.0 Sacrifices
+# 7.0 Services
+#  7.1 Healing
+# 8.0 Compost
+# 9.0 Junk
+
+#  1.7 Stone materials
+
+# 1.1 Wood materials
+
+[makeWoodPole]
+input = "branch"
+workshop = "carpenter"
+output = "woodpole"
+waste = "woodchips"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+[woodPlankChop]
+input = ["woodlog"]
+tool = "chopping"
+output = ["woodplank", "woodplank"]
+waste = "woodchips"
+keyword = ["strength", "lumbering"]
+labour = 10
+experience = 0.5
+
+#[woodPlankSaw]
+#input = "woodlog"
+#workshop = "saw"
+#waste = "plantgarbage"
+#output = ["woodplank", "woodplank", "woodplank", "woodplank"]
+#keyword = ["strength", "sawing"]
+#labour = 10
+#experience = 0.5
+
+[makeWoodSlats]
+input = "woodplank"
+workshop = "carpenter"
+output = "woodslatsx2"
+waste = "woodchips"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+[woodBeamChop]
+input = "woodlog"
+tool = "chopping"
+waste = "woodchips"
+output = ["woodbeam"]
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.5
+
+[woodBlockChop]
+input = "woodlog"
+tool = "chopping"
+waste = "woodchips"
+output = ["woodblockx3"]
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.5
+
+[rottenLogChop]
+input = "rottenlog"
+tool = "chopping"
+waste = "plantgarbage"
+output = ["firewood", "firewood"]
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.5
+inputs_required = true # Mark this recipe as one that cannot be scheduled unless all inputs already exist. This is crucial to prevent this recipe from blocking firewood production.
+
+[firewoodChop]
+input = "woodlog"
+tool = "chopping"
+waste = "woodchips"
+output = ["firewoodx4"]
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.1
+
+[charcoal_burn]
+workshop = "charcoalclamp"
+input = "firewoodx4"
+output = "charcoal"
+keyword = ["charcoaling", "fire"]
+labour = 20
+experience = 3
+
+# [emergencyFirewoodPlank]
+# input = "woodplank"
+# tool = "chopping"
+# output = ["firewood", "firewood"]
+# keyword = ["emergency", "lumbering", "strength"]
+
+# [emergencyFirewoodBeam]
+# input = "woodbeam"
+# tool = "chopping"
+# output = ["firewood", "firewood"]
+# keyword = ["emergency", "lumbering", "strength"]
+
+# 1.2 Metal materials
+
+[trinketToIngot]
+input = ["dwtrinket", "dwtrinket", "dwtrinket"]
+output = "dwingot"
+workshop = "smithy"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 3
+
+# 1.3 Other raw materials
+
+[clayDig]
+input = ""
+tool = "digging"
+workshop = "clayproducer"
+output = "rawClay"
+keyword = ["digger", "strength"]
+labour = 10
+experience = 0.5
+
+# 1.4 Butchery
+
+[craneButcher]
+input = "cranecorpse"
+output = ["birdmeat", "bones"]
+waste = "offal"
+workshop = "butcher"
+keyword = ["butchery", "finesse"]
+labour = 10
+experience = 1
+
+[wolfButcher]
+input = "wolfcorpse"
+output = ["wolfmeat", "wolfmeat", "wolfpelt", "bones", "bones"]
+waste = "offal"
+workshop = "butcher"
+keyword = ["butchery"]
+labour = 10
+experience = 3
+
+[makeBonemeal]
+input = "bones"
+output = "bonemeal"
+workshop = "butcher"
+keyword = "butchery"
+labour = 10
+experience = 1
+
+# 1.5 Textiles
+
+[ret_flaxstrands]
+input = "flaxstrandsx10"
+workshop = "retting"
+waste = "plantgarbage"
+output = "finefiber"
+keyword = ["heckler", "finesse", "extended"]
+labour = 20
+experience = 1
+overproduce = true
+
+[ret_nettlestems]
+input = "nettlestems"
+workshop = "retting"
+waste = "plantgarbage"
+output = "finefiber"
+keyword = ["heckler", "finesse", "extended"]
+labour = 10
+experience = 1
+
+[ret_willowbranches]
+input = "willowbranches"
+workshop = "retting"
+waste = "plantgarbage"
+output = "coarsefiber"
+keyword = ["heckler", "finesse", "extended"]
+labour = 10
+experience = 1
+
+[ret_roughflax]
+input = "roughflaxstrandsx10"
+workshop = "retting"
+waste = "plantgarbage"
+output = "coarsefiber"
+keyword = ["heckler", "finesse", "extended"]
+labour = 10
+experience = 1
+overproduce = true
+
+[coarseSpinning]
+input = "coarsefiber"
+workshop = "spinning"
+waste = "plantgarbage"
+output = "coarsethread"
+keyword = ["spinner", "finesse"]
+labour = 10
+experience = 1
+
+[fineSpinning]
+input = "finefiber"
+workshop = "spinning"
+waste = "plantgarbage"
+output = "finethread"
+keyword = ["spinner", "finesse"]
+labour = 10
+experience = 1
+
+[coarseWeaving]
+input = "coarsethreadx6"
+workshop = "weaving"
+waste = "plantgarbage"
+output = "coarsecloth"
+keyword = ["weaver", "finesse"]
+labour = 10
+experience = 1
+
+[fineWeaving]
+input = "finethreadx6"
+workshop = "weaving"
+waste = "plantgarbage"
+output = "finecloth"
+keyword = ["weaver", "finesse"]
+labour = 10
+experience = 1
+
+[coarsethread_to_rope]
+input = "coarsethreadx5"
+workshop = "ropemaking"
+waste = "plantgarbage"
+output = "rope"
+keyword = ["roper", "finesse"]
+labour = 10
+experience = 2
+
+[finethread_to_rope]
+input = "finethreadx5"
+workshop = "ropemaking"
+waste = "plantgarbage"
+output = "rope"
+keyword = ["roper", "finesse"]
+labour = 10
+experience = 2
+
+# 1.6 Leather
+
+[wolfpeltCuring]
+input = "wolfpelt"
+workshop = "hidecuring"
+waste = "offal"
+output = "curedhide"
+keyword = ["leathercrafting", "finesse", "extended"]
+labour = 10
+experience = 2
+
+[hideTanning]
+input = "curedhide"
+workshop = "tanning"
+waste = "offal"
+output = "rawleather"
+keyword = ["leathercrafting", "finesse", "extended"]
+labour = 10
+experience = 2
+
+# 1.7 Farming
+
+[rye_stalk_thresh]
+workshop = "threshing"
+input = "ryestalkx10"
+output = "ryeseedbagx25"
+keyword = ["thresher"]
+labour = 20
+experience = 1
+overproduce = true
+
+[rye_flour_hand_grind]
+workshop = "hand_mill"
+input = ["ryeseedbagx50"]
+output = "ryeflour"
+keyword = ["miller", "strength"]
+labour = 30
+experience = 1
+suppress_notifications_if_built = "mill"
+
+[rye_flour_mill_grind]
+workshop = "windmill"
+input = ["ryeseedbagx50"]
+output = "ryeflour"
+keyword = ["passive_producer"]
+suppress_notifications_if_built = "mill"
+
+[nettleprocess]
+workshop = "nettleprocessing"
+input = "nettleplantx10"
+waste = "plantgarbage"
+output = ["nettlebunch", "nettlestems", "nettleseedbagx10"]
+keyword = ["farmer", "finesse"]
+labour = 20
+experience = 0.5
+overproduce = true
+
+[nettle_seed_meal_hand_grind]
+workshop = "hand_mill"
+input = ["nettleseedbagx50"]
+output = "seed_mealx5"
+keyword = ["miller", "strength"]
+labour = 30
+experience = 1
+suppress_notifications_if_built = "mill"
+
+#[nettle_seed_meal_mill_grind]
+#workshop = "windmill"
+#input = ["nettleseedbagx10"]
+#output = "seed_meal"
+#keyword = ["passive_producer"]
+#suppress_notifications_if_built = "mill"
+
+[flax_seed_meal_hand_grind]
+workshop = "hand_mill"
+input = ["flaxseedbagx75"]
+output = "seed_mealx7"
+keyword = ["miller", "strength"]
+labour = 30
+experience = 1
+suppress_notifications_if_built = "mill"
+
+#[flax_seed_meal_mill_grind]
+#workshop = "windmill"
+#input = ["flaxseedbagx10"]
+#output = "seed_meal"
+#keyword = ["passive_producer"]
+#suppress_notifications_if_built = "mill"
+
+[rye_seed_meal_hand_grind]
+workshop = "hand_mill"
+input = ["ryeseedbagx50"]
+output = "seed_mealx5"
+keyword = ["miller", "strength"]
+labour = 30
+experience = 1
+suppress_notifications_if_built = "mill"
+
+#[rye_seed_meal_mill_grind]
+#workshop = "windmill"
+#input = ["ryeseedbagx10"]
+#output = "seed_meal"
+#keyword = ["passive_producer"]
+#suppress_notifications_if_built = "mill"
+
+# 1.8 Stone materials
+
+[stone_quarrying]
+input = ""
+tool = "mining"
+workshop = "stoneproducer"
+output = "roughstone"
+keyword = ["quarrying", "strength"]
+labour = 20
+experience = 1
+
+[make_dressed_stone]
+input = "roughstone"
+output = "dressedstone"
+workshop = "stonecutting"
+labour = 20
+keyword = ["stonecutter"]
+experience = 1
+
+#[make_rough_stone]
+#input = ["stoneblock"]
+#tool = "mining"
+#output = ["roughstonex3"]
+#keyword = ["strength", "quarrying"]
+#labour = 20
+#experience = 1
+
+# 2.0 Tools
+# 2.1 Wood tools
+
+[makeStoneAxe]
+input = "branch"
+workshop = "carpenter"
+waste = "woodchips"
+output = "stoneaxe"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+[makeDiggingStick]
+input = "branch"
+workshop = "carpenter"
+waste = "woodchips"
+output = "diggingstick"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+[make_pitchfork]
+input = "branch"
+workshop = "carpenter"
+waste = "woodchips"
+output = "pitchfork"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+#[make_stone_sickle]
+#input = "branch"
+#workshop = "carpenter"
+#waste = "woodchips"
+#output = "stone_sickle"
+#keyword = ["woodworking", "finesse"]
+#labour = 10
+#experience = 1
+
+#[makeWillowNet]
+#input = ["willowbranchesx5"]
+#workshop = "fishingworkshop"
+#waste = "plantgarbage"
+#output = "willownet"
+#keyword = ["fisher", "finesse"]
+#experience = 1
+
+#[makeFishingRod]
+#input = ["woodpole", "thread"]
+#workshop = "fishingworkshop"
+#waste = "plantgarbage"
+#output = "fishingrod"
+#keyword = ["fisher", "finesse", "woodworking"]
+#experience = 1
+
+[makeFishingSpear]
+input = "branch"
+workshop = "fishingworkshop"
+waste = "woodchips"
+output = "fishingspear"
+keyword = ["fisher", "finesse"]
+labour = 10
+experience = 1
+
+[makeBoneFishingSpear]
+input = ["branch", "bones"]
+workshop = "fishingworkshop"
+waste = "woodchips"
+output = "bonefishingspear"
+keyword = ["fisher", "finesse"]
+labour = 10
+experience = 1
+
+[makeFishingTrap]
+input = ["branch", "branch", "willowbranches", "willowbranches"]
+workshop = "fishingworkshop"
+waste = "woodchips"
+output = "fishingtrap"
+keyword = ["fisher", "finesse"]
+labour = 10
+experience = 1
+
+[make_wooden_barrel]
+input = "woodslatsx4"
+workshop = "carpenter"
+waste = "woodchips"
+output = "wood_barrel"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 3
+
+[makeWoodenBucket]
+input = "woodplank"
+workshop = "carpenter"
+waste = "woodchips"
+output = "woodbucket"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 2
+
+# 2.2 Clay tools
+
+[makeClayPot]
+input = ["rawClay", "firewood"]
+workshop = "potter"
+output = "claypot"
+waste = "ashes"
+keyword = ["pottery", "finesse", "fire"]
+labour = 10
+experience = 2
+
+# 2.3 Dwarven tools
+
+[makeDwarvenPick]
+input = ["dwingot", "woodpole"]
+workshop = "smithy"
+waste = "woodchips"
+output = "dwpick"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[makeDwarvenBar]
+input = ["dwingot", "dwingot"]
+workshop = "smithy"
+output = "dwdiggingbar"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[makeDwarvenAxe]
+input = ["dwingot", "woodpole"]
+workshop = "smithy"
+waste = "woodchips"
+output = "dwaxe"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[makeDwarvenHook]
+input = ["dwingot", "woodpole"]
+workshop = "smithy"
+waste = "woodchips"
+output = "dwbillhook"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[makeDwarvenHoe]
+input = ["dwingot", "woodpole"]
+workshop = "smithy"
+waste = "woodchips"
+output = "dwhoe"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[makeDwarvenShovel]
+input = ["dwingot", "woodpole"]
+workshop = "smithy"
+waste = "woodchips"
+output = "dwshovel"
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+# 2.4 Metal tools
+
+[make_iron_axe]
+input = ["wroughtiron", "charcoal", "woodpole"]
+output = "ironaxe"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+[make_iron_billhook]
+input = ["wroughtiron",  "woodpole", "charcoal"]
+output = "ironbillhook"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+[make_iron_digging_bar]
+input = ["wroughtiron",  "wroughtiron", "charcoal"]
+output = "iron_digging_bar"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 30
+experience = 4
+keyword = ["blacksmithing", "strength", "fire"]
+
+[make_iron_hoe]
+input = ["wroughtiron", "charcoal", "woodpole"]
+output = "iron_hoe"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+[make_iron_pick]
+input = ["wroughtiron", "charcoal", "woodpole"]
+output = "iron_pick"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+[make_iron_shovel]
+input = ["wroughtiron", "woodpole", "charcoal"]
+output = "ironshovel"
+waste = "ashes"
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+# 1.2 Metal materials
+
+[collect_bog_iron]
+input = ""
+tool = "digging"
+workshop = "bogironcollector"
+output = "wetbogiron"
+keyword = ["bogironing", "strength"]
+labour = 20
+experience = 1
+
+[roast_bog_iron]
+input = ["bogironore", "firewood"]
+output = "roastedbogironore"
+waste = ["ashes", "slag"]
+workshop = "oreroaster"
+labour = 20
+experience = 2
+keyword = ["bogironing", "extended", "fire"]
+
+[smelt_bog_iron]
+input = ["roastedbogironore", "charcoal", "firewood"]
+output = "spongeiron"
+waste = ["ashes", "slag"]
+workshop = "bloomer"
+labour = 20
+experience = 3
+keyword = ["smelting", "extended", "fire"]
+
+[work_sponge_iron]
+input = ["spongeiron", "charcoal"]
+output = "wroughtiron"
+waste = ["ashes", "slag"]
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+[work_scrap_iron]
+input = ["scrapiron", "charcoal"]
+output = "wroughtiron"
+waste = ["ashes", "slag"]
+workshop = "blacksmiths"
+labour = 20
+experience = 2
+keyword = ["blacksmithing", "strength", "fire"]
+
+# 3.0 Weapons
+# 3.1 Wood and bone weapons
+
+[makeStoneMace]
+input = "branch"
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "stonemace"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 2
+
+[craftWoodSpear]
+input = "woodpole"
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "woodspear"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 1
+
+[craftBoneSpear]
+input = ["woodpole", "bones"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "bonespear"
+keyword = ["finesse", "weaponer"]
+labour = 20
+experience = 2
+
+[craftspearthrower]
+input = ["woodpole", "branch"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "spearthrower"
+keyword = ["finesse", "weaponer"]
+labour = 20
+experience = 3
+
+[craftthrowingspear]
+input = ["woodpole"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "throwingspear"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 1
+
+[craftbonethrowingspear]
+input = ["woodpole", "bones"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "bonethrowingspear"
+keyword = ["finesse", "weaponer"]
+labour = 20
+experience = 2
+
+[craft_crude_bow_coarse_thread]
+input = ["branch", "coarsethread"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "crudebow"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 3
+
+[craft_crude_bow_fine_thread]
+input = ["branch", "finethread"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "crudebow"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 3
+
+[craft_wooden_arrows]
+input = ["branch"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "woodenarrowsx10"
+keyword = ["finesse", "weaponer"]
+labour = 30
+experience = 1
+
+# 3.2 Dwarven weapons
+
+[craftDwarvenSpear]
+input = ["dwingot", "woodpole"]
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "dwspear"
+keyword = ["strength", "weaponer"]
+labour = 20
+experience = 2
+
+#[craftDwarvenDagger]
+#input = ["dwingot"]
+#workshop = "weaponmaker"
+#waste = "plantgarbage"
+#output = "dwdagger"
+#keyword = ["strength", "weaponer"]
+#labour = 20
+#experience = 2
+
+[coldforgeDwarvenSword]
+input = "dwingotx2"
+workshop = "weaponcoldforger"
+output = "dwsword"
+keyword = ["strength", "weaponer"]
+labour = 30
+experience = 4
+
+#[coldforge_dwarven_war_axe]
+#input = ["branch", "dwingot"]
+#workshop = "weaponcoldforger"
+#output = "dw_war_axe"
+#waste = "woodchips"
+#keyword = ["strength", "weaponer"]
+#labour = 20
+#experience = 3
+#
+#[coldforge_dwarven_warhammer]
+#input = ["branch", "dwingot"]
+#workshop = "weaponcoldforger"
+#output = "dw_warhammer"
+#waste = "woodchips"
+#keyword = ["strength", "weaponer"]
+#labour = 20
+#experience = 3
+
+# 3.3 Iron weapons
+
+[forge_iron_broadsword]
+input = ["wroughtironx2", "charcoal"]
+workshop = "weaponsmith"
+output = "ironsword"
+waste = ["ashes"]
+keyword = ["strength", "weaponer"]
+labour = 40
+experience = 5
+
+[craftIronSpear]
+input = ["wroughtiron", "woodpole", "charcoal"]
+workshop = "weaponsmith"
+waste = ["ashes", "woodchips"]
+output = "ironspear"
+keyword = ["strength", "weaponer"]
+labour = 30
+experience = 3
+
+# 4.0 Armor
+
+# 4.1 Shields
+
+[craftWoodShield]
+input = ["woodplank", "woodslats"]
+workshop = "armory"
+waste = "woodchips"
+output = "woodshield"
+keyword = ["finesse", "armorer"]
+labour = 10
+experience = 2
+
+[makeDwarvenShield]
+input = ["woodplank", "dwingot"]
+workshop = "armory"
+waste = "woodchips"
+output = "dwshield"
+keyword = ["strength", "armorer"]
+labour = 30
+experience = 3
+
+[makeIronShield]
+input = ["woodplank", "wroughtiron", "charcoal"]
+workshop = "armorsmith"
+waste = "woodchips"
+output = "ironshield"
+keyword = ["strength", "armorer"]
+labour = 40
+experience = 4
+
+# 4.2 Non-metal armor
+
+[makePlankArmor]
+input = ["woodplank", "woodplank", "woodslats"]
+workshop = "armory"
+waste = "woodchips"
+output = "plankarmor"
+keyword = ["finesse", "armorer"]
+labour = 50
+experience = 5
+
+[makeLeatherJerkin]
+input = "rawleatherx2"
+workshop = "leatherworking"
+output = "leatherjerkin"
+waste = "plantgarbage"
+keyword = ["leathercrafting", "finesse"]
+labour = 20
+experience = 3
+
+[makeCoarseClothArmor]
+input = "coarseclothx2"
+workshop = "armory"
+output = "clothArmor"
+keyword = ["finesse", "armorer"]
+labour = 40
+experience = 3
+
+[makeFineClothArmor]
+input = "fineclothx2"
+workshop = "armory"
+output = "clothArmor"
+keyword = ["finesse", "armorer"]
+labour = 30
+experience = 3
+
+[makeRigidLeatherArmor]
+input = "rawleatherx3"
+workshop = "armory"
+output = "rigidleatherarmor"
+waste = "plantgarbage"
+keyword = ["finesse", "armorer"]
+labour = 40
+experience = 5
+
+#  4.3 Metal armor
+
+[coldforge_dwarven_cuirass]
+input = "dwingotx5"
+workshop = "armorcoldforger"
+output = "dwcuirass"
+keyword = ["strength", "armorer"]
+labour = 100
+experience = 10
+
+[forge_iron_cuirass]
+input = ["wroughtironx5", "charcoal"]
+workshop = "armorsmith"
+output = "iron_cuirass"
+keyword = ["strength", "armorer"]
+labour = 100
+experience = 10
+
+# 5.0 Food
+
+# 5.1 Raw foods
+
+[spearfishing]
+workshop = "fishingbuilding"
+output = "rawfish"
+keyword = ["fisher", "fishing_job"]
+experience = 2
+
+# 5.2 Cooking
+
+[ryebreadcook]
+workshop = "baker"
+input = ["ryeflour", "firewood"]
+output = "ryebread"
+keyword = ["cooking", "fire"]
+waste = "ashes"
+labour = 10
+experience = 2
+
+[preparemeal]
+workshop = "kitchen"
+keyword = ["cooking", "fire"]
+experience = 5
+waste = ["ashes", "foodscraps"]
+
+# 5.3 Preserving foods
+
+[smokebird]
+input = ["birdmeat", "firewood"]
+workshop = "smoker"
+waste = ["foodscraps", "ashes"]
+output = "smokedbird"
+keyword = ["cooking", "smoking", "fire", "extended"]
+labour = 10
+experience = 1
+
+[smokewolf]
+input = ["wolfmeat", "firewood"]
+workshop = "smoker"
+waste = ["foodscraps", "ashes"]
+output = "smokedwolf"
+keyword = ["cooking", "smoking", "fire", "extended"]
+labour = 10
+experience = 1
+
+#[smokesalmon]
+#input = ["rawsalmon", "firewood"]
+#workshop = "smoker"
+#waste = ["foodscraps", "ashes"]
+#output = "smokedsalmon"
+#keyword = ["cooking", "smoking", "fire", "extended"]
+#labour = 10
+#experience = 1
+
+[smokefish]
+input = ["rawfish", "firewood"]
+workshop = "smoker"
+waste = ["foodscraps", "ashes"]
+output = "smokedfish"
+keyword = ["cooking", "smoking", "fire", "extended"]
+labour = 10
+experience = 1
+
+# 6.0 Sacrifices
+
+[makeboneidol]
+input = ["bones"]
+workshop = "butcher"
+output = "boneidol"
+keyword = ["finesse", "bonecarver"]
+labour = 10
+experience = 1
+
+[anoint_ceremonial_fish]
+input = ["rawfish"]
+workshop = "fishingworkshop"
+output = "ceremonialfish"
+keyword = ["finesse", "fisher"]
+labour = 10
+experience = 1
+
+[make_ceremonial_spear]
+input = "woodpole"
+workshop = "weaponmaker"
+waste = "woodchips"
+output = "ceremonialspear"
+keyword = ["finesse", "weaponer"]
+labour = 10
+experience = 1
+
+[make_ceremonial_shield]
+input = ["woodplank", "woodslats"]
+workshop = "armory"
+waste = "woodchips"
+output = "ceremonialshield"
+keyword = ["finesse", "armorer"]
+labour = 10
+experience = 2
+
+[makeclaystatuette]
+input = ["rawClay", "firewood"]
+workshop = "potter"
+output = "claystatuette"
+waste = "ashes"
+keyword = ["pottery", "finesse"]
+labour = 10
+experience = 1
+
+[makewoodstatuette]
+input = "branch"
+workshop = "carpenter"
+output = "woodenstatuette"
+waste = "woodchips"
+keyword = ["woodworking", "finesse"]
+labour = 10
+experience = 1
+
+[prepare_ceremonial_bird_meat]
+input = "birdmeat"
+output = ["ceremonialbirdmeat"]
+workshop = "butcher"
+keyword = ["butchery", "finesse"]
+labour = 10
+experience = 1
+
+[prepare_ceremonial_wolf_meat]
+input = "wolfmeat"
+output = "ceremonialwolfmeat"
+workshop = "butcher"
+keyword = ["butchery"]
+labour = 10
+experience = 1
+
+# 7.0 Services
+
+# 7.1 Healing
+
+#[healwound]
+#workshop = "nursing"
+#keyword = "healer"
+#labour = 10
+#experience = 3
+
+[heatsauna]
+input = ["firewoodx4"]
+workshop = "sauna"
+keyword = "saunawarmer"
+labour = 10
+experience = 3
+
+# 8.0 Compost
+
+#[foodscraps_to_compost]
+#input = "foodscraps"
+#output = "compost"
+#workshop = "middenheap"
+#keyword = "composting"
+
+[hay_to_compost]
+input = "hay"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[human_corpse_to_compost]
+input = "humancorpse"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[offal_to_compost]
+input = "offal"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[plantgarbage_to_compost]
+input = "plantgarbage"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[rottenfish_to_compost]
+input = "rottenfish"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[rottenmeat_to_compost]
+input = "rottenmeat"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[woodchips_to_compost]
+input = "woodchips"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[seed_meal_to_compost]
+input = "seed_meal"
+output = "compost"
+workshop = "middenheap"
+keyword = "composting"
+
+[mulch_branches]
+input = ["branch"]
+tool = "chopping"
+output = ["woodchips"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+experience = 0.1
+
+[mulch_firewood]
+input = ["firewood"]
+tool = "chopping"
+output = ["woodchips"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 2
+experience = 0.1
+
+[mulch_logs]
+input = ["woodlog"]
+tool = "chopping"
+output = ["woodchipsx4"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.5
+
+[rotten_log_to_chips]
+input = "rottenlog"
+tool = "chopping"
+waste = "plantgarbage"
+output = "woodchipsx4"
+enabled_by_default = true
+keyword = ["lumbering", "strength"]
+labour = 10
+experience = 0.1
+
+# 9.0 Junk
+
+[junk_iron_axe]
+input = "ironaxe"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[junk_iron_billhook]
+input = "ironbillhook"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[junk_iron_digging_bar]
+input = "iron_digging_bar"
+workshop = "blacksmiths"
+output = ["scrapiron", "scrapiron"]
+enabled_by_default = false
+keyword = ["blacksmithing", "strength"]
+labour = 10
+experience = 2
+
+[junk_iron_hoe]
+input = "iron_hoe"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[junk_iron_pick]
+input = "iron_pick"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[junk_ironshovel]
+input = "ironshovel"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[junk_iron_cuirass]
+input = "iron_cuirass"
+workshop = "armorsmith"
+output = ["scrapironx4"]
+enabled_by_default = false
+keyword = ["armorer", "strength"]
+labour = 10
+
+[junk_iron_shield]
+input = "ironshield"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 5
+
+[junk_iron_spear]
+input = "ironspear"
+tool = "chopping"
+output = ["woodchips", "scrapiron"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+
+[mulch_pitchforks]
+input = ["pitchfork"]
+tool = "chopping"
+output = ["woodchips"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+experience = 0.1
+
+[mulch_wooden_shields]
+input = ["woodshield"]
+tool = "chopping"
+output = ["woodchips"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+experience = 0.1
+
+[mulch_wooden_spears]
+input = ["woodspear"]
+tool = "chopping"
+output = ["woodchips"]
+enabled_by_default = false
+keyword = ["lumbering", "strength"]
+labour = 1
+experience = 0.1

@@ -1,0 +1,253 @@
+﻿# structure keywords
+
+[armory]
+display_name = "Мастерская оружейника"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для создания простой брони из органических материалов."
+
+[armorcoldforger]
+display_name = "Мастерская оружейника"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где карликовый металл может быть холодно кован в броню."
+
+[armorsmith]
+display_name = "Кузница Арморсмита"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где железо может быть ковано в прочную броню."
+
+[baker]
+display_name = "пекарня"
+description = "Структура, где муку можно запечь в хлеб."
+
+[blacksmiths]
+display_name = "Кузнец"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> с кузницей, где металл можно расплавить и превратить в полезные вещи."
+
+[bloomer]
+display_name = "Блумерия"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где руда плавится в металл."
+
+[bogironcollector]
+display_name = "Bog Iron Коллекционер"
+description = "Коллекционная хижина."
+
+[butcher]
+display_name = "мясник"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где туши животных могут быть переработаны в съедобное мясо и другие полезные продукты."
+
+[carpenter]
+display_name = "Плотник"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где могут быть изготовлены все виды деревянных инструментов и строительных материалов."
+
+[charcoalclamp]
+display_name = "Зажим для угля"
+description = "Структура, в которой древесина сжигается для получения <link=\"уголь\"><style=\"link\">уголь</style></link>."
+
+[clayproducer]
+display_name = "Клэй Пит"
+description = "Отверстие в земле, где можно выкопать глину."
+
+[fishingbuilding]
+display_name = "Рыболовное здание"
+description = "Здание для хранения рыболовных инструментов, которое позволяет гоблинам заниматься рыболовством."
+
+[fishingworkshop]
+display_name = "Семинар по рыболовству"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для изготовления рыболовных инструментов."
+
+[hidecuring]
+display_name = "Семинар по лечению"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для отверждения шкур животных."
+
+[kitchen]
+display_name = "Кухня"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для приготовления пищи."
+
+[leatherworking]
+display_name = "Мастерская кожевенного мастера"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для изготовления изделий из кожи."
+
+[mill]
+display_name = "Миллион"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для измельчения зерна в муку."
+
+[hand_mill]
+display_name = "Ручная мельница"
+description = "<style=\"clickableLink\"><link=\"mill0\">hand mill</link></style> для шлифования зерна."
+
+[windmill]
+display_name = "ветряная мельница"
+description = "<style=\"clickableLink\"><link=\"mill3\">windmill</link></style> для шлифования зерна."
+
+[nettleprocessing]
+display_name = "Семинар по переработке крапивы"
+description = "Мастерская по разделению собранных растений крапивы на полезные компоненты."
+
+[nursing]
+display_name = "Медицинское здание"
+description = "Медицинские здания — это места, где гоблины могут исцелиться от <link=\"armorAndDamage\"><style=\"link\">damage</style></link>, который они взяли."
+
+[oreroaster]
+display_name = "ореостер"
+description = "Структура, где болотная железная руда обжаривается для удаления примесей."
+
+[potter]
+display_name = "Поттер"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для изготовления горшков и других полезных элементов из <link=\"rawClay\"><style=\"link\">clay</style></link>."
+
+[retting]
+display_name = "Семинар по реттингу"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где растительные материалы превращаются в полезное волокно. Семинары реттинга включают <link=\"retting0\"><style=\"link\">Retting Yard</style></link>."
+
+[ropemaking]
+display_name = "Семинар по изготовлению веревок"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для изготовления веревки. Семинары по изготовлению веревки включают <link=\"ropemaking1\"><style=\"link\">Rope-maker's Shack</style></link>."
+
+[sauna]
+display_name = "Сауна"
+description = "Место для купания гоблинов."
+
+[saw]
+display_name = "Пила"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где бревна распиливаются в доски."
+
+[smithy]
+display_name = "Смити"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где гномистые металлические изделия могут быть холоднокожими."
+
+[smoker]
+display_name = "Мастерская по курению"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где пища может быть сохранена курением."
+
+[spinning]
+display_name = "Мастерская Spinning"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для вращения волокна в поток. Семинары спиннинга включают <link=\"spinning2\"><style=\"link\">Spinner's Shed</style></link>."
+
+[stonecutting]
+display_name = "Семинар по резке камней"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где обрабатывается камень."
+
+[stoneproducer]
+display_name = "Каменный карьер"
+description = "Открытая яма в земле для извлечения породы."
+
+[storehouse]
+display_name = "Магазин"
+description = "Структура, в которой предметы, которые портятся или портятся быстрее, могут быть надежно сохранены <link=\"storage\"><style=\"link\">stored</style></link>."
+
+[tanning]
+display_name = "Семинар по загару"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для загара прячется в кожу."
+
+[threshing]
+display_name = "Трешер"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для сушки и протирки зерна."
+
+[weaponcoldforger]
+display_name = "Мастерская оружейника"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где карликовый металл может быть холодно кован в оружие."
+
+[weaponmaker]
+display_name = "Мастерская оружейника"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для создания оружия из простых материалов."
+
+[weaponsmith]
+display_name = "Кузница Оружейника"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где оружие может быть изготовлено из железа."
+
+[weaving]
+display_name = "ткач"
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link>, где нить вплетена в ткань."
+
+[summonedstructure]
+display_name = "волшебный"
+description = """"""
+
+[middenheap]
+display_name = "Мидден"
+description = "Груда груды. Когда мусор сбрасывается в кучу, он производит <link=\"compost\"><style=\"link\">compost</style></link> для <link=\"fertility\"><style=\"link\">fertilizing</style></link> <link=\"farming\"><style=\"link\">fields</style></link>."
+
+# tool keywords
+
+[bartool]
+display_name = "Барный инструмент"
+description = "Бары используются для извлечения пней деревьев и больших камней из земли. Ранним инструментом бара является <link=\"diggingstick\"><style=\"link\">digging stick</style></link>."
+
+[bucket]
+display_name = "ведро"
+description = "Ведра используются для перевозки жидкостей и других рыхлых веществ. Ранним примером ведра является <link=\"claypot\"><style=\"link\">earthenware pot</style></link>."
+
+[chopping]
+display_name = "Инструмент для дробления"
+description = "Инструменты для рубки необходимы для вырубки деревьев. Они также используются для разрезания <link=\"woodlog\"><style=\"link\">logs</style></link> в <link=\"woodbeam\"><style=\"link\">beams</style></link> или <link=\"woodplank\"><style=\"link\">planks</style></link>."
+
+[clearing]
+display_name = "Очистительный инструмент"
+description = "Эти инструменты используются для очистки кустарников и других подлесков."
+
+[digging]
+display_name = "Инструмент для копания"
+description = "Инструменты, используемые для копания и подготовки <link=\"фермерство\"><style=\"link\">fields</style></link>. <link=\"carpentryTech\"><style=\"link\">Wooden</style></link> инструменты для копания эффективны только в <link=\"sandsoil\"><style=\"link\">sandy soils</style></link>."
+
+[hoeing]
+display_name = "Инструмент Hoeing"
+description = "Хижины используются для обработки полей и сорняков, работа, которая также может быть выполнена с помощью инструментов для перекачки <link=\"digging\"><style=\"link\">digging</style></link>."
+
+[mining]
+display_name = "Горный инструмент"
+description = "Майнинговые инструменты используются для добычи <link=\"stonetier\"><style=\"link\">stone</style></link> и других полезных минералов."
+
+[shovel]
+display_name = "лопата"
+description = "Лопаты - это инструменты для выкапывания металлов, которые могут работать <link=\"claysoil\"><style=\"link\">clay soils</style></link>."
+
+[spearfishingtool]
+display_name = "Рыболовное копье"
+description = "Честно говоря, заостренная палка для колотящей рыбы. Гоблины нуждаются в копьях для рыбалки."
+
+[midden_tool]
+display_name = "Питчфорк"
+description = "Вилка для работы <link=\"midden\"><style=\"link\">middens</style></link>."
+
+# food keywords
+
+[fresh]
+display_name = "Свежая еда"
+description = "Немного свежей еды. Если гоблины не получают свежих продуктов в своем рационе, они будут страдать от <link=\"scurvy\"><style=\"link\">scurvy</style></link>."
+
+[carbs]
+display_name = "углеводы"
+description = "Эта пища содержит необходимые углеводы, необходимую часть сбалансированной диеты."
+
+[fat]
+display_name = "жирный"
+description = "Эта пища содержит жиры, которые гоблины должны выживать, а также получать удовольствие!"
+
+[fiber]
+display_name = "волокно"
+description = "Эта пища содержит большое количество пищевых волокон. Если гоблины не получают достаточного количества клетчатки в своем рационе, они будут страдать от <link=\"lackFiber\"><style=\"link\">дефицит клетчатки</style></link>."
+
+[protein]
+display_name = "белок"
+description = "Эта пища содержит белок. Если гоблины не получают достаточного количества белка в своем рационе, они будут страдать от дефицита белка <link=\"lackProtein\"><style=\"link\"></style></link>."
+
+[sweet]
+display_name = "Сладкий"
+description = "Эта еда очень сладкая, и гоблины не любят слишком сладкие блюда. Если блюдо включает в себя несколько сладких продуктов, только первый будет считать его полный бонус <link=\"moraledef\"><style=\"link\">morale</style></link>. Все последующие сладкие продукты добавляют только половину своего морального бонуса к эффекту еды."
+
+# product keywords
+
+[coarse_bast]
+display_name = "Грубый ублюдок"
+description = "Какой-то грубый окунь, который можно сделать из волокна."
+
+[fine_bast]
+display_name = "Прекрасный ублюдок"
+description = "Какой-то мелкий окунь, который можно превратить в волокно."
+
+[thread]
+display_name = "нить"
+description = "Некоторая нить, грубая или тонкая."
+
+# other
+
+[garbage]
+display_name = "мусор"
+description = "Мусор можно сбросить в <link=\"midden\"><style=\"link\">midden</style></link> для получения <link=\"compost\"><style=\"link\">compost</style></link>"

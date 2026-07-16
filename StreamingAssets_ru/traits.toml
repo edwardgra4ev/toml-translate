@@ -1,0 +1,300 @@
+﻿# temperament traits
+
+[outdoorsgoblin]
+display_name = "Темперамент: Outdoorsgoblin"
+keyword = "temperament"
+description = "<style=\"fluff\"> Когда я был ребенком, я жил в большом\nВ жилищах моей матери;\nВ лес я пошел за ягодами,\nПошел за малиной на возвышенности,\nСобрав клубнику на горах,\nСобирались один день, потом второй.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXV\n\nЭтот гоблин любит работать на открытом воздухе и не против покинуть лагерь.\n\n<style=\"fluff\"> У каждого гоблина есть характерная черта, которая определяет, какую работу они предпочитают делать."
+
+[camper]
+display_name = "Темперамент: Кампер"
+keyword = "temperament"
+description = "<style=\"fluff\"> Когда сильный человек, Унтамойнен,\nПосмотрел ранним вечером,\nКак Куллерво прогрессировал,\nВ своих трудах в лесу;\nМало что было сделано,\nОн не был достоин героя.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXI\n\nЭтот гоблин предпочитает оставаться внутри лагеря.\n\n<style=\"fluff\"> У каждого гоблина есть характерная черта, которая определяет, какую работу они предпочитают делать."
+
+[crafter]
+display_name = "Темперамент: Crafter"
+keyword = "temperament"
+description = "<style=\"fluff\"> Удивительные вещи могут быть построены\nОт мощей этого чудовища,\nЕсли бы они были в печи кузнеца,\nИ тогда колдовство рассеется.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XL\n\nЭтот гоблин предпочитает работать в мастерской.\n\n<style=\"fluff\"> У каждого гоблина есть характерная черта, которая определяет, какую работу они предпочитают делать."
+
+[laborer]
+display_name = "Темперамент: рабочий"
+keyword = "temperament"
+description = "<style=\"fluff\"> Вот слова Куллервоинена:\n\"Дайте мне работу рано утром,\nВечером занятия,\nТруд, достойный твоего слуги».\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nЭтот гоблин предпочитает ручной труд работе в мастерской.\n\n<style=\"fluff\"> У каждого гоблина есть характерная черта, которая определяет, какую работу они предпочитают делать."
+
+# physical traits
+
+[brawny]
+display_name = "Брауни"
+keyword = "physicaltrait"
+strengthWorkSpeedMod = +0.2
+carryingCapacityMod = +0.5
+hit_point_bonus = +1
+constitution_mod = +10
+fight_damage_mod = +1
+description = "<style=\"fluff\"> Куллервоинен делает то, что просит.\nПугает лосося силами\nЕго могучие руки и плечи,\nСила молодости и магии.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXV\n\nЭтот гоблин мощно выстроен и силен.\n\n<style=\"characteristics\"><link=\"carrying capacity def\"><style=\"link\">Carrying Capacity</style></link>: <style=\"bonus\">+0.5</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"bonus\">+10</style>\n<link=\"fight damage mod def\"><style=\"link\"> Модификатор боевых повреждений</style></link>: <style=\"бонус\">+1</style>\n<link=\"hitpoints\"><style=\"link\">Hit Points</style></link>: <style=\"bonus\">+1</style></style>"
+
+[nimble]
+display_name = "Нить"
+keyword = "physicaltrait"
+finesseWorkSpeedMod = +0.2
+agility_mod = +10
+fight_damage_mod = +1
+shootDamageModifier = +1
+toolToughness = +5
+description = "<style=\"fluff\"> Мерри летает на золотом шаттле,\nИз проворных пальцев девушки,\nБыстрые качания токарного станка в ткачестве,\nБыстрый пролет гребня серебра,\nИз пальцев неба рожденной девы,\nСплетение паутины дивной красоты.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VIII\n\nЭтот гоблин проворный.\n\n<style=\"characteristics\"><link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"bonus\">+10</style>\n<link=\"fight damage mod def\"><style=\"link\"> Модификатор боевых повреждений</style></link>: <style=\"бонус\">+1</style>\n<link=\"tooltoughnessDef\"><style=\"link\">Tool Toughness</style></link>: <style=\"bonus\">+5</style></style>"
+
+[clumsy]
+display_name = "неуклюжий"
+keyword = "physicaltrait"
+finesseWorkSpeedMod = -0.2
+agility_mod = -10
+shootDamageModifier = -1
+toolToughness = -10
+mishapChance = +20
+description = "<style=\"fluff\"> Вечером третьего дня,\nЗлой Хиси хватает топор,\nЛемпо берет кривую ручку,\nОтворачивается топор в падении,\nПоражает скалы и разбивается на куски;\nИз скал отскакивают фрагменты.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VIII\n\nЭтот гоблин чаще других страдает от несчастных случаев.\n\n<style=\"characteristics\"><link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"malus\">-10</style>\n<link=\"tooltoughnessDef\"><style=\"link\">Tool Toughness</style></link>: <style=\"malus>-10</style></style>"
+
+
+# experience traits
+
+[hardy]
+display_name = "Харди"
+keyword = "experiencetrait"
+constitution_mod = +5
+willpower_mod = +5
+description = "<style=\"fluff\"> Мудрый и древний,\nОтветил так юный менестрель:\n\"Если ты не Джоукаайнен,\nТы дашь мне всю дорогу,\nЯ на много лет старше тебя».\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение III\n\nЭтот гоблин пережил зиму в лагере.\n\n<style=\"characteristics\"><link=\"constitutionDef\"><style=\"link\">Constitution</style></link>: <style=\"bonus\">+5</style>\n<link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+5</style></style>"
+
+[scarred]
+display_name = "Шрам"
+keyword = "experiencetrait"
+willpower_mod = +5
+description = "<style=\"fluff\"> Прямой путь крепче вырос в теле,\nИ раны были соединены,\nБыстро страшная боль ушла.\nСильный и выносливый рос герой.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение IX\n\nЭтот гоблин пережил травму.\n\n<style=\"characteristics\"><link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+5</style></style>"
+
+[veteran]
+display_name = "ветеран"
+keyword = "experiencetrait"
+willpower_mod = +10
+fighting_mod = +10
+description = "<style=\"fluff\"> \"Что мой клинок хороший и надежный,\nДоказано на головах героев,\nПроверено много костей\".\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVII\n\nЭтот гоблин был в бою и дожил до того, чтобы рассказать историю.\n\n<style=\"characteristics\"><link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+10</style>\n<link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"bonus\">+10</style></style>"
+
+# bane traits
+
+[wolfsbane]
+display_name = "Вольфсбен"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+hit_point_bonus = +1
+description = "Этот гоблин убил волка в бою.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"bonus\">+5</style>\n<link=\"hitpoints\"><style=\"link\">Hit points</style></link>: <style=\"bonus\">+1</style></style>"
+
+[cranebane]
+display_name = "Убийца кранов"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+agility_mod = +10
+description = "Этот гоблин убил крана в бою.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"bonus\">+5</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"bonus\">+10</style></style>"
+
+[gravefolkbane]
+display_name = "Убийца зомби"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+willpower_mod = +5
+description = "Этот гоблин отправил в могилу могильника.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"bonus\">+5</style>\n<link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+5</style></style>"
+
+[humanbane]
+display_name = "Убийца людей"
+keyword = ["experiencetrait", "slayer"]
+fighting_mod = +5
+fight_damage_mod = +1
+description = "<style=\"fluff\"> Быстрее, несчастный пастух, Нашут,\nСмертный поток посылает змею,\nКак стрела из арбалета,\nВ сердце Лемминкяйнена,\nЧерез жизненные силы героя.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XIV\n\nЭтот гоблин убил человека в бою.\n\n<style=\"characteristics\"><link=\"fightingSkill\"><style=\"link\">Fighting</style></link>: <style=\"bonus\">+5</style>\n<link=\"fight damage mod def\"><style=\"link\"> Модификатор боевых повреждений</style></link>: <style=\"бонус\">+1</style>"
+
+# personality traits
+
+[timid]
+display_name = "твердый"
+keyword = "personalitytrait"
+willpower_mod = -10
+agility_mod = +5
+description = "<style=\"fluff\"> Если ты отправишься в лес,\nТам собирают осины-фаготы,\nНе шумите и не шумите,\nСобери все свои палки в тишине,\nСоберите тихо березовое дерево.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIII\n\nЭтот гоблин немного глуповат.\n\n<style=\"characteristics\"><link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"malus\">-10</style>\n<link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"bonus\">+5</style></style>"
+
+[hardblooded]
+display_name = "кровожадный"
+keyword = ["personalitytrait", "immuneToFear"]
+willpower_mod = +10
+description = "<style=\"fluff\"> Мой сын может видеть смертников. Он был провидцем с тех пор, как напился в Киттиле и взял на руки труп.\n\n- Enontekiö, 1930. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\nЭтот гоблин видел смерть и не вздрогнул.\n\n<style=\"characteristics\"><link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+10</style></style>"
+
+[softblooded]
+display_name = "мягкокровный"
+keyword = ["personalitytrait"]
+willpower_mod = -5
+description = "Этот гоблин — нежное существо, которое отворачивается от более жестоких частей жизни.\n\n<style=\"characteristics\"><link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"malus\">-5</style></style>"
+
+# special traits
+
+[shamantrait]
+display_name = "Шаман"
+visual_priority = 1_000_000
+description = "<style=\"fluff\"> Великолепно пел мудрый Вяйнямёйнен,\nДо медноносных гор,\nИ кремниевые скалы и уступы\nУслышав его волшебные тона,\nГорные скалы были разорваны на куски,\nВесь океан вздымался и опускался;\nИ отдаленные холмы перекликались.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение III\n\nЭтот гоблин был выбран своей общиной в качестве шамана."
+
+# background traits
+
+[wanderer]
+display_name = "странник"
+hit_point_bonus = +1
+agility_mod = +5
+constitution_mod = +5
+willpower_modMod = +5
+description = "Этот гоблин проделал свой собственный путь в средний мир и присоединился к лагерю после некоторых собственных приключений.\n\n<style=\"characteristics\"><link=\"agilityDef\"><style=\"link\">Agility</style></link>: <style=\"bonus\">+5</style>\n<link=\"constitutionDef\"><style=\"link\">Конституция</style></link>: <style=\"bonus\">+5</style>\n<link=\"willpowerDef\"><style=\"link\">Willpower</style></link>: <style=\"bonus\">+5</style>\n<link=\"hitpoints\"><style=\"link\">Hit Points</style></link>: <style=\"bonus\">+1</style></style>"
+
+# mob keywords
+
+[ethereal]
+display_name = "эфирный"
+description = "Это существо может проходить через сплошные препятствия."
+
+[undead]
+display_name = "Нежить"
+description = "Это существо умерло, но все еще ходит по земле."
+
+[shambler]
+display_name = "игрок"
+
+[repulsive]
+display_name = "отталкивающий"
+description = "На это существо довольно отвратительно смотреть."
+
+[enemy]
+display_name = "Враг"
+
+[intangible]
+display_name = "нематериальный"
+description = "Это существо не твердое, ему нельзя навредить нормальными средствами."
+
+# experience keywords
+
+[lumbering]
+display_name = "громоздкий"
+description = "Опыт лесозаготовок достигается путем вырубки деревьев и рубки пиломатериалов."
+visual_priority = 2
+
+[farmer]
+display_name = "Сельское хозяйство"
+description = "Сельскохозяйственный опыт приобретается путем выращивания сельскохозяйственных культур и выполнения различных работ на сельскохозяйственных участках."
+visual_priority = 1
+
+[fisher]
+display_name = "рыбалка"
+description = "Опыт рыбалки достигается за счет ловли рыбы."
+visual_priority = 2
+
+[digger]
+display_name = "копать"
+description = "Опыт копания зарабатывается путем строительства различных видов земляных работ."
+visual_priority = 1
+
+[woodworking]
+display_name = "деревообработка"
+description = "Опыт деревообработки достигается путем создания деревянных инструментов и компонентов."
+visual_priority = 3
+
+[sawyer]
+display_name = "стрижка"
+description = "Опыт посева достигается за счет эксплуатации пилы."
+visual_priority = 1
+
+[blacksmithing]
+display_name = "Металлообработка"
+description = "Опыт работы с металлом достигается путем превращения металла в слитки, инструменты и оружие."
+visual_priority = 3
+
+[butchery]
+display_name = "Мясник"
+description = "Опыт забоя заработан обработкой трупов животных."
+visual_priority = 3
+
+[heckler]
+display_name = "Хеклинг"
+description = "Опыт Хеклинга зарабатывает, превращая растительные материалы в волокна."
+visual_priority = 3
+
+[spinner]
+display_name = "вращение"
+description = "Опыт вращения достигается путем вращения волокна в нить."
+visual_priority = 3
+
+[weaver]
+display_name = "плетение"
+description = "Опыт ткачества приобретается сплетением нитей в ткань."
+visual_priority = 3
+
+[leathercrafting]
+display_name = "кожное дело"
+description = "Кожаное ремесло — это искусство излечения и загара шкурок животных в кожу."
+visual_priority = 3
+
+[bonecarver]
+display_name = "резьба по кости"
+description = "Резьба по костям - это искусство создания полезных предметов из костей."
+visual_priority = 3
+
+[pottery]
+display_name = "керамика"
+description = "Поттерия - это искусство изготовления инструментов из глины."
+visual_priority = 3
+
+[weaponer]
+display_name = "Изготовление оружия"
+description = "Опыт оружейного производства достигается созданием различных видов оружия."
+visual_priority = 3
+
+[armorer]
+display_name = "броня"
+description = "Опыт бронирования зарабатывает созданием щитов и брони."
+visual_priority = 3
+
+[thresher]
+display_name = "стирание"
+description = "Опыт смолы приобретается путем молотки сельскохозяйственных культур для производства семян."
+visual_priority = 3
+
+[miller]
+display_name = "мельница"
+description = "Мельник перемалывает семена в муку."
+visual_priority = 3
+
+[cooking]
+display_name = "готовить"
+description = "Опыт приготовления пищи приобретается путем приготовления пищи."
+visual_priority = 3
+
+[smoking]
+display_name = "курение"
+description = "Опыт курения зарабатывается с помощью огня для сохранения различных продуктов."
+visual_priority = 3
+
+[hauler]
+display_name = "вывоз"
+description = "Опыт перевозки достигается путем перемещения предметов, особенно тяжелых."
+visual_priority = 1
+
+[healer]
+display_name = "исцеление"
+description = "Опыт исцеления достигается путем склонения к травмированным гоблинам."
+visual_priority = 3
+
+[builder]
+display_name = "Здание"
+description = "Строительный опыт приобретается путем возведения различного рода сооружений."
+visual_priority = 3
+
+[warrior]
+display_name = "Битва"
+description = "Опыт боя получен в <link=\"combat\"><style=\"link\">combat</style></link>."
+visual_priority = 3
+
+[saunawarmer]
+display_name = "потепление сауны"
+description = "Опыт согревания сауны достигается путем овладения искусством нагрева сауны."
+visual_priority = 3
+
+[pioneer]
+display_name = "пионер"
+description = "Первопроходческий опыт достигается за счет очистки кустарников и изучения руин."
+visual_priority = 2

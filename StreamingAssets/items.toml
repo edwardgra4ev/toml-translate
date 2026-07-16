@@ -1,0 +1,3919 @@
+# contents
+#
+# 1.0 Raw materials
+#  1.1 Wood raw materials
+#  1.2 Other plant raw materials
+#  1.3 Animal raw materials
+#  1.4 Other raw materials
+# 2.0 Products
+#  2.1 Wood products
+#  2.2 Textile products
+#  2.3 Other non-food farming products
+#  2.4 Metal products
+#  2.5 Leather products
+#  2.6 Sacrificial products
+#  2.7 Stone products
+# 3.0 Tools
+#  3.1 Stone tools
+#  3.2 Wooden tools
+#  3.3 Clay tools
+#  3.4 Dwarven tools
+#  3.5 Iron tools
+# 4.0 Weapons
+#  4.1 Stone and wooden mêlée weapons
+#  4.2 Wooden missile weapons
+#  4.3 Bone weapons
+#  4.4 Dwarven weapons
+#  4.5 Iron weapons
+# 5.0 Armor
+#  5.1 Wooden armor and shields
+#  5.2 Dwarven armor
+#  5.3 Leather armor
+#  5.4 Cloth armor
+#  5.4 Iron armor
+#  5.5 Iron armor
+# 6.0 Seeds
+# 7.0 Food
+#  7.1 Raw foods
+#  7.2 Intermediate food products
+#  7.3 Processed foods
+# 8.0 Waste
+#  8.1 Organic waste
+#  8.2 Inorganic waste
+# 9.0 Corpses
+# 10.0 Special items
+
+
+# 1.0 Raw materials
+
+# 1.1 Wood raw materials
+
+[branch]
+display_name = "Branch"
+keyword = ["prefersOutside", "wood", "defaultShown", "improvisedWeapon", "hammer"]
+weight = 0.5
+condition = 1
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 6
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = """\
+<style="fluff">Since the mighty oak has fallen,
+Now has lost its hundred branches,
+That the North may see the sunshine,
+See the gentle gleam of moonlight.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+A large, sturdy tree branch, useful for <link="carpentryTech"><style="link">buildings</style></link>, tools and even putting out fires.
+
+<style="characteristics">
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtcrushing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">6</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months\
+"""
+
+[rottenlog]
+display_name = "Rotten Log"
+keyword = ["workedOutside", "wood", "hideInStockManager", "noStore"]
+weight = 2.0
+condition = 2
+fireResist = 2
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 120
+description = """\
+<style="fluff">But my virtues all have left me
+In these mournful days of evil,
+Vanished with my youth and vigor.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+
+A <link="woodlog"><style="link">wooden log</style></link> that's been left outside for quite a while. It can still be used for <link="firewood"><style="link">firewood</style></link>.
+
+Logs are heavy, so goblins will need to <link=\"hauling\"><style=\"link\">haul</style></link> them to where they are needed.
+
+<link="weight_def"><style="link">Weight</style></link>: 2.0 units
+Decays in: <style="malus">120</style> months\
+"""
+
+[willowbranches]
+display_name = "Willow Branches"
+keyword = ["prefersOutside", "wood", "defaultShown", "coarse_bast"]
+weight = 0.5
+condition = 1
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = """<style="fluff">\
+Väinämöinen, old and truthful,
+Swam through all the deep-sea waters,
+Floating like a branch of aspen,
+Like a withered twig of willow.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VII</style>
+
+A bunch of willow branches. Willow branches are a kind of rough bast that can be <link="retting"><style="link">made</style></link> into <link="coarsefiber"><style="link">coarse fiber</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months"""
+
+[woodchips]
+display_name ="Wood Chips"
+keyword = ["wood", "noStore"]
+weight = 0.2
+condition = 2
+fireResist = 1
+fertility = 0.05
+unlockedBy = "fertilizerTech"
+decays = "nothing"
+decayTime = 6
+description = """Some wood chips. They can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.05</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">6</style> months"""
+
+[woodlog]
+display_name = "Wood Log"
+keyword = ["workedOutside", "wood", "defaultShown"]
+weight = 2.0
+condition = 3
+fireResist = 2
+burned = ["ashes", "ashes"]
+decays = "rottenlog"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = """<style="fluff">\
+Now she asks the trees the question,
+And the forest gives this answer:
+"We have care enough already,
+Cannot think about thy matters;
+Cruel fates have we to battle,
+Pitiful our own misfortunes!
+We are felled and chopped in pieces,
+Cut in blocks for hero-fancy,
+We are burned to death as fuel,
+No one cares how much we suffer.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>
+
+A wooden log. Logs can be used as <link="carpentryTech"><style="link">building material</style></link>, or chopped into <link=\"woodplank\"><style=\"link\">planks</style></link>, <link=\"woodbeam\"><style=\"link\">beams</style></link>, or <link=\"firewood\"><style=\"link\">firewood</style></link>.
+
+Logs are heavy, so goblins will need to <link=\"hauling\"><style=\"link\">haul</style></link> them to where they are needed.
+
+<link="weight_def"><style="link">Weight</style></link>: 2.0 units
+Decays in: <style="malus">60</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">120</style> months\
+"""
+
+# 1.2 Other plant raw materials
+
+[flaxstrands]
+display_name = "Flax Strands"
+keyword = ["flax", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 120
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = """Some uprooted <link="flaxdef"><style="link">flax</style></link> plants. Flax strands are a kind of fine bast that can be <link="retting"><style="link">made</style></link> into <link="finefiber"><style="link">fine fiber</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months"""
+
+[hay]
+display_name = "Hay"
+keyword = ["fodder", "loose", "prefersOutside", "garbage", "fertilizer_category"]
+weight = 0.5
+condition = 2
+fireResist = 0
+decayTime = 6
+fertility = 0.05
+stored_decay_multiplier = 0.5
+decays = "plantgarbage"
+description = """<style="fluff">\
+Rake the hay when it is ready,
+Make the reeds and grasses rustle,
+Toss the fragrant heads of clover,
+Make thy hay in Kalevala
+When the silver sun is shining.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIV</style>
+
+Some delicious hay!
+
+Hay can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.05</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: decays in <style="malus">12</style> months"""
+
+[nettleplant]
+display_name = "Nettle Plant"
+keyword = ["nettle", "prefersOutside"]
+equivalent_nutrition = 0.05
+maxCapacity = 120
+weight = 0.3
+condition = 2
+fireResist = 1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = """Some harvested nettle plants.
+
+Nettle plants need to be processed at a <link="nettleprocessing"><style="link">nettle yard</style></link>, to produce <link="nettleseedbag"><style="link">nettle seeds</style></link>, edible <link="nettlebunch"><style="link">nettle leaves</style></link> and <link="nettlestems"><style="link">nettle stems</style></link>, which can be retted into fiber.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">12</style> months"""
+
+[nettlestems]
+display_name = "Nettle Stems"
+keyword = ["fine_bast", "prefersInside"]
+weight = 0.2
+condition = 2
+fireResist = 1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = """\
+Some nettle stems. Nettle stems are a kind of fine bast that can be <link="retting"><style="link">made</style></link> into <link="finefiber"><style="link">fine fiber</style></link>. One bunch of nettle stems makes one unit of fiber.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: decays in <style="malus">12</style> months\
+"""
+
+[roughflaxstrands]
+display_name = "Rough Flax Strands"
+keyword = ["flax", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 10
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = """Some uprooted flax plants.
+
+Rough <link="flaxdef"><style="link">flax</style></link> strands are a kind of rough bast that can be <link="retting"><style="link">made</style></link> into <link="coarsefiber"><style="link">coarse fiber</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months"""
+
+[ryestalk]
+display_name = "Rye Stalk"
+keyword = ["rye", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 120 # Rye stalks aren't edible by themselves and must be threshed. To keep hauling times reasonable keep the maxCapacity here high.
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = """Stalks of rye harvested from the field. Rye stalks can be <link="threshing"><style="link">threshed</style></link> to produce <link="ryeseedbag"><style="link">rye seeds</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months"""
+
+# 1.3 Animal raw materials
+
+[birdmeat]
+display_name = "Bird Meat"
+keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.1
+decays = "rottenmeat"
+decayTime = 3
+stored_decay_multiplier = 0.5
+foodMoraleMod = +10
+description = """\
+<style="fluff">But I am not like the cuckoo,
+Singing, merry on the hill-tops;
+I am like the songless blue-duck,
+As she swims upon the waters.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXII</style>
+
+The edible meat of a game bird.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+10</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">3</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">6</style> months"""
+
+[bones]
+display_name = "Bones"
+keyword = ["bone", "prefersOutside"]
+fireResist = 3
+discovers = "butcheryTech"
+burned = "nothing"
+weight = 0.2
+decays = "nothing"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = """<style="fluff">\
+Rakes up half the head, a fore-arm,
+Finds a hand and half the back-bone,
+Many other smaller portions;
+Shapes her son from all the fragments,
+Shapes anew her Lemminkäinen,
+Flesh to flesh with skill she places,
+Gives the bones their proper stations.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>
+
+Some bones.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">60</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">120</style> months"""
+
+#[game_meat]
+#display_name = "Game Meat"
+#keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+#nutrition = 1
+#condition = 1
+#fireResist = 2
+#weight = 0.5
+#decays = "rottenmeat"
+#decayTime = 4
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +10
+#description = """\
+#<style="fluff">Has a mine of gold been opened,
+#Hast thou found a vein of silver,
+#Precious jewels in thy pathway?
+#Does the forest yield her treasures
+#Give to thee the Honey-eater?
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>
+#
+#The edible meat of a game animal caught by your hunters, game meat is a delicacy.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+10</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+#Spoils in: <style="malus">4</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+[rawfish]
+display_name = "Fresh Fish"
+keyword = ["food", "fish", "fresh", "fat", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+weight = 0.2
+decays = "rottenfish"
+decayTime = 3
+stored_decay_multiplier = 0.5
+foodMoraleMod = +8
+unlockedBy = "fishingTech"
+description = """\
+<style="fluff">When thine evening meal is ready,
+Thou must search for hidden wisdom
+In the brain of perch and salmon,
+In the mouths of ocean whiting.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXII</style>
+
+A fish, freshly caught. One fish is worth one <link="foodpoint"><style="link">food point</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+8</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">3</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">6</style> months"""
+
+#[rawsalmon]
+#display_name = "Salmon"
+#keyword = ["food", "fish", "fresh", "fat", "protein", "prefersInside"]
+#nutrition = 1
+#condition = 1
+#fireResist = 2
+#weight = 0.2
+#decays = "rottenfish"
+#decayTime = 3
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +9
+#sacrificePoints = 5
+#description = """\
+#<style="fluff">Then the hostess of Pohjola
+#Served her guests in great abundance,
+#Richest drinks and rarest viands,
+#First of all she, served the bridegroom
+#On his platters, honeyed biscuit,
+#And the sweetest river salmon.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXI</style>
+#
+#Some salmon, a choice fish for eating.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+9</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Spoils in: <style="malus">3</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">6</style> months
+#<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">5</style>"""
+
+[wolfmeat]
+display_name = "Wolf Meat"
+keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.5
+decays = "rottenmeat"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +7
+description = """\
+<style="fluff">Thus Vipunen spake in answer:
+"Many are the things I've eaten,
+Eaten bear, and elk, and reindeer,
+Eaten ox, and wolf, and wild-boar.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVII</style>
+
+The meat of the wolf; hardly a delicacy, but meat nonetheless.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+7</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+[wolfpelt]
+display_name = "Wolf Pelt"
+keyword = ["pelt", "prefersInside"]
+weight = 0.5
+condition = 10
+fireResist = 1
+unlockedBy = "butcheryTech"
+decays = "nothing"
+decayTime = 12
+description = """\
+<style="fluff">Surely thou wert void of greatness,
+Having neither strength nor beauty,
+When the moose was trampling on thee,
+When the roebuck trod upon thee,
+When the tracks of wolves were in thee,
+And the bear-paws scratched thy body.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+A wolf pelt. Wolf pelts can be <link="hidecuring"><style="link">cured</style></link> into <link="curedhide"><style="link">hide</style></link> for leather production, or kept as a trophy.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">12</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+# 1.4 Other raw materials
+
+[ashes]
+display_name = "Ashes"
+keyword = ["ash", "noStore", "hideInStockManager", "dissolves", "granular"]
+fertility = 0.2
+decayTime = 24
+decays = "nothing"
+weight = 0.5
+description = """\
+<style="fluff">"Faithful mother, dear departed,
+Thou who nursed me in my childhood,
+Art thou dead and turned to ashes,
+Didst thou perish for my follies,
+O'er thy head are willows weeping,
+Junipers above thy body,
+Alders watching o'er thy slumbers?"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIX</style>
+
+A pile of ashes.
+
+When ashes are incorporated into a <link=\"farming\"><style=\"link\">farm plot</style></link>, they increase its <link=\"fertility\"><style=\"link\">fertility</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.2</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units\
+"""
+
+[bogironore]
+display_name = "Bog Iron Ore"
+keyword = ["bogironore", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = """<style="fluff">From the hearth arose the gray-beard,
+Shook his heavy looks and answered:
+"Now I know the source of iron,
+Whence the steel and whence its evils.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+Some dried bog iron ore. <link="wetbogiron"><style="link">Wet bog iron ore</style></link> dries fastest when stored properly and becomes bog iron ore. \
+It can then be roasted in an <link="oreroastingpit0"><style="link">ore-roasting pit</style></link> to prepare it for smelting.
+
+Unlocked by: <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>."""
+
+[dwtrinket]
+display_name = "Dwarven Trinket"
+keyword = ["metal", "dwarven", "trinket", "prefersInside"]
+discovers = "dwarvenTech"
+weight = 0.2
+description = """\
+<style="fluff">And nevertheless they dwell in the earth and in stones.
+
+ - the Prose Edda, trans. Arthur Gilchrist Brodeur, Gylfaginning, XIV</style>
+
+A <link="dwarvenTech"><style="link">dwarven</style></link> trinket from <link="birdhome"><style="link">Bird-home</style></link>, ornamental but useless.
+
+Several dwarven trinkets can be hammered into a <link=\"dwingot\"><style=\"link\">dwarven metal ingot</style></link> at a <link=\"smithyworkshop\"><style=\"link\">smithy</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[rawClay]
+display_name = "Raw Clay"
+keyword = ["clay", "product", "prefersOutside"]
+unlockedBy = "clayTech"
+weight = 0.5
+description = """\
+<style="fluff">But I told Arnin-Yo that I had heard myself the voices of the gods and knew that They were there beyond the twilight and so could never more bow down to the gods that the shepherds made from the red clay which they scooped with their hands out of the hillside.
+
+ - Time and the Gods (1906), Lord Dunsany</style>
+
+Some raw <link="clayTech"><style="link">clay</style></link>. Clay can be made into <link="claypot"><style="link">pots</style></link> at a <link="potteryworkshop"><style="link">potter</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>\
+"""
+
+[roastedbogironore]
+display_name = "Roasted Bog Iron Ore"
+keyword = ["ironore", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = """<style="fluff">Then again speaks Ilmarinen,
+Thus the smith addresses Iron:
+'Be not frightened, useful metal,
+Surely Fire will not consume thee,
+Will not burn his youngest brother,
+Will not harm his nearest kindred.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+Some roasted bog iron ore, ready for smelting.
+
+Produced at: <link="oreroastingpit0"><style="link">Ore-roasting Pit</style></link>
+Components: <link="bogironore"><style="link">Bog Iron Ore</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+Unlocked by: <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+#[stoneblock]
+#display_name = "Stone Block"
+#keyword = ["stone", "noStore"]
+#unlockedBy = "stoneTech"
+#weight = 3.0
+#condition = 10
+#description = """A large slab of stone.
+#
+#<link="weight_def"><style="link">Weight</style></link>: 3.0 units"""
+#
+[wetbogiron]
+display_name = "Wet Bog Iron Ore"
+keyword = ["wetbogiron", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+decays = "bogironore"
+decayTime = 6
+stored_decay_multiplier = 2.0
+weight = 0.5
+description = """<style="fluff">In the swamps ran blackened waters,
+From the heath the bears came ambling,
+And the wolves ran through the marshes.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+Some wet bog iron ore, fresh from the swamp. When stored in a <link="stockpile"><style="link">stockpile</style></link>, it will dry into <link="bogironore"><style="link">bog iron ore</style></link> in three months.
+
+Unlocked by: <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Dries in: <style="bonus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: dries in <style="bonus">3</style> months"""
+
+# 2.0 Products
+
+# 2.1 Wood products
+
+[charcoal]
+display_name = "Charcoal"
+keyword = ["prefersInside", "product", "coalfuel", "wood"]
+unlockedBy = "charcoalTech"
+weight = 0.5
+condition = 5
+fireResist = 2
+burned = "ashes"
+description = """\
+<style="fluff">When his stallion he had halted
+On the Osmo-field and meadow,
+Quickly rising in his snow-sledge,
+The magician heard one knocking,
+Breaking coal within the smithy,
+Beating with a heavy hammer.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem X</style>
+
+Some charcoal, a potent fuel that burns very hot.
+
+Produced at: <link="charcoal_clamp"><style="link">Charcoal Clamp</style></link>
+Components: 4x <link="firewood"><style="link">Firewood</style></link>
+
+Unlocked by: <link="charcoalTech"><style="link">Technology: Charcoal</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[firewood]
+display_name = "Firewood"
+keyword = ["prefersOutside", "wood", "defaultShown"]
+weight = 0.5
+condition = 2
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = """\
+<style="fluff">Come, ye maidens that should serve me,
+Come, ye fellows from the village,
+Bring me fire upon the birch-bark,
+Light the fagots of the fir-tree.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXI</style>
+
+Wood for burning, vital for <link="heating"><style="link">heating</style></link> in the cold winter. Firewood is also created as a byproduct of some wood-producing jobs.
+
+Goblins will automatically produce firewood to heat buildings.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">24</style> months"""
+
+#[tarbarrel]
+#display_name = "Tar Barrel"
+#keyword = ["barrel", "product", "tar", "prefersOutside"]
+#unlockedBy = "tarTech"
+#weight = 1.0
+#condition = 10
+#fireResist = 2
+#toughness = 99
+#decays = "plantgarbagex2"
+#decayTime = 24
+#burned = "ashes"
+#description = """A barrel of tar.
+#
+#Unlocked by: <link="tarTech"><style="link">Technology: Tar</style></link>
+#Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[woodbeam]
+display_name = "Wooden Beam"
+keyword = ["prefersOutside", "wood", "product"]
+unlockedBy = "beamTech"
+weight = 2.0
+condition = 3
+fireResist = 2
+burned = ["ashes", "ashes"]
+decays = "rottenlog"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = """\
+<style="fluff">But the lumber failed the master,
+Beams were wanting for his vessel.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+A wooden beam, excellent for <link="carpentryTech"><style="link">building</style></link>. They are prepared by chopping up <link="woodlog"><style="link">logs</style></link>. Beams are heavy, so goblins will need to <link=\"hauling\"><style=\"link\">haul</style></link> them to where they are needed.
+
+<link="weight_def"><style="link">Weight</style></link>: 2.0 units
+Decays in: <style="malus">60</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">120</style> months\
+"""
+
+[woodblock]
+display_name = "Wooden Block"
+keyword = ["prefersOutside", "wood", "product"]
+weight = 1.0
+condition = 3
+fireResist = 2
+burned = ["ashes"]
+decays = "plantgarbage"
+decayTime = 120
+stored_decay_multiplier = 0.5
+description = """A wooden block. They are prepared by chopping up <link="woodlog"><style="link">logs</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units.
+Decays in: <style="malus">120</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">240</style> months"""
+
+[woodplank]
+display_name = "Wooden Plank"
+keyword = ["prefersOutside", "wood", "improvisedWeapon", "product", "hammer"]
+unlockedBy = "plankTech"
+weight = 1.0
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -20
+damagePoints = 8
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 24
+stored_decay_multiplier = 0.2
+description = """\
+<style="fluff">But the hero needed timber,
+Boards, and planks, and beams, and braces,
+Found the smallest bit of lumber,
+Found of boards but seven fragments.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIX</style>
+
+A wooden plank. Planks are used as <link="carpentryTech"><style="link">building material</style></link>, to make various items, and can even serve as weapons in an emergency. \
+They are prepared by chopping up <link="woodlog"><style="link">logs</style></link>.
+
+<style="characteristics">
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtcrushing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-20</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units
+Decays in: <style="malus">24</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">120</style> months\
+"""
+
+[woodpole]
+display_name = "Wooden Pole"
+keyword = ["prefersOutside", "wood", "improvisedWeapon", "product", "hammer"]
+unlockedBy = "carpentryTech"
+weight = 0.5
+condition = 1
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 6
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 24
+stored_decay_multiplier = 0.2
+description = """\
+<style="fluff">From the tree he cuts a birch-wand,
+From the juniper a whip-stick,
+Drives the herd across the lowlands,
+Through the quicksands of the marshes.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXIII</style>
+
+A wooden pole for <link="planktier"><style="link">buildings</style></link> and tools.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<style="characteristics">
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtcrushing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">6</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">24</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">120</style> months\
+"""
+
+[woodslats]
+display_name = "Wooden Slats"
+keyword = ["prefersInside", "wood", "product"]
+weight = 0.2
+condition = 2
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = """Some wooden slats.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="woodplank"><style="link">Plank</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: decays in <style="malus">24</style> months
+"""
+
+# 2.2 Textile products
+
+[coarsefiber]
+display_name = "Coarse Fiber"
+keyword = ["rawfiber", "prefersInside", "product"]
+unlockedBy = "spinningTech"
+condition = 2
+fireResist = 1
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = """<style="fluff">At last they found a solitary cottage, where a maiden sat on the grass plot before the door spinning.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVI: The Voyage of the Kalevide</style>
+
+Some coarse fiber.
+
+Coarse fiber is <link="retting"><style="link">made</style></link> from <link="willowbranches"><style="link">willow branches</style></link> or <link="roughflaxstrands"><style="link">rough flax strands</style></link>, \
+and can be <link="spinning"><style="link">spun</style></link> into <link="coarsethread"><style="link">coarse thread</style></link>.
+
+Produced at: <link="retting"><style="link">Retting Workshop</style></link>
+Components: Coarse bast
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: decays in <style="malus">24</style> months
+"""
+
+[finefiber]
+display_name = "Fine Fiber"
+keyword = ["rawfiber", "prefersInside", "product"]
+unlockedBy = "spinningTech"
+condition = 1
+fireResist = 1
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = """\
+<style="fluff">Robe thyself in pure, white linen
+Spun from flax of finest fiber;
+Wear withal the richest short-frock,
+Fasten it with golden girdle.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>
+
+Some fine fiber.
+
+Fine fiber is <link="retting"><style="link">made</style></link> from <link="flaxstrands"><style="link">flax strands</style></link> and <link="nettleplant"><style="link">nettle plant stems</style></link>, \
+and can be <link="spinning"><style="link">spun</style></link> into <link="finethread"><style="link">fine thread</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: decays in <style="malus">24</style> months"""
+
+[coarsethread]
+display_name = "Coarse Thread"
+keyword = ["thread", "product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 2
+fireResist = 0
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+description = """<style="fluff">Then Linda took her brooch, and spun it round on a thread, while she sent forth the Alder-Beetle to bid the Wind-Magician and Soothsayer hasten to the bedside of her husband.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto II: The Death of Kalev</style>
+
+Some coarse thread.
+
+Coarse thread is <link="spinning"><style="link">spun</style></link> from <link="coarsefiber"><style="link">coarse fiber</style></link>, and \
+can be <link="weaving"><style="link">woven</style></link> into <link="coarsecloth"><style="link">coarse cloth</style></link> or <link="ropemaking"><style="link">made</style></link> into <link="rope"><style="link">rope</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[finethread]
+display_name = "Fine thread"
+keyword = ["thread", "product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 1
+fireResist = 0
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+description = """\
+<style="fluff">Virgin of the sacred whirlpool,
+Thou whose home is in the river,
+Spin from flax of strongest fiber,
+Spin a thread of crimson color.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XL</style>
+
+Some fine thread.
+
+Fine thread is <link="spinning"><style="link">spun</style></link> from <link="finefiber"><style="link">fine fiber</style></link>, and \
+can be <link="weaving"><style="link">woven</style></link> into <link="finecloth"><style="link">fine cloth</style></link> or <link="ropemaking"><style="link">made</style></link> into <link="rope"><style="link">rope</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[coarsecloth]
+display_name = "Coarse Cloth"
+keyword = ["cloth", "prefersInside", "product"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 1
+weight = 1.0
+decays = "nothing"
+decayTime = 6
+description = """\
+<style="fluff">Then, with a self-reproachful heart, I went around the small fire-hole, and caught up my cloak and other matters.
+
+ - William Hope Hodgson, The Night Land</style>
+
+A bale of coarse cloth.
+
+Produced at: <link="weaving"><style="link">Weaver</style></link>
+Components: 6x <link="coarsethread"><style="link">Coarse Thread</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[finecloth]
+display_name = "Fine Cloth"
+keyword = ["cloth", "prefersInside", "product"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 1
+weight = 1.0
+decays = "nothing"
+decayTime = 6
+description = """<style="fluff">\
+“Bring me now my silken raiment,
+Bring my best and richest vesture,
+Bring me now my softest linen,
+That my wooing prove successful.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>
+
+A bale of fine cloth.
+
+Produced at: <link="weaving"><style="link">Weaver</style></link>
+Components: 6x <link="finethread"><style="link">Fine Thread</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[rope]
+display_name = "Rope"
+keyword = ["product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 10
+fireResist = 2
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 12
+description = """Some sturdy rope.
+
+Rope is <link="ropemaking"><style="link">made</style></link> from <link="coarsethread><style="link">coarse</style></link> or <link="finethread"><style="link">fine</style></link> thread.
+
+Produced at: <link="ropemaking"><style="link">Rope-maker</style></link>
+Components: 5x Coarse or Fine Thread
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">12</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+# 2.3 Other non-food farming products
+
+[compost]
+display_name = "Compost"
+keyword = ["product", "prefersOutside", "fertilizer", "mucking", "fertilizer_category"]
+unlockedBy = "fertilizerTech"
+condition = 5
+fertility = 0.2
+decayTime = 48
+stored_decay_multiplier = 0.5
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = """Some <link="compostingdef"><style="link">composted</style></link> garbage, very useful for <link="fertility"><style="link">fertilizing</style></link> <link="farming"><style="link">fields</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">48</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>: decays in <style="malus">96</style> months"""
+
+[seed_meal]
+display_name = "Seed Meal"
+keyword = ["fertilizer", "dissolves", "granular", "prefersInside", "mucking", "fertilizer_category"]
+unlockedBy = "bakingTech"
+condition = 2
+fertility = 0.1
+decayTime = 48
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = """Ground seeds ready for <link="compostingdef"><style="link">composting</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.1</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 2.4 Metal products
+
+[dwingot]
+display_name = "Dwarven Metal ingot"
+keyword = ["dwarven", "ingot", "prefersInside", "product"]
+unlockedBy = "dwarvenTech"
+weight = 0.5
+description = """<style="fluff">\
+Then Allfather sent him who is called Skírnir, Freyr's messenger, down into the region of the Black Elves, to certain dwarves, and caused to be made the fetter named Gleipnir. It was made of six things: the noise a cat makes in foot-fall, the beard of a woman, the roots of a rock, the sinews of a bear, the breath of a fish, and the spittle of a bird.
+
+ - the Prose Edda, trans. Arthur Gilchrist Brodeur, Gylfaginning, XXXIV</style>
+
+An ingot of <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: 3x <link="dwtrinket"><style="link">Dwarven Trinket</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[spongeiron]
+display_name = "Sponge Iron"
+keyword = ["metal", "product", "prefersInside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = """<style="fluff">And the iron flows in streamlets
+From the forge of the magician,
+Soon becomes like baker's leaven,
+Soft as dough for bread of barley.
+Then out-screamed the metal, Iron:
+'Wondrous blacksmith, Ilmarinen,
+Take, O take me from thy furnace,
+From this fire and cruel torture.'
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+Some smelted iron that still needs to be worked at a smithy before it's usable.
+
+Produced at: <link="bloomer"><style="link">Bloomery</style></link>
+Components: <link="roastedbogironore"><style="link">Roasted Bog Iron Ore</style></link>, <link="charcoal"><style="link">Charcoal</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[wroughtiron]
+display_name = "Wrought Iron"
+keyword = ["metal", "ingot", "iron", "prefersInside", "product"]
+unlockedBy = "forgingTech"
+weight = 0.5
+description = """<style="fluff">Ilmarinen thus made answer:
+'I will take thee from my furnace,
+'Thou art but a little frightened,
+Thou shalt be a mighty power,
+Thou shalt slay the best of heroes,
+Thou shalt wound thy dearest brother.'
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+
+An ingot of wrought iron: raw material for useful iron objects.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="spongeiron"><style="link">Sponge Iron</style></link>, <link="charcoal"><style="link">Charcoal</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+#  2.5 Leather products
+
+[curedhide]
+display_name = "Cured Hide"
+keyword = ["hide", "leather", "product", "prefersInside"]
+unlockedBy = "leatherTech"
+decayTime = 24
+weight = 0.5
+description = """But to-day they were only cooking for poor people; only half an elk, the ribs of an old boar, the lungs and liver of a bear, the suet of a young wolf, the hide of an old bear, and an egg from an eagle's nest.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIII: The Kalevide’s First Journey to Hades</style>
+
+The cured hide of an animal, ready for <link="tanning"><style="link">tanning</style></link> into <link="rawleather"><style="link">leather</style></link>.
+
+Produced at: <link="hidecuring"><style="link">Curing Workshop</style></link>
+Components: <link="wolfpelt"><style="link">Wolf Pelt</style></link>
+
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units"""
+
+[rawleather]
+display_name = "Raw Leather"
+keyword = ["leather", "product", "prefersInside"]
+unlockedBy = "leatherTech"
+weight = 0.5
+decayTime = 6
+description = """When the Kalevide awoke, he followed the traces of his horse till he found the remains; and he secured the skin as a relic, cursing the wolves, and then drew his sword, and rushed into the wood in pursuit of them, breaking down the trees and bushes in his way, and destroying all the wild beasts he met with, while those who could fled to distant swamps and thickets.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto IX: Rumours of War</style>
+
+Some raw leather.
+
+Produced at: <link="tanning"><style="link">Tanning Workshop</style></link>
+Components: <link="curedhide"><style="link">Cured Hide</style></link>
+
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units"""
+
+# 2.6 Sacrificial products
+
+[boneidol]
+display_name = "Bone Idol"
+keyword = ["bone", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "butcheryTech"
+condition = 2
+weight = 0.2
+sacrificePoints = 3
+fireResist = 1
+description = """A bone idol to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="butcher"><style="link">Butcher</style></link>
+Components: <link="bones"><style="link">Bones</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+<link="culturedef"><style="link">Culture points</style></link> when sacrificed: <style="bonus">3</style>"""
+
+[ceremonialbirdmeat]
+display_name = "Ceremonial Bird Meat"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.1
+decays = "rottenmeat"
+decayTime = 6
+stored_decay_multiplier = 0.5
+sacrificePoints = 5
+description = """Some ceremonially anointed <link="birdmeat"><style="link">bird meat</style></link> to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="butcher"><style="link">Butcher</style></link>
+Components: <link="birdmeat"><style="link">Bird meat</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months
+<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">5</style>"""
+
+[ceremonialfish]
+display_name = "Ceremonial Fish"
+keyword = ["sacrifice", "product", "prefersInside", "water_keeper_sacrifice"]
+unlockedBy = "fishingTech"
+condition = 1
+fireResist = 2
+weight = 0.2
+sacrificePoints = 3
+decays = "rottenfish"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = """A ceremonially anointed <link="rawfish"><style="link">fish</style></link> to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="fishingworkshop"><style="link">Fishing Workshop</style></link>
+Components: <link="rawfish"><style="link">Fresh fish</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months
+<link="culturedef"><style="link">Culture points</style></link> when sacrificed: <style="bonus">3</style>"""
+
+[ceremonialshield]
+display_name = "Ceremonial Wooden Shield"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = ["armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+sacrificePoints = 5
+description = """A ceremonial shield to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: <link="woodplank"><style="link">Wooden Plank</style></link>, <link="woodslats"><style="link">Wooden Slats</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">5</style>\
+"""
+
+[ceremonialspear]
+display_name = "Ceremonial Wooden Spear"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 90
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+sacrificePoints = 3
+description = """A ceremonial spear to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">3</style>\
+"""
+
+[ceremonialwolfmeat]
+display_name = "Ceremonial Wolf Meat"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.5
+decays = "rottenmeat"
+decayTime = 6
+stored_decay_multiplier = 0.5
+sacrificePoints = 10
+description = """Some ceremonially anointed <link="wolfmeat"><style="link">wolf meat</style></link> to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="butcher"><style="link">Butcher</style></link>
+Components: <link="wolfmeat"><style="link">Wolf meat</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months
+<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">10</style>"""
+
+[claystatuette]
+display_name = "Clay Statuette"
+keyword = ["clay", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "clayTech"
+condition = 2
+weight = 0.2
+sacrificePoints = 2
+fireResist = 2
+description = """A clay statuette to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="potter"><style="link">Potter</style></link>
+Components: <link="rawClay"><style="link">Raw Clay</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+<link="culturedef"><style="link">Culture points</style></link> when sacrificed: <style="bonus">2</style>"""
+
+[woodenstatuette]
+display_name = "Wooden Statuette"
+keyword = ["wood", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "carpentryTech"
+condition = 2
+weight = 0.2
+fireResist = 1
+sacrificePoints = 1
+description = """A wooden statuette to <link="sacrifice_def"><style="link">sacrifice</style></link> at Midsummer.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+<link="culturedef"><style="link">Culture points</style></link> when sacrificed: <style="bonus">1</style>"""
+
+#  2.7 Stone products
+
+[roughstone]
+display_name = "Rough Stone"
+keyword = ["stone", "prefersOutside"]
+unlockedBy = "stoneTech"
+discovers = "simpleStoneTech"
+weight = 1.0
+description = """Some rough stone.
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units
+
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[dressedstone]
+display_name = "Dressed Stone"
+keyword = ["stone", "prefersOutside"]
+unlockedBy = "stoneTech"
+discovers = "simpleStoneTech"
+weight = 1.0
+description = """\
+<style="fluff">One day she was carrying a great stone to the cairn, but found herself too weak, and let it fall. She sat down on it, and lamented her sad fate, and her tears formed the lake called "Ülemiste järv", the Upper Lake, beside which the huge stone block may still be seen.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, canto II</style>
+
+Some dressed stone.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+# 2.8 Fertilizer
+
+[bonemeal]
+display_name = "Bone Meal"
+keyword = ["fertilizer", "dissolves", "granular", "prefersInside", "mucking", "fertilizer_category"]
+unlockedBy = "fertilizerTech"
+condition = 2
+fertility = 0.2
+decayTime = 48
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = """Some bones, ground into a fine powder. A useful fertilizer!
+
+Produced at: <link="butcher"><style="link">Butcher</style></link>
+Components: <link="bones"><style="link">Bones</style></link>
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.2</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 3.0 Tools
+
+# 3.1 Stone tools
+
+[stoneaxe]
+display_name = "Stone Axe"
+keyword = ["chopping", "stone", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+condition = 2
+fireResist = 1
+efficiency = 1.0
+weight = 0.2
+toughness = 85
+weapon_size = "large"
+weaponMaterial = "stone"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """\
+<style="fluff">Väinämöinen, wise and ancient,
+Made himself an axe for chopping,
+Then began to clear the forest,
+Then began the trees to level,
+Felled the trees of all descriptions.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+A simple <link="woodmaterial"><style="link">wooden</style></link> <link="chopping"><style="link">axe</style></link> with a stone head. Axes are a vital <link="basictoolsdef"><style="link">basic tool</style></link> required to fell trees, and to cut <link="woodlog"><style="link">logs</style></link> into <link="woodbeam"><style="link">beams</style></link> or <link="woodplank"><style="link">planks</style></link>.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+#[stone_sickle]
+#display_name = "Stone Sickle"
+#keyword = ["stone", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "sickle", "hammer"]
+#condition = 2
+#fireResist = 1
+#efficiency = 2.0
+#weight = 0.2
+#toughness = 85
+#weapon_size = "large"
+#weaponMaterial = "stone"
+#skillModifier = -10
+#damagePoints = 8
+#damageType = "slashing"
+#decays = "plantgarbage"
+#decayTime = 24
+#burned = "ashes"
+#description = """A simple stone tool for harvesting grain.
+#
+#Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>
+#
+#<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.0</style>
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+#<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+#<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+#<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+# 3.2 Wooden tools
+
+[diggingstick]
+display_name = "Digging Stick"
+keyword = ["digging", "hoeing", "bartool", "prefersInside", "wood", "dangerous_object", "improvisedWeapon", "tool", "spear"]
+condition = 2
+fireResist = 1
+efficiency = 1.5
+weight = 0.2
+toughness = 85
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """\
+<style="fluff">Now thy mother is exacting,
+Will not give to me her daughter,
+Till by means of magic only,
+I have plowed the field of serpents,
+Plowed the hissing soil of Hiisi.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XIX</style>
+
+A simple <link="basictoolsdef"><style="link">basic tool</style></link> for <link="woodmaterial"><style="link">wooden</style></link> <link="digging"><style="link">digging</style></link>, the digging stick also functions as a <link="bartool"><style="link">bar tool</style></link>. \
+It can be used to turn and hoe <link="farming"><style="link">fields</style></link>, and dig, in <link="sandsoil"><style="link">sandy soil</style></link>. <link="claysoil"><style="link">Clay soils</style></link> are too heavy to be dug with digging sticks.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+#[fishingrod]
+#display_name = "Fishing Rod"
+#keyword = ["fishing", "prefersInside", "wood", "tool"]
+#unlockedBy = ["fishingTech", "spinningTech"]
+#condition = 2
+#fireResist = 1
+#weight = 0.5
+#toughness = 95
+#decayTime = 12
+#decays = "plantgarbage"
+#description = """\
+#<style="fluff">Ere the minstrel starts to angle;
+#Far away he throws his fish-hook,
+#Trolls it quickly through the waters,
+#Turning on a copper swivel
+#Dangling from a silver fish-line,
+#Golden is the hook he uses.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+#
+#A fishing rod, for catching fish.
+#
+#Decays in: <style="malus">12</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[fishingspear]
+display_name = "Fishing Spear"
+keyword = ["fishing", "prefersInside", "wood", "improvisedWeapon", "dangerous_object", "spearfishingtool", "tool", "spear"]
+unlockedBy = "fishingTech"
+condition = 2
+fireResist = 1
+weight = 0.3
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """<style="fluff">\
+Do not think that I came hither
+To be fished for as a salmon,
+Only to be chopped in pieces,
+Dressed and eaten like a whiting.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> fishing spear for catching fish in shallow waters.
+
+Produced at: <link="fishingworkshop"><style="link">Fishing Workshop</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[bonefishingspear]
+display_name = "Bone Fishing Spear"
+keyword = ["fishing", "bone", "prefersInside", "wood", "improvisedWeapon", "dangerous_object", "spearfishingtool", "tool", "spear"]
+unlockedBy = "butcheryTech"
+condition = 2
+fireResist = 1
+weight = 0.3
+toughness = 95
+jobFailureChance = -0.1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 9
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """<style="fluff">\
+From the vessel Väinämöinen
+Gives this answer to the maiden:
+"I have come to catch some sea-trout,
+Catch the young and toothsome whiting,
+Hiding in these reeds and rushes.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> fishing spear with a bone point, slightly more efficient than a wooden one.
+
+Produced at: <link="fishingworkshop"><style="link">Fishing Workshop</style></link>
+Components: <link="branch"><style="link">Branch</style></link>, <link="bones"><style="link">Bones</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">9</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[fishingtrap]
+display_name = "Fish Trap"
+keyword = ["fishing", "prefersInside", "wood", "product"]
+unlockedBy = "fishingTech"
+condition = 3
+fireResist = 1
+weight = 1.0
+decayTime = 12
+description = """\
+<style="fluff">Thou hast ruined all my fish-nets,
+Torn my scare-net into tatters,
+Beaten into pulp the whiting,
+Torn my net-props into fragments,
+Beaten into bits my wedges.
+Leave the fishing to another.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXV</style>
+
+A fish trap that can be set up in the river.
+
+Produced at: <link="fishingworkshop"><style="link">Fishing Workshop</style></link>
+Components: 2x <link="branch"><style="link">Branch</style></link>, 2x <link="willowbranches"><style="link">Willow Branches</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 1.0 units
+Decays in: <style="malus">12</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[pitchfork]
+display_name = "Pitchfork"
+keyword = ["prefersInside", "wood", "midden_tool", "improvisedWeapon", "dangerous_object", "tool", "spear"]
+unlockedBy = "carpentryTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """A pitchfork, needed for working <link="midden"><style="link">middens</style></link>.
+
+<style="characteristics">\
+Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+#[willownet]
+#display_name = "Willow Net"
+#keyword = ["fishing", "prefersInside", "willow", "wood", "product"]
+#unlockedBy = "fishingTech"
+#condition = 2
+#fireResist = 0
+#weight = 1.0
+#description = """\
+#<style="fluff">Väinämöinen, not discouraged,
+#Thought afresh and well reflected,
+#How to live, and work, and win her;
+#Drew with care his silken fish-net,
+#To and fro through foam and billow,
+#Through the bays and winding channels,
+#Drew it through the placid waters,
+#Drew it through the salmon-dwellings.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+#
+#A willow fishing net."""
+
+[wood_barrel]
+display_name = "Wooden Barrel"
+keyword = ["wood", "bucket", "tool", "prefersInside"]
+unlockedBy = "barrelTech"
+condition = 10
+fireResist = 2
+weight = 0.5
+toughness = 99
+decays = "plantgarbagex2"
+decayTime = 24
+burned = "ashes"
+description = """A wooden barrel.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: 4x <link="woodslats"><style="link">Wooden Slats</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[woodbucket]
+display_name = "Wooden Bucket"
+keyword = ["wood", "bucket", "tool", "prefersInside"]
+unlockedBy = "plankTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """\
+<style="fluff">Who will lead us to the sea-beach,
+Who conduct us to the rivers?
+Now the buckets will be idle,
+On the hooks will rest the fish-poles.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIV</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> bucket, useful for carrying water and other liquids.
+
+Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+Components: <link="woodplank"><style="link">Wooden Plank</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 3.3 Clay tools
+
+[claypot]
+display_name = "Earthenware Pot"
+keyword = ["clay", "pot", "bucket", "nonflammable", "tool", "prefersInside"]
+condition = 1
+fireResist = 2
+weight = 0.5
+toughness = 99
+decays = "nothing"
+decayTime = 36
+description = """\
+<style="fluff">Then said a Second--"Ne'er a peevish Boy
+Would break the Bowl from which he drank in joy;
+And He that with his hand the Vessel made
+Will surely not in after Wrath destroy."
+
+ - The Rubaiyat of Omar Khayyam, trans. Edward FitzGerald, LXXXV</style>
+
+A simple <link="clayTech"><style="link">earthenware</style></link> pot, useful for <link="foodpoint"><style="link">cooking</style></link>, carrying <link=\"water\"><style=\"link\">water</style></link> and storing things. \
+The earthenware pot is an important <link="basictoolsdef"><style="link">basic tool</style></link> for fire-fighting.
+
+Produced at: <link="potter"><style="link">Potter</style></link>
+Components: <link="rawClay"><style="link">Raw Clay</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">36</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 3.4 Dwarven tools
+
+[dwaxe]
+display_name = "Dwarven Axe"
+keyword = ["chopping", "dwarven", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+efficiency = 1.5
+weight = 0.2
+toughness = 99
+breaks = ["dwingot"]
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = """\
+<style=fluff>"O thou keen and cruel hatchet,
+O thou axe of sharpened metal,
+Thou shouldst cut the trees to fragments,
+Cut the pine-tree and the willow,
+Cut the alder and the birch-tree,
+Cut the juniper and aspen,
+Shouldst not cut my knee to pieces,
+Shouldst not tear my veins asunder."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>
+
+A <link="chopping"><style="link">chopping tool</style></link> with a head of <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwbillhook]
+display_name = "Dwarven Billhook"
+keyword = ["clearing", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "blade"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+efficiency = 2.0
+weight = 0.2
+toughness = 99
+breaks = ["dwingot"]
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = """<style="fluff">\
+In his hand a golden cleaver,
+And the blade was copper-handled.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XX</style>
+
+A <link="dwarvenTech"><style="link">dwarven metal</style></link> tool for <link="clearing"><style="link">clearing</style></link> undergrowth.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">2.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwdiggingbar]
+display_name = "Dwarven Digging Bar"
+keyword = ["bartool", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 5
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "crushing"
+efficiency = 2.0
+weight = 0.5
+toughness = 99
+breaks = "dwingotx2"
+description = """<style="fluff">\
+Now he thrusts his staff of iron
+Through the mouth of wise Vipunen,
+Pries his mighty jaws asunder.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVII</style>
+
+A heavy bar of <link="dwarvenTech"><style="link">dwarven metal</style></link>, useful for dislodging tree stumps and large rocks.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: 2x <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">2.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.\
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+"""
+
+[dwhoe]
+display_name = "Dwarven Hoe"
+keyword = ["hoeing", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = """\
+A <link="hoeing"><style="link">hoe</style></link> with a head made of <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwpick]
+display_name = "Dwarven Pick"
+keyword = ["mining", "prefersInside", "dwarven", "wood", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weight = 0.5
+toughness = 99
+breaks = "dwingot"
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "slashing"
+decayTime = 24
+decays = "dwingot"
+burned = "dwingot"
+description = """\
+<style="fluff">When the Kalevide reached the rocky portal, a voice was heard from heaven, "Strike the rock with thy fist!" He did so, and clove open the rock, and his right hand was caught in the cleft.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon</style>
+
+A <link="mining"><style="link">pick</style></link> with a point made out of <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwshovel]
+display_name = "Dwarven Shovel"
+keyword = ["digging", "hoeing", "prefersInside", "dwarven", "wood", "improvisedWeapon", "dangerous_object", "shovel", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+efficiency = 2.0
+weight = 0.3
+toughness = 95
+breaks = "dwingot"
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "crushing"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = """\
+A <link="dwarvenTech"><style="link">dwarven</style></link> <link="digging"><style="link">digging tool</style></link>.
+
+Produced at: <link="smithy"><style="link">Smithy</style></link>
+Components: <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">2.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+#  3.5 Iron tools
+
+[ironaxe]
+display_name = "Iron Axe"
+keyword = ["chopping", "iron", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+efficiency = 1.75
+weight = 0.2
+toughness = 99
+breaks = ["scrapiron"]
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "slashing"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = """\
+<style="fluff">Now the ancient Pellerwoinen
+Takes the hatchet from his shoulder,
+Takes his axe with copper handle,
+Chops the body of the oak-tree;
+Well he knows the art of chopping.
+Soon he fells the tree majestic,
+Fells the mighty forest-monarch,
+With his magic axe and power.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+A <link="chopping"><style="link">chopping tool</style></link> with an <link="irondef"><style="link">iron</style></link> head.
+
+Unlocked by: <link="forgingTech"><style="link">Technology: Forging</style></link>.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="wroughtiron"><style="link">Wrought Iron</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">14</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[ironbillhook]
+display_name = "Iron Billhook"
+keyword = ["clearing", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "blade"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = ["scrapiron"]
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = """An <link="irondef"><style="link">iron</style></link> tool for <link="clearing"><style="link">clearing</style></link> undergrowth.
+
+Unlocked by: <link="forgingTech"><style="link">Technology: Forging</style></link>.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="wroughtiron"><style="link">Wrought Iron</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">2.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[iron_digging_bar]
+display_name = "Iron Digging Bar"
+keyword = ["bartool", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 10
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "crushing"
+efficiency = 3.0
+weight = 0.5
+toughness = 99
+breaks = "wroughtironx2"
+description = """A heavy <link="irondef"><style="link">iron</style></link> bar, for clearing tree stumps.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: 2x <link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">3.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.\
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+"""
+
+[iron_hoe]
+display_name = "Iron Hoe"
+keyword = ["hoeing", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = """\
+A <link="hoeing"><style="link">hoe</style></link> with a head made of <link="irondef"><style="link">iron</style></link>.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="wroughtiron"><style="link">Wrought Iron</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[iron_pick]
+display_name = "Iron Pick"
+keyword = ["mining", "prefersInside", "iron", "wood", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+decayTime = 24
+decays = "scrapiron"
+burned = "scrapiron"
+description = """\
+A <link="mining"><style="link">pick</style></link> with a point made out of <link="irondef"><style="link">iron</style></link>.
+
+Unlocked by: <link="forgingTech"><style="link">Technology: Forging</style></link>.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="wroughtiron"><style="link">Wrought Iron</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.5</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[ironshovel]
+display_name = "Iron Shovel"
+keyword = ["digging", "hoeing", "prefersInside", "iron", "wood", "improvisedWeapon", "dangerous_object", "shovel", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+efficiency = 2.5
+weight = 0.3
+toughness = 95
+breaks = "scrapiron"
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "crushing"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = """\
+An <link="irondef"><style="link">iron</style></link> <link="digging"><style="link">digging tool</style></link>.
+
+Unlocked by: <link="forgingTech"><style="link">Technology: Forging</style></link>.
+
+Produced at: <link="blacksmiths"><style="link">Blacksmith</style></link>
+Components: <link="wroughtiron"><style="link">Wrought Iron</style></link>, <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">2.0</style>
+Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 4.0 Weapons
+
+# 4.1 Stone and wooden mêlée weapons
+
+[stonemace]
+display_name = "Stone Mace"
+keyword = ["weapon", "stone", "wood", "prefersInside", "armament", "hammer"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 95
+weapon_size = "small"
+weaponMaterial = "stone"
+damageType = "crushing"
+damagePoints = 9
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """<style="fluff">\
+And these words the gray-beard uttered:
+"Wait, O wait, thou ox of Suomi,
+Till I bring my ancient war-club;
+Then I'll smite thee on thy forehead.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XX</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> staff with a large rock tied to it: a simple but effective crushing <link="weapondef"><style="link">weapon</style></link>.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>
+
+<style="characteristics">Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+Damage type: <link="dtcrushing"><style="link">Crushing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">9</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[woodspear]
+display_name = "Wooden Spear"
+keyword = ["weapon", "wood", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 90
+weapon_size = "small"
+weaponMaterial = "wood"
+damageType = "slashing"
+damagePoints = 8
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_spear"]
+description = """<style="fluff">\
+Then great Tiera touched his javelin
+To the mighty spear of Ahti,
+Pledged his aid to Lemminkäinen,
+As his combatant and comrade.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXX</style>
+
+A simple <link="woodmaterial"><style="link">wooden</style></link> spear, really a long, sharpened stick, the wooden spear is a <link="weapondef"><style="link">weapon</style></link> with the advantage of keeping the enemy at a distance.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics">Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+<link="reachweapon"><style="link">Reach</style></link>: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link> when defending</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 4.2 Wooden missile weapons
+
+[spearthrower]
+display_name = "Spear-thrower"
+keyword = ["weapon", "wood", "atlatl", "missile", "prefersInside", "armament"]
+unlockedBy = "spearthrowerTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+damagePoints = 6
+damageType = "crushing"
+ammo = "spearthrower_ammo"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """<style="fluff">\
+Tiera poised his mighty javelin,
+Launched the spear upon its errand;
+Hurled the shaft across the pasture,
+To the border of the forest,
+O'er the clay-fields of Pohjola,
+O'er the green and fragrant meadows,
+Through the distant bills of Northland.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXX</style>
+
+An atlatl, or a spear-thrower.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>, <link="branch"><style="link">Branch</style></link>
+
+Unlocked by: <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>.
+
+<style="characteristics">Weapon type: <link="wtmissile"><style="link">Missile</style></link>
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[throwingspear]
+display_name = "Throwing Spear"
+keyword = ["ammunition", "atlatl", "wood", "prefersInside", "armament", "spearthrower_ammo", "dangerous_object"]
+unlockedBy = "spearthrowerTech"
+condition = 1
+fireResist = 1
+weight = 0.05
+toughness = 90
+damageType = "slashing"
+damagePoints = 8
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """<style="fluff">\
+Then the artful Lemminkäinen
+Deftly whittled out his javelins.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XIII</style>
+
+Ammunition for a spear-thrower.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>
+
+<style="characteristics">Weapon type: <link="wtmissile"><style="link">Missile</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style></style>
+
+Unlocked by: <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.05 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[crudebow]
+display_name = "Crude Bow"
+keyword = ["weapon", "wood", "bow", "missile", "prefersInside", "armament"]
+unlockedBy = "archeryTech"
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+damagePoints = 5
+damageType = "crushing"
+ammo = "bow_ammo"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """A crude wooden short bow.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="branch"><style="link">Branch</style></link>, <link="coarsethread"><style="link">coarse</style></link> or <link="finethread"><style="link">fine thread</style></link>
+
+Unlocked by: <link="archeryTech"><style="link">Technology: Archery</style></link>.
+
+<style="characteristics">Weapon type: <link="wtmissile"><style="link">Missile</style></link>
+<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[woodenarrows]
+display_name = "Wooden Arrows"
+keyword = ["ammunition", "wood", "prefersInside", "armament", "bow_ammo", "lethal"]
+unlockedBy = "archeryTech"
+condition = 1
+fireResist = 1
+weight = 0.01
+toughness = 80
+damageType = "slashing"
+damagePoints = 14
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """Ammunition for a bow.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: one <link="branch"><style="link">Branch</style></link> makes 10 arrows
+
+<style="characteristics">Weapon type: <link="wtmissile"><style="link">Missile</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">14</style></style>
+
+Unlocked by: <link="archeryTech"><style="link">Technology: Archery</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.01 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 4.3 Bone weapons
+
+[bonespear]
+display_name = "Bone Spear"
+keyword = ["weapon", "bone", "wood", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["butcheryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 92
+weapon_size = "small"
+weaponMaterial = "wood"
+damageType = "slashing"
+damagePoints = 9
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_spear"]
+description = """\
+A simple <link="woodmaterial"><style="link">wooden</style></link> <link="weapondef"><style="link">weapon</style></link> with a bone spearhead.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>, <link="bones"><style="link">Bones</style></link>
+
+Unlocked by: <link="butcheryTech"><style="link">Technology: Butchery</style></link> and <link="weaponsTech"><style="link">Technology: Weapons</style></link>.
+
+<style="characteristics">Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">9</style>
+<link="reachweapon"><style="link">Reach</style></link>: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link> when defending</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[bonethrowingspear]
+display_name = "Bone-tipped Throwing Spear"
+keyword = ["ammunition", "bone", "wood", "prefersInside", "spearthrower_ammo", "dangerous_object", "armament"]
+unlockedBy = ["spearthrowerTech", "butcheryTech"]
+condition = 1
+fireResist = 1
+weight = 0.05
+toughness = 92
+damageType = "slashing"
+damagePoints = 9
+skillModifier = +10
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = """Bone ammunition for a spear-thrower.
+
+Unlocked by: <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>, <link="bones"><style="link">Bones</style></link>
+
+<style="characteristics">Weapon type: <link="wtmissile"><style="link">Missile</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">9</style></style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="bonus">+10</style></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.05 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+# 4.4 Dwarven weapons
+
+#[dwdagger]
+#display_name = "Dwarven Dagger"
+#keyword = ["weapon", "dwarven", "prefersInside", "armament", "blade"]
+#condition = 2
+#fireResist = 1
+#weight = 0.1
+#toughness = 99
+#breaks = "dwingot"
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#damageType = "slashing"
+#damagePoints = 10
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """\
+#A <link="dwarvenTech"><style="link">dwarven metal</style></link> dagger, a simple but effective <link="weapondef"><style="link">weapon</style></link>.
+#
+#Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+#Components: <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#<style="characteristics">Weapon type: <link="wtblade"><style="link">Blade</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+[dwspear]
+display_name = "Dwarven Spear"
+keyword = ["weapon", "wood", "dwarven", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["dwarvenToolTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+weapon_size = "small"
+weaponMaterial = "dwarven"
+damageType = "slashing"
+damagePoints = 12
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+skillModifier = +10
+on_equip = ["has_spear"]
+description = """<style="fluff">\
+Those beneath me, help me banish,
+With their knives, and swords, and cross-bows,
+With their spears of keenest temper.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XII</style>
+
+A <link="weapondef"><style="link">weapon</style></link> with a <link="dwarvenTech"><style="link">dwarven metal</style></link> point.
+
+Unlocked by: <link="dwarvenToolTech"><style="link">Technology: Dwarven Tools</style></link> and <link="weaponsTech"><style="link">Technology: Weapons</style></link>.
+
+Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>, <link="dwingot"><style="link">Dwarven Ingot</style></link>
+
+<style="characteristics">Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">12</style>
+Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+<link="reachweapon"><style="link">Reach</style></link>: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link> when defending</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwsword]
+display_name = "Dwarven Short Sword"
+keyword = ["weapon", "wood", "dwarven", "prefersInside", "armament", "blade"]
+unlockedBy = ["weaponsmithingTech"]
+condition = 5
+fireResist = 1
+weight = 0.3
+toughness = 99
+breaks = "dwingotx2"
+weapon_size = "small"
+weaponMaterial = "dwarven"
+damageType = "slashing"
+damagePoints = 15
+skillModifier = +20
+decays = "dwingotx2"
+decayTime = 36
+burned = "dwingotx2"
+description = """\
+<style="fluff">Now Skadi, the daughter of the giant Thjazi, took helm and birnie and all weapons of war and proceeded to Ásgard, to avenge her father.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV</style>
+
+A crude, cold-hammered sword with a <link="dwarvenTech"><style="link">dwarven metal</style></link> blade: a deadly <link="weapondef"><style="link">weapon</style></link>.
+
+Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>.
+
+Produced at: <link="weaponcoldforger"><style="link">Weaponer's Workshop</style></link>
+Components: 2x <link="dwingot"><style="link">Dwarven Ingot</style></link>
+
+<style="characteristics">Weapon type: <link="wtblade"><style="link">Blade</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">15</style></style>
+Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+Sword: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">36</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+#[dw_war_axe]
+#display_name = "Dwarven War Axe"
+#keyword = ["dwarven", "wood", "prefersInside", "weapon", "hammer"]
+#unlockedBy = "weaponsmithingTech"
+#condition = 5
+#fireResist = 1
+#weight = 0.2
+#toughness = 99
+#breaks = ["dwingot"]
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#skillModifier = +10
+#damagePoints = 16
+#damageType = "slashing"
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """A <link="weapondef"><style="link">weapon</style></link> with a <link="dwarvenTech"><style="link">dwarven metal</style></link> blade.
+#
+#Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>.
+#
+#Produced at: <link="weaponcoldforger"><style="link">Weaponsmith</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>, <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">16</style>
+#Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+#
+#[dw_warhammer]
+#display_name = "Dwarven Warhammer"
+#keyword = ["dwarven", "wood", "prefersInside", "weapon", "hammer"]
+#unlockedBy = "weaponsmithingTech"
+#condition = 5
+#fireResist = 1
+#weight = 0.2
+#toughness = 99
+#breaks = ["dwingot"]
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#skillModifier = +10
+#damagePoints = 20
+#damageType = "crushing"
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """A ferocious <link="dwarvenTech"><style="link">dwarven metal</style></link> <link="weapondef"><style="link">weapon</style></link>.
+#
+#Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>.
+#
+#Produced at: <link="weaponcoldforger"><style="link">Weaponsmith</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>, <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">20</style>
+#Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+# 4.5 Iron weapons
+
+[ironspear]
+display_name = "Iron Spear"
+keyword = ["weapon", "wood", "iron", "prefersInside", "reach", "armament", "spear", "lethal"]
+unlockedBy = ["ironWeaponTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+weapon_size = "small"
+weaponMaterial = "iron"
+skillModifier = +10
+damageType = "slashing"
+damagePoints = 14
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+on_equip = ["has_spear"]
+description = """<style="fluff">Quick to arms rose Louhi's people,
+All the spears and swords of Northland
+Were directed at thy hero;
+All of Pohja turned against me,
+Turned against a single foeman.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVIII</style>
+
+A <link="weapondef"><style="link">weapon</style></link> with an <link="irondef"><style="link">iron</style></link> point.
+
+Unlocked by: <link="ironWeaponTech"><style="link">Technology: Iron Weapons</style></link>.
+
+Produced at: <link="weaponcoldforger"><style="link">Weaponer's Workshop</style></link>
+Components: <link="woodpole"><style="link">Wooden Pole</style></link>, <link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<style="characteristics">Weapon type: <link="wtspear"><style="link">Spear</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">14</style>
+Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+<link="reachweapon"><style="link">Reach</style></link>: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link> when defending</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# Produced at: <link="weaponsmith"><style="link">Weaponsmith's Forge</style></link>
+
+[ironsword]
+display_name = "Iron Broadsword"
+keyword = ["weapon", "iron", "prefersInside", "armament", "blade", "lethal"]
+unlockedBy = "ironWeaponTech"
+condition = 10
+fireResist = 3
+weight = 0.3
+toughness = 99
+breaks = ["scrapironx2"]
+weapon_size = "small"
+weaponMaterial = "iron"
+damageType = "slashing"
+damagePoints = 18
+skillModifier = +20
+decays = "scrapiron"
+decayTime = 48
+burned = ["scrapironx2"]
+description = """A simple but effective <link="irondef"><style="link">iron</style></link> <link="weapondef"><style="link">weapon</style></link>.
+
+Unlocked by: <link="ironWeaponTech"><style="link">Technology: Iron Weapons</style></link>.
+
+Produced at: <link="weaponcoldforger"><style="link">Weaponer's Workshop</style></link>
+Components: 2x <link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<style="characteristics">Weapon type: <link="wtblade"><style="link">Blade</style></link>
+Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">18</style></style>
+Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+Sword: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">48</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# Produced at: <link="weaponsmith"><style="link">Weaponsmith's Forge</style></link>
+
+# 5.0 Armor
+
+# 5.1 Wooden armor and shields
+
+[plankarmor]
+display_name = "Plank Armor"
+keyword = ["armor", "mail", "wood", "armament", "prefersInside"]
+unlockedBy = ["armorTech"]
+condition = 3
+fireResist = 1
+weight = 0.3
+toughness = 95
+breaks = ["woodplank"]
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_plank_armor", "bulky"]
+description = """\
+<style="fluff">Hither bring my martial doublet,
+Bring me now the sword of battle,
+Bring my father's sword of honor.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XII</style>
+
+A coat of armor made from <link="carpentryTech"><style="link">wood</style></link>. Heavy, cumbersome and almost useless against metal weapons, wooden armor was not a great success, but offers more protection against attack than, well, nothing.
+
+Unlocked by: <link="armorTech"><style="link">Technology: Wooden Armor</style></link>.
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: 2x <link="woodplank"><style="link">Wooden Plank</style></link>, <link="woodslats"><style="link">Wooden Slats</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">3</style>
+Defence bonus: <style="bonus">+5</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[woodshield]
+display_name = "Wooden Shield"
+keyword = ["armor", "shield", "wood", "armament", "prefersInside"]
+unlockedBy = ["armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+breaks = "woodplank"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_wood_shield"]
+description = """\
+<style="fluff">'And it was a great folly,' said he, 'when I left my shield and hone behind at home; if I had my weapons here, then we should try single-combat.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XVII</style>
+
+A simple <link="woodmaterial"><style="link">wooden</style></link> shield. Better than nothing!
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: <link="woodplank"><style="link">Wooden Plank</style></link>, <link="woodslats"><style="link">Wooden Slats</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">2</style>
+Defence bonus: <style="bonus">+5</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 5.2 Dwarven armor
+
+[dwshield]
+display_name = "Dwarven Shield"
+keyword = ["armor", "shield", "wood", "dwarven", "armament", "prefersInside"]
+unlockedBy = ["dwarvenToolTech", "armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+on_equip = ["has_dwshield"]
+description = """\
+<style="fluff">It seemed glorious to Ægir to look about him in the hall: the wainscottings there were all hung with fair shields; there was also stinging mead, copiously quaffed.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, I</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> shield with a <link="dwarvenTech"><style="link">dwarven metal</style></link> boss.
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: <link="woodplank"><style="link">Wooden Plank</style></link>, <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">3</style>
+Defence bonus: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[dwcuirass]
+display_name = "Dwarven Cuirass"
+keyword = ["armor", "mail", "dwarven", "armament", "prefersInside"]
+unlockedBy = ["dwarvenArmorTech"]
+condition = 10
+weight = 0.3
+toughness = 95
+breaks = ["dwingotx5"]
+on_equip = ["has_dwarven_armor", "bulky"]
+description = """\
+A heavy coat of armor made from <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Produced at: <link="armorcoldforger"><style="link">Armorsmith's Workshop</style></link>
+Components: 5x <link="dwingot"><style="link">Dwarven Metal Ingot</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">5</style>
+Defence bonus: <style="bonus">+20</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units\
+"""
+
+# 5.3 Leather armor
+
+[leatherjerkin]
+display_name = "Leather Jerkin"
+keyword = ["armor", "leather", "armament", "prefersInside"]
+unlockedBy = "leatherTech"
+condition = 5
+fireResist = 3
+weight = 0.1
+toughness = 95
+breaks = "rawleather"
+decays = "rawleather"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_leather_jerkin"]
+description = """\
+<style="fluff">Folk saw them go thus, Oth with his bow and his soft noiseless sandals, and his brown garments of leather, Orion on his shoulder, wrapped in the skin of a fawn which Oth had thrown round him.
+
+ - Lord Dunsany, The King of Elfland's Daughter (1924)</style>\
+
+A simple leather jerkin.
+
+Produced at: <link="leatherworking"><style="link">Leather-crafter</style></link>
+Components: 2x <link="rawleather"><style="link">Raw Leather</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">2</style>
+Defence bonus: <style="bonus">+5</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[rigidleatherarmor]
+display_name = "Rigid Leather Armor"
+keyword = ["armor", "leather", "armament", "prefersInside"]
+unlockedBy = "leatherArmorTech"
+condition = 5
+fireResist = 3
+weight = 0.2
+toughness = 95
+breaks = "rawleather"
+decays = "rawleather"
+decayTime = 36
+burned = "ashes"
+on_equip = ["has_rigid_leather_armor"]
+description = """\
+A suit of rigid leather armor.
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: 3x <link="rawleather"><style="link">Raw Leather</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">3</style>
+Defence bonus: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">36</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 5.4 Cloth armor
+
+[clothArmor]
+display_name = "Linen Armor"
+keyword = ["armor", "linen", "armament", "prefersInside"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 2
+weight = 0.1
+toughness = 95
+breaks = "nothing"
+decays = "nothing"
+decayTime = 12
+burned = "ashes"
+on_equip = ["has_linen_armor"]
+description = """\
+<style="fluff">As Einarr Tinkling-Scale sang:
+
+The mail-sarks of the warriors,
+Firm-woven, did not shelter
+The seemly youths 'gainst Högni's
+Showers of Hákon's onset.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XLVII</style>
+
+A suit of cloth armor.
+
+Produced at: <link="armory"><style="link">Armorer</style></link>
+Components: 2x <link="coarsecloth"><style="link">Coarse Cloth</style></link> or <link="finecloth"><style="link">Fine Cloth</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">2</style>
+Defence bonus: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">12</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+# 5.5 Iron armor
+
+[ironshield]
+display_name = "Iron Shield"
+keyword = ["armor", "shield", "wood", "iron", "armament", "prefersInside"]
+unlockedBy = ["ironArmorTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+on_equip = ["has_ironshield"]
+description = """\
+<style="fluff">Now they sailed farther north, and the cold became intense, while the spirits of the Northern Lights began their combats in the air with silver spears and golden shields.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVI: The Voyage of the Kalevide</style>
+
+A <link="woodmaterial"><style="link">wooden</style></link> shield with a <link="irondef"><style="link">iron</style></link> boss and rim.
+
+Unlocked by: <link="ironArmorTech"><style="link">Technology: Iron Armor</style></link>
+
+Produced at: <link="armorcoldforger"><style="link">Armorer's Workshop</style></link>
+Components: <link="woodplank"><style="link">Wooden Plank</style></link>, <link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">4</style>
+Defence bonus: <style="bonus">+20</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Decays in: <style="malus">24</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[iron_cuirass]
+display_name = "Iron Cuirass"
+keyword = ["armor", "mail", "iron", "armament", "prefersInside"]
+unlockedBy = ["ironArmorTech"]
+condition = 10
+weight = 0.3
+toughness = 95
+breaks = ["scrapironx5"]
+on_equip = ["has_iron_armor", "bulky"]
+description = """\
+<style="fluff">Meantime a troop of fugitives came flying to the city, bringing word that the war was close at hand, and that the axes of the youths were useless against the swords of the mail-clad warriors.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIX: The Last Feast of the Heroes</style>
+
+A heavy suit of <link="irondef"><style="link">iron</style></link> armor.
+
+Unlocked by: <link="ironArmorTech"><style="link">Technology: Iron Armor</style></link>
+
+Produced at: <link="armorcoldforger"><style="link">Armorer's Workshop</style></link>
+Components: 5x <link="wroughtiron"><style="link">Wrought Iron</style></link>
+
+<style="characteristics"><link="armorAndDamage"><style="link">Armor points</style></link>: <style="bonus">6</style>
+Defence bonus: <style="bonus">+30</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units\
+"""
+
+# 6.0 Seeds
+
+[flaxseedbag]
+display_name = "Flax Seeds"
+keyword = ["seed", "prefersInside"]
+contains = "flaxshoot"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 75
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility = 0.01
+fertility_to_food_mult = 0
+description = """<style="fluff">\
+"Who will plow the field and fallow,
+Sow the flax, and spin the flax-threads,
+That I may prepare the fish-net,
+Wherewith I may catch the Fire-pike,
+May secure the thing of evil?"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVIII</style>
+
+A bag of <link="flaxdef"><style="link">flax</style></link> seeds, planted in early summer.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[nettleseedbag]
+display_name = "Nettle Seeds"
+keyword = ["seed", "prefersInside"]
+contains = "nettleshoot"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 50
+condition = 2
+fireResist = 2
+decayTime = 6
+weight = 0.1
+fertility_to_food_mult = 0.6
+description = """A bag of nettle seeds. Nettles are planted in early summer and harvested in the fall.
+
+To plant nettle seeds, build a <link="farming"><style="link">farm plot</style></link>. Nettle plants need to be processed at a <link="nettleprocessing"><style="link">nettle yard</style></link>, to produce <link="nettleseedbag"><style="link">nettle seeds</style></link>, edible <link="nettlebunch"><style="link">nettle leaves</style></link> and <link="nettlestems"><style="link">nettle stems</style></link>, which can be retted into fiber.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[ryeseedbag]
+display_name = "Rye Seeds"
+keyword = ["seed", "prefersInside"]
+contains = "ryeshoot"
+discovers = "farmingTech"
+plantTime = 1
+maxCapacity = 50
+equivalent_nutrition = 0.5
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility_to_food_mult = 1
+description = """\
+<style="fluff">The barns were filled respectively with rye, barley, oats, wheat, maize, vegetables, and the last with lumps of lard and tallow.
+
+ - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>
+
+A bag of rye seeds. Rye is planted in early fall, and takes a little under a year to grow.
+
+To plant seeds, build a <link=\"farming\"><style=\"link\">farm plot</style></link>.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+"""
+
+[turnipseedbag]
+display_name = "Turnip Seeds"
+keyword = ["seed", "prefersInside", "root_veg_seed"]
+contains = "turnipsprout"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 75
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility_to_food_mult = 1
+description = """<style="fluff">\
+Pellervoinen, thus consenting,
+Sows with diligence the island,
+Seeds upon the lands he scatters,
+Seeds in every swamp and lowland.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>
+
+A bag of turnip seeds. Grows <link="turnipplant"><style="link">turnips</style></link>.<br>To plant seeds, build a <link="farming"><style="link">farm plot</style></link>.
+
+Turnip seeds are planted in early summer. The plants produce turnips over the summer, and if they're left to grow over the winter, the next summer they produce turnip seeds.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Decays in: <style="malus">6</style> months
+Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>
+
+<style="fluff">Turnip seeds are very hardy, and can take root and grow succesfully with a minimum of preparation. \
+Slash-and-burn farmers in Eastern Finland would simply spit the seeds onto the ground of newly burned swidden plots.</style>\
+"""
+
+# 7.0 Food
+
+# 7.1 Raw foods
+
+[apples]
+display_name = "Apples"
+keyword = ["food", "fruit", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.5
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = """\
+<style="fluff">Near the way-side grew an oak-tree,
+Skyward grew with equal branches,
+On each twig an acorn growing,
+Golden balls upon each acorn,
+On each ball a singing cuckoo.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XL
+
+Some <link="fresh"><style="link">fresh</style></link> apples from the forest.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.5</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+
+[blackcurrants]
+display_name = "Blackcurrants"
+keyword = ["food", "berry", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = """\
+<style="fluff">In my young years once I wandered,
+As a maiden on the mountains,
+In the happy days of childhood,
+Hunting berries in the coppice.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>
+
+Some <link="fresh"><style="link">fresh</style></link> blackcurrant berries.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+[bloodberry]
+display_name = "Bloodberries"
+keyword = ["food", "berry", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +6
+description = """A <link="fresh"><style="link">fresh</style></link> goblin delicacy from the underworld.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+6</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">16</style> months"""
+
+[bullbeans]
+display_name = "Bull-beans"
+keyword = ["food", "bean", "carbs", "protein", "fiber", "fresh", "prefersInside", "loose"]
+nutrition = 1
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +2
+description = """Some highly nutritious beans, containing <link="protein"><style="link">protein</style></link> and <link="fiber"><style="link">dietary fiber</style></link>. Bullbeans are <link="fresh"><style="link">fresh food</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+2</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[hazelnuts]
+display_name = "Hazelnuts"
+keyword = ["food", "nut", "fat", "fiber", "fresh", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = """Some delicious hazelnuts. Nuts are <link="fresh"><style="link">fresh food</style></link> and contain <link="fat"><style="link">fat</style></link> and <link="fiber"><style="link">dietary fiber</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus"> +5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[mushroom]
+display_name = "Mushrooms"
+keyword = ["food", "prefersInside", "fiber", "mushroom", "loose"]
+nutrition = 1
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = """Some mushrooms, good for eating. Mushrooms are contain <link="fiber"><style="link">dietary fiber</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[nettlebunch]
+display_name = "Nettle Leaf Bunch"
+keyword = ["food", "fresh", "protein", "prefersInside", "loose"]
+unlockedBy = "farmingTech"
+nutrition = 0.3
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = """The leaves of nettle plants are <link="fresh"><style="link">fresh food</style></link> and a delicious source of <link="protein"><style="link">protein</style></link>.
+
+Nettle plants need to be processed at a <link="nettleprocessing"><style="link">nettle yard</style></link>, to produce <link="nettleseedbag"><style="link">nettle seeds</style></link>, these nettle leaf bunches and <link="nettlestems"><style="link">nettle stems</style></link>, which can be retted into fiber.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.3</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[nettleleaves]
+display_name = "Stinging Nettle Leaves"
+keyword = ["food", "fresh", "protein", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = """The edible leaves of wild nettle plants, these contain <link="protein"><style="link">protein</style></link>, and are <link="fresh"><style="link">fresh food</style></link>. Careful, they sting!
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[raspberries]
+display_name = "Raspberries"
+keyword = ["food", "sweet", "fresh", "berry", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +7
+description = """\
+<style="fluff">Maidens living with their mothers
+Are like ripe and ruddy berries.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>
+
+Some raspberries, a treat! Berries are <link="fresh"><style="link">fresh food</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus"> +5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+[turnip]
+display_name = "Turnip"
+keyword = ["is_turnip", "store_in_turniphole", "food", "fresh"]
+nutrition = 0.05
+maxCapacity = 40 # maxCapacity needs to be high enough that large farms don't devolve into hundreds of hauling jobs for small amounts of food. 
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +0.5
+description = """\
+<style="fluff">There were two brothers who were both soldiers; the one was rich and the other poor. \
+The poor man thought he would try to better himself; so, pulling off his red coat, he became a gardener, \
+and dug his ground well, and sowed turnips.
+ - <link="grimm"><style="link">Grimm's Fairy Tales</style></link>, trans. Edgar Taylor (1876)\
+</style>
+ 
+The noble turnip (<i>Brassica rapa</i>), a staple of goblin cuisine. \
+A turnip is worth 0.05 <link=\"foodpoint\"><style=\"link\">food points</style></link>, and is <link="fresh"><style="link">fresh food</style></link>.
+ 
+Grow turnips by planting <link=\"turnipseedbag\"><style=\"link\">Turnip Seeds</style></link> in a \
+<link=\"farming\"><style=\"link\">farm plot</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.05</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> in a <link="turniphole"><style="link">turnip hole</style></link>: spoils in <style="malus">12</style> months
+ 
+<style="fluff">\
+Turnips are hardy root vegetables that are especially well suited to slash-and-burn farming.
+
+Historically, the turnip was one of the most important parts of Finnish cuisine until it was supplanted by the potato.\
+</style>\
+"""
+
+[waterchestnut]
+display_name = "Water Chestnuts"
+keyword = ["food", "nut", "fresh", "prefersInside"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+description = """A collection of water chestnuts. They're <link="fresh"><style="link">fresh food</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.2</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+6</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">4</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+# 7.2 Intermediate food products
+
+[ryeflour]
+display_name = "Rye Flour"
+keyword = ["flour", "prefersInside", "dissolves", "product"]
+weight = 0.5
+decayTime = 6
+decays = "nothing"
+stored_decay_multiplier = 0.5
+unlockedBy = "bakingTech"
+description = """<style="fluff">\
+"As for me, the hapless daughter,
+All my flour was from the siftings
+On the table near the oven,
+Ate I from the birchen ladle.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+
+<link="ryeseedbag"><style="link">Rye seeds</style></link> ground into a flour. It can be prepared into <link="ryebread"><style="link">bread</style></link> that contains plenty of <link="fiber"><style="link">dietary fiber</style></link>.
+
+Produced at: <link="mill"><style="link">Mill</style></link>
+Components: 50x <link="ryeseedbag"><style="link">Rye Seed</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months\
+"""
+
+# 7.3 Processed foods
+
+[ryebread]
+display_name = "Rye Bread"
+keyword = ["food", "carb", "fiber", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 1
+weight = 0.2
+decays = "stale_bread"
+decayTime = 9
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = """\
+<style="fluff">But the over-scornful hostess,
+Baked a biscuit for the herdsman,
+Baked a loaf of wondrous thickness.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXII</style>
+
+A dark bread rich in <link="fiber"><style="link">fiber</style></link> and with a strong taste, considered a delicacy by goblins. Rye bread is baked from <link="ryeflour"><style="link">rye flour</style></link>, and each loaf is worth one <link="foodpoint"><style="link">food point</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+5</style>
+
+Produced at: <link="baker"><style="link">Bakery</style></link>
+Components: <link="ryeflour"><style="link">Rye Flour</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Goes <link="stale_bread"><style="link">stale</style></link> in: <style="malus">9</style> months
+Goes <link="stale_bread"><style="link">stale</style></link> when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: <style="malus">18</style> months"""
+
+[stale_bread]
+display_name = "Stale Rye Bread"
+keyword = ["food", "carb", "fiber", "prefersInside"]
+nutrition = 0.8
+condition = 1
+fireResist = 1
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+foodMoraleMod = +4
+description = """Some stale, dry <link="ryebread"><style="link">rye bread</style></link>, no longer quite as nutritious, but still a reliable source of <link="fiber"><style="link">dietary fiber</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">0.8</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+4</style>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">12</style> months"""
+
+[smokedbird]
+display_name = "Smoked Bird Meat"
+keyword = ["food", "meat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.1
+unlockedBy = "smokingTech"
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+description = """\
+<style="fluff">Väinämöinen, old and truthful,
+Answers thus the Maid of Beauty:
+"Foolish is the thrush thus singing,
+Nonsense is the song-bird's twitter."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>
+
+Some bird meat, preserved by smoking. It contains <link="protein"><style="link">protein</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+6</style>
+
+Produced at: <link="smoker"><style="link">Smoking Workshop</style></link>
+Components: <link="birdmeat"><style="link">Bird Meat</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">24</style> months"""
+
+[smokedfish]
+display_name = "Smoked Fish"
+keyword = ["food", "fish", "fat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.1
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+unlockedBy = "smokingTech"
+description = """\
+Ate of fish the worst in Northland,
+Only smelts, and worthless swimmers,
+Rocking in my boat of birch-bark
+Never ate I fish or biscuit
+From my second mother's fingers.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+
+Some fish, preserved by smoking. Fish is a source of <link="protein"><style="link">protein</style></link> and <link="fat"><style="link">fat</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+6</style>
+
+Produced at: <link="smoker"><style="link">Smoking Workshop</style></link>
+Components: <link="rawfish"><style="link">Fresh Fish</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">24</style> months"""
+
+
+#[smokedsalmon]
+#display_name = "Smoked Salmon"
+#keyword = ["food", "fish", "fat", "protein", "preserved", "prefersInside"]
+#nutrition = 1
+#condition = 2
+#fireResist = 2
+#weight = 0.1
+#decays = "nothing"
+#decayTime = 12
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +7
+#description = """\
+#<style="fluff">"To his wife the brother whispered,
+#Whispered thus unto the housewife:
+#'Bring thou salmon for my sister,
+#For my sister so long absent,
+#Thus to still her pangs of hunger.'"
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+#
+#Smoked salmon, considered a delicacy by some! Smoked fish remains edible for much longer, and retains its <link="protein"><style="link">protein</style></link> and <link="fat"><style="link">fat</style></link> content.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+7</style>
+#
+#Produced at: <link="smoker"><style="link">Smoking Workshop</style></link>
+#Components: <link="rawsalmon"><style="link">Salmon</style></link>, <link="firewood"><style="link">Firewood</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+#Spoils in: <style="malus">12</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">24</style> months"""
+
+
+[smokedwolf]
+display_name = "Smoked Wolf Meat"
+keyword = ["food", "meat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.3
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +4
+unlockedBy = "smokingTech"
+description = """\
+<style="fluff">"As a guest am I unwelcome,
+Since no beer to me is given
+That is worthy of a hero;
+Neither has a ram been butchered,
+Nor a fattened calf been slaughtered,
+Worthy food for Lemminkäinen."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVII</style>
+
+Smoked wolf meat, very tough but long-lasting and a source of <link="protein"><style="link">protein</style></link>.
+
+<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+4</style>
+
+Produced at: <link="smoker"><style="link">Smoking Workshop</style></link>
+Components: <link="wolfmeat"><style="link">Wolf Meat</style></link>, <link="firewood"><style="link">Firewood</style></link>
+
+<link="weight_def"><style="link">Weight</style></link>: 0.3 units
+Spoils in: <style="malus">12</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">24</style> months"""
+
+# 8.0 Waste
+
+# 8.1 Organic waste
+
+#[foodscraps]
+#display_name = "Food Scraps"
+#keyword = ["waste", "garbage", "noStore", "hideInStockManager", "dissolves", "loose", "fertilizer_category"]
+#weight = 0.2
+#condition = 2
+#fireResist = 2
+#fertility = 0.05
+#pestilence = 0.5
+#decays = "nothing"
+#decayTime = 3
+#description = """Some food scraps, left over from cooking. They can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+#
+#<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.05</style>
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Spoils in: <style="malus">3</style> months\
+#"""
+
+[offal]
+display_name = "Offal"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "dissolves", "loose", "fertilizer_category"]
+weight = 0.2
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1
+decays = "nothing"
+decayTime = 3
+description = """Animal leftovers from butchery, curing and so on. Rank!
+
+Offal can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.1</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">3</style> months\
+"""
+
+[plantgarbage]
+display_name = "Plant Garbage"
+keyword = ["waste", "garbage", "noStore", "dissolves", "loose", "hideInStockManager", "fertilizer_category"]
+weight = 0.2
+condition = 2
+fireResist = 1
+fertility = 0.05
+pestilence = 0.5
+decays = "nothing"
+decayTime = 6
+description = """\
+<style="fluff">"O thou wretched beer of barley,
+Thou hast met with great dishonor,
+Into disrepute hast fallen,
+But I'll drink thee, notwithstanding,
+And the rubbish cast far from me."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVII</style>
+
+Plant-based garbage. It can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.05</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">6</style> months\
+"""
+
+[rottenfish]
+display_name = "Rotten Fish"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "fertilizer_category"]
+weight = 0.1
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1.5
+decays = "offal"
+decayTime = 3
+description = """Some rotted fish. It can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.1</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+Spoils in: <style="malus">3</style> months\
+"""
+
+[rottenmeat]
+display_name = "Rotten Meat"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "fertilizer_category"]
+weight = 0.2
+discovers = "butcheryTech"
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1
+decays = "offal"
+decayTime = 3
+description = """Some rotted meat. It can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+
+<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.1</style>
+<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+Spoils in: <style="malus">3</style> months\
+"""
+
+# 8.2 Inorganic waste
+
+[slag]
+display_name = "Slag"
+keyword = ["waste", "rubbish", "prefersOutside", "noStore"]
+weight = 0.5
+description = """Some slag, a byproduct of metal-work.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[scrapiron]
+display_name = "Scrap Iron"
+keyword = ["waste", "rubbish", "prefersInside"]
+weight = 0.5
+description = """Some scrap iron.
+
+<link="weight_def"><style="link">Weight</style></link>: 0.5 units"""
+
+# 9.0 Corpses
+
+[goblincorpse]
+display_name = "Goblin Corpse"
+keyword = ["corpse", "noStore", "hideInStockManager"]
+discovers = "burialTech"
+weight = 1.0
+fireResist = 3
+decays = "goblinbones"
+decayTime = 6
+description = """\
+<style="fluff">Had Tuoni brought thee hither,
+Mana raised thee from the coffin,
+Then Tuoni would be with thee,
+Manalainen too would lead thee,
+With Tuoni's hat upon thee,
+On thy hands, the gloves of Mana.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+
+The remains of an unfortunate goblin.
+
+Decays in: 6 months"""
+
+[goblinbones]
+display_name = "Goblin Bones"
+keyword = ["corpse", "noStore", "hideInStockManager"]
+weight = 0.5
+decays = "nothing"
+decayTime = 6
+description = """The decaying remains of an unfortunate goblin.
+
+Decays in: 6 months"""
+
+#[beavercorpse]
+#display_name = "Beaver Corpse"
+#keyword = ["corpse", "beaver", "prefersOutside", "hideInStockManager"]
+#weight = 0.5
+#fireResist = 2
+#discovers = "butcheryTech"
+#decays = "rottenmeat"
+#decayTime = 6
+#description = """A dead beaver with a valuable pelt.
+#
+#Spoils in: <style="malus">6</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[cranecorpse]
+display_name = "Crane Corpse"
+keyword = ["corpse", "crane", "prefersOutside", "hideInStockManager"]
+weight = 0.5
+fireResist = 2
+discovers = "butcheryTech"
+decays = "rottenmeat"
+decayTime = 6
+description = """<style="fluff">Water-birds were sporting in the lake, and on the opposite shore they saw the holy forest of Taara shining in the sunset. "Here is the place where our lot must be decided," said the eldest brother; and each selected a stone for the trial of strength.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto VIII: The Contest and Parting of the Brothers</style>
+
+A crane pining for <link="birdhome"><style="link">the southlands</style></link>.
+
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+#[dwarfcorpse]
+#display_name = "Dwarf Corpse"
+#keyword = ["corpse", "dwarf", "noStore", "hideInStockManager"]
+#weight = 1.5
+#fireResist = 3
+#decays = "rottenmeat"
+#decayTime = 6
+#description = """<style="fluff">\
+#The dwarves had first received shape and life in the flesh of Ymir, and were then maggots; but by decree of the gods had become conscious with the intelligence of men, and had human shape.
+#
+# - the Prose Edda, trans. Arthur Gilchrist Brodeur, Gylfaginning, XIV</style>
+#
+#The remains of a dwarf.
+#
+#Decays in: 6 months"""
+
+[humancorpse]
+display_name = "Human Corpse"
+keyword = ["corpse", "wolf", "hideInStockManager", "noStore"]
+weight = 1.5
+fireResist = 3
+fertility = 2.0
+pestilence = 2.0
+decays = "rottenmeat"
+decayTime = 6
+description = """The remains of a human.
+
+Decays in: 6 months"""
+
+[wolfcorpse]
+display_name = "Wolf Corpse"
+keyword = ["corpse", "wolf", "hideInStockManager", "prefersOutside"]
+weight = 1.5
+fireResist = 3
+discovers = "butcheryTech"
+decays = "rottenmeat"
+decayTime = 6
+description = """\
+<style="fluff">Have no fear of wolves in hunger,
+Nor the wild-beasts of the mountains,
+When thou goest to thy brewing,
+Shouldst thou wander forth at midnight.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+
+A dead wolf.
+
+Spoils in: <style="malus">6</style> months
+Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+# 10.0 Special items
+#
+#[ancienttome]
+#display_name = "Ancient Tome"
+#keyword = ["book", "discovery", "prefersInside"]
+#weight = 0.5
+#fireResist = 1
+#burned = "ashes"
+#researchPoints = 1
+#description = """An ancient tome of knowledge! Discovering an ancient tome grants one <link="researchpoints"><style="link">research point</style></link>."""

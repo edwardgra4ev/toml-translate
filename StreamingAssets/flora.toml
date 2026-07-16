@@ -1,0 +1,1732 @@
+# Flora
+#
+# 1.0 Saplings
+#  1.1 Big tree saplings
+#  1.2 Other tree saplings
+# 2.0 Trees
+#  2.1 Big trees
+#  2.2 Other trees
+#  2.3 Snags
+#  2.4 Stumps
+# 3.0 Bushes
+#  3.1 Spawning bushes
+#  3.2 Non-spawning bushes
+# 4.0 Undergrowth
+# 5.0 Rocks
+# 6.0 Crops
+# 7.0 Underworld flora
+#  7.1 Underworld bushes and undergrowth
+#  7.2 Underworld trees
+#  7.3 Underworld versions of plants
+
+
+# 1.0 Saplings
+
+# 1.1 Big tree saplings
+
+[sprucesapling]
+display_name = "Spruce Sapling"
+keyword = ["sapling", "spruce", "prefersSand", "prefersDark", "spawn", "perennial"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngspruce"
+growthTime = 120
+latinName = "spruce spruce"
+description = """\
+<style="fluff">Greeting bring I to the mountains,
+Greeting to the vales and uplands,
+Greet ye, heights with forests covered,
+Greet ye, ever-verdant fir-trees.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XIV</style>
+
+This sapling will grow into a <link="youngspruce"><style="link">young spruce</style></link> tree. \
+Spruce trees <link="florapreferences"><style="link">prefer</style></link> <link="shade"><style="link">shade</style></link> and <link="sandsoil"><style="link">sandy soils</style></link>.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[pinesapling]
+display_name = "Pine Sapling"
+keyword = ["sapling", "pine", "spawn", "perennial"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngpine"
+growthTime = 120
+description = """\
+<style="fluff">On the firm soil sows the acorns,
+Fir-trees sows he on the mountains.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+This sapling will grow into a <link="youngpine"><style="link">young pine</style></link> tree. \
+Pines are hardy trees that can grow almost anywhere.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[birchsapling]
+display_name = "Birch Sapling"
+keyword = ["sapling", "birch", "prefersClay", "needsLight", "spawn", "deciduous"]
+produces = ["branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngbirch"
+growthTime = 36
+description = """\
+<style="fluff">Three times better for this vessel
+Were he but a valley birch-tree,
+Or an aspen on the heather,
+With the squirrels in his branches,
+And the dogs beneath them barking!
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIX</style>
+
+This sapling will grow into a <link="youngbirch"><style="link">young birch</style></link> tree. \
+Birches <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link> and need <link="shade"><style="link">light</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+# 1.2 Other tree saplings
+
+[aldersapling]
+display_name = "Grey Alder Sapling"
+keyword = ["sapling", "alder", "prefersLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "alder"
+growthTime = 240
+latinName = "Alnus incana"
+description = """\
+<style="fluff">Birches sows he in the marshes,
+In the loose soil sows the alders.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+A grey alder sapling.
+
+Produces: <link="branch"><style="link">branch</style></link>"""
+
+[forestapplesapling]
+display_name = "Crabapple Tree Sapling"
+keyword = ["sapling", "crabapple", "prefersLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "forestapple"
+growthTime = 120
+description = """The beginnings of a lovely apple tree.
+
+Produces: <link="branch"><style="link">branch</style></link>"""
+
+[junipersapling]
+display_name = "Juniper Sapling"
+keyword = ["sapling", "juniper", "needsLight", "spawn", "perennial"]
+produces = ["branch"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "juniper"
+growthTime = 120
+description = """\
+<style="fluff">Junipers were also growing,
+Junipers with clustered berries,
+Berries on the hawthorn branches.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+A young <link="juniper"><style="link">juniper</style></link>. \
+Junipers <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+[lindensapling]
+display_name = "Linden Sapling"
+keyword = ["sapling", "linden", "prefersClay", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "linden"
+growthTime = 240
+description = """\
+<style="fluff">In the lowlands sows the lindens,
+In the moist earth sows the willow.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+This sapling will grow up to be a <link="linden"><style="link">linden</style></link> tree. \
+Lindens <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+[maplesapling]
+display_name = "Maple Sapling"
+keyword = ["sapling", "maple", "prefersClay", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "maple"
+growthTime = 120
+description = """\
+<style="fluff">The Kalevide slept for two days and nights, and did not wake till the third morning was well advanced. While he slept, his snoring resounded for miles, and the great trees shook as if they were saplings.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIX: The Last Feast of the Heroes</style>
+
+This sapling is the beginning of a mighty <link="maple"><style="link">maple</style></link> tree. \
+Maples <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+[rowansapling]
+display_name = "Rowan Sapling"
+keyword = ["sapling", "rowan", "holy", "needsLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "rowan"
+growthTime = 240
+description = """\
+<style="fluff">In that moment he came to the shore and took hold of a rowan-clump, and so climbed out of the river; whence comes the saying that rowan is Thor's deliverance.
+
+- the Prose Edda, trans. Arthur Gilchrist Brodeur, Skáldskaparmál, XVIII</style>
+
+A sapling of the holy <link="rowan"><style="link">rowan</style></link> tree. \
+Rowans <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+[yewsapling]
+display_name = "Yew Sapling"
+keyword = ["sapling", "yew", "poison", "prefersClay", "spawn", "deciduous"]
+produces = ["branch"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "yew"
+growthTime = 120
+description = """\
+A sapling of the <link="yew"><style="link">yew</style></link> tree. \
+They <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: <link="branch"><style="link">branch</style></link>"""
+
+# 2.0 Trees
+
+# 2.1 Big trees
+
+[sprucetree]
+display_name = "Spruce Tree"
+keyword = ["tree", "spruce", "blocksMovement", "prefersSand", "prefersDark", "perennial", "bigShade", "spirit"]
+produces = ["woodlogx2", "branchx4"]
+condition = 25
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "sprucestump"
+growthTime = 240
+latinName = "picea abies"
+description = """\
+<style="fluff">On his shoulder grew the aspen,
+On each temple grew the birch-tree,
+On his mighty chin the alder,
+From his beard grew willow-bushes,
+From his mouth the dark green fir-tree,
+And the oak-tree from his forehead.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XVII</style>
+
+A spruce tree. \
+Spruce trees <link="florapreferences"><style="link">prefer</style></link> <link="shade"><style="link">shade</style></link> and <link="sandsoil"><style="link">sandy soils</style></link>.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+[youngspruce]
+display_name = "Young Spruce Tree"
+keyword = ["tree", "spruce", "prefersSand", "prefersDark", "perennial", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3"]
+grows = "sprucetree"
+leaves = "smallstump"
+growthTime = 120
+latinName = "spruce dickinson"
+description = """\
+<style="fluff">Spake the brother, Väinämöinen:
+"I can tell thee greater wonders,
+Listen to my wondrous story:
+I have seen the fir-tree blossom,
+Seen its flowers with emerald branches,
+On the Osmo-fields and woodlands;
+In its top, there shines the moonlight,
+And the Bear lives in its branches."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem X</style>
+
+A spruce tree. \
+Spruces <link="florapreferences"><style="link">prefer</style></link> <link="shade"><style="link">shade</style></link> and <link="sandsoil"><style="link">sandy soils</style></link>.
+
+Produces: <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[youngpine]
+display_name = "Young Pine Tree"
+keyword = ["tree", "pine", "blocksMovement", "perennial", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3","burnedsnag"]
+grows = "pinetree"
+leaves = "smallstump"
+growthTime = 360
+description = """\
+<style="fluff">Loudly does the pine-tree answer:
+"All the ships that have been fashioned
+From my body are unworthy;
+I am full of imperfections,
+Cannot give thee needed timber
+Wherewithal to build thy vessel;
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XVI</style>
+
+A young pine tree.
+
+Produces: <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[pinetree]
+display_name = "Pine Tree"
+keyword = ["tree", "pine", "blocksMovement", "perennial", "bigShade", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 20
+fireResist = 3
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+grows = "oldpine"
+growthTime = 720
+latinName = "pinus sylvestris"
+description = """\
+<style="fluff">Should thy bloody teeth feel hunger,
+Throw thy malice to the mountains,
+And thy hunger to the pine-trees.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+
+The mighty pine tree.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+[oldpine]
+display_name = "Old Pine Tree"
+keyword = ["tree", "pine", "blocksMovement", "resistFire", "perennial", "bigShade", "spirit"]
+produces = ["woodlogx3", "branchx6"]
+condition = 30
+fireResist = 4
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 720
+description = """\
+<style="fluff">Grew a fir-tree on the mountain,
+Grew a stately pine in Northland,
+And the fir had silver branches,
+Bearing golden cones abundant.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLVI</style>
+
+An ancient pine tree. Its thick bark is especially resistant to fire.
+
+Produces: 3x <link="woodlog"><style="link">Wood Log</style></link>, 6x <link="branch"><style="link">branch</style></link>\
+"""
+
+[youngbirch]
+display_name = "Young Birch Tree"
+keyword = ["tree", "birch", "prefersClay", "needsLight", "blocksMovement", "deciduous", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3"]
+grows = "birchtree"
+leaves = "smallstump"
+growthTime = 84
+description = """<style="fluff">\
+Well do I the day remember
+Where thou didst the eagle service,
+When thou didst the birds a favor.
+Thou didst leave the birch-tree standing,
+When were cleared the Osmo-forests,
+From the lands of Kalevala.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VII</style>
+
+Birches <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link> and need <link="shade"><style="link">light</style></link>.
+
+Produces: <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[birchtree]
+display_name = "Birch Tree"
+keyword = ["tree", "birch", "blocksMovement", "prefersClay", "prefersLight", "deciduous", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 20
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 240
+latinName = "betula pendula"
+description = """<style=fluff>\
+"Wherefore, ancient Väinämöinen,
+Hast thou left the slender birch-tree,
+Left the birch-tree only standing?"
+Väinämöinen thus made answer:
+"Therefore is the birch left standing,
+That the birds may nest within it,
+That the eagle there may rest him,
+There may sing the sacred cuckoo."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+A noble birch tree. \
+Birches <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link> and need <link="shade"><style="link">light</style></link>.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+# 2.2 Other trees
+
+[alder]
+display_name = "Grey Alder"
+keyword = ["tree", "alder", "prefersLight", "deciduous", "blocksMovement", "spirit", "bigShade"]
+produces = ["woodlogx2", "branchx4"]
+condition = 5
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "alderstump"
+growthTime = 120
+latinName = "Alnus incana"
+description = """\
+<style="fluff">In one hand a branch of willow,
+In the other, club of alder.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIII</style>
+
+A grey alder tree.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+[forestapple]
+display_name = "Crabapple Tree"
+keyword = ["tree", "crabapple", "deciduous", "prefersLight", "spirit"]
+produces = ["woodlog", "branchx2", "apples"]
+growthTime = 120
+condition = 10
+fireResist = 1
+burned = "ashes"
+leaves = "smallstump"
+fruitTimeStart = 0
+fruitTimeDuration = 3
+fruit = "apples"
+latinName = "Malus sylvestris"
+description = """\
+<style="fluff">"Be thou praised, O mighty Ukko,
+As thou givest me great Otso,
+Givest me the Forest-apple,
+Thanks be paid to thee unending."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLVI</style>
+
+The crabapple tree is commonly found in <link="shade"><style="link">well-lit</style></link> places.
+
+Produces: <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>, <link="apples"><style="link">Apples</style></link>\
+"""
+
+[juniper]
+display_name = "Juniper"
+keyword = ["tree", "juniper", "blocksMovement", "prefersLight", "perennial", "spirit"]
+produces = ["branchx3"]
+condition = 10
+fireResist = 2
+burned = "ashes"
+leaves = "smallstump"
+growthTime = 120
+latinName = "juniperus communis"
+description = """\
+<style="fluff">Go, O wheat, to yonder thickets,
+To the trees of purple berries,
+To the junipers and alders,
+Safely lead the herdsman homeward
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIII</style>
+
+A juniper tree. \
+Junipers <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.
+
+Produces: 3x <link="branch"><style="link">branch</style></link>\
+"""
+
+[linden]
+display_name = "Linden Tree"
+keyword = ["tree", "linden", "blocksMovement", "prefersClay", "deciduous", "spirit", "bigShade"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 10
+fireResist = 2
+burned = ["ashesx4"]
+leaves = "lindenstump"
+growthTime = 240
+latinName = "tilia cordata"
+description = """\
+<style="fluff">Thou hast stormed the forts of Louhi,
+Stormed the mighty walls opposing,
+On thy journey to Pohjola,
+To the village of the father.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXV</style>
+
+A linden tree. \
+The linden tree <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+[maple]
+display_name = "Maple Tree"
+keyword = ["tree", "maple", "blocksMovement", "prefersClay", "deciduous", "bigShade", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 15
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 120
+latinName = "acer platanoides"
+description = """\
+<style="fluff">Groves arose in varied beauty,
+Beautifully grew the forests.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+A maple tree. \
+Maples <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 4x <link="branch"><style="link">branch</style></link>\
+"""
+
+[rowan]
+display_name = "Rowan"
+keyword = ["tree", "rowan", "holy", "blocksMovement", "needsLight", "deciduous", "spirit"]
+produces = ["woodlog", "branchx2"]
+condition = 10
+fireResist = 2
+burned = "ashes"
+leaves = "smallstump"
+growthTime = 240
+latinName = "sorbus aucuparia"
+#underworld_transforms_to = "rowan_underworld"
+description = """\
+<style="fluff">Tend thou well the sacred sorb-tree,
+Guard the mountain-ashes planted
+In the court-yard, widely branching;
+Beautiful the mountain-ashes,
+Beautiful their leaves and flowers,
+Still more beautiful the berries.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIII</style>
+
+A holy rowan tree. \
+Rowans <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.
+
+Produces: <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+[yew]
+display_name = "Yew Tree"
+keyword = ["yew", "poison", "prefersClay", "deciduous", "spirit"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 2
+burned = ["ashes", "ashes"]
+growthTime = 120
+latinName = "taxus baccata"
+description = """\
+<style="fluff">"Hear the echoes from the woodlands,
+Hear the bugle from the forest,
+Hear the flute-notes of the songsters,
+Hear the pipes of forest-maidens!"
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLVI</style>
+
+A yew tree. \
+Yews <link="florapreferences"><style="link">prefer</style></link> <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>\
+"""
+
+# 2.3 Snags
+
+[snag]
+display_name = "Snag"
+keyword = ["tree", "snag", "deadtree", "blocksMovement"]
+produces = ["woodlog", "woodlog", "branch", "branch"]
+condition = 15
+fireResist = 1
+burned = ["ashesx5","burnedstump"]
+leaves = "stump"
+latinName = "arbor mortua"
+description = """A dead tree.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>, 2x <link="branch"><style="link">branch</style></link>"""
+
+[burnedsnag]
+display_name = "Burned Tree"
+keyword = ["tree", "snag", "deadtree", "blocksMovement"]
+produces = ["woodlog", "woodlog"]
+condition = 15
+fireResist = 9
+decays = "snag"
+leaves = "burnedstump"
+description = """The scorched remains of a tree.
+
+Produces: 2x <link="woodlog"><style="link">Wood Log</style></link>"""
+
+# 2.4 Stumps
+
+[stump]
+display_name = "Tree Stump"
+keyword = "stump"
+condition = 50
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = """\
+<style="fluff">Singing charms and incantations,
+Singing one day, then a second,
+All the third day chanting legends.
+On the rocks the runners rattled,
+Hung the sledge upon a birch-stump,
+Broke it into many pieces.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXV</style>
+
+A tree stump. Although the tree is gone, the extensive root system remains. This is why removing a stump is no small job!
+
+Produces: <link="firewood"><style="link">Firewood</style></link>"""
+
+[smallstump]
+display_name = "Small Tree Stump"
+keyword = "stump"
+condition = 30
+fireResist = 2
+burned = "ashes"
+decays = "rottenstump"
+decayTime = 36
+produces = "plantgarbage"
+latinName = "truncus parvus"
+description = """<style="fluff">\
+Metamorphose all my cattle,
+Through the mighty force of magic,
+Into stumps and stones convert them,
+If the enemy should wander,
+Near my herd in days of summer.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+ 
+ A small tree stump."""
+
+[sprucestump]
+display_name = "Spruce Tree Stump"
+keyword = "stump"
+condition = 50
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = """A spruce tree stump.
+
+Produces: <link="firewood"><style="link">Firewood</style></link>"""
+
+[lindenstump]
+display_name = "Linden Stump"
+keyword = "stump"
+condition = 30
+fireResist = 2
+burned = "ashes"
+decays = "rottenstump"
+produces = "plantgarbage"
+decayTime = 36
+latinName = "truncus parvus"
+description = "A linden stump."
+
+[alderstump]
+display_name = "Grey Alder Stump"
+keyword = ["stump", "regrows"]
+condition = 30
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = """A grey alder stump.
+
+Produces: <link="firewood"><style="link">Firewood</style></link>"""
+
+[burnedstump]
+display_name = "Burned Stump"
+keyword = "stump"
+condition = 30
+decays = "rottenstump"
+decayTime = 60
+description = "A burned tree stump."
+
+[flattenedstump]
+display_name = "Flattened Stump"
+keyword = ["stump", "clearedStump"]
+condition = 20
+decays = "plantgarbage"
+produces = "plantgarbage"
+fireResist = 2
+burned = "ashes"
+decayTime = 60
+description = "A flattened tree stump."
+
+[rottenstump]
+display_name = "Rotten Stump"
+keyword = "stump"
+decays = "plantgarbage"
+produces = "plantgarbage"
+fireResist = 3
+burned = "ashes"
+decayTime = 60
+condition = 10
+description = "A rotten tree stump."
+
+# 3.0 Bushes
+
+# 3.1 Spawning bushes
+
+[blackcurrant]
+display_name = "Blackcurrant"
+keyword = ["bush", "deciduous", "spawn", "prefersLight", "prefersClay"]
+produces = ["blackcurrants", "hay"]
+condition = 10
+fireResist = 1
+burned ="ashes"
+fruitTimeStart = 10
+fruitTimeDuration = 3
+fruit = "blackcurrants"
+latinName = "Ribes nigrum"
+description = """\
+<style="fluff">"All ye junipers and willows,
+All ye shrubs with berries laden,
+Waving grass and fields of barley,
+Arms of elms, and oaks, and alders,
+Fare ye well, dear scenes of childhood,
+Happiness of days departed!"
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIV</style>
+
+A blackcurrant bush.\ 
+Blackcurrants <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link> and <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: <link="blackcurrants"><style="link">Blackcurrants</style></link>\
+"""
+
+[blackthorn]
+display_name = "Blackthorn"
+keyword = ["bush", "spiky", "deciduous" , "spawn", "needsLight"]
+produces = ["branch", "branch", "hayx2"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "prunus spinosa"
+description = """<style="fluff">\
+Till at last the good black trees came into view, with their demoniac shapes in the night, and the grass was cold and wet, and the night-mist floated over it. And a great white owl came by, going up and down in the dark. And at all these things the little Wild Thing rejoiced elvishly.
+
+- Lord Dunsany, the Kith of the Elf Folk (1908)</style>
+
+The blackthorn is a large, thorny shrub.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>"""
+
+[bogmyrtle]
+display_name = "Bog Myrtle"
+keyword = ["bush", "impedesMovement", "deciduous", "bog", "shore", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "myrica gale"
+description = """<style="fluff">\
+I was glad, too, to see the old bog again and all the lovely things that grew there—the scarlet mosses and the green mosses and the firm and friendly heather, and the deep silent water.
+
+ - Lord Dunsany, In the Twilight (1908)</style>
+
+The bog myrtle is often found on the edge of the water, or in swampy terrain."""
+
+[butterbur]
+display_name = "Butterbur"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "shore", "spawn", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "petasites hybridus"
+description = "Known as the plague-root in Finnish, the butterbur has been used to treat seizures and aches, and in poultices."
+
+[eaglefern]
+display_name = "Eagle-wing Fern"
+keyword = ["bush", "prefersClay", "perennial", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "matteuccia struthiopteris"
+description = """\
+<style="fluff">Comes a bird from far Pohjola,
+From the occident, an eagle,
+Is not classed among the largest,
+Nor belongs he to the smallest;
+One wing touches on the waters,
+While the other sweeps the heavens.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VII</style>
+
+The eagle-wing is a hardy fern that's most at home on <link="claysoil"><style="link">clay soils</style></link>.\
+"""
+
+[elfbane]
+display_name = "Elfbane"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "shore", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "valeriana officinalis"
+description = "The flower <i>Valeriana Officinalis</i> has been used to treat insomnia, and is reputed to be especially noxious to elves."
+
+[fireweed]
+display_name = "Fireweed"
+keyword = ["bush", "needsLight", "perennial", "spawn", "waste"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "chamaenerion angustifolium"
+description = """The fireweed grows on open, <link="shade"><style="link">well-lit</style></link> spaces."""
+
+[goatpipe]
+display_name = "Goutweed"
+keyword = ["bush", "needsLight", "perennial", "spawn", "waste"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "aegopodium podagraria"
+description = """<style="fluff">\
+Eat the red roots of the bear-tree,
+Metsola's rich cakes of honey,
+Not the grass my herd would feed on.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+
+Goutweed is a pretty ornamental plant or a nuisance weed, entirely depending on whether you want it to grow there or not!"""
+
+[goblinwort]
+display_name = "Goblinwort"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "prefersSand", "spawn", "waste", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "hypericum perforatum"
+description = "A medicinal herb, the goblinwort is used to treat depression and insomnia."
+
+[hawthorn]
+display_name = "Hawthorn"
+keyword = ["bush", "impedesMovement", "spiky", "deciduous", "spawn", "generates_forest_cover", "needsLight"]
+produces = ["branch", "branch", "hayx2"]
+growthTime = 12
+condition = 10
+fireResist = 2
+burned = "ashes"
+latinName = "crataegus rhipidophylla"
+description = """<style="fluff">\
+All thy trees have thorns to wound me,
+All thy branches, spines to pierce me,
+Even birches give me trouble,
+And the alders bring discomfort.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VII</style>
+
+The hawthorn was traditionally used as a hedge plant in Finland.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>"""
+
+[hazel]
+display_name = "Hazel"
+keyword = ["bush", "impedesMovement", "prefersClay", "prefersLight", "deciduous", "spawn", "generates_forest_cover"]
+produces = ["branch", "branch", "hazelnuts", "hayx2"]
+growthTime = 12
+condition = 10
+fireResist = 2
+burned = "ashes"
+fruitTimeStart = 1
+fruitTimeDuration = 3
+fruit = "hazelnuts"
+latinName = "corylus avellana"
+description = """\
+<style="fluff">Hastens on through fen and forest,
+Over meads and over marshes,
+Through the ever-rising woodlands,
+Journeys one week through the brambles,
+And a second through the hazels.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XVI</style>
+
+Hazels prefer to grow on <link="claysoil"><style="link">clay</style></link>.
+
+Produces: 2x <link="branch"><style="link">branch</style></link>, <link="hazelnuts"><style="link">hazelnuts</style></link>\ 
+"""
+
+[heather]
+display_name = "Heather"
+keyword = ["bush", "prefersSand", "prefersLight", "perennial", "spawn"]
+condition = 5
+fireResist = 0
+burned = "ashes"
+latinName = "calluna vulgaris"
+description = """\
+<style="fluff">And the blacksmith stopped and listened,
+Hastened to the door and window,
+Hastened to the open court-yard,
+If perchance he might discover
+What was playing on the heather,
+What was sounding through the forest.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIV</style>
+
+Heather grows on <link="shade"><style="link">well-lit</style></link> <link="sandsoil"><style="link">sandy soils</style></link>.\
+"""
+
+[henbane]
+display_name = "Henbane"
+keyword = ["bush", "poison", "needsLight", "civilized", "spawn", "biennial", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "hyoscyamus niger"
+growthTime = 3
+description = """\
+The henbane is a poisonous nightshade, known in Finnish as the mad-cabbage. \
+It is believed to have been used as a medicinal plant and a hallucinogen.\
+"""
+
+[karelianrose]
+display_name = "Karelian Rose"
+keyword = ["bush", "spawn", "deciduous", "spiky"]
+produces = "hay"
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "Rosa acicularis"
+description = """\
+<style="fluff">In the ancient times a mother
+Hatched and raised some swans and chickens,
+Placed the chickens in the brushwood,
+Placed her swans upon the river;
+Came an eagle, hawk, and falcon,
+Scattered all her swans and chickens,
+One was carried to Karjala,
+And a second into Eesti,
+Left a third at home in Pohja.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXI</style>
+
+The Karelian rose is a thorny shrub."""
+
+[meadowsweet]
+display_name = "Rose Meadowsweet"
+keyword = ["bush", "spawn", "deciduous", "prefersSand", "prefersLight"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Spiraea densiflora"
+description = """<style="fluff">\
+Kullervoinen, with his watch-dog,
+Hastens onward through the forest,
+Journeys on through fields and fallows;
+Journeys but a little distance,
+Till be comes upon the summit
+Where he met his long-lost sister;
+Finds the turf itself is weeping,
+Finds the glen-wood filled with sorrow,
+Finds the heather shedding tear-drops,
+Weeping are the meadow-flowers,
+O'er the ruin of his sister.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXVI</style>
+
+The rose meadowsweet is a hardy shrub."""
+
+[mullein]
+display_name = "Dark Mullein"
+keyword = ["bush", "civilized", "spawn", "biennial", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "verbascum nigrum"
+growthTime = 3
+description = "Known as the dark fire-flower in Finnish, the dark mullein is a herbaceous plant that spread to what is now Finland in ancient times."
+
+[nettle]
+display_name = "Stinging Nettles"
+keyword = ["bush", "nettle", "spiky", "perennial", "civilized", "spawn", "meadow", "ruin"]
+condition = 15
+fireResist = 1
+burned = "ashes"
+produces = ["nettleleaves", "nettleseedbagx2"]
+latinName = "urtica dioica"
+description = """A clump of stinging nettles. Look out!
+
+The nettle is a very useful plant. Its stems can be made into fiber and used to make cloth and ropes, and nettle leaves are edible and contain high amounts of <link="protein"><style="link">protein</style></link>."""
+
+[raspberry]
+display_name = "Raspberry Bush"
+keyword = ["bush", "spiky", "needsLight","perennial", "spawn", "ruin"]
+produces = ["raspberries", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+fruitTimeStart = 10
+fruitTimeDuration = 3
+fruit = "raspberries"
+latinName = "rubus idaeus"
+description = """\
+<style="fluff">Went for berries to the woodlands,
+To the mountains went my daughter.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIV</style>
+
+A hardy plant that thrives in well-lit places, the raspberry is often one of the first plants to colonize new clearings in the forest.
+
+Produces: <link="raspberries"><style="link">raspberries</style></link>\
+"""
+
+[reed]
+display_name = "Reeds"
+keyword = ["bush", "aquatic", "spawn", "impedesMovement", "perennial", "meadow", "bottom", "shallow"]
+produces = "hay"
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "phragmites australis"
+description = """\
+<style="fluff">Little fish with eyes of scarlet,
+Leaning on the reeds and rushes,
+With their heads above the surface;
+Came to bear the harp of joyance,
+Hear the songs of the enchanter.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLI</style>
+
+ Various kinds of reeds grow in shallow waters.\
+"""
+
+[sandthorn]
+display_name = "Sandthorn"
+keyword = ["bush", "spiky", "deciduous", "spawn", "needsLight", "prefersSand", "generates_forest_cover"]
+produces = ["branch", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "hippophae rhamnoides"
+description = """<style="fluff">\
+Still Kullervo journeyed onward,
+Through the fens he went rejoicing,
+Sounding war upon his bugle.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXVI</style>
+
+Sandthorns are deciduous shrubs that <link="florapreferences"><style="link">like</style></link> to grow in <link="shade"><style="link">light</style></link>, <link="sandsoil"><style="link">sandy</style></link> areas.
+
+Produces: <link="branch"><style="link">branch</style></link>\
+"""
+
+[tallgrass]
+display_name = "Tall Grass"
+keyword = ["bush", "needsLight", "annual", "spawn", "meadow"]
+condition = 10
+fireResist = 0
+burned = "ashes"
+produces = ["hay"]
+latinName = "familia poaceae"
+growthTime = 1
+description = """\
+<style="fluff">For my herds give food and shelter,
+Feed them all on honeyed pastures,
+Give them drink at honeyed fountains
+Feed them on thy golden grasses.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+
+Tall grass grows in <link="shade"><style="link">well-lit</style></link> open spaces, especially in meadows close to the water. \
+It can be harvested for <link="hay"><style="link">hay</style></link>.\
+"""
+
+[waterchestnutplant]
+display_name = "Water Chestnut Plant"
+keyword = ["bush", "aquatic", "spawn", "annual", "surface"]
+condition = 10
+produces = "waterchestnut"
+fireResist = 1
+burned = "ashes"
+latinName = "trapa natans"
+growthTime = 3
+description = """The water chestnut is no longer found in Finland, but used to grow as far north as Ostrobothnia. \
+Some archaeologists think it may have been the first plant to ever be deliberately farmed here.
+
+Produces: <link="waterchestnut"><style="link">water chestnuts</style></link>\
+"""
+
+[waterlily]
+display_name = "Water Lily"
+keyword = ["bush", "aquatic", "perennial", "spawn", "surface"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "nymphaea alba ssp. alba"
+description = """\
+<style="fluff">Ahto, king of all the waters,
+Ancient king with beard of sea-grass,
+Raised his head above the billows,
+In a boat of water-lilies.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLI</style>
+
+The water-lily is a perennial plant with its roots in the ground under water.\
+"""
+
+[wildbullbean]
+display_name = "Wild Bullbean"
+keyword = ["annual", "spawn", "ruin"]
+produces = ["bullbeans"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """A wild bull-bean plant.
+
+Produces: <link="bullbeans"><style="link">bull-beans</style></link>"""
+
+[wildturnip]
+display_name = "Wild Turnip"
+keyword = ["biennial", "spawn", "ruin"]
+produces = ["turnipseedbagx5", "turnip"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """A wild turnip plant.
+
+Produces: <link="turnip"><style="link">turnip</style></link>, 5x <link="turnipseedbag"><style="link">turnip seeds</style></link>"""
+
+[willow]
+display_name = "Willow"
+keyword = ["bush", "shore", "impedesMovement", "perennial", "spawn", "flood_tolerant"]
+produces = ["willowbranches", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "salix"
+description = """\
+<style="fluff">Iron from the rust was fashioned;
+Copper from the rocks created;
+Marshes are of lands the oldest;
+First of all the trees, the willow.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem III</style>
+
+The tough but pliable branches of the willow are used in many crafts. Willows can tolerate being immersed in floodwaters.
+
+Produces: <link="willowbranches"><style="link">Willow Branches</style></link>\
+"""
+
+#[wolfsbane]
+#display_name = "Wolfsbane"
+#keyword = ["bush", "perennial", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "aconitum"
+#description = "Some poisonous wolfsbane flowers."
+
+#[woodbluegrass]
+#display_name = "Wood Bluegrass"
+#keyword = ["bush", "perennial", "prefersDark", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "poa nemoralis"
+#description = "A patch of bluegrass."
+
+#[lilyofthevalley]
+#display_name = "Lily of the Valley"
+#keyword = ["bush", "perennial", "prefersDark", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "convallaria majalis"
+#description = "A patch of lily flowers."
+
+# 3.2 Non-spawning bushes
+
+[wildflax]
+display_name = "Wild Flax"
+keyword = ["annual", "ruin", "spawn"]
+produces = ["flaxseedbagx5"]
+condition = 5
+fireResist = 1
+description = """\
+<style="fluff">Soon they found a fertile island,
+Found the fallow soil befitting,
+On the border of the heather,
+And between two stately oak-trees.
+They prepared the soil for sowing.
+Searching everywhere for flax-seed,
+Found it in Tuoni's kingdom,
+In the keeping of an insect.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLVIII</style>
+
+A wild strain of flax.
+
+Produces: 5x <link="flaxseedbag"><style="link">flax seed</style></link>
+
+<style="fluff">Flax is not native to the area of Finland, and was imported in the 16th century. \
+Any flax plants growing in nature must be descendants of ones imported and deliberately planted by someone.</style>"""
+
+[wildrye]
+display_name = "Wild Rye"
+keyword = ["annual", "ruin", "spawn"]
+produces = ["ryeseedbagx5"]
+condition = 5
+fireResist = 1
+description = """A wild rye plant.
+
+Produces: 5x <link="ryeseedbag"><style="link">rye seeds</style></link>"""
+
+# 4.0 Undergrowth
+
+[moss]
+display_name = "Moss"
+keyword = ["cosmetic", "needsDark", "perennial"]
+condition = 10
+fireResist = 1
+growthTime = 6
+description = """\
+<style="fluff">Sink upon the turf in slumber,
+Bury both thine ears in clover,
+Crouch within some alder-thicket
+Climb between the mossy ledges.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+ 
+ Some moss growing on the forest floor.\
+"""
+
+[bogmoss]
+display_name = "Bog Moss"
+keyword = ["bog", "cosmetic", "perennial"]
+condition = 10
+fireResist = 3
+growthTime = 6
+description = """
+<style="fluff">The sons of Kalev were now making the best of their way home, sometimes along well-trodden paths or across the plains, sometimes wading through deep sand or mossy bogs, and then through forests of pine, oak, birch, and alder.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto III: The Fate of Linda</style>
+
+Bog moss thrives in waterlogged conditions."""
+
+[flowers]
+display_name = "Flowers"
+keyword = ["cosmetic", "needsLight", "annual", "meadow"]
+condition = 5
+fireResist = 0
+growthTime = 1
+description = """\
+<style="fluff">Often roamed my mind in childhood,
+When a maiden free and merry,
+Happily through fen and fallow,
+Gamboled on the meads with lambkins,
+Lingered with the ferns and flowers,
+Knowing neither pain nor trouble.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem IV</style>\
+
+ Flowers like to grow in <link="shade"><style="link">well-lit</style></link> places.\
+"""
+
+[fly_amanita]
+display_name = "Fly Amanita"
+keyword = ["cosmetic", "needsDark", "annual", "civilized"]
+condition = 5
+fireResist = 2
+growthTime = 1
+latinName = "amanita muscaria"
+description = """
+Fly amanitas are poisonous mushrooms that prefer to grow in the <link="shade"><style="link">dark</style></link>.\
+"""
+
+[mushrooms]
+display_name = "Mushrooms"
+keyword = ["cosmetic", "needsDark", "annual", "civilized"]
+produces = ["mushroom"]
+condition = 5
+fireResist = 2
+growthTime = 1
+description = """
+<style="fluff">\
+Should thy hunger still impel thee,
+Go thou to the berry-mountain,
+Eat the fungus of the forest.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXII</style>
+
+Mushrooms grow in the <link="shade"><style="link">dark</style></link>.
+
+Produces: <link="mushroom"><style="link">mushrooms</style></link>\
+"""
+
+[slimemold]
+display_name = "Slime Mold"
+keyword = ["cosmetic", "needsDark", "perennial", "civilized", "underworld"]
+condition = 10
+fireResist = 2
+latinName = "fuligo septica"
+description = """\
+The slime mold <i>fuligo septica</i> is easily recognized by its bright yellow color. \
+Formerly believed to be a kind of mushroom or sponge, the slime mold is an amoeba-like creature.
+
+<style="fluff">Finnish people used to believe that the slime mold was butter, vomited out by a familiar spirit \
+that had been enchanted to steal it from a neighbor. As the ancestors of the Finns transitioned to a farming society, \
+the nature of magic changed as they began to believe that there was only a finite amount of luck in the world. \
+This meant that magic that harmed others would indirectly benefit yourself, as it meant your neighbor now had less luck, \
+and therefore there was more for you.</style>\
+"""
+
+# 4.1 Location-specific undergrowth
+
+#[goldmoss]
+#display_name = "Goldmoss"
+#keyword = ["cosmetic", "prefersLight", "perennial", "chalk"]
+#fireResist = 0
+#condition = 5
+#growthTime = 1
+#latinName = "sedum acre"
+#description = """An evergreen perennial that grows on chalky rocks."""
+
+#[herbRoberts]
+#display_name = "Stinking Cranebill"
+#keyword = ["cosmetic", "herb", "biennial", "prefersLight", "stinks", "chalk"]
+#fireResist = 0
+#condition = 5
+#growthTime = 3
+#latinName = "geranium robertianum"
+#description = """The stinking cranebill is a flower with a decidedly unpleasant smell,\
+# that has been used as a pesticide and to staunch bleeding. \
+# It grows on well-lit chalky rocks."""
+
+#[jewellichen]
+#display_name = "Jewel Lichen"
+#keyword = ["cosmetic", "perennial", "chalk"]
+#fireResist = 1
+#condition = 10
+#growthTime = 3
+#latinName = "caloplaca saxicola"
+#description = """<style="fluff">\
+#Now the wise and ancient minstrel
+#Gathers lichens from the sandstone,
+#Picks them from the trunks of birches,
+#Gathers moss within the marshes.
+#
+# - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VIII</style>
+#
+#The jewel lichen grows on chalk-bearing rocks."""
+
+#[redpoppy]
+#display_name = "Red Poppy"
+#keyword = ["cosmetic", "blood", "ruin", "annual"]
+#fireResist = 1
+#condition = 5
+#growthTime = 3
+#latinName = "papaver rhoeas"
+#description = """The poppy reputedly grows where blood has been shed."""
+
+# 5.0 Rocks
+
+[smallboulder]
+display_name = "Small Boulder"
+latinName = "lapis"
+keyword = ["boulder"]
+description = """\
+<style="fluff">
+Checkered stones of many colors,
+Gleaming in the silver sunlight,
+All the rocks stood well established.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem I</style>
+
+A small boulder the size of a large boulder.
+
+<style="fluff">Boulders are big chunks of rock, either scooped up or sheared from the bedrock by a glacier, and then deposited on the ground as the ice melted.</style>"""
+
+# 6.0 Crops
+
+[flaxshoot]
+display_name = "Flax Shoot"
+keyword = ["coldsensitive"]
+grows = "flaxplant"
+growthTime = 2
+condition = 5
+fireResist = 1
+description = """\
+<style="fluff">From an old-time tribe, her kindred;
+When of corn they sowed a measure,
+Each one's portion was a kernel;
+When they sowed a cask of flax-seed,
+Each received a thread of linen.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIV</style>
+
+A flax shoot, which will grow into a <link="flaxplant><style="link">flax plant</style></link>."""
+
+[flaxplant]
+display_name = "Flax Plant"
+keyword = "coldsensitive"
+grows = "matureflax"
+growthTime = 1
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Linum usitatissimum"
+description = """<style="fluff">And now the Sun himself appeared, a young man with fiery eyes; and he drove up with similar state to the Moon. But Salme declared that she liked him even less than the Moon, for he was much too fickle. Sometimes, during the finest summer weather, he would send rain in the midst of the hay-harvest; or if the time had come for sowing oats, he would parch the land with drought; or if the time for sowing is past, he dries up the barley in the ground, beats down the flax, and presses down the peas in the furrows; he won't let the buckwheat grow, or the lentils in their pods; and when the rye is white for harvest, he either glows fiercely and drives away the clouds, or sends a pouring rain.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto I: The Marriages of Salme and Linda</style>
+
+A growing flax plant. It will <link="matureflax"><style="link">mature</style></link> soon!"""
+
+[matureflax]
+display_name = "Mature Flax Plant"
+keyword = ["root", "harvestWhenDone"]
+fruit = "flaxstrands"
+grows = "ripeflax"
+produces = "flaxseedbagx5"
+growthTime = 2
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Linum usitatissimum"
+description = """\
+<style="fluff">Thus the flax was sowed at evening,
+Placed within the earth by moonlight;
+Quick it grew, and quickly ripened.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIV</style>
+
+A mature flax plant, ready for harvesting. If flax isn't harvested in time, it will become <link="ripeflax"><style="link">over-ripe</style></link>.
+
+Produces: <link="flaxstrands"><style="link">flax strands</style></link>, 5x <link="flaxseedbag"><style="link">flax seed</style></link>\
+"""
+
+[ripeflax]
+display_name = "Ripe Flax Plant"
+keyword = ["root", "harvestWhenDone"]
+fruit = "roughflaxstrands"
+condition = 5
+produces = "flaxseedbagx5"
+fireResist = 1
+burned = "ashes"
+description = """\
+<style="fluff">Head-gear brings but pain and sorrow,
+Linen breeds bad dispositions,
+Linen brings but deeps of anguish,
+And the flax untimely mourning.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXII</style>
+
+A mature flax plant, already past its best time for harvesting.
+
+Produces: <link="roughflaxstrands"><style="link">rough flax strands</style></link>, 5x <link="flaxseedbag"><style="link">flax seed</style></link>"""
+
+[nettleshoot]
+display_name = "Stinging Nettle Shoot"
+grows = "ripenettle"
+growthTime = 3
+condition = 5
+fireResist = 1
+description = """A stinging nettle sprout; grows into a <link="ripenettle"><style="link">stinging nettle plant</style></link>."""
+
+[ripenettle]
+display_name = "Stinging Nettle Plant"
+keyword = ["root", "harvestWhenDone"]
+fruit = "nettleplant"
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """Some stinging nettle plants, ready for harvesting.
+
+Produces: <link="nettleplant"><style="link">stinging nettle plant</style></link>"""
+
+[turnipsprout]
+display_name = "Turnip Sprout"
+keyword = ["coldSensitive"]
+grows = "turnipplant"
+growthTime = 5
+condition = 5
+fireResist = 1
+description = """\
+<style="fluff">And she laid some food in kettles,
+Only bones and beads of whiting,
+Turnip-stalks and withered cabbage,
+Crusts of bread and bits of biscuit.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVII</style>
+
+A turnip sprout. Grows into a <link=\"turnipplant\"><style=\"link\">turnip plant</style></link> in five months."""
+
+[turnipplant]
+display_name = "Turnip Patch"
+fruit = "turnip"
+grows = "turnipflower"
+growthTime = 11
+keyword = "root"
+condition = 5
+fireResist = 1
+latinName = "brassica rapa subsp. rapa"
+burned = "ashes"
+description = """\
+<style="fluff">Quick as lightning, Lemminkäinen,
+With his father's blade of battle,
+With a single blow of broadsword,
+With united skill and power,
+Lopped the head of Pohja's master;
+As one cleaves the stalks of turnips.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVII</style>
+
+A patch of turnip plants. \
+They can be harvested to produce <link=\"turnip\"><style="link">turnips</style></link>, \
+or left to grow into <link=\"turnipflower\"><style="link">turnip flowers</style></link>, \
+which produce <link=\"turnipseedbag\"><style="link">turnip seeds</style></link> next year.\
+<br><br>\
+You can adjust the portion of plants that are harvested and left to grow seeds in the <link=\"farmplot\"><style=\"link\">farm plot</style></link> menu.\
+<br><br>\
+The amount of turnips a farm plot produces depends on its <link=\"fertility\"><style=\"link\">fertility</style></link>."""
+
+[turnipflower]
+display_name = "Turnip Flower"
+keyword = ["root","harvestWhenDone"]
+produces = ["turnipseedbagx5"]
+fruit = "turnip"
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """<style="fluff">The second brother sat down in the birch-wood under a weeping birch-tree, and began to sing a song. As he sang, the buds unfolded and the flowers bloomed, the golden ears of corn swelled, and the apples reddened, the kernels formed in the nuts, the cherries ripened, red berries grew on the hills and blue berries in the marshes, while black berries grew at the edges of the swamps, yellow ones on the mossy hillocks, and the elder-trees were covered with rich purple grapes, while the woods re-echoed with the song, and its notes spread far over the heaths and meadows till the little water-nymphs shed tears of rapture.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto III: The Fate of Linda</style>
+
+A flowering turnip plant. When harvested, it will produce <link=\"turnipseedbag\"><style=\"link\">turnip seeds</style></link>.
+
+Produces: <link="turnip"><style="link">turnip</style></link>, 5x <link="turnipseedbag"><style="link">turnip seed</style></link>"""
+
+[ryeshoot]
+display_name = "Rye Sprout"
+keyword = ["coldSensitive"]
+grows = "ryeplant"
+growthTime = 1
+condition = 5
+fireResist = 1
+description = """\
+<style="fluff">All this game the youngest brother bound together and carried on his back; and on the way home they found the rye-fields full of hares, of which they likewise secured five dozen.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto III: The Fate of Linda</style>
+
+Some rye shoots. They will grow into <link="ryeplant"><style="link">rye plants</style></link> in a few months.\
+"""
+
+[ryeplant]
+display_name = "Rye Plants"
+grows = "mature_rye"
+growthTime = 4
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """<style="fluff">\
+From the germ the blade unfolding,
+Richly colored ears arising,
+From the rich soil of the fallow,
+From the work of Väinämöinen.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+Some maturing rye plants. When they <link="riperye"><style="link">ripen</style></link>, they will produce <link="ryeseedbag">rye seeds</style></link>.\
+"""
+
+[mature_rye]
+display_name = "Mature Rye Plants"
+grows = "riperye"
+growthTime = 3
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = """<style="fluff">\
+From the germ the blade unfolding,
+Richly colored ears arising,
+From the rich soil of the fallow,
+From the work of Väinämöinen.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem II</style>
+
+Some mature rye plants. When they <link="riperye"><style="link">ripen</style></link>, they will produce <link="ryeseedbag">rye seeds</style></link>.\
+"""
+
+[riperye]
+display_name = "Ripe Rye"
+keyword = ["grain","harvestWhenDone", "coldSensitive"]
+fruit = "ryestalk"
+condition = 5
+fireResist = 1
+burns = "ashes"
+description = """Rye ready for harvesting.
+
+Produces: <link="ryestalk"><style="link">rye stalk</style></link>"""
+
+# 7.0 Underworld flora
+
+# 7.1 Underworld bushes and undergrowth
+
+[bloodberry_bush]
+display_name = "Bloodberry Bush"
+keyword = ["bush", "deciduous", "prefersLight", "prefersClay", "underworld"]
+produces = "bloodberry"
+condition = 10
+fireResist = 1
+burned ="ashes"
+fruitTimeStart = 1
+fruitTimeDuration = 3
+fruit = "bloodberry"
+description = """\
+The bloodberry is an ancient goblin delicacy from the underworld, that has now spread to the middle world.
+
+Bloodberries only grow on <link="underworldtile"><style="link">underworld tiles</style></link>, and <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link> and <link="claysoil"><style="link">clay soils</style></link>.
+
+Produces: <link="bloodberry"><style="link">bloodberry</style></link>\
+"""
+
+[bloodberry_sprout]
+display_name = "Bloodberry Sprout"
+keyword = ["bush", "deciduous", "prefersLight", "prefersClay", "underworld", "spawn"]
+growthTime = 12
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "bloodberry_bush"
+description = """A bloodberry plant from the <link="underworldtile"><style="link">underworld</style></link> is sprouting here!"""
+
+[kalma]
+display_name = "Kalma"
+keyword = ["cosmetic", "prefersLight", "annual", "civilized", "underworld"]
+fireResist = 0
+condition = 2
+growthTime = 1
+description = """\
+<style="fluff">Hasten on a little distance,
+In the bear-path leading northward.
+To the grove of Tuonela,
+To the honey-plains of Kalma.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIII</style>
+
+The death-flower of Tuonela, the <i>kalma</i> is a flower from the goblins' native <link="underworldtile"><style="link">underworld</style></link>.\
+"""
+
+#  7.2 Underworld trees
+
+#[redhollow_sapling]
+#display_name = "Redhollow Sapling"
+#keyword = ["sapling", "redhollow", "underworld", "spawn", "deciduous"]
+#condition = 5
+#burned = "ashes"
+#growthTime = 120
+#grows = "young_redhollow"
+#description = "A redhollow tree from the underworld."
+#
+#[young_redhollow]
+#display_name = "Young Redhollow"
+#keyword = ["redhollow", "underworld", "deciduous"]
+#produces = ["woodlog", "branch", "branch"]
+#condition = 15
+#fireResist = 2
+#burned = ["ashesx3"]
+#grows = "redhollow_tree"
+#growthTime = 84
+#description = "A redhollow tree from the underworld."
+#
+#[redhollow_tree]
+#display_name = "Redhollow Tree"
+#keyword = ["tree", "birch", "blocksMovement", "prefersClay", "prefersLight", "deciduous", "spirit"]
+#produces = ["woodlog", "woodlog", "branchx4" ]
+#condition = 20
+#fireResist = 2
+#burned = ["ashesx6","burnedsnag"]
+#leaves = "stump"
+#growthTime = 240
+#description = "A redhollow tree from the underworld."
+#
+## 7.3 Underworld versions of plants
+#
+#[rowan_underworld]
+#display_name = "Rowan"
+#keyword = ["tree", "rowan", "holy", "blocksMovement", "deciduous", "spirit", "underworld"]
+#produces = "branch"
+#condition = 10
+#fireResist = 2
+#burned = "ashes"
+#leaves = "smallstump"
+#growthTime = 240
+#latinName = "sorbus aucuparia"
+#description = """\
+#<style="fluff">Tend thou well the sacred sorb-tree,
+#Guard the mountain-ashes planted
+#In the court-yard, widely branching;
+#Beautiful the mountain-ashes,
+#Beautiful their leaves and flowers,
+#Still more beautiful the berries.
+#
+# - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIII</style>
+#
+#A holy rowan tree under the influence of goblin <link="culturedef"><style="link">culture</style></link>. \
+#Rowans <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.\
+#"""

@@ -1,0 +1,16 @@
+﻿[turnip_ruins]
+items = ["turnipseedbagx25", "ironshovel:25%", "dwtrinketx3", "scrapironx2"]
+
+[metal_ruins]
+distance = "medium"
+items = ["dwtrinketx12", "flaxseedbagx25", "scrapironx4", "ironshovel:25%", "ironaxe:20%"]
+
+[lotsa_metal_ruins]
+distance = "medium"
+items = ["dwtrinketx18", "ironshovel:25%", "ryeseedbagx25", "ironaxe:20%", "ironbillhook", "scrapironx6"]
+
+[rye_ruins]
+items = ["ryeseedbagx50", "dwtrinketx9", "scrapironx2"]
+
+[flax_ruins]
+items = ["flaxseedbagx50", "dwtrinketx9", "scrapironx3"]

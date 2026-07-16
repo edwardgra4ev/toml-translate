@@ -1,0 +1,140 @@
+﻿# 1.0 Events
+#  1.1 Early game fixed events
+
+
+# 1.1 Early game fixed events
+
+[firstfallgoblins]
+type = "spawn"
+timing = "fixed"
+logtext = "Some more refugees from the underworld have joined your camp!"
+year = 2
+month = 1
+spawns = [
+    { creature = "goblin", amount = "2-4", location = "gateway" },
+]
+
+# 1.2 Annual events
+
+[spring_flood_event]
+type = "flood"
+timing = "annual"
+logtext = "A distant rumble of water is heard in the camp."
+probability = 0.95
+duration = 1
+month = 7
+
+[fallcranemigration]
+description = "Краны мигрируют на юг на зиму."
+type = "spawn"
+timing = "annual"
+start_year = 3
+probability = 0.8
+season = "fall"
+repeats = "no"
+spawns = [
+    { creature = "crane", status = "migratory", amount = "4-8", location = "north" },
+]
+
+[springcranemigration]
+description = "Краны возвращаются с войны с гномами на юге."
+type = "spawn"
+timing = "annual"
+start_year = 2
+probability = 0.8
+season = "spring"
+repeats = "no"
+spawns = [
+    { creature = "crane", status = ["migratory", "ravenous", "enemy"], amount = "3-5", location = "south" },
+]
+
+#[salmonrun]
+#description = "The salmon are migrating upriver to spawn!"
+#timing = "annual"
+#start_year = 1
+#probability = 0.95
+#month = 10
+
+
+# 1.3 Weather events
+
+#[drought]
+#type = "weather"
+#timing = "weather"
+#season = "summer, fall"
+#logtext = "The weather is unusually dry."
+#stockpile_spontaneous_ignition_chance_mod = +0.05
+#base_ignite_chance_mod = +0.1
+#probability = 0.2
+#duration = 2
+#description = "The weather is unusually dry, increasing the risk of fire."
+
+
+# 1.4 Camp events
+
+[quietcamp]
+description = "В этом месяце в лагере тихо."
+type = "nothing"
+timing = "random"
+
+#[springriver]
+#description = "Spring floods and detritus."
+#type = "spawn"
+#timing = "random"
+#start_year = 2
+#season = "spring"
+#spawns = [
+#    { item = "woodlog", amount = "0-5", location = "south" },
+#]
+
+# 2.0 External events
+
+# 2.1 Deep woods events
+
+[quietwoods]
+type = "nothing"
+timing = "random"
+description = "Глубокие леса тихие."
+
+[ravenevent]
+type = "spawn"
+timing = "random"
+description = "Полет воронов."
+spawns = [
+    { creature = "raven", amount = "2-5", location = "anyedge"}
+]
+
+# Disabled until reachability checks are implemented
+#[wanderinggoblin]
+#type = "spawn"
+#timing = "random"
+#description = "A wandering goblin has found your camp."
+#start_year = 3
+#logtext = "A wandering goblin arrives in your camp."
+#spawns = [
+#    {creature = "goblin", amount = "1", location = "anyedge", trait = ["wanderer"] }
+#]
+
+# 3.0 Sacrifice events
+
+[forestwrath00]
+displayName = "Wrath of the Forest-spirits"
+description = "Лесные духи злятся."
+keyword = "forestwrath"
+type = "wrath"
+# duration in months
+duration = 12
+logtext = "The forest-spirits are unhappy."
+stockpile_spontaneous_ignition_chance_mod = +0.1
+structure_ignite_chance_mod = +0.1
+fire_spirit_chance_mod = +0.1
+
+[waterwrath00]
+displayName = "Wrath of the Water-spirits"
+description = "Водяные духи злятся."
+keyword = "waterwrath"
+type = "wrath"
+duration = 12
+logtext = "The water-spirits are unhappy."
+fishing_failure_chance_mod = +0.1
+spear_fishing_tool_toughness = -10

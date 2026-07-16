@@ -1,0 +1,238 @@
+﻿# fishing
+
+[nowaterforfishing]
+body = "[mob1] could not find any water to fish in"
+
+[fishingtutorial2]
+body = """Now that you have a fisher-goblin's shack, your goblins can start fishing. However, they'll need fishing tools. To produce them, build a <link="fishingworkshop1"><style="link">fishing workshop</style></link>."""
+
+[fishingtutorial3]
+body = """Use the <link="stockmanager"><style="link">stock manager</style></link> to order <link="fishingspear"><style="link">fishing spears</style></link> and <link="rawfish"><style="link">fresh fish</style></link>, and your goblins will start fishing!"""
+
+# seasons
+
+[springmsg]
+body = "Spring has begun"
+
+[summermsg]
+body = "Summer has begun"
+
+[autumnmsg]
+body = "Autumn has begun"
+
+[wintermsg]
+body = "Winter has begun"
+
+# shamanism
+
+[shamanelected]
+body = "The camp has selected [mob1] as their shaman"
+
+# notifications
+
+[newtechmsg]
+body = """Your goblins have discovered [obj1]!"""
+
+[notenoughfoodproduction_notif_year1]
+title = "Food shortage"
+body = """It looks like your camp isn't producing enough food. Fishing is a good way to feed your goblins. \
+To get started, try building a <link="fishing1"><style="link">fisher-goblin's shack</style></link> near the river. \
+Look out for the <link="meadowdef"><style="link">spring flood</style></link> though!"""
+
+[notenoughfoodproduction_notif_general]
+title = "Food shortage"
+body = """It looks like your camp isn't producing enough food."""
+
+[combat_notif]
+title = "Combat"
+body = "[str1] is fighting enemies!"
+
+[death_notif]
+title = "Death"
+body = "[str1] has died!"
+
+[animalseatingcrops_notif]
+title = "Wild animals"
+body = "Wild animals are eating your crops!"
+
+[nearby_ruins]
+title = "Nearby ruins"
+body = """There are <link="ruinsdef"><style="link">ruins</style></link> nearby! Exploring ruins can grant interesting new items, but be careful of the <link="forestcover"><style="link">forest-cover</style></link>!"""
+
+[nofishtarget_notif]
+title = "No fisher-goblins"
+body = """No goblins are fishing. Use the <link="stockmanager"><style="link">stock manager</style></link> to \
+order <link="rawfish"><style="link">fresh fish</style></link>, and your goblins will start fishing!"""
+
+[notools_notif]
+title = "No tools"
+body = """A [obj1] is required for the job '[str1]'. Use the \
+<link="stockmanager"><style="link">stock manager</style></link> to order one."""
+
+[notools_multi_notif]
+title = "No tools"
+body = """A [obj1] or [obj2] is required for the job '[str1]'. Use the \
+<link="stockmanager"><style="link">stock manager</style></link> to order one."""
+
+[noworkshop_notif]
+title = "No workshops"
+body = """You need to build a [obj1] to produce [obj2]."""
+
+[goblinleft_notif]
+title = "Goblin left camp"
+body = """[str1] is starving and has left the camp."""
+
+[goblinlost_notif]
+title = """Goblins lost"""
+body = """Goblins are lost in the <link="forestcover"><style="link">forest-cover</style></link>"""
+
+[sacrifice_notif]
+title = "Sacrifices"
+body = """The time for sacrifices is nearing and you have not stored sufficient sacrifices in bonfires."""
+
+[toomanyjobs_notif]
+title = "Too many jobs!"
+body = """Your goblins have too many jobs to do! Give them a moment to finish what they're doing."""
+
+[enemies_nearby_notif]
+title = "Enemies nearby"
+body = """There are enemies near your camp."""
+
+[tools_low_notif]
+title = "Running low on tools"
+body = """You are running low on [obj1]s. They are an important tool to ensure your camp functions."""
+
+[center_blocked_notif]
+title = "Camp center blocked!"
+body = "The center of your camp is no longer accessible! Demolish any building blocking your gateway rock or sacrificial tree, otherwise goblins will not be able to perform jobs."
+
+# Log messages
+
+[newgoblinsmsg]
+body = "[str1] goblins arrive from the underworld!"
+
+[goblin_summon_failed]
+body = "Summoning failed, no goblins have arrived."
+
+[level_up_msg]
+body = "[str1] has become a [obj1]."
+
+[workshop_claim_msg]
+body = "[str1] has claimed a [obj1] for themselves."
+
+[structure_destroyed]
+body = "[obj1] has been destroyed!"
+
+[structure_destroyed_fire]
+body = "[obj1] has burned down!"
+
+[structure_destroyed_water]
+body = "[obj1] was swept away by water!"
+
+[nutrition_lost_msg]
+body = """[str1] <link="foodpoint"><style="link">food points</style></link> lost to decay."""
+
+[new_item_discovered]
+body = "[obj1] discovered!"
+
+[nosacrificesmsg]
+body = "No sacrifices were made this summer."
+
+[itemstobonfiresmsg]
+body = "Sacrificial items are being brought to the bonfires."
+
+[forest_sacrifice_success_msg]
+body = "A successful sacrifice was made to the Keepers of the Woods."
+
+[forest_sacrifice_partial_msg]
+body = "A mostly succesful sacrifice was made to the Keepers of the Woods."
+
+[forest_sacrifice_insufficient_msg]
+body = "An insufficient sacrifice was made to the Keepers of the Woods."
+
+[forest_sacrifice_none_msg]
+body = "No sacrifice was made to the Keepers of the Woods!"
+
+[water_sacrifice_success_msg]
+body = "A successful sacrifice was made to the Keepers of the Waters."
+
+[water_sacrifice_partial_msg]
+body = "A mostly succesful sacrifice was made to the Keepers of the Waters."
+
+[water_sacrifice_insufficient_msg]
+body = "An insufficient sacrifice was made to the Keepers of the Waters."
+
+[water_sacrifice_none_msg]
+body = "No sacrifice was made to the Keepers of the Waters!"
+
+[camp_tier_increased]
+body = "[str1] is now a [obj1]"
+
+# Sacrifice window
+
+[sacrifice_window_title]
+body = "Sacrifices"
+
+[sacrifice_window_description]
+body = """It is the custom of goblins to make sacrifices to the spirits every summer. \
+As they take from nature, they also give back to the spirits. If these sacrifices aren't made, the spirits will be angry!"""
+
+[sacrifice_window_calendar]
+body = "The bonfire is lit in Midsummer, all sacrificial items should have been stored in the bonfire before then."
+
+[sacrifice_window_bonfire_capacity]
+body = "Bonfire capacity used [str1]/[str2]"
+
+[sacrifice_window_total_culture]
+body = "Total culture points: [str1]"
+
+[sacrifice_window_no_tree]
+body = "Culture points will not contribute to Sacrificial Tree growth as no tree has been summoned."
+
+[sacrifice_window_tree]
+body = "Culture points to next Sacrificial Tree level: [str1]"
+
+[sacrifice_window_confirm]
+body = "Begin sacrifice"
+
+[sacrifice_window_no_sacrifices]
+body = "<color=red>You have not stored enough items to sacrifice</color>"
+
+[sacrifice_window_no_bonfires]
+body = """<color=red>No <link="bonfire"><style="clickableLink">bonfires</style></link> have been built</color>"""
+
+# Dig window
+
+[pick_button]
+body = "Pick"
+
+[pick_button_picking]
+body = "Stop picking"
+
+[pick_description]
+body = "Click on the map to copy ground height"
+
+# Middens
+
+[empty_midden]
+body = """The midden is empty. Order <style="clickableLink"><link="compost">compost</link></style> from the <link="stockmanager"><style="link">stock manager</style></link> to start production."""
+
+[midden_paused]
+body = """Decomposing stopped."""
+
+[midden_active]
+body = """<style="link"><link="garbage">Garbage</link></style> decomposing."""
+
+# Windmills
+
+[empty_windmill]
+body = """The windmill is empty. Order <style="clickableLink"><link="ryeflour">rye flour</link></style> from the <link="stockmanager"><style="clickableLink">stock manager</style></link> to start production."""
+
+[windmill_paused]
+body = """Milling stopped."""
+
+[windmill_active]
+body = """Windmill active."""
+
+[windmill_power_label]
+body = """Wind power at [str1]%"""

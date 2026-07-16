@@ -1,0 +1,2176 @@
+﻿# contents
+#
+# 1.0 Raw materials
+#  1.1 Wood raw materials
+#  1.2 Other plant raw materials
+#  1.3 Animal raw materials
+#  1.4 Other raw materials
+# 2.0 Products
+#  2.1 Wood products
+#  2.2 Textile products
+#  2.3 Other non-food farming products
+#  2.4 Metal products
+#  2.5 Leather products
+#  2.6 Sacrificial products
+#  2.7 Stone products
+# 3.0 Tools
+#  3.1 Stone tools
+#  3.2 Wooden tools
+#  3.3 Clay tools
+#  3.4 Dwarven tools
+#  3.5 Iron tools
+# 4.0 Weapons
+#  4.1 Stone and wooden mêlée weapons
+#  4.2 Wooden missile weapons
+#  4.3 Bone weapons
+#  4.4 Dwarven weapons
+#  4.5 Iron weapons
+# 5.0 Armor
+#  5.1 Wooden armor and shields
+#  5.2 Dwarven armor
+#  5.3 Leather armor
+#  5.4 Cloth armor
+#  5.4 Iron armor
+#  5.5 Iron armor
+# 6.0 Seeds
+# 7.0 Food
+#  7.1 Raw foods
+#  7.2 Intermediate food products
+#  7.3 Processed foods
+# 8.0 Waste
+#  8.1 Organic waste
+#  8.2 Inorganic waste
+# 9.0 Corpses
+# 10.0 Special items
+
+
+# 1.0 Raw materials
+
+# 1.1 Wood raw materials
+
+[branch]
+display_name = "филиал"
+keyword = ["prefersOutside", "wood", "defaultShown", "improvisedWeapon", "hammer"]
+weight = 0.5
+condition = 1
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 6
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> С тех пор, как пал могучий дуб,\nТеперь она потеряла сто ветвей,\nЧтобы Север увидел солнце,\nПосмотрите на нежный блеск лунного света.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nБольшая, прочная ветка дерева, полезная для <link=\"carpentryTech\"><style=\"link\">зданий</style></link>, инструментов и даже тушения пожаров.\n\n<style=\"характеристики\">\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtcrushing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">6</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+[rottenlog]
+display_name = "Гнилое дерево"
+keyword = ["workedOutside", "wood", "hideInStockManager", "noStore"]
+weight = 2.0
+condition = 2
+fireResist = 2
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 120
+description = "<style=\"fluff\"> Но все мои добродетели оставили меня.\nВ эти печальные дни зла,\nИсчез с юностью и энергией.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение V\n\n<link=\"woodlog\"><style=\"link\">wooden log</style></link>, который долгое время оставался снаружи. Его можно использовать для <link=\"firewood\"><style=\"link\">firewood</style></link>.\n\nЛоги тяжелые, поэтому гоблины должны будут <link=\"hauling\"><style=\"link\">haul</style></link> их туда, где они нужны.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 2.0 единиц\nУпадок в: <style=\"malus\">120</style> месяцев"
+
+[willowbranches]
+display_name = "Ветви Уиллоу"
+keyword = ["prefersOutside", "wood", "defaultShown", "coarse_bast"]
+weight = 0.5
+condition = 1
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> Старый и правдивый,\nПроплыть через все глубоководные воды,\nПлавающий, как ветвь осины,\nКак увядшая ветка ивы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VII\n\nКуча ивовых ветвей. Ветви ивы представляют собой своего рода грубый окунь, который может быть <link=\"retting\"><style=\"link\">made</style></link> into <link=\"coarsefiber\"><style=\"link\">coarse fiber</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+[woodchips]
+display_name ="Деревянные чипсы"
+keyword = ["wood", "noStore"]
+weight = 0.2
+condition = 2
+fireResist = 1
+fertility = 0.05
+unlockedBy = "fertilizerTech"
+decays = "nothing"
+decayTime = 6
+description = "Деревянные чипсы. Они могут быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.05</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев"
+
+[woodlog]
+display_name = "Деревянный"
+keyword = ["workedOutside", "wood", "defaultShown"]
+weight = 2.0
+condition = 3
+fireResist = 2
+burned = ["ashes", "ashes"]
+decays = "rottenlog"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> Теперь она задает деревьям вопрос:\nИ лес дает такой ответ:\n\"Мы уже достаточно заботимся,\nНе можешь думать о делах твоих;\nЖестокая судьба заставляет нас сражаться,\nЖалкие наши собственные несчастья!\nМы разбиты и разбиты на куски,\nРазрезанные блоки для героизма,\nМы сожжены до смерти как топливо.\nНикого не волнует, сколько мы страдаем».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XV\n\nДеревянный бревно. Логи можно использовать как <link=\"carpentryTech\"><style=\"link\">строительный материал</style></link>, или рубить на <link=\"woodplank\"><style=\"link\">planks</style></link>, <link=\"woodbeam\"><style=\"link\">beams</style></link>, или <link=\"firewood\">firewood</style></link>.\n\nЛоги тяжелые, поэтому гоблины должны будут <link=\"hauling\"><style=\"link\">haul</style></link> их туда, где они нужны.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 2.0 единиц\nУпадок в: <style=\"malus\">60</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">120</style> месяцев"
+
+# 1.2 Other plant raw materials
+
+[flaxstrands]
+display_name = "Льняные нити"
+keyword = ["flax", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 120
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = "Некоторые выкорчеваны <link=\"flaxdef\"><style=\"link\">flax</style></link> растения. Льняные нити - это своего рода тонкий окунь, который может быть <link=\"retting\"><style=\"link\">made</style></link> into <link=\"finefiber\"><style=\"link\">fine fiber</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+[hay]
+display_name = "Хэй"
+keyword = ["fodder", "loose", "prefersOutside", "garbage", "fertilizer_category"]
+weight = 0.5
+condition = 2
+fireResist = 0
+decayTime = 6
+fertility = 0.05
+stored_decay_multiplier = 0.5
+decays = "plantgarbage"
+description = "<style=\"fluff\"> Когда он будет готов,\nЗаставь тростник и траву зашевелиться,\nБросьте ароматные головы клевера,\nСделай свой сено в Калевале\nКогда светит серебряное солнце.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIV\n\nКакой-то вкусный сено!\n\nСено может быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.05</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: распадается в <style=\"malus\">12</style> месяцев"
+
+[nettleplant]
+display_name = "Растение крапивы"
+keyword = ["nettle", "prefersOutside"]
+equivalent_nutrition = 0.05
+maxCapacity = 120
+weight = 0.3
+condition = 2
+fireResist = 1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = "Некоторые из собранных растений крапивы.\n\nРастения крапивы должны быть обработаны в <link=\"nettleprocessing\"><style=\"link\">nettleyard</style></link>, чтобы получить <link=\"nettleseedbag\"><style=\"link\">nettle seeds</style></link>, съедобные <link=\"nettlebunch\"><style=\"link\">nettle leaves</style></link> и <link=\"nettlestems\"><style=\"link\">nettle stems</style></link>, которые могут быть сведены в волокно.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">12</style> месяцев"
+
+[nettlestems]
+display_name = "Хлопковые стебли"
+keyword = ["fine_bast", "prefersInside"]
+weight = 0.2
+condition = 2
+fireResist = 1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = "Некоторые стебли крапивы. Стебли крапивы — это своего рода тонкий окунь, который может быть <link=\"retting\"><style=\"link\">made</style></link> into <link=\"finefiber\"><style=\"link\">fine fiber</style></link>. Одна куча стеблей крапивы делает одну единицу волокна.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: распадается в <style=\"malus\">12</style> месяцев"
+
+[roughflaxstrands]
+display_name = "Грубые льняные нити"
+keyword = ["flax", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 10
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = "Некоторые выкорчеванные льняные растения.\n\nГрубые нити <link=\"flaxdef\"><style=\"link\">flax</style></link> являются своего рода грубым бастом, который может быть <link=\"retting\"><style=\"link\">made</style></link> into <link=\"coarsefiber\"><style=\"link\">coarse fiber</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+[ryestalk]
+display_name = "Рие Сталк"
+keyword = ["rye", "prefersOutside"]
+condition = 2
+fireResist = 1
+equivalent_nutrition = 0.05
+maxCapacity = 120 # Rye stalks aren't edible by themselves and must be threshed. To keep hauling times reasonable keep the maxCapacity here high.
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = "Стебли ржи, собранные с поля. Ржаные стебли могут быть <link=\"threshing\"><style=\"link\">threshed</style></link> для получения <link=\"ryeseedbag\"><style=\"link\">rye seeds</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+# 1.3 Animal raw materials
+
+[birdmeat]
+display_name = "Мясо птицы"
+keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.1
+decays = "rottenmeat"
+decayTime = 3
+stored_decay_multiplier = 0.5
+foodMoraleMod = +10
+description = "<style=\"fluff\"> Но я не такой, как кукушка,\nПение, веселье на вершинах холмов;\nЯ как безпесенная синяя утка,\nКогда она плавает в водах.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXII\n\nСъедобное мясо игровой птицы.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+10</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">3</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">6</style> месяцев"
+
+[bones]
+display_name = "Кости"
+keyword = ["bone", "prefersOutside"]
+fireResist = 3
+discovers = "butcheryTech"
+burned = "nothing"
+weight = 0.2
+decays = "nothing"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> Поднимает половину головы, переднюю руку,\nНайдет руку и половину задней кости,\nмного других меньших частей;\nИзвлекает сына из всех осколков,\nПовторяю ее Лемминкяйнен,\nПлоть к плоти с мастерством, которое она помещает,\nДает кости их правильные станции.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XV\n\nНесколько костей.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">60</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">120</style> месяцев"
+
+#[game_meat]
+#display_name = "Game Meat"
+#keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+#nutrition = 1
+#condition = 1
+#fireResist = 2
+#weight = 0.5
+#decays = "rottenmeat"
+#decayTime = 4
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +10
+#description = """\
+#<style="fluff">Has a mine of gold been opened,
+#Hast thou found a vein of silver,
+#Precious jewels in thy pathway?
+#Does the forest yield her treasures
+#Give to thee the Honey-eater?
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>
+#
+#The edible meat of a game animal caught by your hunters, game meat is a delicacy.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+10</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.5 units
+#Spoils in: <style="malus">4</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">8</style> months"""
+
+[rawfish]
+display_name = "Свежие рыбы"
+keyword = ["food", "fish", "fresh", "fat", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+weight = 0.2
+decays = "rottenfish"
+decayTime = 3
+stored_decay_multiplier = 0.5
+foodMoraleMod = +8
+unlockedBy = "fishingTech"
+description = "<style=\"fluff\"> Когда ужин будет готов,\nВы должны искать скрытую мудрость.\nВ мозгу окуня и лосося,\nВ устьях океанского нытья.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXII\n\nРыба, только что пойманная. Одна рыба стоит одной <link=\"foodpoint\"><style=\"link\">food point</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+8</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">3</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">6</style> месяцев"
+
+#[rawsalmon]
+#display_name = "Salmon"
+#keyword = ["food", "fish", "fresh", "fat", "protein", "prefersInside"]
+#nutrition = 1
+#condition = 1
+#fireResist = 2
+#weight = 0.2
+#decays = "rottenfish"
+#decayTime = 3
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +9
+#sacrificePoints = 5
+#description = """\
+#<style="fluff">Then the hostess of Pohjola
+#Served her guests in great abundance,
+#Richest drinks and rarest viands,
+#First of all she, served the bridegroom
+#On his platters, honeyed biscuit,
+#And the sweetest river salmon.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXI</style>
+#
+#Some salmon, a choice fish for eating.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+9</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Spoils in: <style="malus">3</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">6</style> months
+#<link="culturedef"><style="link">Culture points</style></link> when <link="sacrifice_def"><style="link">sacrificed</style></link>: <style="bonus">5</style>"""
+
+[wolfmeat]
+display_name = "мясо волка"
+keyword = ["food", "meat", "fresh", "protein", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.5
+decays = "rottenmeat"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +7
+description = "<style=\"fluff\"> Випунен ответил:\n\"Многие вещи я съел,\nЕдят медведя, лося и оленя,\nЕдят быка, волка и кабана.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVII\n\nМясо волка; вряд ли деликатес, но тем не менее мясо.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+7</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">8</style> месяцев"
+
+[wolfpelt]
+display_name = "Вольф Пелт"
+keyword = ["pelt", "prefersInside"]
+weight = 0.5
+condition = 10
+fireResist = 1
+unlockedBy = "butcheryTech"
+decays = "nothing"
+decayTime = 12
+description = "<style=\"fluff\"> Поистине, ты – ничтожество!\nНе имея ни силы, ни красоты,\nКогда рысь попирала тебя,\nИ когда на тебя наткнется робак,\nКогда в тебе были следы волков,\nИ медвежьи лапы поцарапали твое тело.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nВолчья шкура. Шкурки для волка могут быть <link=\"hidecuring\"><style=\"link\">cured</style></link> into <link=\"curedhide\"><style=\"link\">hide</style></link> для производства кожи или храниться в качестве трофея.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 1.4 Other raw materials
+
+[ashes]
+display_name = "пепел"
+keyword = ["ash", "noStore", "hideInStockManager", "dissolves", "granular"]
+fertility = 0.2
+decayTime = 24
+decays = "nothing"
+weight = 0.5
+description = "<style=\"fluff\"> Верная мать, дорогая ушедшая,\nТот, кто воспитывал меня в детстве,\nТы умер и превратился в пепел,\nТы погиб за мои глупости,\nО, твоя голова ивы плачет,\nМягкие над твоим телом,\nСтарейшины наблюдают за твоими снами?\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIX\n\nКуча пепла.\n\nПри включении пепла в <link=\"farming\"><style=\"link\">farm plot</style></link> они увеличивают его <link=\"fertility\"><style=\"link\">fertility</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.2</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы"
+
+[bogironore]
+display_name = "Железная руда Bog"
+keyword = ["bogironore", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = "<style=\"fluff\"> Из очага поднялась седая борода,\nПотряс его взгляд и ответил:\nТеперь я знаю источник железа,\nОткуда сталь и откуда ее зло.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nНемного высушенной болотной железной руды. <link=\"wetbogiron\"><style=\"link\"> Влажная болотная железная руда </style></link> быстрее высыхает при правильном хранении и становится болотной железной рудой. Затем его можно обжарить в <link=\"oreroastingpit0\"><style=\"link\">ore-roasting pit</style></link>, чтобы подготовить его к плавке.\n\nРазблокировано: <link=\"bogIronTech\"><style=\"link\"> Технология: Bog Iron</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\n\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>."
+
+[dwtrinket]
+display_name = "Гномовая безделушка"
+keyword = ["metal", "dwarven", "trinket", "prefersInside"]
+discovers = "dwarvenTech"
+weight = 0.2
+description = "<style=\"fluff\"> И все же они обитают на земле и в камнях.\n\n- Проза Эдда, транс. Артур Гилкрист Бродёр, Джилфагининг, XIV</style>\n\n<link=\"dwarvenTech\"><style=\"link\">dwarven</style></link> trinket из <link=\"birdhome\"><style=\"link> Птичий дом</style></link>, декоративный, но бесполезный.\n\nНесколько гномовых безделушек можно забить в <link=\"dwingot\"><style=\"link\">dwarven metal ingot</style></link> в <link=\"smithyworkshop\"><style=\"link\">smithy</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[rawClay]
+display_name = "Сырой Клей"
+keyword = ["clay", "product", "prefersOutside"]
+unlockedBy = "clayTech"
+weight = 0.5
+description = "<style=\"fluff\"> Но я сказал Арнин-Йо, что слышал голоса богов и знал, что они там, за сумерками, и поэтому никогда больше не мог склониться перед богами, чтобы пастухи сделали из красной глины, которую они вычеркнули руками из склона холма.\n\n«Время и боги» (Time and the Gods), 2006, Лорд Дансени\n\nНекоторые сырые <link=\"clayTech\"><style=\"link\">clay</style></link>. Глину можно превратить в <link=\"claypot\"><style=\"link\">pots</style></link> в <link=\"potteryworkshop\"><style=\"link\">potter</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+[roastedbogironore]
+display_name = "Жареная железная руда Bog"
+keyword = ["ironore", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = "<style=\"fluff\"> Потом опять говорит Ильмаринен,\nТак кузнец обращается к Айрону:\nНе бойся, полезный металл,\nОгонь не поглотит тебя,\nНе сожжет младшего брата,\nНе навредит своему ближайшему родственнику.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nКакая-то жареная болотная железная руда, готовая к плавке.\n\nПроизводится по адресу: <link=\"oreroastingpit0\"><style=\"link\"> Яма для обжарки руды</style></link>\nКомпоненты: <link=\"bogironore\"><style=\"link\">Bog Iron Ore</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\nРазблокировано: <link=\"bogIronTech\"><style=\"link\"> Технология: Bog Iron</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+#[stoneblock]
+#display_name = "Stone Block"
+#keyword = ["stone", "noStore"]
+#unlockedBy = "stoneTech"
+#weight = 3.0
+#condition = 10
+#description = """A large slab of stone.
+#
+#<link="weight_def"><style="link">Weight</style></link>: 3.0 units"""
+#
+[wetbogiron]
+display_name = "Влажная железная руда"
+keyword = ["wetbogiron", "product", "prefersOutside"]
+unlockedBy = "bogIronTech"
+decays = "bogironore"
+decayTime = 6
+stored_decay_multiplier = 2.0
+weight = 0.5
+description = "<style=\"fluff\"> В болотах бежали почерневшие воды,\nИз геенны медведи вышли,\nИ волки пробежали через болота.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nКакая-то сырая болотная железная руда, свежая из болота. При хранении в <link=\"stockpile\"><style=\"link\">stockpile</style></link> через три месяца он высыхает в <link=\"bogironore\"><style=\"link\">bog Iron ore</style></link>.\n\nРазблокировано: <link=\"bogIronTech\"><style=\"link\"> Технология: Bog Iron</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСухость: <style=\"bonus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: высыхает в <style=\"bonus\">3</style> месяцев"
+
+# 2.0 Products
+
+# 2.1 Wood products
+
+[charcoal]
+display_name = "Шарко"
+keyword = ["prefersInside", "product", "coalfuel", "wood"]
+unlockedBy = "charcoalTech"
+weight = 0.5
+condition = 5
+fireResist = 2
+burned = "ashes"
+description = "<style=\"fluff\"> Когда его жеребец остановился\nНа поле Осмо и луг,\nБыстро поднимаясь в снегоступах,\nИ услышал колдун,\nРазбивая уголь в кузнице,\nИзбиение тяжелым молотком.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение X\n\nКакой-то уголь, мощное топливо, которое горит очень жарко.\n\nПроизводится по адресу: <link=\"charcoal clamp\"><style=\"link\">Charcoal Clamp</style></link>\nКомпоненты: 4x <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\nРазблокировано: <link=\"charcoalTech\"><style=\"link\"> Технология: Уголь</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[firewood]
+display_name = "Файерверк"
+keyword = ["prefersOutside", "wood", "defaultShown"]
+weight = 0.5
+condition = 2
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> Придите, девы, которые должны служить мне,\nПриезжайте, ребята из деревни,\nПринеси мне огонь на бересте,\nЗажгите фаготы пихты.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXI\n\nДревесина для сжигания, жизненно необходима для <link=\"heating\"><style=\"link\">heating</style></link> в холодную зиму. Древесина также создается как побочный продукт некоторых рабочих мест по производству древесины.\n\nГоблины будут автоматически производить дрова для обогрева зданий.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+#[tarbarrel]
+#display_name = "Tar Barrel"
+#keyword = ["barrel", "product", "tar", "prefersOutside"]
+#unlockedBy = "tarTech"
+#weight = 1.0
+#condition = 10
+#fireResist = 2
+#toughness = 99
+#decays = "plantgarbagex2"
+#decayTime = 24
+#burned = "ashes"
+#description = """A barrel of tar.
+#
+#Unlocked by: <link="tarTech"><style="link">Technology: Tar</style></link>
+#Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[woodbeam]
+display_name = "Деревянный луч"
+keyword = ["prefersOutside", "wood", "product"]
+unlockedBy = "beamTech"
+weight = 2.0
+condition = 3
+fireResist = 2
+burned = ["ashes", "ashes"]
+decays = "rottenlog"
+decayTime = 60
+stored_decay_multiplier = 0.5
+description = "<style=\"fluff\"> Но пиломатериал провалил хозяин,\nБимс хотел свой корабль.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nДеревянная балка, отлично подходит для <link=\"carpentryTech\"><style=\"link\">building</style></link>. Их готовят путем рубки <link=\"woodlog\"><style=\"link\">logs</style></link>. Лучи тяжелые, поэтому гоблины должны будут <link=\"hauling\"><style=\"link\">haul</style></link> их туда, где они нужны.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 2.0 единиц\nУпадок в: <style=\"malus\">60</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">120</style> месяцев"
+
+[woodblock]
+display_name = "Деревянный блок"
+keyword = ["prefersOutside", "wood", "product"]
+weight = 1.0
+condition = 3
+fireResist = 2
+burned = ["ashes"]
+decays = "plantgarbage"
+decayTime = 120
+stored_decay_multiplier = 0.5
+description = "Деревянный блок. Их готовят путем рубки <link=\"woodlog\"><style=\"link\">logs</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы.\nУпадок в: <style=\"malus\">120</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">240</style> месяцев"
+
+[woodplank]
+display_name = "деревянный планк"
+keyword = ["prefersOutside", "wood", "improvisedWeapon", "product", "hammer"]
+unlockedBy = "plankTech"
+weight = 1.0
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -20
+damagePoints = 8
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 24
+stored_decay_multiplier = 0.2
+description = "<style=\"fluff\"> Но герою нужна была древесина,\nи доски, и балки, и брекеты,\nНайден самый маленький кусок пиломатериала,\nНайдены доски, но семь фрагментов.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIX\n\nДеревянная доска. Планки используются как <link=\"carpentryTech\"><style=\"link\"> строительный материал</style></link>, для изготовления различных предметов, и могут даже служить оружием в чрезвычайной ситуации. Их готовят путем рубки <link=\"woodlog\"><style=\"link\">logs</style></link>.\n\n<style=\"характеристики\">\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtcrushing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-20</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">120</style> месяцев"
+
+[woodpole]
+display_name = "Деревянный полюс"
+keyword = ["prefersOutside", "wood", "improvisedWeapon", "product", "hammer"]
+unlockedBy = "carpentryTech"
+weight = 0.5
+condition = 1
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 6
+damageType = "crushing"
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 24
+stored_decay_multiplier = 0.2
+description = "<style=\"fluff\"> Из дерева он срезает березовый венец,\nОт можжевельника кнутом,\nПрогоняет стадо по низинам,\nЧерез зыбучие пески болот.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXIII\n\nДеревянный столб для <link=\"planktier\"><style=\"link\">конструкций</style></link> и инструментов.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<style=\"характеристики\">\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtcrushing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">6</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">120</style> месяцев"
+
+[woodslats]
+display_name = "Деревянные решетки"
+keyword = ["prefersInside", "wood", "product"]
+weight = 0.2
+condition = 2
+fireResist = 1
+burned = "ashes"
+decays = "plantgarbage"
+decayTime = 12
+stored_decay_multiplier = 0.5
+description = "Деревянные планки.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\"> Plank</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: распадается в <style=\"malus\">24</style> месяцев\n"
+
+# 2.2 Textile products
+
+[coarsefiber]
+display_name = "грубое волокно"
+keyword = ["rawfiber", "prefersInside", "product"]
+unlockedBy = "spinningTech"
+condition = 2
+fireResist = 1
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = "<style=\"fluff\"> Наконец они нашли уединенный коттедж, где на травяном участке перед дверью сидела дева.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто XVI: Путешествие Калевиде\n\nНемного грубого волокна.\n\nГрубое волокно представляет собой <link=\"retting\"><style=\"link\">made</style></link> from <link=\"willowbranches\"><style=\"link\">willow branchs</style></link> или <link=\"roughflaxstrands\"><style=\"link\">rough flax strands</style></link>, и может быть <link=\"spinning\"><style=\"link\">spun</style></link> in <link=\"coarsethread\"><style=\"link>coarse thread</style></link>.\n\nПроизводится по адресу: <link=\"retting\"><style=\"link\">Retting Workshop</style></link>\nКомпоненты: Coarse bast\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: распадается в <style=\"malus\">24</style> месяцев\n"
+
+[finefiber]
+display_name = "Прекрасное волокно"
+keyword = ["rawfiber", "prefersInside", "product"]
+unlockedBy = "spinningTech"
+condition = 1
+fireResist = 1
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+stored_decay_multiplier = 0.25
+description = "<style=\"fluff\"> Одевайся в чистое белое белье\nоткручивается от льна тончайшей клетчатки;\nНосить с собой самый богатый коротышка,\nПристегните его золотым поясом.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV\n\nНемного тонкого волокна.\n\nИзящное волокно <link=\"retting\"><style=\"link\">made</style></link> from <link=\"flaxstrands\"><style=\"link\">flax strands</style></link> и <link=\"nettleplant\"><style=\"link\">nettle plant stems</style></link> и может быть <link=\"spinning\"><style=\"link\">spun</style></link> в <link=\"finethread\"><style=\"link>fine thread</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: распадается в <style=\"malus\">24</style> месяцев"
+
+[coarsethread]
+display_name = "грубая нить"
+keyword = ["thread", "product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 2
+fireResist = 0
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+description = "<style=\"fluff\"> Затем Линда взяла свою брошь и развернула ее на нитке, в то время как она послала Олдер-Жука, чтобы тот поспешил к постели своего мужа.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто II: Смерть Калева\n\nКакая-то грубая нить.\n\nГрубая нить <link=\"spinning\"><style=\"link\">spun</style></link> из <link=\"coarsefiber\"><style=\"link\">coarse fiber</style></link> и может быть <link=\"weaving\"><style=\"link\">woven</style></link> в <link=\"coarsecloth\"><style=\"link\">coarse cloth</style></link> или <link=\"ropemaking\">made</style></link> в <link=\"rope\"><style=\"link></style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[finethread]
+display_name = "Прекрасная нить"
+keyword = ["thread", "product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 1
+fireResist = 0
+weight = 0.1
+decays = "nothing"
+decayTime = 6
+description = "<style=\"fluff\"> Дева из священного водоворота,\nТы, дом которого в реке,\nСпин из льна сильнейшего волокна,\nПоверните нить малинового цвета.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XL\n\nПрекрасная нить.\n\nТонкий поток <link=\"spinning\"><style=\"link\">spun</style></link> из <link=\"finefiber\"><style=\"link\">fine fiber</style></link> и может быть <link=\"weaving\"><style=\"link\">woven</style></link> в <link=\"finecloth\"><style=\"link\">fine cloth</style></link> или <link=\"ropemaking\">made</style></link> в <link=\"rope\"><style=\"link></style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[coarsecloth]
+display_name = "грубая одежда"
+keyword = ["cloth", "prefersInside", "product"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 1
+weight = 1.0
+decays = "nothing"
+decayTime = 6
+description = "<style=\"fluff\"> Затем, с укоризненным сердцем, я обогнул небольшую огненную яму и догнал плащ и другие дела.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nКуча грубой ткани.\n\nПроизводится по адресу: <link=\"weaving\"><style=\"link\"> Weaver</style></link>\nКомпоненты: 6x <link=\"coarsethread\"><style=\"link\">Coarse Thread</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[finecloth]
+display_name = "Хорошая одежда"
+keyword = ["cloth", "prefersInside", "product"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 1
+weight = 1.0
+decays = "nothing"
+decayTime = 6
+description = "<style=\"fluff\"> \"Принеси мне теперь мой шелковый наряд,\nПринеси мою самую лучшую и богатую одежду,\nПринеси мне мое самое мягкое белье,\nЧто мои ухаживания окажутся успешными».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVIII\n\nКуча прекрасной ткани.\n\nПроизводится по адресу: <link=\"weaving\"><style=\"link\"> Weaver</style></link>\nКомпоненты: 6x <link=\"finethread\"><style=\"link\"> Отличная нить </style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[rope]
+display_name = "веревка"
+keyword = ["product", "prefersInside"]
+unlockedBy = "spinningTech"
+condition = 10
+fireResist = 2
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 12
+description = "Какая-то крепкая веревка.\n\nВеревка <link=\"ropemaking\"><style=\"link\">made</style></link> from <link=\"coarsethread><style=\"link\">coarse</style></link> или <link=\"finethread\"><style=\"link\">fine</style></link> thread.\n\nПроизводится по адресу: <link=\"ropemaking\"><style=\"link\">Rope-maker</style></link>\nКомпоненты: 5x Coarse или Fine Thread\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 2.3 Other non-food farming products
+
+[compost]
+display_name = "компост"
+keyword = ["product", "prefersOutside", "fertilizer", "mucking", "fertilizer_category"]
+unlockedBy = "fertilizerTech"
+condition = 5
+fertility = 0.2
+decayTime = 48
+stored_decay_multiplier = 0.5
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = "Некоторые <link=\"compostingdef\"><style=\"link\">composted</style></link> garbage, очень полезные для <link=\"fertility\"><style=\"link\">fertilizing</style></link> <link=\"farming\"><style=\"link\">fields</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">48</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>: распадается в <style=\"malus\">96</style> месяцев"
+
+[seed_meal]
+display_name = "Семенная мука"
+keyword = ["fertilizer", "dissolves", "granular", "prefersInside", "mucking", "fertilizer_category"]
+unlockedBy = "bakingTech"
+condition = 2
+fertility = 0.1
+decayTime = 48
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = "Наземные семена готовы для <link=\"compostingdef\"><style=\"link\">composting</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.1</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранится, когда Правильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 2.4 Metal products
+
+[dwingot]
+display_name = "Слиток гномового металла"
+keyword = ["dwarven", "ingot", "prefersInside", "product"]
+unlockedBy = "dwarvenTech"
+weight = 0.5
+description = "<style=\"fluff\"> Тогда Отче послал того, кого называют Скирниром, посланником Фрейра, в область Черных эльфов, к некоторым гномам и заставил сделать оковы по имени Глейпнир. Он был сделан из шести вещей: шум, который кошка издает при падении ног, борода женщины, корни скалы, сухожилия медведя, дыхание рыбы и слюна птицы.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Gylfaginning, XXXIV\n\nСлиток <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: 3x <link=\"dwtrinket\"><style=\"link\">Dwarven Trinket</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[spongeiron]
+display_name = "Губка железная"
+keyword = ["metal", "product", "prefersInside"]
+unlockedBy = "bogIronTech"
+weight = 0.5
+description = "<style=\"fluff\"> И железо течет в ручьях\nИ тогда колдовство рассеется.\nСкоро станет как пекарская закваска,\nМягкое как тесто для хлеба из ячменя.\nЗатем выкрикнул металл, железо:\nЧудесный кузнец, Ильмаринен,\nВозьми, возьми меня из печи твоей,\nОт этого огня и жестоких пыток.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nНекоторое выплавленное железо, которое все еще нужно обработать в кузнице, прежде чем его можно будет использовать.\n\nПроизводится по адресу: <link=\"bloomer\"><style=\"link\">Bloomery</style></link>\nКомпоненты: <link=\"roastedbogironore\"><style=\"link\">Roasted Bog Iron Ore</style></link>, <link=\"charcoal\"><style=\"link\">Уголь</style></link>, <link=\"firewood\"><style=\"link> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[wroughtiron]
+display_name = "кованое железо"
+keyword = ["metal", "ingot", "iron", "prefersInside", "product"]
+unlockedBy = "forgingTech"
+weight = 0.5
+description = "<style=\"fluff\"> Ильмаринен ответил:\nЯ возьму тебя из печи моей,\nТы немного напуган,\nТы – великая сила,\nТы убьешь лучших из героев,\nТы ранишь своего дорогого брата.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nСлиток кованого железа: сырье для полезных железных предметов.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"spongeiron\"><style=\"link\">Sponge Iron</style></link>, <link=\"уголь\"><style=\"link\">Уголь</style></link>, <link=\"древесина\"><style=\"link> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#  2.5 Leather products
+
+[curedhide]
+display_name = "Проклятие Скрыть"
+keyword = ["hide", "leather", "product", "prefersInside"]
+unlockedBy = "leatherTech"
+decayTime = 24
+weight = 0.5
+description = "Но сегодня они готовили только для бедных; только половина лося, ребра старого кабана, легкие и печень медведя, суэт молодого волка, шкура старого медведя и яйцо из орлиного гнезда.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIII: Первое путешествие Калевиды в Аид\n\nВылеченная шкура животного, готовая к <link=\"tanning\"><style=\"link\">tanning</style></link> в <link=\"rawleather\"><style=\"link\">leather</style></link>.\n\nПроизводится по адресу: <link=\"hidecuring\"><style=\"link\">Curing Workshop</style></link>\nКомпоненты: <link=\"wolfpelt\"><style=\"link\">Wolf Pelt</style></link>\n\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы"
+
+[rawleather]
+display_name = "Сырая кожа"
+keyword = ["leather", "product", "prefersInside"]
+unlockedBy = "leatherTech"
+weight = 0.5
+decayTime = 6
+description = "Когда Калевид проснулся, он следовал за следами своего коня, пока не нашел останки; и он закрепил кожу как реликвию, проклиная волков, а затем вытащил свой меч и бросился в лес в погоню за ними, разбивая деревья и кусты на своем пути и уничтожая всех диких зверей, с которыми он встречался, в то время как те, кто мог бежать в отдаленные болота и заросли.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто IX: Слухи о войне\n\nНемного сырой кожи.\n\nПроизводится по адресу: <link=\"tanning\"><style=\"link\">Tanning Workshop</style></link>\nКомпоненты: <link=\"curedhide\"><style=\"link\">Cured Hide</style></link>\n\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы"
+
+# 2.6 Sacrificial products
+
+[boneidol]
+display_name = "Идол костей"
+keyword = ["bone", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "butcheryTech"
+condition = 2
+weight = 0.2
+sacrificePoints = 3
+fireResist = 1
+description = "Кости кумира к <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"butcher\"><style=\"link\">Butcher</style></link>\nКомпоненты: <link=\"bones\"><style=\"link\">Bones</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link> при жертвоприношении: <style=\"bonus\">3</style>"
+
+[ceremonialbirdmeat]
+display_name = "Торжественное мясо птицы"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.1
+decays = "rottenmeat"
+decayTime = 6
+stored_decay_multiplier = 0.5
+sacrificePoints = 5
+description = "Некоторые церемониально помазаны <link=\"birdmeat\"><style=\"link\">bird meat</style></link> на <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"butcher\"><style=\"link\">Butcher</style></link>\nКомпоненты: <link=\"birdmeat\"><style=\"link\"> Мясо птицы</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link>, когда <link=\"sacrifice def\"><style=\"link\">sacrificed</style></link>: <style=\"bonus\">5</style>"
+
+[ceremonialfish]
+display_name = "Церемониальная рыба"
+keyword = ["sacrifice", "product", "prefersInside", "water_keeper_sacrifice"]
+unlockedBy = "fishingTech"
+condition = 1
+fireResist = 2
+weight = 0.2
+sacrificePoints = 3
+decays = "rottenfish"
+decayTime = 6
+stored_decay_multiplier = 0.5
+description = "Торжественно помазан <link=\"rawfish\"><style=\"link\">fish</style></link> to <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"fishingworkshop\"><style=\"link\">Fishing Workshop</style></link>\nКомпоненты: <link=\"rawfish\"><style=\"link\"> Свежая рыба</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link> при жертвоприношении: <style=\"bonus\">3</style>"
+
+[ceremonialshield]
+display_name = "Церемониальный деревянный щит"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = ["armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+sacrificePoints = 5
+description = "Церемониальный щит для <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>, <link=\"woodslats\"><style=\"link\">Wooden Slats</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link>, когда <link=\"sacrifice def\"><style=\"link\">sacrificed</style></link>: <style=\"bonus\">5</style>"
+
+[ceremonialspear]
+display_name = "Церемониальное деревянное копье"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 90
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+sacrificePoints = 3
+description = "Церемониальное копье для <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Деревянный полюс</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link>, когда <link=\"sacrifice def\"><style=\"link\">sacrificed</style></link>: <style=\"bonus\">3</style>"
+
+[ceremonialwolfmeat]
+display_name = "Торжественное мясо волка"
+keyword = ["sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+condition = 1
+fireResist = 2
+unlockedBy = "butcheryTech"
+weight = 0.5
+decays = "rottenmeat"
+decayTime = 6
+stored_decay_multiplier = 0.5
+sacrificePoints = 10
+description = "Некоторые церемониально помазаны <link=\"wolfmeat\"><style=\"link\">wolf meat</style></link> на <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"butcher\"><style=\"link\">Butcher</style></link>\nКомпоненты: <link=\"wolfmeat\"><style=\"link\"> Мясо волка</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев\n<link=\"culturedef\"><style=\"link\">Культурные точки</style></link>, когда <link=\"sacrifice def\"><style=\"link\">жертвенный</style></link>: <style=\"bonus\">10</style>"
+
+[claystatuette]
+display_name = "Клей Статуэтка"
+keyword = ["clay", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "clayTech"
+condition = 2
+weight = 0.2
+sacrificePoints = 2
+fireResist = 2
+description = "Глиняная статуэтка для <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"potter\"><style=\"link\"> Potter</style></link>\nКомпоненты: <link=\"rawClay\"><style=\"link\">Raw Clay</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link> при жертвоприношении: <style=\"bonus\">2</style>"
+
+[woodenstatuette]
+display_name = "Деревянная статуэтка"
+keyword = ["wood", "sacrifice", "product", "prefersInside", "forest_keeper_sacrifice"]
+unlockedBy = "carpentryTech"
+condition = 2
+weight = 0.2
+fireResist = 1
+sacrificePoints = 1
+description = "Деревянная статуэтка для <link=\"sacrifice def\"><style=\"link\">sacrifice</style></link> в середине лета.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n<link=\"culturedef\"><style=\"link\">Точки культуры</style></link> при жертвоприношении: <style=\"bonus\">1</style>"
+
+#  2.7 Stone products
+
+[roughstone]
+display_name = "Грубый камень"
+keyword = ["stone", "prefersOutside"]
+unlockedBy = "stoneTech"
+discovers = "simpleStoneTech"
+weight = 1.0
+description = "Какой-то грубый камень.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы\n\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+[dressedstone]
+display_name = "Одетый камень"
+keyword = ["stone", "prefersOutside"]
+unlockedBy = "stoneTech"
+discovers = "simpleStoneTech"
+weight = 1.0
+description = "<style=\"fluff\"> Однажды она принесла большой камень в каирну, но оказалась слишком слабой и позволила ему упасть. Она села на него и оплакивала свою печальную судьбу, и ее слезы образовали озеро под названием «Юлемисте Ярв», Верхнее озеро, рядом с которым еще можно увидеть огромный каменный блок.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, canto II\n\nОдетый камень.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+# 2.8 Fertilizer
+
+[bonemeal]
+display_name = "Костная мука"
+keyword = ["fertilizer", "dissolves", "granular", "prefersInside", "mucking", "fertilizer_category"]
+unlockedBy = "fertilizerTech"
+condition = 2
+fertility = 0.2
+decayTime = 48
+decays = "nothing"
+weight = 0.5
+maxCapacity = 45
+description = "Некоторые кости, измельченные в мелкий порошок. Полезное удобрение!\n\nПроизводится по адресу: <link=\"butcher\"><style=\"link\">Butcher</style></link>\nКомпоненты: <link=\"bones\"><style=\"link\">Bones</style></link>\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.2</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранится, когда Правильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 3.0 Tools
+
+# 3.1 Stone tools
+
+[stoneaxe]
+display_name = "Каменный топор"
+keyword = ["chopping", "stone", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+condition = 2
+fireResist = 1
+efficiency = 1.0
+weight = 0.2
+toughness = 85
+weapon_size = "large"
+weaponMaterial = "stone"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Мудрый и древний,\nСделал себе топор для рубки,\nИ начал расчищать лес,\nЗатем начали высаживать деревья.\nУпали деревья всех описаний.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nПростой <link=\"woodmaterial\"><style=\"link\">wooden</style></link> <link=\"chopping\"><style=\"link\">axe</style></link> с каменной головой. Оси являются жизненно важными <link=\"basictoolsdef\"><style=\"link\">основным инструментом</style></link>, необходимым для выпадения деревьев, и для разрезания <link=\"woodlog\"><style=\"link\">logs</style></link> в <link=\"woodbeam\"><style=\"link\">beams</style></link> или <link=\"woodplank\"><style=\"link>planks</style></link>.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#[stone_sickle]
+#display_name = "Stone Sickle"
+#keyword = ["stone", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "sickle", "hammer"]
+#condition = 2
+#fireResist = 1
+#efficiency = 2.0
+#weight = 0.2
+#toughness = 85
+#weapon_size = "large"
+#weaponMaterial = "stone"
+#skillModifier = -10
+#damagePoints = 8
+#damageType = "slashing"
+#decays = "plantgarbage"
+#decayTime = 24
+#burned = "ashes"
+#description = """A simple stone tool for harvesting grain.
+#
+#Produced at: <link="carpenter"><style="link">Carpenter</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>
+#
+#<style="characteristics"><link="efficiencydef"><style="link">Efficiency</style></link>: <style="bonus">1.0</style>
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">8</style>
+#<link="improvweapon"><style="link">Improvised Weapon</style></link>: <style="malus">-10</style> to <link="fightingSkill"><style="link">Fighting</style></link></style>
+#<link="dangerous_object_def"><style="link">Dangerous Object</style></link>: this improvised weapon does double damage.
+#<link="largeweapon"><style="link">Large Weapon</style></link>: can't be used with a shield.
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+# 3.2 Wooden tools
+
+[diggingstick]
+display_name = "Копающая палка"
+keyword = ["digging", "hoeing", "bartool", "prefersInside", "wood", "dangerous_object", "improvisedWeapon", "tool", "spear"]
+condition = 2
+fireResist = 1
+efficiency = 1.5
+weight = 0.2
+toughness = 85
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Теперь твоя мать взыскивает,\nНе отдаст мне дочь свою,\nТолько с помощью магии,\nЯ вспахал поле змей,\nВспахала шипящую почву Хииси.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XIX\n\nПростой <link=\"basictoolsdef\"><style=\"link\">базовый инструмент</style></link> для <link=\"woodmaterial\"><style=\"link\">wooden</style></link> <link=\"digging\"><style=\"link\">digging</style></link>, палка для копания также функционирует как <link=\"bartool\"><style=\"link\">bar tool</style></link>. Его можно использовать для поворота и мотыги <link=\"фермерство\"><style=\"link\">fields</style></link>, и копать, в <link=\"песчаный грунт\"><style=\"link\">sandy soil</style></link>. <link=\"claysoil\"><style=\"link> Глиняные почвы </style></link> слишком тяжелые, чтобы их можно было выкопать палками.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#[fishingrod]
+#display_name = "Fishing Rod"
+#keyword = ["fishing", "prefersInside", "wood", "tool"]
+#unlockedBy = ["fishingTech", "spinningTech"]
+#condition = 2
+#fireResist = 1
+#weight = 0.5
+#toughness = 95
+#decayTime = 12
+#decays = "plantgarbage"
+#description = """\
+#<style="fluff">Ere the minstrel starts to angle;
+#Far away he throws his fish-hook,
+#Trolls it quickly through the waters,
+#Turning on a copper swivel
+#Dangling from a silver fish-line,
+#Golden is the hook he uses.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+#
+#A fishing rod, for catching fish.
+#
+#Decays in: <style="malus">12</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>"""
+
+[fishingspear]
+display_name = "Рыболовное копье"
+keyword = ["fishing", "prefersInside", "wood", "improvisedWeapon", "dangerous_object", "spearfishingtool", "tool", "spear"]
+unlockedBy = "fishingTech"
+condition = 2
+fireResist = 1
+weight = 0.3
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Не думай, что я пришел сюда\nЧтобы его ловили как лосося,\nТолько для того, чтобы быть разбитым на куски,\nОдетый и съеденный, как кнут.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение V\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> рыболовное копье для ловли рыбы на мелководье.\n\nПроизводится по адресу: <link=\"fishingworkshop\"><style=\"link\">Fishing Workshop</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[bonefishingspear]
+display_name = "Костное рыболовное копье"
+keyword = ["fishing", "bone", "prefersInside", "wood", "improvisedWeapon", "dangerous_object", "spearfishingtool", "tool", "spear"]
+unlockedBy = "butcheryTech"
+condition = 2
+fireResist = 1
+weight = 0.3
+toughness = 95
+jobFailureChance = -0.1
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 9
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> С судна Väinämöinen\nДает такой ответ девочке:\n\"Я пришел поймать морскую форель,\nПоймайте молодое и зубное нытье,\nСкрываясь в этих тростниках и спешках».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVIII\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> рыболовное копье с костяной точкой, несколько более эффективное, чем деревянное.\n\nПроизводится по адресу: <link=\"fishingworkshop\"><style=\"link\">Fishing Workshop</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>, <link=\"bones\"><style=\"link\">Bones</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">9</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[fishingtrap]
+display_name = "Ловушка для рыбы"
+keyword = ["fishing", "prefersInside", "wood", "product"]
+unlockedBy = "fishingTech"
+condition = 3
+fireResist = 1
+weight = 1.0
+decayTime = 12
+description = "<style=\"fluff\"> Ты испортил все мои рыбные сети,\nРазорвал мою сеть страха на клочья,\nИзбитый в пульпу свист,\nРазорвал сеть на фрагменты,\nИзбитые в куски мои клинья.\nОставьте рыбную ловлю другой.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXV\n\nРыбная ловушка, которая может быть установлена в реке.\n\nПроизводится по адресу: <link=\"fishingworkshop\"><style=\"link\">Fishing Workshop</style></link>\nКомпоненты: 2x <link=\"branch\"><style=\"link\">Branch</style></link>, 2x <link=\"willowbranches\"><style=\"link\">Willow Branches</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 1,0 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[pitchfork]
+display_name = "Питчфорк"
+keyword = ["prefersInside", "wood", "midden_tool", "improvisedWeapon", "dangerous_object", "tool", "spear"]
+unlockedBy = "carpentryTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+weapon_size = "large"
+weaponMaterial = "wood"
+skillModifier = -10
+damagePoints = 8
+damageType = "slashing"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "Вилка, необходимая для работы <link=\"midden\"><style=\"link\">middens</style></link>.\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#[willownet]
+#display_name = "Willow Net"
+#keyword = ["fishing", "prefersInside", "willow", "wood", "product"]
+#unlockedBy = "fishingTech"
+#condition = 2
+#fireResist = 0
+#weight = 1.0
+#description = """\
+#<style="fluff">Väinämöinen, not discouraged,
+#Thought afresh and well reflected,
+#How to live, and work, and win her;
+#Drew with care his silken fish-net,
+#To and fro through foam and billow,
+#Through the bays and winding channels,
+#Drew it through the placid waters,
+#Drew it through the salmon-dwellings.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem V</style>
+#
+#A willow fishing net."""
+
+[wood_barrel]
+display_name = "Деревянная бочка"
+keyword = ["wood", "bucket", "tool", "prefersInside"]
+unlockedBy = "barrelTech"
+condition = 10
+fireResist = 2
+weight = 0.5
+toughness = 99
+decays = "plantgarbagex2"
+decayTime = 24
+burned = "ashes"
+description = "Деревянная бочка.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: 4x <link=\"woodslats\"><style=\"link\">Wooden Slats</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[woodbucket]
+display_name = "Деревянное ведро"
+keyword = ["wood", "bucket", "tool", "prefersInside"]
+unlockedBy = "plankTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Кто поведет нас к морю,\nКто ведет нас к рекам?\nТеперь ведра будут простаивать,\nНа крючках будут отдыхать рыбы-поляки.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIV\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> ведро, полезное для перевозки воды и других жидкостей.\n\nПроизводится по адресу: <link=\"carpenter\"><style=\"link\">Carpenter</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 3.3 Clay tools
+
+[claypot]
+display_name = "Земная посуда"
+keyword = ["clay", "pot", "bucket", "nonflammable", "tool", "prefersInside"]
+condition = 1
+fireResist = 2
+weight = 0.5
+toughness = 99
+decays = "nothing"
+decayTime = 36
+description = "<style=\"fluff\"> А потом сказал: \"Нет, это жестокий мальчик\".\nСломал бы чашу, из которой пил в радости;\nИ тот, кто рукой своей сделал корабль,\nНе войдет после того, как гнев погубит.\n\n- Рубаят Омара Хайяма, транс. Эдвард Фицджеральд, LXXXV</style>\n\nПростой <link=\"clayTech\"><style=\"link\">earthenware</style></link> pot, полезный для <link=\"foodpoint\"><style=\"link\">cooking</style></link>, несущий <link=\"water\"><style=\"link\">water</style></link> и хранящий вещи. Посудомоечный горшок является важным <link=\"basictoolsdef\"><style=\"link\">основным инструментом</style></link> для пожаротушения.\n\nПроизводится по адресу: <link=\"potter\"><style=\"link\"> Potter</style></link>\nКомпоненты: <link=\"rawClay\"><style=\"link\">Raw Clay</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">36</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 3.4 Dwarven tools
+
+[dwaxe]
+display_name = "Гномовый топор"
+keyword = ["chopping", "dwarven", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+efficiency = 1.5
+weight = 0.2
+toughness = 99
+breaks = ["dwingot"]
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = "<style=fluff>О ты острый и жестокий топор,\nО ты, топор заостренного металла,\nТы должен разрубить деревья на осколки,\nРазрежьте сосну и иву,\nРазрежьте ольху и берёзу,\nРазрежьте можжевельник и осину,\nНе разрезать мне колено,\nНе надо раздирать мои вены\".\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VIII\n\n<link=\"chopping\"><style=\"link\">chopping tool</style></link> с заголовком <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>, <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwbillhook]
+display_name = "Гном Биллхук"
+keyword = ["clearing", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "blade"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+efficiency = 2.0
+weight = 0.2
+toughness = 99
+breaks = ["dwingot"]
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = "<style=\"fluff\"> В руке его золотой клевер,\nИ лезвие было медным.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XX\n\n<link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link> tool for <link=\"clearing\"><style=\"link\">clearing</style></link> undergrowth.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>, <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>\n\n<style=\"characteristics><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">2.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwdiggingbar]
+display_name = "Гном Диггинг Бар"
+keyword = ["bartool", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 5
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "crushing"
+efficiency = 2.0
+weight = 0.5
+toughness = 99
+breaks = "dwingotx2"
+description = "<style=\"fluff\"> Теперь он выталкивает свой железный посох\nЧерез уста мудрого Випунена,\nПриедает свои могучие челюсти.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVII\n\nТяжелая полоса <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>, полезная для вывиха пней деревьев и больших пород.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: 2x <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">2.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">10</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Dangerous Object</style></link>: это импровизированное оружие наносит двойной урон.<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\n"
+
+[dwhoe]
+display_name = "Гном Хи"
+keyword = ["hoeing", "prefersInside", "dwarven", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = "<link=\"hoeing\"><style=\"link\">hoe</style></link> с головкой из <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>, <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">10</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwpick]
+display_name = "Гном Пик"
+keyword = ["mining", "prefersInside", "dwarven", "wood", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+weight = 0.5
+toughness = 99
+breaks = "dwingot"
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "slashing"
+decayTime = 24
+decays = "dwingot"
+burned = "dwingot"
+description = "<style=\"fluff\"> Когда Калевид достиг скалистого портала, с неба послышался голос: «Ударь кулаком по скале! Он сделал это, и гвоздика открыла скалу, и его правая рука была поймана в расщелине.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon\n\n<link=\"mining\"><style=\"link\">pick</style></link> с точкой, сделанной из <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>, <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">10</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwshovel]
+display_name = "Гномовый Шовель"
+keyword = ["digging", "hoeing", "prefersInside", "dwarven", "wood", "improvisedWeapon", "dangerous_object", "shovel", "tool", "hammer"]
+unlockedBy = "dwarvenToolTech"
+condition = 2
+fireResist = 1
+efficiency = 2.0
+weight = 0.3
+toughness = 95
+breaks = "dwingot"
+weapon_size = "large"
+weaponMaterial = "dwarven"
+skillModifier = -10
+damagePoints = 10
+damageType = "crushing"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+description = "<link=\"dwarvenTech\"><style=\"link\">dwarven</style></link> <link=\"digging\"><style=\"link\">digging tool</style></link>.\n\nПроизведено по адресу: <link=\"smithy\"><style=\"link\">Smithy</style></link>\nКомпоненты: <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>, <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">2.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">10</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#  3.5 Iron tools
+
+[ironaxe]
+display_name = "Железный топор"
+keyword = ["chopping", "iron", "wood", "prefersInside", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+efficiency = 1.75
+weight = 0.2
+toughness = 99
+breaks = ["scrapiron"]
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "slashing"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = "<style=\"fluff\"> Теперь древний Pellerwoinen\nСнимает топор с плеча,\nЗабирает свой топор с медной ручкой,\nотбивает тело дуба;\nОн знает искусство рубить.\nВскоре он упал с дерева величественным,\nУпал могучий лесной монарх,\nС его волшебным топором и силой\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\n<link=\"chopping\"><style=\"link\">chopping tool</style></link> with <link=\"irondef\"><style=\"link\">iron</style></link> head.\n\nРазблокировано: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"wroughtiron\"><style=\"link\"> Wrought Iron</style></link>, <link=\"woodpole\"><style=\"link>Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">14</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[ironbillhook]
+display_name = "Железный крюк"
+keyword = ["clearing", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "blade"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = ["scrapiron"]
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = "<link=\"irondef\"><style=\"link\">iron</style></link> инструмент для <link=\"clearing\"><style=\"link\">clearing</style></link> undergrowth.\n\nРазблокировано: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"wroughtiron\"><style=\"link\"> Wrought Iron</style></link>, <link=\"woodpole\"><style=\"link>Wooden Pole</style></link>\n\n<style=\"characteristics><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">2.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[iron_digging_bar]
+display_name = "Бар Iron Digging"
+keyword = ["bartool", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 10
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 14
+damageType = "crushing"
+efficiency = 3.0
+weight = 0.5
+toughness = 99
+breaks = "wroughtironx2"
+description = "Тяжелый <link=\"irondef\"><style=\"link\">iron</style></link> бар, для очистки пней деревьев.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: 2x <link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">3.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Dangerous Object</style></link>: это импровизированное оружие наносит двойной урон.<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\n"
+
+[iron_hoe]
+display_name = "Айрон Хоу"
+keyword = ["hoeing", "prefersInside", "iron", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+efficiency = 2.5
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = "<link=\"hoeing\"><style=\"link\">hoe</style></link> с головой из <link=\"irondef\"><style=\"link\">iron</style></link>.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"wroughtiron\"><style=\"link\"> Wrought Iron</style></link>, <link=\"woodpole\"><style=\"link>Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[iron_pick]
+display_name = "Железный выбор"
+keyword = ["mining", "prefersInside", "iron", "wood", "improvisedWeapon", "dangerous_object", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "slashing"
+decayTime = 24
+decays = "scrapiron"
+burned = "scrapiron"
+description = "<link=\"mining\"><style=\"link\">pick</style></link> с точкой, сделанной из <link=\"irondef\"><style=\"link\">iron</style></link>.\n\nРазблокировано: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"wroughtiron\"><style=\"link\"> Wrought Iron</style></link>, <link=\"woodpole\"><style=\"link>Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">1.5</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[ironshovel]
+display_name = "Железный лопата"
+keyword = ["digging", "hoeing", "prefersInside", "iron", "wood", "improvisedWeapon", "dangerous_object", "shovel", "tool", "hammer"]
+unlockedBy = "forgingTech"
+condition = 4
+fireResist = 1
+efficiency = 2.5
+weight = 0.3
+toughness = 95
+breaks = "scrapiron"
+weapon_size = "large"
+weaponMaterial = "iron"
+skillModifier = -10
+damagePoints = 12
+damageType = "crushing"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+description = "<link=\"irondef\"><style=\"link\">iron</style></link> <link=\"digging\"><style=\"link\">digging tool</style></link>.\n\nРазблокировано: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>.\n\nПроизводится по адресу: <link=\"blacksmiths\"><style=\"link\">Blacksmith</style></link>\nКомпоненты: <link=\"wroughtiron\"><style=\"link\"> Wrought Iron</style></link>, <link=\"woodpole\"><style=\"link>Wooden Pole</style></link>\n\n<style=\"characteristics\"><link=\"efficiencydef\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">2.0</style>\nТип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\n<link=\"improvweapon\"><style=\"link\">Improvised Weapon</style></link>: <style=\"malus\">-10</style> to <link=\"fightingSkill\"><style=\"link\">Fighting</style></link></style>\n<link=\"dangerous object def\"><style=\"link\">Опасный объект</style></link>: это импровизированное оружие наносит двойной урон.\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: нельзя использовать со щитом.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 4.0 Weapons
+
+# 4.1 Stone and wooden mêlée weapons
+
+[stonemace]
+display_name = "Стоун Мэйс"
+keyword = ["weapon", "stone", "wood", "prefersInside", "armament", "hammer"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 95
+weapon_size = "small"
+weaponMaterial = "stone"
+damageType = "crushing"
+damagePoints = 9
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> И эти слова седая борода произнесла:\n\"Подожди, подожди, ты, бык Суоми,\nПока я не принесу свой древний военный клуб.\nТогда я ударю тебя по лбу».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XX\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> Персонал с большим камнем, привязанным к нему: простое, но эффективное дробление <link=\"weapondef\"><style=\"link\">weapon</style></link>.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wthammer\"><style=\"link>Hammer</style></link>\nТип повреждения: <link=\"dtcrushing\"><style=\"link>Crushing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">9</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[woodspear]
+display_name = "Деревянное копье"
+keyword = ["weapon", "wood", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["carpentryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 90
+weapon_size = "small"
+weaponMaterial = "wood"
+damageType = "slashing"
+damagePoints = 8
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_spear"]
+description = "<style=\"fluff\"> Тогда великая Тиера коснулась его джавелина\nК мощному копью Ахти,\nОн помог Лемминкяйнену,\nКак его бойца и товарища.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXX\n\nПростой <link=\"woodmaterial\"><style=\"link\">wooden</style></link> копье, действительно длинная, заточенная палка, деревянное копье представляет собой <link=\"weapondef\"><style=\"link\">weapon</style></link> с преимуществом удержания противника на расстоянии.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Деревянный полюс</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style>\n<link=\"reachweapon\"><style=\"link\">Reach</style></link>: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link> при защите</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 4.2 Wooden missile weapons
+
+[spearthrower]
+display_name = "копьеметатель"
+keyword = ["weapon", "wood", "atlatl", "missile", "prefersInside", "armament"]
+unlockedBy = "spearthrowerTech"
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+damagePoints = 6
+damageType = "crushing"
+ammo = "spearthrower_ammo"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Тьера уложила свой могучий джавелин,\nЗапустил копье по его поручению;\nПронесся вал через пастбище,\nК границе леса,\nО'эр, глиняные поля Похолы,\nО'эр, зеленые и ароматные луга,\nЧерез отдаленные купюры Нортленда.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXX\n\nАтлатл или копьеметатель.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>, <link=\"branch\"><style=\"link\">Branch</style></link>\n\nРазблокировано: <link=\"spearthrowerTech\"><style=\"link\"> Технология: Spear-thrower</style></link>.\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtmissile\"><style=\"link\">Ракета</style></link>\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: не может использоваться со щитом.</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[throwingspear]
+display_name = "Бросать копье"
+keyword = ["ammunition", "atlatl", "wood", "prefersInside", "armament", "spearthrower_ammo", "dangerous_object"]
+unlockedBy = "spearthrowerTech"
+condition = 1
+fireResist = 1
+weight = 0.05
+toughness = 90
+damageType = "slashing"
+damagePoints = 8
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "<style=\"fluff\"> Искусный Лемминкяйнен\nОтвратительно выбил свои джавелины.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XIII\n\nБоеприпасы для копьеметателя.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Деревянный полюс</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtmissile\"><style=\"link\">Ракета</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">8</style></style>\n\nРазблокировано: <link=\"spearthrowerTech\"><style=\"link\"> Технология: Spear-thrower</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,05 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[crudebow]
+display_name = "Жестокий лук"
+keyword = ["weapon", "wood", "bow", "missile", "prefersInside", "armament"]
+unlockedBy = "archeryTech"
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+weapon_size = "large"
+weaponMaterial = "wood"
+damagePoints = 5
+damageType = "crushing"
+ammo = "bow_ammo"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "Грубый деревянный короткий лук.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"branch\"><style=\"link\">Branch</style></link>, <link=\"coarsethread\"><style=\"link\">coarse</style></link> или <link=\"finethread\"><style=\"link\">fine thread</style></link>\n\nРазблокировано: <link=\"archeryTech\"><style=\"link\"> Технология: Archery</style></link>.\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtmissile\"><style=\"link\">Ракета</style></link>\n<link=\"largeweapon\"><style=\"link\">Большое оружие</style></link>: не может использоваться со щитом.</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[woodenarrows]
+display_name = "Деревянные стрелы"
+keyword = ["ammunition", "wood", "prefersInside", "armament", "bow_ammo", "lethal"]
+unlockedBy = "archeryTech"
+condition = 1
+fireResist = 1
+weight = 0.01
+toughness = 80
+damageType = "slashing"
+damagePoints = 14
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "Боеприпасы для лука.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: один <link=\"branch\"><style=\"link\">Ветвь</style></link> составляет 10 стрелок\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtmissile\"><style=\"link\">Ракета</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">14</style></style>\n\nРазблокировано: <link=\"archeryTech\"><style=\"link\"> Технология: Archery</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,01 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 4.3 Bone weapons
+
+[bonespear]
+display_name = "Костное копье"
+keyword = ["weapon", "bone", "wood", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["butcheryTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 92
+weapon_size = "small"
+weaponMaterial = "wood"
+damageType = "slashing"
+damagePoints = 9
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_spear"]
+description = "Простой <link=\"woodmaterial\"><style=\"link\">wooden</style></link> <link=\"weapondef\"><style=\"link\">weapon</style></link> с костяным копьем.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>, <link=\"bones\"><style=\"link\">Bones</style></link>\n\nРазблокировано: <link=\"butcheryTech\"><style=\"link\"> Технология: Butchery</style></link> и <link=\"weaponsTech\"><style=\"link> Технология: Оружие</style></link>.\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">9</style>\n<link=\"reachweapon\"><style=\"link\">Reach</style></link>: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link> при защите</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[bonethrowingspear]
+display_name = "Бросающееся копье"
+keyword = ["ammunition", "bone", "wood", "prefersInside", "spearthrower_ammo", "dangerous_object", "armament"]
+unlockedBy = ["spearthrowerTech", "butcheryTech"]
+condition = 1
+fireResist = 1
+weight = 0.05
+toughness = 92
+damageType = "slashing"
+damagePoints = 9
+skillModifier = +10
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+description = "Боеприпасы для копьеметателя.\n\nРазблокировано: <link=\"spearthrowerTech\"><style=\"link\"> Технология: Spear-thrower</style></link>.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>, <link=\"bones\"><style=\"link\">Bones</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtmissile\"><style=\"link\">Ракета</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">9</style></style>\n<link=\"shootingSkill\"><style=\"link\">Shooting</style></link>: <style=\"bonus\">+10</style></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,05 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 4.4 Dwarven weapons
+
+#[dwdagger]
+#display_name = "Dwarven Dagger"
+#keyword = ["weapon", "dwarven", "prefersInside", "armament", "blade"]
+#condition = 2
+#fireResist = 1
+#weight = 0.1
+#toughness = 99
+#breaks = "dwingot"
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#damageType = "slashing"
+#damagePoints = 10
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """\
+#A <link="dwarvenTech"><style="link">dwarven metal</style></link> dagger, a simple but effective <link="weapondef"><style="link">weapon</style></link>.
+#
+#Produced at: <link="weaponmaker"><style="link">Weapon-crafter</style></link>
+#Components: <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#<style="characteristics">Weapon type: <link="wtblade"><style="link">Blade</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">10</style>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+[dwspear]
+display_name = "Карликовое копье"
+keyword = ["weapon", "wood", "dwarven", "prefersInside", "reach", "armament", "spear"]
+unlockedBy = ["dwarvenToolTech", "weaponsTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+weapon_size = "small"
+weaponMaterial = "dwarven"
+damageType = "slashing"
+damagePoints = 12
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+skillModifier = +10
+on_equip = ["has_spear"]
+description = "<style=\"fluff\"> Те, кто ниже меня, помогите мне изгнать,\nС их ножами, мечами и луками,\nС их копьями самого острого нрава.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XII\n\n<link=\"weapondef\"><style=\"link\">weapon</style></link> with <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link> point.\n\nРазблокировано: <link=\"dwarvenToolTech\"><style=\"link\"> Технология: Dwarven Tools</style></link> и <link=\"weaponsTech\"><style=\"link\"> Технология: Оружие</style></link>.\n\nПроизводится по адресу: <link=\"weaponmaker\"><style=\"link\">Создатель оружия</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>, <link=\"dwingot\"><style=\"link\">Dwarven Ingot</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">12</style>\nМеталлическое оружие: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\n<link=\"reachweapon\"><style=\"link\">Reach</style></link>: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link> при защите</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwsword]
+display_name = "Гном короткий меч"
+keyword = ["weapon", "wood", "dwarven", "prefersInside", "armament", "blade"]
+unlockedBy = ["weaponsmithingTech"]
+condition = 5
+fireResist = 1
+weight = 0.3
+toughness = 99
+breaks = "dwingotx2"
+weapon_size = "small"
+weaponMaterial = "dwarven"
+damageType = "slashing"
+damagePoints = 15
+skillModifier = +20
+decays = "dwingotx2"
+decayTime = 36
+burned = "dwingotx2"
+description = "<style=\"fluff\"> Теперь Скади, дочь гиганта Тьязи, взяла на себя управление и берни и все оружие войны и отправилась в Асгард, чтобы отомстить за своего отца.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV\n\nГрубый меч с хладнокровным молотком с лезвием <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>: смертельный <link=\"weapondef\"><style=\"link\">weapon</style></link>.\n\nUnlocked by: <link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link>.\n\nПроизводится по адресу: <link=\"weaponcoldforger\"><style=\"link\">Weaponer's Workshop</style></link>\nКомпоненты: 2x <link=\"dwingot\"><style=\"link\">Dwarven Ingot</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtblade\"><style=\"link>Blade</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">15</style></style>\nМеталлическое оружие: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\nSword: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">36</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+#[dw_war_axe]
+#display_name = "Dwarven War Axe"
+#keyword = ["dwarven", "wood", "prefersInside", "weapon", "hammer"]
+#unlockedBy = "weaponsmithingTech"
+#condition = 5
+#fireResist = 1
+#weight = 0.2
+#toughness = 99
+#breaks = ["dwingot"]
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#skillModifier = +10
+#damagePoints = 16
+#damageType = "slashing"
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """A <link="weapondef"><style="link">weapon</style></link> with a <link="dwarvenTech"><style="link">dwarven metal</style></link> blade.
+#
+#Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>.
+#
+#Produced at: <link="weaponcoldforger"><style="link">Weaponsmith</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>, <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Slashing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">16</style>
+#Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+#
+#[dw_warhammer]
+#display_name = "Dwarven Warhammer"
+#keyword = ["dwarven", "wood", "prefersInside", "weapon", "hammer"]
+#unlockedBy = "weaponsmithingTech"
+#condition = 5
+#fireResist = 1
+#weight = 0.2
+#toughness = 99
+#breaks = ["dwingot"]
+#weapon_size = "small"
+#weaponMaterial = "dwarven"
+#skillModifier = +10
+#damagePoints = 20
+#damageType = "crushing"
+#decays = "dwingot"
+#decayTime = 24
+#burned = "dwingot"
+#description = """A ferocious <link="dwarvenTech"><style="link">dwarven metal</style></link> <link="weapondef"><style="link">weapon</style></link>.
+#
+#Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link>.
+#
+#Produced at: <link="weaponcoldforger"><style="link">Weaponsmith</style></link>
+#Components: <link="branch"><style="link">Branch</style></link>, <link="dwingot"><style="link">Dwarven Ingot</style></link>
+#
+#Weapon type: <link="wthammer"><style="link">Hammer</style></link>
+#Damage type: <link="dtslashing"><style="link">Crushing</style></link>
+#<link="armorAndDamage"><style="link">Damage points</style></link>: <style="bonus">20</style>
+#Metal weapon: <style="bonus">+10</style> to <link="fightingSkill"><style="link">Fighting</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Decays in: <style="malus">24</style> months
+#Keeps when <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>\
+#"""
+
+# 4.5 Iron weapons
+
+[ironspear]
+display_name = "Железное копье"
+keyword = ["weapon", "wood", "iron", "prefersInside", "reach", "armament", "spear", "lethal"]
+unlockedBy = ["ironWeaponTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+weapon_size = "small"
+weaponMaterial = "iron"
+skillModifier = +10
+damageType = "slashing"
+damagePoints = 14
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+on_equip = ["has_spear"]
+description = "<style=\"fluff\"> Быстрый к оружию поднял народ Лухи,\nВсе копья и мечи Нортленда\nОни были направлены на вашего героя.\nВся Поджа обернулась против меня,\nПовернулся против одного врага.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVIII\n\n<link=\"weapondef\"><style=\"link\">weapon</style></link> with <link=\"irondef\"><style=\"link\">iron</style></link> point.\n\nРазблокировано: <link=\"ironWeaponTech\"><style=\"link\"> Технология: Железное оружие</style></link>.\n\nПроизводится по адресу: <link=\"weaponcoldforger\"><style=\"link\">Weaponer's Workshop</style></link>\nКомпоненты: <link=\"woodpole\"><style=\"link\">Wooden Pole</style></link>, <link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtspear\"><style=\"link>Spear</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">14</style>\nМеталлическое оружие: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\n<link=\"reachweapon\"><style=\"link\">Reach</style></link>: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link> при защите</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# Produced at: <link="weaponsmith"><style="link">Weaponsmith's Forge</style></link>
+
+[ironsword]
+display_name = "Железный меч"
+keyword = ["weapon", "iron", "prefersInside", "armament", "blade", "lethal"]
+unlockedBy = "ironWeaponTech"
+condition = 10
+fireResist = 3
+weight = 0.3
+toughness = 99
+breaks = ["scrapironx2"]
+weapon_size = "small"
+weaponMaterial = "iron"
+damageType = "slashing"
+damagePoints = 18
+skillModifier = +20
+decays = "scrapiron"
+decayTime = 48
+burned = ["scrapironx2"]
+description = "Простой, но эффективный <link=\"irondef\"><style=\"link\">iron</style></link> <link=\"weapondef\"><style=\"link\">weapon</style></link>.\n\nРазблокировано: <link=\"ironWeaponTech\"><style=\"link\"> Технология: Железное оружие</style></link>.\n\nПроизводится по адресу: <link=\"weaponcoldforger\"><style=\"link\">Weaponer's Workshop</style></link>\nКомпоненты: 2x <link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<style=\"характеристики\"> Тип оружия: <link=\"wtblade\"><style=\"link>Blade</style></link>\nТип повреждения: <link=\"dtslashing\"><style=\"link>Slashing</style></link>\n<link=\"armorAndDamage\"><style=\"link\">Damage points</style></link>: <style=\"bonus\">18</style></style>\nМеталлическое оружие: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\nSword: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link> Борьба</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">48</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# Produced at: <link="weaponsmith"><style="link">Weaponsmith's Forge</style></link>
+
+# 5.0 Armor
+
+# 5.1 Wooden armor and shields
+
+[plankarmor]
+display_name = "Броня Планка"
+keyword = ["armor", "mail", "wood", "armament", "prefersInside"]
+unlockedBy = ["armorTech"]
+condition = 3
+fireResist = 1
+weight = 0.3
+toughness = 95
+breaks = ["woodplank"]
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_plank_armor", "bulky"]
+description = "<style=\"fluff\"> Принеси мой боевой дублет,\nПринеси мне теперь меч битвы,\nПринесите меч чести моего отца.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XII\n\nБроневое покрытие из <link=\"carpentryTech\"><style=\"link\">wood</style></link>. Тяжелая, громоздкая и почти бесполезная против металлического оружия деревянная броня не имела большого успеха, но предлагает большую защиту от нападения, чем, ну, ничего.\n\nРазблокировано: <link=\"armorTech\"><style=\"link\"> Технология: деревянная броня</style></link>.\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: 2x <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>, <link=\"woodslats\"><style=\"link\">Wooden Slats</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">3</style>\nОборонительный бонус: <style=\"bonus\">+5</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[woodshield]
+display_name = "Деревянный щит"
+keyword = ["armor", "shield", "wood", "armament", "prefersInside"]
+unlockedBy = ["armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.1
+toughness = 95
+breaks = "woodplank"
+decays = "plantgarbage"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_wood_shield"]
+description = "<style=\"fluff\"> И это была большая глупость, - сказал он, - когда я оставил свой щит и отточился дома; если бы у меня было здесь оружие, то мы должны были бы попробовать одиночный бой.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XVII</style>\n\nПростой экран <link=\"woodmaterial\"><style=\"link\">wooden</style></link>. Лучше, чем ничего!\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>, <link=\"woodslats\"><style=\"link\">Wooden Slats</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">2</style>\nОборонительный бонус: <style=\"bonus\">+5</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 5.2 Dwarven armor
+
+[dwshield]
+display_name = "Гномовый щит"
+keyword = ["armor", "shield", "wood", "dwarven", "armament", "prefersInside"]
+unlockedBy = ["dwarvenToolTech", "armorTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "dwingot"
+decays = "dwingot"
+decayTime = 24
+burned = "dwingot"
+on_equip = ["has_dwshield"]
+description = "<style=\"fluff\"> Эгиру показалось славным оглядеть его в зале: там все висячие щиты висели на светлых щитах; там же была жалящая медведица, обильно потрепанная.\n\n- Проза Эдда, транс. Артур Гилхрист Бродёр, Skáldskaparmál, I</style>\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> shield with <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link> boss.\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>, <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">3</style>\nОборонительный бонус: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[dwcuirass]
+display_name = "Гном Куирас"
+keyword = ["armor", "mail", "dwarven", "armament", "prefersInside"]
+unlockedBy = ["dwarvenArmorTech"]
+condition = 10
+weight = 0.3
+toughness = 95
+breaks = ["dwingotx5"]
+on_equip = ["has_dwarven_armor", "bulky"]
+description = "Тяжёлый панцирь из <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПроизводится по адресу: <link=\"armorcoldforger\"><style=\"link\">Armorsmith's Workshop</style></link>\nКомпоненты: 5x <link=\"dwingot\"><style=\"link\">Dwarven Metal Ingot</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">5</style>\nОборонительный бонус: <style=\"bonus\">+20</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы"
+
+# 5.3 Leather armor
+
+[leatherjerkin]
+display_name = "Кожа Джеркин"
+keyword = ["armor", "leather", "armament", "prefersInside"]
+unlockedBy = "leatherTech"
+condition = 5
+fireResist = 3
+weight = 0.1
+toughness = 95
+breaks = "rawleather"
+decays = "rawleather"
+decayTime = 24
+burned = "ashes"
+on_equip = ["has_leather_jerkin"]
+description = "<style=\"fluff\"> Народ видел, как они шли так, От с его луком и его мягкими бесшумными сандалиями, и его коричневые кожаные одежды, Орион на его плече, завернутые в кожу оленя, которого От бросил вокруг него.\n\nЛорд Дансени, дочь короля Эльфланда (1924) Простая кожаная джеркина.\n\nПроизведено по адресу: <link=\"leatherworking\"><style=\"link\">Коженосец</style></link>\nКомпоненты: 2x <link=\"rawleather\"><style=\"link\">Raw Leather</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">2</style>\nОборонительный бонус: <style=\"bonus\">+5</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[rigidleatherarmor]
+display_name = "Жесткая кожаная броня"
+keyword = ["armor", "leather", "armament", "prefersInside"]
+unlockedBy = "leatherArmorTech"
+condition = 5
+fireResist = 3
+weight = 0.2
+toughness = 95
+breaks = "rawleather"
+decays = "rawleather"
+decayTime = 36
+burned = "ashes"
+on_equip = ["has_rigid_leather_armor"]
+description = "Костюм из жесткой кожаной брони.\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: 3x <link=\"rawleather\"><style=\"link\">Raw Leather</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">3</style>\nОборонительный бонус: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">36</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 5.4 Cloth armor
+
+[clothArmor]
+display_name = "Лайн Армор"
+keyword = ["armor", "linen", "armament", "prefersInside"]
+unlockedBy = "clothArmorTech"
+condition = 5
+fireResist = 2
+weight = 0.1
+toughness = 95
+breaks = "nothing"
+decays = "nothing"
+decayTime = 12
+burned = "ashes"
+on_equip = ["has_linen_armor"]
+description = "<style=\"fluff\"> Как пел Эйнарр Тинклинг-Скале:\n\nПочтовые сарки воинов,\nСплетенный, не укрывшийся\nМолодежь, похоже, против Хогни\nДуш о начале Хакона.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XLVII\n\nКостюм из доспехов.\n\nПроизводится по адресу: <link=\"armory\"><style=\"link\">Armorer</style></link>\nКомпоненты: 2x <link=\"coarsecloth\"><style=\"link\">Coarse Cloth</style></link> или <link=\"finecloth\"><style=\"link\"> Красивая одежда</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">2</style>\nОборонительный бонус: <style=\"bonus\">+10</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">12</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+# 5.5 Iron armor
+
+[ironshield]
+display_name = "Железный щит"
+keyword = ["armor", "shield", "wood", "iron", "armament", "prefersInside"]
+unlockedBy = ["ironArmorTech"]
+condition = 2
+fireResist = 1
+weight = 0.2
+toughness = 99
+breaks = "scrapiron"
+decays = "scrapiron"
+decayTime = 24
+burned = "scrapiron"
+on_equip = ["has_ironshield"]
+description = "<style=\"fluff\"> Теперь они плыли дальше на север, и холод стал интенсивным, а духи Северного сияния начали свои бои в воздухе с серебряными копьями и золотыми щитами.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто XVI: Путешествие Калевиде\n\n<link=\"woodmaterial\"><style=\"link\">wooden</style></link> shield with <link=\"irondef\"><style=\"link\">iron</style></link> boss and rim.\n\nРазблокировано: <link=\"ironArmorTech\"><style=\"link\"> Технология: Iron Armor</style></link>\n\nПроизводится по адресу: <link=\"armorcoldforger\"><style=\"link\">Armorer's Workshop</style></link>\nКомпоненты: <link=\"woodplank\"><style=\"link\">Wooden Plank</style></link>, <link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">4</style>\nОборонительный бонус: <style=\"bonus\">+20</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nУпадок в: <style=\"malus\">24</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[iron_cuirass]
+display_name = "Железные кирасы"
+keyword = ["armor", "mail", "iron", "armament", "prefersInside"]
+unlockedBy = ["ironArmorTech"]
+condition = 10
+weight = 0.3
+toughness = 95
+breaks = ["scrapironx5"]
+on_equip = ["has_iron_armor", "bulky"]
+description = "<style=\"fluff\"> Тем временем в город прилетел отряд беглецов, которые сообщили, что война близка и что топоры юношей бесполезны против мечей воинов, одетых в почту.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто XIX: Последний праздник героев\n\nТяжелый костюм из брони <link=\"irondef\"><style=\"link\">iron</style></link>.\n\nРазблокировано: <link=\"ironArmorTech\"><style=\"link\"> Технология: Iron Armor</style></link>\n\nПроизводится по адресу: <link=\"armorcoldforger\"><style=\"link\">Armorer's Workshop</style></link>\nКомпоненты: 5x <link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<style=\"characteristics\"><link=\"armorAndDamage\"><style=\"link\">Точки бронирования</style></link>: <style=\"bonus\">6</style>\nОборонительный бонус: <style=\"bonus\">+30</style> to <link=\"fightingSkill\"><style=\"link>Fighting</style></link></style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы"
+
+# 6.0 Seeds
+
+[flaxseedbag]
+display_name = "Льняные семена"
+keyword = ["seed", "prefersInside"]
+contains = "flaxshoot"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 75
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility = 0.01
+fertility_to_food_mult = 0
+description = "<style=\"fluff\"> \"Кто будет пахать поле и падать,\nСеять лен и крутить льняные нити,\nЧтобы я мог приготовить рыбную сетку,\nСмогу ли я поймать Огненную Колею,\nМожет ли быть обеспечена вещь зла?\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVIII\n\nМешок семян <link=\"flaxdef\"><style=\"link\">flax</style></link>, посаженных в начале лета.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[nettleseedbag]
+display_name = "Семена крапивы"
+keyword = ["seed", "prefersInside"]
+contains = "nettleshoot"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 50
+condition = 2
+fireResist = 2
+decayTime = 6
+weight = 0.1
+fertility_to_food_mult = 0.6
+description = "Мешок семян крапивы. Черепахи высаживаются в начале лета и собирают осенью.\n\nЧтобы посадить семена крапивы, создайте <link=\"farming\"><style=\"link\">farm plot</style></link>. Растения крапивы должны быть обработаны в <link=\"nettleprocessing\"><style=\"link\">nettleyard</style></link>, чтобы получить <link=\"nettleseedbag\"><style=\"link\">nettle seeds</style></link>, съедобные <link=\"nettlebunch\"><style=\"link\">nettle leaves</style></link> и <link=\"nettlestems\"><style=\"link\">nettle stems</style></link>, которые могут быть сведены в волокно.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[ryeseedbag]
+display_name = "Ржаные семена"
+keyword = ["seed", "prefersInside"]
+contains = "ryeshoot"
+discovers = "farmingTech"
+plantTime = 1
+maxCapacity = 50
+equivalent_nutrition = 0.5
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility_to_food_mult = 1
+description = "<style=\"fluff\"> Сараи были заполнены соответственно рожью, ячменем, овесом, пшеницей, кукурузой, овощами, а последние — комками сала и сала.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIV: Дворец Сарвика\n\nМешок ржаных семян. Ржа высаживается в начале осени, и на выращивание уходит чуть меньше года.\n\nЧтобы посадить семена, создайте <link=\"фермерство\"><style=\"link\">фермерский участок</style></link>.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>"
+
+[turnipseedbag]
+display_name = "Семена репы"
+keyword = ["seed", "prefersInside", "root_veg_seed"]
+contains = "turnipsprout"
+discovers = "farmingTech"
+plantTime = 9
+maxCapacity = 75
+condition = 2
+fireResist = 2
+weight = 0.1
+decayTime = 6
+fertility_to_food_mult = 1
+description = "<style=\"fluff\"> И, таким образом, соглашаясь,\nСеет с усердием остров,\nСемена на землях, которые он разбрасывает,\nСемена в каждом болоте и низменности.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nМешок семян репы. Выращивает <link=\"turnipplant\"><style=\"link\">turnips</style></link>.<br>Чтобы посадить семена, постройте <link=\"farming\"><style=\"link\">farm plot</style></link>.\n\nСемена репы высаживают в начале лета. Растения производят репу в течение лета, и если их оставить расти в течение зимы, следующим летом они производят семена репы.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nУпадок в: <style=\"malus\">6</style> месяцев\nХранит, когда <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>\n\n<style=\"fluff\"> Семена репы очень выносливые, могут прижиться и успешно расти с минимальным приготовлением. Фермеры в Восточной Финляндии просто выплевывали семена на землю недавно сожженных заваленных участков."
+
+# 7.0 Food
+
+# 7.1 Raw foods
+
+[apples]
+display_name = "яблоки"
+keyword = ["food", "fruit", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.5
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = "<style=\"fluff\"> Рядом с дорогой рос дуб,\nСкайворд рос равными ветвями,\nНа каждой ветке растет желудь,\nЗолотые шары на каждом желуде,\nНа каждом балу поет кукушка.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XL\n\nНекоторые <link=\"fresh\"><style=\"link\">fresh</style></link> яблоки из леса.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.5</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">8</style> месяцев"
+
+
+[blackcurrants]
+display_name = "Черная смородина"
+keyword = ["food", "berry", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = "<style=\"fluff\"> В юные годы, когда я бродил,\nКак дева в горах,\nВ счастливые дни детства,\nОхотничьи ягоды в копье.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV\n\nНекоторые <link=\"fresh\"><style=\"link\">fresh</style></link> ягоды черной смородины.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">8</style> месяцев"
+
+[bloodberry]
+display_name = "Кровавая ягода"
+keyword = ["food", "berry", "fresh", "sweet", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +6
+description = "<link=\"fresh\"><style=\"link\">fresh</style></link> деликатес гоблина из подземного мира.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+6</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">16</style> месяцев"
+
+[bullbeans]
+display_name = "фасоль"
+keyword = ["food", "bean", "carbs", "protein", "fiber", "fresh", "prefersInside", "loose"]
+nutrition = 1
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +2
+description = "Некоторые высокопитательные бобы, содержащие <link=\"протеин\"><style=\"link\">белок</style></link> и <link=\"fiber\"><style=\"link\">диетические волокна</style></link>. Бычьи бобы <link=\"fresh\"><style=\"link\">fresh food</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+2</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[hazelnuts]
+display_name = "фундуки"
+keyword = ["food", "nut", "fat", "fiber", "fresh", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = "Несколько вкусных фундуков. Орехи <link=\"fresh\"><style=\"link\">fresh food</style></link> и содержат <link=\"fat\"><style=\"link\">fat</style></link> и <link=\"fiber\"><style=\"link\">dietary fiber</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\"> +5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[mushroom]
+display_name = "Грибы"
+keyword = ["food", "prefersInside", "fiber", "mushroom", "loose"]
+nutrition = 1
+weight = 0.5
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = "Некоторые грибы, хороши для еды. Грибы содержат <link=\"fiber\"><style=\"link\">диетические волокна</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[nettlebunch]
+display_name = "Бунча из листьев крапивы"
+keyword = ["food", "fresh", "protein", "prefersInside", "loose"]
+unlockedBy = "farmingTech"
+nutrition = 0.3
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = "Листья крапивы <link=\"fresh\"><style=\"link\">fresh food</style></link> и вкусный источник <link=\"protein\"><style=\"link\">protein</style></link>.\n\nРастения крапивы должны быть обработаны в <link=\"nettleprocessing\"><style=\"link\">nettle yard</style></link>, чтобы получить <link=\"nettleseedbag\"><style=\"link\">nettle seeds</style></link>, эти крапивы листьев крапивы и <link=\"nettlestems\"><style=\"link\">nettle stems</style></link>, которые могут быть свёрнуты в волокно.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.3</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[nettleleaves]
+display_name = "Жгучие листья крапивы"
+keyword = ["food", "fresh", "protein", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +5
+description = "Съедобные листья диких растений крапивы содержат <link=\"протеин\"><style=\"link\">белок</style></link>, и являются <link=\"fresh\"><style=\"link\">fresh food</style></link>. Осторожно, они жалят!\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[raspberries]
+display_name = "малина"
+keyword = ["food", "sweet", "fresh", "berry", "prefersInside", "loose"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +7
+description = "<style=\"fluff\"> Девушки, живущие со своими матерями\nКак спелые и румяные ягоды.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VIII\n\nНемного малины, лакомство! Ягоды <link=\"fresh\"><style=\"link\">fresh food</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\"> +5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">8</style> месяцев"
+
+[turnip]
+display_name = "турникет"
+keyword = ["is_turnip", "store_in_turniphole", "food", "fresh"]
+nutrition = 0.05
+maxCapacity = 40 # maxCapacity needs to be high enough that large farms don't devolve into hundreds of hauling jobs for small amounts of food. 
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.25
+foodMoraleMod = +0.5
+description = "<style=\"fluff\"> Два брата были солдатами: один был богатым, а другой бедным. Бедняга думал, что сам постарается получше; так, сняв красное пальто, он стал садовником, хорошо вырыл землю и посеял репу.\n- <link=\"grimm\"><style=\"link\">Grimm's Fairy Tales</style></link>, trans. Эдгар Тейлор (1876)</style>\n\nБлагородная репа (<i>Brassica rapa</i>), основной продукт гоблиновой кухни. Репа стоит 0,05 <link=\"foodpoint\"><style=\"link\">food points</style></link>, а <link=\"fresh\"><style=\"link\">fresh food</style></link>.\n\nВырасти репу, посадив <link=\"turnipseedbag\"><style=\"link\">Turnip Seeds</style></link> в <link=\"farming\"><style=\"link\">farm plot</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.05</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> в <link=\"turniphole\"><style=\"link\">turnip hole</style></link>: портится в <style=\"malus\">12</style> месяцев\n\n<style=\"fluff\"> Репа - это выносливые корнеплоды, которые особенно хорошо подходят для вырубки и сжигания.\n\nИсторически репа была одной из самых важных частей финской кухни, пока она не была вытеснена картофелем."
+
+[waterchestnut]
+display_name = "Водяные каштаны"
+keyword = ["food", "nut", "fresh", "prefersInside"]
+nutrition = 0.2
+weight = 0.1
+decays = "plantgarbage"
+decayTime = 4
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+description = "Коллекция водяных каштанов. Они <link=\"fresh\"><style=\"link\">fresh food</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0.2</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+6</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">4</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">8</style> месяцев"
+
+# 7.2 Intermediate food products
+
+[ryeflour]
+display_name = "Ржаная мука"
+keyword = ["flour", "prefersInside", "dissolves", "product"]
+weight = 0.5
+decayTime = 6
+decays = "nothing"
+stored_decay_multiplier = 0.5
+unlockedBy = "bakingTech"
+description = "<style=\"fluff\"> \"Что касается меня, несчастной дочери,\nВся моя мука была из просеек\nНа столе возле духовки,\nСъешь меня из березового ковша».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII\n\n<link=\"ryeseedbag\"><style=\"link\">Семена ржи</style></link> измельчают в муку. Его можно приготовить в <link=\"ryebread\"><style=\"link\">bread</style></link>, который содержит много <link=\"fiber\"><style=\"link\">диетические волокна</style></link>.\n\nПроизводится по адресу: <link=\"mill\"><style=\"link\"> Mill</style></link>\nКомпоненты: 50x <link=\"ryeseedbag\"><style=\"link\">Rye Seed</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+# 7.3 Processed foods
+
+[ryebread]
+display_name = "Ржаной хлеб"
+keyword = ["food", "carb", "fiber", "prefersInside"]
+nutrition = 1
+condition = 1
+fireResist = 1
+weight = 0.2
+decays = "stale_bread"
+decayTime = 9
+stored_decay_multiplier = 0.5
+foodMoraleMod = +5
+description = "<style=\"fluff\"> Но презренная хозяйка,\nЗапекли печенье для пастуха,\nЗапекли буханку дивной толщины.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXII\n\nТемный хлеб, богатый <link=\"fiber\"><style=\"link\">fiber</style></link> и с сильным вкусом, считается деликатесом гоблинов. Ржаной хлеб выпекается из <link=\"ryeflour\"><style=\"link\">rye мука</style></link>, и каждая буханка стоит одного <link=\"foodpoint\"><style=\"link\">food point</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+5</style>\n\nПроизводится по адресу: <link=\"baker\"><style=\"link\"> Bakery</style></link>\nКомпоненты: <link=\"ryeflour\"><style=\"link\">Rye Flour</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nИдет <link=\"stale bread\"><style=\"link\">stale</style></link> в: <style=\"malus\">9</style> месяцев\nПроисходит <link=\"stale bread\"><style=\"link\">stale</style></link>, когда <link=\"storeage\"><style=\"link\">stored</style></link=\"storehouse\"><style=\"link\">inside</style></link>: <style=\"malus>18</style> месяцев"
+
+[stale_bread]
+display_name = "Несвежий ржаной хлеб"
+keyword = ["food", "carb", "fiber", "prefersInside"]
+nutrition = 0.8
+condition = 1
+fireResist = 1
+weight = 0.2
+decays = "plantgarbage"
+decayTime = 6
+stored_decay_multiplier = 0.5
+foodMoraleMod = +4
+description = "Некоторые несвежие, сухие <link=\"ryebread\"><style=\"link\">rye bread</style></link>, уже не такие питательные, но все же надежный источник <link=\"fiber\"><style=\"link\">диетические волокна</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">0,8</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+4</style>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: порча в <style=\"malus\">12</style> месяцев"
+
+[smokedbird]
+display_name = "Куриное мясо птиц"
+keyword = ["food", "meat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.1
+unlockedBy = "smokingTech"
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+description = "<style=\"fluff\"> Старый и правдивый,\nОтвечает Дева красоты:\n\"Глупец - дрозд, так поющий,\nЧушь - это твиттер певицы\".\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VIII\n\nМясо птицы, сохраненное при курении. Он содержит <link=\"протеин\"><style=\"link\">белок</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+6</style>\n\nПроизводится по адресу: <link=\"smoker\"><style=\"link\">Smoking Workshop</style></link>\nКомпоненты: <link=\"birdmeat\"><style=\"link\">Bird Meat</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: портит в <style=\"malus\">24</style> месяцев"
+
+[smokedfish]
+display_name = "Выкуренная рыба"
+keyword = ["food", "fish", "fat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.1
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +6
+unlockedBy = "smokingTech"
+description = "Худшая рыба в Нортленде\nТолько пахнет и никчемные пловцы,\nРоки в моей лодке из бересты\nНикогда не ел рыбу или печенье\nИз пальцев моей второй матери.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII\n\nНекоторые виды рыбы, сохранившиеся при курении. Рыба является источником <link=\"protein\"><style=\"link\">protein</style></link> и <link=\"fat\"><style=\"link\">fat</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+6</style>\n\nПроизводится по адресу: <link=\"smoker\"><style=\"link\">Smoking Workshop</style></link>\nКомпоненты: <link=\"rawfish\"><style=\"link\">Свежие рыбы</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: портит в <style=\"malus\">24</style> месяцев"
+
+
+#[smokedsalmon]
+#display_name = "Smoked Salmon"
+#keyword = ["food", "fish", "fat", "protein", "preserved", "prefersInside"]
+#nutrition = 1
+#condition = 2
+#fireResist = 2
+#weight = 0.1
+#decays = "nothing"
+#decayTime = 12
+#stored_decay_multiplier = 0.5
+#foodMoraleMod = +7
+#description = """\
+#<style="fluff">"To his wife the brother whispered,
+#Whispered thus unto the housewife:
+#'Bring thou salmon for my sister,
+#For my sister so long absent,
+#Thus to still her pangs of hunger.'"
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>
+#
+#Smoked salmon, considered a delicacy by some! Smoked fish remains edible for much longer, and retains its <link="protein"><style="link">protein</style></link> and <link="fat"><style="link">fat</style></link> content.
+#
+#<link="foodpoint"><style="link">Food points:</style></link> <style="bonus">1</style>
+#<link="moraledef"><style="link">Morale bonus:</style></link> <style="bonus">+7</style>
+#
+#Produced at: <link="smoker"><style="link">Smoking Workshop</style></link>
+#Components: <link="rawsalmon"><style="link">Salmon</style></link>, <link="firewood"><style="link">Firewood</style></link>
+#
+#<link="weight_def"><style="link">Weight</style></link>: 0.1 units
+#Spoils in: <style="malus">12</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="storehouse"><style="link">inside</style></link>: spoils in <style="malus">24</style> months"""
+
+
+[smokedwolf]
+display_name = "Курение мяса волка"
+keyword = ["food", "meat", "protein", "preserved", "prefersInside"]
+nutrition = 1
+condition = 2
+fireResist = 2
+weight = 0.3
+decays = "nothing"
+decayTime = 12
+stored_decay_multiplier = 0.5
+foodMoraleMod = +4
+unlockedBy = "smokingTech"
+description = "<style=\"fluff\"> \"Как гость я нежелателен,\nТак как мне не дают пива\nЭто достойно героя;\nИ таран не был забит,\nИ не было убито откормленного теленка,\nДостойная еда для Лемминкяйнена\".\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVII\n\nКопченое мясо волка, очень жесткое, но долговечное и источник <link=\"протеин\"><style=\"link\">белок</style></link>.\n\n<link=\"foodpoint\"><style=\"link\">Точки питания:</style></link> <style=\"bonus\">1</style>\n<link=\"moraledef\"><style=\"link\">Моральный бонус:</style></link> <style=\"bonus\">+4</style>\n\nПроизводится по адресу: <link=\"smoker\"><style=\"link\">Smoking Workshop</style></link>\nКомпоненты: <link=\"wolfmeat\"><style=\"link\">Wolf Meat</style></link>, <link=\"firewood\"><style=\"link\"> Firewood</style></link>\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,3 единицы\nСпойлы в: <style=\"malus\">12</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"storehouse\"><style=\"link\">inside</style></link>: портит в <style=\"malus\">24</style> месяцев"
+
+# 8.0 Waste
+
+# 8.1 Organic waste
+
+#[foodscraps]
+#display_name = "Food Scraps"
+#keyword = ["waste", "garbage", "noStore", "hideInStockManager", "dissolves", "loose", "fertilizer_category"]
+#weight = 0.2
+#condition = 2
+#fireResist = 2
+#fertility = 0.05
+#pestilence = 0.5
+#decays = "nothing"
+#decayTime = 3
+#description = """Some food scraps, left over from cooking. They can be <link="compostingdef"><style="link">composted</style></link> into fertilizer in a <link="midden"><style="link">midden</style></link>.
+#
+#<link="fertility"><style="link">Fertility bonus</style></link>: <style="bonus">0.05</style>
+#<link="weight_def"><style="link">Weight</style></link>: 0.2 units
+#Spoils in: <style="malus">3</style> months\
+#"""
+
+[offal]
+display_name = "Оффис"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "dissolves", "loose", "fertilizer_category"]
+weight = 0.2
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1
+decays = "nothing"
+decayTime = 3
+description = "Остатки животных от мясной резни, излечения и так далее. Ранг!\n\nОффал может быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.1</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">3</style> месяцев"
+
+[plantgarbage]
+display_name = "Растительный мусор"
+keyword = ["waste", "garbage", "noStore", "dissolves", "loose", "hideInStockManager", "fertilizer_category"]
+weight = 0.2
+condition = 2
+fireResist = 1
+fertility = 0.05
+pestilence = 0.5
+decays = "nothing"
+decayTime = 6
+description = "<style=\"fluff\"> \"О ты, жалкое пиво ячменя,\nТы встретился с великим бесчестием,\nНедостойная репутация упала,\nНо я выпью тебя, несмотря на то,\nИ мусор, брошенный далеко от меня».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVII\n\nРастительный мусор. Это может быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.05</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">6</style> месяцев"
+
+[rottenfish]
+display_name = "Гнилые рыбы"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "fertilizer_category"]
+weight = 0.1
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1.5
+decays = "offal"
+decayTime = 3
+description = "Сгнившая рыба. Это может быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.1</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,1 единицы\nСпойлы в: <style=\"malus\">3</style> месяцев"
+
+[rottenmeat]
+display_name = "Гнилое мясо"
+keyword = ["waste", "garbage", "noStore", "hideInStockManager", "fertilizer_category"]
+weight = 0.2
+discovers = "butcheryTech"
+condition = 2
+fireResist = 3
+fertility = 0.1
+pestilence = 1
+decays = "offal"
+decayTime = 3
+description = "Немного сгнившего мяса. Это может быть <link=\"compostingdef\"><style=\"link\">composted</style></link> в удобрение в <link=\"midden\"><style=\"link\">midden</style></link>.\n\n<link=\"fertility\"><style=\"link\">Бонус за бесплодие</style></link>: <style=\"bonus\">0.1</style>\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,2 единицы\nСпойлы в: <style=\"malus\">3</style> месяцев"
+
+# 8.2 Inorganic waste
+
+[slag]
+display_name = "шлак"
+keyword = ["waste", "rubbish", "prefersOutside", "noStore"]
+weight = 0.5
+description = "Какой-то шлак, побочный продукт металлообработки.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+[scrapiron]
+display_name = "Скачать Iron"
+keyword = ["waste", "rubbish", "prefersInside"]
+weight = 0.5
+description = "Немного железа.\n\n<link=\"weight def\"><style=\"link\"> Вес </style></link>: 0,5 единицы"
+
+# 9.0 Corpses
+
+[goblincorpse]
+display_name = "Гоблин Корпус"
+keyword = ["corpse", "noStore", "hideInStockManager"]
+discovers = "burialTech"
+weight = 1.0
+fireResist = 3
+decays = "goblinbones"
+decayTime = 6
+description = "<style=\"fluff\"> Если бы Туони привел тебя сюда,\nМана поднял тебя из гроба,\nТогда Туони будет с тобой,\nМаналинен тоже поведет тебя,\nС шапкой Туони на тебе,\nНа твоих руках перчатки Маны.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nОстанки несчастного гоблина.\n\nРаспад через: 6 месяцев"
+
+[goblinbones]
+display_name = "Кости гоблина"
+keyword = ["corpse", "noStore", "hideInStockManager"]
+weight = 0.5
+decays = "nothing"
+decayTime = 6
+description = "Разлагающиеся останки несчастного гоблина.\n\nРаспад через: 6 месяцев"
+
+#[beavercorpse]
+#display_name = "Beaver Corpse"
+#keyword = ["corpse", "beaver", "prefersOutside", "hideInStockManager"]
+#weight = 0.5
+#fireResist = 2
+#discovers = "butcheryTech"
+#decays = "rottenmeat"
+#decayTime = 6
+#description = """A dead beaver with a valuable pelt.
+#
+#Spoils in: <style="malus">6</style> months
+#Properly <link="storage"><style="link">stored</style></link> <link="stockpile"><style="link">outside</style></link>"""
+
+[cranecorpse]
+display_name = "Крановый труп"
+keyword = ["corpse", "crane", "prefersOutside", "hideInStockManager"]
+weight = 0.5
+fireResist = 2
+discovers = "butcheryTech"
+decays = "rottenmeat"
+decayTime = 6
+description = "<style=\"fluff\"> Водные птицы занимались спортом в озере, а на противоположном берегу видели сияющий на закате священный лес Таара. «Вот место, где должна быть решена наша судьба», — сказал старший брат, и каждый выбрал камень для испытания силы.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто VIII: Конкурс и расставание братьев\n\nКран, пинающий для <link=\"birdhome\"><style=\"link\"> южных земель</style></link>.\n\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+#[dwarfcorpse]
+#display_name = "Dwarf Corpse"
+#keyword = ["corpse", "dwarf", "noStore", "hideInStockManager"]
+#weight = 1.5
+#fireResist = 3
+#decays = "rottenmeat"
+#decayTime = 6
+#description = """<style="fluff">\
+#The dwarves had first received shape and life in the flesh of Ymir, and were then maggots; but by decree of the gods had become conscious with the intelligence of men, and had human shape.
+#
+# - the Prose Edda, trans. Arthur Gilchrist Brodeur, Gylfaginning, XIV</style>
+#
+#The remains of a dwarf.
+#
+#Decays in: 6 months"""
+
+[humancorpse]
+display_name = "Человеческий труп"
+keyword = ["corpse", "wolf", "hideInStockManager", "noStore"]
+weight = 1.5
+fireResist = 3
+fertility = 2.0
+pestilence = 2.0
+decays = "rottenmeat"
+decayTime = 6
+description = "Останки человека.\n\nРаспад через: 6 месяцев"
+
+[wolfcorpse]
+display_name = "Вольф Корпус"
+keyword = ["corpse", "wolf", "hideInStockManager", "prefersOutside"]
+weight = 1.5
+fireResist = 3
+discovers = "butcheryTech"
+decays = "rottenmeat"
+decayTime = 6
+description = "<style=\"fluff\"> Не бойтесь голодных волков.\nИ не только горы, но и горы,\nКогда ты войдешь в свое пиво,\nВ полночь ты должен прогуляться.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII\n\nМертвый волк.\n\nСпойлы в: <style=\"malus\">6</style> месяцев\nПравильно <link=\"storage\"><style=\"link\">stored</style></link> <link=\"stockpile\"><style=\"link\">outside</style></link>"
+
+# 10.0 Special items
+#
+#[ancienttome]
+#display_name = "Ancient Tome"
+#keyword = ["book", "discovery", "prefersInside"]
+#weight = 0.5
+#fireResist = 1
+#burned = "ashes"
+#researchPoints = 1
+#description = """An ancient tome of knowledge! Discovering an ancient tome grants one <link="researchpoints"><style="link">research point</style></link>."""

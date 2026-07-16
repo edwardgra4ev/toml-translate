@@ -1,0 +1,642 @@
+﻿# Contents
+#
+# 1.0 Wood technologies
+# 2.0 Clay and brick technologies
+# 3.0 Stone technologies
+# 4.0 Metal technologies
+# 5.0 Weapon and armor technologies
+# 6.0 Food technologies
+# 7.0 Farming technologies
+# 8.0 Shamanism technologies
+
+# 1.0 Wood technologies
+
+[carpentryTech]
+display_name = "Технологии: Карпентри"
+treename = "Carpentry"
+techLevel = "wood"
+treeCoord = "1,7"
+description = "<style=\"fluff\"> Спик певицы, Väinämöinen:\n\"Я строил себе корабль,\nВ моем ремесле работала, пела,\nТребуются три слова Учителя.\nКак закрепиться на выступах,\nКак должна завершиться корма.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nДревесина является наиболее доступным материалом в северных лесах, и ваши гоблины учатся ее использовать.\n\nUnlocked by: building a <link=\"carpenter1\"><style=\"link\">carpenter's workshop</style></link>\n\nРазблокировать:\n<link=\"diggingstick\"><style=\"link>Digging Stick</style></link>\n<link=\"stonemace\"><style=\"link\">Stone Mace</style></link> (с <link=\"weaponsTech\"><style=\"link>) Технология: Оружие</style></link>\n<link=\"woodpole\"><style=\"link>Деревянный полюс</style></link>\n<link=\"woodspear\"><style=\"link\">Wooden Spear</style></link> (с <link=\"weaponsTech\"><style=\"link>) Технология: Оружие</style></link>\n\n<link=\"palisade\"><style=\"link>Palisade</style></link>\n<link=\"storehouse1><style=\"link>Storage Shack</style></link>\n<link=\"weathervane\"><style=\"link>Weathervane</style></link>\n\nПриводит к:\n<link=\"dwarvenToolTech\"><style=\"link> Технология: Dwarven Tools</style></link> (с <link=\"dwarvenTech\"><style=\"link\"> Технология: Dwarven Metal</style></link><link=\"housingTech\"><style=\"link> Технология: Жилье</style></link>\n<link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n<link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link> (с <link=\"clayTech\"><style=\"link>) Технология: Pottery</style></link>\n<link=\"woodmagicTech\"><style=\"link\"> Технология: Деревянные магические структуры</style></link> (с <link=\"shamanismTech\"><style=\"link\") Технология: шаманизм</style></link>"
+# <link="boatingTech"><style="link">Technology: Boating</style></link> (with <link="fishingTech"><style="link">Technology: Fishing</style></link>)
+
+[housingTech]
+display_name = "Технология: Жилье"
+treename = "Housing"
+techLevel = "wood"
+prerequisite = "carpentryTech"
+researchPointCost = 3
+treeCoord = "2,5"
+description = "<style=\"fluff\"> Старики говорят, что у гоблинов тоже есть дома, как и у других людей.\n\nKittilä, 1854. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\nГоблины научились строить дома, чтобы укрыться от стихии.\n\nРазблокировать:\n<link=\"housing1a\"><style=\"link>Simple Shack</style></link>\n<link=\"kitchen1\"><style=\"link>Kitchen Shack</style></link>\n<link=\"housing2a\"><style=\"link\">Simple Shed</style></link> (с <link=\"plankTech\"><style=\"link\") Технология: Planks</style></link>\n\nПриводит к:\n<link=\"beamTech\"><style=\"link\"> Технология: Beams</style></link> (с <link=\"plankTech\"><style=\"link\">) Технология: Planks</style></link>"
+
+[beamTech]
+display_name = "Технология: Beams"
+treename = "Beams"
+prerequisite = ["plankTech", "housingTech"]
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "3,6.5"
+description = "<style=\"fluff\"> Перед деревней было широкое и травянистое пространство, а за ним снова большая древесина, но за спиной деревья подходили прямо к домам, которые своими большими балками и деревянными каркасами и соломенными крышами, зелеными от мха, казались почти частью леса.\n\nЛорд Дансани, Крепость Непобедимая За исключением Сакнота (1908)\n\nГоблины научились строить здания, формируя <link=\"woodlog\"><style=\"link\">logs</style></link> в <link=\"woodbeam\"><style=\"link\">beams</style></link> и связывая их вместе. Это очень прочный <link=\"beamtier\"><style=\"link\">метод построения</style></link>.\n\nПредпосылки: <link=\"housingTech\"><style=\"link\">Housing</style></link>, <link=\"plankTech\"><style=\"link> Planks</style></link>\n\nРазблокировать:\n<link=\"storehouse3\"><style=\"link>Storage Hut</style></link>\n<link=\"housing3a\"><style=\"link\"> Simple Hut</style></link>\n\nПриводит к:\n<link=\"stoneConstructionTech\"><style=\"link> Технология: каменная конструкция</style></link> (с <link=\"stoneTech\"><style=\"link>) Технология: Stone</style></link>\n<link=\"windmillsTech\"><style=\"link\"> Технология: ветряные мельницы</style></link>"
+# <link="carpenter3"><style="link">Carpenter's Hut</style></link>
+
+[plankTech]
+display_name = "Технологии: Планки"
+treename = "Planks"
+prerequisite = "carpentryTech"
+techLevel = "wood"
+researchPointCost = 4
+treeCoord = "2,6.5"
+description = "<style=\"fluff\"> Из стеблей он лопает ветви,\nразбивает ствол на множество частей,\nМодные пиломатериалы для дна,\nБесчисленные доски, и ребра, и брекеты,\nЗа волшебный сосуд певца,\nИ тогда колдовство рассеется.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nГоблины научились вырезать <link=\"woodlog\"><style=\"link\">logs</style></link> в <link=\"woodplank\"><style=\"link\">planks</style></link>. Планки можно использовать для построения <link=\"planktier\"><style=\"link\"> более совершенных зданий</style></link>.\n\nПредпосылки: <link=\"carpentryTech\"><style=\"link\"> Карпентри</style></link>\n\nРазблокировать:\n<link=\"woodbucket\"><style=\"link>Wooden Bucket</style></link>\n<link=\"woodplank\"><style=\"link>Wooden Plank</style></link>\n<link=\"woodshield\"><style=\"link\">Wooden Shield</style></link> (с <link=\"armorTech\"><style=\"link\") Технология: Armor</style></link>\n\n<link=\"carpenter2\"><style=\"link\">Carpenter's Shed</style></link>\n<link=\"duckboard\"><style=\"link>Duckboard</style></link>\n<link=\"granary2\"><style=\"link>Granary</style></link>\n<link=\"guard2\"><style=\"link>Почта охраны</style></link>\n<link=\"kitchen2\"><style=\"link>Kitchen Shed</style></link>\n<link=\"plank bridge\"><style=\"link\"> Plank Bridge</style></link>\n<link=\"housing2a\"><style=\"link\"> Simple Hut</style></link>\n<link=\"spinning2\"><style=\"link\">Spinner's Shed</style></link> (с <link=\"spinningTech\"><style=\"link\"> Технология: Spinning</style></link>\n<link=\"storehouse2\"><style=\"link>Storage Shed</style></link>\n<link=\"weaponmaker2\"><style=\"link\">Weaponsmith's Shed</style></link> (с <link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link>\n<link=\"woodtower\"><style=\"link\">Wooden Watchtower</style></link> (с <link=\"spearthrowerTech\"><style=\"link\") Технология: Spear-thrower</style></link>\n\nПриводит к:\n<link=\"barrelTech\"><style=\"link\"> Технология барреля</style></link>\n<link=\"beamTech\"><style=\"link\"> Технология: Beams</style></link> (с <link=\"housingTech\"><style=\"link>) Технология: Жилье</style></link>\n<link=\"hydraulicTech\"><style=\"link\"> Технология: Гидравлика</style></link><link=\"armorTech\"><style=\"link\"> Технология: деревянная броня</style></link>\n"
+# <link="potter1"><style="link">Potter's Shack</style></link> (with <link="clayTech"><style="link">Technology: Pottery</style></link>)
+# <link="firefighting2"><style="link">Fire Warden's Post</style></link>
+
+[leatherTech]
+display_name = "Технология: Leather"
+treename = "Leather"
+prerequisite = ["butcheryTech", "clayTech"]
+researchPointCost = 4
+techLevel = "wood"
+treeCoord = "3,9"
+description = "<style=\"fluff\"> На ноги твои, положи шелковые чулки,\nс обувью из лучшей кожи;\nСложите волосы золотыми браслетами,\nхорошо связать его нитями серебра;\nОбвяжи кольцами свои волшебные пальцы,\nИ руки твои с дерзкими ругательствами;\nИди в свою комнату,\nВозвращайся к этому дому.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV\n\nВаш лагерь приобрел шкуру животного, которую можно загонять под кожу.\n\nРазблокировать:\n<link=\"curedhide\"><style=\"link>Cured Hide</style></link>\n<link=\"leatherjerkin\"><style=\"link>Кожа Джеркин</style></link>\n<link=\"rawleather\"><style=\"link>Raw Leather</style></link>\n\n<link=\"curing0\"><style=\"link\">Curing Workshop</style></link>\n<link=\"leatherworker1\"><style=\"link\"> Шахта кожаного рабочего</style></link>\n<link=\"tanner0\"><style=\"link\"> Загарные ванны</style></link>\n\nПриводит к:\n<link=\"leatherArmorTech\"><style=\"link\"> Технология: Кожаная броня</style></link> (с <link=\"armorTech\"><style=\"link\") Технология: деревянная броня</style></link>"
+
+[spinningTech]
+display_name = "Технология: Spinning"
+treename = "Spinning"
+prerequisite = ["carpentryTech", "clayTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "2,8"
+description = "<style=\"fluff\"> Внутри он слышал, как девы крутятся и поют, оплакивая счастье своей прежней жизни и надеясь, что может появиться какой-то спаситель.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIII: Первое путешествие Калевиды в Аид\n\nМногие растительные волокна можно превратить в прочные струны, для всего, от рыболовных сетей до струн.\n\nПредпосылки: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>, <link=\"clayTech\"><style=\"link> Технология: Pottery</style></link>\n\nРазблокировать:\n<link=\"rope\"><style=\"link>Rope</style></link>\n<link=\"coarsefiber\"><style=\"link>Coarse Fiber</style></link>\n<link=\"coarsethread\"><style=\"link>Coarse Thread</style></link>\n<link=\"finefiber\"><style=\"link\"> Fine Fiber</style></link>\n<link=\"finethread\"><style=\"link\"> Отличная нить </style></link>\n\n<link=\"retting0\"><style=\"link\">Retting Yard</style></link> (с <link=\"clayTech\"><style=\"link>) Технология: Pottery</style></link>\n<link=\"ropemaking1\"><style=\"link\">Rope-maker's Shack</style></link>\n<link=\"spinning2\"><style=\"link\">Spinner's Shed</style></link> (с <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\nПриводит к:\n<link=\"archeryTech\"><style=\"link\"> Технология: Archery</style></link> (с <link=\"spearthrowerTech\"><style=\"link>) Технология: Spear-thrower</style></link>\n<link=\"clothArmorTech\"><style=\"link\"> Технология: ткачество</style></link>"
+
+#[boatingTech]
+#display_name = "Technology: Boating"
+#treename = "Boating"
+#prerequisite = ["carpentryTech", "fishingTech"]
+#researchPointCost = 900
+#techLevel = "wood"
+#treeCoord = "2,2"
+#description = """\
+#<style="fluff">Väinämöinen, ancient minstrel,
+#The eternal wisdom-singer,
+#For his boat was working lumber,
+#Working long upon his vessel.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>
+#
+#The goblins have learned to build dug-out canoes.
+#
+#Prerequisites: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>, <link="fishingTech"><style="link">Technology: Fishing</style></link>
+#
+#Leads to:
+#<link="logDrivingTech"><style="link">Technology: Log Driving</style></link> (with <link="tradingTech"><style="link">Technology: Trading</style></link>)\
+#"""
+
+[hydraulicTech]
+display_name = "Технология: Hydraulics"
+treename = "Hydraulics"
+prerequisite = ["plankTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "3,2.5"
+description = "<style=\"fluff\"> Прекрати, о катаракта, твой рев,\nПрекрати, водопад, пеня!\nДевы пены и тока,\nСидя на скалах в воде,\nНа каменных блоках в реке,\nВозьми пену и белоснежные луга\nВ твоих объятиях и в их гневе.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XL\n\nГоблины становятся все более знакомыми с работой на воде и изобрели несколько интересных приспособлений для ее управления.\n\nПредпосылки: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\nРазблокировать:\n<link=\"screwpump\"><style=\"link\">Screw Pump</style></link>\n<link=\"wooden floodgate\"><style=\"link>Wooden Floodgate</style></link>"
+
+[barrelTech]
+display_name = "Технология: Barrelmaking"
+treename = "Barrel-making"
+prerequisite = ["plankTech"]
+researchPointCost = 8
+techLevel = "wood"
+treeCoord = "4,7.5"
+description = "<style=\"fluff\"> Поэтому Варрак Лапландец взял штурвал и управлял судном на севере в течение многих дней и ночей. Первой опасностью, с которой они столкнулись, был большой водоворот, грозивший поглотить корабль. Затем Варрак выбросил за борт небольшую бочку, завернутую в красные ткани и украшенную красными стримерами. Эта приманка была проглочена китом, который отправился в полет, и отбуксировал корабль в безопасное место.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто XVI: Путешествие Калевиде\n\nГоблины научились делать бочки для хранения жидкостей. Они также работают как флоатильные устройства.\n\nПредпосылки: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\nРазблокировать:\n<link=\"wood barrel\"><style=\"link>Wooden Barrel</style></link>\n\n<link=\"pontoon bridge\"><style=\"link>Pontoon Bridge</style></link>"
+# 
+#Leads to:
+#<link="tarTech"><style="link">Technology: Tar</style></link>
+
+[charcoalTech]
+display_name = "Технология: Charcoal"
+treename = "Charcoal"
+prerequisite = ["smokingTech"]
+researchPointCost = 12
+techLevel = "wood"
+treeCoord = "8,3"
+description = "<style=\"fluff\"> Демоны непрестанно пытаются смягчить свои цепи, нагружая вокруг себя петухов древесного угля, но когда петух на рассвете воронит, их оковы снова становятся толще.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon\n\nКогда они сжигают древесину, гоблины обнаруживают, что иногда древесина превращается в совершенно новое вещество, которое горит намного горячее: древесный уголь.\n\nПредпосылки: <link=\"mokingTech\"><style=\"link\"> Технология: Курение</style></link>\n\nРазблокировать:\n<link=\"уголь\"><style=\"link>Уголь</style></link>\n\n<link=\"charcoal clamp><style=\"link>Угольный зажим</style></link>\n\nПриводит к:\n<link=\"forgingTech\"><style=\"link\"> Технология: ковка </style></link> (с <link=\"stoneConstructionTech\"><style=\"link>) Технология: каменная конструкция</style></link>"
+
+#Leads to:
+#<link="tarTech"><style="link">Technology: Tar</style></link>
+
+#[tarTech]
+#display_name = "Technology: Tar"
+#treename = "Tar"
+#prerequisite = ["charcoalTech", "barrelTech"]
+#researchPointCost = 900
+#techLevel = "wood"
+#treeCoord = "10,3"
+#description = """The goblins have learned to produce tar.
+#
+#Prerequisites: <link="charcoalTech"><style="link">Technology: Charcoal</style></link>, <link="barrelTech"><style="link">Technology: Barrel-making</style></link>
+#
+#Unlocks:
+#<link="tarbarrel"><style="link">Tar Barrel</style></link>
+#
+#<link="targrave"><style="link">Tar Grave</style></link>"""
+
+#[tradingTech]
+#display_name = "Technology: Trading"
+#treename = "Trading"
+#techLevel = "wood"
+#treeCoord = "10,1"
+#description = """A trader has visited the camp, and now your goblins can return the visit!"""
+
+#[logDrivingTech]
+#display_name = "Technology: Log-driving"
+#treename = "Log-driving"
+#prerequisite = ["boatingTech", "tradingTech"]
+#techLevel = "wood"
+#researchPointCost = 8
+#treeCoord = "11,1"
+#description = """You can now send goblins upriver to establish a logging outpost, and drive logs down the river to your camp.
+#
+#Prerequisites: <link="boatingTech"><style="link">Technology: Boating</style></link>, <link="tradingTech"><style="link">Technology: Trading</style></link>"""
+
+#[sailingTech]
+#display_name = "Technology: Sailing"
+#treename = "Sailing"
+#prerequisite = ["tarTech", "clothArmorTech"]
+#techLevel = "wood"
+#researchPointCost = 10
+#treeCoord = "10,10"
+#description = """<style="fluff">\
+#Now erects the masts of pine-wood,
+#On each mast the sails of linen,
+#Sails of blue, and white, and scarlet,
+#Woven into finest fabric.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>
+#
+#The goblins have invented sailing vessels.
+#
+#Prerequisites: <link="tarTech"><style="link">Technology: Tar</style></link>, <link="clothArmorTech"><style="link">Technology: Weaving</style></link>"""
+
+[windmillsTech]
+display_name = "Технологии: ветряные мельницы"
+treename = "Windmills"
+prerequisite = ["bakingTech", "beamTech"]
+researchPointCost = 12
+techLevel = "wood"
+treeCoord = "7,2"
+description = "<style=\"fluff\"> И в этом городе не было ничего, что было бы хорошо для души. Ибо оно не знало, что красота желательна; поэтому оно делало много вещей машинами и торопилось всеми путями своими, хвасталось своим превосходством над другими городами и становилось все богаче и богаче, и не было никого, чтобы жалеть его.\n\nLord Dunsany, the Kith of the Elf Folk (1908)[править править код]\n\nГоблины изобрели ветровые машины.\n\nПредпосылки: <link=\"bakingTech\"><style=\"link\"> Технология: выпечка </style></link>, <link=\"beamTech\"><style=\"link> Технология: Beams</style></link>\n\nРазблокировать:\n<link=\"mill3\"><style=\"link\"> Windmill</style></link>"
+
+[burialTech]
+display_name = "Технология: Burial"
+treename = "Burial"
+techLevel = "wood"
+treeCoord = "2,2"
+description = "<style=\"fluff\"> Tuonetar дает такой ответ:\n\"Древний менестрель, Вяйнямёйнен,\nСкажи мне, что привело тебя сюда,\nПриведи тебя в царство Маны,\nСудам Туонелы,\nЭре Туони послал своих ангелов\nВ твой дом в Калевале,\nТам, чтобы разрезать твою волшебную нить жизни.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nК сожалению, умер гоблин. Если их тело может быть восстановлено, их товарищи могут построить <link=\"grave0\"><style=\"link\">grave</style></link>, чтобы похоронить их.\n\nРазблокировать:\n<link=\"grave0\"><style=\"link>Grave</style></link>"
+
+# 2.0 Clay and brick technologies
+
+[clayTech]
+display_name = "Технология: Pottery"
+treename = "Pottery"
+techLevel = "wood"
+treeCoord = "1,8.5"
+description = "<style=\"fluff\"> О'эр, огонь крана висел,\nНа кране были крючки из меди,\nНа крючках бурлящие сосуды\nНаполнен медвежьим стейком для пиршества.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI\n\nГлина может быть сформирована и выпущена в прочные глиняные сосуды, такие как <link=\"claypot\"><style=\"link\">pots</style></link> для хранения и приготовления пищи.\n\nРазблокировано: <link=\"claypit\"><style=\"link\"> Clay Pit</style></link>\n\nРазблокировать:\n<link=\"scuttlebutt\"><style=\"link\">Scuttlebutt</style></link>\n<link=\"retting0\"><style=\"link\">Retting Yard</style></link> (с <link=\"spinningTech\"><style=\"link\") Технология: Spinning</style></link>\n\nПриводит к:\n<link=\"leatherTech\"><style=\"link\"> Технология: кожа</style></link> (с <link=\"butcheryTech\"><style=\"link>) Технология: Butchery</style></link>\n<link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link> (с <link=\"carpentryTech\"><style=\"link>) Технология: Карпентри</style></link>"
+# <link="potter1"><style="link">Potter's Shack</style></link> (with <link="plankTech"><style="link">Technology: Planks</style></link>)
+
+#[chalkTech]
+#display_name = "Technology: Chalk"
+#treename = "Chalk"
+#prerequisite = ["stoneTech"]
+#techLevel = "stone"
+#researchPointCost = 8
+#treeCoord = "9,7.5"
+#description = """<style="fluff">\
+#And the blue butterflies, those that love the chalk, came and perched themselves on the tall grasses, five or six sometimes on a single piece of grass, and they closed their wings and slept, and the grass bent a little beneath them.
+#
+# - Lord Dunsany, In the Twilight (1908)</style>
+#
+#The goblins understand how to dig for chalk.
+#
+#Prerequisites: <link="stoneTech"><style="link">Technology: Stone</style></link>
+#
+#Unlocks:
+#<link="brickTech"><style="link">Technology: Bricks</style></link>
+#<link="masonryTech"><style="link">Technology: Masonry</style></link> (with <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>)"""
+
+#[masonryTech]
+#display_name = "Technology: Masonry"
+#treename = "Masonry"
+#prerequisite = ["stoneConstructionTech", "chalkTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "10,7"
+#description = """By mixing mortar out of chalk, the goblins have learned to create durable stone structures.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>, <link="chalkTech"><style="link">Technology: Chalk</style></link>"""
+
+#[brickTech]
+#display_name = "Technology: Bricks"
+#treename = "Bricks"
+#prerequisite = ["chalkTech", "clayTech"]
+#techLevel = "stone"
+#researchPointCost = 8
+#treeCoord = "10,8"
+#description = """The goblins have learned to produce bricks by firing clay and chalk.
+#
+#Prerequisites: <link="chalkTech"><style="link">Technology: Chalk</style></link>, <link="clayTech"><style="link">Technology: Clay</style></link>
+#
+#Unlocks:
+#<link="brickConstructionTech"><style="link">Technology: Brick Construction</style></link>"""
+
+#[brickConstructionTech]
+#display_name = "Technology: Brick Construction"
+#treename = "Brick Construction"
+#prerequisite = ["brickTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,8"
+#description = """The goblins can now build sturdy houses out of brick.
+#
+#Prerequisites: <link="brickTech"><style="link">Technology: Bricks</style></link>"""
+
+# 3.0 stone technologies
+
+[simpleStoneTech]
+display_name = "Технология: простые каменные структуры"
+treename = "Simple Stone Structures"
+techLevel = "wood"
+treeCoord = "1,5.5"
+description = "<style=\"fluff\"> Чтобы камни падали и болели,\nИ грядки железа погибают.\nКамни и металлы не шумят\nВ руках захватчика.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLV\n\nГоблины научились использовать камни и камни, которые они могут найти.\n\nUnlocked by: discovering <link=\"roughstone\"><style=\"link\">Rough Stone</style></link> или <link=\"dressedstone\"><style=\"link\">Dressed Stone</style></link>.\n\nРазблокировать:\n<link=\"cobblestone road\"><style=\"link>Cobblestone Road</style></link>\n<link=\"stonepavement\"><style=\"link>Каменный тротуар</style></link>"
+
+[stoneTech]
+display_name = "Технологии: Стоун"
+treename = "Stone"
+techLevel = "stone"
+prerequisite = "dwarvenToolTech"
+researchPointCost = 10
+treeCoord = "7,6.5"
+description = "<style=\"fluff\"> В настоящее время они прошли через каменную дверь в каменную галерею, также вымощенную камнем, и, пройдя через нее на небольшое расстояние, прибыли в комнату, в которой стены и мебель были полностью из железа. «Это, — сказала старшая сестра, — комната старого Сарвика, где его люди-слуги собираются и работают или развлекаются, и где их иногда пытают всевозможными способами».\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIV: Дворец Сарвика\n\nГоблины приобрели инструменты для добычи камня.\n\nПредпосылки: <link=\"dwarvenToolTech\"><style=\"link\"> Технология: Dwarven Tools</style></link>\n\nРазблокировать:\n<link=\"stonequarry\"><style=\"link>Каменный карьер</style></link>\n<link=\"stonecutter1\"><style=\"link\">Stone-cutter's Shack</style></link>\n\n<link=\"dressedstone\"><style=\"link>Dressed Stone</style></link>\n<link=\"roughstone\"><style=\"link>Rough Stone</style></link>\n\nПриводит к:\n<link=\"stoneConstructionTech\"><style=\"link> Технология: Каменная конструкция</style></link> (с <link=\"beamTech\"><style=\"link\">) Технология: Beams</style></link>"
+
+#<link="chalkTech"><style="link">Technology: Chalk</style></link>
+
+#[millingTech]
+#display_name = "Technology: Watermills"
+#treename = "Watermills"
+#prerequisite = ["hydraulicTech", "windmillsTech"]
+#techLevel = "stone"
+#treeCoord = "9,2.5"
+#researchPointCost = 8
+#description = """<style="fluff">\
+#It is well here for the maiden,
+#Here the bride may live in freedom,
+#Need not turn the heavy millstone,
+#Need not move the iron pestle;
+#Here the wheat is ground by water.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXV</style>
+#
+#Prerequisites: <link="windmillsTech"><style="link">Technology: Windmills</style></link>, <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>
+#
+#Unlocks:
+#<link="sawMillTech"><style="link">Technology: Sawmills</style></link> (with <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>)"""
+
+[stoneConstructionTech]
+display_name = "Технология: каменное строительство"
+treename = "Stone Construction"
+prerequisite = ["stoneTech", "beamTech"]
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "8,6"
+description = "<style=\"fluff\"> Они разрушили один из холмов Бога, но сделали Баббулкунд. Она резная, не построенная; ее дворцы едины с ее террасами, нет ни соединения, ни расщелины.\n\nЛорд Дансани, Падение Баббулкунда (1908)\n\nГоблины придумали, как строить каменные здания.\n\nПредпосылки: <link=\"stoneTech\"><style=\"link\"> Технология: Stone</style></link>, <link=\"beamTech\"><style=\"link> Технология: Beams</style></link>\n\nРазблокировать:\n<link=\"housing4a\"><style=\"link>Каменный и лесной коттедж</style></link>\n\nПриводит к:\n<link=\"forgingTech\"><style=\"link\"> Технология: ковка </style></link> (с <link=\"charcoalTech\"><style=\"link>) Технология: Уголь</style></link>\n<link=\"stoneFortTech\"><style=\"link\"> Технология каменных укреплений</style></link>"
+
+# <link="carpenter4"><style="link">Carpenter's Cottage</style></link>
+# <link="kitchen4"><style="link">Kitchen Cottage</style></link>
+# <link="storehouse4"><style="link">Stone and Timber Storehouse</style></link>
+
+# <link="masonryTech"><style="link">Technology: Masonry</style></link> (with <link="chalkTech"><style="link">Technology: Chalk</style></link>)
+
+[stoneFortTech]
+display_name = "Технология: каменные укрепления"
+treename = "Stone Fortifications"
+prerequisite = "stoneConstructionTech"
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "9,6"
+description = "<style=\"fluff\"> Олев построил теперь великолепный город, укрепленный башнями и рвами, вокруг кургана Калева. К нему стекалось большое количество людей, и Калевид назвал его Линданисой, в память о его матери.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVII: The Heroes and the Dwarf\n\nГоблины разработали военную технику в камне.\n\nПредпосылки: <link=\"stoneConstructionTech\"><style=\"link> Технология: каменная конструкция</style></link>\n\nРазблокировать:\n<link=\"stonewall\"><style=\"link>Drystone Wall</style></link>"
+
+#[roadBuildTech]
+#display_name = "Technology: Road Building"
+#treename = "Road Building"
+#prerequisite = "stoneConstructionTech"
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,6.5"
+#description = """The goblins can now build and pave permanent roads.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>"""
+
+#[bridgeBuildTech]
+#display_name = "Technology: Bridge Building"
+#treename = "Bridge Building"
+#prerequisite = ["stoneConstructionTech", "hydraulicTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "11,4.5"
+#description = """With stone piers and foundations, a goblin-made bridge can now cross any chasm.
+#
+#Prerequisites: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>, <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>"""
+
+# 4.0 metal technologies
+
+[dwarvenTech]
+display_name = "Технология: Dwarven Metal"
+treename = "Dwarven Metal"
+techLevel = "wood"
+treeCoord = "5,7.5"
+description = "<style=\"fluff\"> Теперь, когда они пришли к кузнице, Синдри положил свиную шкуру в очаг и нанес удар Броккру, и не прекращал работы, пока не вынул из очага то, что положил в него.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV\n\nВаши гоблины обнаружили гномьи металлы!\n\nВещество из <link=\"birdhome\"<style=\"link\"> крайнего юга</style></link>. Мягче и податливее, чем железо, карликовый металл может быть холодно кован у кузнеца и превращен в различное оружие и инструменты.\n\nРазблокировано: <link=\"dwtrinket\"><style=\"link>Dwarven Trinket</style></link>\n\nРазблокировать:\n<link=\"smithy0\"><style=\"link\">Smithy</style></link>\n\nПриводит к:\n<link=\"dwarvenToolTech\"><style=\"link> Технология: Dwarven Tools</style></link> (с <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>"
+
+[dwarvenToolTech]
+display_name = "Технология: Dwarven Tools"
+treename = "Dwarven Tools"
+prerequisite = ["dwarvenTech", "carpentryTech"]
+researchPointCost = 6
+techLevel = "wood"
+treeCoord = "6,7.5"
+description = "<style=\"fluff\"> После этого Локи пошел к тем гномам, которых называют Сынами Ивальди; и они сделали волосы, и Скидбладнир тоже, и копье, которое стало владением Одина, и было названо Гунгнир.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XXXV\n\nВаши гоблины поняли, как делать инструменты из гномьего металла.\n\nПредпосылки: <link=\"dwarvenTech\"><style=\"link\"> Технология: Dwarven Metal</style></link>\n\nРазблокировать:\n<link=\"dwaxe\"><style=\"link>Dwarven Axe</style></link>\n<link=\"dwbillhook\"><style=\"link>Dwarven Billhook</style></link>\n<link=\"dwdiggingbar\"><style=\"link>Dwarven Digging Bar</style></link>\n<link=\"dwhoe\"><style=\"link>Dwarven Hoe</style></link>\n<link=\"dwpick\"><style=\"link>Dwarven Pick</style></link>\n<link=\"dwshovel\"><style=\"link>Dwarven Shovel</style></link>\n<link=\"dwspear\"><style=\"link\">Dwarven Spear</style></link> (с <link=\"weaponsTech\"><style=\"link>) Технология: Оружие</style></link>\n<link=\"dwshield\"><style=\"link\">Dwarven Shield</style></link> (с <link=\"armorTech\"><style=\"link\") Технология: деревянная броня</style></link>\n\nПриводит к:\n<link=\"clayfarmingTech\"><style=\"link\"> Технология: Clay Farming</style></link> (с <link=\"farmingTech\"><style=\"link>) Технология: Сельское хозяйство</style></link>\n<link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link> (с <link=\"weaponsTech\"><style=\"link>) Технология: Оружие</style></link>"
+
+[forgingTech]
+display_name = "Технология: ковка"
+treename = "Forging"
+prerequisite = ["charcoalTech", "stoneConstructionTech"]
+techLevel = "stone"
+researchPointCost = 12
+treeCoord = "9,4"
+description = "<style=\"fluff\"> Найден холм в болотистой местности,\nгде железо спрятано в изобилии;\nТам он построил свою плавильную печь,\nТам он положил свои кожаные колокольчики.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nС углем и камнем гоблины могут начать ковку металлов.\n\nПредпосылки: <link=\"stoneConstructionTech\"><style=\"link> Технология: Каменная конструкция</style></link>, <link=\"charcoalTech\"><style=\"link> Технология: Уголь</style></link>\n\nРазблокировать:\n<link=\"ironaxe\"><style=\"link>Железный топор</style></link>\n<link=\"ironbillhook\"><style=\"link>Iron Billhook</style></link>\n<link=\"iron digging bar\"><style=\"link>Iron Digging Bar</style></link>\n<link=\"iron hoe\"><style=\"link>Iron Hoe</style></link>\n<link=\"iron pick\"><style=\"link>Iron Pick</style></link>\n<link=\"ironshovel\"><style=\"link>Iron Shovel</style></link>\n<link=\"wroughtiron\"><style=\"link\"> Кованое железо</style></link>\n\n<link=\"smithy2\"><style=\"link\">Blacksmith's Shed</style></link>\n\nПриводит к:\n<link=\"bogIronTech\"><style=\"link\"> Технология: Bog Iron</style></link>"
+
+[bogIronTech]
+display_name = "Технология: Bog Iron"
+treename = "Bog Iron"
+prerequisite = "forgingTech"
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "10,4"
+description = "<style=\"fluff\"> Таково железо в болотных землях,\nПротягивая водоемы,\nСкрытый хорошо для многих возрастов,\nСпрятанный в березовых лесах,\nОн не мог прятаться вечно.\nВ поисках своего брата.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nГоблины научились искать болотное железо и плавить его в пригодный для использования металл.\n\nПредпосылки: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>\n\nРазблокировать:\n<link=\"bogironore\"><style=\"link>Bog Iron Ore</style></link>\n<link=\"roastedbogironore\"><style=\"link>Roasted Bog Iron Ore</style></link>\n<link=\"wetbogiron\"><style=\"link>Wet Bog Iron Ore</style></link>\n\n<link=\"bog iron collector2\"><style=\"link\">Bog Iron Collector's Shed</style></link>\n<link=\"oreroastingpit0\"><style=\"link\"> Яма для обжарки руды</style></link>\n<link=\"bloomery4\"><style=\"link>Каменная Блумерия</style></link>\n\nПриводит к:\n<link=\"ironWeaponTech\"><style=\"link> Технология: Железное оружие</style></link> (с <link=\"weaponsmithingTech\"><style=\"link>) Технология: кузнечное оружие</style></link>\n<link=\"ironArmorTech\"><style=\"link\"> Технология: Iron Armor</style></link> (с <link=\"dwarvenArmorTech\"><style=\"link>) Технология: кузнечное бронирование</style></link>\n"
+
+#[sawMillTech]
+#display_name = "Technology: Sawmills"
+#treename = "Sawmills"
+#prerequisite = ["millingTech", "bogIronTech"]
+#techLevel = "stone"
+#researchPointCost = 10
+#treeCoord = "13,3"
+#description = """The goblins have invented a sawmill.
+#
+#Prerequisites: <link="bogIronTech"><style="link">Technology: Bog Iron</style></link>, <link="millingTech"><style="link">Technology: Milling</style></link>"""
+
+# 5.0 Weapon and armor technologies
+
+[weaponsTech]
+display_name = "Технологии: оружие"
+treename = "Weapons"
+techLevel = "wood"
+prerequisite = "combat"
+treeCoord = "1,4"
+description = "<style=\"fluff\"> Лучше жить в условиях свободы,\nСчастливее будет моя жизнь,\nЕсли я буду служить своим ближним,\nслужить инструментами для их удобства,\nКак орудия войны,\nУбейте моих друзей и ближайших родственников,\nРанил детей моей матери.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nВаши гоблины научились создавать оружие, чтобы защищаться.\n\nРазблокировано: <link=\"combat\"><style=\"link\">Combat</style></link> (эта технология разблокирована, когда житель вашего лагеря был в бою)\n\nРазблокировать:\n<link=\"stonemace\"><style=\"link>Stone Mace</style></link>\n<link=\"bonespear\"><style=\"link\">Bone Spear</style></link> (с <link=\"butcheryTech\"><style=\"link>) Технология: Butchery</style></link>\n<link=\"woodspear\"><style=\"link\">Wooden Spear</style></link> (с <link=\"carpentryTech\"><style=\"link\">Carpentry</style></link>)\n<link=\"dwspear\"><style=\"link\">Dwarven Spear</style></link> (с <link=\"dwarvenToolTech\"><style=\"link\">Dwarven Tools</style></link>)\n\n<link=\"weaponmaker1\"><style=\"link\">Взлом оружейника</style></link>\n\nПриводит к:\n<link=\"armorTech\"><style=\"link\"> Технология: деревянная броня</style></link>\n<link=\"spearthrowerTech\"><style=\"link\"> Технология: Spear-thrower</style></link>\n<link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link> (с <link=\"dwarvenTech\"><style=\"link>) Технология: Dwarven Metal</style></link>"
+
+[armorTech]
+display_name = "Технология: деревянная броня"
+treename = "Wooden Armor"
+prerequisite = ["plankTech", "weaponsTech"]
+researchPointCost = 8
+techLevel = "wood"
+treeCoord = "3,5"
+description = "<style=\"fluff\"> На третий день после этого началась ожесточенная битва, и Калевид сражался с посланными воинами полдня, когда его конь был убит под ним.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XX: Armageddon\n\nУчась на своем опыте в бою, гоблины научились моде на щиты и доспехи для защиты.\n\nПредпосылки: <link=\"weaponsTech\"><style=\"link\"> Технология: Оружие</style></link>, <link=\"plankTech\"><style=\"link> Технология: Planks</style></link>\n\nРазблокировать:\n<link=\"dwshield\"><style=\"link\">Dwarven Shield</style></link> (с <link=\"dwarvenToolTech\"><style=\"link\">Dwarven Tools</style></link>)\n<link=\"woodshield\"><style=\"link>Wooden Shield</style></link>\n<link=\"plankarmor\"><style=\"link\"> Plank Armor</style></link>\n\n<link=\"armory1\"><style=\"link\">Armorer's Shack</style></link>\n\nПриводит к:\n<link=\"clothArmorTech\"><style=\"link\"> Технология: ткачество </style></link> (с <link=\"pinningTech\"><style=\"link\">) Технология: Spinning</style></link>\n<link=\"leatherArmorTech\"><style=\"link\"> Технология: Кожаная броня</style></link> (с <link=\"leatherTech\"><style=\"link>) Технология: кожа</style></link>\n<link=\"dwarvenArmorTech\"><style=\"link\"> Технология: Armor-smithing</style></link> (с <link=\"weaponsmithingTech\"><style=\"link>) Технология: кузнечное оружие</style></link>\n\n<style=\"fluff\"> Некоторые народы Сибири и Северной Америки использовали деревянные доспехи. У нас нет доказательств того, что древние финнские люди выжили, но, опять же, органические материалы так плохо сохранились в финской почве, что маловероятно, что какие-либо образцы деревянной брони выжили бы."
+
+[spearthrowerTech]
+display_name = "Технология: Spear-thrower"
+treename = "Spear-thrower"
+techLevel = "wood"
+researchPointCost = 6
+prerequisite = ["weaponsTech", "carpentryTech"]
+treeCoord = "4,5"
+description = "<style=\"fluff\"> \" Пусть вся радость исчезнет навсегда,\nПусть земные удовольствия быстро погибнут,\nИсчезновение самой сладкой музыки на Земле\nСчастье уходит навсегда;\nСтреляй в этого соперника, менестреля.\nНе обращай внимания на то, что конец».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VI\n\nТвои гоблины научились делать копьеметатель.\n\nПредпосылки: <link=\"weaponsTech\"><style=\"link\"> Технология: Оружие</style></link>, <link=\"carpentryTech\"><style=\"link> Технология: Карпентри</style></link>\n\nРазблокировать:\n<link=\"woodtower\"><style=\"link\">Wooden Watchtower</style></link> (с <link=\"plankTech\"><style=\"link\") Технология: Planks</style></link>\n\n<link=\"spearthrower\"><style=\"link\">Spearthrower</style></link>\n<link=\"throwingspear\"><style=\"link\"> Бросающий копье</style></link>\n<link=\"bonethrowingspear\"><style=\"link\">Bone-tipped Throwing Spear</style></link> (с <link=\"butcheryTech\"><style=\"link\") Технология: Butchery</style></link>\n\n<link=\"archeryTech\"><style=\"link\"> Технология: Archery</style></link> (с <link=\"pinningTech\"><style=\"link\">) Технология: Spinning</style></link>"
+
+[clothArmorTech]
+display_name = "Технология: плетение"
+treename = "Weaving"
+techLevel = "wood"
+researchPointCost = 8
+prerequisite = ["spinningTech", "armorTech"]
+treeCoord = "5,10"
+description = "<style=\"fluff\"> Сестры с сожалением увидели рассвет, хотя больше не были обязаны крутиться и плестись, ибо старуха была заперта на кухне и не могла им помешать.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIV: Дворец Сарвика\n\nГоблины обнаружили, что толстая ткань, хитро сплетенная, может служить идеально функциональной броней.\n\nПредпосылки: <link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link>, <link=\"armorTech\"><style=\"link> Технология: деревянная броня</style></link>\n\nРазблокировать:\n<link=\"clothArmor\"><style=\"link>\"Cloth Armor</style></link>\n<link=\"coarsecloth\"><style=\"link>Coarse Cloth</style></link>\n<link=\"finecloth\"><style=\"link\"> Красивая одежда</style></link>\n\n<link=\"weaving2\"><style=\"link\"> Weaver's Shed</style></link>"
+
+[weaponsmithingTech]
+display_name = "Технология: кузнечное оружие"
+treename = "Weapon-smithing"
+techLevel = "wood"
+researchPointCost = 16
+prerequisite = ["weaponsTech", "dwarvenToolTech"]
+treeCoord = "7,8"
+description = "<style=\"fluff\"> \"О меч, меч! Как ты ужасен! Ты ужасен тем, что пришел среди людей. Сколько глаз не будет смотреть на сады из-за тебя?\n\nЛорд Дансани, меч Веллерана (1908)\n\nГоблины развили свои навыки в гномьем металле холодного молотка и теперь могут производить более современное оружие.\n\nПредпосылки: <link=\"weaponsTech\"><style=\"link\"> Технология: Оружие</style></link>, <link=\"dwarvenToolTech\"><style=\"link> Технология: Dwarven Tools</style></link>\n\nРазблокировать:\n<link=\"dwsword\"><style=\"link>Dwarven Short Sword</style></link>\n\n<link=\"weaponmaker2\"><style=\"link\">Weaponer's Shed</style></link> (с <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\nПриводит к:\n<link=\"dwarvenArmorTech\"><style=\"link\"> Технология: Armor-smithing</style></link> (с <link=\"armorTech\"><style=\"link\") Технология: деревянная броня</style></link>\n<link=\"ironWeaponTech\"><style=\"link> Технология: Железное оружие</style></link> (с <link=\"bogIronTech\"><style=\"link>) Технология: Bog Iron</style></link>"
+#<link="dw_war_axe"><style="link">Dwarven War Axe</style></link>
+#<link="dw_warhammer"><style="link">Dwarven Warhammer</style></link>
+
+[leatherArmorTech]
+display_name = "Технология: Leather Armor"
+treename = "Leather Armor"
+techLevel = "wood"
+researchPointCost = 10
+treeCoord = "4,9"
+prerequisite = ["leatherTech", "armorTech"]
+description = "<style=\"fluff\"> Они предупредили его, что он не сможет легко убежать, но, поскольку он упорствовал, они направили его в пещеру, в которую он немедленно вошел, в то время как демоны смеялись, говоря, что медведь попал в ловушку, а лев в сеть, и что он нес свою шкуру на рынок ни за что.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто XIII: Первое путешествие Калевиды в Аид\n\nГоблины разработали метод закалки кожи, чтобы сделать более прочную броню.\n\nПредпосылки: <link=\"leatherTech\"><style=\"link\"> Технология: кожа</style></link>, <link=\"armorTech\"><style=\"link> Технология: деревянная броня</style></link>\n\nРазблокировать:\n<link=\"rigidleatherarmor\"><style=\"link>Rigid Leather Armor</style></link>"
+
+[archeryTech]
+display_name = "Технология: Archery"
+treename = "Archery"
+techLevel = "wood"
+researchPointCost = 10
+prerequisite = ["spearthrowerTech", "spinningTech"]
+treeCoord = "5,8.5"
+description = "<style=\"fluff\"> Джоукаайнен таким образом ответил:\n\"Я сделал этот могучий арбалет,\nМодный лук и отравленные стрелы\nЗа смерть Вяйнямёйнена,\nЧтобы убить друга воды,\nЯ должен пристрелить старого мага\".\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VI\n\nГоблины научились делать луки и стрелы.\n\nПредпосылки: <link=\"spearthrowerTech\"><style=\"link\">Spear-thrower</style></link>, <link=\"spinningTech\"><style=\"link\">Spinning</style></link>\n\nРазблокировать:\n<link=\"crudebow\"><style=\"link>Crude Bow</style></link>\n<link=\"woodenarrows\"><style=\"link\">Wooden Arrows</style></link>"
+
+[dwarvenArmorTech]
+display_name = "Технология: Armor-Smithing"
+treename = "Armor-smithing"
+techLevel = "wood"
+researchPointCost = 16
+prerequisite = ["weaponsmithingTech", "armorTech"]
+treeCoord = "8,9"
+description = "<style=\"fluff\"> И я подумал о времени, и Дева со мной; и после этого мы берем тот пень, на который я наклонился, и было это для наковальни; и мы нашли тогда гладкие камни разных размеров, и это для молотков; и мы делали весь этот день, с покоями, на доспехах; и, конечно, мы избили его в очень хорошую форму, изнутри, и сломанные части мы били гладко, так что они не должны ранить, и в конце концов, чтобы моя доспехи подходят, чтобы пойти на меня.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nГоблины создали тяжелый костюм из брони <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nПредпосылки: <link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link>, <link=\"armorTech\"><style=\"link> Технология: деревянная броня</style></link>\n\nРазблокировать:\n<link=\"armory2\"><style=\"link\">Armorsmith's Shed</style></link>\n\n<link=\"dwcuirass\"><style=\"link>Dwarven Cuirass</style></link>"
+
+[ironWeaponTech]
+display_name = "Технологии: Железное оружие"
+treename = "Iron Weapons"
+prerequisite = ["bogIronTech", "weaponsmithingTech"]
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "11,3"
+description = "<style=\"fluff\"> Приди в мою комнату и печь,\nТам, где огонь свободно горит,\nТы будешь жить, расти и процветать,\nУилт стал мечом героев.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n\nГоблины научились делать железное оружие.\n\nПредпосылки: <link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link>, <link=\"bogIronTech\"><style=\"link> Технология: Bog Iron</style></link>\n\nРазблокировать:\n<link=\"weaponmaker4\"><style=\"link\">Кузница Оружейника</style></link>\n\n<link=\"ironsword\"><style=\"link>Iron Broadsword</style></link>"
+
+
+[ironArmorTech]
+display_name = "Технология: Iron Armor"
+treename = "Iron Armor"
+prerequisite = ["bogIronTech", "dwarvenArmorTech"]
+techLevel = "stone"
+researchPointCost = 16
+treeCoord = "11,5"
+description = "<style=\"fluff\"> Так герой, Каукомиели,\nБыстрая подготовка к войне,\nНа его голове медный шлем,\nНа плечах у него медные шапки,\nНа его теле железные доспехи,\nСталь, пояс вокруг его тела.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XII\n\nГоблины могут ковать железную броню.\n\nПредпосылки: <link=\"dwarvenArmorTech\"><style=\"link\"> Технология: Armor-smithing</style></link>, <link=\"bogIronTech\"><style=\"link> Технология: Bog Iron</style></link>\n\nРазблокировать:\n<link=\"armory4\"><style=\"link\">Armorsmith's Forge</style></link>\n\n<link=\"iron cuirass\"><style=\"link>Iron Cuirass</style></link>\n<link=\"ironshield\"><style=\"link>Железный щит</style></link>"
+
+# 6.0 Food technologies
+
+[butcheryTech]
+display_name = "Технология: Butchery"
+treename = "Butchery"
+techLevel = "wood"
+treeCoord = "1,10"
+description = "<style=\"fluff\"> Везде, где ищут мясника,\nОдин, чтобы убить быка Суоми,\nВ стране Карджала,\nИ среди Суоми-гигантов,\nВ тихих полях Эстланда,\nНа полях сражений Швеции,\nСреди альпинистов Лапландии,\nволхвы Ти приведе,\nИщите его в империи Туони,\nВ суде смерти Маналы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nГоблины умеют убивать мертвых животных и использовать кости для различных ремесел.\n\nРазблокировано: обнаружение трупа животного или некоторых <link=\"bones\"><style=\"link\">Bones</style></link>\n\nРазблокировать:\n<link=\"butcher0\"><style=\"link\">Butcher's Block</style></link>\n\n<link=\"bonefishingspear\"><style=\"link>Костовое рыболовное копье</style></link>\n<link=\"bonespear\"><style=\"link\">Bone Spear</style></link> (с <link=\"weaponsTech\"><style=\"link>) Технология: Оружие</style></link>\n\nПриводит к:\n<link=\"fertilizerTech\"><style=\"link\"> Технология: Удобрение</style></link> (с <link=\"slashAndBurnTech\"><style=\"link>) Технология: Slash-and-burn Farming</style></link>"
+
+[fishingTech]
+display_name = "Технологии: Рыбалка"
+treename = "Fishing"
+techLevel = "wood"
+treeCoord = "1,2.5"
+description = "<style=\"fluff\"> Прямая дорога спешит Väinämöinen\nВ лодочный домик на берегу моря,\nС заботой смотрит на рыбные копыта,\nИ линии, которые он хорошо рассматривает.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение V\n\nГоблины научились ловить рыбу!\n\nUnlocked by: building a <link=\"fishing1\"><style=\"link\">fisher-goblin's shack</style></link>\n\nРазблокировать:\n<link=\"rawfish\"><style=\"link>Свежие рыбы</style></link>\n<link=\"fishingspear\"><style=\"link\"> Рыболовное копье</style></link>\n<link=\"fishingtrap\"><style=\"link\"> Ловушка для рыбалки</style></link>\n\n<link=\"fishingworkshop1\"><style=\"link\">Fishing Work-Shack</style></link>\n\nПриводит к:\n<link=\"mokingTech\"><style=\"link\"> Технология: Курение</style></link>"
+
+[smokingTech]
+display_name = "Технология: курение"
+treename = "Smoking"
+techLevel = "wood"
+prerequisite = ["fishingTech"]
+researchPointCost = 4
+treeCoord = "2,3.5"
+description = "<style=\"fluff\"> Быстрее молодые парни из деревни\nОгонь был воздвигнут на бересте,\nПринес на кончиках соснового дерева;\nИ огонь и дым смешались.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXI\n\nГоблины обнаружили, что курение мяса и рыбы сохраняет его в течение более длительного времени, и добавляет что-то на вкус!\n\nПредпосылки: <link=\"fishingTech\"><style=\"link\"> Технология: Рыбалка</style></link>\n\nРазблокировать:\n<link=\"mokedbird\"><style=\"link\">Smoked Bird Meat</style></link>\n<link=\"mokedfish\"><style=\"link\">Smoked Fish</style></link>\n<link=\"mokedwolf\"><style=\"link\">Smoked Wolf</style></link>\n\n<link=\"moker0\"><style=\"link\">Smoking Shack</style></link>\n\nПриводит к:\n<link=\"bakingTech\"><style=\"link\"> Технология: выпечка </style></link> (с <link=\"farmingTech\"><style=\"link\") Технология: Сельское хозяйство</style></link>\n<link=\"charcoalTech\"><style=\"link\"> Технология: Уголь</style></link>"
+
+[bakingTech]
+display_name = "Технология: выпечка"
+treename = "Baking"
+techLevel = "wood"
+prerequisite = ["farmingTech", "smokingTech"]
+researchPointCost = 6
+treeCoord = "6,2"
+description = "<style=\"fluff\"> Пейте хлеб своего героя с удовольствием.\nПользуйтесь терпением и заботой.\nЧтобы твои печенья были достойными,\nЧтобы тесто было легким и воздушным.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII\n\nГоблины научились измельчать муку и печь хлеб.\n\nПредпосылки: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>, <link=\"КурениеТех\"><style=\"link> Технология: Курение</style></link>\n\nРазблокировать:\n<link=\"ryeflour\"><style=\"link>Rye Flour</style></link>\n<link=\"seed meal\"><style=\"link>Seed Meal</style></link>\n\n<link=\"mill0\"><style=\"link>Hand Mill</style></link>\n<link=\"baker0\"><style=\"link\"> Пищевая яма</style></link>\n\nПриводит к:\n<link=\"windmillsTech\"><style=\"link\"> Технология: ветряные мельницы</style></link>"
+
+#[huntingTech]
+#display_name = "Technology: Hunting"
+#treename = "Hunting"
+#techLevel = "wood"
+#treeCoord = "2,10"
+#researchPointCost = 900
+#description = """<style="fluff">\
+#That great Tapio's sacred bugle
+#May resound through glen and forest;
+#That the wood-nymph's call may echo,
+#May be heard in field and hamlet,
+#To the joy of all that listen!
+#Let great Tapio's horn for ages
+#Ring throughout the fen and forest,
+#Through the hills and dales of Northland
+#O'er the meadows and the mountains.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>
+#
+#Your goblins can now send a hunting-party into the forest.
+#
+#Unlocks:
+#<link="hunting0"><style="link">Hunting Post</style></link>"""
+
+# 7.0 Farming technologies
+
+[farmingTech]
+display_name = "Технология: сельское хозяйство"
+treename = "Farming"
+techLevel = "wood"
+treeCoord = "5,4"
+description = "<style=\"fluff\"> Пусть зеленеют стебли,\nПусть сами уши растут,\nИ стократное производство,\nОт моего вспашки и посева.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nГоблины открыли для себя сельское хозяйство и теперь знают, как сажать урожай!\n\nСельское хозяйство потребляет <link=\"плодородие\"><style=\"link\"> плодородие почв</style></link> и превращает его в урожай. Как только плодородие закончится, фермерский участок ничего не будет производить.\n\nОригинальное название: Unlocked by: Discovering Seeds\n\nРазблокировать:\n<link=\"farmplot\"><style=\"link>Farm Plot</style></link>\n<link=\"nettleprocessor0\"><style=\"link\"> Nettle Yard</style></link>\n<link=\"turniphole\"><style=\"link>Turnip Hole</style></link>\n<link=\"thresher1\"><style=\"link\"> Threshing Shack</style></link>\n\nПриводит к:\n<link=\"improved farming tech\"><style=\"link\"> Технология: улучшенное сельское хозяйство</style></link>\n<link=\"slashAndBurnTech\"><style=\"link\"> Технология: Slash-and-burn Farming</style></link>\n<link=\"bakingTech\"><style=\"link\"> Технология: выпечка </style></link> (с <link=\"mokingTech\"><style=\"link\">) Технология: курение</style></link>\n<link=\"clayfarmingTech\"><style=\"link\"> Технология: Clay Farming</style></link> (с <link=\"dwarvenTech\"><style=\"link>) Технология: Dwarven Metal</style></link>"
+# <link="mushroomTech"><style="link">Technology: Mushroom Farming</style></link>
+
+[slashAndBurnTech]
+display_name = "Технология: Slash-and-burn Farming"
+treename = "Slash-and-burn Farming"
+prerequisite = ["farmingTech"]
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "6,3.5"
+description = "<style=fluff> А потом эта птица небесная,\nПожар между ветвями;\nВскоре пламя раздувается северными ветрами,\nИ восточные ветры придают им силы,\nСожги деревья всех описаний,\nСожги их всех до праха и пепла,\nТолько берёза осталась стоять.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II\n\nВаши гоблины научились использовать <link=\"ashes\"><style=\"link\">ashes</style></link> для увеличения <link=\"fertility\"><style=\"link\">fertility</style></link> <link=\"farming\"><style=\"link\">farm plots</style></link>.\n\nПредпосылки: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\nРазблокировать:\n<link=\"slashandburn\"><style=\"link>Slash and Burn Plot</style></link>\n\nПриводит к:\n<link=\"fertilizerTech\"><style=\"link\"> Технология: Удобрение</style></link> (с <link=\"butcheryTech\"><style=\"link>) Технология: Butchery</style></link>"
+
+#[mushroomTech]
+#display_name = "Technology: Mushroom Farming"
+#treename = "Mushroom Farming"
+#prerequisite = "farmingTech"
+#techLevel = "wood"
+#treeCoord = "6,5"
+#researchPointCost = 900
+#description = """The goblins have figured out the secret of growing mushrooms.
+#
+#Prerequisites: <link="farmingTech"><style="link">Technology: Farming</style></link>"""
+
+[fertilizerTech]
+display_name = "Технология: удобрения"
+treename = "Fertilizer"
+prerequisite = ["slashAndBurnTech", "butcheryTech"]
+techLevel = "wood"
+treeCoord = "7,3.5"
+researchPointCost = 20
+description = "<style=\"fluff\"> И мы рассказали им о некоторых способах, с помощью которых они могли бы принести более быструю жизнь в почву; и это они стремились сделать, будучи вновь живыми после столь долгого периода полужизни.\n\nУильям Хоуп Ходжсон «Ночная земля»\n\nГоблины понимают, что органическое вещество, даже отходы, можно использовать для восстановления <link=\"фертильность\"><style=\"link\">fertility</style></link> в почве.\n\nТехнология: Удобрение разблокирует <link=\"muckingdef\"><style=\"link\"> фазу выдержки</style></link> в сельском хозяйстве, а также возможность оставить участок фермы <link=\"fallowdef\"><style=\"link\">fallow</style></link>.\n\nПредпосылки: <link=\"slashAndBurnTech\"><style=\"link\"> Технология: Slash-and-burn Farming</style></link>, <link=\"butcheryTech\"><style=\"link\"> Технология: Butchery</style></link>\n\nРазблокировать:\n<link=\"bonemeal\"><style=\"link>\"Bone Meal</style></link>\n<link=\"woodchips\"><style=\"link\"> Midden</style></link>\n\n<link=\"midden\"><style=\"link\"> Midden</style></link>"
+
+[clayfarmingTech]
+display_name = "Технология: Clay Farming"
+treename = "Clay Farming"
+prerequisite = ["farmingTech", "dwarvenToolTech"]
+techLevel = "wood"
+treeCoord = "7,4.5"
+researchPointCost = 10
+description = "<style=\"fluff\"> Долг нового короля состоял в том, чтобы вспахать страну и защищать ее, и поэтому он решил работать с мечом рядом с ним. Рано и поздно он вспахивал, запасая страну кукурузой, травой, деревьями и ягодами.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто VIII: Конкурс и расставание братьев\n\nТеперь, когда у них есть доступ к металлическим инструментам для копания, гоблины могут обрабатывать глиняные почвы <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПредпосылки: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>, <link=\"dwarvenToolTech\"><style=\"link> Технология: Dwarven Tools</style></link>\n\nРазблокировать:\n<link=\"clayfarmplot\"><style=\"link\"> Heavy Farm Plot</style></link>"
+
+[improved_farming_tech]
+display_name = "Технологии: улучшение сельского хозяйства"
+treename = "Improved Farming"
+prerequisite = ["farmingTech"]
+techLevel = "wood"
+treeCoord = "6,5"
+researchPointCost = 10
+description = "Гоблины научились более эффективно заниматься сельским хозяйством: сбор урожая и посев семян теперь занимают значительно меньше времени.\n\nПредпосылки: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\nРазблокировать:\n<link=\"campbonus def\"><style=\"link\">Camp Bonus</style></link>: <link=\"improved sow def\"><style=\"link>Improved Sowing</style></link>\n<link=\"campbonus def\"><style=\"link\">Camp Bonus</style></link>: <link=\"improved harvesting def\"><style=\"link>Improved Harvesting</style></link>"
+
+# 8.0 Shamanism technologies
+
+[shamanismTech]
+display_name = "Технология: шаманизм"
+treename = "Shamanism"
+keyword = "shamanism"
+techLevel = "wood"
+treeCoord = "1,1"
+description = "<style=\"fluff\"> Он долго размышлял и размышлял.\nГде найти эти волшебные слова?\nНайдите потерянные слова Учителя.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI\n\nПо крайней мере один гоблин в вашем лагере - <link=\"hardblooded\"><style=\"link\">hard-blooded</style></link> и <link=\"hardy\"><style=\"link\">hardy</style></link>. Теперь вы можете построить <link=\"shamanhut\"><style=\"link\">shaman's hut</style></link>, и если вы это сделаете, ваши гоблины выберут <link=\"shaman def\"><style=\"link\">shaman</style></link>.\n\nРазблокировка: <link=\"shamanhut\"><style=\"link\"> Шаманский хат</style></link>\n\n<link=\"level earth\"><style=\"link>Level Earth</style></link>\n<link=\"lower earth\"><style=\"link>Нижняя Земля</style></link>\n<link=\"raise earth\"><style=\"link>Raise Earth</style></link>\n<link=\"startfire01\"><style=\"link>Start Fire</style></link>\n<link=\"summonwater01\"><style=\"link\">Summon Water</style></link>\n\nПриводит к:\n<link=\"spirit law\"><style=\"link\"> Технологии: Песни Мертвых</style></link>\n<link=\"windlaw\"><style=\"link\"> Технологии: Песни ветра</style></link>\n<link=\"woodmagicTech\"><style=\"link\"> Технология: Деревянные магические структуры</style></link> (с <link=\"carpentryTech\"><style=\"link\") Технология: Карпентри</style></link>"
+
+[woodmagicTech]
+display_name = "Технология: Деревянные магические структуры"
+treename = "Wooden Magical Structures"
+keyword = "shamanism"
+techLevel = "wood"
+treeCoord = "4,3"
+prerequisite = ["shamanismTech", "carpentryTech"]
+researchPointCost = 6
+description = "Гоблины научились строить более эффективные магические структуры.\n\nПредпосылки: <link=\"shamanismTech\"><style=\"link\"> Технология: Шаманизм</style></link>, <link=\"carpentryTech\"><style=\"link> Технология: Карпентри</style></link>\n\nРазблокировать:\n<link=\"tallravenstatue\"><style=\"link\"> Статуя Высокого Ворона</style></link>"
+
+[spirit_law]
+display_name = "Оригинальное название: Songs of the Dead"
+treename = "Songs of the Dead"
+keyword = "shamanism"
+prerequisite = "shamanismTech"
+techLevel = "wood"
+researchPointCost = 8
+treeCoord = "4,2"
+description = "<style=\"fluff\"> Однажды летом была ведьма, которая положила все сено в сарай с головой ветра. Потом пришла другая ведьма и сбила весь сарай. Ничего хорошего.\n\nMuurla, 1915. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\nШаман нашел слова, чтобы начать общение с духами леса.\n\nПредпосылки: <link=\"shamanismTech\"><style=\"link\"> Технология: Шаманизм</style></link>\n\nРазблокировать:\n<link=\"conscript spirits 01\"><style=\"link\">Conscript Spirits 1</style></link>\n<link=\"conscript spirits 02\"><style=\"link\">Conscript Spirits 2</style></link>"
+
+[windlaw]
+display_name = "Технологии: Песни ветра"
+treename = "Songs of the Wind"
+keyword = "shamanism"
+prerequisite = "shamanismTech"
+techLevel = "wood"
+researchPointCost = 6
+treeCoord = "4,1"
+description = "<style=\"fluff\"> Я спросил его, в чем причина этого, и обнаружил, что он полностью одержим идеей, что Фины — волшебники, и особенно имеют власть над ветрами и бурями.\n\nРичард Генри Дана-младший, за два года до мачты (1840)\n\nШаман нашел слова, чтобы начать использовать ветры для своей магии.\n\nПредпосылки: <link=\"shamanismTech\"><style=\"link\"> Технология: Шаманизм</style></link>\n\nРазблокировать:\n<link=\"changewindspell\"><style=\"link\">Изменить ветер</style></link>\n<link=\"summonwindhead\"><style=\"link\">Summon Windhead</style></link>\n\n<style=\"fluff\"> Вера в то, что у финнов были магические силы, которые могли повлиять на ветры, подтверждается в эпоху викингов, и, как показывает цитата Ричарда Генри Даны, пережила Эпоху паруса. В средневековых историях не всегда ясно, имеют ли они в виду финнов или саамов, но позже вера четко отождествляется с финнами."

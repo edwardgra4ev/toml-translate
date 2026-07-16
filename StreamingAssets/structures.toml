@@ -1,0 +1,2961 @@
+# Contents
+#
+# 1.0 Transportation structures
+#  1.1 Roadways
+#  1.2 Bridges
+# 2.0 Fortifications
+# 3.0 Producers
+# 4.0 Storage
+#  4.1 Granaries
+#  4.2 Other storage buildings
+# 5.0 Workshops
+#  5.1 Food workshops
+#  5.2 Wood workshops
+#  5.3 Clay workshops
+#  5.4 Textile workshops
+#  5.5 Metal workshops
+#  5.6 Leather workshops
+#  5.7 Weapon and armor workshops
+#  5.8 Farming workshops
+#  5.9 Stone workshops
+# 6.0 Machinery
+#  6.1 Waterworks
+# 7.0 Housing
+# 8.0 Health
+# 9.0 Security
+# 10.0 Culture
+# 11.0 Expeditions
+# 12.0 Underworld
+# 13.0 Firefighting
+# 14.0 Deathcare
+# 15.0 Furniture etc.
+# 16.0 Decorations
+# 17.0 Special
+# 18.0 Unbuildable
+
+# 1.0 Transportation structures
+
+# 1.1 Roadways
+
+[cobblestone_road]
+type = "structure"
+category = "Road"
+display_name = "Cobblestone Road"
+keyword = ["submersible", "road", "bumpy"]
+unlockedBy = "simpleStoneTech"
+condition = 30
+materials = "roughstone"
+scrapped = "roughstone"
+maintenanceLevel = 1
+labour = 30
+experience = 0.5
+breakertier = 4
+line_placement = true
+description = """\
+Replaces the ground surface with rough <link="stonetier"><style="link">stones</style></link>.
+
+Unlocked by: <link="simpleStoneTech"><style="link">Technology: Simple Stone Structures</style></link>
+
+<style="fluff">"It is I," said the road, "that do the Work of the World, and take from city to city the rumour of each. There is nothing higher than Man and the making of cities.
+
+ - Lord Dunsany, the Lord of Cities (1908)</style>\
+"""
+
+[duckboard]
+type = "structure"
+display_name = "Duckboard"
+category = "Road"
+keyword = ["road", "wood"]
+unlockedBy = "plankTech"
+condition = 10
+fireResist = 2
+burned = "ashes"
+materials = "woodplankx2"
+scrapped = "woodplankx2"
+maintenanceLevel = 1
+maintenanceItem = "woodplank"
+labour = 10
+experience = 0.5
+breakertier = 1
+line_placement = true
+description = """\
+A board covering the ground, for easier walking over <link="mud"><style="link">mud</style></link>.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff">Sad, the many pathways answer:
+"We ourselves have cares sufficient,
+Cannot watch thy son and hero,
+Wretched are the lives of pathways,
+Deep indeed our own misfortunes.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>\
+"""
+
+#[plank_boardwalk]
+#type = "structure"
+#display_name = "Plank Boardwalk"
+#category = "Road"
+#keyword = ["road", "stilts", "wood"]
+#unlockedBy = "hydraulicTech"
+#condition = 10
+#fireResist = 2
+#burned = "ashes"
+#materials = ["woodplankx2", "woodpole"]
+#scrapped = "woodplank"
+#maintenanceLevel = 1
+#maintenanceItem = "woodplank"
+#labour = 10
+#experience = 0.5
+#breakertier = 1
+#description = """\
+#Planks mounted on stilts, immune to flood damage.
+#
+#Unlocked by: <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>\
+#"""
+
+[stonepavement]
+type = "structure"
+category = "Road"
+display_name = "Stone Pavement"
+keyword = ["submersible", "road"]
+unlockedBy = "simpleStoneTech"
+condition = 30
+materials = "dressedstone"
+scrapped = "dressedstone"
+maintenanceLevel = 1
+labour = 30
+experience = 0.5
+breakertier = 4
+line_placement = true
+description = """\
+Replaces the ground surface with paved <link="stonetier"><style="link">stones</style></link>.
+
+Unlocked by: <link="simpleStoneTech"><style="link">Technology: Simple Stone Structures</style></link>\
+"""
+
+#  1.2 Bridges
+
+[plank_bridge]
+type = "structure"
+display_name = "Plank Bridge"
+category = "Bridges"
+unlockedBy = "plankTech"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["woodplankx2", "branchx4"]
+scrapped = "woodplankx2"
+maintenanceLevel = 4
+maintenanceItem = "woodplank"
+labour = 20
+experience = 1
+breakertier = 2
+keyword = ["bridge", "wood", "simple_bridge", "submersible", "road"]
+description = """\
+A simple plank bridge. Plank bridges can only be built in water tiles adjacent to land.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff">\
+"Thou, O Tapio's son, Nyyrikki,
+Forest-son, enrobed in purple,
+Cut the fir-trees on the mountains,
+Cut the pines with cones of beauty,
+Lay them o'er the streams for bridges.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXII</style>\
+"""
+
+[pontoon_bridge]
+type = "structure"
+display_name = "Pontoon Bridge"
+category = "Bridges"
+unlockedBy = "barrelTech"
+condition = 20
+fireResist = 1
+burned = "ashesx2"
+materials = ["wood_barrelx4", "woodplankx4", "ropex4"]
+scrapped = ["wood_barrelx4", "woodplankx4", "ropex2"]
+maintenanceLevel = 2
+maintenanceItem = "woodplank"
+labour = 30
+experience = 1
+breakertier = 2
+keyword = ["bridge", "wood", "pontoon", "floating_structure", "road"]
+clearFogRadius = 1 # Bridges have a fog clear radius to make it possible to build a bridge to a shore entirely in forest-cover
+description = """\
+A simple floating bridge constructed from wooden barrels.
+
+Unlocked by: <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>\
+"""
+
+# 2.0 Fortifications
+
+[fence]
+type = "class"
+display_name = "Fences"
+
+[fence1]
+type = "structure"
+display_name = "Stick Fence"
+category = "Fortification"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+maintenanceLevel = 1
+labour = 10
+experience = 0.5
+breakertier = 1
+keyword = ["fencing", "wood"]
+line_placement = true
+description = """\
+A simple fence.\
+"""
+
+[palisade]
+type = "structure"
+display_name = "Palisade"
+category = "Fortification"
+unlockedBy = "carpentryTech"
+condition = 100
+fireResist = 2
+burned = "ashes"
+materials = "woodlogx3"
+scrapped = ["firewoodx2", "woodlogx2"]
+labour = 40
+maintenanceLevel = 2
+experience = 3
+breakertier = 3
+keyword = ["wall", "wood"]
+line_placement = true
+description = """\
+Condition: <style="bonus">100</style>
+
+A wooden palisade, for keeping undesirables out of the camp.
+
+Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+<style="fluff">Took the trunks of stately fir-trees,
+Trimmed them with his blade for fence-posts,
+Cut the tallest in the woodlands,
+For the railing of his fences;
+Made the smaller poles and cross-bars
+From the longest of the lindens.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXI</style>\
+"""
+
+[stonewall]
+type = "structure"
+display_name = "Drystone Wall"
+category = "Fortification"
+unlockedBy = "stoneFortTech"
+condition = 500
+materials = "dressedstonex5"
+scrapped = ["dressedstonex5"]
+labour = 80
+maintenanceLevel = 2
+experience = 5
+breakertier = 5
+keyword = ["wall", "stone"]
+line_placement = true
+description = """\
+Condition: <style="bonus">500</style>
+
+A heavy stone wall.
+
+Unlocked by: <link="stoneFortTech"><style="link">Technology: Stone Fortifications</style></link>"""
+
+[woodtower]
+type = "structure"
+display_name = "Wooden Watchtower"
+category = "Fortification"
+keyword = ["tower", "manned", "wood"]
+unlockedBy = ["plankTech", "spearthrowerTech"]
+condition = 100
+fireResist = 1
+burned = ["ashes", "ashes"]
+materials = ["woodpolex6", "woodplankx6", "woodlogx4"]
+scrapped = ["woodpolex4", "woodplankx4", "woodlogx2"]
+maintenanceLevel = 5
+maintenanceItem = ["woodplank:60%", "woodpole:50%"]
+labour = 60
+experience = 5
+breakertier = 2
+description = """\
+Condition: <style="bonus">100</style>
+
+A wooden watchtower, manned by a sentry.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link> and <link="spearthrowerTech"><style="link">Technology: Spear-thrower</style></link>.
+
+<style="fluff">\
+Spake the master of Pohjola:
+"Go and learn, my worthy daughter,
+Why the watch-dogs have been barking,
+Why the black-dog signals danger.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>\
+"""
+
+[woodstakes]
+type = "structure"
+display_name = "Wooden Stakes"
+category = "Fortification"
+condition = 30
+fireResist = 2
+burned = "ashes"
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+labour = 30
+experience = 1
+breakertier = 1
+line_placement = true
+description = """\
+Condition: <style="bonus">30</style>
+
+Wooden stakes, very nasty if you fall on them! Stakes will also slow movement through them.
+
+<style="fluff">In the yard were pickets standing,
+Hundreds were the sharpened pillars,
+And a head on every picket,
+Only one was left un-headed.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVII</style>\
+"""
+keyword = ["trap", "impedesMovement", "wood"]
+damageType = "slashing"
+damagePoints = 10
+
+# 3.0 Producers
+
+[claypit]
+type = "structure"
+display_name = "Clay Pit"
+category = "Clay and Stone"
+discovers = "clayTech"
+condition = 10
+labour = 80
+experience = 4
+experienceType = "digger"
+keyword = ["clay", "clayproducer", "submersible"]
+maintenanceLevel = 5
+order = 20
+description = """\
+Discovers: <link="clayTech"><style="link">Technology: Pottery</style></link>
+
+A place to dig for <link="rawClay"><style="link">clay</style></link>. A clay pit can only be built in <link="claysoil"><style="link">clay soil</style></link>.
+
+<style="fluff">Lapland's young and reckless minstrel,
+Sorrow-laden, thus enchanted,
+Deeper sinks in mud and water,
+Fear-enchained and full of anguish,
+In the mire, his beard bedrabbled,
+Mouth once boastful filled with sea-weed.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem III</style>\
+"""
+
+[farmplot]
+type = "structure"
+display_name = "Simple Farm Plot"
+category = "Farming"
+unlockedBy = "farmingTech"
+condition = 1
+labour = 20
+maintenanceLevel = 5
+keyword = ["plot", "submersible"]
+order = 20
+description = """\
+A farm plot, for <link="farming"><style="link">growing crops</style></link>. Simple farm plots can only be laid out in <link="sandsoil"><style="link">sandy soil</style></link> or burned <link="claysoil"><style="link">clay</style></link>.
+
+Farming converts soil <link="fertility"><style="link">fertility</style></link> into crops. Once the fertility of the farm plot is used up, it will no longer produce anything. Fertility can be restored with the aid of <link="fertilizerTech"><style="link">fertilizers</style></link>.
+
+Note that although simple farm plots can be built on clay, the primitive tools used to work them can't extract the full fertility of clay soil. To farm clay at maximum productivity, unlock <link="clayfarmplot"><style="link">heavy farm plots</style></link>.
+
+Unlocked by: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+<style="fluff">Ancient mother, thou that livest
+Far below the earth and ocean,
+Mother of the fields and forests,
+Bring the rich soil to producing,
+Bring the seed-grains to the sprouting.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>\
+"""
+
+[clayfarmplot]
+type = "structure"
+display_name = "Heavy Farm Plot"
+category = "Farming"
+unlockedBy = "clayfarmingTech"
+condition = 1
+labour = 20
+maintenanceLevel = 5
+keyword = ["plot", "submersible"]
+order = 20
+description = """\
+A farm plot, for <link="farming"><style="link">growing crops</style></link>. Heavy farm plots can be laid out in <link="claysoil"><style="link">clay soils</style></link>, but require <link="shovel"><style="link">metal tools</style></link>.
+
+Farming converts soil <link="fertility"><style="link">fertility</style></link> into crops. Once the fertility of the farm plot is used up, it will no longer produce anything.
+
+Unlocked by: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+<style="fluff">So a third from morn till evening,
+Till the third day evening brings him
+To the endless bridge of Osmo,
+To the Osmo-fields and pastures.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem X</style>\
+"""
+
+[midden]
+type = "structure"
+display_name = "Midden"
+category = "Farming"
+unlockedBy = "fertilizerTech"
+maintenanceLevel = 5
+condition = 20
+fireResist = 2
+burned = "ashesx4"
+labour = 20
+order = 20
+storage = 10
+keyword = ["middenheap", "passive_producer"]
+passive_input_type = "fertility"
+passive_output_item = "compost"
+passive_output_mult = 36
+seconds_per_passive_tick = 120
+description = """\
+Capacity: <style="bonus">30</style> <link="weight_def"><style="link">weight units</style></link> of items.
+
+A midden heap for <link="compostingdef"><style="link">composting</style></link>.
+
+When <link="garbage"><style="link">garbage</style></link> is dumped in the midden, it produces <link="compost"><style="link">compost</style></link> for <link="fertility"><style="link">fertilizing</style></link> <link="farming"><style="link">fields</style></link>. \
+A <link="pitchfork"><style="link">pitchfork</style></link> is needed to work the midden.\
+"""
+
+[slashandburn]
+type = "structure"
+display_name = "Slash and Burn Plot"
+category = "Farming"
+unlockedBy = "slashAndBurnTech"
+maintenanceLevel = 5
+condition = 1
+labour = 20
+order = 20
+keyword = ["plot", "submersible"]
+description = """\
+A slash-and-burn plot: goblins will burn all flora in the area and till the ashes into the soil to create much higher fertility.
+
+The plot includes a two-tile wide firebreak on each side. Once you mark out an area, the goblins will fell trees and cut down vegetation inside, and clear the firebreaks. When that's done, you can assign firewatchers and order them to start the fire!
+
+Once the plot area has been burned, you can abandon the slash and burn plot, and lay out a <link="farmplot"><style="clickableLink">farm plot</style></link> over the burned area.
+
+Unlocked by: <link="slashAndBurnTech"><style="link">Technology: Slash-and-burn Farming</style></link>
+
+<style="fluff">\
+Hark! the titmouse wildly crying,
+From the aspen, words as follow:
+"Osma's barley will not flourish,
+Not the barley of Väinölä,
+If the soil be not made ready,
+If the forest be not levelled,
+And the branches burned to ashes."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem II</style>\
+"""
+
+[stonequarry]
+type = "structure"
+display_name = "Stone Quarry"
+category = "Clay and Stone"
+unlockedBy = "stoneTech"
+maintenanceLevel = 5
+condition = 20
+labour = 50
+order = 20
+keyword = ["quarry", "noisy", "submersible", "stoneproducer", "production_erodes_ground"]
+description = """\
+A large open pit for quarrying stone.
+
+Unlocked by: <link="stoneTech"><style="link">Technology: Stone</style></link>
+
+<style="fluff">\
+Could not win a touch of kindness,
+Could not merit love nor honor,
+Though I had dislodged the mountains,
+Though the rocks had I torn open.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+[charcoal_clamp]
+type = "structure"
+display_name = "Charcoal Clamp"
+category = "Wood"
+unlockedBy = "charcoalTech"
+condition = 40
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx20"]
+scrapped = ["branchx10"]
+labour = 40
+experience = 1
+breakertier = 1
+keyword = ["wood", "charcoalclamp"]
+description = """\
+Condition: <style="bonus">40</style>
+
+A large pile of wood that produces <link="charcoal"><style="link">charcoal</style></link> from <link="firewood"><style="link">firewood</style></link>.
+
+Unlocked by: <link="charcoalTech"><style="link">Technology: Charcoal</style></link>
+
+<style="fluff">Then the blacksmith, Ilmarinen,
+Came to earth to work the metal;
+He was born upon the Coal-mount,
+Skilled and nurtured in the coal-fields.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>\
+"""
+
+[bog_iron_collector2]
+type = "structure"
+display_name = "Bog Iron Collector's Shed"
+unlockedBy = "bogIronTech"
+category = "Metal"
+condition = 30
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodplankx8"]
+scrapped = ["woodplankx6"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 20
+order = 20
+experience = 2
+breakertier = 1
+keyword = ["bogironcollector","wood"]
+description = """A bog iron collector's shack.
+
+<style="fluff">Then the blacksmith, Ilmarinen,
+Thus addressed the sleeping iron:
+Thou most useful of the metals,
+Thou art sleeping in the marshes,
+Thou art hid in low conditions,
+Where the wolf treads in the swamp-lands,
+Where the bear sleeps in the thickets.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>\
+"""
+
+# 3.3 Fishing
+
+[fishing]
+type = "class"
+display_name = "Fisher"
+
+[fishing1]
+type = "structure"
+display_name = "Fisher-goblin's Shack"
+category = "Fishing"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx15"]
+scrapped = ["branchx6"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+discovers = "fishingTech"
+sacrificeItem = "ceremonialfish"
+labour = 20
+order = 20
+experience = 2
+breakertier = 1
+keyword = ["fishingbuilding","wood"]
+description = """\
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialfish"><style="link">Ceremonial Fish</style></link>
+Condition: <style="bonus">20</style>
+
+A simple fisher-goblin's <link=\"earthfasttier\"><style=\"link\">shack</style></link>. \
+One fishing shack generates fishing jobs for one goblin.
+
+Discovers: <link="fishingTech"><style="link">Technology: Fishing</style></link>
+
+<style="fluff">When thou comest to a headland,
+On the point thou'lt see a cottage
+Where the fishermen assemble.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXIV</style>\
+"""
+
+[fishtrap]
+type = "structure"
+display_name = "Fishing Trap"
+keyword = ["fishtrap", "submersible", "floating_structure"]
+category = "Fishing"
+condition = 3
+materials = "fishingtrap"
+scrapped = "fishingtrap"
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "fishingTech"
+order = 20
+labour = 5
+breakertier = 0
+description = """\
+Condition: <style="bonus">3</style>
+
+A fish-trap, to catch fish.
+
+Unlocked by: <link="fishingTech"><style="link">Technology: Fishing</style></link>
+
+<style="fluff">Then they turn and drag the fish-net
+Toward a meadow jutting seaward;
+Now they drag it toward Väinölä,
+Draw it lengthwise, sidewise, crosswise,
+Catching fish of every species,
+salmon, trout, and pike, and whiting.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVIII</style>\
+"""
+
+#[wickernet]
+#type = "structure"
+#display_name = "Wicker Fishing Net"
+#category = "Resource"
+#condition = 20
+#materials = "willownet"
+#scrapped = "willownet"
+#unlockedBy = "fishingTech"
+#labour = 10
+#description = """<style="fluff">\
+#Thereupon the son, Kullervo,
+#Hastened to his work as bidden,
+#Drove the salmon to the fish-nets,
+#Spake in innocence as follows:
+#"Shall I with my youthful vigor
+#Scare the salmon to the fish-nets,
+#Or with little magic vigor
+#Shall I drive them to their capture?
+#
+#- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXV</style>
+#
+#A wicker fishing net."""
+#keyword = ["fishing", "wood"]
+
+# 4.0 Storage
+
+[stockpile]
+type = "structure"
+display_name = "Stockpile"
+category = "Storage"
+condition = 1
+labour = 20
+keyword = ["plot", "submersible"]
+description = """\
+Capacity: 5 items per tile.
+
+A designated area for <link="storage"><style="link">storing</style></link> items outdoors.\
+Be aware that some items will decay and eventually be destroyed if they are left at the mercy of the elements.
+
+You must set item limits in the stockpile's Storage Settings before goblins will store anything in it.
+
+<style="fluff">Silken robes upon the alders,
+On the rocks her silken stockings,
+On the grass her shoes of deer-skin,
+In the sand her shining necklace,
+In the sand her rings and jewels.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>
+"""
+order = 40
+
+[storehouse]
+type = "class"
+display_name = "Storehouse"
+order = 40
+
+[storehouse1]
+type = "structure"
+display_name = "Storage Shack"
+category = "Storage"
+keyword = "wood"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "carpentryTech"
+labour = 20
+experience = 2
+breakertier = 1
+storage = 30
+description = """\
+Capacity: <style="bonus">30</style> <link="weight_def"><style="link">weight units</style></link> of items
+Condition: <style="bonus">20</style>
+
+An <link="earthfasttier"><style="link">earthfast</style></link> <link="storage"><style="link">storage</style></link> shack.
+
+Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+<style="fluff">Now make haste to yonder hill-top,
+To the store-house on the mountain,
+Open there the large compartment,
+Thou will find it filled with boxes,
+Chests and cases, trunks and boxes.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>\
+"""
+
+[storehouse2]
+type = "structure"
+display_name = "Storage Shed"
+category = "Storage"
+keyword = "wood"
+condition = 40
+fireResist = 1
+burned = ["ashesx5"]
+materials = ["woodpolex10", "woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = "plankTech"
+labour = 30
+experience = 3
+breakertier = 2
+storage = 50
+description = """\
+Capacity: <style="bonus">50</style> <link="weight_def"><style="link">weight units</style></link> of items
+Condition: <style="bonus">40</style>
+
+A <link="planktier"><style="link">pole</style></link> <link="storage"><style="link">storage</style></link> building.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff">Six compartments built of pine-wood,
+Twelve the number of the chambers,
+And the mansion filled with garrets,
+Studding all the forest border.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+[storehouse3]
+type = "structure"
+display_name = "Storage Cabin"
+category = "Storage"
+condition = 60
+fireResist = 3
+burned = ["ashesx10"]
+materials = ["woodbeamx10", "woodplankx10"]
+scrapped = ["woodbeamx8", "woodplankx6"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = ["beamTech"]
+labour = 40
+experience = 4
+breakertier = 3
+storage = 70
+keyword = "wood"
+description = """\
+Capacity: <style="bonus">70</style> <link="weight_def"><style="link">weight units</style></link> of items
+Condition: <style="bonus">60</style>
+
+A <link="storage"><style="link">storage</style></link> <link="beamtier"><style="link">cabin</style></link>.
+
+Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link>
+
+<style="fluff">Rich his mines of shining copper,
+Highlands filled with magic metals,
+Chests of jewels in his store-house,
+All the wealth of Kalevala.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXII</style>
+"""
+
+#[storehouse4]
+#type = "structure"
+#display_name = "Stone and Timber Storehouse"
+#category = "Storage"
+#unlockedBy = ["stoneConstructionTech"]
+#condition = 100
+#materials = ["dressedstonex20"]
+#scrapped = ["dressedstonex18"]
+#maintenanceLevel = 5
+#labour = 80
+#experience = 10
+#breakertier = 5
+#keyword = ["stone"]
+#storage = 100
+#description = """\
+#Capacity: <style="bonus">100</style> <link="weight_def"><style="link">weight units</style></link> of items
+#Condition: <style="bonus">100</style>
+#
+#A sturdy <link="storage"><style="link">storage</style></link> building built of <link="cottagetier"><style="link">wood and stone</style></link>.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+#
+#<style="fluff">Even then may trouble find thee,
+#Misery may overtake thee;
+#Often is the lowland birch-tree
+#Cut to pieces in the ware-house.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVIII</style>"""
+
+# 4.1 Granaries
+
+[granary]
+type = "class"
+display_name = "Granary"
+order = 40
+
+[turniphole]
+type = "structure"
+display_name = "Turnip Hole"
+category = "Storage"
+unlockedBy = "farmingTech"
+accepts = "is_turnip"
+keyword = ["pestproof", "stone", "is_turniphole"]
+condition = 50
+fireResist = 4
+labour = 30
+maintenanceLevel = 5
+experience = 2
+breakertier = 2
+storage = 10
+order = 40
+description = """\
+Capacity: <style="bonus">10</style> <link="weight_def"><style="link">weight units</style></link> of <style="clickableLink"><link="turnip">turnips</link></style>.
+Condition: <style="bonus">50</style>
+
+A rock-lined, covered hole in the ground, where <link="turnip"><style="link">turnips</style></link> can be safely <link="storage"><style="link">stored</style></link>.
+
+Unlocked by: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+<style="fluff">\
+“Blades I gathered in the summers,
+Twisted barley-stalks in winter,
+Like the laborers of heroes,
+Like the servants sold in bondage.”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+[granary2]
+type = "structure"
+display_name = "Granary"
+category = "Storage"
+keyword = ["wood", "pestproof"]
+accepts = "seed"
+condition = 100
+fireResist = 3
+burned = ["ashesx10"]
+materials = ["woodlog", "woodplankx8", "woodpolex4"]
+scrapped = ["woodlog", "woodplankx6", "woodpolex2"]
+maintenanceLevel = 5
+unlockedBy = "plankTech"
+labour = 50
+experience = 5
+breakertier = 3
+storage = 20
+description = """\
+Capacity: <style="bonus">20</style> <link="weight_def"><style="link">weight units</style></link> of seeds.
+Condition: <style="bonus">100</style>
+
+A secure place for <link="storage"><style="link">storing</style></link> seeds.
+
+Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+<style="fluff">If thou hearest from the mother,
+From the mother of thy husband,
+That the cask for meal is empty,
+Take the barley from the garners,
+Hasten to the rooms for grinding.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+# 4.2 Other storage buildings
+
+[scuttlebutt]
+type = "Structure"
+display_name = "Scuttlebutt"
+category = "Storage"
+condition = 1
+fireResist = 2
+materials = ["claypot"]
+scrapped = ["claypot"]
+unlockedBy = "clayTech"
+maintenanceLevel = 2
+labour = 5
+breakertier = 1
+keyword = ["drinking", "clay"]
+order = 40
+description = """\
+Condition: <style="bonus">1</style>
+
+A clay pot for goblins to drink from.
+
+Unlocked by: <link="clayTech"><style="link">Technology: Pottery</style></link>
+
+<style="fluff">"Quench thy thirst from yonder lakelet,
+There, the beer that thou deservest!"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVII</style>\
+"""
+
+# 5.0 Workshops
+
+# 5.1 Food workshops
+
+[kitchen]
+type = "class"
+display_name = "Kitchen"
+order = 10
+
+[kitchen0]
+type = "structure"
+display_name = "Outdoor Kitchen"
+category = "Food"
+condition = 20
+seating = 8
+fireResist = 2
+burned = ["ashesx4", "claypot"]
+materials = ["claypot", "branchx4", "woodlogx4", "woodblock"]
+scrapped = ["claypot", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "claypot:25%"
+labour = 30
+experience = 1
+breakertier = 3
+keyword = ["kitchen", "wood", "noisy"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+Capacity: <style="bonus">8</style>
+Condition: <style="bonus">20</style>
+
+An outdoor cooking and eating area. <link="kitchendef"><style="link">Kitchens</style></link> prepare and serve <link="foodpoint"><style="link">food</style></link> for the inhabitants of your camp once every season.
+
+<style="fluff">Ilpotar, the ancient hostess,
+Gave this order to her servants:
+"Come, my pretty maiden-waiter,
+Servant-girl to me belonging,
+Lay some salmon to the broiling,
+Bring some beer to give the stranger!"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVII</style>\
+"""
+
+[kitchen1]
+type = "structure"
+display_name = "Kitchen Shack"
+category = "Food"
+unlockedBy = "housingTech"
+condition = 30
+seating = 12
+fireResist = 2
+breakertier = 3
+burned = ["ashesx6", "claypot"]
+materials = ["branchx16", "claypotx2", "woodlogx6", "woodblock"]
+scrapped = ["branchx8", "claypot", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = ["claypot:25%", "branch:90%"]
+labour = 40
+experience = 2
+on_enter = ["work_bonus_1"]
+keyword = ["wood", "kitchen", "noisy"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+Capacity: <style="bonus">12</style>
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+20%</style>
+Condition: <style="bonus">30</style>
+
+A kitchen shack with attached dining area. <link="kitchendef"><style="link">Kitchens</style></link> prepare and serve <link="foodpoint"><style="link">food</style></link> for the inhabitants of your camp once every season. More efficient kitchens prepare meals faster.
+
+Unlocked by: <link="housingTech"><style="link">Technology: Housing</style></link>
+
+<style="fluff">Thou shalt bake me honey-biscuit,
+Shalt prepare me barley-water,
+Thou shalt fill my foaming beer-cups,
+Thou shalt sing beside my table.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>\
+"""
+
+[kitchen2]
+type = "structure"
+display_name = "Kitchen Shed"
+category = "Food"
+unlockedBy = "plankTech"
+condition = 40
+seating = 16
+fireResist = 2
+burned = ["ashes", "claypot"]
+materials = ["claypotx2", "woodplankx16", "woodpolex4"]
+scrapped = ["claypotx2", "woodplankx10", "woodpolex2"]
+maintenanceLevel = 4
+maintenanceItem = ["claypot:25%", "woodplank:50%"]
+labour = 50
+experience = 3
+breakertier = 2
+on_enter = ["work_bonus_2"]
+keyword = ["wood", "kitchen", "noisy"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+<style="characteristics">Capacity: <style="bonus">16</style></style>
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+40%</style>
+Condition: <style="bonus">40</style>
+
+A kitchen shed with plank tables. <link="kitchendef"><style="link">Kitchens</style></link> prepare and serve <link="foodpoint"><style="link">food</style></link> for the inhabitants of your camp. More efficient kitchens prepare meals faster.
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>\
+"""
+
+#[kitchen4]
+#type = "structure"
+#display_name = "Kitchen Cottage"
+#category = "Food"
+#unlockedBy = "stoneConstructionTech"
+#condition = 100
+#seating = 20
+#fireResist = 2
+#burned = ["ashes", "claypot"]
+#materials = ["claypotx2", "dressedstonex20"]
+#scrapped = ["claypotx2", "dressedstonex18"]
+#maintenanceLevel = 4
+#maintenanceItem = ["claypot:25%"]
+#labour = 50
+#experience = 10
+#breakertier = 5
+#on_enter = ["work_bonus_4"]
+#keyword = ["stone", "kitchen", "noisy"]
+#description = """\
+#<link="firehazard"><style="link">Fire Hazard</style></link>
+#<style="characteristics">Capacity: <style="bonus">20</style></style>
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+80%</style>
+#Condition: <style="bonus">100</style>
+#
+#A <link="cottagetier"><style="link">stone and timber</style></link> kitchen building. <link="kitchendef"><style="link">Kitchens</style></link> prepare and serve <link="foodpoint"><style="link">food</style></link> for the inhabitants of your camp. More efficient kitchens prepare meals faster.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+#
+#<style="fluff">Sometimes he makes a great feast for his friends and relatives, when they shout and drink beer till they are tipsy.
+#
+# - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>\
+#"""
+
+[butcher]
+type = "class"
+display_name = "Butcher"
+order = 10
+
+[butcher0]
+type = "structure"
+display_name = "Butcher's Block"
+category = "Food"
+unlockedBy = ["butcheryTech"]
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = ["branchx6"]
+scrapped = ["branchx4"]
+maintenanceLevel = 5
+labour = 20
+experience = 1
+breakertier = 1
+keyword = ["butcher", "stinks", "wood", "noisy"]
+description = """\
+Condition: <style="bonus">20</style>
+
+An area for butchering animal carcasses and working bone.
+
+Unlocked by: <link="butcheryTech"><style="link">Technology: Butchery</style></link>
+
+<style="fluff">Thereupon wise Väinämöinen
+Pulled the sacred robe from Otso,
+Spread it in the open court-yard,
+Cut the members into fragments,
+Laid them in the heating caldrons,
+In the copper-bottomed vessels.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>\
+"""
+
+[smoker]
+type = "class"
+display_name = "Smoking"
+order = 10
+
+[smoker0]
+type = "structure"
+display_name = "Smoking Shack"
+category = "Food"
+condition = 50
+fireResist = 2
+burned = ["ashesx5"]
+materials = ["branchx16"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "smokingTech"
+labour = 30
+experience = 3
+breakertier = 1
+keyword = ["smoker", "wood", "smokes"]
+description = """\
+Condition: <style="bonus">50</style>
+<link="firehazard"><style="link">Fire Hazard</style></link>
+
+A shack for preserving meat by smoking.
+
+Unlocked by: <link="smokingTech"><style="link">Technology: Smoking</style></link>
+
+<style="fluff">\
+Smoke is seen upon the island,
+Fire, upon the promontory,
+Black smoke rising to the heavens.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XX</style>\
+"""
+
+[baker]
+type = "class"
+display_name = "Bakery"
+
+[baker0]
+type = "structure"
+display_name = "Baking Pit"
+category = "Food"
+unlockedBy = "bakingTech"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+maintenanceLevel = 5
+keyword = "baker"
+description = """\
+Condition: <style="bonus">20</style>
+<link="firehazard"><style="link">Fire Hazard</style></link>
+
+A simple pit for baking bread.
+
+Unlocked by: <link="bakingTech"><style="link">Technology: Baking</style></link>\
+"""
+
+# 5.2 Wood workshops
+
+[carpenter]
+type = "class"
+display_name = "Carpenter"
+order = 10
+
+[carpenter1]
+type = "structure"
+display_name = "Carpenter's Shack"
+discovers = "carpentryTech"
+category = "Wood"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx14"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "woodenstatuette"
+labour = 40
+experience = 2
+breakertier = 1
+keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+description = """\
+Condition: <style="bonus">20</style>
+Requires <link="heating"><style="link">heating</style></link>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="clickableLink">Wooden Statuette</style></link>
+Discovers: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+A simple <link=\"earthfasttier\"><style=\"link\">shack</style></link> where a carpenter can transform wood into useful items.
+
+<style="fluff">Strikes one blow, and builds the first part,
+Strikes a second, builds the centre,
+Strikes a third with wondrous power,
+And the vessel is completed.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIX</style>\
+"""
+
+[carpenter2]
+type = "structure"
+display_name = "Carpenter's Shed"
+category = "Wood"
+unlockedBy = "plankTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex12","woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "woodenstatuette"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+on_enter = ["work_bonus_1"]
+description = """\
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+20%</style>
+Condition: <style="bonus">40</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+
+A wooden <link="planktier"><style="link">shed</style></link> for a carpenter.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff">\
+From the timber of the oak-tree,
+From its posts, and planks, and flooring.
+Sings a song, and joins the frame-work;
+Sings a second, sets the siding.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>\
+"""
+
+#[carpenter3]
+#type = "structure"
+#display_name = "Carpenter's Cabin"
+#category = "Wood"
+#unlockedBy = ["beamTech"]
+#condition = 80
+#fireResist = 3
+#burned = ["ashesx12"]
+#materials = ["woodbeamx10", "woodplankx10"]
+#scrapped = ["woodbeamx9", "woodplankx6"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#sacrificeItem = "woodenstatuette"
+#labour = 60
+#experience = 4
+#breakertier = 3
+#keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+#on_enter = ["work_bonus_2"]
+#description = """\
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+40%</style>
+#Condition: <style="bonus">80</style>
+#Requires <link="heating"><style="link">heating</style></link>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+#
+#A log <link="beamtier"><style="link">cabin</style></link> for a carpenter.
+#
+#Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link>
+#
+#<style="fluff">Often is the mountain pine-tree
+#Cut in splints for candle-lighters;
+#And the juniper is often
+#Peeled for fence-posts for the pastures.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVIII</style>\
+#"""
+
+#[carpenter4]
+#type = "structure"
+#display_name = "Carpenter's Cottage"
+#category = "Wood"
+#unlockedBy = ["stoneConstructionTech"]
+#condition = 100
+#materials = ["dressedstonex20"]
+#scrapped = ["dressedstonex18"]
+#maintenanceLevel = 5
+#sacrificeItem = "woodenstatuette"
+#labour = 80
+#experience = 10
+#breakertier = 5
+#keyword = ["carpenter", "heat", "basebuilding", "stone", "noisy"]
+#on_enter = ["work_bonus_3"]
+#description = """\
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+80%</style>
+#Condition: <style="bonus">100</style>
+#Requires <link="heating"><style="link">heating</style></link></style>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+#
+#A carpenter's workshop built of <link="cottagetier"><style="link">wood and stone</style></link>.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>"""
+
+[fishingworkshop]
+type = "class"
+display_name = "Fishing Workshop"
+order = 10
+
+[fishingworkshop1]
+type = "structure"
+display_name = "Fishing Work-Shack"
+category = "Fishing"
+unlockedBy = "fishingTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx16"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "woodenstatuette"
+labour = 40
+experience = 3
+breakertier = 1
+keyword = ["fishingworkshop", "heat", "wood", "noisy"]
+adjacencyStructure = "carpenter"
+adjacencyWorkspeedbonus = +0.2
+description = """\
+<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+
+A <link=\"earthfasttier\"><style=\"link\">shack</style></link> for building and maintaining fishing tools.
+
+Unlocked by: <link="fishingTech"><style="link">Technology: Fishing</style></link>
+
+<style="fluff">Ilmarinen does as bidden,
+Makes the rake in full perfection.
+Lemminkäinen's anxious mother
+Takes the magic rake and hastens
+To the river of Tuoni.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XV</style>\
+"""
+
+# 5.3 Clay workshops
+
+[potter]
+type = "class"
+display_name = "Potter"
+order = 10
+
+[potter0]
+type = "structure"
+display_name = "Potter's Yard"
+category = "Clay and Stone"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = ["branchx6", "woodblock"]
+scrapped = ["branchx4", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "claystatuette"
+labour = 30
+experience = 1
+breakertier = 1
+keyword = ["potter", "noisy"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+Condition: <style="bonus">20</style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="claystatuette"><style="link">Clay Statuette</style></link>
+
+A pottery wheel and an open fire, for creating crude pots.
+
+<style="fluff">"When thy brother comes from plowing,
+And thy father from his garners,
+And thy husband from the woodlands,
+From his chopping, thy beloved,
+Give to each a water-basin."
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+#[potter1]
+#type = "structure"
+#display_name = "Potter's Shack"
+#category = "Clay and Stone"
+#condition = 40
+#fireResist = 2
+#burned = ["ashesx6"]
+#materials = ["branchx18", "woodplank", "rawClayx6"]
+#scrapped = ["branchx9"]
+#maintenanceLevel = 5
+#maintenanceItem = "branch"
+#sacrificeItem = "claystatuette"
+#unlockedBy = ["plankTech", "clayTech"]
+#labour = 40
+#experience = 2
+#breakertier = 1
+#keyword = ["potter", "wood", "noisy"]
+#on_enter = ["work_bonus_1"]
+#description = """\
+#<link="firehazard"><style="link">Fire Hazard</style></link>
+#Efficiency: <style="bonus">+20%</style>
+#Condition: <style="bonus">40</style>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="claystatuette"><style="link">Clay Statuette</style></link>
+#
+#A <link=\"earthfasttier\"><style=\"link\">shack</style></link> with a pottery wheel and oven, for creating pots.
+#
+#Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link> and <link="clayTech"><style="link">Technology: Pottery</style></link>
+#
+#<style="fluff">As under cover of departing Day
+#Slunk hunger-stricken Ramazan away,
+#Once more within the Potter's house alone
+#I stood, surrounded by the Shapes of Clay.
+#
+# - The Rubaiyat of Omar Khayyam, trans. Edward FitzGerald, LXXXII</style>\
+#"""
+
+# 5.4 Textile workshops
+
+[retting]
+type = "class"
+display_name = "Retting"
+order = 10
+
+[retting0]
+type = "structure"
+display_name = "Retting Yard"
+category = "Leather and Textiles"
+unlockedBy = ["spinningTech", "clayTech"]
+condition = 20
+fireResist = 2
+burned = ["ashesx2"]
+materials = ["claypotx2"]
+scrapped = ["claypotx2"]
+maintenanceLevel = 5
+maintenanceItem = "claypot:25%"
+labour = 40
+experience = 1
+breakertier = 1
+keyword = ["retting", "noWinter", "reeks"]
+description = """\
+A <link="workshop"><style="link">workshop</style></link> for preparing fiber from plant materials.
+
+Unlocked by: <link="spinningTech"><style="link">Technology: Spinning</style></link> and <link="clayTech"><style="link">Technology: Pottery</style></link>
+
+<style="fluff">After three long years of effort,
+Cut a reed upon the lowlands,
+Cut a nettle from the border.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIV</style>\
+"""
+
+[spinning]
+type = "class"
+display_name = "Spinning"
+order = 10
+
+[spinning2]
+type = "structure"
+display_name = "Spinner's Shed"
+category = "Leather and Textiles"
+unlockedBy = ["spinningTech", "plankTech"]
+condition = 40
+fireResist = 2
+burned = ["ashesx7"]
+materials = ["woodpolex10", "woodplankx8", "woodblock"]
+scrapped = ["woodpolex8", "woodplankx6", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 40
+experience = 3
+breakertier = 1
+keyword = ["spinning", "heat", "wood"]
+description = """\
+Requires <link="heating"><style="link">heating</style></link>
+
+A <link="planktier"><style="link">shed</style></link> where fibers are spun into threads.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link> and <link="spinningTech"><style="link">Technology: Spinning</style></link>
+
+<style="fluff">Thou thyself must do the spinning,
+With thine own hand ply the shuttle.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+[weaving]
+type = "class"
+display_name = "Weaving"
+order = 10
+
+[weaving2]
+type = "structure"
+display_name = "Weaver's Shed"
+category = "Leather and Textiles"
+unlockedBy = "clothArmorTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex6","woodplankx12"]
+scrapped = ["woodpolex4", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["weaving", "heat", "wood", "noisy"]
+description = """\
+<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+
+A wooden <link=\"planktier\"><style=\"link\">shed</style></link> for weaving cloth.
+
+Unlocked by: <link="clothArmorTech"><style="link">Technology: Weaving</style></link>
+
+<style="fluff">\
+”Yes, Portunus, the weaver,” cried the widow, in a loud voice, a hint of menace in her eye. ”And who, I should like to know, does not love Portunus, the weaver?”
+
+ - Hope Mirrlees, Lud-in-the-Mist (1926)</style>
+"""
+
+[ropemaking1]
+type = "structure"
+display_name = "Rope-maker's Shack"
+category = "Leather and Textiles"
+keyword = ["ropemaking", "heat", "wood"]
+unlockedBy = ["spinningTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+description = """\
+<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+
+A rope-maker's shack.
+
+Unlocked by: <link="spinningTech"><style="link">Technology: Spinning</style></link>
+
+<style="fluff">Very well do I remember
+How the fisherman disposes,
+How he rigs his fishing vessel,
+Lines, and gaffs, and poles, and fish-nets;
+Hast not come a-fishing hither.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>\
+"""
+
+# 5.5 Metal workshops
+
+[bloomery]
+type = "class"
+display_name = "Bloomery"
+
+[bloomery4]
+type = "structure"
+display_name = "Stone Bloomery"
+keyword = ["bloomer", "stone", "noisy"]
+category = "Metal"
+unlockedBy = "bogIronTech"
+condition = 120
+labour = 50
+experience = 2
+breakertier = 5
+maintenanceLevel = 1
+maintenanceItem = "dressedstone"
+materials = "dressedstonex4"
+scrapped = "dressedstonex4"
+description = """A bloomery for smelting iron ore.
+
+<style="fluff">Skilfully they work the bellows,
+Tend the fire and add the fuel,
+Three most lovely days of summer,
+Three short nights of bright midsummer,
+Till the rocks begin to blossom,
+In the foot-prints of the workmen,
+From the magic heat and furnace.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem X</style>\
+"""
+
+[oreroastingpit0]
+type = "structure"
+display_name = "Ore-roasting Pit"
+category = "Metal"
+unlockedBy = "bogIronTech"
+condition = 20
+labour = 30
+experience = 2
+breakertier = 1
+maintenanceLevel = 4
+keyword = "oreroaster"
+description = """A simple pit for roasting <link="bogironore"><style="link">bog iron ore</style></link> so that it can be smelted.
+
+Ere arose the star of evening,
+Iron ore had left the marshes,
+From the water-beds had risen,
+Had been carried to the furnace,
+In the fire the smith had laid it.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>\
+"""
+
+[smithy]
+type = "class"
+display_name = "Smithy"
+order = 10
+
+[smithy0]
+type = "structure"
+display_name = "Smithy"
+category = "Metal"
+condition = 20
+fireResist = 2
+burned = ["ashesx4"]
+materials = ["branchx6"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "dwarvenTech"
+labour = 50
+experience = 3
+breakertier = 3
+keyword = ["metal", "smithy", "heat", "noisy"]
+description = """\
+A simple smithy for cold working metals.
+
+Unlocked by: <link="dwarvenTech"><style="link">Technology: Dwarven Metal</style></link>
+
+<style="fluff">Hammers well until it softens,
+Hammers many fine utensils,
+Hammers spears, and swords, and axes,
+Hammers knives, and forks, and hatchets,
+Hammers tools of all descriptions.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>\
+"""
+
+[smithy2]
+type = "structure"
+display_name = "Blacksmith's Shed"
+category = "Metal"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodpolex12","woodplankx16", "dressedstonex4"]
+scrapped = ["woodpolex8","woodplankx12", "dressedstonex4"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = "forgingTech"
+labour = 40
+experience = 2
+breakertier = 2
+on_enter = ["work_bonus_1"]
+keyword = ["metal", "blacksmiths", "smithy", "wood", "noisy"]
+description = """\
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+20%</style>
+
+A blacksmith's shed with a stone forge.
+
+Unlocked by: <link="forgingTech"><style="link">Technology: Forging</style></link>
+
+<style="fluff">Then the blacksmith, Ilmarinen,
+Sought a place to build a smithy,
+Sought a place to plant a bellows,
+On the borders of the Northland,
+On the Pohja-hills and meadows.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem X</style>\
+"""
+
+# 5.6 Leather workshops
+
+[curing]
+type = "class"
+display_name = "Curing"
+order = 10
+
+[curing0]
+type = "structure"
+display_name = "Curing Yard"
+keyword = ["leather", "hidecuring", "stinks"]
+category = "Leather and Textiles"
+condition = 20
+fireResist = 2
+burned = ["ashes"]
+materials = ["claypot", "woodpolex4", "branchx2"]
+scrapped = ["claypot", "woodpolex2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "leatherTech"
+labour = 30
+experience = 1
+breakertier = 1
+description = """\
+An area for curing leather.
+
+Unlocked by: <link="leatherTech"><style="link">Technology: Leather</style></link>
+
+<style="fluff">This the answer of his people:
+"Hither let the fur-robed Light-foot
+Be saluted on his coming;
+Let the Honey-paw be welcomed
+To the hearth-stone of the penthouse,
+Welcomed to the boiling caldrons,
+That we may admire his fur-robe,
+May behold his cloak with joyance.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>\
+"""
+
+[tanner]
+type = "class"
+display_name = "Tanning"
+order = 10
+
+[tanner0]
+type = "structure"
+display_name = "Tanning Vats"
+keyword = ["leather", "tanning", "reeks"]
+category = "Leather and Textiles"
+condition = 30
+fireResist = 2
+burned = "ashes"
+materials = ["claypot", "woodblock"]
+scrapped = ["claypot", "woodblock"]
+maintenanceLevel = 5
+unlockedBy = "leatherTech"
+labour = 30
+experience = 1
+breakertier = 1
+description = """\
+Some vats for tanning leather. The smell is horrible!
+
+Unlocked by: <link="leatherTech"><style="link">Technology: Leather</style></link>
+
+<style="fluff">Never, never, magic husband,
+Treat thy beauty-bride unkindly,
+Teach her not with lash of servants,
+Strike her not with thongs of leather.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIV</style>\
+"""
+
+[leatherworker]
+type = "class"
+display_name = "Leather-working"
+order = 10
+
+[leatherworker1]
+type = "structure"
+display_name = "Leather-worker's Shack"
+category = "Leather and Textiles"
+unlockedBy = "leatherTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx10"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+keyword = ["heat", "wood", "leatherworking", "leather"]
+description = """\
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A leather-worker's <link=\"earthfasttier\"><style=\"link\">shack</style></link>.
+
+Unlocked by: <link="leatherTech"><style="link">Technology: Leather</style></link>
+
+<style="fluff">But before that star appeared the young adventurer found the cottage he sought; for, flapping above its doorway, he saw the sign of huge brown hide with outlandish letters in gilt which proclaimed the dweller below to be a worker in leather.
+ 
+ - Lord Dunsany, The King of Elfland's Daughter (1924)</style>\
+"""
+
+#  5.7 Weapon and armor workshops
+
+[armory]
+type = "class"
+display_name = "Armorer"
+order = 10
+
+[armory1]
+type = "structure"
+display_name = "Armor-crafter's Shack"
+keyword = ["armory", "armorcrafter", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = "armorTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx14"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "ceremonialshield"
+labour = 40
+experience = 2
+breakertier = 1
+description = """\
+<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialshield"><style="link">Ceremonial Wooden Shield</style></link>
+
+A workshop for creating shields and armor out of wood and cloth.
+
+Unlocked by: <link="armorTech"><style="link">Technology: Wooden Armor</style></link>\
+
+<style="fluff">\
+"The Lord Gaznak is immortal, save for Sacnoth, and weareth armour that is proof even against Sacnoth himself, and hath a sword the second most terrible in the world."
+
+ - Lord Dunsany, the Fortress Unvanquishable Save for Sacnoth (1908)</style>\
+"""
+
+[armory2]
+type = "structure"
+display_name = "Armorsmith's Shed"
+keyword = ["armory", "armorcoldforger", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = ["dwarvenArmorTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodpolex6","woodplankx12"]
+scrapped = ["woodpolex4", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "ceremonialshield"
+labour = 60
+experience = 3
+breakertier = 2
+on_enter = ["work_bonus_1"]
+description = """\
+<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialshield"><style="link">Ceremonial Wooden Shield</style></link>
+
+A workshop for creating shields and armor out of wood, cloth, cold-forged <link="dwarvenTech"><style="link">dwarven metal</style> and other materials.
+
+Unlocked by: <link="dwarvenArmorTech"><style="link">Technology: Armor-smithing</style></link>\
+"""
+
+[armory4]
+type = "structure"
+display_name = "Armorsmith's Forge"
+category = "Weapons and Armor"
+unlockedBy = ["ironArmorTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex10","woodplankx16", "woodbeamx4"]
+scrapped = ["dressedstonex18", "woodpolex8","woodplankx12", "woodbeamx4"]
+maintenanceLevel = 5
+sacrificeItem = "ceremonialshield"
+labour = 80
+experience = 10
+breakertier = 5
+keyword = ["armory", "armorsmith", "armorcoldforger", "stone", "noisy"]
+on_enter = ["work_bonus_3"]
+description = """\
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+60%</style>
+Condition: <style="bonus">100</style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialshield"><style="link">Ceremonial Wooden Shield</style></link>
+
+An armorsmith's forge, built of <link="cottagetier"><style="link">wood and stone</style></link>, for crafting metal armor.
+
+Unlocked by: <link="ironArmorTech"><style="link">Technology: Iron Armor</style></link>"""
+
+[weaponmaker]
+type = "class"
+display_name = "Weapon-crafter"
+order = 10
+
+[weaponmaker1]
+type = "structure"
+display_name = "Weapon-crafter's Shack"
+keyword = ["weaponmaker", "weaponcrafter", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = "weaponsTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx16"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "ceremonialspear"
+labour = 40
+experience = 2
+breakertier = 1
+description = """\
+<style="characteristics">Condition: <style="bonus">20</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialspear"><style="link">Ceremonial Wooden Spear</style></link>
+
+A workshop for creating weapons out of <link="bonematerial"><style="link">bone</style></link> and <link="dwarvenTech"><style="link">dwarven metal</style></link>.
+
+Unlocked by: <link="weaponsTech"><style="link">Technology: Weapons</style></link>
+
+<style="fluff">\
+Saw he none of all the heroes,
+Who was not engaged in grinding
+Swords, and spears, and battle-axes,
+For the death of Lemminkäinen.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIX</style>
+"""
+
+[weaponmaker2]
+type = "structure"
+display_name = "Weaponer's Shed"
+category = "Weapons and Armor"
+unlockedBy = ["weaponsmithingTech", "plankTech"]
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex6","woodplankx14"]
+scrapped = ["woodpolex4", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "ceremonialspear"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["weaponmaker", "weaponcoldforger", "heat", "wood", "noisy"]
+on_enter = ["work_bonus_1"]
+description = """\
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+20%</style>
+Condition: <style="bonus">40</style>
+Requires <link="heating"><style="link">heating</style></link>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialspear"><style="link">Ceremonial Wooden Spear</style></link>
+
+A wooden <link=\"planktier\"><style=\"link\">shed</style></link> for crafting weapons out of cold-hammered <link="dwarvenTech"><style="link">dwarven metal</style></link> and other materials.
+
+Unlocked by: <link="weaponsmithingTech"><style="link">Technology: Weapon-smithing</style></link> and <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff">\
+Many things the blacksmith needed,
+Many things he could not fashion,
+Could not make the tongue of iron,
+Could not hammer steel from iron,
+Could not make the iron harden.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+"""
+
+[weaponmaker4]
+type = "structure"
+display_name = "Weaponsmith's Forge"
+category = "Weapons and Armor"
+unlockedBy = ["ironWeaponTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex10","woodplankx20", "woodbeamx4"]
+scrapped = ["dressedstonex18", "woodpolex8","woodplankx16", "woodbeamx4"]
+maintenanceLevel = 5
+sacrificeItem = "ceremonialspear"
+labour = 80
+experience = 10
+breakertier = 5
+keyword = ["weaponmaker", "weaponsmith", "weaponcoldforger", "stone", "noisy"]
+on_enter = ["work_bonus_3"]
+description = """\
+<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+60%</style>
+Condition: <style="bonus">100</style>
+<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="ceremonialspear"><style="link">Ceremonial Wooden Spear</style></link>
+
+A weapon-smith's forge, built of <link="cottagetier"><style="link">wood and stone</style></link>, where metal weapons can be created.
+
+Unlocked by: <link="ironWeaponTech"><style="link">Technology: Iron Weapons</style></link>
+
+<style="fluff">Thereupon the skillful blacksmith
+Forged a spear from magic metals,
+Forged a lancet triple-pointed,
+Not the longest, nor the shortest,
+Forged the spear in wondrous beauty.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>
+"""
+
+#  5.8 Farming workshops
+
+[nettleprocessor]
+type = "class"
+display_name = "Nettle Processing"
+
+[nettleprocessor0]
+type = "structure"
+display_name = "Nettle Yard"
+category = "Farming"
+keyword = ["wood", "nettleprocessing"]
+unlockedBy = ["farmingTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx2"]
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 20
+experience = 1
+breakertier = 1
+description = """\
+Condition: <style="bonus">20</style>
+
+A yard for processing harvested nettle plants into useful components."""
+
+[thresher]
+type = "class"
+display_name = "Thresher"
+
+[thresher1]
+type = "structure"
+display_name = "Threshing Shack"
+category = "Farming"
+unlockedBy = "farmingTech"
+condition = 20
+fireResist = 2
+burned = "ashes"
+labour = 20
+experience = 2
+breakertier = 1
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+order = 10
+keyword = ["threshing", "wood", "noisy"]
+description = """\
+Condition: <style="bonus">20</style>
+
+A shack for drying freshly harvested crops and separating the grain from the straw.
+
+Unlocked by: <link="farmingTech"><style="link">Technology: Farming</style></link>
+
+<style="fluff">The sorcerer started from his sleep, and saw Linda's avenger at the gate, but he was too unnerved and terrified to attempt to hide himself. He hurriedly took a handful of feathers from his bosom, and blew them from him with a few magic words, and lo! they became an armed host of warriors, thousands of them, both on foot and on horseback. They rushed upon the son of Kalev like a swarm of gnats or bees; but he laid about him with his club as if he was threshing, and beat them down, horse and man together, on all sides, like drops of hail or rain.
+
+- the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto IV: The Island Maiden</style>\
+"""
+
+# 5.9 Stone workshops
+
+[stonecutter]
+type = "class"
+display_name = "Stone-cutter"
+
+[stonecutter1]
+type = "structure"
+display_name = "Stone-cutter's Shack"
+category = "Clay and Stone"
+unlockedBy = "stoneTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx14"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 40
+experience = 2
+breakertier = 1
+keyword = ["stonecutting", "heat", "wood", "noisy"]
+description = """A stone-cutter's shack is where <link="roughstone"><style="link">rough stone</style></link> is cut into <link="dressedstone"><style="link">dressed stone</style></link>.
+
+Unlocked by: <link="stoneTech"><style="link">Technology: Stone</style></link>
+
+<style="fluff">All day long poor Aino wandered,
+All the next day, sad and weary,
+So the third from morn till evening,
+Till the cruel night enwrapped her,
+As she reached the sandy margin,
+Reached the cold and dismal sea-shore,
+Sat upon the rock of sorrow.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IV</style>\
+"""
+
+# 6.0 Machinery
+
+# 6.1 Waterworks
+
+[screwpump]
+type = "structure"
+display_name = "Screw Pump"
+category = "Waterworks"
+keyword = ["submersible", "pump"]
+unlockedBy = "hydraulicTech"
+condition = 30
+fireResist = 2
+burned = "ashesx3"
+materials = "woodplankx10"
+scrapped = "woodplankx8"
+maintenanceLevel = 6
+maintenanceItem = "woodplank"
+labour = 60
+description = """A simple screw pump, using the principle of Archimedes' screw to move water from a lower elevation to a higher.
+
+Unlocked by: <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>\
+"""
+
+[wooden_floodgate]
+type = "structure"
+display_name = "Wood Floodgate"
+keyword = ["floodgate", "wood", "submersible"]
+category = "Waterworks"
+unlockedBy = "hydraulicTech"
+condition = 40
+fireResist = 3
+burned = "ashes"
+materials = ["woodplankx6"]
+scrapped = ["woodplankx4"]
+labour = 40
+description = """\
+A wooden floodgate.
+
+Unlocked by: <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>
+
+<style="fluff">\
+Frost, the son of wicked parents,
+Hero-son of evil manners,
+Hastens off to freeze the ocean,
+Goes to fasten down the flood-gates,
+Goes to still the ocean-currents.
+
+- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXX</style>\
+"""
+
+# 6.2 Mills
+
+[mill]
+type = "class"
+display_name = "Mill"
+
+[mill0]
+type = "structure"
+display_name = "Hand Mill"
+category = "Farming"
+unlockedBy = "bakingTech"
+condition = 20
+fireResist = 3
+burned = "ashes"
+labour = 30
+experience = 1
+breakertier = 1
+maintenanceLevel = 5
+order = 10
+keyword = ["mill", "hand_mill", "noisy"]
+description = """A simple hand mill for grinding grain.
+
+Unlocked by: <link="bakingTech"><style="link">Technology: Baking</style></link>\
+"""
+
+[mill3]
+type = "structure"
+display_name = "Windmill"
+category = "Farming"
+unlockedBy = "windmillsTech"
+condition = 60
+fireResist = 3
+burned = "ashesx10"
+materials = ["woodplankx16", "woodbeamx6"]
+scrapped = ["woodplankx12", "woodbeamx4"]
+labour = 80
+experience = 10
+breakertier = 3
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+keyword = ["mill", "windmill", "noisy", "passive_producer"]
+storage = 10
+passive_input_type = "items"
+passive_output_item = "ryeflour"
+passive_output_mult = 0.02
+# Wind strengths usually vary from 0.1 to 0.7, this value affects how often production ticks happen.
+# Wind strength is multiplied by this value, and the result is used to accelerate the passive tick timer.
+passive_output_wind_mult = 1
+seconds_per_passive_tick = 15
+description = """A <link="mill"><style="link">gristmill</style></link> powered by a wind engine, for grinding grain.
+
+Unlocked by: <link="windmillsTech"><style="link">Technology: Windmills</style></link>"""
+
+# 7.0 Housing
+
+[housing]
+type = "class"
+display_name = "Housing"
+order = 30
+
+[housing0a]
+type = "structure"
+display_name = "Simple Lean-To"
+category = "Housing"
+condition = 20
+fireResist = 1
+burned = ["ashesx2"]
+materials = ["branchx6"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 20
+experience = 2
+breakertier = 0
+housing = 2
+keyword = ["heat", "wood"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+<style="characteristics">Capacity: <style="bonus">2</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A simple <link="houses"><style="link">lean-to</style></link> with a fire, offering some protection from the elements.
+
+<style="fluff">\
+“Few to offer her a shelter
+From the chilling storms of winter,
+When her skirts with ice are stiffened,
+Coats of ice her only raiment!”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIII</style>\
+"""
+
+[housing0b]
+type = "structure"
+display_name = "Improvised Lean-To"
+category = "Housing"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["branchx2"]
+scrapped = []
+maintenanceLevel = 5
+maintenanceItem = "branch:50%"
+labour = 10
+experience = 1
+breakertier = 0
+housing = 1
+keyword = ["improvised", "heat", "wood"]
+description = """\
+<link="firehazard"><style="link">Fire Hazard</style></link>
+<style="characteristics">Capacity: <style="bonus">1</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+An improvised <link="houses"><style="link">shelter</style></link>.
+
+<style="fluff">Build I in the winds my dwelling?
+It will find no sure foundation.
+Build my home upon the waters?
+Surely will the waves destroy it.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VII</style>\
+"""
+
+[housing1a]
+type = "structure"
+display_name = "Simple Shack"
+category = "Housing"
+unlockedBy = "housingTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx12"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 3
+breakertier = 1
+housing = 3
+keyword = ["heat", "wood"]
+description = """\
+<style="characteristics">Capacity: <style="bonus">3</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A simple <link=\"earthfasttier\"><style=\"link\">shack</style></link> <link="houses"><style="link">dwelling</style></link> to keep goblins safe from the elements.
+
+Unlocked by: <link="housingTech"><style="link">Technology: Housing</style></link>
+
+<style="fluff">Grieve no more, thou friend of waters,
+Good for thee, that thou shouldst linger
+At our friendly homes and firesides;
+Thou shalt live with us and welcome.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VII</style>\
+"""
+
+[housing2a]
+type = "structure"
+display_name = "Simple Shed"
+category = "Housing"
+unlockedBy = ["plankTech", "housingTech"]
+condition = 60
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex10", "woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 40
+experience = 4
+breakertier = 2
+housing = 5
+keyword = ["heat", "wood"]
+description = """\
+<style="characteristics">Capacity: <style="bonus">5</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A simple but homely <link=\"planktier\"><style=\"link\">plank</style></link> <link="houses"><style="link">house</style></link>.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link> and <link="housingTech"><style="link">Technology: Housing</style></link>
+
+<style="fluff">Fare thou well, my dear old homestead,
+Fare ye well, my native bowers;
+It would give me joy unceasing
+Could I linger here forever.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXIV</style>\
+"""
+
+[housing3a]
+type = "structure"
+display_name = "Log Cabin"
+category = "Housing"
+unlockedBy = ["beamTech", "housingTech"]
+condition = 80
+fireResist = 2
+burned = ["ashesx8"]
+materials = ["woodbeamx12", "woodplankx10"]
+scrapped = ["woodbeamx10", "woodplankx8"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 50
+experience = 5
+breakertier = 3
+housing = 8
+keyword = ["heat", "wood"]
+description = """\
+<style="characteristics">Capacity: <style="bonus">8</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A sturdy <link="beamTech"><style="link">log cabin</style></link> for your goblins to live in.
+
+Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link> and <link="housingTech"><style="link">Technology: Housing</style></link>
+
+<style="fluff">\
+"Cold and drear is thy cottage,
+Seeming like a place deserted;
+Who may own this dismal cabin,
+Who the one so little honored?”
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XI</style>\
+"""
+
+[housing4a]
+type = "structure"
+display_name = "Stone and Timber Cottage"
+category = "Housing"
+unlockedBy = ["stoneConstructionTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex6","woodplankx20", "woodbeamx6"]
+scrapped = ["dressedstonex18", "woodpolex4","woodplankx16", "woodbeamx6"]
+maintenanceLevel = 5
+labour = 80
+experience = 10
+breakertier = 5
+housing = 16
+keyword = ["stone", "heat"]
+description = """\
+<style="characteristics">Capacity: <style="bonus">16</style>
+Requires <link="heating"><style="link">heating</style></link></style>
+
+A strongly built <link="cottagetier"><style="link">stone and timber</style></link> house.
+
+Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+
+<style="fluff">"This is Sarvik's abode, where he lives with his wife, and rests and refreshes himself, and sleeps on soft pillows, when he is tired with long journeys and knocking about. Then the old woman heats the bath for him, and whisks his back and shoulders with the bath-whisk.
+
+- the Kalev<link="kalevipoeg"><style="link">Kalevipoeg</style></link>ipoeg, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>\
+"""
+
+# 8.0 Health
+
+[sauna]
+type = "class"
+display_name = "Sauna Buildings"
+
+[sauna1]
+type = "structure"
+display_name = "Simple Sauna"
+keyword = ["sauna", "wood"]
+category = "Health"
+condition = 40
+fireResist = 2
+burned = ["ashesx5"]
+materials = ["branchx12"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "carpentryTech"
+labour = 40
+experience = 4
+breakertier = 1
+capacity = 10
+description = """\
+<style="fluff">Go and heat for me the bath-room,
+Fill with heat the honey-chambers,
+Lay the faggots on the fire-place,
+Lay the smaller woods around them.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVIII</style>
+
+A simple <link=\"earthfasttier\"><style=\"link\">earthfast</style></link> sauna.
+
+Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>\
+"""
+
+#[medical]
+#type = "class"
+#display_name = "Medical Buildings"
+#
+#[medicine1]
+#type = "structure"
+#display_name = "Medicine Shack"
+#category = "Health"
+#condition = 40
+#fireResist = 1
+#burned = ["ashesx3"]
+#materials = ["branchx20"]
+#scrapped = ["branchx16"]
+#maintenanceLevel = 5
+#maintenanceItem = "branch"
+#unlockedBy = "carpentryTech"
+#labour = 30
+#experience = 2
+#breakertier = 1
+#capacity = 5
+#keyword = ["heat", "nursing", "wood"]
+#adjacencyStructure = "shamanhut"
+#adjacencyWorkspeedbonus = +0.2
+#description = """\
+#<style="fluff">"Here I bring the balm of healing,
+#Wonderful the salve I bring thee;
+#It will join the broken granite,
+#Make the fragments grow together,
+#Heat the fissures in the mountains,
+#And restore the injured birch-tree."
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+#
+#A simple <link=\"earthfasttier\"><style=\"link\">shack</style></link> where injured or ill goblins can recuperate.
+#
+#<style="characteristics">Capacity: <style="bonus">5</style>
+#Requires <link="heating"><style="link">heating</style></link></style>
+#
+#Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>\
+#"""
+#
+#[medicine3]
+#type = "structure"
+#display_name = "Medicine Cabin"
+#category = "Health"
+#unlockedBy = ["beamTech"]
+#condition = 80
+#fireResist = 3
+#burned = ["ashesx12"]
+#materials = ["woodbeamx10", "woodplankx6"]
+#scrapped = ["woodbeamx9", "woodplankx4"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#labour = 50
+#experience = 3
+#breakertier = 3
+#capacity = 10
+#keyword = ["heat", "nursing", "wood"]
+#adjacencyStructure = "shamanhut"
+#adjacencyWorkspeedbonus = +0.2
+#description = """\
+#<style="fluff">"Is there no one in this cottage,
+#That can know the pain I suffer,
+#That can heal this wound of hatchet,
+#That can check this crimson streamlet?"
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>
+#
+#A <link="beamtier"><style="link">cabin</style></link> for goblins to recover from illness or injury.
+#
+#<style="characteristics">Capacity: <style="bonus">10</style>
+#<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+#
+#Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link>\
+#"""
+
+# 9.0 Security
+
+[patrol]
+type = "class"
+display_name = "Patrol Points"
+
+#[patrol0]
+#type = "structure"
+#display_name = "Patrol Point"
+#category = "Security"
+#condition = 5
+#fireResist = 1
+#burned = "ashes"
+#materials = "branch"
+#scrapped = "branch"
+#labour = 5
+#keyword = ["guard", "wood", "patrolwaypoint"]
+#description = "A waypoint for a patrolling guard."
+
+[guard]
+type = "class"
+display_name = "Guard Buildings"
+
+[guard1]
+type = "structure"
+display_name = "Guard Shack"
+category = "Security"
+condition = 10
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx8"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 10
+experience = 1
+breakertier = 1
+capacity = 1
+keyword = ["guard", "wood", "patrolwaypoint"]
+description = "A rudimentary shelter for a single goblin guard."
+
+[guard2]
+type = "structure"
+display_name = "Guard Post"
+category = "Security"
+condition = 20
+fireResist = 2
+burned = ["ashes"]
+materials = ["woodplankx4"]
+scrapped = ["woodplankx2"]
+maintenanceLevel = 4
+maintenanceItem = "woodplank"
+unlockedBy = "plankTech"
+labour = 20
+experience = 2
+breakertier = 2
+capacity = 1
+keyword = ["guard", "wood", "patrolwaypoint"]
+description = """\
+A guard post for a single sentry.
+
+Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>
+
+<style="fluff>Heroes guard their homes and firesides,
+Guard their doors, and roofs, and windows,
+Guard the posts that bold the torch-lights,
+Guard the highways to the court-yard,
+Guard the ends of all the gate-ways.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XII</style>\
+"""
+
+# 10.0 Culture Buildings
+
+[bonfire]
+type = "structure"
+display_name = "Bonfire"
+category = "Culture"
+condition = 40
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx10"]
+scrapped = ["branchx10"]
+maintenanceLevel = 1
+labour = 20
+experience = 1
+breakertier = 1
+storage = 20
+accepts = ["sacrifice"]
+keyword = ["wood", "bonfire"]
+description = """\
+Capacity: <style="bonus">20</style> <link="weight_def"><style="link">weight units</style></link> of items.
+
+A ceremonial bonfire for the Midsummer <link="sacrifice_def"><style="link">sacrifices</style></link>.
+
+Successful sacrifices increase the camp's <link="culturedef"><style="link">culture</style></link> and level up the <link="sac_tree_def"><style="link">sacrificial tree</style></link>.\
+"""
+
+[culture]
+type = "class"
+display_name = "Culture Buildings"
+
+[weathervane]
+type = "structure"
+display_name = "Weathervane"
+category = "Culture"
+researchPoints = [1,0]
+condition = 10
+fireResist = 2
+burned = ["ashes"]
+materials = ["woodpolex2"]
+scrapped = ["woodpole"]
+maintenanceLevel = 2
+maintenanceItem = "woodpole"
+unlockedBy = "carpentryTech"
+labour = 30
+experience = 2
+breakertier = 1
+keyword = ["wood", "culture", "weathervane"]
+description = """\
+A weathervane shows you which way the wind blows.
+
+Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>
+
+<style="fluff">Thereupon the rising storm-wind
+Flying from the East in fierceness,
+Whips the ocean into surges,
+Strikes the stars with sprays of ocean.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem I</style>\
+"""
+
+[ravenstatue]
+type = "structure"
+display_name = "Raven Statue"
+category = "Culture"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = "woodlog"
+scrapped = "firewoodx2"
+labour = 30
+experience = 3
+breakertier = 3
+keyword = ["wood", "culture", "statue"]
+clearFogRadius = 10
+description = """A statue of a sacred raven.
+
+The statue clears <link="forestcover"><style="link">forest-cover</style></link> in a ten-tile radius. \
+Building it at a higher elevation increases the radius.
+
+Raven statues also project a <link="workarea_def"><style="link">work area</style></link> around them. Select the statue to toggle the work area on or off."""
+
+[tallravenstatue]
+type = "structure"
+display_name = "Tall Raven Statue"
+unlockedBy = "woodmagicTech"
+category = "Culture"
+condition = 40
+fireResist = 2
+burned = "ashes"
+materials = "woodlogx2"
+scrapped = "firewoodx4"
+labour = 30
+experience = 3
+breakertier = 3
+keyword = ["wood", "culture", "statue"]
+clearFogRadius = 20
+description = """A statue of a sacred raven.
+
+The statue clears <link="forestcover"><style="link">forest-cover</style></link> in a twenty-tile radius. \
+Building it at a higher elevation increases the radius.
+
+Raven statues also project a <link="workarea_def"><style="link">work area</style></link> around them. Select the statue to toggle the work area on or off.
+
+Unlocked by: <link="woodmagicTech"><style="link">Technology: Wooden Magic Structures</style></link>"""
+
+# 11.0 Expeditions
+
+#[hunting]
+#type = "class"
+#display_name = "Hunting"
+
+#[hunting0]
+#type = "structure"
+#display_name = "Hunting Post"
+#category = "Hunting"
+#condition = 10
+#unlockedBy = "huntingTech"
+#fireResist = 2
+#breakertier = 3
+#burned = ["ashesx6"]
+#materials = ["branchx10", "woodlog"]
+#scrapped = ["branchx8", "woodlog"]
+#maintenanceLevel = 5
+#maintenanceItem = ["branch:50%"]
+#labour = 40
+#experience = 2
+#keyword = ["wood", "huntingpost"]
+#clearFogRadius = 10
+#description = """A ceremonial post that hunting expeditions depart from.
+#
+#<style="fluff">But among the barbarians who are settled in Thule, one nation only, who are called the Scrithiphini ["Ski-Finns"], live a kind of life akin to that of the beasts. For they neither wear garments of cloth nor do they walk with shoes on their feet, nor do they drink wine nor derive anything edible from the earth. For they neither till the land themselves, nor do their women work it for them, but the women regularly join the men in hunting, which is their only pursuit.
+#
+# - Procopius of Caesarea: History of the Wars (c. 545), trans. Henry Bronson Dewing (1919), book VI, XV</style>"""
+
+# 12.0 Underworld
+
+## 13.0 Firefighting
+#
+#[firefighting]
+#type = "class"
+#display_name = "Firefighting Buildings"
+#
+#[firefighting2]
+#type = "structure"
+#display_name = "Fire Warden's Post"
+#category = "Firefighting"
+#condition = 20
+#fireResist = 2
+#burned = ["ashes"]
+#materials = ["woodplankx3"]
+#scrapped = ["woodplank"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#unlockedBy = "plankTech"
+#labour = 20
+#experience = 2
+#breakertier = 2
+#capacity = 1
+#keyword = ["firewarden", "wood"]
+#description = """\
+#<style="fluff">Then was Iron sorely frightened,
+#Much distressed and filled with horror,
+#When of Fire he heard the mention,
+#Mention of his fell destroyer.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+#
+#A post for a goblin fire warden.
+#
+#Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>"""
+
+# 14.0 Deathcare
+
+#[funerary]
+#type = "class"
+#display_name = "Funerary Structures"
+
+[grave0]
+type = "structure"
+display_name = "Grave"
+category = "Funerary"
+unlockedBy = "burialTech"
+condition = 20
+fireResist = 5
+materials = "goblincorpse"
+labour = 30
+experience = 5
+maintenanceLevel = 5
+keyword = ["stone", "graveyard"]
+description = """\
+A resting place for a dead goblin.
+
+<style="fluff">\
+Mana's daughter does as bidden,
+Brings her boat to Väinämöinen,
+Quickly rows him through the channel,
+O'er the black and fatal river,
+To the kingdom of Manala.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XVI</style>\
+"""
+
+## 15.0 Furniture etc.
+#
+#[furniture_class]
+#type = "class"
+#display_name = "Furniture"
+#
+#[wood_block_structure]
+#type = "structure"
+#display_name = "Wooden Block"
+#category = "Furniture"
+#materials = "woodblock"
+#condition = 5
+#fireResist = 2
+#burned = ["ashes"]
+#labour = 5
+#experience = 0.5
+#capacity = 1
+#maintenanceLevel = 1
+#keyword = ["wood", "furniture", "idling"]
+#description = "A simple wooden block for a goblin to sit on."
+#
+#[log_bench]
+#type = "structure"
+#display_name = "Log Bench"
+#category = "Furniture"
+#materials = "woodlog"
+#condition = 10
+#fireResist = 2
+#burned = ["ashes"]
+#labour = 10
+#experience = 0.5
+#capacity = 2
+#maintenanceLevel = 1
+#keyword = ["wood", "furniture", "idling"]
+#description = "A wooden bench for two goblins."
+
+# 16.0 Decorations
+
+[decorations]
+type = "class"
+display_name = "Decorations"
+
+[flowerbed_karelianrose]
+type = "structure"
+display_name = "Flowerbed (Karelian Rose)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+[flowerbed_meadowsweet]
+type = "structure"
+display_name = "Flowerbed (Rose Meadowsweet)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+[flowerbed_heather]
+type = "structure"
+display_name = "Flowerbed (Heather)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+[flowerbed_fireweed]
+type = "structure"
+display_name = "Flowerbed (Fireweed)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+[flowerbed_goblinwort]
+type = "structure"
+display_name = "Flowerbed (Goblinwort)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+[flowerbed_goatpipe]
+type = "structure"
+display_name = "Flowerbed (Goutweed)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "An ornamental flower bed."
+
+# 17.0 Special
+
+[shamanhut]
+type = "structure"
+display_name = "Shaman's Hut"
+category = "Special"
+unlockedBy = "shamanismTech"
+condition = 100
+fireResist = 3
+materials = "branchx16"
+burned = ["ashes"]
+maintenanceLevel = 4
+labour = 40
+experience = 5
+keyword = ["shaman", "heat", "unique"]
+description = """\
+<style="characteristics>Requires <link="heating"><style="link">heating</style></link></style>
+
+Building a shaman's hut starts the process of electing a <link="shaman_def"><style="link">shaman</style></link>.
+
+Unlocked by: <link="shamanismTech"><style="link">Technology: Shamanism</style></link>
+
+<style="fluff">Near the doors the wise men hovered,
+Skilful ones upon the benches,
+Near the fires the wicked wizards.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XII</style>\
+"""
+
+# 18.0 Unbuildable
+
+[centraltree]
+type = "structure"
+display_name = "Sacrificial Tree"
+keyword = ["unique", "summonedstructure", "permanent", "submersible"]
+category = "Unbuildable"
+condition = 500
+materials = []
+labour = 1
+description = """\
+The <link="sac_tree_def"><style="link">central tree</style></link> of the village.
+
+<style="fluff">Go, my treasure, through the pathway
+Near the herds of swine and cattle,
+To the hill-tops forest covered,
+To the high and rising mountains,
+To the spruce-trees filled with needles,
+To the branches of the pine-tree.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLVI</style>\
+"""
+
+[gatewayrock]
+type = "structure"
+display_name = "Gateway Rock"
+keyword = ["unique", "permanent", "submersible"]
+category = "Unbuildable"
+condition = 500
+materials = []
+labour = 1
+clearFogRadius = 30
+description = """\
+A gateway to the Underworld.
+
+<style="fluff">Wherever there is a large rock face, there is a goblin-door.
+
+A man once slept next to a rock face between Vuontisjärvi and Hetta, and was thrown away from it, and heard:
+"You've come to sleep on our doorstep."
+
+He should have taken his hat off, bowed, and asked for a place to stay, and they would have let him be.
+
+ - Enontekiö, 1930. <style="link"><link="fls">SKS archives</link></style>.</style>\
+"""
+
+[concept]
+type = "structure"
+display_name = "Concept"
+category = "Unbuildable"
+condition = 10
+materials = ["branchx1"]
+labour = 1
+description = "For testing purposes."
+
+[ruins]
+type = "structure"
+display_name = "Ruins"
+keyword = ["ruins", "submersible"]
+category = "Unbuildable"
+condition = 30
+materials = []
+labour = 1
+scrapped = "dressedstonex10"
+description = """\
+"""

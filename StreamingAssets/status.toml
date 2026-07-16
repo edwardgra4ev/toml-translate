@@ -1,0 +1,987 @@
+# hunger and thirst statuses
+
+[thirsty]
+display_name = "Thirsty"
+morale_mod = -5
+description = """
+This goblin is thirsty!
+
+Goblins will drink from the river or another nearby water source when their duties permit.
+
+<style="characteristics"><link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style></style>\
+"""
+
+[hungry]
+display_name = "Hungry"
+description = """<style="fluff">From the woods a bird came flying,
+Sang this song to Kullervoinen:
+"'Tis the time for forest-dinners,
+For the fatherless companion
+Of the herds to eat his viands,
+Eat the good things from his basket!"
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXIII</style>
+
+This creature is hungry and needs <link="foodpoint"><style="link">food</style></link>.
+
+Goblins prefer to eat together at <link="kitchendef"><style="link">kitchens</style></link> at the end of every season. \
+If no kitchen is available, they'll try to find food on their own. IF they can't find food, they'll get hungrier, and eventually leave the camp!
+"""
+
+[famished]
+display_name = "Famished"
+morale_mod = -10
+constitution_mod = -5
+speed_mod = -0.05
+work_speed_mod = -0.1
+description = """\
+This creature is famished! It hasn't had <link="foodpoint"><style="link">anything to eat</style></link> for quite a while.
+
+Goblins prefer to eat together at <link="kitchendef"><style="link">kitchens</style></link> at the end of every season. \
+If no kitchen is available, they'll try to find food on their own. IF they can't find food, they'll get hungrier, and eventually leave the camp!
+
+<style="characteristics">\
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-5</style>
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.05</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>\
+</style>\
+"""
+
+[starving]
+display_name = "Starving"
+morale_mod = -20
+constitution_mod = -10
+speed_mod = -0.1
+work_speed_mod = -0.2
+description = """\
+This creature is starving! If it can't find any <link="foodpoint"><style="link">food</style></link>, it'll leave the camp.
+
+Goblins prefer to eat together at <link="kitchendef"><style="link">kitchens</style></link> at the end of every season. \
+If no kitchen is available, they'll try to find food on their own. IF they can't find food, they'll get hungrier, and eventually leave the camp!
+
+<style="characteristics">\
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-10</style>
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>\
+</style>\
+"""
+
+[satiated]
+display_name = "Satiated"
+morale_mod = +10
+speed_mod = -0.1
+description = """<style="fluff">\
+And when I had made an end of so great a gorging, and had ceased to be drunken with water, I gat my gear upon me, and took the Diskos into mine hand, and so went forth once more towards the North.
+
+ - William Hope Hodgson, The Night Land</style>
+
+This creature has had plenty to eat.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="bonus">+10</style>\
+</style>\
+"""
+
+# sleep statuses
+
+[wellRested]
+display_name = "Well Rested"
+morale_mod = +10
+description = """\
+<style="fluff">Now, in a little time, I did gather unto me my wits and had myself to order; and I looked to see how the hours did go, and I found that I had surely slumbered through ten hours.
+
+ - William Hope Hodgson, The Night Land</style>
+
+This goblin slept comfortably.
+
+<style="characteristics">\
+<link="moraledef"><style="link">Morale</style></link>: <style="bonus">+10</style>\
+</style>\
+"""
+
+[sleptRough]
+display_name = "Slept Rough"
+work_speed_mod = -0.1
+constitution_mod = -5
+morale_mod = -5
+description = """\
+This goblin didn't have <link="houses"><style="link">a proper place to sleep</style></link>!
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-5</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[chilled]
+display_name = "Chilled"
+work_speed_mod = -0.2
+speed_mod = -0.05
+constitution_mod = -5
+morale_mod = -10
+description = """\
+This goblin didn't have <link="heating"><style="link">a warm place to sleep</style></link>!
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.05</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+# morale statuses
+
+[melancholy]
+display_name = "Melancholy"
+whenMoraleBelow = 31
+work_speed_mod = -0.2
+constitution_mod = -5
+description = """<style="fluff>\
+Like the flat-shore of the ocean,
+Like the dark rift of the storm-cloud,
+Like the cheerless nights of winter!
+Dreary is the day in autumn,
+Dreary too the autumn evening,
+Still more dreary is my future!
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXII</style>
+
+This creature is feeling sad and listless.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[content]
+display_name = "Content"
+whenMoraleAbove = 69
+whenMoraleBelow = 89
+work_speed_mod = +0.1
+constitution_mod = +10
+description = """This creature is feeling content with life.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="bonus">+0.1</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="bonus">+10</style>\
+</style>\
+"""
+
+[happy]
+display_name = "Happy"
+whenMoraleAbove = 89
+work_speed_mod = +0.1
+constitution_mod = +10
+fighting_mod = +5
+description = """This creature is happy.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="bonus">+0.1</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="bonus">+10</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="bonus">+5</style></style>\
+</style>\
+"""
+
+# sickness statuses
+
+[ill]
+display_name = "Ill"
+morale_mod = -10
+speed_mod = -0.2
+work_speed_mod = -0.2
+description = """\
+<style="fluff">I will send thee nine diseases,
+Each more fatal than the other,
+That will sicken all thy people.
+
+ - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XLIII</style>
+
+This poor creature is ill.
+
+<style="characteristics">\
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.2</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>\
+</style>\
+"""
+
+# nutrition deficiency statuses
+
+[scurvy]
+display_name = "Scurvy"
+nutritionDeficiency = "fresh"
+morale_mod = -10
+constitution_mod = -10
+description = """This creature hasn't had fresh food for a long time, and is suffering from scurvy!
+
+<style="characteristics">\
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[lackFiber]
+display_name = "Fiber Deficiency"
+nutritionDeficiency = "fiber"
+morale_mod = -10
+constitution_mod = -5
+description = """This goblin isn't getting enough fiber in their diet; their stomach is loose and they're unhappy.
+
+<style="characteristics">\
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-5</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[lackProtein]
+display_name = "Protein Deficiency"
+nutritionDeficiency = "protein"
+fighting_mod = -5
+morale_mod = -5
+constitution_mod = -5
+work_speed_mod = -0.1
+description = """This goblin isn't getting enough protein in their diet, and they're slightly weakened.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-5</style>
+<link="constitutionDef"><style="link">Constitution</style></link>: <style="malus">-5</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+# damage statuses
+
+[slash1]
+display_name = "Cut"
+work_speed_mod = -0.2
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[slash2]
+display_name = "Sliced"
+work_speed_mod = -0.2
+fighting_mod = -5
+shooting_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[slash3]
+display_name = "Gashed"
+speed_mod = -0.1
+agility_mod = -15
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-15</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[slash4]
+display_name = "Stabbed"
+fighting_mod = -10
+shooting_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slash5]
+display_name = "Lacerated"
+speed_mod = -0.1
+agility_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-120</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slash6]
+display_name = "Chopped"
+fighting_mod = -20
+shooting_mod = -100
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-30</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-100</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slash7]
+display_name = "Butchered"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slash8]
+display_name = "Minced"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slash9]
+display_name = "Cleaved"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[slashPlus]
+display_name = "Slashed"
+fighting_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken huge amounts of <link="dtslashing"><style="link">slashing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[crush1]
+display_name = "Battered"
+work_speed_mod = -0.1
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[crush2]
+display_name = "Bruised"
+work_speed_mod = -0.1
+fighting_mod = -5
+shooting_mod = -5
+morale_mod = -5
+description = """\
+This creature has taken some <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+<link="fightingSkill"><style="link">Fighting</style></link></style>: <style="malus">-5</style>
+<link="shootingSkill"><style="link">Shooting</style></link></style>: <style="malus">-5</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[crush3]
+display_name = "Beaten"
+speed_mod = -0.05
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -5
+description = """\
+This creature has taken some <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.05</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style></style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[crush4]
+display_name = "Bashed"
+stun_resist_mod = -5
+fighting_mod = -5
+shooting_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken quite a bit of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+Stun Resistance: <style="malus">-5</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[crush5]
+display_name = "Smashed"
+speed_mod = -0.1
+agility_mod = -10
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[crush6]
+display_name = "Mangled"
+fighting_mod = -10
+shooting_mod = -100
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-100</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[crush7]
+display_name = "Demolished"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken a lot of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[crush8]
+display_name = "Squashed"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken a lot of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[crush9]
+display_name = "Obliterated"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken a lot of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[crushPlus]
+display_name = "Crushed"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken huge amounts of <link="dtcrushing"><style="link">crushing damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[burned1]
+display_name = "Singed"
+speed_mod = -0.1
+work_speed_mod = -0.1
+agility_mod = -10
+stun_resist_mod = -10
+morale_mod = -5
+description = """\
+This creature has taken some <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-5</style>\
+</style>\
+"""
+
+[burned2]
+display_name = "Scalded"
+work_speed_mod = -0.1
+fighting_mod = -10
+shooting_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.1</style>
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[burned3]
+display_name = "Scorched"
+speed_mod = -0.1
+work_speed_mod = -0.2
+stun_resist_mod = -10
+morale_mod = -10
+description = """\
+This creature has taken some <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="malus">-0.2</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-10</style>\
+</style>\
+"""
+
+[burned4]
+display_name = "Charred"
+fighting_mod = -20
+shooting_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+<link="shootingSkill"><style="link">Shooting</style></link>: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burned5]
+display_name = "Broiled"
+speed_mod = -0.1
+agility_mod = -20
+stun_resist_mod = -20
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="malus">-0.1</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-20</style>
+Stun Resistance: <style="malus">-20</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burned6]
+display_name = "Roasted"
+fighting_mod = -30
+shooting_mod = -100
+morale_mod = -20
+description = """\
+This creature has taken quite a bit of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link></style>: <style="malus">-30</style>
+<link="shootingSkill"><style="link">Shooting</style></link></style>: <style="malus">-100</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burned7]
+display_name = "Incinerated"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link></style>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burned8]
+display_name = "Combusted"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burned9]
+display_name = "Immolated"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = """\
+This creature has taken a lot of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[burnedPlus]
+display_name = "Burned"
+fighting_mod = -10
+stun_resist_mod = -10
+morale_mod = -20
+description = """\
+This creature has taken huge amounts of <link="dtburning"><style="link">burning damage</style></link>.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link></style>: <style="malus">-10</style>
+Stun Resistance: <style="malus">-10</style>
+<link="moraledef"><style="link">Morale</style></link>: <style="malus">-20</style>\
+</style>\
+"""
+
+[stunned]
+display_name = "Stunned"
+fighting_mod = -10
+agility_mod = -10
+description = """\
+This creature is stunned!
+
+<style="characteristics">\
+Speed: <style="malus">-0.5</style>
+<link="fightingSkill"><style="link">Fighting</style></link></style>: <style="malus">-10</style>
+<link="agilityDef"><style="link">Agility</style></link>: <style="malus">-10</style>\
+"""
+
+# mob statuses
+
+[fear]
+display_name = "Fear"
+description = "This creature is scary!"
+
+[lean]
+display_name = "Lean"
+fighting_mod = -10
+hit_point_bonus = -1
+description = """\
+This creature has seen better days.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>
+<link="hitpoints"><style="link">Hit Points</style></link>: <style="malus">-1</style></style>\
+</style>"""
+
+[migratory]
+display_name = "Migratory"
+description = "This creature is just passing through."
+
+[puny]
+display_name = "Puny"
+fighting_mod = -30
+description = """This creature is small and weak for its kind.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-30</style>\
+</style>"""
+
+[ravenous]
+display_name = "Ravenous"
+description = "This creature is starving!"
+
+[rotting]
+display_name = "Rotting"
+fighting_mod = -20
+decay_time_mod = 1.5
+description = """This undead creature is barely hanging together.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>\
+</style>"""
+
+[scrawny]
+display_name = "Scrawny"
+fighting_mod = -20
+hit_point_bonus = -2
+description = """\
+This creature has been malnourished and is weak.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-20</style>
+<link="hitpoints"><style="link">Hit Points</style></link>: <style="malus">-2</style></style>\
+</style>"""
+
+[slavering]
+display_name = "Slavering"
+fighting_mod = -10
+description = """This creature is very hungry and looking for food.
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-10</style>\
+</style>"""
+
+[vandal]
+display_name = "Vandal"
+description = "This creature is here to destroy the camp!"
+
+[wild]
+display_name = "Wild"
+description = "This creature is a wild animal."
+
+[wrecker]
+display_name = "Wrecker"
+description = "This creature is in a mindless rage and wants to break things."
+
+[disintegrating]
+display_name = "Disintegrating"
+description = "This creature is slowly falling apart."
+
+# goblin statuses
+
+[frightened]
+display_name = "Frightened"
+agility_mod = +10
+description = """<style="fluff">And I looked round, with a constant looking; but did see no surely visible thing; though my fear did shape me an Hound from every shadow of the moss-bushes about me.
+
+ - William Hope Hodgson, The Night Land</style>
+
+This creature is scared!
+
+<style="characteristics">\
+<link="agilityDef"><style="link">Morale</style></link>: <style="bonus">+10</style>\
+</style>\
+"""
+
+[lostInForest]
+display_name = "Lost"
+description = """<style="fluff">When I was a girl at Hankasalmi, a man got lost in the forest-cover. The whole Lankamaa village was out looking for him, and he couldn't be found, until when he was allowed to be found. That is, when he was free from the forest-cover. He was long since dead then, and the people who found him remembered that they had sat on him while searching, thinking he was a log, because he had looked like one.
+
+Hankasalmi. <style="link"><link="fls">SKS archives</link></style>.</style>
+
+This creature is lost in the <link="forestcover"><style="link">forest-cover</style></link>!"""
+
+[repulsed]
+display_name = "Repulsed"
+fighting_mod = -5
+agility_mod = +5
+description = """This creature is disgusted!
+
+<style="characteristics">\
+<link="fightingSkill"><style="link">Fighting</style></link>: <style="malus">-5</style>
+<link="agilityDef"><style="link">Morale</style></link>: <style="bonus">+5</style>\
+</style>\
+"""
+
+[steeled]
+display_name = "Steeled"
+description = "This goblin has conquered their fear and is ready to face the threat."
+
+[terrified]
+display_name = "Terrified"
+description = "This creature is fleeing in terror!"
+
+[untried]
+display_name = "Untried"
+description = "This goblin is new to the middle world and has not yet faced a test of character."
+
+[activeGuard]
+visual_priority = 1_000
+
+# This status may be given both to mobs and buildings
+[unreachable]
+display_name = "Unreachable"
+description = """Blocked from <link="unreachableDef"><style="link">reaching the camp center</style></link>."""
+
+[inDeepWater]
+display_name = "In deep water"
+
+[flying]
+display_name = "Flying"
+
+[onFire]
+display_name = "On fire"
+description = "This creature is burning!"
+
+[in_mud]
+display_name = "In mud"
+description = "This creature is moving through mud and having a hard time of it"
+speed_mod = -0.4
+
+# Equipment keywords
+
+[has_plank_armor]
+visual_priority = 2_000
+hit_point_bonus = 3
+defence_mod = +5
+
+[has_leather_jerkin]
+visual_priority = 2_000
+hit_point_bonus = 2
+defence_mod = +5
+
+[has_rigid_leather_armor]
+visual_priority = 2_000
+hit_point_bonus = 3
+defence_mod = +10
+
+[has_linen_armor]
+visual_priority = 2_000
+hit_point_bonus = 2
+defence_mod = +10
+
+[has_dwarven_armor]
+visual_priority = 2_000
+hit_point_bonus = 4
+defence_mod = +20
+
+[has_wood_shield]
+hit_point_bonus = 2
+defence_mod = +5
+
+[has_dwshield]
+hit_point_bonus = 3
+defence_mod = +10
+
+[has_ironshield]
+hit_point_bonus = 4
+defence_mod = +20
+
+[has_iron_armor]
+visual_priority = 2_000
+hit_point_bonus = 5
+defence_mod = +30
+
+[has_spear]
+defence_mod = +10
+
+[bulky]
+speed_mod = -0.2
+
+# Workshop keywords
+
+[work_bonus_1]
+work_speed_mod = +0.2
+display_name = "Workshop bonus"
+
+[work_bonus_2]
+work_speed_mod = +0.4
+display_name = "Workshop bonus"
+
+[work_bonus_3]
+work_speed_mod = +0.6
+display_name = "Workshop bonus"
+
+[work_bonus_4]
+work_speed_mod = +0.8
+display_name = "Workshop bonus"
+
+[work_bonus_5]
+work_speed_mod = +1
+
+# sauna
+
+[refreshed]
+speed_mod = +0.2
+work_speed_mod = +0.2
+display_name = "Refreshed"
+description = """\
+This goblin has had a sauna and swam in the cool water.
+
+<style="characteristics">\
+<link="speedDef"><style="link">Movement speed</style></link>: <style="bonus">+0.2</style>
+<link="work_speed_def"><style="link">Working speed</style></link>: <style="bonus">+0.2</style>\
+</style>\
+"""

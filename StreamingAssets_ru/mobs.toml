@@ -1,0 +1,288 @@
+﻿[goblin]
+display_name = "Гоблин"
+keyword = ["walker", "climber", "spirit"]
+moveSpeed = 0.75
+swimSpeedMult = 0.25
+work_speed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 50
+agility = 50
+fighting = 30
+shooting = 30
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 5
+meleeDamageType = "crushing"
+breaker = 1
+drops = ["goblincorpse"]
+eaten = ["goblinbones"]
+description = "<style=\"fluff\"> Внезапно они оказались под землей. Люди там были голубые, но в остальном чистые.\n\nEnontekiö, 1930. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n"
+
+# animals
+
+[crane]
+display_name = "Крейн"
+keyword = ["bird", "simple", "noEquipment", "herbivore", "granivore", "wild", "spirit"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 3
+constitution = 40
+willpower = 50
+agility = 60
+fighting = 40
+meleeAttackDamage = 8
+meleeDamageType = "slashing"
+experienceAwarded = 3
+drops = ["offal", "dwtrinket:50%", "cranecorpse:90%"]
+description = "<style=\"fluff\"> Посадил журавль в ризы,\nНа холме, облаченном в вердуре,\nИ журавль его пальцев подсчитывал.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLII\n\nБольшая перелетная птица."
+
+[wolf]
+display_name = "Волк"
+keyword = ["noEquipment", "quadruped", "jumper", "spirit", "natural_weapon"]
+moveSpeed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 50
+willpower = 50
+agility = 40
+fighting = 50
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+experienceAwarded = 5
+drops = ["wolfcorpse:95%", "offal"]
+description = "<style=\"fluff\"> Чтобы волки пустили полпути,\nК медвежьим логовицам поведи другой;\nПой лесных волков вместе,\nПойте медведям с гор,\nНазови волков своими маленькими детьми,\nИ медведи твои знаменосцы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIII Волк."
+
+# supernatural creatures
+
+[deathfolk]
+display_name = "Смертельный народ"
+keyword = ["noArmor", "undead", "fear", "ethereal"]
+moveSpeed = 0.5
+fireResist = 3
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 50
+willpower = 30
+agility = 10
+fighting = 30
+meleeAttackDamage = 10
+meleeDamageType = "crushing"
+description = "<style=\"fluff\"> Пошлите лодку быстро,\nПошли меня, быстро, лодка Туони,\nПомоги мне пересечь эту роковую реку,\nПересечь канал Маналы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XVI Духи умерших обычно мирно путешествуют в страну мертвых, но иногда они остаются позади и причиняют вред."
+
+[fireeagle]
+display_name = "Огненный орел"
+keyword = ["bird", "noEquipment", "fireBreath", "spirit", "burning"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 5
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 50
+willpower = 50
+agility = 70
+fighting = 60
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+description = "<style=\"fluff\"> В реке был пожар,\nВ катаракте огненная скала,\nНа скале огненный холм,\nНа его вершине врезался орел,\nИз его горла струился огонь\nК кратеру далеко под ним,\nСтрельба из его перьев,\nСияющий огненным великолепием.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVI"
+
+[gravefolk00]
+display_name = "Позорный народ могил"
+keyword = ["shambler", "noArmor", "noEquipment", "undead", "repulsive", "disintegrating"]
+moveSpeed = 0.125
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 30
+agility = 5
+fighting = 30
+shooting = 0
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 10
+meleeDamageType = "crushing"
+experienceAwarded = 2
+breaker = 1
+drops = ["rottenmeat", "bones", "dwtrinket:20%"]
+description = "Безмозглое мертвое тело, поднятое из могилы магией."
+
+[stonegolem]
+display_name = "Каменный голем"
+keyword = ["walker", "noArmor", "noEquipment", "spirit", "natural_weapon", "stonebody", "golem"]
+moveSpeed = 0.2
+carryingCapacity = 3.0
+hitpoints = 10
+constitution = 50
+willpower = 50
+agility = 0
+fighting = 70
+shooting = 0
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 20
+meleeDamageType = "crushing"
+experienceAwarded = 10
+breaker = 3
+drops = "roughstone"
+description = "Волшебное существо проснулось!"
+
+[werewolf]
+display_name = "оборотень"
+keyword = ["walker", "lycantrophy", "climber", "spirit"]
+moveSpeed = 0.9
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 60
+willpower = 30
+agility = 50
+fighting = 60
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+breaker = 1
+drops = ["wolfmeat:95%"]
+
+# pests
+
+[doomlord]
+display_name = "Бульфинк"
+keyword = ["bird", "granivore", "noEquipment", "pest"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 1
+carryingCapacity = 0.1
+hitpoints = 1
+agility = 70
+description = "<style=\"fluff\"> Только купание в бульфинче,\nС разноцветной овсянкой.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVI"
+
+[rabbit]
+display_name = "Кролик"
+keyword = ["herbivore", "noEquipment", "pest"]
+moveSpeed = 1.2
+fireResist = 1
+carryingCapacity = 0.2
+hitpoints = 1
+agility = 60
+description = "<style=\"fluff\"> \"Не думай, что я путешествую сюда,\nЧтобы быть зажаренным в сковороде,\nЧтобы тушить в чайнике\nПусть падший Лемпо наполнит твои столы!\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение IV"
+
+[rat]
+display_name = "Крыса"
+keyword = ["granivore", "herbivore", "noEquipment", "pest"]
+moveSpeed = 1.2
+fireResist = 2
+carryingCapacity = 0.1
+hitpoints = 1
+agility = 70
+
+# other animals
+
+[raven]
+display_name = "Ворон"
+latinName = "Corvus Corax"
+keyword = ["bird", "noEquipment"]
+moveSpeed = 1.0
+description = "<style=\"fluff\"> Пришел ворон, летал, крякал,\nИ менестрель так обратился к нему:\n\"Принеси, ворон, мои капли слез\nИз бездны хрустального озера;\nЯ дам тебе прекрасное оперение,\nВознаграждение за золотую службу».\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLI Ворон, необычайно умная птица.\n"
+
+# humanoid enemies
+
+[dwarffootpad]
+display_name = "Гномовая колодка"
+keyword = ["dwarf", "thief", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 50
+agility = 50
+fighting = 20
+shooting = 30
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 7
+meleeDamageType = "crushing"
+breaker = 1
+fireResist = 1
+drops = ["dwarfcorpse"]
+description = "<style=\"fluff\"> Некоторые люди из <link=\"birdhome\"><style=\"link\"> Птичий дом</style></link> однажды прошел через Джаалу. Они были маленькими существами, гномами.\n\nJaala, 1947.<style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\n<link=\"dwarves\"><style=\"link\">dwarven</style></link> вор; следите за своими ценностями!"
+
+[humanvandal]
+display_name = "Человеческий вандал"
+keyword = ["human", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 30
+willpower = 30
+agility = 30
+fighting = 50
+shooting = 20
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 7
+meleeDamageType = "crushing"
+breaker = 2
+fireResist = 1
+drops = ["humancorpse", "offal", "dwtrinket:50%"]
+description = "Человек с обидой."
+
+[humansoldier]
+display_name = "Человек-солдат"
+keyword = ["human", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 10
+constitution = 50
+willpower = 50
+agility = 40
+fighting = 70
+shooting = 20
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 8
+meleeDamageType = "crushing"
+breaker = 2
+fireResist = 1
+drops = ["humancorpse", "offal", "dwtrinket:50%"]
+description = "<style=\"fluff\"> Куда мне бежать в безопасности,\nГде спрятаться от смерти и опасности?\nНа мой взгляд, это разрушение,\nУжасное несчастье парит над мной;\nНа заре приходят копьеносцы,\nБесчисленные воины из Похи.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVIII Солдат из соседнего поселения."
+
+# spirits
+
+[spiritmob]
+display_name = "Дух"
+keyword = ["undead"]
+moveSpeed = 0.2
+carryingCapacity = 3.0
+work_speed = 1.5
+description = "<style=\"fluff\"> Положив пальцы на печь,\nНо он нашел его холодным и безжизненным.\nТогда он знал, что удовлетворять\nЕго мать больше не жила.\nПоложив руку свою на камин,\nХолодными и безжизненными были очаговые камни;\nТогда он знал, что удовлетворять\nЧто его сестра тоже погибла.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXVI Дух на пути к земле мертвых."
+
+[firespiritmob]
+display_name = "Горящий дух"
+keyword = ["undead", "burning"]
+moveSpeed = 0.2
+description = "Дух на пути к земле мертвых, но злой!"
+
+[worker_spirit]
+display_name = "Дух"
+keyword = ["undead", "intangible"]
+moveSpeed = 0.5
+carryingCapacity = 3.0
+work_speed = 1.5
+description = "<style=\"fluff\"> Положив пальцы на печь,\nНо он нашел его холодным и безжизненным.\nТогда он знал, что удовлетворять\nЕго мать больше не жила.\nПоложив руку свою на камин,\nХолодными и безжизненными были очаговые камни;\nТогда он знал, что удовлетворять\nЧто его сестра тоже погибла.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXVI Дух на пути к земле мертвых."
+
+# spells
+
+[windheadmob]
+display_name = "голова ветра"
+keyword = ["ethereal", "magicWind"]
+moveSpeed = 0.5
+
+[fireheadmob]
+display_name = "голова огня"
+keyword = ["ethereal", "magicWind"]
+moveSpeed = 0.5

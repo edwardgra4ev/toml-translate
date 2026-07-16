@@ -1,0 +1,94 @@
+# Goblin names
+#
+# Goblin names can be formed in several different ways.
+# The simplest name is a single name from the simple goblin names list.
+
+# 1.0 Goblin names
+
+# 1.1 Simple goblin names (340 names)
+
+simple_goblin_names = [
+    "Aaku", "Aate", "Aava", "Ahti", "Aika", "Aimo", "Aila", "Aili", "Aina", "Aino", "Aira", "Airi",
+    "Ano", "Arpa", "Aseme", "Asi", "Atto", "Aule", "Aura", "Auva", "Auvo", "Eke", "Ele", "Elo",
+    "Enne", "Epe", "Hala", "Halla", "Halli", "Hama", "Harikainen", "Heimo", "Hempo", "Hilja", "Hilkka",
+    "Hille", "Hilti", "Himo", "Holuva", "Hopu", "Hurtta", "Huke", "Huti", "Hyry", "Hyvä", "Härkö",
+    "Iha", "Iholka", "Ikiä", "Ikä", "Ilkka", "Illa", "Illo", "Ilma", "Ilmo", "Ilo", "Ilpo", "Immake",
+    "Immel", "Immis", "Impi", "Itsi", "Jalas", "Jales", "Jalo", "Jamas", "Joutsi", "Jumate", "Jumi",
+    "Juolukka", "Järki", "Järkäle", "Kaija", "Kaikas", "Kaikki", "Kaikko", "Kaipa", "Kaipas", "Kaipe",
+    "Kaipo", "Kaire", "Kaive", "Kaivo", "Kake", "Kakes", "Kalev", "Kaleva", "Kalevi", "Kalle", "Kalli",
+    "Kallio", "Kallis", "Kalme", "Kalpa", "Kanerva", "Kare", "Karpalo", "Karre", "Karvas", "Kataja",
+    "Kau", "Kaukas", "Kauke", "Kauko", "Kaula", "Kaupi", "Kaupo", "Kauppi", "Kauvi", "Kavo", "Keijo",
+    "Keke", "Keki", "Keko", "Kekri", "Keku", "Kekäle", "Kepa", "Kepo", "Keppa", "Kerro", "Kihi",
+    "Kiho", "Kiikka", "Kille", "Kilpa", "Kirja", "Kirro", "Kivi", "Koi", "Koikka", "Koite", "Koivu",
+    "Korpi", "Kosto", "Koura", "Kouvo", "Kova", "Kukka", "Kulta", "Kurki", "Kuu", "Kuunsäde",
+    "Kuurosade", "Kuusi", "Kuutamo", "Kuutti", "Kyllä", "Kynne", "Lalli", "Lampi", "Leina", "Leino",
+    "Leivo", "Lempi", "Lepo", "Leppä", "Lintu", "Lohkare", "Lumi", "Lumikello", "Manto", "Marja",
+    "Masse", "Meike", "Meka", "Meko", "Mela", "Mele", "Meles", "Melkki", "Melkko", "Melno", "Melu",
+    "Meme", "Memo", "Meri", "Mesi", "Metsä", "Mieho", "Mieli", "Miero", "Milete", "Mili", "Milla",
+    "Minttu", "Monta", "Mulli", "Muntti", "Muoto", "Mustikka", "Mäki", "Mänty", "Naakka", "Naava",
+    "Nemo", "Neuvo", "Neva", "Niha", "Ninnu", "Noki", "Nousia", "Ohakas", "Oina", "Oitti", "Oja",
+    "Oksa", "Onni", "Otso", "Oula", "Outo", "Ouva", "Paha", "Paisa", "Paja", "Papu", "Para", "Parka",
+    "Passi", "Paturi", "Pelko", "Pellava", "Pihla", "Pihlaja", "Pilvi", "Piski", "Poika", "Puhuri",
+    "Puolukka", "Puro", "Putkama", "Pyry", "Päiviä", "Päivä", "Raha", "Rahko", "Railo", "Raita",
+    "Rastas", "Rauha", "Raukka", "Repo", "Ronja", "Roope", "Ruska", "Ruusu", "Räme", "Saari", "Sade",
+    "Saira", "Salli", "Salme", "Salmi", "Salpa", "Sana", "Saniainen", "Sappi", "Sata", "Satakieli",
+    "Satta", "Savu", "Seeste", "Sota", "Sumu", "Susi", "Suuri", "Suvi", "Säde", "Säilä", "Taara",
+    "Taito", "Taival", "Talpia", "Tammi", "Tapa", "Teivas", "Tenho", "Terva", "Tetsi", "Toivo",
+    "Tora", "Toria", "Touko", "Tuho", "Tuiske", "Tuisko", "Tuisku", "Tuli", "Tulli", "Tulva", "Tuuli",
+    "Tyyne", "Tyyni", "Tytti", "Tähti", "Ukko", "Ukri", "Uku", "Ulle", "Uni", "Unna", "Unni", "Unta",
+    "Untamo", "Unto", "Urja", "Uska", "Utu", "Vaahtera", "Vaino", "Valle", "Valittu", "Valo", "Valta",
+    "Vana", "Varma", "Varjo", "Varo", "Vartti", "Veijo", "Veikko", "Veli", "Vene", "Venla", "Verso",
+    "Vesi", "Viatsi", "Vietso", "Viha", "Vihi", "Vihta", "Viia", "Viima", "Viita", "Vili", "Vilja",
+    "Villa", "Vilu", "Vire", "Virta", "Viti", "Voipa", "Vähä", "Väinämöinen", "Väinä", "Väinö",
+    "Väärä"
+]
+
+ # 1.2 Complex goblin names
+
+goblin_name_start_front_vowel = [
+   "Ele", "Enne", "Hyry", "Hyve", "Hyvä", "Hyvö", "Härkö", "Iki", "Ikä", "Impi", "Järki", "Kekä",
+   "Käypä", "Keke", "Kihi", "Lempi", "Leppä", "Meme", "Pilvi", "Piski", "Pyry", "Päivä", "Räme",
+   "Väinä", "Väinö", "Vesi", "Vihi", "Villi", "Vire", "Viti", "Vähä", "Väinä", "Väinö", "Väärä"
+]
+
+goblin_name_start_back_vowel  = [
+   "Aimo", "Aina", "Aino", "Alki", "Ari", "Arpa", "Aule", "Auvo", "Elo", "Hali", "Haja", "Hama",
+   "Heimo", "Hempo", "Hilja", "Hilti", "Hima", "Himo", "Hoko", "Hopu", "Huke", "Huti", "Iha", "Iko", "Illa",
+   "Ilma", "Ilmo", "Ilo", "Ilpo", "Ima", "Imma", "Jalo", "Jumi", "Kai", "Kaija", "Kaikki", "Kaikko",
+   "Kaina", "Kaipa", "Kaire", "Kaive", "Kaivo", "Kake", "Kalle", "Kalli", "Kalma", "Kalpa", "Kare",
+   "Karvas", "Kauka", "Kauki", "Kauko", "Kaula", "Kaupo", "Kauppi", "Kauvo", "Kavo", "Keko", "Kiho",
+   "Kiikka", "Kilpa", "Kirja", "Kirro", "Koi", "Koikka", "Koke", "Kone", "Kouvo", "Kova", "Kulta",
+   "Kumma", "Kuri", "Kurki", "Lampi", "Leina", "Leino", "Leivo", "Lumi", "Manto", "Marja", "Masse",
+   "Meka", "Meko", "Mele", "Melno", "Melu", "Memo", "Meri", "Mesi", "Mieho", "Mieli", "Mielo", "Miero",
+   "Mulli", "Muntti", "Muoto", "Naakka", "Nemo", "Neuvo", "Neva", "Niha", "Ninnu", "Nousia", "Oha",
+   "Ohi", "Oina", "Oitti", "Oula", "Outo", "Ouva", "Paha", "Paisa", "Paja", "Para", "Parka", "Passi",
+   "Paturi", "Pelko", "Raha", "Rahko", "Railo", "Raita", "Raukka", "Repo", "Saari", "Saira", "Salmi",
+   "Sappi", "Sata", "Savu", "Sota", "Sumu", "Susi", "Suuri", "Suvi", "Taara", "Taito", "Tammi", "Tapa",
+   "Teivas", "Tenho", "Toivo", "Tora", "Touko", "Tuho", "Tuiske", "Tuisku", "Tulli", "Uni", "Unna",
+   "Unto", "Uska", "Utu", "Vaino", "Valle", "Valta", "Vana", "Varo", "Veijo", "Veikko", "Veli", "Vene",
+   "Viatsi", "Viha", "Vihta", "Viia", "Viita", "Vilja", "Villa", "Vilu", "Virta", "Voipa"
+]
+
+goblin_name_nosuffix = [
+   "Ahti", "Aika", "Arki", "Epe", "Ho", "Hurtta", "Melkki", "Melkko", "Roope", "Salli"
+]
+
+goblin_name_suffix_front_vowel = [
+    "in", "inen", "lä", "läinen", "käinen", "nen", "tty"
+]
+
+goblin_name_suffix_back_vowel = [
+    "in", "inen", "la", "lainen", "kainen", "kko", "ma", "nen", "ttu"
+]
+
+goblin_name_end = [
+    "henki", "hukka", "joutsi", "kello", "kirja", "koura", "lampi", "lapsi", "lempi", "lempinen",
+    "lintu", "marja", "mieli", "mies", "mäki", "naakka", "nainen", "neuvo", "neva", "poika", "päinen",
+    "päivä", "pää", "rastas", "raukka", "räme", "sade", "salpa", "sisko", "susi", "taival", "toivo",
+    "tuho", "tytti", "tytär", "valko", "valkonen", "valkea", "valta", "varma", "veikko", "veli",
+    "vilja", "virta", "väärä"
+]
+
+goblin_name_conjugating_end = [
+    "npoika", "nrepo", "nsalpa", "ntaka", "ntila", "ntuho", "ntytti", "ntytär", "nveli" 
+]

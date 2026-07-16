@@ -1,0 +1,268 @@
+﻿# structure keywords
+
+[armory]
+display_name = "Armor-crafter's Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for creating simple armor from organic materials."""
+
+[armorcoldforger]
+display_name = "Armorer's Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> where dwarven metal can be cold-forged into armor."""
+
+[armorsmith]
+display_name = "Armorsmith's Forge"
+description = """A <link="workshop"><style="link">workshop</style></link> where iron can be forged into strong armor."""
+
+[baker]
+display_name = "Bakery"
+description = "A structure where flour can be baked into bread."
+
+[blacksmiths]
+display_name = "Blacksmith"
+description = """A <link="workshop"><style="link">workshop</style></link> with a forge, where metal can be melted and made into useful things."""
+
+[bloomer]
+display_name = "Bloomery"
+description = """A <link="workshop"><style="link">workshop</style></link> where ore is smelted into metal."""
+
+[bogironcollector]
+display_name = "Bog Iron Collector"
+description = """A bog iron collector's shack."""
+
+[butcher]
+display_name = "Butcher"
+description = """A <link="workshop"><style="link">workshop</style></link> where animal carcasses can be processed into edible meat and other useful products."""
+
+[carpenter]
+display_name = "Carpenter"
+description = """A <link="workshop"><style="link">workshop</style></link> where all kinds of wooden tools and building materials can be made."""
+
+[charcoalclamp]
+display_name = "Charcoal Clamp"
+description = """A structure where wood is burned to produce <link="charcoal"><style="link">charcoal</style></link>."""
+
+[clayproducer]
+display_name = "Clay Pit"
+description = "A hole in the ground where clay can be dug."
+
+[fishingbuilding]
+display_name = "Fishing Building"
+description = "A building for storing fishing tools, that lets goblins do fishing jobs."
+
+[fishingworkshop]
+display_name = "Fishing Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for making fishing tools."""
+
+[hidecuring]
+display_name = "Curing Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for curing animal pelts into hides."""
+
+[kitchen]
+display_name = "Kitchen"
+description = """A <link="workshop"><style="link">workshop</style></link> for preparing food."""
+
+[leatherworking]
+display_name = "Leather-crafter's Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for making leather products."""
+
+[mill]
+display_name = "Mill"
+description = """A <link="workshop"><style="link">workshop</style></link> for grinding grain into flour."""
+
+[hand_mill]
+display_name = "Hand Mill"
+description = """A <style="clickableLink"><link="mill0">hand mill</link></style> for grinding grain."""
+
+[windmill]
+display_name = "Windmill"
+description = """A <style="clickableLink"><link="mill3">windmill</link></style> for grinding grain."""
+
+[nettleprocessing]
+display_name = "Nettle Processing Workshop"
+description = "A workshop for separating harvested nettle plants into useful components."
+
+[nursing]
+display_name = "Medicine Building"
+description = """Medicine buildings are places where goblins can heal from <link="armorAndDamage"><style="link">damage</style></link> they have taken."""
+
+[oreroaster]
+display_name = "Ore-roaster"
+description = "A structure where bog iron ore is roasted to remove impurities."
+
+[potter]
+display_name = "Potter"
+description = """A <link="workshop"><style="link">workshop</style></link> for making pots and other useful items out of <link="rawClay"><style="link">clay</style></link>."""
+
+[retting]
+display_name = "Retting Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> where plant materials are made into useful fiber. \
+Retting workshops include the <link="retting0"><style="link">Retting Yard</style></link>."""
+
+[ropemaking]
+display_name = "Rope-making Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for making rope. \
+Rope-making workshops include the <link="ropemaking1"><style="link">Rope-maker's Shack</style></link>."""
+
+[sauna]
+display_name = "Sauna"
+description = "A place for goblins to bathe."
+
+[saw]
+display_name = "Saw"
+description = """A <link="workshop"><style="link">workshop</style></link> where logs are sawed into planks."""
+
+[smithy]
+display_name = "Smithy"
+description = """A <link="workshop"><style="link">workshop</style></link> where dwarven metal items can be cold-forged."""
+
+[smoker]
+display_name = "Smoking Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> where food can be preserved by smoking."""
+
+[spinning]
+display_name = "Spinning Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for spinning fiber into thread. \
+Spinning workshops include the <link="spinning2"><style="link">Spinner's Shed</style></link>."""
+
+[stonecutting]
+display_name = "Stone-cutting Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> where stone is processed."""
+
+[stoneproducer]
+display_name = "Stone Quarry"
+description = """An open pit in the ground for extracting rock."""
+
+[storehouse]
+display_name = "Storehouse"
+description = """A structure where items that would spoil, or spoil faster, outdoors can be securely <link="storage"><style="link">stored</style></link>."""
+
+[tanning]
+display_name = "Tanning Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for tanning hides into leather."""
+
+[threshing]
+display_name = "Thresher"
+description = """A <link="workshop"><style="link">workshop</style></link> for drying and threshing grain."""
+
+[weaponcoldforger]
+display_name = "Weaponer's Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> where dwarven metal can be cold-forged into weapons."""
+
+[weaponmaker]
+display_name = "Weapon-crafter's Workshop"
+description = """A <link="workshop"><style="link">workshop</style></link> for creating weapons from simple materials."""
+
+[weaponsmith]
+display_name = "Weaponsmith's Forge"
+description = """A <link="workshop"><style="link">workshop</style></link> where weapons can be forged from iron."""
+
+[weaving]
+display_name = "Weaver"
+description = """A <link="workshop"><style="link">workshop</style></link> where thread is woven into cloth."""
+
+[summonedstructure]
+display_name = "Magical"
+description = """"""
+
+[middenheap]
+display_name = "Midden"
+description = """A midden heap. When garbage is dumped in the midden, it produces <link="compost"><style="link">compost</style></link> for <link="fertility"><style="link">fertilizing</style></link> <link="farming"><style="link">fields</style></link>."""
+
+# tool keywords
+
+[bartool]
+display_name = "Bar Tool"
+description = """Bars are used to extract tree stumps and large rocks from the ground. An early bar tool is the <link="diggingstick"><style="link">digging stick</style></link>."""
+
+[bucket]
+display_name = "Bucket"
+description = """Buckets are used to carry liquids and other loose substances. An early example of a bucket is the <link="claypot"><style="link">earthenware pot</style></link>."""
+
+[chopping]
+display_name = "Chopping Tool"
+description = """\
+Chopping tools are required to fell trees. They are also used to cut <link="woodlog"><style="link">logs</style></link> into <link="woodbeam"><style="link">beams</style></link> or <link="woodplank"><style="link">planks</style></link>.\
+"""
+
+[clearing]
+display_name = "Clearing Tool"
+description = """\
+These tools are used for clearing away bushes and other undergrowth.\
+"""
+
+[digging]
+display_name = "Digging Tool"
+description = """\
+Tools used for digging and preparing <link="farming"><style="link">fields</style></link>. \
+<link="carpentryTech"><style="link">Wooden</style></link> digging tools are only effective in <link="sandsoil"><style="link">sandy soils</style></link>.\
+"""
+
+[hoeing]
+display_name = "Hoeing Tool"
+description = """\
+Hoes are used to till and weed fields, a job that can also be done with <link="digging"><style="link">digging tools</style></link>.\
+"""
+
+[mining]
+display_name = "Mining Tool"
+description = """\
+Mining tools are used to quarry <link="stonetier"><style="link">stone</style></link> and other useful minerals.\
+"""
+
+[shovel]
+display_name = "Shovel"
+description = """Shovels are metal digging tools that can work <link="claysoil"><style="link">clay soils</style></link>."""
+
+[spearfishingtool]
+display_name = "Fishing Spear"
+description = "Frankly, a pointy stick for stabbing fish. Goblins need fishing spears to do spear-fishing jobs."
+
+[midden_tool]
+display_name = "Pitchfork"
+description = """A pitchfork for working <link="midden"><style="link">middens</style></link>."""
+
+# food keywords
+
+[fresh]
+display_name = "Fresh Food"
+description = """Some fresh food. If goblins don't get any fresh food in their diet, they'll suffer from <link="scurvy"><style="link">scurvy</style></link>."""
+
+[carbs]
+display_name = "Carbohydrates"
+description = """This food contains essential carbohydrates, a necessary part of a balanced diet."""
+
+[fat]
+display_name = "Fat"
+description = """This food contains fats, which goblins need to survive and also quite enjoy!"""
+
+[fiber]
+display_name = "Fiber"
+description = """This food contains large amounts of dietary fiber. If goblins don't get enough fiber in their diet, they'll suffer from <link="lackFiber"><style="link">fiber deficiency</style></link>."""
+
+[protein]
+display_name = "Protein"
+description = """This food contains protein. If goblins don't get enough protein in their diet, they'll suffer from <link="lackProtein"><style="link">protein deficiency</style></link>."""
+
+[sweet]
+display_name = "Sweet"
+description = """This food is very sweet, and goblins don't like meals that are too sweet.\
+ If a meal includes multiple sweet foods, only the first one will count its full <link="moraledef"><style="link">morale</style></link> bonus. All subsequent sweet foods will only add half their morale bonus to the effects of the meal."""
+
+# product keywords
+
+[coarse_bast]
+display_name = "Coarse Bast"
+description = "Some coarse bast that can be made into fiber."
+
+[fine_bast]
+display_name = "Fine Bast"
+description = "Some fine bast that can be made into fiber."
+
+[thread]
+display_name = "Thread"
+description = "Some thread, either coarse or fine."
+
+# other
+
+[garbage]
+display_name = "Garbage"
+description = """Garbage can be dumped into a <link="midden"><style="link">midden</style></link> to produce <link="compost"><style="link">compost</style></link>"""

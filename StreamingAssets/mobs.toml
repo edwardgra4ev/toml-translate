@@ -1,0 +1,389 @@
+﻿[goblin]
+display_name = "Goblin"
+keyword = ["walker", "climber", "spirit"]
+moveSpeed = 0.75
+swimSpeedMult = 0.25
+work_speed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 50
+agility = 50
+fighting = 30
+shooting = 30
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 5
+meleeDamageType = "crushing"
+breaker = 1
+drops = ["goblincorpse"]
+eaten = ["goblinbones"]
+description = """<style="fluff">All of a sudden they were underground. The people there were blue, but otherwise clean.
+
+Enontekiö, 1930. <style="link"><link="fls">SKS archives</link></style>.</style>
+"""
+
+# animals
+
+[crane]
+display_name = "Crane"
+keyword = ["bird", "simple", "noEquipment", "herbivore", "granivore", "wild", "spirit"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 3
+constitution = 40
+willpower = 50
+agility = 60
+fighting = 40
+meleeAttackDamage = 8
+meleeDamageType = "slashing"
+experienceAwarded = 3
+drops = ["offal", "dwtrinket:50%", "cranecorpse:90%"]
+description = """\
+<style="fluff">\
+Sat a crane within the rushes,
+On a hillock clothed in verdure,
+And the crane his toes was counting.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLII</style>
+
+A large migratory bird."""
+
+[wolf]
+display_name = "Wolf"
+keyword = ["noEquipment", "quadruped", "jumper", "spirit", "natural_weapon"]
+moveSpeed = 1.0
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 50
+willpower = 50
+agility = 40
+fighting = 50
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+experienceAwarded = 5
+drops = ["wolfcorpse:95%", "offal"]
+description = """\
+<style="fluff">To the wolves let one half wander,
+To the bear-dens, lead the other;
+Sing the forest wolves together,
+Sing the bears down from the mountains,
+Call the wolves thy little children,
+And the bears thy standard-bearers.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXIII</style>\
+
+A wolf."""
+
+# supernatural creatures
+
+[deathfolk]
+display_name = "Death-folk"
+keyword = ["noArmor", "undead", "fear", "ethereal"]
+moveSpeed = 0.5
+fireResist = 3
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 50
+willpower = 30
+agility = 10
+fighting = 30
+meleeAttackDamage = 10
+meleeDamageType = "crushing"
+description = """\
+<style="fluff">Send the boat now quickly over,
+Send me, quick, Tuoni's row-boat,
+Help me cross this fatal river,
+Cross the channel of Manala.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XVI</style>\
+
+The spirits of the dead normally travel peacefully to the land of the dead, but sometimes they stay behind and cause mischief.\
+"""
+
+[fireeagle]
+display_name = "Fire-eagle"
+keyword = ["bird", "noEquipment", "fireBreath", "spirit", "burning"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 5
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 50
+willpower = 50
+agility = 70
+fighting = 60
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+description = """\
+<style="fluff">In the river was a fire-fall,
+In the cataract a fire-rock,
+On the rock a fiery hillock,
+On its summit perched an eagle,
+From his throat the fire was streaming
+To the crater far below him,
+Fire out-shooting from his feathers,
+Glowing with a fiery splendor.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVI</style>\
+"""
+
+[gravefolk00]
+display_name = "Shambling Grave-folk"
+keyword = ["shambler", "noArmor", "noEquipment", "undead", "repulsive", "disintegrating"]
+moveSpeed = 0.125
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 30
+agility = 5
+fighting = 30
+shooting = 0
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 10
+meleeDamageType = "crushing"
+experienceAwarded = 2
+breaker = 1
+drops = ["rottenmeat", "bones", "dwtrinket:20%"]
+description = """A mindless dead body, raised from its grave by magic."""
+
+[stonegolem]
+display_name = "Stone Golem"
+keyword = ["walker", "noArmor", "noEquipment", "spirit", "natural_weapon", "stonebody", "golem"]
+moveSpeed = 0.2
+carryingCapacity = 3.0
+hitpoints = 10
+constitution = 50
+willpower = 50
+agility = 0
+fighting = 70
+shooting = 0
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 20
+meleeDamageType = "crushing"
+experienceAwarded = 10
+breaker = 3
+drops = "roughstone"
+description = "A magical creature has been awakened!"
+
+[werewolf]
+display_name = "Werewolf"
+keyword = ["walker", "lycantrophy", "climber", "spirit"]
+moveSpeed = 0.9
+fireResist = 1
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 60
+willpower = 30
+agility = 50
+fighting = 60
+meleeAttackDamage = 12
+meleeDamageType = "slashing"
+breaker = 1
+drops = ["wolfmeat:95%"]
+
+# pests
+
+[doomlord]
+display_name = "Bullfinch"
+keyword = ["bird", "granivore", "noEquipment", "pest"]
+moveSpeed = 0.8
+flightSpeed = 1.0
+fireResist = 1
+carryingCapacity = 0.1
+hitpoints = 1
+agility = 70
+description = """\
+<style="fluff">Only was the bullfinch bathing,
+With the many-colored bunting.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVI</style>\
+"""
+
+[rabbit]
+display_name = "Rabbit"
+keyword = ["herbivore", "noEquipment", "pest"]
+moveSpeed = 1.2
+fireResist = 1
+carryingCapacity = 0.2
+hitpoints = 1
+agility = 60
+description = """\
+<style="fluff">"Think ye not I journey hither,
+To be roasted in the skillet,
+To be stewed in yonder kettle
+Let fell Lempo fill thy tables!"
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem IV</style>\
+"""
+
+[rat]
+display_name = "Rat"
+keyword = ["granivore", "herbivore", "noEquipment", "pest"]
+moveSpeed = 1.2
+fireResist = 2
+carryingCapacity = 0.1
+hitpoints = 1
+agility = 70
+
+# other animals
+
+[raven]
+display_name = "Raven"
+latinName = "Corvus Corax"
+keyword = ["bird", "noEquipment"]
+moveSpeed = 1.0
+description = """\
+<style="fluff">Came a raven, flying, croaking,
+And the minstrel thus addressed him:
+"Bring, O raven, bring my tear-drops
+From the crystal lake's abysses;
+I will give thee beauteous plumage,
+Recompense for golden service."
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XLI</style>\
+
+A raven, an unusually intelligent bird.
+"""
+
+# humanoid enemies
+
+[dwarffootpad]
+display_name = "Dwarven Footpad"
+keyword = ["dwarf", "thief", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 5
+constitution = 30
+willpower = 50
+agility = 50
+fighting = 20
+shooting = 30
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 7
+meleeDamageType = "crushing"
+breaker = 1
+fireResist = 1
+drops = ["dwarfcorpse"]
+description = """<style="fluff">Some people from <link="birdhome"><style="link">Bird-home</style></link> once passed through Jaala. They were small creatures, dwarves.
+
+Jaala, 1947.<style="link"><link="fls">SKS archives</link></style>.</style>
+
+A <link="dwarves"><style="link">dwarven</style></link> thief; look out for your valuables!"""
+
+[humanvandal]
+display_name = "Human Vandal"
+keyword = ["human", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 7
+constitution = 30
+willpower = 30
+agility = 30
+fighting = 50
+shooting = 20
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 7
+meleeDamageType = "crushing"
+breaker = 2
+fireResist = 1
+drops = ["humancorpse", "offal", "dwtrinket:50%"]
+description = "A human with a grudge."
+
+[humansoldier]
+display_name = "Human Soldier"
+keyword = ["human", "boozer", "climber", "spirit", "walker"]
+moveSpeed = 0.7
+carryingCapacity = 1.0
+hitpoints = 10
+constitution = 50
+willpower = 50
+agility = 40
+fighting = 70
+shooting = 20
+fight_damage_mod = 0
+shootDamageModifier = 0
+meleeAttackDamage = 8
+meleeDamageType = "crushing"
+breaker = 2
+fireResist = 1
+drops = ["humancorpse", "offal", "dwtrinket:50%"]
+description = """<style="fluff">Whither shall I flee for safety,
+Whither hide from death and danger?
+In my view is fell destruction,
+Dire misfortune hovers o'er me;
+On the morrow come the spearmen,
+Countless warriors from Pohja.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXVIII</style>\
+
+A human soldier from a nearby settlement."""
+
+# spirits
+
+[spiritmob]
+display_name = "Spirit"
+keyword = ["undead"]
+moveSpeed = 0.2
+carryingCapacity = 3.0
+work_speed = 1.5
+description = """\
+<style="fluff">Laid his fingers on the oven,
+But he found it cold and lifeless;
+Then he knew to satisfaction
+That his mother lived no longer;
+Laid his hand upon the fire-place,
+Cold and lifeless were the hearth-stones;
+Then he knew to satisfaction
+That his sister too had perished.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXVI</style>\
+
+A spirit on their way to the land of the dead."""
+
+[firespiritmob]
+display_name = "Burning Spirit"
+keyword = ["undead", "burning"]
+moveSpeed = 0.2
+description = "A spirit on their way to the land of the dead, but angry!"
+
+[worker_spirit]
+display_name = "Spirit"
+keyword = ["undead", "intangible"]
+moveSpeed = 0.5
+carryingCapacity = 3.0
+work_speed = 1.5
+description = """\
+<style="fluff">Laid his fingers on the oven,
+But he found it cold and lifeless;
+Then he knew to satisfaction
+That his mother lived no longer;
+Laid his hand upon the fire-place,
+Cold and lifeless were the hearth-stones;
+Then he knew to satisfaction
+That his sister too had perished.
+
+ - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXXVI</style>\
+
+A spirit on their way to the land of the dead."""
+
+# spells
+
+[windheadmob]
+display_name = "Wind-head"
+keyword = ["ethereal", "magicWind"]
+moveSpeed = 0.5
+
+[fireheadmob]
+display_name = "Fire-head"
+keyword = ["ethereal", "magicWind"]
+moveSpeed = 0.5

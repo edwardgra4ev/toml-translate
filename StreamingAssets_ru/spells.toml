@@ -1,0 +1,161 @@
+﻿# 1.0 Shaman spells
+
+#  1.1 Starting shaman spells
+
+[summoncentraltree]
+display_name = "Дерево жертвоприношений"
+keyword = "oneTime"
+effect = "summoncentraltree"
+vaki_cost = 2
+experience = 5
+unlockedBy = "shamanismTech"
+description = "<style=\"fluff\"> Если бы я взял Отсо,\nК вершине Золотого Холма,\nК медноносной горе,\nПоложил его в свою шелковую колыбель\nНа вершине сосны,\nГде ветры и священные ветви\nСкачайте его до его продолжительного сна.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI\n\nШаман вызывает и благословляет <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link> для лагеря.\n\nЖертвенное дерево является церемониальным центром лагеря гоблина, а гоблина <link=\"culturedef\"><style=\"link\">culture</style></link>. Он генерирует <link=\"researchpoints\"><style=\"link\">research points</style></link> и <link=\"vaki def\"><style=\"link\">väki</style></link>.\n\nПо мере того, как гоблины делают <link=\"sacrifice def\"><style=\"link\">жертвы</style></link> духам, уровень дерева повышается, а бонусы, которые он предоставляет лагерю, увеличиваются."
+
+[summongoblins]
+display_name = "Призраки гоблинов"
+keyword = "summon"
+effect = "goblinsummon"
+vaki_cost = 10
+experience = 10
+unlockedBy = "shamanismTech"
+description = "<style=\"fluff\"> На следующее утро Калевид поднялся на рассвете и посмотрел на него. Там, где карлик исчез в синем дыму, он увидел теперь лист голубой воды с порывами на берегу и знал, что неожиданно наткнулся на вход в Пыргу. Его усталые товарищи все еще спали, и, не потревожив их, он штамповал правой ногой, и скрытые сильно охраняемые двери Аида распахнулись.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XVIII: The Kalevide’s Journey to Põrgu\n\nШаман вызывает <link=\"underworld fluff\"><style=\"link\">underworld</style></link>, призывая больше гоблинов к <link=\"population def\"><style=\"link\"> присоединиться к лагерю</style></link>."
+
+# 1.2 Spirit spells
+
+[conscript_spirits_01]
+display_name = "Призывной дух 1"
+effect = "spirits"
+spirit_max = 10
+vaki_cost = 3
+experience = 4
+unlockedBy = "spirit_law"
+description = "<style=\"fluff\"> Невестку когда-то приносили в дом, и она была настолько сильна, что за день могла косить целое поле, каким бы большим оно ни было. Люди в доме восхищались этим и в конце концов не могли удержаться от шпионажа за невесткой. Они видели, как она сидела на камне и расчесывала волосы. Они услышали, как кто-то в поле сказал: «Ты галстук, я разрежу». Зерно упало смахом, но никого не было видно.\n\nSääminki, 1937. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\nШаман вынуждает до десяти <link=\"spiritdef\"><style=\"link\">spirits</style></link> перевозить предметы в лагере. Духи будут работать месяц."
+
+[conscript_spirits_02]
+display_name = "Обсуждение Conscript Spirits 2"
+effect = "spirits"
+spirit_max = 20
+vaki_cost = 6
+experience = 8
+unlockedBy = "spirit_law"
+description = "<style=\"fluff\"> В доме был фермер. Его отправили на недельную работу, чтобы вырубить дрова для смолы. Он всю неделю лежал в лесной сауне и ничего не делал. В субботу он получил один груз дерева и сказал: «Пусть бревна вывозят бревна». Вскоре в печи стали появляться бревна один за другим, и когда в понедельник мужчины пошли их рубить, вся древесина была выложена в печи.\n\nTeuva, 1889. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>\n\nШаман вынуждает до двадцати <link=\"spiritdef\"><style=\"link\">spirits</style></link> перевозить предметы в лагере. Духи будут работать месяц."
+
+#[clearforestspell01]
+#display_name = "Clear the Forest 1"
+#effect = "clearforest"
+#spirit_max = 20
+#vaki_cost = 2
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#Once a farmer and farmhand went to cut wood together. The farmer never cut anything, but sat on a tree-stump and read a book; but he always finished his part before the farmhand. They were "little men" who did the cutting. The farmhand stole this book once. Then he, too, didn't have to cut by himself any more, he just sat and read the book. The wood got cut.
+#
+#Muurla. 1915. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman commands up to twenty <link="spiritdef"><style="link">spirits</style></link> to clear trees, bushes and undergrowth in the selected area."""
+#
+#[turnundeadspell01]
+#display_name = "Turn Undead 1"
+#effect = "turnundead"
+#targetMaxNumber = 10
+#vaki_cost = 1
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#When there was such a person who could talk the old folk in the graveyard into moving, he used to be called a wizard.
+#
+#Rovaniemi, 1935. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman uses their magic to drive up to ten minor undead away from the camp."""
+#
+#[uprootspell01]
+#display_name = "Uproot Stumps 1"
+#effect = "uproot"
+#spirit_max = 10
+#vaki_cost = 1
+##unlockedBy = "spirit_law"
+#description = """<style="fluff">\
+#Lazy-Jaakko was hoeing a field, and he was called lazy for doing so little. Lazy-Jaakko said: "Boys, start hoeing." Jaakko then sat at the end of the field and watched the turf fly, but you couldn't see anything.
+#
+#Kauhava. <style="link"><link="fls">SKS archives</link></style>.</style>
+#
+#The shaman compels up to ten <link="spiritdef"><style="link">spirits</style></link> to uproot tree stumps in the selected area."""
+
+# 2.0 Wind spells
+
+[changewindspell]
+display_name = "Меняет ветер"
+vaki_cost = 1
+experience = 2
+unlockedBy = "windlaw"
+description = "<style=\"fluff\"> После этого моряк сказал следующее:\nВот слова Лемминкяйнена:\n\"Ударь, ветер, и поведи меня вперед,\nВзорвитесь, ветры небесные.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIX\n\nШаман призывает духов изменить направление ветра.\n\n<style=\"fluff\"> Сила, способная изменить ветер, была магической силой, которой обладали все финны.\n\n«Повар рассказал ему об этом, и Джон, как я и ожидал, встал на сторону повара и сказал, что он сам был на корабле, где у них был встречный ветер в течение двух недель, и капитан наконец узнал, что один из людей, с которыми у него были трудные слова незадолго до этого, был фином, и немедленно сказал ему, если он не остановит встречный ветер, он закроет его на переднем пике». Фин не сдался, и капитан закрыл его на переднем пике, и не дал ему ничего поесть. Фин продержался полтора дня, когда уже не выдержал, и сделал что-то или другое, что снова принесло ветер, и его отпустили.\n\n«Там, — сказал повар, — что ты думаешь об этом?»\n\nЯ сказал ему, что не сомневаюсь, что это правда, и что было бы странно, если бы ветер не изменился за пятнадцать дней, Фин или нет Фин.\n\n«О, — говорит он, — иди!» Ты думаешь, потому что ты был в колледже, ты знаешь лучше, чем кто-либо. Вы знаете это лучше, чем они сами, и видите это своими глазами. Подожди, пока не побываешь в море столько, сколько я, и ты узнаешь.\n\nРичард Генри Дана-младший, за два года до мачты (1840)"
+
+[summonwindhead]
+display_name = "Суммон Виндхэд"
+effect = "windhead"
+vaki_cost = 5
+experience = 6
+unlockedBy = "windlaw"
+description = "<style=\"fluff\"> \"Вернись, о человек войны, из Похи,\nПовернись спиной к чужакам,\nОбратись в мою далекую страну!\nРок, о ветер, мой волшебный сосуд,\nДомой водить мой корабль, О Биллоу,\nОдолжи гребцам свою помощь,\nДайте веслам легкий труд,\nНа этом огромном пространстве вод!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV\n\nШаман вызывает вихрь. Вихрь будет брошен на целевую плитку или врага и будет искать других врагов в окрестностях. Затем он будет двигаться с ветром, пока не рассеется.\n"
+
+# 3.0 Earth spells
+
+[lower_earth]
+display_name = "Нижняя Земля"
+magnitude = 1
+vaki_cost = 3
+experience = 4
+unlockedBy = "shamanismTech"
+description = "Шаман призывает силы подземного мира и опускает поверхность земли."
+
+[raise_earth]
+display_name = "Поднять Землю"
+magnitude = 1
+vaki_cost = 3
+experience = 4
+unlockedBy = "shamanismTech"
+description = "Шаман призывает силы подземного мира и поднимает землю."
+
+[level_earth]
+display_name = "Уровень Земли"
+magnitude = 1
+vaki_cost = 3
+experience = 3
+unlockedBy = "shamanismTech"
+description = "Шаман призывает силы подземного мира и выравнивает поверхность земли."
+
+#[summontree]
+#display_name = "Summon Tree"
+#effect = "treesummon"
+#vaki_cost = 2
+#spiritCost = 1
+##unlockedBy = "shamanismTech"
+#description = """The shaman summons a non-holy tree and houses a spirit in it. The tree will immediately grow to its full size. \
+#The spell summons a tree that could naturally grow on the target tile."""
+#
+#[summonbush]
+#display_name = "Summon Bush"
+#effect = "bushsummon"
+#vaki_cost = 1
+##unlockedBy = "shamanismTech"
+#description = "The shaman summons a bush that could naturally grow on the target tile."
+
+# 4.0 Water spells
+
+[summonwater01]
+display_name = "Водопроводная вода"
+effect = "watersummon"
+magnitude = 1
+vaki_cost = 2
+experience = 2
+unlockedBy = "shamanismTech"
+description = "Шаман вызывает всплеск воды над целевой плиткой. Очень удобно для тушения пожаров!"
+
+# 5.0 Fire spells
+
+[startfire01]
+display_name = "Начать огонь"
+effect = "firestarter"
+magnitude = 1
+vaki_cost = 1
+experience = 2
+unlockedBy = "shamanismTech"
+description = "Шаман начинает огонь вокруг целевой плитки."

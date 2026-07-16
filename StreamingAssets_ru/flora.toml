@@ -1,0 +1,1082 @@
+﻿# Flora
+#
+# 1.0 Saplings
+#  1.1 Big tree saplings
+#  1.2 Other tree saplings
+# 2.0 Trees
+#  2.1 Big trees
+#  2.2 Other trees
+#  2.3 Snags
+#  2.4 Stumps
+# 3.0 Bushes
+#  3.1 Spawning bushes
+#  3.2 Non-spawning bushes
+# 4.0 Undergrowth
+# 5.0 Rocks
+# 6.0 Crops
+# 7.0 Underworld flora
+#  7.1 Underworld bushes and undergrowth
+#  7.2 Underworld trees
+#  7.3 Underworld versions of plants
+
+
+# 1.0 Saplings
+
+# 1.1 Big tree saplings
+
+[sprucesapling]
+display_name = "саженец ель"
+keyword = ["sapling", "spruce", "prefersSand", "prefersDark", "spawn", "perennial"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngspruce"
+growthTime = 120
+latinName = "spruce spruce"
+description = "<style=\"fluff\"> Приветствую тебя в горах,\nПриветствую вас на возвышенностях,\nПриветствую вас, высоты с покрытыми лесами,\nЗдравствуйте, вечнозеленые пихты.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XIV\n\nЭто саженец вырастет в <link=\"молодая ель\"><style=\"ссылка\">молодая ель</style></link> дерево. еловые деревья <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"shade\"><style=\"link\">shade</style></link> и <link=\"sandsoil\"><style=\"link\">sandy soils</style></link>.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[pinesapling]
+display_name = "Сосновый саплинг"
+keyword = ["sapling", "pine", "spawn", "perennial"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngpine"
+growthTime = 120
+description = "<style=\"fluff\"> На твердой почве сеют желуди,\nПлоды сеют его в горах.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nЭтот саженец вырастет в дерево <link=\"youngpine\"><style=\"link\">young pine</style></link>. Сосны — выносливые деревья, которые могут расти практически в любом месте.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[birchsapling]
+display_name = "Березовый саплинг"
+keyword = ["sapling", "birch", "prefersClay", "needsLight", "spawn", "deciduous"]
+produces = ["branch"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+grows = "youngbirch"
+growthTime = 36
+description = "<style=\"fluff\"> В три раза лучше для этого судна.\nЕсли бы он был всего лишь березой в долине,\nИли же осина на веревке,\nС белками в его ветвях,\nИ собаки под ними лают!\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIX\n\nЭто саженец вырастет в <link=\"молодая берёза\"><style=\"ссылка\"><link=\"флорапреференции\"><style=\"ссылка\">предпочтение</style></link><link=\"глинозоль\"><style=\"ссылка\">глиняные почвы</style></link> и потребность <link=\"оттенок\"><style=\"link\">свет</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+# 1.2 Other tree saplings
+
+[aldersapling]
+display_name = "Серый Олдер Саплинг"
+keyword = ["sapling", "alder", "prefersLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "alder"
+growthTime = 240
+latinName = "Alnus incana"
+description = "<style=\"fluff\"> Березы сеют его в болотах,\nВ рыхлой почве сеют ольхи.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nСерая ольха саженца.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[forestapplesapling]
+display_name = "Саплинг деревьев крабаппл"
+keyword = ["sapling", "crabapple", "prefersLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "forestapple"
+growthTime = 120
+description = "Начало прекрасной яблони.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[junipersapling]
+display_name = "саженец можжевельника"
+keyword = ["sapling", "juniper", "needsLight", "spawn", "perennial"]
+produces = ["branch"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "juniper"
+growthTime = 120
+description = "<style=\"fluff\"> Растут и можжевельники,\nможжевельники с кластерными ягодами,\nЯгоды на ветвях боярышника.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nМолодой <link=\"juniper\"><style=\"link\">juniper</style></link>. Junipers <link=\"florapreferences\"><style=\"link\">prefer</style></link> places with little <link=\"shade\"><style=\"link\">shade</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[lindensapling]
+display_name = "Линден Саплинг"
+keyword = ["sapling", "linden", "prefersClay", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "linden"
+growthTime = 240
+description = "<style=\"fluff\"> В низинах сеют липы,\nВ влажной земле сеет ива.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nЭтот саженец вырастет до <link=\"linden\"><style=\"link\">linden</style></link> tree. Lindens <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[maplesapling]
+display_name = "Кленовый саплинг"
+keyword = ["sapling", "maple", "prefersClay", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "maple"
+growthTime = 120
+description = "<style=\"fluff\"> Калевид спал два дня и две ночи и не просыпался до третьего утра. Пока он спал, его храп звучал в течение многих миль, и большие деревья сотрясались, как будто они были саженцами.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. Кирби У.Ф. Канто XIX: Последний праздник героев\n\nЭто саженец является началом могучего <link=\"maple\"><style=\"link\">maple</style></link> tree. Maples <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[rowansapling]
+display_name = "Роуэн Саплинг"
+keyword = ["sapling", "rowan", "holy", "needsLight", "spawn", "deciduous"]
+produces = "branch"
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "rowan"
+growthTime = 240
+description = "<style=\"fluff\"> В тот момент он вышел на берег и взялся за рябину, и так вылез из реки; откуда приходит высказывание, что рябина — это освобождение Тора.\n\n- Проза Эдда, транс. Arthur Gilchrist Brodeur, Skáldskaparmál, XVIII\n\nСаженец святого <link=\"rowan\"><style=\"link\">rowan</style></link> tree. Rowans <link=\"florapreferences\"><style=\"link\">prefer</style></link> places with little <link=\"shade\"><style=\"link\">shade</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[yewsapling]
+display_name = "Ю Саплинг"
+keyword = ["sapling", "yew", "poison", "prefersClay", "spawn", "deciduous"]
+produces = ["branch"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "yew"
+growthTime = 120
+description = "Дерево <link=\"yew\"><style=\"link\">yew</style></link>. Они <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+# 2.0 Trees
+
+# 2.1 Big trees
+
+[sprucetree]
+display_name = "еловое дерево"
+keyword = ["tree", "spruce", "blocksMovement", "prefersSand", "prefersDark", "perennial", "bigShade", "spirit"]
+produces = ["woodlogx2", "branchx4"]
+condition = 25
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "sprucestump"
+growthTime = 240
+latinName = "picea abies"
+description = "<style=\"fluff\"> На его плече выросла осина,\nНа каждом храме росло березовое дерево,\nНа его могучем подбородке ольха,\nИз его бороды выросли ивовые кусты,\nИзо рта его темно-зеленая ель,\nИ дуб из его лба.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XVII\n\nСосновое дерево. Деревья ели <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"shade\"><style=\"link\">shade</style></link> и <link=\"sandsoil\"><style=\"link\">sandy soils</style></link>.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[youngspruce]
+display_name = "Молодое еловое дерево"
+keyword = ["tree", "spruce", "prefersSand", "prefersDark", "perennial", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3"]
+grows = "sprucetree"
+leaves = "smallstump"
+growthTime = 120
+latinName = "spruce dickinson"
+description = "<style=\"fluff\"> Спик брат, Вяйнямёйнен:\n\"Я могу сказать тебе великие чудеса,\nПослушайте мою удивительную историю:\nЯ видел цветение елки,\nУвидев его цветы с изумрудными ветвями,\nна осмо-полях и лесных массивах;\nВ его вершине светит лунный свет,\nИ Медведь живет в своих ветвях».\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение X\n\nСосновое дерево. Спруты <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"shade\"><style=\"link\">shade</style></link> и <link=\"sandsoil\"><style=\"link\">sandy soils</style></link>.\n\nПродукты: <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[youngpine]
+display_name = "Молодое сосновое дерево"
+keyword = ["tree", "pine", "blocksMovement", "perennial", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3","burnedsnag"]
+grows = "pinetree"
+leaves = "smallstump"
+growthTime = 360
+description = "<style=\"fluff\"> Громко делает сосновое дерево ответ:\n\"Все корабли, которые были построены\nИз моего тела недостойны;\nЯ полон несовершенств,\nНе может дать вам необходимую древесину\nПостройте свой корабль,\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XVI\n\nМолодая сосна.\n\nПродукты: <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[pinetree]
+display_name = "Сосновое дерево"
+keyword = ["tree", "pine", "blocksMovement", "perennial", "bigShade", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 20
+fireResist = 3
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+grows = "oldpine"
+growthTime = 720
+latinName = "pinus sylvestris"
+description = "<style=\"fluff\"> Если твои кровавые зубы голодны,\nБросай злобу свою в горы,\nИ твой голод к соснам.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nМогучая сосна.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[oldpine]
+display_name = "Старое сосновое дерево"
+keyword = ["tree", "pine", "blocksMovement", "resistFire", "perennial", "bigShade", "spirit"]
+produces = ["woodlogx3", "branchx6"]
+condition = 30
+fireResist = 4
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 720
+description = "<style=\"fluff\"> Выросла на горе елка,\nВырастила величественную сосну в Нортленде,\nИ у пихты были серебряные ветви,\nЗолотые шишки в изобилии.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLVI\n\nДревняя сосна. Его густая кора особенно устойчива к огню.\n\nПродукты: 3x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 6x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[youngbirch]
+display_name = "Молодое берёзовое дерево"
+keyword = ["tree", "birch", "prefersClay", "needsLight", "blocksMovement", "deciduous", "spirit"]
+produces = ["woodlog", "branch", "branch"]
+condition = 15
+fireResist = 2
+burned = ["ashesx3"]
+grows = "birchtree"
+leaves = "smallstump"
+growthTime = 84
+description = "<style=\"fluff\"> Хорошо ли я помню день\nГде ты служил орлу,\nКогда ты оказал птицам услугу.\nТы оставил берёзу стоящей,\nКогда были расчищены леса Осмо,\nИз земель Калевалы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VII\n\nБерезы <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link> и need <link=\"shade\"><style=\"link\">light</style></link>.\n\nПродукты: <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[birchtree]
+display_name = "Березовое дерево"
+keyword = ["tree", "birch", "blocksMovement", "prefersClay", "prefersLight", "deciduous", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 20
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 240
+latinName = "betula pendula"
+description = "<style=fluff> \"Поэтому, древний Väinämöinen,\nТы оставил стройное берёзовое дерево,\nОставил берёзу только стоящей?\nВяйнямёйнен ответил:\n\"Поэтому береза левая стоит,\nЧтобы птицы могли гнездиться в нем,\nЧтобы орел там упокоил его,\nТам может петь священная кукушка\".\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nБлагородная берёза. Березы <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link> и need <link=\"shade\"><style=\"link\">light</style></link>.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+# 2.2 Other trees
+
+[alder]
+display_name = "Серый Олдер"
+keyword = ["tree", "alder", "prefersLight", "deciduous", "blocksMovement", "spirit", "bigShade"]
+produces = ["woodlogx2", "branchx4"]
+condition = 5
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "alderstump"
+growthTime = 120
+latinName = "Alnus incana"
+description = "<style=\"fluff\"> В одной руке ветвь ивы,\nВ другом, клубе ольхи.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIII\n\nСерое дерево ольхи.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[forestapple]
+display_name = "Крабаппловое дерево"
+keyword = ["tree", "crabapple", "deciduous", "prefersLight", "spirit"]
+produces = ["woodlog", "branchx2", "apples"]
+growthTime = 120
+condition = 10
+fireResist = 1
+burned = "ashes"
+leaves = "smallstump"
+fruitTimeStart = 0
+fruitTimeDuration = 3
+fruit = "apples"
+latinName = "Malus sylvestris"
+description = "<style=\"fluff\"> \"Восхваляйся, о великий Укко,\nКак Ты дал мне великого Отсо,\nДай мне лесное яблоко,\nБлагодарю тебя за бесконечное\".\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLVI\n\nКрабовидное дерево обычно встречается в местах <link=\"shade\"><style=\"link\">well-lit</style></link>.\n\nПродукты: <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>, <link=\"apples\"><style=\"link>Apples</style></link>"
+
+[juniper]
+display_name = "Джунипер"
+keyword = ["tree", "juniper", "blocksMovement", "prefersLight", "perennial", "spirit"]
+produces = ["branchx3"]
+condition = 10
+fireResist = 2
+burned = "ashes"
+leaves = "smallstump"
+growthTime = 120
+latinName = "juniperus communis"
+description = "<style=\"fluff\"> Иди, о пшеница, в заросли,\nК деревьям фиолетовых ягод,\nДля юниоров и олдеров,\nБезопасно вести пастуха домой\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIII\n\nМожжевельник. Junipers <link=\"florapreferences\"><style=\"link\">prefer</style></link> places with little <link=\"shade\"><style=\"link\">shade</style></link>.\n\nПродукты: 3x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[linden]
+display_name = "Линденское дерево"
+keyword = ["tree", "linden", "blocksMovement", "prefersClay", "deciduous", "spirit", "bigShade"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 10
+fireResist = 2
+burned = ["ashesx4"]
+leaves = "lindenstump"
+growthTime = 240
+latinName = "tilia cordata"
+description = "<style=\"fluff\"> Ты ворвался в крепости Лухи,\nВзрыв мощных стен, противостоящих\nВ твоем путешествии в Похьола,\nВ деревню отца.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXV\n\nЛиповое дерево. Липовое дерево <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[maple]
+display_name = "Кленовое дерево"
+keyword = ["tree", "maple", "blocksMovement", "prefersClay", "deciduous", "bigShade", "spirit"]
+produces = ["woodlog", "woodlog", "branchx4"]
+condition = 15
+fireResist = 2
+burned = ["ashesx6","burnedsnag"]
+leaves = "stump"
+growthTime = 120
+latinName = "acer platanoides"
+description = "<style=\"fluff\"> Рощи возникли в разнообразной красоте,\nКрасиво росли леса.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nКленовое дерево. Maples <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 4x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[rowan]
+display_name = "Роуэн"
+keyword = ["tree", "rowan", "holy", "blocksMovement", "needsLight", "deciduous", "spirit"]
+produces = ["woodlog", "branchx2"]
+condition = 10
+fireResist = 2
+burned = "ashes"
+leaves = "smallstump"
+growthTime = 240
+latinName = "sorbus aucuparia"
+#underworld_transforms_to = "rowan_underworld"
+description = "<style=\"fluff\"> Удачи тебе, священное дерево сорб,\nОхраняйте горные массивы, посаженные\nво дворе, широко разветвленном;\nПрекрасные горные хребты,\nКрасивые листья и цветы,\nЕще красивее ягоды.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIII\n\nСвятое дерево. Роуэнс <link=\"florapreferences\"><style=\"link\">prefer</style></link> места с небольшим <link=\"shade\"><style=\"link\">shade</style></link>.\n\nПродукты: <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[yew]
+display_name = "Дерево Ю."
+keyword = ["yew", "poison", "prefersClay", "deciduous", "spirit"]
+produces = ["branch", "branch"]
+condition = 10
+fireResist = 2
+burned = ["ashes", "ashes"]
+growthTime = 120
+latinName = "taxus baccata"
+description = "<style=\"fluff\"> \"Услышь отголоски леса,\nУслышьте жужжание из леса,\nУслышьте флейты певчих,\nУслышь трубы лесных девиц!\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLVI\n\nДерево тиса. Yews <link=\"florapreferences\"><style=\"link\">prefer</style></link> <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+# 2.3 Snags
+
+[snag]
+display_name = "Снег"
+keyword = ["tree", "snag", "deadtree", "blocksMovement"]
+produces = ["woodlog", "woodlog", "branch", "branch"]
+condition = 15
+fireResist = 1
+burned = ["ashesx5","burnedstump"]
+leaves = "stump"
+latinName = "arbor mortua"
+description = "Мертвое дерево.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>, 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[burnedsnag]
+display_name = "Сожженное дерево"
+keyword = ["tree", "snag", "deadtree", "blocksMovement"]
+produces = ["woodlog", "woodlog"]
+condition = 15
+fireResist = 9
+decays = "snag"
+leaves = "burnedstump"
+description = "Выжженные остатки дерева.\n\nПродукты: 2x <link=\"woodlog\"><style=\"link\">Wood Log</style></link>"
+
+# 2.4 Stumps
+
+[stump]
+display_name = "Деревянный пень"
+keyword = "stump"
+condition = 50
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = "<style=\"fluff\"> Поющие чары и заклинания,\nПеть один день, потом второй,\nВесь третий день пели легенды.\nНа скалах гремели бегуны,\nПовесить сани на березовый пень,\nРазбил его на множество кусочков.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXV\n\nДеревянный пень. Хотя дерево исчезло, обширная корневая система осталась. Вот почему удаление пня - не маленькая работа!\n\nПроизводитель: <link=\"firewood\"><style=\"link\"> Firewood</style></link>"
+
+[smallstump]
+display_name = "Маленький пень дерева"
+keyword = "stump"
+condition = 30
+fireResist = 2
+burned = "ashes"
+decays = "rottenstump"
+decayTime = 36
+produces = "plantgarbage"
+latinName = "truncus parvus"
+description = "<style=\"fluff\"> Метаморфизируй весь мой скот,\nИ тогда колдовство рассеется.\nОни превращаются в камни и пни.\nЕсли враг блуждает,\nВозле моего стада в летние дни.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nНебольшой пень."
+
+[sprucestump]
+display_name = "Купол елового дерева"
+keyword = "stump"
+condition = 50
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = "Сосновый пень.\n\nПроизводитель: <link=\"firewood\"><style=\"link\"> Firewood</style></link>"
+
+[lindenstump]
+display_name = "Линден Стамп"
+keyword = "stump"
+condition = 30
+fireResist = 2
+burned = "ashes"
+decays = "rottenstump"
+produces = "plantgarbage"
+decayTime = 36
+latinName = "truncus parvus"
+description = "Липовый пень."
+
+[alderstump]
+display_name = "Серый Олдер Стамп"
+keyword = ["stump", "regrows"]
+condition = 30
+fireResist = 2
+burned = "burnedstump"
+decays = "rottenstump"
+produces = ["firewood", "plantgarbage"]
+decayTime = 60
+latinName = "truncus"
+description = "Серый пень ольхи.\n\nПроизводитель: <link=\"firewood\"><style=\"link\"> Firewood</style></link>"
+
+[burnedstump]
+display_name = "Сожженный пень"
+keyword = "stump"
+condition = 30
+decays = "rottenstump"
+decayTime = 60
+description = "Сожженный пень."
+
+[flattenedstump]
+display_name = "Плоский пень"
+keyword = ["stump", "clearedStump"]
+condition = 20
+decays = "plantgarbage"
+produces = "plantgarbage"
+fireResist = 2
+burned = "ashes"
+decayTime = 60
+description = "Сплющенный пень."
+
+[rottenstump]
+display_name = "Гнилостный пень"
+keyword = "stump"
+decays = "plantgarbage"
+produces = "plantgarbage"
+fireResist = 3
+burned = "ashes"
+decayTime = 60
+condition = 10
+description = "Гнилое дерево."
+
+# 3.0 Bushes
+
+# 3.1 Spawning bushes
+
+[blackcurrant]
+display_name = "Черная смородина"
+keyword = ["bush", "deciduous", "spawn", "prefersLight", "prefersClay"]
+produces = ["blackcurrants", "hay"]
+condition = 10
+fireResist = 1
+burned ="ashes"
+fruitTimeStart = 10
+fruitTimeDuration = 3
+fruit = "blackcurrants"
+latinName = "Ribes nigrum"
+description = "<style=\"fluff\"> \"Все можжевельники и ивы,\nВсе кустарники с нагруженными ягодами,\nРазмахивая травой и полями ячменя,\nРуки вязов, дубов и олдеров,\nПрощайте, дорогие сцены детства,\nСчастье дней прошло!\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIV\n\nКуст черной смородины. Черная смородина <link=\"florapreferences\"><style=\"link\">prefer</style></link> места с небольшим <link=\"shade\"><style=\"link\">shade</style></link> и <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: <link=\"blackcurrants\"><style=\"link\">Blackcurrants</style></link>"
+
+[blackthorn]
+display_name = "Блэкторн"
+keyword = ["bush", "spiky", "deciduous" , "spawn", "needsLight"]
+produces = ["branch", "branch", "hayx2"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "prunus spinosa"
+description = "<style=\"fluff\"> До тех пор, пока наконец не появились хорошие черные деревья с их демоническими формами ночью, и трава была холодной и влажной, и ночной туман плавал над ней. И пришла большая белая сова, поднимаясь и опускаясь в темноте. И во всем этом маленькая Дикая Вещь радовалась эльфийски.\n\nLord Dunsany, the Kith of the Elf Folk (1908)[править править код]\n\nБлэкторн — большой тернистый кустарник.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[bogmyrtle]
+display_name = "Бог Миртл"
+keyword = ["bush", "impedesMovement", "deciduous", "bog", "shore", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "myrica gale"
+description = "<style=\"fluff\"> Я также был рад снова увидеть старое болото и все прекрасные вещи, которые там росли — алые мхи и зеленые мхи, твердый и дружелюбный вереск и глубокую безмолвную воду.\n\nЛорд Дансени, В сумерках (1908)\n\nМиртл болота часто встречается на краю воды или в болотистой местности."
+
+[butterbur]
+display_name = "Баттербур"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "shore", "spawn", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "petasites hybridus"
+description = "Известный как корень чумы на финском языке, бабочка использовалась для лечения судорог и болей, а также в припарках."
+
+[eaglefern]
+display_name = "Орлиное крыло Fern"
+keyword = ["bush", "prefersClay", "perennial", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "matteuccia struthiopteris"
+description = "<style=\"fluff\"> Прилетает птица из далекого Похьола,\nС запада, орёл,\nНе входит в число крупнейших,\nОн не принадлежит к числу самых маленьких.\nОдно крыло касается воды,\nВ то время как другие сметают небеса.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VII\n\nОрлиное крыло - это выносливый папоротник, который больше всего дома на <link=\"claysoil\"><style=\"link\">clay soils</style></link>."
+
+[elfbane]
+display_name = "Эльфбан"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "shore", "spawn"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "valeriana officinalis"
+description = "Цветок <i>Valeriana Officinalis</i> используется для лечения бессонницы, и считается особенно вредным для эльфов."
+
+[fireweed]
+display_name = "Огнебородый"
+keyword = ["bush", "needsLight", "perennial", "spawn", "waste"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "chamaenerion angustifolium"
+description = "Сорняк растет на открытых, <link=\"shade\"><style=\"link\">well-lit</style></link> пространствах."
+
+[goatpipe]
+display_name = "подагра"
+keyword = ["bush", "needsLight", "perennial", "spawn", "waste"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "aegopodium podagraria"
+description = "<style=\"fluff\"> Ешьте красные корни медвежьего дерева.\nБогатые медовые торты Метсолы,\nНе трава, на которой будет питаться мое стадо.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nПодагра - это красивое декоративное растение или неприятный сорняк, полностью зависящий от того, хотите ли вы, чтобы он рос там или нет!"
+
+[goblinwort]
+display_name = "Гоблинворт"
+keyword = ["bush", "herb", "meadow", "perennial", "needsLight", "prefersSand", "spawn", "waste", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "hypericum perforatum"
+description = "Лекарственная трава, гоблиноверт используется для лечения депрессии и бессонницы."
+
+[hawthorn]
+display_name = "Хоторн"
+keyword = ["bush", "impedesMovement", "spiky", "deciduous", "spawn", "generates_forest_cover", "needsLight"]
+produces = ["branch", "branch", "hayx2"]
+growthTime = 12
+condition = 10
+fireResist = 2
+burned = "ashes"
+latinName = "crataegus rhipidophylla"
+description = "<style=\"fluff\"> У всех деревьев твоих есть шипы, чтобы ранить меня,\nВсе твои ветви, шипы, пронзившие меня,\nДаже березы доставляют мне неприятности,\nИ ольхи приносят дискомфорт.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение VII\n\nБоярышник традиционно использовался в качестве изгороди в Финляндии.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[hazel]
+display_name = "Хейзел"
+keyword = ["bush", "impedesMovement", "prefersClay", "prefersLight", "deciduous", "spawn", "generates_forest_cover"]
+produces = ["branch", "branch", "hazelnuts", "hayx2"]
+growthTime = 12
+condition = 10
+fireResist = 2
+burned = "ashes"
+fruitTimeStart = 1
+fruitTimeDuration = 3
+fruit = "hazelnuts"
+latinName = "corylus avellana"
+description = "<style=\"fluff\"> Напрягается через фен и лес,\nНад медами и над болотами,\nВ постоянно растущих лесах,\nПутешествует неделю через брамблы,\nИ секундочку через карнизы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XVI\n\nХейзелы предпочитают расти на <link=\"claysoil\"><style=\"link\">clay</style></link>.\n\nПродукты: 2x <link=\"branch\"><style=\"link\">branch</style></link>, <link=\"hazelnuts\"><style=\"link\">hazelnuts</style></link>"
+
+[heather]
+display_name = "Хизер"
+keyword = ["bush", "prefersSand", "prefersLight", "perennial", "spawn"]
+condition = 5
+fireResist = 0
+burned = "ashes"
+latinName = "calluna vulgaris"
+description = "<style=\"fluff\"> И кузнец остановился и прислушался,\nПоспешил к двери и окну,\nПоспешил на открытый двор,\nЕсли бы он мог обнаружить\nТо, что играло на веревке,\nТо, что звучало в лесу.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIV\n\nХизер растет на <link=\"shade\"><style=\"link\">well-lit</style></link> <link=\"sandsoil\"><style=\"link\">sandy soils</style></link>."
+
+[henbane]
+display_name = "Хенбен"
+keyword = ["bush", "poison", "needsLight", "civilized", "spawn", "biennial", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "hyoscyamus niger"
+growthTime = 3
+description = "Хенбен — ядовитый паслен, известный на финском языке как безумная капуста. Считается, что он использовался в качестве лекарственного растения и галлюциногена."
+
+[karelianrose]
+display_name = "Карельская роза"
+keyword = ["bush", "spawn", "deciduous", "spiky"]
+produces = "hay"
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "Rosa acicularis"
+description = "<style=\"fluff\"> В древние времена мать\nВзяли и вырастили лебедей и кур,\nПоложил цыплят в хворост,\nПоставил лебедей на реку;\nПришел орел, ястреб и сокол,\nРассеяла всех своих лебедей и кур,\nОдин был доставлен в Карджалу,\nИ второй в Эсти,\nОставил треть дома в Похе.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXI\n\nКарельская роза — колючий кустарник."
+
+[meadowsweet]
+display_name = "Роуз Медоузвит"
+keyword = ["bush", "spawn", "deciduous", "prefersSand", "prefersLight"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Spiraea densiflora"
+description = "<style=\"fluff\"> Куллервоинен со своей сторожевой собакой,\nПродвигаясь вперед по лесу,\nПутешествия по полям и лужам;\nПутешествия, но небольшое расстояние,\nДо встречи на высшем уровне\nгде он встретил свою давно потерянную сестру;\nУзнает, что сама трава плачет,\nНаходки гленового дерева, наполненного печалью,\nНайдет веревку, проливающую слезы,\nПлачут луга-цветы,\nРазорение его сестры.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXVI\n\nРозовый луг — выносливый кустарник."
+
+[mullein]
+display_name = "Темный муллейн"
+keyword = ["bush", "civilized", "spawn", "biennial", "ruin"]
+produces = "hay"
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "verbascum nigrum"
+growthTime = 3
+description = "Известный как темный огненный цветок на финском языке, темный муллейн является травянистым растением, которое распространилось на территорию современной Финляндии в древние времена."
+
+[nettle]
+display_name = "Жгучие крапивы"
+keyword = ["bush", "nettle", "spiky", "perennial", "civilized", "spawn", "meadow", "ruin"]
+condition = 15
+fireResist = 1
+burned = "ashes"
+produces = ["nettleleaves", "nettleseedbagx2"]
+latinName = "urtica dioica"
+description = "Куча жалящих крапивниц. Берегись!\n\nКрапива – очень полезное растение. Его стебли могут быть превращены в волокна и использованы для изготовления ткани и веревок, а листья крапивы съедобны и содержат большое количество <link=\"протеин\"><style=\"link\">белок</style></link>."
+
+[raspberry]
+display_name = "Малиновый Буш"
+keyword = ["bush", "spiky", "needsLight","perennial", "spawn", "ruin"]
+produces = ["raspberries", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+fruitTimeStart = 10
+fruitTimeDuration = 3
+fruit = "raspberries"
+latinName = "rubus idaeus"
+description = "<style=\"fluff\"> Пошел за ягодами в лес,\nВ горы пошла моя дочь.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIV\n\nВыносливое растение, которое процветает в хорошо освещенных местах, малина часто является одним из первых растений, колонизирующих новые поляны в лесу.\n\nПродукты: <link=\"raspberries\"><style=\"link\">raspberries</style></link>"
+
+[reed]
+display_name = "Ридс"
+keyword = ["bush", "aquatic", "spawn", "impedesMovement", "perennial", "meadow", "bottom", "shallow"]
+produces = "hay"
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "phragmites australis"
+description = "<style=\"fluff\"> Маленькая рыба с алыми глазами,\nОпираясь на камыши и ризы,\nс головами над поверхностью;\nПришел нести арфу радости,\nУслышьте песни чародея.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLI\n\nРазличные виды тростника растут на мелководье."
+
+[sandthorn]
+display_name = "Сэндторн"
+keyword = ["bush", "spiky", "deciduous", "spawn", "needsLight", "prefersSand", "generates_forest_cover"]
+produces = ["branch", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "hippophae rhamnoides"
+description = "<style=\"fluff\"> И все же Куллерво шел вперед,\nСквозь оковы он радовался,\nЗвучит как война с его жуком.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXVI\n\nПесочники представляют собой лиственные кустарники, которые <link=\"florapreferences\"><style=\"link\">like</style></link> растут в <link=\"shade\"><style=\"link\">light</style></link>, <link=\"sandsoil\"><style=\"link\">sandy</style></link> областях.\n\nПродукты: <link=\"branch\"><style=\"link\">branch</style></link>"
+
+[tallgrass]
+display_name = "Высокая трава"
+keyword = ["bush", "needsLight", "annual", "spawn", "meadow"]
+condition = 10
+fireResist = 0
+burned = "ashes"
+produces = ["hay"]
+latinName = "familia poaceae"
+growthTime = 1
+description = "<style=\"fluff\"> Ибо стада мои дают пищу и укрытие,\nНакормить их всех медовыми пастбищами,\nДайте им пить в медовых фонтанах.\nНакорми их своими золотыми травами.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nВысокие травы растут в открытых пространствах <link=\"shade\"><style=\"link\">well-lit</style></link>, особенно на лугах, близких к воде. Его можно собирать для <link=\"hay\"><style=\"link\">hay</style></link>."
+
+[waterchestnutplant]
+display_name = "Растение водяных каштанов"
+keyword = ["bush", "aquatic", "spawn", "annual", "surface"]
+condition = 10
+produces = "waterchestnut"
+fireResist = 1
+burned = "ashes"
+latinName = "trapa natans"
+growthTime = 3
+description = "Водяной каштан больше не встречается в Финляндии, но раньше рос далеко на севере, как Остроботния. Некоторые археологи считают, что это, возможно, было первое растение, которое когда-либо преднамеренно выращивалось здесь.\n\nПродукты: <link=\"waterchestnut\"><style=\"link\">water chestnuts</style></link>"
+
+[waterlily]
+display_name = "Водная лилия"
+keyword = ["bush", "aquatic", "perennial", "spawn", "surface"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "nymphaea alba ssp. alba"
+description = "<style=\"fluff\"> Ахто, царь всех вод,\nДревний царь с бородой морской травы,\nПодняв голову над лужайками,\nВ лодке с лилиями.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLI\n\nВодная лилия — многолетнее растение с корнями в земле под водой."
+
+[wildbullbean]
+display_name = "Дикий бык"
+keyword = ["annual", "spawn", "ruin"]
+produces = ["bullbeans"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "Дикое растение-бык.\n\nПродукты: <link=\"bullbeans\"><style=\"link\">bull-beans</style></link>"
+
+[wildturnip]
+display_name = "Дикий Тернист"
+keyword = ["biennial", "spawn", "ruin"]
+produces = ["turnipseedbagx5", "turnip"]
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "Дикое растение репы.\n\nПродукты: <link=\"turnip\"><style=\"link\">turnip</style></link>, 5x <link=\"turnipseedbag\"><style=\"link>turnip seeds</style></link>"
+
+[willow]
+display_name = "Ива"
+keyword = ["bush", "shore", "impedesMovement", "perennial", "spawn", "flood_tolerant"]
+produces = ["willowbranches", "hay"]
+condition = 10
+fireResist = 1
+burned = "ashes"
+latinName = "salix"
+description = "<style=\"fluff\"> Железо из ржавчины было изготовлено;\nМедь из созданных скал;\nболота имеют самые древние земли;\nПрежде всего деревья, ива.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение III\n\nЖесткие, но податливые ветви ивы используются во многих ремеслах. Ивы могут терпеть погружение в паводковые воды.\n\nПродукты: <link=\"willowbranches\"><style=\"link>Willow Branches</style></link>"
+
+#[wolfsbane]
+#display_name = "Wolfsbane"
+#keyword = ["bush", "perennial", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "aconitum"
+#description = "Some poisonous wolfsbane flowers."
+
+#[woodbluegrass]
+#display_name = "Wood Bluegrass"
+#keyword = ["bush", "perennial", "prefersDark", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "poa nemoralis"
+#description = "A patch of bluegrass."
+
+#[lilyofthevalley]
+#display_name = "Lily of the Valley"
+#keyword = ["bush", "perennial", "prefersDark", "spawn"]
+#condition = 10
+#fireResist = 1
+#burned = "ashes"
+#latinName = "convallaria majalis"
+#description = "A patch of lily flowers."
+
+# 3.2 Non-spawning bushes
+
+[wildflax]
+display_name = "Дикий лен"
+keyword = ["annual", "ruin", "spawn"]
+produces = ["flaxseedbagx5"]
+condition = 5
+fireResist = 1
+description = "<style=\"fluff\"> Вскоре они нашли плодородный остров.\nНайдена подходящая почва,\nНа краю пропасти,\nИ между двумя величественными дубами.\nОни подготовили почву для посева.\nИскать везде семена льна,\nНашел его в царстве Туони,\nВ содержании насекомого.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XLVIII\n\nДикий штамм льна.\n\nПродукты: 5x <link=\"flaxseedbag\"><style=\"link\">flax seed</style></link>\n\n<style=\"fluff\"> Лен не является родным для области Финляндии, и был импортирован в 16 веке. Любые льняные растения, растущие в природе, должны быть потомками тех, которые импортируются и намеренно высаживаются кем-то."
+
+[wildrye]
+display_name = "Дикий ржаной"
+keyword = ["annual", "ruin", "spawn"]
+produces = ["ryeseedbagx5"]
+condition = 5
+fireResist = 1
+description = "Дикое ржаное растение.\n\nПродукты: 5x <link=\"ryeseedbag\"><style=\"link>rye seeds</style></link>"
+
+# 4.0 Undergrowth
+
+[moss]
+display_name = "Мох"
+keyword = ["cosmetic", "needsDark", "perennial"]
+condition = 10
+fireResist = 1
+growthTime = 6
+description = "<style=\"fluff\"> Потопить в сумерках,\nЗакопайте оба уха в клевере,\nСадись в какой-нибудь олдер-хикет\nПоднимитесь между мохнатыми уступами.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nКакой-то мх растет на лесном полу."
+
+[bogmoss]
+display_name = "Бог Мосс"
+keyword = ["bog", "cosmetic", "perennial"]
+condition = 10
+fireResist = 3
+growthTime = 6
+description = "<style=\"fluff\"> Сыновья Калева теперь старались изо всех сил возвращаться домой, иногда по проторенным тропинкам или по равнинам, иногда пробираясь через глубокий песок или моховые болота, а затем через леса из сосны, дуба, березы и ольхи.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто III: Судьба Линды\n\nБолотный мх процветает в заболоченных условиях."
+
+[flowers]
+display_name = "Цветы"
+keyword = ["cosmetic", "needsLight", "annual", "meadow"]
+condition = 5
+fireResist = 0
+growthTime = 1
+description = "<style=\"fluff\"> Часто бродил мой ум в детстве,\nКогда девушка свободна и весела,\nСчастливо через фен и фаллоу,\nНа медовуху с ягненками,\nЗадержанный с папоротниками и цветами,\nНе зная ни боли, ни неприятностей.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение IV Цветы любят расти в местах <link=\"shade\"><style=\"link\">well-lit</style></link>."
+
+[fly_amanita]
+display_name = "Летающая Аманита"
+keyword = ["cosmetic", "needsDark", "annual", "civilized"]
+condition = 5
+fireResist = 2
+growthTime = 1
+latinName = "amanita muscaria"
+description = "Fly amanitas — ядовитые грибы, которые предпочитают расти в <link=\"shade\"><style=\"link\">dark</style></link>."
+
+[mushrooms]
+display_name = "Грибы"
+keyword = ["cosmetic", "needsDark", "annual", "civilized"]
+produces = ["mushroom"]
+condition = 5
+fireResist = 2
+growthTime = 1
+description = "<style=\"fluff\"> Если же голод твой побудит тебя,\nИди к ягодной горе,\nЕшьте грибок леса.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXII\n\nГрибы растут в <link=\"shade\"><style=\"link\">dark</style></link>.\n\nПродукты: <link=\"mushroom\"><style=\"link\">mushrooms</style></link>"
+
+[slimemold]
+display_name = "Слизистая плесень"
+keyword = ["cosmetic", "needsDark", "perennial", "civilized", "underworld"]
+condition = 10
+fireResist = 2
+latinName = "fuligo septica"
+description = "Слизистая форма <i>fuligo septica</i> легко распознается по ярко-желтому цвету. Раньше считалось, что это своего рода гриб или губка, слизевая плесень - это амеба-подобное существо.\n\n<style=\"fluff\"> Финляндцы верили, что слизистая плесень была маслом, вырванным знакомым духом, который был очарован, чтобы украсть ее у соседа. Когда предки финнов перешли в сельскохозяйственное общество, природа магии изменилась, поскольку они начали верить, что в мире есть только ограниченное количество удачи. Это означало, что магия, которая причиняла вред другим, косвенно приносила пользу вам, поскольку это означало, что вашему соседу теперь повезло меньше, и поэтому для вас было больше."
+
+# 4.1 Location-specific undergrowth
+
+#[goldmoss]
+#display_name = "Goldmoss"
+#keyword = ["cosmetic", "prefersLight", "perennial", "chalk"]
+#fireResist = 0
+#condition = 5
+#growthTime = 1
+#latinName = "sedum acre"
+#description = """An evergreen perennial that grows on chalky rocks."""
+
+#[herbRoberts]
+#display_name = "Stinking Cranebill"
+#keyword = ["cosmetic", "herb", "biennial", "prefersLight", "stinks", "chalk"]
+#fireResist = 0
+#condition = 5
+#growthTime = 3
+#latinName = "geranium robertianum"
+#description = """The stinking cranebill is a flower with a decidedly unpleasant smell,\
+# that has been used as a pesticide and to staunch bleeding. \
+# It grows on well-lit chalky rocks."""
+
+#[jewellichen]
+#display_name = "Jewel Lichen"
+#keyword = ["cosmetic", "perennial", "chalk"]
+#fireResist = 1
+#condition = 10
+#growthTime = 3
+#latinName = "caloplaca saxicola"
+#description = """<style="fluff">\
+#Now the wise and ancient minstrel
+#Gathers lichens from the sandstone,
+#Picks them from the trunks of birches,
+#Gathers moss within the marshes.
+#
+# - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem VIII</style>
+#
+#The jewel lichen grows on chalk-bearing rocks."""
+
+#[redpoppy]
+#display_name = "Red Poppy"
+#keyword = ["cosmetic", "blood", "ruin", "annual"]
+#fireResist = 1
+#condition = 5
+#growthTime = 3
+#latinName = "papaver rhoeas"
+#description = """The poppy reputedly grows where blood has been shed."""
+
+# 5.0 Rocks
+
+[smallboulder]
+display_name = "Маленький валун"
+latinName = "lapis"
+keyword = ["boulder"]
+description = "<style=\"fluff\">\nКлетчатые камни многих цветов,\nСияющий в серебряном солнечном свете,\nВсе скалы стояли хорошо установленные.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение I\n\nМаленький валун размером с большой валун.\n\n<style=\"fluff\"> Валуны - это большие куски скалы, либо вычерченные, либо срезанные с коренной породы ледником, а затем отложенные на земле, когда лед тает."
+
+# 6.0 Crops
+
+[flaxshoot]
+display_name = "Льняной выстрел"
+keyword = ["coldsensitive"]
+grows = "flaxplant"
+growthTime = 2
+condition = 5
+fireResist = 1
+description = "<style=\"fluff\"> От старинного племени, своего рода;\nКогда кукуруза посеяла меру,\nКаждая часть была ядром;\nКогда они сеют льняное семя,\nКаждый получил нить льна.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIV\n\nПобег из льна, который перерастет в <link=\"flaxplant><style=\"link\">flax plant</style></link>."
+
+[flaxplant]
+display_name = "Льняное растение"
+keyword = "coldsensitive"
+grows = "matureflax"
+growthTime = 1
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Linum usitatissimum"
+description = "<style=\"fluff\"> И вот появилось само Солнце, юноша с огненными глазами; и он подъехал с таким же состоянием к Луне. Но Сальме заявила, что он ей нравится даже меньше, чем Луна, потому что он слишком непостоянен. Иногда, в самую прекрасную летнюю погоду, он посылал дождь посреди урожая сена; или, если пришло время сеять овес, он обрывал землю засухой; или, если время сева прошло, он высушивал ячмень в земле, бил лен и давил на горох в бороздах; он не позволял гречневой крупе расти или чечевице в их стручках; и когда рожь белая для урожая, он либо яростно светился и отгонял облака, или посылал проливной дождь.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. У.Ф. Кирби «Песнь I: Браки Сальме и Линды»\n\nРастущее льняное растение. Скоро будет <link=\"matureflax\"><style=\"link>mature</style></link>!"
+
+[matureflax]
+display_name = "Зрелое льняное растение"
+keyword = ["root", "harvestWhenDone"]
+fruit = "flaxstrands"
+grows = "ripeflax"
+produces = "flaxseedbagx5"
+growthTime = 2
+condition = 5
+fireResist = 1
+burned = "ashes"
+latinName = "Linum usitatissimum"
+description = "<style=\"fluff\"> Вечером сеяли льна,\nПомещенный в земле лунным светом;\nБыстро он рос и быстро созревал.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXIV\n\nЗрелое льняное растение, готовое к уборке. Если лен не собран вовремя, он станет <link=\"ripeflax\"><style=\"link\"> over-ripe</style></link>.\n\nПродукты: <link=\"flaxstrands\"><style=\"link\">flax strands</style></link>, 5x <link=\"flaxseedbag\"><style=\"link\">flax seed</style></link>"
+
+[ripeflax]
+display_name = "Льняное растение"
+keyword = ["root", "harvestWhenDone"]
+fruit = "roughflaxstrands"
+condition = 5
+produces = "flaxseedbagx5"
+fireResist = 1
+burned = "ashes"
+description = "<style=\"fluff\"> Головные уборы приносят только боль и печаль,\nЛьняные породы дурных нравов,\nЛайн приносит только глубокие страдания,\nИ льняной несвоевременный траур.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXII\n\nЗрелое льняное растение, уже прошло свое лучшее время для сбора урожая.\n\nПродукты: <link=\"roughflaxstrands\"><style=\"link\">rough flax strands</style></link>, 5x <link=\"flaxseedbag\"><style=\"link\">flax seed</style></link>"
+
+[nettleshoot]
+display_name = "Стрельба из крапивы"
+grows = "ripenettle"
+growthTime = 3
+condition = 5
+fireResist = 1
+description = "Проросток крапивы; вырастает в <link=\"ripenettle\"><style=\"link\">stinging nettle plant</style></link>."
+
+[ripenettle]
+display_name = "Растение крапивницы"
+keyword = ["root", "harvestWhenDone"]
+fruit = "nettleplant"
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "Некоторые жалящие растения крапивы, готовые к сбору урожая.\n\nПроизводитель: <link=\"nettleplant\"><style=\"link\">stinging nettle plant</style></link>"
+
+[turnipsprout]
+display_name = "репа спрут"
+keyword = ["coldSensitive"]
+grows = "turnipplant"
+growthTime = 5
+condition = 5
+fireResist = 1
+description = "<style=\"fluff\"> И положила немного еды в чайники,\nТолько кости и бусы хныкания,\nрепы и увядшая капуста,\nКуски хлеба и куски печенья.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVII\n\nПроросток репы. Вырастает в <link=\"turnipplant\"><style=\"link\">turnip plant</style></link> через пять месяцев."
+
+[turnipplant]
+display_name = "Патч на репу"
+fruit = "turnip"
+grows = "turnipflower"
+growthTime = 11
+keyword = "root"
+condition = 5
+fireResist = 1
+latinName = "brassica rapa subsp. rapa"
+burned = "ashes"
+description = "<style=\"fluff\"> Быстро, как молния, Лемминкяйнен,\nС лезвием битвы его отца,\nС одним ударом широкого меча,\nС единым мастерством и силой,\nПотопил голову хозяина Похи;\nКак расщепляют стебли репы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXVII\n\nПовязка растений репы. Их можно собирать для получения <link=\"turnip\"><style=\"link\">turnips</style></link> или оставлять расти в <link=\"turnipflower\"><style=\"link\">turnip flowers</style></link>, которые производят <link=\"turnipseedbag\"><style=\"link\">turnip seeds</style></link> в следующем году. Вы можете настроить часть растений, которые собирают и оставляют для выращивания семян в меню <link=\"farmplot\"><style=\"link\">farm plot</style></link><br><br> Количество репы, производимое фермерским участком, зависит от его <link=\"fertility\"><style=\"link\">fertility</style></link>."
+
+[turnipflower]
+display_name = "Цветок турне"
+keyword = ["root","harvestWhenDone"]
+produces = ["turnipseedbagx5"]
+fruit = "turnip"
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "<style=\"fluff\"> Второй брат сел в березовое дерево под плачущее березовое дерево и начал петь песню. Когда он пел, бутоны раскрывались и цветы расцвели, золотые уши кукурузы набухали, а яблоки покраснели, ядра образовывались в орехах, вишни созревали, красные ягоды росли на холмах и синие ягоды в болотах, в то время как черные ягоды росли на краях болот, желтые на моховых холмах, а старшие деревья покрывались богатым фиолетовым виноградом, в то время как леса перекликались с песней, и ее ноты распространялись далеко по окорочкам и лугам, пока маленькие водяные нимфы не проливали слезы восторга.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто III: Судьба Линды\n\nЦветущее растение репы. При сборе урожая он будет производить <link=\"turnipseedbag\"><style=\"link\">turnip seeds</style></link>.\n\nПродукты: <link=\"turnip\"><style=\"link\">turnip</style></link>, 5x <link=\"turnipseedbag\"><style=\"link=\"turnip seed</style></link>"
+
+[ryeshoot]
+display_name = "Рие Спроут"
+keyword = ["coldSensitive"]
+grows = "ryeplant"
+growthTime = 1
+condition = 5
+fireResist = 1
+description = "<style=\"fluff\"> Всю эту игру младший брат связал и понес на спине; и по дороге домой они нашли ржаные поля, полные зайцев, которых у них тоже было пять десятков.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. В.Ф. Кирби, Канто III: Судьба Линды\n\nПобеги ржи. Через несколько месяцев они вырастут в <link=\"ryeplant\"><style=\"link\">rye plants</style></link>."
+
+[ryeplant]
+display_name = "Растения ржи"
+grows = "mature_rye"
+growthTime = 4
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "<style=\"fluff\"> Из зародыша развернувшегося клинка,\nбогато окрашенные уши,\nИз богатой почвы луга,\nИз работ Вяйнямёйнена.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nНекоторые созревающие ржаные растения. Когда они <link=\"riperye\"><style=\"link\">ripen</style></link>, они будут производить <link=\"ryeseedbag\">rye seeds</style></link>."
+
+[mature_rye]
+display_name = "Зрелые растения ржи"
+grows = "riperye"
+growthTime = 3
+condition = 5
+fireResist = 1
+burned = "ashes"
+description = "<style=\"fluff\"> Из зародыша развернувшегося клинка,\nбогато окрашенные уши,\nИз богатой почвы луга,\nИз работ Вяйнямёйнена.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение II\n\nНекоторые зрелые ржаные растения. Когда они <link=\"riperye\"><style=\"link\">ripen</style></link>, они будут производить <link=\"ryeseedbag\">rye seeds</style></link>."
+
+[riperye]
+display_name = "Рип Ри"
+keyword = ["grain","harvestWhenDone", "coldSensitive"]
+fruit = "ryestalk"
+condition = 5
+fireResist = 1
+burns = "ashes"
+description = "Ржи готовы к уборке.\n\nПроизводитель: <link=\"ryestalk\"><style=\"link\">ryestalk</style></link>"
+
+# 7.0 Underworld flora
+
+# 7.1 Underworld bushes and undergrowth
+
+[bloodberry_bush]
+display_name = "Bloodberry Bush"
+keyword = ["bush", "deciduous", "prefersLight", "prefersClay", "underworld"]
+produces = "bloodberry"
+condition = 10
+fireResist = 1
+burned ="ashes"
+fruitTimeStart = 1
+fruitTimeDuration = 3
+fruit = "bloodberry"
+description = "Кровавая ягода - это древний деликатес гоблина из подземного мира, который теперь распространился на средний мир.\n\nBloodberries растет только на <link=\"underworldtile\"><style=\"link\">underworldtiles</style></link> и <link=\"florapreferences\"><style=\"link\">prefer</style></link> места с небольшим <link=\"shade\"><style=\"link\">shade</style></link> и <link=\"claysoil\"><style=\"link\">clay soils</style></link>.\n\nПродукты: <link=\"bloodberry\"><style=\"link\">bloodberry</style></link>"
+
+[bloodberry_sprout]
+display_name = "Bloodberry Sprout"
+keyword = ["bush", "deciduous", "prefersLight", "prefersClay", "underworld", "spawn"]
+growthTime = 12
+condition = 5
+fireResist = 1
+burned = "ashes"
+grows = "bloodberry_bush"
+description = "Кровавое растение из <link=\"underworldtile\"><style=\"link\">underworld</style></link> прорастает здесь!"
+
+[kalma]
+display_name = "Кальма"
+keyword = ["cosmetic", "prefersLight", "annual", "civilized", "underworld"]
+fireResist = 0
+condition = 2
+growthTime = 1
+description = "<style=\"fluff\"> Спешите на небольшое расстояние,\nНа медвежьей тропе, ведущей на север.\nК роще Туонелы,\nК медовым равнинам Калмы.\n\n- <link=\"kalevala\">Kalevala</link>, trans. Джон Мартин Кроуфорд (1888), стихотворение XXXIII\n\nЦветок смерти Туонелы, <i>kalma</i> является цветком родного гоблина <link=\"underworldtile\"><style=\"link\">underworld</style></link>."
+
+#  7.2 Underworld trees
+
+#[redhollow_sapling]
+#display_name = "Redhollow Sapling"
+#keyword = ["sapling", "redhollow", "underworld", "spawn", "deciduous"]
+#condition = 5
+#burned = "ashes"
+#growthTime = 120
+#grows = "young_redhollow"
+#description = "A redhollow tree from the underworld."
+#
+#[young_redhollow]
+#display_name = "Young Redhollow"
+#keyword = ["redhollow", "underworld", "deciduous"]
+#produces = ["woodlog", "branch", "branch"]
+#condition = 15
+#fireResist = 2
+#burned = ["ashesx3"]
+#grows = "redhollow_tree"
+#growthTime = 84
+#description = "A redhollow tree from the underworld."
+#
+#[redhollow_tree]
+#display_name = "Redhollow Tree"
+#keyword = ["tree", "birch", "blocksMovement", "prefersClay", "prefersLight", "deciduous", "spirit"]
+#produces = ["woodlog", "woodlog", "branchx4" ]
+#condition = 20
+#fireResist = 2
+#burned = ["ashesx6","burnedsnag"]
+#leaves = "stump"
+#growthTime = 240
+#description = "A redhollow tree from the underworld."
+#
+## 7.3 Underworld versions of plants
+#
+#[rowan_underworld]
+#display_name = "Rowan"
+#keyword = ["tree", "rowan", "holy", "blocksMovement", "deciduous", "spirit", "underworld"]
+#produces = "branch"
+#condition = 10
+#fireResist = 2
+#burned = "ashes"
+#leaves = "smallstump"
+#growthTime = 240
+#latinName = "sorbus aucuparia"
+#description = """\
+#<style="fluff">Tend thou well the sacred sorb-tree,
+#Guard the mountain-ashes planted
+#In the court-yard, widely branching;
+#Beautiful the mountain-ashes,
+#Beautiful their leaves and flowers,
+#Still more beautiful the berries.
+#
+# - the <link="kalevala">Kalevala</link>, trans. John Martin Crawford (1888), poem XXIII</style>
+#
+#A holy rowan tree under the influence of goblin <link="culturedef"><style="link">culture</style></link>. \
+#Rowans <link="florapreferences"><style="link">prefer</style></link> places with little <link="shade"><style="link">shade</style></link>.\
+#"""

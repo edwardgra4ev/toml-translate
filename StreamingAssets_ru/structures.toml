@@ -1,0 +1,2077 @@
+﻿# Contents
+#
+# 1.0 Transportation structures
+#  1.1 Roadways
+#  1.2 Bridges
+# 2.0 Fortifications
+# 3.0 Producers
+# 4.0 Storage
+#  4.1 Granaries
+#  4.2 Other storage buildings
+# 5.0 Workshops
+#  5.1 Food workshops
+#  5.2 Wood workshops
+#  5.3 Clay workshops
+#  5.4 Textile workshops
+#  5.5 Metal workshops
+#  5.6 Leather workshops
+#  5.7 Weapon and armor workshops
+#  5.8 Farming workshops
+#  5.9 Stone workshops
+# 6.0 Machinery
+#  6.1 Waterworks
+# 7.0 Housing
+# 8.0 Health
+# 9.0 Security
+# 10.0 Culture
+# 11.0 Expeditions
+# 12.0 Underworld
+# 13.0 Firefighting
+# 14.0 Deathcare
+# 15.0 Furniture etc.
+# 16.0 Decorations
+# 17.0 Special
+# 18.0 Unbuildable
+
+# 1.0 Transportation structures
+
+# 1.1 Roadways
+
+[cobblestone_road]
+type = "structure"
+category = "Road"
+display_name = "Булыжная дорога"
+keyword = ["submersible", "road", "bumpy"]
+unlockedBy = "simpleStoneTech"
+condition = 30
+materials = "roughstone"
+scrapped = "roughstone"
+maintenanceLevel = 1
+labour = 30
+experience = 0.5
+breakertier = 4
+line_placement = true
+description = "Заменяет поверхность земли грубыми <link=\"stonetier\"><style=\"link\">stones</style></link>.\n\nРазблокировано: <link=\"simpleStoneTech\"><style=\"link\"> Технология: простые каменные структуры</style></link>\n\n<style=\"fluff\"> «Именно я, — сказала дорога, — совершаю дело мира и переношу из города в город слухи каждого». Нет ничего выше человека и создания городов.\n\nЛорд Дансени, лорд городов (1908)"
+
+[duckboard]
+type = "structure"
+display_name = "утка"
+category = "Road"
+keyword = ["road", "wood"]
+unlockedBy = "plankTech"
+condition = 10
+fireResist = 2
+burned = "ashes"
+materials = "woodplankx2"
+scrapped = "woodplankx2"
+maintenanceLevel = 1
+maintenanceItem = "woodplank"
+labour = 10
+experience = 0.5
+breakertier = 1
+line_placement = true
+description = "Доска, покрывающая землю, для облегчения ходьбы по <link=\"mud\"><style=\"link\">mud</style></link>.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\n<style=\"fluff\"> Печально, многие пути отвечают:\n\"У нас самих достаточно забот,\nНе можешь смотреть на своего сына и героя,\nНесчастные - это жизнь путей,\nДействительно, наши собственные несчастья.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XV"
+
+#[plank_boardwalk]
+#type = "structure"
+#display_name = "Plank Boardwalk"
+#category = "Road"
+#keyword = ["road", "stilts", "wood"]
+#unlockedBy = "hydraulicTech"
+#condition = 10
+#fireResist = 2
+#burned = "ashes"
+#materials = ["woodplankx2", "woodpole"]
+#scrapped = "woodplank"
+#maintenanceLevel = 1
+#maintenanceItem = "woodplank"
+#labour = 10
+#experience = 0.5
+#breakertier = 1
+#description = """\
+#Planks mounted on stilts, immune to flood damage.
+#
+#Unlocked by: <link="hydraulicTech"><style="link">Technology: Hydraulics</style></link>\
+#"""
+
+[stonepavement]
+type = "structure"
+category = "Road"
+display_name = "Каменный тротуар"
+keyword = ["submersible", "road"]
+unlockedBy = "simpleStoneTech"
+condition = 30
+materials = "dressedstone"
+scrapped = "dressedstone"
+maintenanceLevel = 1
+labour = 30
+experience = 0.5
+breakertier = 4
+line_placement = true
+description = "Заменяет поверхность земли асфальтированными <link=\"stonetier\"><style=\"link\">stones</style></link>.\n\nРазблокировано: <link=\"simpleStoneTech\"><style=\"link\"> Технология: простые каменные структуры</style></link>"
+
+#  1.2 Bridges
+
+[plank_bridge]
+type = "structure"
+display_name = "Планкский мост"
+category = "Bridges"
+unlockedBy = "plankTech"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["woodplankx2", "branchx4"]
+scrapped = "woodplankx2"
+maintenanceLevel = 4
+maintenanceItem = "woodplank"
+labour = 20
+experience = 1
+breakertier = 2
+keyword = ["bridge", "wood", "simple_bridge", "submersible", "road"]
+description = "Простой планковый мост. Планковые мосты могут быть построены только в водной плитке, прилегающей к земле.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\n<style=\"fluff\"> \"Ты, сын Тапио, Нюрикки,\nЛесной сын, одетый в фиолетовый,\nРазрежьте ели на горах,\nРазрежьте сосны шишками красоты,\nПоложите их в ручьи для мостов».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXII"
+
+[pontoon_bridge]
+type = "structure"
+display_name = "Мост Понтон"
+category = "Bridges"
+unlockedBy = "barrelTech"
+condition = 20
+fireResist = 1
+burned = "ashesx2"
+materials = ["wood_barrelx4", "woodplankx4", "ropex4"]
+scrapped = ["wood_barrelx4", "woodplankx4", "ropex2"]
+maintenanceLevel = 2
+maintenanceItem = "woodplank"
+labour = 30
+experience = 1
+breakertier = 2
+keyword = ["bridge", "wood", "pontoon", "floating_structure", "road"]
+clearFogRadius = 1 # Bridges have a fog clear radius to make it possible to build a bridge to a shore entirely in forest-cover
+description = "Простой плавучий мост, построенный из деревянных бочек.\n\nРазблокировано: <link=\"hydraulicTech\"><style=\"link\"> Технология: Гидравлика</style></link>"
+
+# 2.0 Fortifications
+
+[fence]
+type = "class"
+display_name = "Заборы"
+
+[fence1]
+type = "structure"
+display_name = "Стик Фэнс"
+category = "Fortification"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+maintenanceLevel = 1
+labour = 10
+experience = 0.5
+breakertier = 1
+keyword = ["fencing", "wood"]
+line_placement = true
+description = "Простой забор."
+
+[palisade]
+type = "structure"
+display_name = "Палисаде"
+category = "Fortification"
+unlockedBy = "carpentryTech"
+condition = 100
+fireResist = 2
+burned = "ashes"
+materials = "woodlogx3"
+scrapped = ["firewoodx2", "woodlogx2"]
+labour = 40
+maintenanceLevel = 2
+experience = 3
+breakertier = 3
+keyword = ["wall", "wood"]
+line_placement = true
+description = "Условие: <style=\"bonus\">100</style>\n\nДеревянный палисад, чтобы не допустить нежелательных людей в лагерь.\n\nРазблокировано: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>\n\n<style=\"fluff\"> Забрал стволы величественных пихт,\nПорезал их своим лезвием для заборных столбов,\nСрезать самый высокий в лесу,\nДля ограждения своих ограждений;\nСделал меньшие столбы и перекладины\nИз самых длинных лип.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXI"
+
+[stonewall]
+type = "structure"
+display_name = "Дымовая стена"
+category = "Fortification"
+unlockedBy = "stoneFortTech"
+condition = 500
+materials = "dressedstonex5"
+scrapped = ["dressedstonex5"]
+labour = 80
+maintenanceLevel = 2
+experience = 5
+breakertier = 5
+keyword = ["wall", "stone"]
+line_placement = true
+description = "Условие: <style=\"bonus\">500</style>\n\nТяжелая каменная стена.\n\nРазблокировано: <link=\"stoneFortTech\"><style=\"link\"> Технология: каменные укрепления</style></link>"
+
+[woodtower]
+type = "structure"
+display_name = "Деревянная сторожевая башня"
+category = "Fortification"
+keyword = ["tower", "manned", "wood"]
+unlockedBy = ["plankTech", "spearthrowerTech"]
+condition = 100
+fireResist = 1
+burned = ["ashes", "ashes"]
+materials = ["woodpolex6", "woodplankx6", "woodlogx4"]
+scrapped = ["woodpolex4", "woodplankx4", "woodlogx2"]
+maintenanceLevel = 5
+maintenanceItem = ["woodplank:60%", "woodpole:50%"]
+labour = 60
+experience = 5
+breakertier = 2
+description = "Условие: <style=\"bonus\">100</style>\n\nДеревянная сторожевая башня, укомплектованная часовым.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link> и <link=\"spearthrowerTech\"><style=\"link> Технология: Spear-thrower</style></link>.\n\n<style=\"fluff\"> Спик мастер Похьола:\n\"Иди и учись, моя достойная дочь,\nПочему сторожевые псы лают,\nПочему чёрная собака сигнализирует об опасности».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVIII"
+
+[woodstakes]
+type = "structure"
+display_name = "Деревянные ставки"
+category = "Fortification"
+condition = 30
+fireResist = 2
+burned = "ashes"
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+labour = 30
+experience = 1
+breakertier = 1
+line_placement = true
+description = "Условие: <style=\"bonus\">30</style>\n\nДеревянные колья, очень неприятные, если на них упасть! Ставки также замедляют движение по ним.\n\n<style=\"fluff\"> Во дворе стояли пикеты,\nСотни были заостренными столбами,\nИ голова на каждом пикете,\nТолько один остался без головы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVII"
+keyword = ["trap", "impedesMovement", "wood"]
+damageType = "slashing"
+damagePoints = 10
+
+# 3.0 Producers
+
+[claypit]
+type = "structure"
+display_name = "Клэй Пит"
+category = "Clay and Stone"
+discovers = "clayTech"
+condition = 10
+labour = 80
+experience = 4
+experienceType = "digger"
+keyword = ["clay", "clayproducer", "submersible"]
+maintenanceLevel = 5
+order = 20
+description = "Обнаружение: <link=\"clayTech\"><style=\"link\"> Технология: Pottery</style></link>\n\nМесто для копания <link=\"rawClay\"><style=\"link\">clay</style></link>. Глиняную яму можно построить только в <link=\"claysoil\"><style=\"link\">clay soil</style></link>.\n\n<style=\"fluff\"> Молодой и безрассудный менестрель Лапландии,\nСкорбящий, зачарованный,\nГлубже опускается в грязь и воду,\nОдержимый страхом и полный страданий,\nВ болоте его борода оборвалась,\nРот когда-то хвастливо наполнился морскими водорослями.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение III"
+
+[farmplot]
+type = "structure"
+display_name = "Простой фермерский участок"
+category = "Farming"
+unlockedBy = "farmingTech"
+condition = 1
+labour = 20
+maintenanceLevel = 5
+keyword = ["plot", "submersible"]
+order = 20
+description = "Сельскохозяйственный участок, для <link=\"фермерство\"><style=\"link\"> выращивание сельскохозяйственных культур</style></link>. Простые сельскохозяйственные участки можно выложить только в <link=\"sandsoil\"><style=\"link\">sandy soil</style></link> или сжечь <link=\"claysoil\"><style=\"link\">clay</style></link>.\n\nСельское хозяйство превращает почву <link=\"fertility\"><style=\"link\">fertility</style></link> в сельскохозяйственные культуры. Как только плодородие фермерского участка будет исчерпано, он больше ничего не будет производить. Фертильность может быть восстановлена с помощью <link=\"fertilizerTech\"><style=\"link\">fertilizers</style></link>.\n\nОбратите внимание, что хотя простые сельскохозяйственные участки могут быть построены на глине, примитивные инструменты, используемые для их работы, не могут извлечь полную плодородность глинистой почвы. Чтобы выращивать глину с максимальной производительностью, разблокируйте <link=\"clayfarmplot\"><style=\"link\"> тяжелые участки фермы</style></link>.\n\nРазблокировано: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\n<style=\"fluff\"> Древняя мать, ты живешь\nДалеко под землей и океаном,\nМать полей и лесов,\nПринесите богатую почву для производства.\nПринесите семенные зерна в проросток.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II"
+
+[clayfarmplot]
+type = "structure"
+display_name = "Тяжелый фермерский участок"
+category = "Farming"
+unlockedBy = "clayfarmingTech"
+condition = 1
+labour = 20
+maintenanceLevel = 5
+keyword = ["plot", "submersible"]
+order = 20
+description = "Сельскохозяйственный участок, для <link=\"фермерство\"><style=\"link\"> выращивание сельскохозяйственных культур</style></link>. Тяжелые участки фермы могут быть выложены в <link=\"claysoil\"><style=\"link\">clay soils</style></link>, но требуют <link=\"shovel\"><style=\"link\">metal tools</style></link>.\n\nСельское хозяйство превращает почву <link=\"fertility\"><style=\"link\">fertility</style></link> в сельскохозяйственные культуры. Как только плодородие фермерского участка будет исчерпано, он больше ничего не будет производить.\n\nРазблокировано: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\n<style=\"fluff\"> И треть от утра до вечера,\nДо третьего дня вечера приносит его\nК бесконечному мосту Осмо,\nЗа Осмо-поля и пастбища.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение X"
+
+[midden]
+type = "structure"
+display_name = "Мидден"
+category = "Farming"
+unlockedBy = "fertilizerTech"
+maintenanceLevel = 5
+condition = 20
+fireResist = 2
+burned = "ashesx4"
+labour = 20
+order = 20
+storage = 10
+keyword = ["middenheap", "passive_producer"]
+passive_input_type = "fertility"
+passive_output_item = "compost"
+passive_output_mult = 36
+seconds_per_passive_tick = 120
+description = "Вместимость: <style=\"bonus\">30</style> <link=\"weight def\"><style=\"link\">weight units</style></link> элементов.\n\nСредняя куча для <link=\"compostingdef\"><style=\"link\">composting</style></link>.\n\nКогда <link=\"garbage\"><style=\"link\">garbage</style></link> сбрасывается в кучу, он производит <link=\"compost\"><style=\"link\">compost</style></link> для <link=\"fertility\"><style=\"link\">fertilizing</style></link><link=\"farming\"><style=\"link\">fields</style></link>. <link=\"pitchfork\"><style=\"link\">pitchfork</style></link> необходим для работы в середине."
+
+[slashandburn]
+type = "structure"
+display_name = "Обсуждение Slash and Burn Plot"
+category = "Farming"
+unlockedBy = "slashAndBurnTech"
+maintenanceLevel = 5
+condition = 1
+labour = 20
+order = 20
+keyword = ["plot", "submersible"]
+description = "Участок среза и ожога: гоблины будут сжигать всю флору в этом районе и до тех пор, пока пепел не попадет в почву, чтобы создать гораздо более высокую фертильность.\n\nУчасток включает в себя двухэтажный широкий огнеупор с каждой стороны. Как только вы разметите область, гоблины выпадут деревья и вырубят растительность внутри, и очистят очаги пожара. Когда это будет сделано, вы можете назначить пожарных и приказать им начать огонь!\n\nПосле того, как участок был сожжен, вы можете отказаться от участка среза и ожога и выложить <link=\"farmplot\"><style=\"clickableLink\">farm plot</style></link> над сожженной областью.\n\nРазблокировано: <link=\"slashAndBurnTech\"><style=\"link\"> Технология: Slash-and-burn Farming</style></link>\n\n<style=\"fluff\"> Харк! сиськи дико плачут,\nИз аспена следуют слова:\n\"Ячмень Осмы не будет процветать,\nНе ячмень Вяйнеля,\nЕсли почва не готова,\nЕсли лес не будет вырублен,\nИ ветви сгорели дотла».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение II"
+
+[stonequarry]
+type = "structure"
+display_name = "Каменный карьер"
+category = "Clay and Stone"
+unlockedBy = "stoneTech"
+maintenanceLevel = 5
+condition = 20
+labour = 50
+order = 20
+keyword = ["quarry", "noisy", "submersible", "stoneproducer", "production_erodes_ground"]
+description = "Большая открытая яма для карьерного камня.\n\nРазблокировано: <link=\"stoneTech\"><style=\"link\"> Технология: Stone</style></link>\n\n<style=\"fluff\"> Не смог завоевать ни капли доброты,\nНе мог заслужить ни любви, ни чести,\nХотя я сбил горы,\nХотя камни я разорвал на части.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+[charcoal_clamp]
+type = "structure"
+display_name = "Зажим для угля"
+category = "Wood"
+unlockedBy = "charcoalTech"
+condition = 40
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx20"]
+scrapped = ["branchx10"]
+labour = 40
+experience = 1
+breakertier = 1
+keyword = ["wood", "charcoalclamp"]
+description = "Условие: <style=\"bonus\">40</style>\n\nБольшая куча древесины, которая производит <link=\"уголь\"><style=\"link\">уголь</style></link> из <link=\"древесина\"><style=\"ссылка\">древесина</style></link>.\n\nРазблокировано: <link=\"charcoalTech\"><style=\"link\"> Технология: Уголь</style></link>\n\n<style=\"fluff\"> Потом кузнец Ильмаринен,\nПришел на землю работать с металлом;\nОн родился на угольной горе,\nКвалифицированы и воспитаны на угольных месторождениях.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX"
+
+[bog_iron_collector2]
+type = "structure"
+display_name = "Железный коллекционер Bog"
+unlockedBy = "bogIronTech"
+category = "Metal"
+condition = 30
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodplankx8"]
+scrapped = ["woodplankx6"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 20
+order = 20
+experience = 2
+breakertier = 1
+keyword = ["bogironcollector","wood"]
+description = "Коллекционная хижина.\n\n<style=\"fluff\"> Потом кузнец Ильмаринен,\nВот что говорит о спящем железе:\nТы самый полезный из металлов,\nТы спишь в болотах,\nТы спрятался в низких условиях,\nГде волк ступает по болотным угодьям,\nГде медведь спит в зарослях.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX"
+
+# 3.3 Fishing
+
+[fishing]
+type = "class"
+display_name = "Фишер"
+
+[fishing1]
+type = "structure"
+display_name = "Шахта рыбака-гоблина"
+category = "Fishing"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx15"]
+scrapped = ["branchx6"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+discovers = "fishingTech"
+sacrificeItem = "ceremonialfish"
+labour = 20
+order = 20
+experience = 2
+breakertier = 1
+keyword = ["fishingbuilding","wood"]
+description = "<link=\"sacrifice def\"><style=\"link\">Жертвенный пункт</style></link>: <link=\"ceremonialfish\"><style=\"link\">Церемониальная рыба</style></link>\nСостояние: <style=\"bonus\">20</style>\n\nПростой рыбак-гоблин <link=\"earthfasttier\"><style=\"link\">shack</style></link>. Одна рыбацкая хижина создает рабочие места для одного гоблина.\n\nОбнаружение: <link=\"fishingTech\"><style=\"link\"> Технология: Рыбалка</style></link>\n\n<style=\"fluff\"> Когда ты войдешь в рай,\nНа месте ты увидишь коттедж\nГде собираются рыбаки.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXXIV"
+
+[fishtrap]
+type = "structure"
+display_name = "Ловушка для рыбалки"
+keyword = ["fishtrap", "submersible", "floating_structure"]
+category = "Fishing"
+condition = 3
+materials = "fishingtrap"
+scrapped = "fishingtrap"
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "fishingTech"
+order = 20
+labour = 5
+breakertier = 0
+description = "Условие: <style=\"bonus\">3</style>\n\nЛовушка для ловли рыбы.\n\nРазблокировано: <link=\"fishingTech\"><style=\"link\"> Технология: Рыбалка</style></link>\n\n<style=\"fluff\"> Затем они поворачиваются и тащат рыболовную сеть.\nК лугу, выступающему к морю;\nТеперь они тянут его к Вайноле,\nНарисуйте его по длине, по бокам, поперек,\nловить рыбу всех видов,\nлосось, форель, щука и нытье.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVIII"
+
+#[wickernet]
+#type = "structure"
+#display_name = "Wicker Fishing Net"
+#category = "Resource"
+#condition = 20
+#materials = "willownet"
+#scrapped = "willownet"
+#unlockedBy = "fishingTech"
+#labour = 10
+#description = """<style="fluff">\
+#Thereupon the son, Kullervo,
+#Hastened to his work as bidden,
+#Drove the salmon to the fish-nets,
+#Spake in innocence as follows:
+#"Shall I with my youthful vigor
+#Scare the salmon to the fish-nets,
+#Or with little magic vigor
+#Shall I drive them to their capture?
+#
+#- the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXXV</style>
+#
+#A wicker fishing net."""
+#keyword = ["fishing", "wood"]
+
+# 4.0 Storage
+
+[stockpile]
+type = "structure"
+display_name = "запас"
+category = "Storage"
+condition = 1
+labour = 20
+keyword = ["plot", "submersible"]
+description = "Вместимость: 5 предметов на плитку.\n\nОбозначенная область для <link=\"storage\"><style=\"link\">storing</style></link> предметов на открытом воздухе. Имейте в виду, что некоторые предметы будут разлагаться и в конечном итоге будут уничтожены, если они останутся во власти элементов.\n\nВы должны установить ограничения на предметы в настройках хранилища запасов, прежде чем гоблины будут хранить в нем что-либо.\n\n<style=\"fluff\"> Шелковые одежды на олдерах,\nНа скалах ее шелковые чулки,\nНа траве ее туфли из оленьей кожи,\nВ песке ее сияющее ожерелье,\nВ песке ее кольца и драгоценности.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV\n"
+order = 40
+
+[storehouse]
+type = "class"
+display_name = "Магазин"
+order = 40
+
+[storehouse1]
+type = "structure"
+display_name = "Хранилище Shack"
+category = "Storage"
+keyword = "wood"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "carpentryTech"
+labour = 20
+experience = 2
+breakertier = 1
+storage = 30
+description = "Вместимость: <style=\"bonus\">30</style> <link=\"weight def\"><style=\"link\">weight units</style></link>\nСостояние: <style=\"bonus\">20</style>\n\n<link=\"earthfasttier\"><style=\"link\">earthfast</style></link> <link=\"storage\"><style=\"link\">storage</style></link> shack.\n\nРазблокировано: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>\n\n<style=\"fluff\"> Поспешите на вершину холма,\nВ горный хребет,\nОткройте там большой отсек,\nТы найдешь его заполненным коробками,\nСундуки и ящики, сундуки и коробки.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV"
+
+[storehouse2]
+type = "structure"
+display_name = "хранилище"
+category = "Storage"
+keyword = "wood"
+condition = 40
+fireResist = 1
+burned = ["ashesx5"]
+materials = ["woodpolex10", "woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = "plankTech"
+labour = 30
+experience = 3
+breakertier = 2
+storage = 50
+description = "Вместимость: <style=\"bonus\">50</style> <link=\"weight def\"><style=\"link\">weight units</style></link>\nУсловие: <style=\"bonus\">40</style>\n\n<link=\"planktier\"><style=\"link\">pole</style></link> <link=\"storage\"><style=\"link\">storage</style></link> building.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\n<style=\"fluff\"> Шесть отсеков, построенных из соснового дерева,\nДвенадцать номеров палат,\nИ особняк, наполненный гарретами,\nПрочесывание всей лесной границы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+[storehouse3]
+type = "structure"
+display_name = "Хранилище"
+category = "Storage"
+condition = 60
+fireResist = 3
+burned = ["ashesx10"]
+materials = ["woodbeamx10", "woodplankx10"]
+scrapped = ["woodbeamx8", "woodplankx6"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = ["beamTech"]
+labour = 40
+experience = 4
+breakertier = 3
+storage = 70
+keyword = "wood"
+description = "Вместимость: <style=\"bonus\">70</style> <link=\"weight def\"><style=\"link\">weight units</style></link>\nСостояние: <style=\"bonus\">60</style>\n\n<link=\"storage\"><style=\"link\">storage</style></link> <link=\"beamtier\"><style=\"link\">cabin</style></link>.\n\nРазблокировано: <link=\"beamTech\"><style=\"link\"> Технология: Beams</style></link>\n\n<style=\"fluff\"> Богат своими копями сияющей меди,\nНагорья, наполненные магическими металлами,\nСундуки с драгоценностями в его кладовой,\nВсе богатство Калевалы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXII\n"
+
+#[storehouse4]
+#type = "structure"
+#display_name = "Stone and Timber Storehouse"
+#category = "Storage"
+#unlockedBy = ["stoneConstructionTech"]
+#condition = 100
+#materials = ["dressedstonex20"]
+#scrapped = ["dressedstonex18"]
+#maintenanceLevel = 5
+#labour = 80
+#experience = 10
+#breakertier = 5
+#keyword = ["stone"]
+#storage = 100
+#description = """\
+#Capacity: <style="bonus">100</style> <link="weight_def"><style="link">weight units</style></link> of items
+#Condition: <style="bonus">100</style>
+#
+#A sturdy <link="storage"><style="link">storage</style></link> building built of <link="cottagetier"><style="link">wood and stone</style></link>.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+#
+#<style="fluff">Even then may trouble find thee,
+#Misery may overtake thee;
+#Often is the lowland birch-tree
+#Cut to pieces in the ware-house.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVIII</style>"""
+
+# 4.1 Granaries
+
+[granary]
+type = "class"
+display_name = "Гранар"
+order = 40
+
+[turniphole]
+type = "structure"
+display_name = "Дыра из репы"
+category = "Storage"
+unlockedBy = "farmingTech"
+accepts = "is_turnip"
+keyword = ["pestproof", "stone", "is_turniphole"]
+condition = 50
+fireResist = 4
+labour = 30
+maintenanceLevel = 5
+experience = 2
+breakertier = 2
+storage = 10
+order = 40
+description = "Вместимость: <style=\"bonus\">10</style> <link=\"weight def\"><style=\"link\">weight units</style></link> <style=\"clickableLink\"><link=\"turnip\">turnips</link></style>.\nУсловие: <style=\"bonus\">50</style>\n\nСкальная, покрытая дыра в земле, где <link=\"turnip\"><style=\"link\">turnips</style></link> может быть безопасно <link=\"storage\"><style=\"link\">stored</style></link>.\n\nРазблокировано: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\n<style=\"fluff\"> \"Очки, которые я собирал летом,\nСкрученные ячменные стебли зимой,\nПодобно героям,\nКак слуги, проданные в рабстве».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+[granary2]
+type = "structure"
+display_name = "Гранар"
+category = "Storage"
+keyword = ["wood", "pestproof"]
+accepts = "seed"
+condition = 100
+fireResist = 3
+burned = ["ashesx10"]
+materials = ["woodlog", "woodplankx8", "woodpolex4"]
+scrapped = ["woodlog", "woodplankx6", "woodpolex2"]
+maintenanceLevel = 5
+unlockedBy = "plankTech"
+labour = 50
+experience = 5
+breakertier = 3
+storage = 20
+description = "Вместимость: <style=\"bonus\">20</style> <link=\"weight def\"><style=\"link\">weight units</style></link> семян.\nУсловие: <style=\"bonus\">100</style>\n\nБезопасное место для <link=\"storage\"><style=\"link\">storing</style></link> семян.\n\nРазблокировано: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>\n\n<style=\"fluff\"> Если ты услышишь от матери,\nОт матери мужа твоего,\nЧто бочка для еды пуста,\nБери ячмень из гарнеров,\nСпешите в комнаты для измельчения.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+# 4.2 Other storage buildings
+
+[scuttlebutt]
+type = "Structure"
+display_name = "Щелкунчик"
+category = "Storage"
+condition = 1
+fireResist = 2
+materials = ["claypot"]
+scrapped = ["claypot"]
+unlockedBy = "clayTech"
+maintenanceLevel = 2
+labour = 5
+breakertier = 1
+keyword = ["drinking", "clay"]
+order = 40
+description = "Условие: <style=\"bonus\">1</style>\n\nГлиняный горшок для гоблинов, из которого можно пить.\n\nРазблокировано: <link=\"clayTech\"><style=\"link\"> Технология: Pottery</style></link>\n\n<style=\"fluff\"> \"Утолить жажду из-под озера,\nПиво, которое вы заслуживаете!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVII"
+
+# 5.0 Workshops
+
+# 5.1 Food workshops
+
+[kitchen]
+type = "class"
+display_name = "Кухня"
+order = 10
+
+[kitchen0]
+type = "structure"
+display_name = "Открытая кухня"
+category = "Food"
+condition = 20
+seating = 8
+fireResist = 2
+burned = ["ashesx4", "claypot"]
+materials = ["claypot", "branchx4", "woodlogx4", "woodblock"]
+scrapped = ["claypot", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "claypot:25%"
+labour = 30
+experience = 1
+breakertier = 3
+keyword = ["kitchen", "wood", "noisy"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\nВместимость: <style=\"бонус\">8</style>\nСостояние: <style=\"bonus\">20</style>\n\nОткрытая кулинарная и пищевая зона. <link=\"kitchendef\"><style=\"link\">Кухни</style></link> готовят и обслуживают <link=\"foodpoint\"><style=\"link\">food</style></link> для жителей вашего лагеря один раз в сезон.\n\n<style=\"fluff\"> Ильпотар, древняя хозяйка,\nОна отдала этот приказ своим слугам:\n\"Приходи, моя милая девушка-официантка,\nПринадлежащая мне служанка,\nПоложи немного лосося на бройлинг,\nПринеси пива, чтобы дать незнакомцу!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXVII"
+
+[kitchen1]
+type = "structure"
+display_name = "Кухонная шляпа"
+category = "Food"
+unlockedBy = "housingTech"
+condition = 30
+seating = 12
+fireResist = 2
+breakertier = 3
+burned = ["ashesx6", "claypot"]
+materials = ["branchx16", "claypotx2", "woodlogx6", "woodblock"]
+scrapped = ["branchx8", "claypot", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = ["claypot:25%", "branch:90%"]
+labour = 40
+experience = 2
+on_enter = ["work_bonus_1"]
+keyword = ["wood", "kitchen", "noisy"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\nВместимость: <style=\"бонус\">12</style>\n<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+20%</style>\nУсловие: <style=\"bonus\">30</style>\n\nКухонная хижина с прикрепленной обеденной зоной. <link=\"kitchendef\"><style=\"link\">Кухни</style></link> готовят и обслуживают <link=\"foodpoint\"><style=\"link\">food</style></link> для жителей вашего лагеря один раз в сезон. Более эффективные кухни готовят еду быстрее.\n\nРазблокировано: <link=\"housingTech\"><style=\"link\"> Технология: Жилье</style></link>\n\n<style=\"fluff\"> Ты будешь печь мне медовое печенье,\nПриготовь мне ячменную воду,\nТы наполнишь мои пенные пивные чашки,\nТы будешь петь рядом с моим столом.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VIII"
+
+[kitchen2]
+type = "structure"
+display_name = "Кухонный сарай"
+category = "Food"
+unlockedBy = "plankTech"
+condition = 40
+seating = 16
+fireResist = 2
+burned = ["ashes", "claypot"]
+materials = ["claypotx2", "woodplankx16", "woodpolex4"]
+scrapped = ["claypotx2", "woodplankx10", "woodpolex2"]
+maintenanceLevel = 4
+maintenanceItem = ["claypot:25%", "woodplank:50%"]
+labour = 50
+experience = 3
+breakertier = 2
+on_enter = ["work_bonus_2"]
+keyword = ["wood", "kitchen", "noisy"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\n<style=\"характеристики\"> Вместимость: <style=\"bonus\">16</style></style>\n<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+40%</style>\nУсловие: <style=\"bonus\">40</style>\n\nКухонный сарай с досками. <link=\"kitchendef\"><style=\"link\">Кухни</style></link> готовят и обслуживают <link=\"foodpoint\"><style=\"link\">food</style></link> для жителей вашего лагеря. Более эффективные кухни готовят еду быстрее.\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>"
+
+#[kitchen4]
+#type = "structure"
+#display_name = "Kitchen Cottage"
+#category = "Food"
+#unlockedBy = "stoneConstructionTech"
+#condition = 100
+#seating = 20
+#fireResist = 2
+#burned = ["ashes", "claypot"]
+#materials = ["claypotx2", "dressedstonex20"]
+#scrapped = ["claypotx2", "dressedstonex18"]
+#maintenanceLevel = 4
+#maintenanceItem = ["claypot:25%"]
+#labour = 50
+#experience = 10
+#breakertier = 5
+#on_enter = ["work_bonus_4"]
+#keyword = ["stone", "kitchen", "noisy"]
+#description = """\
+#<link="firehazard"><style="link">Fire Hazard</style></link>
+#<style="characteristics">Capacity: <style="bonus">20</style></style>
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+80%</style>
+#Condition: <style="bonus">100</style>
+#
+#A <link="cottagetier"><style="link">stone and timber</style></link> kitchen building. <link="kitchendef"><style="link">Kitchens</style></link> prepare and serve <link="foodpoint"><style="link">food</style></link> for the inhabitants of your camp. More efficient kitchens prepare meals faster.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>
+#
+#<style="fluff">Sometimes he makes a great feast for his friends and relatives, when they shout and drink beer till they are tipsy.
+#
+# - the <link="kalevipoeg"><style="link">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto XIV: The Palace of Sarvik</style>\
+#"""
+
+[butcher]
+type = "class"
+display_name = "мясник"
+order = 10
+
+[butcher0]
+type = "structure"
+display_name = "Блок мясника"
+category = "Food"
+unlockedBy = ["butcheryTech"]
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = ["branchx6"]
+scrapped = ["branchx4"]
+maintenanceLevel = 5
+labour = 20
+experience = 1
+breakertier = 1
+keyword = ["butcher", "stinks", "wood", "noisy"]
+description = "Состояние: <style=\"bonus\">20</style>\n\nОбласть для разделки туш животных и рабочих костей.\n\nРазблокировано: <link=\"butcheryTech\"><style=\"link\"> Технология: Butchery</style></link>\n\n<style=\"fluff\"> Мудрый Вяйнямёйнен\nВытащил священную одежду из Отсо,\nРаспространяйте его в открытом дворе,\nразрезать их на фрагменты,\nПоложите их в нагревательные кальдроны,\nВ сосудах с медным дном.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI"
+
+[smoker]
+type = "class"
+display_name = "курение"
+order = 10
+
+[smoker0]
+type = "structure"
+display_name = "Курительная рубашка"
+category = "Food"
+condition = 50
+fireResist = 2
+burned = ["ashesx5"]
+materials = ["branchx16"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "smokingTech"
+labour = 30
+experience = 3
+breakertier = 1
+keyword = ["smoker", "wood", "smokes"]
+description = "Условие: <style=\"bonus\">50</style>\n<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\n\nЛачуга для сохранения мяса путем курения.\n\nРазблокировано: <link=\"mokingTech\"><style=\"link\"> Технология: Курение</style></link>\n\n<style=\"fluff\"> На острове можно увидеть дым.\nОгонь, вечный,\nЧерный дым поднимается к небесам.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XX"
+
+[baker]
+type = "class"
+display_name = "пекарня"
+
+[baker0]
+type = "structure"
+display_name = "Пищевая яма"
+category = "Food"
+unlockedBy = "bakingTech"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+maintenanceLevel = 5
+keyword = "baker"
+description = "Состояние: <style=\"bonus\">20</style>\n<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\n\nПростая яма для выпечки хлеба.\n\nРазблокировано: <link=\"bakingTech\"><style=\"link\"> Технология выпечки</style></link>"
+
+# 5.2 Wood workshops
+
+[carpenter]
+type = "class"
+display_name = "Плотник"
+order = 10
+
+[carpenter1]
+type = "structure"
+display_name = "Шахта Карпентера"
+discovers = "carpentryTech"
+category = "Wood"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx14"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "woodenstatuette"
+labour = 40
+experience = 2
+breakertier = 1
+keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+description = "Состояние: <style=\"bonus\">20</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный элемент</style></link>: <link=\"woodenstatuette\"><style=\"clickableLink\">Wooden Statuette</style></link>\nОбнаружение: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>\n\nПростой <link=\"earthfasttier\"><style=\"link\">shack</style></link>, где плотник может превратить древесину в полезные предметы.\n\n<style=\"fluff\"> Наносит один удар и строит первую часть,\nНаносит второй удар, строит центр,\nТретью – с удивительной силой.\nСудно было завершено.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIX"
+
+[carpenter2]
+type = "structure"
+display_name = "Сад Карпентера"
+category = "Wood"
+unlockedBy = "plankTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex12","woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "woodenstatuette"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+on_enter = ["work_bonus_1"]
+description = "<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+20%</style>\nУсловие: <style=\"bonus\">40</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный пункт</style></link>: <link=\"woodenstatuette\"><style=\"link\">Wooden Statuette</style></link>\n\nДеревянный <link=\"planktier\"><style=\"link\">shed</style></link> для плотника.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\n<style=\"fluff\"> Из древесины дубового дерева,\nС его постов, и досок, и напольных покрытий.\nПоет песню и присоединяется к фреймворку;\nПоет секунду, устанавливает сайдинг.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI"
+
+#[carpenter3]
+#type = "structure"
+#display_name = "Carpenter's Cabin"
+#category = "Wood"
+#unlockedBy = ["beamTech"]
+#condition = 80
+#fireResist = 3
+#burned = ["ashesx12"]
+#materials = ["woodbeamx10", "woodplankx10"]
+#scrapped = ["woodbeamx9", "woodplankx6"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#sacrificeItem = "woodenstatuette"
+#labour = 60
+#experience = 4
+#breakertier = 3
+#keyword = ["carpenter", "heat", "basebuilding", "wood", "noisy"]
+#on_enter = ["work_bonus_2"]
+#description = """\
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+40%</style>
+#Condition: <style="bonus">80</style>
+#Requires <link="heating"><style="link">heating</style></link>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+#
+#A log <link="beamtier"><style="link">cabin</style></link> for a carpenter.
+#
+#Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link>
+#
+#<style="fluff">Often is the mountain pine-tree
+#Cut in splints for candle-lighters;
+#And the juniper is often
+#Peeled for fence-posts for the pastures.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem XXVIII</style>\
+#"""
+
+#[carpenter4]
+#type = "structure"
+#display_name = "Carpenter's Cottage"
+#category = "Wood"
+#unlockedBy = ["stoneConstructionTech"]
+#condition = 100
+#materials = ["dressedstonex20"]
+#scrapped = ["dressedstonex18"]
+#maintenanceLevel = 5
+#sacrificeItem = "woodenstatuette"
+#labour = 80
+#experience = 10
+#breakertier = 5
+#keyword = ["carpenter", "heat", "basebuilding", "stone", "noisy"]
+#on_enter = ["work_bonus_3"]
+#description = """\
+#<link="workshop_efficiency"><style="link">Efficiency</style></link>: <style="bonus">+80%</style>
+#Condition: <style="bonus">100</style>
+#Requires <link="heating"><style="link">heating</style></link></style>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="woodenstatuette"><style="link">Wooden Statuette</style></link>
+#
+#A carpenter's workshop built of <link="cottagetier"><style="link">wood and stone</style></link>.
+#
+#Unlocked by: <link="stoneConstructionTech"><style="link">Technology: Stone Construction</style></link>"""
+
+[fishingworkshop]
+type = "class"
+display_name = "Семинар по рыболовству"
+order = 10
+
+[fishingworkshop1]
+type = "structure"
+display_name = "Рыболовный станок"
+category = "Fishing"
+unlockedBy = "fishingTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx16"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "woodenstatuette"
+labour = 40
+experience = 3
+breakertier = 1
+keyword = ["fishingworkshop", "heat", "wood", "noisy"]
+adjacencyStructure = "carpenter"
+adjacencyWorkspeedbonus = +0.2
+description = "<style=\"характеристики\"> Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный пункт</style></link>: <link=\"woodenstatuette\"><style=\"link\">Wooden Statuette</style></link>\n\n<link=\"earthfasttier\"><style=\"link\">shack</style></link> для создания и обслуживания рыболовных инструментов.\n\nРазблокировано: <link=\"fishingTech\"><style=\"link\"> Технология: Рыбалка</style></link>\n\n<style=\"fluff\"> Ильмаринен делает то, что обещал.\nДелает грабли в полном совершенстве.\nБеспокойная мать Лемминкяйнена\nВолшебство и спешка\nК реке Туони.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XV"
+
+# 5.3 Clay workshops
+
+[potter]
+type = "class"
+display_name = "Поттер"
+order = 10
+
+[potter0]
+type = "structure"
+display_name = "Двор Поттера"
+category = "Clay and Stone"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = ["branchx6", "woodblock"]
+scrapped = ["branchx4", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "claystatuette"
+labour = 30
+experience = 1
+breakertier = 1
+keyword = ["potter", "noisy"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\nСостояние: <style=\"bonus\">20</style>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный пункт</style></link>: <link=\"claystatuette\"><style=\"link> Clay Statuette</style></link>\n\nГончарное колесо и открытый огонь, для создания сырых горшков.\n\n<style=\"fluff\"> \"Когда твой брат выходит из пахоты,\nИ твой отец из его прихожан,\nИ муж твой из леса,\nИз его рубки, возлюбленный,\nДайте каждому водоем».\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+#[potter1]
+#type = "structure"
+#display_name = "Potter's Shack"
+#category = "Clay and Stone"
+#condition = 40
+#fireResist = 2
+#burned = ["ashesx6"]
+#materials = ["branchx18", "woodplank", "rawClayx6"]
+#scrapped = ["branchx9"]
+#maintenanceLevel = 5
+#maintenanceItem = "branch"
+#sacrificeItem = "claystatuette"
+#unlockedBy = ["plankTech", "clayTech"]
+#labour = 40
+#experience = 2
+#breakertier = 1
+#keyword = ["potter", "wood", "noisy"]
+#on_enter = ["work_bonus_1"]
+#description = """\
+#<link="firehazard"><style="link">Fire Hazard</style></link>
+#Efficiency: <style="bonus">+20%</style>
+#Condition: <style="bonus">40</style>
+#<link="sacrifice_def"><style="link">Sacrifice item</style></link>: <link="claystatuette"><style="link">Clay Statuette</style></link>
+#
+#A <link=\"earthfasttier\"><style=\"link\">shack</style></link> with a pottery wheel and oven, for creating pots.
+#
+#Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link> and <link="clayTech"><style="link">Technology: Pottery</style></link>
+#
+#<style="fluff">As under cover of departing Day
+#Slunk hunger-stricken Ramazan away,
+#Once more within the Potter's house alone
+#I stood, surrounded by the Shapes of Clay.
+#
+# - The Rubaiyat of Omar Khayyam, trans. Edward FitzGerald, LXXXII</style>\
+#"""
+
+# 5.4 Textile workshops
+
+[retting]
+type = "class"
+display_name = "отступить"
+order = 10
+
+[retting0]
+type = "structure"
+display_name = "Реттинг Ярд"
+category = "Leather and Textiles"
+unlockedBy = ["spinningTech", "clayTech"]
+condition = 20
+fireResist = 2
+burned = ["ashesx2"]
+materials = ["claypotx2"]
+scrapped = ["claypotx2"]
+maintenanceLevel = 5
+maintenanceItem = "claypot:25%"
+labour = 40
+experience = 1
+breakertier = 1
+keyword = ["retting", "noWinter", "reeks"]
+description = "<link=\"workshop\"><style=\"link\">workshop</style></link> для получения волокна из растительных материалов.\n\nРазблокировано: <link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link> и <link=\"clayTech\"><style=\"link> Технология: Pottery</style></link>\n\n<style=\"fluff\"> После трех долгих лет работы,\nСрезать тростник на низинах,\nОтрежьте крапиву от границы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIV"
+
+[spinning]
+type = "class"
+display_name = "вращение"
+order = 10
+
+[spinning2]
+type = "structure"
+display_name = "Спальня Шпиннера"
+category = "Leather and Textiles"
+unlockedBy = ["spinningTech", "plankTech"]
+condition = 40
+fireResist = 2
+burned = ["ashesx7"]
+materials = ["woodpolex10", "woodplankx8", "woodblock"]
+scrapped = ["woodpolex8", "woodplankx6", "woodblock"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 40
+experience = 3
+breakertier = 1
+keyword = ["spinning", "heat", "wood"]
+description = "Требуется <link=\"heating\"><style=\"link\">heating</style></link>\n\n<link=\"planktier\"><style=\"link\">shed</style></link>, где волокна вращаются в нити.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link> и <link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link>\n\n<style=\"fluff\"> Ты сам должен делать крутящийся,\nС твоей собственной рукой курсируй шаттл.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+[weaving]
+type = "class"
+display_name = "плетение"
+order = 10
+
+[weaving2]
+type = "structure"
+display_name = "Сад Уивера"
+category = "Leather and Textiles"
+unlockedBy = "clothArmorTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex6","woodplankx12"]
+scrapped = ["woodpolex4", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["weaving", "heat", "wood", "noisy"]
+description = "<style=\"характеристики\"> Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nДеревянный <link=\"planktier\"><style=\"link\">shed</style></link> для ткачества ткани.\n\nРазблокировано: <link=\"clothArmorTech\"><style=\"link\"> Технология: ткачество</style></link>\n\n<style=\"fluff\"> «Да, Портунус, ткач», — воскликнула вдова громким голосом, намекая на угрозу в ее глазах. И кто, я хотел бы знать, не любит Портуна, ткача?\n\n- Hope Mirrlees, Lud-in-the-Mist (1926)\n"
+
+[ropemaking1]
+type = "structure"
+display_name = "Шахта изготовителя веревки"
+category = "Leather and Textiles"
+keyword = ["ropemaking", "heat", "wood"]
+unlockedBy = ["spinningTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+description = "<style=\"характеристики\"> Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nКанатная хижина.\n\nРазблокировано: <link=\"pinningTech\"><style=\"link\"> Технология: Spinning</style></link>\n\n<style=\"fluff\"> Очень хорошо помню\nКак устроен рыбак,\nКак он оснащает свое рыболовное судно,\nЛинии, и гафы, и столбы, и рыболовные сети;\nДо этого не дошло рыбалки.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVIII"
+
+# 5.5 Metal workshops
+
+[bloomery]
+type = "class"
+display_name = "Блумерия"
+
+[bloomery4]
+type = "structure"
+display_name = "Каменная блумерия"
+keyword = ["bloomer", "stone", "noisy"]
+category = "Metal"
+unlockedBy = "bogIronTech"
+condition = 120
+labour = 50
+experience = 2
+breakertier = 5
+maintenanceLevel = 1
+maintenanceItem = "dressedstone"
+materials = "dressedstonex4"
+scrapped = "dressedstonex4"
+description = "Блумерия для плавки железной руды.\n\n<style=\"fluff\"> Умело они работают с колокольчиками,\nПотушите огонь и добавьте топливо.\nТри самых прекрасных летних дня,\nТри коротких ночи яркого лета,\nПока камни не начнут цвести,\nВ отпечатках ног рабочих,\nВолшебная магия и колдовство.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение X"
+
+[oreroastingpit0]
+type = "structure"
+display_name = "Яма, обжигающая руду"
+category = "Metal"
+unlockedBy = "bogIronTech"
+condition = 20
+labour = 30
+experience = 2
+breakertier = 1
+maintenanceLevel = 4
+keyword = "oreroaster"
+description = "Простая яма для обжарки <link=\"bogironore\"><style=\"link\">bog железная руда</style></link>, чтобы ее можно было плавить.\n\nВозникла звезда вечера,\nЖелезная руда покинула болота,\nИз водоемов поднялись,\nЕсли бы он был доставлен в печь,\nВ огне кузнец положил его.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX"
+
+[smithy]
+type = "class"
+display_name = "Смити"
+order = 10
+
+[smithy0]
+type = "structure"
+display_name = "Смити"
+category = "Metal"
+condition = 20
+fireResist = 2
+burned = ["ashesx4"]
+materials = ["branchx6"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "dwarvenTech"
+labour = 50
+experience = 3
+breakertier = 3
+keyword = ["metal", "smithy", "heat", "noisy"]
+description = "Простая кузница для холодных рабочих металлов.\n\nРазблокировано: <link=\"dwarvenTech\"><style=\"link\"> Технология: Dwarven Metal</style></link>\n\n<style=\"fluff\"> Хорошо молотит, пока не смягчится,\nЗабивает много тонкой утвари,\nМолоты, копья, мечи и топоры,\nНожи для молотков, вилки и люки,\nИнструменты молотков всех описаний.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX"
+
+[smithy2]
+type = "structure"
+display_name = "Блэксмитский сарай"
+category = "Metal"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodpolex12","woodplankx16", "dressedstonex4"]
+scrapped = ["woodpolex8","woodplankx12", "dressedstonex4"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+unlockedBy = "forgingTech"
+labour = 40
+experience = 2
+breakertier = 2
+on_enter = ["work_bonus_1"]
+keyword = ["metal", "blacksmiths", "smithy", "wood", "noisy"]
+description = "<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+20%</style>\n\nКузнечный сарай с каменной кузницей.\n\nРазблокировано: <link=\"forgingTech\"><style=\"link\"> Технология: ковка</style></link>\n\n<style=\"fluff\"> Потом кузнец Ильмаринен,\nИскал место, чтобы построить кузнеца,\nИскал место, чтобы посадить колокольчики,\nНа границах Северной земли,\nНа горах Похья и лугах.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение X"
+
+# 5.6 Leather workshops
+
+[curing]
+type = "class"
+display_name = "проклятие"
+order = 10
+
+[curing0]
+type = "structure"
+display_name = "Проклятый двор"
+keyword = ["leather", "hidecuring", "stinks"]
+category = "Leather and Textiles"
+condition = 20
+fireResist = 2
+burned = ["ashes"]
+materials = ["claypot", "woodpolex4", "branchx2"]
+scrapped = ["claypot", "woodpolex2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "leatherTech"
+labour = 30
+experience = 1
+breakertier = 1
+description = "Область для отверждения кожи.\n\nРазблокировано: <link=\"leatherTech\"><style=\"link\"> Технология: кожа</style></link>\n\n<style=\"fluff\"> Вот ответ его народа:\n\"Пусть одетая в мех легкая нога\"\nПриветствуйте его приход.\nПусть медовая лапа приветствуется\nК очагу-камню пентхауса,\nДобро пожаловать в кипящие кальдроны.\nЧтобы мы могли восхищаться его меховым халатом,\nПусть с радостью взглянет на его плащ.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI"
+
+[tanner]
+type = "class"
+display_name = "загар"
+order = 10
+
+[tanner0]
+type = "structure"
+display_name = "Загарные ванны"
+keyword = ["leather", "tanning", "reeks"]
+category = "Leather and Textiles"
+condition = 30
+fireResist = 2
+burned = "ashes"
+materials = ["claypot", "woodblock"]
+scrapped = ["claypot", "woodblock"]
+maintenanceLevel = 5
+unlockedBy = "leatherTech"
+labour = 30
+experience = 1
+breakertier = 1
+description = "Несколько чан для загара. Запах ужасный!\n\nРазблокировано: <link=\"leatherTech\"><style=\"link\"> Технология: кожа</style></link>\n\n<style=\"fluff\"> Никогда, никогда, волшебный муж,\nОтносись к своей красавице недоброжелательно,\nНе научи ее плетью слуг,\nУдарь ее не стрингами кожи.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIV"
+
+[leatherworker]
+type = "class"
+display_name = "Кожаная работа"
+order = 10
+
+[leatherworker1]
+type = "structure"
+display_name = "Шахта кожаного рабочего"
+category = "Leather and Textiles"
+unlockedBy = "leatherTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx10"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 2
+breakertier = 1
+keyword = ["heat", "wood", "leatherworking", "leather"]
+description = "Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nКожаный работник <link=\"earthfasttier\"><style=\"link\">shack</style></link>.\n\nРазблокировано: <link=\"leatherTech\"><style=\"link\"> Технология: кожа</style></link>\n\n<style=\"fluff\"> Но прежде чем эта звезда появилась, молодой авантюрист нашел коттедж, который он искал; потому что, взмахнув над его дверным проемом, он увидел знак огромной коричневой шкуры с диковинными буквами в позолоте, которые провозгласили жильца внизу рабочим в коже.\n\nЛорд Дансени, дочь короля Эльфланда (1924)"
+
+#  5.7 Weapon and armor workshops
+
+[armory]
+type = "class"
+display_name = "Броненосец"
+order = 10
+
+[armory1]
+type = "structure"
+display_name = "Шахта оружейника"
+keyword = ["armory", "armorcrafter", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = "armorTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx14"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "ceremonialshield"
+labour = 40
+experience = 2
+breakertier = 1
+description = "<style=\"характеристики\"> Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n<link=\"sacrifice def\"><style=\"link\">Предмет жертвоприношения</style></link>: <link=\"ceremonialshield\"><style=\"link>Ceremonial Wooden Shield</style></link>\n\nМастерская по созданию щитов и доспехов из дерева и ткани.\n\nРазблокировано: <link=\"armorTech\"><style=\"link\"> Технология: деревянная броня</style></link><style=\"fluff\"> «Господь Газнак бессмертен, за исключением Сакнота, и носит доспехи, которые являются доказательством даже против самого Сакнота, и имеет меч, второй самый страшный в мире».\n\nЛорд Дансани, Крепость Непобедимая За исключением Сакнота (1908)"
+
+[armory2]
+type = "structure"
+display_name = "Оружейный зал"
+keyword = ["armory", "armorcoldforger", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = ["dwarvenArmorTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["woodpolex6","woodplankx12"]
+scrapped = ["woodpolex4", "woodplankx10"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "ceremonialshield"
+labour = 60
+experience = 3
+breakertier = 2
+on_enter = ["work_bonus_1"]
+description = "<style=\"характеристики\"> Требуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n<link=\"sacrifice def\"><style=\"link\">Предмет жертвоприношения</style></link>: <link=\"ceremonialshield\"><style=\"link>Ceremonial Wooden Shield</style></link>\n\nСеминар по созданию щитов и доспехов из дерева, ткани, холоднокожего <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style> и других материалов.\n\nРазблокировано: <link=\"dwarvenArmorTech\"><style=\"link\"> Технология: кузнечная броня</style></link>"
+
+[armory4]
+type = "structure"
+display_name = "Кузница Арморсмита"
+category = "Weapons and Armor"
+unlockedBy = ["ironArmorTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex10","woodplankx16", "woodbeamx4"]
+scrapped = ["dressedstonex18", "woodpolex8","woodplankx12", "woodbeamx4"]
+maintenanceLevel = 5
+sacrificeItem = "ceremonialshield"
+labour = 80
+experience = 10
+breakertier = 5
+keyword = ["armory", "armorsmith", "armorcoldforger", "stone", "noisy"]
+on_enter = ["work_bonus_3"]
+description = "<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+60%</style>\nУсловие: <style=\"bonus\">100</style>\n<link=\"sacrifice def\"><style=\"link\">Предмет жертвоприношения</style></link>: <link=\"ceremonialshield\"><style=\"link>Ceremonial Wooden Shield</style></link>\n\nКузница оружейника, построенная из <link=\"cottagetier\"><style=\"link\"> дерева и камня</style></link>, для изготовления металлической брони.\n\nРазблокировано: <link=\"ironArmorTech\"><style=\"link\"> Технология: Iron Armor</style></link>"
+
+[weaponmaker]
+type = "class"
+display_name = "оружейник"
+order = 10
+
+[weaponmaker1]
+type = "structure"
+display_name = "Шахта оружейника"
+keyword = ["weaponmaker", "weaponcrafter", "wood", "heat", "noisy"]
+category = "Weapons and Armor"
+unlockedBy = "weaponsTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx16"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+sacrificeItem = "ceremonialspear"
+labour = 40
+experience = 2
+breakertier = 1
+description = "<style=\"характеристики\"> Состояние: <style=\"bonus\">20</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный элемент</style></link>: <link=\"ceremonialspear\"><style=\"link\">Церемониальное деревянное копье</style></link>\n\nСеминар по созданию оружия из <link=\"bonematerial\"><style=\"link\">bone</style></link> и <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link>.\n\nРазблокировано: <link=\"weaponsTech\"><style=\"link\"> Технология: оружие</style></link>\n\n<style=\"fluff\"> Он не видел всех героев,\nКто не был вовлечен в процесс\nМечи, копья и боевые топоры,\nЗа смерть Лемминкяйнена.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIX\n"
+
+[weaponmaker2]
+type = "structure"
+display_name = "Оружейный склад"
+category = "Weapons and Armor"
+unlockedBy = ["weaponsmithingTech", "plankTech"]
+condition = 40
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex6","woodplankx14"]
+scrapped = ["woodpolex4", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+sacrificeItem = "ceremonialspear"
+labour = 50
+experience = 3
+breakertier = 2
+keyword = ["weaponmaker", "weaponcoldforger", "heat", "wood", "noisy"]
+on_enter = ["work_bonus_1"]
+description = "<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+20%</style>\nУсловие: <style=\"bonus\">40</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный элемент</style></link>: <link=\"ceremonialspear\"><style=\"link\">Церемониальное деревянное копье</style></link>\n\nДеревянный <link=\"planktier\"><style=\"link\">shed</style></link> для изготовления оружия из холодного молотка <link=\"dwarvenTech\"><style=\"link\">dwarven metal</style></link> и других материалов.\n\nUnlocked by: <link=\"weaponsmithingTech\"><style=\"link\"> Технология: кузнечное оружие</style></link> и <link=\"plankTech\"><style=\"link> Технология: Planks</style></link>\n\n<style=\"fluff\"> Многое, что нужно кузнецу,\nМногие вещи, которые он не смог бы сделать,\nНе мог железом сделать язык,\nНе мог железом забить сталь,\nНе удалось затвердеть железо.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IX\n"
+
+[weaponmaker4]
+type = "structure"
+display_name = "Кузница Оружейника"
+category = "Weapons and Armor"
+unlockedBy = ["ironWeaponTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex10","woodplankx20", "woodbeamx4"]
+scrapped = ["dressedstonex18", "woodpolex8","woodplankx16", "woodbeamx4"]
+maintenanceLevel = 5
+sacrificeItem = "ceremonialspear"
+labour = 80
+experience = 10
+breakertier = 5
+keyword = ["weaponmaker", "weaponsmith", "weaponcoldforger", "stone", "noisy"]
+on_enter = ["work_bonus_3"]
+description = "<link=\"workshop efficiency\"><style=\"link\">Efficiency</style></link>: <style=\"bonus\">+60%</style>\nУсловие: <style=\"bonus\">100</style>\n<link=\"sacrifice def\"><style=\"link\">Жертвенный элемент</style></link>: <link=\"ceremonialspear\"><style=\"link\">Церемониальное деревянное копье</style></link>\n\nКузница оружия, построенная из <link=\"cottagetier\"><style=\"link\"> дерева и камня</style></link>, где может быть создано металлическое оружие.\n\nРазблокировано: <link=\"ironWeaponTech\"><style=\"link\"> Технология: Железное оружие</style></link>\n\n<style=\"fluff\"> Искусный кузнец\nКованые копья из волшебных металлов,\nПодделал ланцет тройной направленности,\nНе самый длинный и не самый короткий.\nВыковал копье в дивной красоте.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI\n"
+
+#  5.8 Farming workshops
+
+[nettleprocessor]
+type = "class"
+display_name = "Переработка крапивы"
+
+[nettleprocessor0]
+type = "structure"
+display_name = "Хлопковый двор"
+category = "Farming"
+keyword = ["wood", "nettleprocessing"]
+unlockedBy = ["farmingTech"]
+condition = 20
+fireResist = 1
+burned = ["ashesx2"]
+materials = ["branchx4"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 20
+experience = 1
+breakertier = 1
+description = "Состояние: <style=\"bonus\">20</style>\n\nСад для обработки собранных растений крапивы в полезные компоненты."
+
+[thresher]
+type = "class"
+display_name = "Трешер"
+
+[thresher1]
+type = "structure"
+display_name = "Стиральная шахта"
+category = "Farming"
+unlockedBy = "farmingTech"
+condition = 20
+fireResist = 2
+burned = "ashes"
+labour = 20
+experience = 2
+breakertier = 1
+materials = ["branchx20"]
+scrapped = ["branchx8"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+order = 10
+keyword = ["threshing", "wood", "noisy"]
+description = "Состояние: <style=\"bonus\">20</style>\n\nЛачуга для сушки свежесобранных культур и отделения зерна от соломы.\n\nРазблокировано: <link=\"farmingTech\"><style=\"link\"> Технология: Сельское хозяйство</style></link>\n\n<style=\"fluff\"> Колдун начал со сна и увидел мстителя Линды у ворот, но он был слишком расстроен и испуган, чтобы попытаться скрыться. Он поспешно взял с груди несколько перьев и выдул их из нее несколькими волшебными словами. Они стали вооруженными воинами, тысячи из них, как пешком, так и верхом. Они бросились на сына Калева, как рой комаров или пчел; но он возложил на него дубинку, как будто он молотил, и избил их, коня и человека вместе, со всех сторон, как капли града или дождя.\n\n- <link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>, trans. W.F. Kirby, Canto IV: The Island Maiden"
+
+# 5.9 Stone workshops
+
+[stonecutter]
+type = "class"
+display_name = "камнерез"
+
+[stonecutter1]
+type = "structure"
+display_name = "Каменная рубка"
+category = "Clay and Stone"
+unlockedBy = "stoneTech"
+condition = 20
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx14"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 40
+experience = 2
+breakertier = 1
+keyword = ["stonecutting", "heat", "wood", "noisy"]
+description = "В лачуге камнерезчика <link=\"roughstone\"><style=\"link\">rough stone</style></link> разрезается на <link=\"dressedstone\"><style=\"link\">dressed stone</style></link>.\n\nРазблокировано: <link=\"stoneTech\"><style=\"link\"> Технология: Stone</style></link>\n\n<style=\"fluff\"> Весь день бедный Айно бродил,\nВесь следующий день, грустный и усталый,\nИ третье с утра до вечера,\nПока жестокая ночь не окутала ее,\nКогда она достигла песчаного края,\nДошел до холодного и мрачного морского берега,\nСадись на скалу скорби.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение IV"
+
+# 6.0 Machinery
+
+# 6.1 Waterworks
+
+[screwpump]
+type = "structure"
+display_name = "Чёртов насос"
+category = "Waterworks"
+keyword = ["submersible", "pump"]
+unlockedBy = "hydraulicTech"
+condition = 30
+fireResist = 2
+burned = "ashesx3"
+materials = "woodplankx10"
+scrapped = "woodplankx8"
+maintenanceLevel = 6
+maintenanceItem = "woodplank"
+labour = 60
+description = "Простой винтовой насос, использующий принцип винта Архимеда для перемещения воды с более низкой высоты на более высокую.\n\nРазблокировано: <link=\"hydraulicTech\"><style=\"link\"> Технология: Гидравлика</style></link>"
+
+[wooden_floodgate]
+type = "structure"
+display_name = "Деревянный наводнитель"
+keyword = ["floodgate", "wood", "submersible"]
+category = "Waterworks"
+unlockedBy = "hydraulicTech"
+condition = 40
+fireResist = 3
+burned = "ashes"
+materials = ["woodplankx6"]
+scrapped = ["woodplankx4"]
+labour = 40
+description = "Деревянный шлюз.\n\nРазблокировано: <link=\"hydraulicTech\"><style=\"link\"> Технология: Гидравлика</style></link>\n\n<style=\"fluff\"> Фрост, сын злых родителей,\nГерой-сын злых нравов,\nСпешите заморозить океан,\nИдет закреплять врата затопления,\nОтправляется в океанские течения.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXX"
+
+# 6.2 Mills
+
+[mill]
+type = "class"
+display_name = "Миллион"
+
+[mill0]
+type = "structure"
+display_name = "Ручная мельница"
+category = "Farming"
+unlockedBy = "bakingTech"
+condition = 20
+fireResist = 3
+burned = "ashes"
+labour = 30
+experience = 1
+breakertier = 1
+maintenanceLevel = 5
+order = 10
+keyword = ["mill", "hand_mill", "noisy"]
+description = "Простая ручная мельница для измельчения зерна.\n\nРазблокировано: <link=\"bakingTech\"><style=\"link\"> Технология выпечки</style></link>"
+
+[mill3]
+type = "structure"
+display_name = "ветряная мельница"
+category = "Farming"
+unlockedBy = "windmillsTech"
+condition = 60
+fireResist = 3
+burned = "ashesx10"
+materials = ["woodplankx16", "woodbeamx6"]
+scrapped = ["woodplankx12", "woodbeamx4"]
+labour = 80
+experience = 10
+breakertier = 3
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+keyword = ["mill", "windmill", "noisy", "passive_producer"]
+storage = 10
+passive_input_type = "items"
+passive_output_item = "ryeflour"
+passive_output_mult = 0.02
+# Wind strengths usually vary from 0.1 to 0.7, this value affects how often production ticks happen.
+# Wind strength is multiplied by this value, and the result is used to accelerate the passive tick timer.
+passive_output_wind_mult = 1
+seconds_per_passive_tick = 15
+description = "<link=\"mill\"><style=\"link\">gristmill</style></link>, приводимый в действие ветровым двигателем, для шлифования зерна.\n\nРазблокировано: <link=\"windmillsTech\"><style=\"link\"> Технология: ветряные мельницы</style></link>"
+
+# 7.0 Housing
+
+[housing]
+type = "class"
+display_name = "Жилье"
+order = 30
+
+[housing0a]
+type = "structure"
+display_name = "Простой Lean-To"
+category = "Housing"
+condition = 20
+fireResist = 1
+burned = ["ashesx2"]
+materials = ["branchx6"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 20
+experience = 2
+breakertier = 0
+housing = 2
+keyword = ["heat", "wood"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\n<style=\"характеристики\"> Вместимость: <style=\"бонус\">2</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nПростой <link=\"houses\"><style=\"link\">lean-to</style></link> с огнем, предлагающим некоторую защиту от элементов.\n\n<style=\"fluff\"> \"Немногие предлагают ей убежище\nОт холодных зимних бурь,\nКогда ее юбки со льдом застыли,\nЛедяные пальто - ее единственная одежда!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIII"
+
+[housing0b]
+type = "structure"
+display_name = "Импровизированный Lean-To"
+category = "Housing"
+condition = 10
+fireResist = 1
+burned = "ashes"
+materials = ["branchx2"]
+scrapped = []
+maintenanceLevel = 5
+maintenanceItem = "branch:50%"
+labour = 10
+experience = 1
+breakertier = 0
+housing = 1
+keyword = ["improvised", "heat", "wood"]
+description = "<link=\"firehazard\"><style=\"link\"> Опасность пожара</style></link>\n<style=\"характеристики\"> Вместимость: <style=\"бонус\">1</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nИмпровизированный <link=\"houses\"><style=\"link\">shelter</style></link>.\n\n<style=\"fluff\"> Построй мне на ветру жилище мое?\nОн не найдет надежного фундамента.\nПостроить дом на воде?\nВоистину, волны разрушат его.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VII"
+
+[housing1a]
+type = "structure"
+display_name = "Простая шляпа"
+category = "Housing"
+unlockedBy = "housingTech"
+condition = 40
+fireResist = 1
+burned = ["ashesx3"]
+materials = ["branchx20"]
+scrapped = ["branchx12"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 30
+experience = 3
+breakertier = 1
+housing = 3
+keyword = ["heat", "wood"]
+description = "<style=\"характеристики\"> Вместимость: <style=\"бонус\">3</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nПростой <link=\"earthfasttier\"><style=\"link\">shack</style></link> <link=\"houses\"><style=\"link\">dwelling</style></link>, чтобы держать гоблинов в безопасности от элементов.\n\nРазблокировано: <link=\"housingTech\"><style=\"link\"> Технология: Жилье</style></link>\n\n<style=\"fluff\"> Не скорби больше, друг вод,\nХорошо тебе, что ты задержишься\nВ наших дружественных домах и у костра;\nЖивите с нами и добро пожаловать!\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение VII"
+
+[housing2a]
+type = "structure"
+display_name = "Простая оболочка"
+category = "Housing"
+unlockedBy = ["plankTech", "housingTech"]
+condition = 60
+fireResist = 1
+burned = ["ashesx6"]
+materials = ["woodpolex10", "woodplankx16"]
+scrapped = ["woodpolex8", "woodplankx12"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 40
+experience = 4
+breakertier = 2
+housing = 5
+keyword = ["heat", "wood"]
+description = "<style=\"характеристики\"> Вместимость: <style=\"бонус\">5</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nПростой, но домашний <link=\"planktier\"><style=\"link\">plank</style></link> <link=\"houses\"><style=\"link\">house</style></link>.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link> и <link=\"housingTech\"><style=\"link> Технология: Жилье</style></link>\n\n<style=\"fluff\"> Прощай, мой дорогой старый дом,\nПрощай, родные мои,\nЭто доставит мне непрекращающуюся радость.\nМогу ли я остаться здесь навсегда?\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XXIV"
+
+[housing3a]
+type = "structure"
+display_name = "Лог-кабина"
+category = "Housing"
+unlockedBy = ["beamTech", "housingTech"]
+condition = 80
+fireResist = 2
+burned = ["ashesx8"]
+materials = ["woodbeamx12", "woodplankx10"]
+scrapped = ["woodbeamx10", "woodplankx8"]
+maintenanceLevel = 5
+maintenanceItem = "woodplank"
+labour = 50
+experience = 5
+breakertier = 3
+housing = 8
+keyword = ["heat", "wood"]
+description = "<style=\"характеристики\"> Вместимость: <style=\"бонус\">8</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nПрочный <link=\"beamTech\"><style=\"link\">log cabin</style></link> для проживания ваших гоблинов.\n\nРазблокировано: <link=\"beamTech\"><style=\"link\"> Технология: Beams</style></link> и <link=\"housingTech\"><style=\"link> Технология: Жилье</style></link>\n\n<style=\"fluff\"> \" Холодный и слезливый твой коттедж,\nСловно пустынное место;\nКто может владеть этой унылой хижиной,\nКого так мало почитают?\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XI"
+
+[housing4a]
+type = "structure"
+display_name = "Камень и деревянный коттедж"
+category = "Housing"
+unlockedBy = ["stoneConstructionTech"]
+condition = 100
+materials = ["dressedstonex20", "woodpolex6","woodplankx20", "woodbeamx6"]
+scrapped = ["dressedstonex18", "woodpolex4","woodplankx16", "woodbeamx6"]
+maintenanceLevel = 5
+labour = 80
+experience = 10
+breakertier = 5
+housing = 16
+keyword = ["stone", "heat"]
+description = "<style=\"характеристики\"> Вместимость: <style=\"бонус\">16</style>\nТребуется <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nСильно построенный <link=\"cottagetier\"><style=\"link\">камень и деревянный</style></link> дом.\n\nРазблокировано: <link=\"stoneConstructionTech\"><style=\"link> Технология: каменная конструкция</style></link>\n\n<style=\"fluff\"> Это обитель Сарвика, где он живет со своей женой, отдыхает и освежается, и спит на мягких подушках, когда устал от долгих путешествий и стуков. Затем старуха нагревает для него ванну, а спиной и плечами смахивает банный виск.\n\n- Kalev<link=\"kalevipoeg\"><style=\"link\">Kalevipoeg</style></link>ipoeg, trans. В.Ф. Кирби, Канто XIV: Дворец Сарвика"
+
+# 8.0 Health
+
+[sauna]
+type = "class"
+display_name = "Здания сауны"
+
+[sauna1]
+type = "structure"
+display_name = "Простая сауна"
+keyword = ["sauna", "wood"]
+category = "Health"
+condition = 40
+fireResist = 2
+burned = ["ashesx5"]
+materials = ["branchx12"]
+scrapped = ["branchx10"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+unlockedBy = "carpentryTech"
+labour = 40
+experience = 4
+breakertier = 1
+capacity = 10
+description = "<style=\"fluff\"> Иди и обогрей для меня ванную комнату,\nНаполнить теплом медовые камеры,\nПоложи педиков на камин,\nДеревья поменьше вокруг них.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVIII\n\nПростой <link=\"earthfasttier\"><style=\"link\">earthfast</style></link> сауна.\n\nРазблокировано: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>"
+
+#[medical]
+#type = "class"
+#display_name = "Medical Buildings"
+#
+#[medicine1]
+#type = "structure"
+#display_name = "Medicine Shack"
+#category = "Health"
+#condition = 40
+#fireResist = 1
+#burned = ["ashesx3"]
+#materials = ["branchx20"]
+#scrapped = ["branchx16"]
+#maintenanceLevel = 5
+#maintenanceItem = "branch"
+#unlockedBy = "carpentryTech"
+#labour = 30
+#experience = 2
+#breakertier = 1
+#capacity = 5
+#keyword = ["heat", "nursing", "wood"]
+#adjacencyStructure = "shamanhut"
+#adjacencyWorkspeedbonus = +0.2
+#description = """\
+#<style="fluff">"Here I bring the balm of healing,
+#Wonderful the salve I bring thee;
+#It will join the broken granite,
+#Make the fragments grow together,
+#Heat the fissures in the mountains,
+#And restore the injured birch-tree."
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+#
+#A simple <link=\"earthfasttier\"><style=\"link\">shack</style></link> where injured or ill goblins can recuperate.
+#
+#<style="characteristics">Capacity: <style="bonus">5</style>
+#Requires <link="heating"><style="link">heating</style></link></style>
+#
+#Unlocked by: <link="carpentryTech"><style="link">Technology: Carpentry</style></link>\
+#"""
+#
+#[medicine3]
+#type = "structure"
+#display_name = "Medicine Cabin"
+#category = "Health"
+#unlockedBy = ["beamTech"]
+#condition = 80
+#fireResist = 3
+#burned = ["ashesx12"]
+#materials = ["woodbeamx10", "woodplankx6"]
+#scrapped = ["woodbeamx9", "woodplankx4"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#labour = 50
+#experience = 3
+#breakertier = 3
+#capacity = 10
+#keyword = ["heat", "nursing", "wood"]
+#adjacencyStructure = "shamanhut"
+#adjacencyWorkspeedbonus = +0.2
+#description = """\
+#<style="fluff">"Is there no one in this cottage,
+#That can know the pain I suffer,
+#That can heal this wound of hatchet,
+#That can check this crimson streamlet?"
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem VIII</style>
+#
+#A <link="beamtier"><style="link">cabin</style></link> for goblins to recover from illness or injury.
+#
+#<style="characteristics">Capacity: <style="bonus">10</style>
+#<style="characteristics">Requires <link="heating"><style="link">heating</style></link></style>
+#
+#Unlocked by: <link="beamTech"><style="link">Technology: Beams</style></link>\
+#"""
+
+# 9.0 Security
+
+[patrol]
+type = "class"
+display_name = "Патрульные точки"
+
+#[patrol0]
+#type = "structure"
+#display_name = "Patrol Point"
+#category = "Security"
+#condition = 5
+#fireResist = 1
+#burned = "ashes"
+#materials = "branch"
+#scrapped = "branch"
+#labour = 5
+#keyword = ["guard", "wood", "patrolwaypoint"]
+#description = "A waypoint for a patrolling guard."
+
+[guard]
+type = "class"
+display_name = "Охранные здания"
+
+[guard1]
+type = "structure"
+display_name = "Взлом гвардии"
+category = "Security"
+condition = 10
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx8"]
+scrapped = ["branchx2"]
+maintenanceLevel = 5
+maintenanceItem = "branch"
+labour = 10
+experience = 1
+breakertier = 1
+capacity = 1
+keyword = ["guard", "wood", "patrolwaypoint"]
+description = "Рудиментарный приют для одного гоблина."
+
+[guard2]
+type = "structure"
+display_name = "Охранный пост"
+category = "Security"
+condition = 20
+fireResist = 2
+burned = ["ashes"]
+materials = ["woodplankx4"]
+scrapped = ["woodplankx2"]
+maintenanceLevel = 4
+maintenanceItem = "woodplank"
+unlockedBy = "plankTech"
+labour = 20
+experience = 2
+breakertier = 2
+capacity = 1
+keyword = ["guard", "wood", "patrolwaypoint"]
+description = "Охранный пост для одного часового.\n\nРазблокировано: <link=\"plankTech\"><style=\"link\"> Технология: Planks</style></link>\n\n<style=fluff> Герои охраняют свои дома и огни.\nОберегайте их двери, крыши и окна.\nОхраняйте посты, которые бросают факельные огни,\nОхраняйте дороги до двора,\nОхраняйте концы всех ворот.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XII"
+
+# 10.0 Culture Buildings
+
+[bonfire]
+type = "structure"
+display_name = "Огонь"
+category = "Culture"
+condition = 40
+fireResist = 1
+burned = ["ashes"]
+materials = ["branchx10"]
+scrapped = ["branchx10"]
+maintenanceLevel = 1
+labour = 20
+experience = 1
+breakertier = 1
+storage = 20
+accepts = ["sacrifice"]
+keyword = ["wood", "bonfire"]
+description = "Вместимость: <style=\"bonus\">20</style> <link=\"weight def\"><style=\"link\">weight units</style></link> элементов.\n\nЦеремониальный костер для середины лета <link=\"sacrifice def\"><style=\"link\">sacrifices</style></link>.\n\nУспешные жертвоприношения повышают уровень <link=\"culturedef\"><style=\"link\">culture</style></link> и повышают уровень <link=\"sac tree def\"><style=\"link\">жертвенное дерево</style></link>."
+
+[culture]
+type = "class"
+display_name = "Здания культуры"
+
+[weathervane]
+type = "structure"
+display_name = "фургон"
+category = "Culture"
+researchPoints = [1,0]
+condition = 10
+fireResist = 2
+burned = ["ashes"]
+materials = ["woodpolex2"]
+scrapped = ["woodpole"]
+maintenanceLevel = 2
+maintenanceItem = "woodpole"
+unlockedBy = "carpentryTech"
+labour = 30
+experience = 2
+breakertier = 1
+keyword = ["wood", "culture", "weathervane"]
+description = "Флюгер показывает, куда дует ветер.\n\nРазблокировано: <link=\"carpentryTech\"><style=\"link\"> Технология: Карпентри</style></link>\n\n<style=\"fluff\"> Вслед за этим поднимается штормовой ветер\nЛетая с востока в ярости,\nВвергает океан в волны,\nПоражает звезды брызгами океана.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение I"
+
+[ravenstatue]
+type = "structure"
+display_name = "Статуя Ворона"
+category = "Culture"
+condition = 20
+fireResist = 2
+burned = "ashes"
+materials = "woodlog"
+scrapped = "firewoodx2"
+labour = 30
+experience = 3
+breakertier = 3
+keyword = ["wood", "culture", "statue"]
+clearFogRadius = 10
+description = "Статуя священного ворона.\n\nСтатуя очищает <link=\"forestcover\"><style=\"link\">forest-cover</style></link> в радиусе десяти плиток. Построение его на более высокой высоте увеличивает радиус.\n\nСтатуи ворона также проецируют вокруг них <link=\"workarea def\"><style=\"link\">work area</style></link>. Выберите статую, чтобы переключать рабочую зону на или вне."
+
+[tallravenstatue]
+type = "structure"
+display_name = "Высокий ворон статуя"
+unlockedBy = "woodmagicTech"
+category = "Culture"
+condition = 40
+fireResist = 2
+burned = "ashes"
+materials = "woodlogx2"
+scrapped = "firewoodx4"
+labour = 30
+experience = 3
+breakertier = 3
+keyword = ["wood", "culture", "statue"]
+clearFogRadius = 20
+description = "Статуя священного ворона.\n\nСтатуя очищает <link=\"forestcover\"><style=\"link\">forest-cover</style></link> в радиусе двадцати плиток. Построение его на более высокой высоте увеличивает радиус.\n\nСтатуи ворона также проецируют вокруг них <link=\"workarea def\"><style=\"link\">work area</style></link>. Выберите статую, чтобы переключать рабочую зону на или вне.\n\nРазблокировано: <link=\"woodmagicTech\"><style=\"link\"> Технология: Деревянные магические структуры</style></link>"
+
+# 11.0 Expeditions
+
+#[hunting]
+#type = "class"
+#display_name = "Hunting"
+
+#[hunting0]
+#type = "structure"
+#display_name = "Hunting Post"
+#category = "Hunting"
+#condition = 10
+#unlockedBy = "huntingTech"
+#fireResist = 2
+#breakertier = 3
+#burned = ["ashesx6"]
+#materials = ["branchx10", "woodlog"]
+#scrapped = ["branchx8", "woodlog"]
+#maintenanceLevel = 5
+#maintenanceItem = ["branch:50%"]
+#labour = 40
+#experience = 2
+#keyword = ["wood", "huntingpost"]
+#clearFogRadius = 10
+#description = """A ceremonial post that hunting expeditions depart from.
+#
+#<style="fluff">But among the barbarians who are settled in Thule, one nation only, who are called the Scrithiphini ["Ski-Finns"], live a kind of life akin to that of the beasts. For they neither wear garments of cloth nor do they walk with shoes on their feet, nor do they drink wine nor derive anything edible from the earth. For they neither till the land themselves, nor do their women work it for them, but the women regularly join the men in hunting, which is their only pursuit.
+#
+# - Procopius of Caesarea: History of the Wars (c. 545), trans. Henry Bronson Dewing (1919), book VI, XV</style>"""
+
+# 12.0 Underworld
+
+## 13.0 Firefighting
+#
+#[firefighting]
+#type = "class"
+#display_name = "Firefighting Buildings"
+#
+#[firefighting2]
+#type = "structure"
+#display_name = "Fire Warden's Post"
+#category = "Firefighting"
+#condition = 20
+#fireResist = 2
+#burned = ["ashes"]
+#materials = ["woodplankx3"]
+#scrapped = ["woodplank"]
+#maintenanceLevel = 5
+#maintenanceItem = "woodplank"
+#unlockedBy = "plankTech"
+#labour = 20
+#experience = 2
+#breakertier = 2
+#capacity = 1
+#keyword = ["firewarden", "wood"]
+#description = """\
+#<style="fluff">Then was Iron sorely frightened,
+#Much distressed and filled with horror,
+#When of Fire he heard the mention,
+#Mention of his fell destroyer.
+#
+# - the <link="kalevala"><style="link">Kalevala</style></link>, trans. John Martin Crawford, poem IX</style>
+#
+#A post for a goblin fire warden.
+#
+#Unlocked by: <link="plankTech"><style="link">Technology: Planks</style></link>"""
+
+# 14.0 Deathcare
+
+#[funerary]
+#type = "class"
+#display_name = "Funerary Structures"
+
+[grave0]
+type = "structure"
+display_name = "могила"
+category = "Funerary"
+unlockedBy = "burialTech"
+condition = 20
+fireResist = 5
+materials = "goblincorpse"
+labour = 30
+experience = 5
+maintenanceLevel = 5
+keyword = ["stone", "graveyard"]
+description = "Место отдыха мертвого гоблина.\n\n<style=\"fluff\"> Дочь Маны поступила так, как просила.\nПринеси ее лодку в Вяйнямёйнен,\nБыстрее крутит его по каналу,\nЧерная и смертельная река,\nВ царство Маналы.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XVI"
+
+## 15.0 Furniture etc.
+#
+#[furniture_class]
+#type = "class"
+#display_name = "Furniture"
+#
+#[wood_block_structure]
+#type = "structure"
+#display_name = "Wooden Block"
+#category = "Furniture"
+#materials = "woodblock"
+#condition = 5
+#fireResist = 2
+#burned = ["ashes"]
+#labour = 5
+#experience = 0.5
+#capacity = 1
+#maintenanceLevel = 1
+#keyword = ["wood", "furniture", "idling"]
+#description = "A simple wooden block for a goblin to sit on."
+#
+#[log_bench]
+#type = "structure"
+#display_name = "Log Bench"
+#category = "Furniture"
+#materials = "woodlog"
+#condition = 10
+#fireResist = 2
+#burned = ["ashes"]
+#labour = 10
+#experience = 0.5
+#capacity = 2
+#maintenanceLevel = 1
+#keyword = ["wood", "furniture", "idling"]
+#description = "A wooden bench for two goblins."
+
+# 16.0 Decorations
+
+[decorations]
+type = "class"
+display_name = "Украшения"
+
+[flowerbed_karelianrose]
+type = "structure"
+display_name = "Цветочная кровать (Karelian Rose)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+[flowerbed_meadowsweet]
+type = "structure"
+display_name = "Цветочная кровать (Rose Meadowsweet)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+[flowerbed_heather]
+type = "structure"
+display_name = "Цветочная кровать (Heather)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+[flowerbed_fireweed]
+type = "structure"
+display_name = "Цветочная кровать (Fireweed)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+[flowerbed_goblinwort]
+type = "structure"
+display_name = "Цветочная кровать (Goblinwort)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+[flowerbed_goatpipe]
+type = "structure"
+display_name = "Цветочное ложе (Goutweed)"
+category = "Decorations"
+condition = 5
+fireResist = 1
+burned = "ashes"
+labour = 10
+experience = 0.5
+keyword = ["needs_soil"]
+description = "Орнаментальная клумба."
+
+# 17.0 Special
+
+[shamanhut]
+type = "structure"
+display_name = "Шаманская хижина"
+category = "Special"
+unlockedBy = "shamanismTech"
+condition = 100
+fireResist = 3
+materials = "branchx16"
+burned = ["ashes"]
+maintenanceLevel = 4
+labour = 40
+experience = 5
+keyword = ["shaman", "heat", "unique"]
+description = "<style=\"characteristics>Requires <link=\"heating\"><style=\"link\">heating</style></link></style>\n\nСтроительство шаманской хижины запускает процесс выбора <link=\"shaman def\"><style=\"link\">shaman</style></link>.\n\nРазблокировано: <link=\"shamanismTech\"><style=\"link\"> Технология: Шаманизм</style></link>\n\n<style=\"fluff\"> Возле дверей зависли мудрецы,\nУмные на скамейках,\nОгни, которые окружают колдунов.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XII"
+
+# 18.0 Unbuildable
+
+[centraltree]
+type = "structure"
+display_name = "Жертвенное дерево"
+keyword = ["unique", "summonedstructure", "permanent", "submersible"]
+category = "Unbuildable"
+condition = 500
+materials = []
+labour = 1
+description = "<link=\"sac tree def\"><style=\"link\"> Центральное дерево</style></link> села.\n\n<style=\"fluff\"> Иди, мое сокровище, через дорогу\nРядом со стадами свиней и скота,\nК покрытым холмами лесам,\nК высоким и восходящим горам,\nК елкам, наполненным иглами,\nК ветвям сосны.\n\n- <link=\"kalevala\"><style=\"link\">Kalevala</style></link>, trans. Джон Мартин Кроуфорд, стихотворение XLVI"
+
+[gatewayrock]
+type = "structure"
+display_name = "Gateway Rock Rock"
+keyword = ["unique", "permanent", "submersible"]
+category = "Unbuildable"
+condition = 500
+materials = []
+labour = 1
+clearFogRadius = 30
+description = "Врата в подземный мир.\n\n<style=\"fluff\"> Везде, где есть большое каменное лицо, есть гоблиновая дверь.\n\nОднажды человек спал рядом с каменным лицом между Вуонтишярви и Геттой, и был отброшен от него и услышал:\n\"Ты заснул на нашем пороге.\"\n\nОн должен был снять шляпу, поклониться и попросить место, чтобы остаться, и они позволили бы ему быть.\n\n- Enontekiö, 1930. <style=\"link\"><link=\"fls\">SKS archives</link></style>.</style>"
+
+[concept]
+type = "structure"
+display_name = "Концепция"
+category = "Unbuildable"
+condition = 10
+materials = ["branchx1"]
+labour = 1
+description = "Для целей тестирования."
+
+[ruins]
+type = "structure"
+display_name = "Руины"
+keyword = ["ruins", "submersible"]
+category = "Unbuildable"
+condition = 30
+materials = []
+labour = 1
+scrapped = "dressedstonex10"
+description = """\
+"""
